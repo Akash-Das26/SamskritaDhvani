@@ -1,0 +1,750 @@
+sp017-000001_001	aTa SabdAnuSAsanam aTetyayam SabdoऽDikArArTaH prayujyate
+sp017-000002_001	SabdAnuSAsanam nAma SAstramaDikftam veditavyam
+sp017-000003_001	kezAm SabdAnAm
+sp017-000004_001	lOkikAnAm vEdikAnAm ca
+sp017-000005_001	tatra lOkikAstAvadgOraSvaH puruzo hastI Sakunirmfgo brAhmaRa iti
+sp017-000006_001	vEdikAH Kalvapi Sanno devIraBizwaye ize tvorjetvA agnimIle purohitam agna AyAhi vItaya iti
+sp017-000007_001	aTa gOrityatra kaH SabdaH
+sp017-000008_001	kim yattatsAsnAlANgUlakakudaKuravizARyarTarUpam sa SabdaH
+sp017-000009_001	netyAha
+sp017-000010_001	dravyam nAma tat
+sp017-000011_001	yattarhi tadiNgitam cezwitam nimizitamiti sa SabdaH
+sp017-000012_001	netyAha kriyA nAma sA
+sp017-000013_001	yattarhi tacCuklo nIlaH kapilaH kapota iti sa SabdaH
+sp017-000014_001	netyAha guRo nAma saH
+sp017-000015_001	yattarhi tadBinnezvaBinnam CinnezvacCinnam sAmAnyaBUtam sa SabdaH
+sp017-000016_001	netyAha AkftirnAma sA
+sp017-000017_001	kastarhi SabdaH
+sp017-000018_001	yenoccAritena sAsnAlANgUlakakudaKura vizARinAm sampratyayo Bavati sa SabdaH
+sp017-000019_001	aTa vA pratIta padArTako loke DvaniH Sabda ityucyate
+sp017-000020_001	tadyaTA Sabdam kuru mA Sabdam kArzIH SabdakAryayam mARavakaH iti Dvanim kurvannevamucyate
+sp017-000021_001	tasmAd DvaniH SabdaH
+sp017-000022_001	kAni punaH SabdAnuSAsanasya prayojanAni
+sp017-000023_001	rakzohAgamalaGvasandehAH prayojanam
+sp017-000024_001	rakzArTam vedAnAmaDyeyam vyAkaraRam lopAgama varRavikArajYo hi samyak vedAn paripAlayizyatIti
+sp017-000025_001	UhaH Kalvapi na sarvErliNagErna ca sarvABirviBaktiBirvede mantrA nigaditAH
+sp017-000026_001	te cAvaSyam yajYagatena puruzeRa yaTAyaTam vipariRamayitavyAH
+sp017-000027_001	tAnnAvEyAkaraRaH Saknoti yaTAyaTam vipariRamayitum
+sp017-000028_001	tasmAdaDyeyam vyAkaraRam
+sp017-000029_001	AgamaH Kalvapi brAhmaRena nizkAraRo DarmaH zaqaNgo vedoऽDyeyo jYeyaSceti
+sp017-000030_001	praDAnam zaqaNgezu vyAkaraRam
+sp017-000031_001	praDAne ca kfto yatnaH PalavAnBavati
+sp017-000032_001	laGvarTam cADyeyam vyAkaraRam brahmaRenAvaSyam SabdA jYeyAH iti
+sp017-000033_001	na cAntareRa vyAkaraRam laGunopAyena SabdAH SakyA jYAtum
+sp017-000034_001	asandehArTam cADyeyam vyAkaraRam
+sp017-000035_001	yAjYikAH paWanti
+sp017-000036_001	sTUlapfzatImAgnivAruRImanaqvAhImAlaBeteti
+sp017-000037_001	tasyAm sandehaH sTUlA cAsO pfzatI ca sTUlapfzati sTUlAni vA pfzanti yasyAH seyam sTUlapfzatIti
+sp017-000038_001	tAm nAvEyAkaraRaH svaratoऽDyavasyati yadi pUrvapadaprakftisvaratvam tato bahuvrIhiH
+sp017-000039_001	aTa samAsAntodAttatvam tatastatpuruza iti
+sp017-000040_001	imAni ca BUyaH SabdAnuSAsanasya prayojanAni teऽsurAH
+sp017-000041_001	duzwaH SabdaH
+sp017-000042_001	yadaDItam
+sp017-000043_001	yastu prayuNkte
+sp017-000044_001	avidvAMsaH
+sp017-000045_001	viBaktim kurvanti
+sp017-000046_001	yo vA imAm
+sp017-000047_001	catvAri
+sp017-000048_001	uta tvaH
+sp017-000049_001	saktumiva
+sp017-000050_001	sArasvatIm
+sp017-000051_001	daSamyAm putrasya
+sp017-000052_001	sudevo asi varuReti
+sp017-000053_001	teऽsurAH
+sp017-000054_001	teऽsurA helayo helaya iti kurvantaH parAbaBUvustasmAd brAhmaRena na mlecCitavE nApaBAzitavE
+sp017-000055_001	mlecCo ha vA eza yadapaSabdaH
+sp017-000056_001	mlecCA mA BUmetyaDyeyam vyAkaraRam
+sp017-000057_001	teऽsurAH
+sp017-000058_001	duzwaH SabdaH
+sp017-000059_001	duzwaH SabdaH svarato varRato vA miTyA prayukto na tamarTamAha
+sp017-000060_001	sa vAgvajro yajamAnam hinasti yaTendraSatruH svaratoऽparADAt iti
+sp017-000061_001	duzwAYCabdAnmA prayukzmahItyaDyeyam vyAkaraRam
+sp017-000062_001	duzwaH SabdaH
+sp017-000063_001	yadaDItam
+sp017-000064_001	yadaDItamavijYAtam nigadenEva Sabdyate
+sp017-000065_001	anagnAviva SuzkEDo na tajjvalati karhicit
+sp017-000066_001	tasmAdanarTakam mADigIzmahItyaDyeyam vyAkaraRam yadaDItam
+sp017-000067_001	yastu prayuNkte
+sp017-000068_001	yastu prayuNkte kuSalo viSeze SabdAn yaTAvad vyavahArakAle
+sp017-000069_001	soऽnantamApnoti jayam paratra vAgyogavidduzyati cApaSabdEH
+sp017-000070_001	dduzyati cApaSabdEH kaH vAgyogavideva
+sp017-000071_001	kuta etat yo hi SabdAYjAnAtyapaSabdAnasO jAnAti
+sp017-000072_001	yaTEva hi SabdajYAne DarmaH evam apaSabdajYAneऽpyaDarmaH
+sp017-000073_001	aTa vA BUyAnaDarmaH prApnoti
+sp017-000074_001	BUyAMso apaSabdAH alpIyAMsaH SabdAH iti
+sp017-000075_001	ekEkasya hi Sabdasya bahavo apaBraMSAH
+sp017-000076_001	tadyaTA gOrityasya Sabdasya gAvI goRI gotA gopotaliketyAdayo bahavo apaBraMSAH
+sp017-000077_001	aTa yoऽvAgyogavidajYAnam tasya SaraRam
+sp017-000078_001	vizama upanyAsaH
+sp017-000079_001	nAtyantAyAऽjYAnam SaraRam Bavitumarhati
+sp017-000080_001	yo hyajAnanvE brAhmaRam hanyAt surAm vA pibetsoऽpi manye patitaH syAt
+sp017-000081_001	evam tarhi soऽnantamApnoti jayam paratra vAgyogavidduzyati cApaSabdEH
+sp017-000082_001	kaH avAgyogavideva
+sp017-000083_001	aTa yo vAgyogavid vijYAnam tasya SaraRam
+sp017-000084_001	kva punaridam paWitam
+sp017-000085_001	BrAjA nAma SlokAH
+sp017-000086_001	kim ca BoH SlokA api pramARam
+sp017-000087_001	kim cAtaH
+sp017-000088_001	yadi SlokA api pramARamayamapi SlokaH pramARam Bavitumarhati
+sp017-000089_001	yadudumbaravarRAnAm GawInAm maRqulam mahat
+sp017-000090_001	pItam na gamayetsvargam kim tat kratugatam nayet
+sp017-000091_001	pramattagIta eza tatraBavataH
+sp017-000092_001	yastvapramattagItastatpramARam yastu prayuNkte
+sp017-000093_002	avidvAMsaH pratyaBivAde nAmno ye na plutim viduH
+sp017-000094_002	kAmam tezu tu viprozya strIzvivAyamaham vadet
+sp017-000095_002	aBivAde strIvanmA BUmetyaDyeyam vyAkaraRam avidvAMsaH
+sp017-000096_002	viBaktim kurvanti
+sp017-000097_002	yAjYikAH paWanti prayAjAH saviBaktikAH kAryAH iti
+sp017-000098_002	na cAntareRa vyAkaraRam prayAjAH saviBaktikAH SakyAH kartum
+sp017-000099_002	viBaktim kurvanti
+sp017-000100_002	yo vA imAm padaSaH svaraSoऽkzaraSaH ca vAcam vidaDAti sa ArtvijIno Bavati
+sp017-000101_002	ArttvijInAH syAmetyaDyeyam vyAkaraRam
+sp017-000102_002	catvAri SfNgA trayo asya pAdA dve SIrze sapta hastAso asya
+sp017-000103_002	triDA badDo vfzaBo roravIti maho devo martyAm AviveSa
+sp017-000104_002	catvAri SfNgARi
+sp017-000105_002	catvAri padajAtAni nAmAKyAtopasarganipAtASca
+sp017-000106_002	trayo asya pAdAH trayaH kAla BUtaBavizyadvartamAnAH
+sp017-000107_002	dvE SIrze dvO SabdAtmAnO nityaH kAryaSca
+sp017-000108_002	saptahastAso asya sapta viBaktiyaH
+sp017-000109_002	triDA badDaH trizu sTAne badDa urasi kaRWe Sirasi iti
+sp017-000110_002	vfzaBo varzaRAt
+sp017-000111_002	roravIti Sabdam karoti
+sp017-000112_002	kuta etat
+sp017-000113_002	rOtiH SabdakarmA
+sp017-000114_002	maho devo martyAm AviveSeti
+sp017-000115_002	mahAn devaH SabdaH
+sp017-000116_002	martyA maraRaDarmARo manuzyAH tAn AviveSa
+sp017-000117_002	mahatA devena naH sAmyam yaTA syAdityaDyeyam vyAkaraRam
+sp017-000118_002	apara Aha
+sp017-000119_002	catvAri vAkparimitA padAni tAni vidurbrAhmaRA ye manIziRaH
+sp017-000120_002	guhA trIRi nihitA neNgayanti turIyam vAco manuzyA vadanti
+sp017-000121_002	catvAri vAkparimitAni padAni catvAri padajAtAni nAmAKyAtopasarganipAtASca
+sp017-000122_002	tAni vidurbrAhmaRA ye manIziRaH
+sp017-000123_002	manasa irziRo manIziRaH
+sp017-000124_002	guhA trIRi nihitA neNgayanti
+sp017-000125_002	guhAyAm trIRi nihitAni neNgayanti na cazwante
+sp017-000126_002	na nimizantItyarTaH
+sp017-000127_002	turIyam vAco manuzyA vadanti
+sp017-000128_002	turIyam vA etadvAco yanmanuzyezu vartate caturTamityarTaH catvAri
+sp017-000129_002	uto tvasmE tanvam visasre jAyeva patya uSatI suvAsAH
+sp017-000130_002	uta tvaH api KalvekaH paSyannapi na paSyati vAcam
+sp017-000131_002	api KalvekaH SfRvannapi na SfRotyenAmiti avidvAMsamAhArGam
+sp017-000132_002	uto tvasmE tanvam visasre tanum vivfRute
+sp017-000133_002	jAyeva patya uSatI suvAsAH
+sp017-000134_002	tadyaTA jAyA patye kAmayamAnA suvAsAH svamAtmAnam vivfRute evam vAg vAgvide svAtmAnam vivfRute
+sp017-000135_002	vANgo vivfRuyAt AtmAnam iti aDyeyam vyAkaraRam
+sp017-000136_002	uta tvaH
+sp017-000137_002	saktumiva titaunA punanto yatra DIrA manasA vAcamakrata
+sp017-000138_002	atrA saKAyaH saKyAni jAnate BadrEzAm lakzmIrnihitAऽDi vAci
+sp017-000139_002	saktuH sacaterdurDAvo Bavati
+sp017-000140_002	kasatervA viparItAd vikasito Bavati
+sp017-000141_002	titau paripavanam Bavati
+sp017-000142_002	tatavadvA tunnavadvA
+sp017-000143_002	DIrA DyAnavantaH
+sp017-000144_002	manasA prajYAnena
+sp017-000145_002	vAcamakrata vAcamakfzata
+sp017-000146_002	atrA saKAyaH saKyAni jAnate
+sp017-000147_002	atra saKAyaH santaH saKyAni jAnate
+sp017-000148_002	kva ya eza durgo mArga ekagamyo vAgvizayaH
+sp017-000149_002	ke punaste
+sp017-000150_002	vEyAkaraRAH
+sp017-000151_002	kuta etat
+sp017-000152_002	BadrEzAm lakzmIrnihitADi vAci
+sp017-000153_002	ezAm vAci BadrA lakzmIrnihitA Bavati
+sp017-000154_002	lakzmIrlakzaRAt BAsanAtparivfQA Bavati
+sp017-000155_002	saktumiva
+sp017-000156_002	sArasvatIm
+sp017-000157_002	yAjYikAH paWanti
+sp017-000158_002	AhitAgnirapaSabdam prayujya prAyaScittIyAm sArasvatImizwim nirvapediti
+sp017-000159_002	prAyaScittIyA mA BUmetyaDyeyam vyAkaraRam
+sp017-000160_002	daSamyAm putrasya
+sp017-000161_002	yAjYikAH paWanti
+sp017-000162_002	daSamyuttarakAlam putrasya jAtasya nAma vidaDyAd GozavadAdyantarantaHsTamavfdDam tripuruzAnUkamanaripratizWitam
+sp017-000163_002	tadDi pratizWitatamam Bavati
+sp017-000164_002	dvyakzaram caturakzaram vA nAma kftam kuryAnna tadDitam iti
+sp017-000165_002	na cAntareRa vyAkaraRam kftastadDitA vA SakyA vijYAtum
+sp017-000166_002	sudevo asi varuRa yasya te sapta sinDavaH
+sp017-000167_002	anukzaranti kAkudam sUrmyam suzirAmiva
+sp017-000168_002	sudevo asi varuRa satyadevo asi
+sp017-000169_002	yasya te sapta sinDavaH sapta viBaktayaH
+sp017-000170_002	anukzaranti kAkudam
+sp017-000171_002	kAkudam tAlu
+sp017-000172_002	kAkurjihvA sAsmin udyata iti kAkudam
+sp017-000173_002	tadyaTA SoBanAmUrtim suzirAmagnirantaH praviSya
+sp017-000174_002	dahatyevam te sapta sinDavaH sapta viBaktayastAlvanukzaranti
+sp017-000175_002	tenAsi satyadevaH
+sp017-000176_002	satyadevAH syAmetyaDyeyam vyAkaraRam
+sp017-000177_003	kim punaridam vyAkaraRamevADijigAMsamAneByaH prayojanamanvAKyAyate na punaH anyadapi kiYcit
+sp017-000178_003	om ityuktvA vfttAntaSaH SamityevamAdIn SabdAn paWanti
+sp017-000179_003	purAkalpa etadAsIt saMskArottarakAlam brAhmaRA vyAkaraRam smADIyate
+sp017-000180_003	teByastattatsTAna karaRa nAdAnupradAnajYeByo vEdikAH Sabda upadiSyante
+sp017-000181_003	tadadyatve na taTA
+sp017-000182_003	vedamaDItya tvaritA vaktAro Bavanti vedAnno vEdikAH SabdAH sidDA lokAcca lOkikAH
+sp017-000183_003	anarTakam vyAkaraRam iti
+sp017-000184_003	teBya evam vipratipannabudDiByoऽDyetfByaH suhfdBUtvA AcArya idam SAstramanvAcazwe
+sp017-000185_003	imAni prayojanAnyaDyeyam vyAkaraRam iti
+sp017-000186_003	aTa SabdAnuSAsanam praraByate
+sp017-000187_003	SabdAnuSAsanamidAnIm kartavyam
+sp017-000188_003	tatkaTam kartavyam
+sp017-000189_003	kim SabdopadeSaH kartavyaH AhosvidapaSabdopadeSaH AhosviduBayopadeSa iti
+sp017-000190_003	anyataropadeSena kftam syAt
+sp017-000191_003	tadyaTA BakzyaniyamenABakzya pratizeDo gamyate
+sp017-000192_003	paYca paYcanaKA BakzyAH ityukte gamyata etadatonyA BakzyA iti
+sp017-000193_003	aBakzyapratizeDena vA BakzyaniyamaH
+sp017-000194_003	tadyaTA aBakzyo grAmyakukkuwaH aBakzyo grAmyasUkaraH ityukte gamyata etadAraRyo Bakzya iti
+sp017-000195_003	evam ihApi
+sp017-000196_003	yadi tAvacCabdopadeSaH kriyate
+sp017-000197_003	gOrityetasminnupadizwe gamyata etad gAvyAdayo apaSabdA iti
+sp017-000198_003	aTa api apaSabdopadeSaH kriyate
+sp017-000199_003	gAvyAdizUpadizwezu gamyata etad gOrityeza Sabda iti
+sp017-000200_003	kim punaratra jyAyaH
+sp017-000201_003	laGutvAn SabdopadeSaH
+sp017-000202_003	laGIyAn SabdopadeSogarIyAn apaSabdopadeSaH
+sp017-000203_003	ekEkasya Sabdasya bahavo apaBraMSAH
+sp017-000204_003	tadyaTA gOrityasya Sabdasya gAvI goRI gopotaliketyevamAdayo apaBraMSAH izwAnvAKyAnam Kalvapi Bavati
+sp017-000205_003	aTEtasmin SabdopadeSe sati kim SabdAnAm pratipattO pratipada pAWaH kartavyaH
+sp017-000206_003	gOraSvaH puruzo hastI Sakunirmfgo brAhmaRa ityevamAdayaH SabdAH paWitavyAH
+sp017-000207_003	netyAha
+sp017-000208_003	anaByupAya eza SabdAnAm pratipattO pratipadapAWaH
+sp017-000209_003	evam hi SrUyate bfhaspatirindrAya divyam varzasahasram pratipadoktAnAm SabdAnAm SabdapArAyaRam provAca nAntam jagAma
+sp017-000210_003	bfhaspatiSca pravaktA indraScADyetA divyam varzasahasramaDyayanakAlo na cAntam jagAma kim punaradyatve
+sp017-000211_003	yaH sarvaTA ciram jIvati varzaSatam jIvati
+sp017-000212_003	caturBiSca prakArErvidyopayuktA Bavati AgamakAlena svADyAyakAlena pravacanakAlena vyAvahArakAleneti
+sp017-000213_003	tatra cAsyAgamakAlenEvAyuH kftsnam paryupayuktam syAt
+sp017-000214_003	tasmAdanaByupAyaH SabdAnAm pratipattO pratipadapAWaH
+sp017-000215_003	kaTam tarhIme SabdAH pratipattavyAH
+sp017-000216_003	kiYcitsAmAnyaviSezavallakzaRam prarvatyam
+sp017-000217_003	yenAlpena yatnena mahato mahataH SabdOGAnpratipadyeran
+sp017-000218_003	kim punastat utsargApavAdO
+sp017-000219_003	kaScidutsargaH kartavyaH kaScit apavAdaH
+sp017-000220_003	kaTaYjAtIyakaH punarutsargaH kartavyaH kaTaYjAtIyakoऽpavAdaH
+sp017-000221_003	sAmAnyenotsargaH kartavyaH tadyaTA karmaRyaR
+sp017-000222_003	tasya viSezeRApavAdaH
+sp017-000223_003	tadyaTA Atoऽnupasarge kaH
+sp017-000224_003	kim punarAkftiH padArTaH Ahosvit dravyam
+sp017-000225_003	uBayamityAha
+sp017-000226_003	kaTam jYAyate
+sp017-000227_003	uBayaTA hyAcAryyeRa sUtrARi paWitAni
+sp017-000228_003	Akftim padArTam matvA jAtyAKyAyAmekasminbahuvacanamanyatarasyAmityucyate
+sp017-000229_003	dravyam padArTam matvA sarUpARAm ityekaSeza AraByate
+sp017-000230_003	kim punarnityaH SabdaH AhosvitkAryaH
+sp017-000231_003	saNgrahya etatprADAnyena parIkzitam nityo vA syatkAryo veti
+sp017-000232_003	tatroktA dozAH prayojanAnyapyuktAni
+sp017-000233_003	tatra tveza nirRayaH yadyeva nityoTApi kAryaH uBayaTApi lakzaRam prarvatyam iti
+sp017-000234_003	kaTam punaridam BagavataH pARinerAcAryasya lakzaRam pravfttam
+sp017-000235_003	sidDe SabdArTasambanDe sidDe Sabde arTe sambanDe ceti
+sp017-000236_003	aTa sidDaSabdasya kaH padArTaH
+sp017-000237_003	nityaparyAyavAcI sidDaSabdaH
+sp017-000238_003	kaTam jYAyate
+sp017-000239_003	yatkUwasTezvavicAlizu BAvezu vartate
+sp017-000240_003	tadyaTA sidDA dyOH sidDA pfTivI sidDamAkASamiti
+sp017-000241_003	nanu ca BoH kAryezvapi vartate tadyaTA sidDa odanaH sidDaH sUpaH sidDA yavAgUriti
+sp017-000242_003	yAvatA kAryezvapi vartate tatra kuta etannityaparyAyavAcino grahaRam na punaH kArye yaH sidDaSabdastasyeti
+sp017-000243_003	saNgrahe tAvat kAryapratidvandviBAvAnmanyAmahe nityaparyAyavAcino grahaRamiti
+sp017-000244_003	aTa vA santyekapadAnyapyavaDAraRAni
+sp017-000245_003	tadyaTA abBakzo vAyuBakza iti apa eva Bakzayati vAyumeva BakzayatIti gamyate
+sp017-000246_003	evam ihApi
+sp017-000247_003	sidDa eva na sADya iti
+sp017-000248_003	aTa vA pUrvapadalopoऽtra drazwavyaH
+sp017-000249_003	atyantasidDaH sidDa iti
+sp017-000250_003	tadyaTA devadatto dattaH satyaBAmA BAmeti
+sp017-000251_003	aTa vA vyAKyAnato viSezapratipattirnahi sandehAdalakzaRamiti nityaparyAyavAcino grahaRamiti vyAKyAsyAmaH
+sp017-000252_003	kim punaranena varRena
+sp017-000253_003	kim na mahA kaRWena nityaSabda evopAtto yasminnupAdIyamAneऽsandehaH syAt
+sp017-000254_003	maNgalArTam
+sp017-000255_004	mANgalika AcAryo mahataH SAstrOGasya maNgalArTam sidDaSabdamAditaH prayuNkte
+sp017-000256_004	maNgalAdIni hi SAstrARi praTante vIrapuruzARi ca BavantyAyuzmatpuruzARi cADyetAraSca sidDArTA yaTA syuriti
+sp017-000257_004	ayam Kalu nityaSabdo nAvaSyam kUwasTezvavicAlizu BAvezu vartate
+sp017-000258_004	kim tarhi ABIkzRyeऽpi vartate
+sp017-000259_004	tadyaTA nityaprahasito nityaprajalpita iti
+sp017-000260_004	yAvatABIkzRyeऽpi vartate tatrApyanenEvArTaH syAt vyAKyAnato viSezapratipattirna hi sandehAdalakzaRamiti
+sp017-000261_004	paSyati tvAcAryo maNgalArTaScEva sidDaSabda AditaH prayukto Bavizyati
+sp017-000262_004	SakzyAmi cEnam nityaparyAyavacinam varRayitumiti
+sp017-000263_004	ataH sidDaSabda evopAtto na nityaSabdaH
+sp017-000264_004	aTa kam punaH padArTam matvEza vigrahaH kriyate sidDe Sabde arTe sambanDe ceti
+sp017-000265_004	AkftimityAha
+sp017-000266_004	kuta etat
+sp017-000267_004	Akftirhi nityA dravyamanityam
+sp017-000268_004	aTa dravye padArTe kaTam vigrahaH kartavyaH
+sp017-000269_004	sidDe Sabde arTasambanDe ceti
+sp017-000270_004	nityo hyarTavatAmarTEraBisambanDaH
+sp017-000271_004	aTa vA dravya eva padArTe eza vigraho nyAyyaH sidDe Sabde arTe sambanDe ceti
+sp017-000272_004	dravyam hi nityamAkftiranityA
+sp017-000273_004	kaTam jYAyate
+sp017-000274_004	evam hi dfSyate loke mftkayAcidAkftyA yuktA piRqo Bavati
+sp017-000275_004	piRqAkftimupamfdya GawikAH kriyante
+sp017-000276_004	GawikAkftimupamfdya kuRqikAH kriyante
+sp017-000277_004	taTA suvarRam kayAcidAkftyA yuktam piRqo Bavati
+sp017-000278_004	piRqAkftimupamfdya rucakAH kriyante
+sp017-000279_004	rucakAkftimupamfdya kawakAH kriyante kawakAkftimupamfdya svastikAH kriyante
+sp017-000280_004	AkftiranyA cAnyA ca Bavati dravyam punastadeva
+sp017-000281_004	Akftyupamardena dravyamevAvaSizyate
+sp017-000282_004	AkftAvapi padArTa eza vigraho nyAyyaH sidDe Sabde arTe sambanDe ceti
+sp017-000283_004	nanu coktam Akftiranityeti
+sp017-000284_004	nEtadasti
+sp017-000285_004	nityAऽऽkftiH
+sp017-000286_004	kaTam
+sp017-000287_004	dravyAntarasTA tUpalaByate
+sp017-000288_004	aTavA nedameva nityalakzaRam
+sp017-000289_004	Druvam kUwasTamavicAlyanapAyopajana vikAryanutpattyavfdDyavyayayogi yattannityamiti
+sp017-000290_004	tadapi nityam yasmiMstattvam na vihanyate
+sp017-000291_004	kim punastattvam
+sp017-000292_004	tasya BAvastattvam
+sp017-000293_004	AkftAvapi tattvam na vihanyate
+sp017-000294_004	yannityam tam padArTam matvEza vigrahaH kriyate sidDe Sabde arTe sambanDe ceti
+sp017-000295_004	kaTam punarjYAyate sidDaH SabdoऽrTaH sambanDaSceti
+sp017-000296_004	lokataH yalloke arTamarTamupAdAya SabdAn prayuYjate nEzAm nirvfttO yatnam kurvanti
+sp017-000297_004	tadyaTA Gawena kAryam karizyan kumBakArakulam gatvAha kuru Gawam kAryam anena karizyAmIti
+sp017-000298_004	na tadcCabdAnprayuyukzamARo vEyAkaraRakulam gatvAha kuru SabdAn prayokzya iti
+sp017-000299_004	tAvatyevArTamupAdAya SabdAn prayuYjate
+sp017-000300_004	yadi tarhi loka ezu pramARam kim SAstreRa kriyate
+sp017-000301_004	loke arTaprayukte Sabdaprayoge SAstreRa DarmaniyamaH
+sp017-000302_004	lokato arTaprayukte Sabdaprayoge SAstreRa DarmaniyamaH kriyate
+sp017-000303_004	kimidam Darmaniyama iti
+sp017-000304_004	DarmAya niyamo DarmaniyamaH DarmArTo vA niyamo DarmaniyamaH Darmaprayojano vA niyamo DarmaniyamaH
+sp017-000305_004	yaTA lOkikavEdikezu
+sp017-000306_004	priyatadDitA dAkziRAtyAH yaTA loke vede ceti prayoktavye yaTA lOkikavEdikezu iti prayuYjate
+sp017-000307_004	yaTA lOkikezu vEdikezu ca kftAntezu
+sp017-000308_004	loke tAvat aBakzyo grAmyakukkuwaH aBakzyo grAmyasUkara ityucyate
+sp017-000309_004	Bakzyam ca nAma kzutpratiGAtArTamupAdIyate
+sp017-000310_004	Sakyam cAnena SvamAMsAdiBirapi kzutpratihantum
+sp017-000311_004	tatra niyamaH kriyate idam BakzyamidamaBakzyamiti
+sp017-000312_004	samAnaSca Kedavigamo gamyAyAm cAgamyAyAm ca
+sp017-000313_004	vede Kalvapi payovrato brAhmaRo yavAgUvrato rAjanya ABikzAvrato vESyaH ityucyate
+sp017-000314_004	vratam ca nAmAByavahArArTamupAdIyate
+sp017-000315_004	Sakyam cAnena SAlimAMsAdInyapi vratayitum
+sp017-000316_004	tatra niyamaH kriyate
+sp017-000317_004	yaTA taTA bElvaH KAdiro vA yUpaH syAdityucyate
+sp017-000318_004	yUpaSca nAma paSvanubanDArTamupAdIyate
+sp017-000319_004	Sakyam cAnena yatkiYcideva kAzWam ucCrityAnucCritya vA paSuranubanDum
+sp017-000320_004	tatra niyamaH kriyate
+sp017-000321_004	taTA agnO kapAlAnyaDiSrityABimantrayate BfgURAmaNgirasAm Darmasya tapasA tapyaDvam iti
+sp017-000322_004	evamihApi samAnAyAmarTAvagatO Sabdena cApaSabdena ca DarmaniyamaH kriyate SabdenEvArToऽBiDeyo nApaSabdeneti
+sp017-000323_004	evam kriyamARamaByudayakAri BavatIti
+sp017-000324_005	santi vE SabdA aprayuktAH
+sp017-000325_005	tadyaTA Uza tera cakra pece iti
+sp017-000326_005	kimato yatsanti aprayuktAH
+sp017-000327_005	prayogAdDi BavAn SabdAnAm sADutvam aDyavasyati
+sp017-000328_005	ya idAnIm aprayuktA nAmI sADavaH syuH
+sp017-000329_005	idam tAvat vipratizidDam yadyucyate santi vE SabdA aprayuktA iti
+sp017-000330_005	yadi santi nAprayuktAH
+sp017-000331_005	aTApyaprayuktA na santi santi cAprayuktAScete vipratizidDam
+sp017-000332_005	prayuYjAna eva Kalu BavAnAha santi SabdA aprayuktA iti
+sp017-000333_005	kaScedAnImanyo BavajjAtIyakaH puruzaH SabdAnAm prayoge sADuH syAt
+sp017-000334_005	nEtad vipratizidDam
+sp017-000335_005	santIti tAvad brUmo yadetAn SAstravidaH SAstreRAnuvidaDate
+sp017-000336_005	aprayuktA iti brUmo yallokeऽprayuktA iti
+sp017-000337_005	yadapyucyate kaScedAnImanyo BavajjAtIyakaH puruzaH SabdAnAm prayoge sADuH syAditi
+sp017-000338_005	na brUmoऽsmABiraprayuktA iti
+sp017-000339_005	kim tarhi
+sp017-000340_005	lokeऽprayuktA iti
+sp017-000341_005	nanu ca BavAnapyaByantaro loke
+sp017-000342_005	aByantaroऽham loke na tvaham lokaH
+sp017-000343_005	astyaprayukta iti cennArTe SabdaprayogAt
+sp017-000344_005	astyaprayukta iti cet tanna
+sp017-000345_005	kim kAraRam
+sp017-000346_005	arTe SabdaprayogAt
+sp017-000347_005	arTe SabdAH prayujyante
+sp017-000348_005	santi cEzAm SabdAnAm arTA yezvarTezu prayujyante
+sp017-000349_005	aprayogaH prayogAnyatvAt
+sp017-000350_005	aprayogaH KalvapyezAm SabdAnAm nyAyyaH
+sp017-000351_005	kutaH
+sp017-000352_005	prayogAnyatvAt
+sp017-000353_005	yadezAm SabdAnAm arTe anyAn SabdAn prayuYjate
+sp017-000354_005	tadyaTA Uzetyasya SabdasyArTe kva yUyam uzitA
+sp017-000355_005	tere ityasyArTe kva yUyam tIrRAH cakretyasyArTe kva yUyam kftavantaH
+sp017-000356_005	pecetyasyArTe kva yUyam pakvavanta iti
+sp017-000357_005	aprayukte dIrGasatravat
+sp017-000358_005	yadyapyaprayuktAH avaSyam dIrGasatravallakzaRenAnuviDeyAH
+sp017-000359_005	tadyaTA dIrGasatrARi vArzaSatikAni vArzasahasrikARi ca
+sp017-000360_005	na cAdyatve kaScit apyAharati
+sp017-000361_005	kevalam fzisampradAyo Darma iti kftvA yAjYikAH SAstreRAnuvidaDate
+sp017-000362_005	sarve deSAntare
+sp017-000363_005	sarve Kalvapyete SabdA deSAntarezu prayujyante
+sp017-000364_005	na cEvopalaByante
+sp017-000365_005	upalabDO yatnaH kriyatAm
+sp017-000366_005	mahAn Sabdasya prayogavizayaH
+sp017-000367_005	saptadvIpA vasumatI trayo lokAScatvAro vedAH sANgAH sarahasyA bahuDA BinnA ekaSatamaDvaryuSAKAH sahasravartmA sAmavedaH
+sp017-000368_005	ekaviMSatiDA bAhvfcyam navaDAऽऽTarvaRo vedo vAkovAkyamitihAsaH purARam vEdyakamityetAvat Sabdasya prayogavizayaH
+sp017-000369_005	etAvantam Sabdasya prayogavizayam ananuniSamya santyaprayuktA iti vacanam kevalam sAhasamAtrameva
+sp017-000370_005	etasmiMScAtimahati Sabdasya prayogavizaye te te SabdAstatra tatra niyatavizayA dfSyante
+sp017-000371_005	tadyaTA SavatirgatikarmA kambojezveva BAzito Bavati
+sp017-000372_005	vikAra enam AryA BAzante Sava iti
+sp017-000373_005	hammatiH surAzwrezu raMhatiH prAcyamaDyezu gamimeva tvAryAH prayuYjate
+sp017-000374_005	dAtirlavanArTe prAcyezu dAtramudIcyezu
+sp017-000375_005	ye cApyete BavatoऽpyaprayuktA aBimatAH SabdA etezAmapi prayogo dfSyate
+sp017-000376_005	kva vede
+sp017-000377_005	tadyaTA
+sp017-000378_005	yadvo revatIrevatyantamUza yanme naraH Srutyam brahma cakra
+sp017-000379_005	kim punaH Sabdasya jYAne DarmaH Ahosvitprayoge
+sp017-000380_005	kaScAtra viSezaH
+sp017-000381_005	jYAne Darma iti cet taTA aDarmaH
+sp017-000382_005	jYAne Darma iti cettaTAऽDarmoऽpi prApnoti
+sp017-000383_005	yo hi SabdAYjAnAtyapaSabdAnapyasO jAnAti
+sp017-000384_005	yaTEva SabdajYAne Darma evamapaSabdajYAneऽpyaDarmaH
+sp017-000385_005	aTa vA BUyAn aDarmaH prApnoti
+sp017-000386_005	BUyAMso hyapaSabdA alpIyAMsaH SabdAH
+sp017-000387_005	ekEkasya Sabdasya bahavo apaBraMSAH
+sp017-000388_005	tadyaTA gOrityasya gAvI goRI gopotaliketyevamAdayo apaBraMSAH
+sp017-000389_005	AcAre niyamaH
+sp017-000390_005	AcAre punarfzirniyamam vedayate teऽsurA helayo helaya iti kurvantaH parAbaBUvuH iti
+sp017-000391_005	astu tarhi prayoge
+sp017-000392_005	prayoge sarvalokasya
+sp017-000393_005	yadi prayoge DarmaH sarvo lokoऽByudayena yujyeta
+sp017-000394_005	kaScedAnIm Bavato matsaro yadi sarvo lokoऽByudayena yujyeta
+sp017-000395_005	na Kalu kaScinmatsaraH
+sp017-000396_005	prayatnAnarTakyam tu Bavati
+sp017-000397_005	PalavatA ca nAma prayatnena Bavitavyam
+sp017-000398_005	na ca prayatnaH PalAd vyatirecyaH
+sp017-000399_005	nanu ca ye kftaprayatnAste sADIyaH SabdAn prayokzyante ta eva sADIyo aByudayena yokzyante
+sp017-000400_005	vyatirekoऽpi vE lakzyate
+sp017-000401_005	dfSyate hi kftaprayatnAScApravIRAH akftaprayatnASca pravIRAH
+sp017-000402_005	tatra Palavyatirekoऽpi syAt
+sp017-000403_005	evam tarhi nApi jYAna eva Darmo nApi prayoga eva
+sp017-000404_005	kintarhi
+sp017-000405_005	SAstrapUrvake prayogeऽByudayastattulyam vedaSabdena
+sp017-000406_005	SAtrapUrvakam yaH SabdAn prayuNkte soऽByudayena yujyate
+sp017-000407_005	tattulyam vedaSabdena
+sp017-000408_005	vedaSabdA apyevam aBivadanti
+sp017-000409_005	yoऽgnizwomena yajate ya u cEnamevam veda
+sp017-000410_005	yognim nAciketam cinute ya u cEnamevam veda
+sp017-000411_005	apara Aha tattulyam vedaSabdeneti
+sp017-000412_005	yaTA vedaSabdA niyamapUrvam aDItAH Palavanto Bavanti evam yaH SAtrapUrvakam SabdAn prayuNkte soऽByudayena yujyata iti
+sp017-000413_005	aTavA punarastu jYAna eva Darma iti
+sp017-000414_005	nanu coktam jYAne Darma iti cet taTA aDarmaH iti
+sp017-000415_005	nEza dozaH SabdapramARakA vayam
+sp017-000416_005	yacCabda Aha tadasmAkam pramARam
+sp017-000417_005	SabdaSca SabdajYAne DarmamAha nApaSabdajYAne aDarmam
+sp017-000418_005	yacca punaraSizwApratizidDam nEva taddozAya Bavati nAByudayAya
+sp017-000419_005	tadyaTA hikkitahasitakaRqUyitAni nEva dozAya Bavanti nAByudayAya
+sp017-000420_005	aByupAyovApaSabdajYAnam SabdajYAne
+sp017-000421_006	aByupAyo vA apaSabdajYAnam SabdajYAne
+sp017-000422_006	aTavAByupAya evApaSabdajYAnam SabdajYAne
+sp017-000423_006	yo hyapaSabdAYjAnAti SabdAnapyasO jAnAti
+sp017-000424_006	tadevam jYAne DarmaH iti bruvatoऽrTAdApannam Bavati
+sp017-000425_006	apaSabdajYAnapUrvake SabdajYAne DarmaH iti
+sp017-000426_006	kUpaKAnakavadvA aTavA kUpaKAnakavad etadBavizyati
+sp017-000427_006	tadyaTA kUpaKAnakaH kUpam Kananyadyapi mfdA pAMsuBiScAvakIrRo Bavati
+sp017-000428_006	soऽpsu saYjAtAsu tata eva tam guRamAsAdayati tena ca sa dozo nirhaRyate
+sp017-000429_006	BUyasA cAByudayena yogo Bavati
+sp017-000430_007	evamihApi yadyapyapaSabdajYAne aDarmastaTApi yastvasO SabdajYAne Darmastena ca sa dozo nirGAnizyate
+sp017-000431_007	BUyasA cAByudayena yogo Bavizyati
+sp017-000432_007	AcAre niyama iti cedyAjYe karmaRi sa niyamo anyatrAniyamaH
+sp017-000433_007	yadapyucyate AcAre niyamaH iti yAjYe karmaRi sa niyamonyatrAniyamaH
+sp017-000434_007	evam hi SrUyate yarvARastarvARo nAma fzayo baBUvuH
+sp017-000435_007	pratyakzaDarmARaH parAparajYA viditaveditavyA aDigatayATAtaTyAH
+sp017-000436_007	te tatraBavanto yadvAnastadvAna iti prayoktavye yarvARastarvARa iti prayuYjate
+sp017-000437_007	yAjYe punaH karmaRi nApaBAzante
+sp017-000438_007	tEH punarasO yAjYe karmaRyapaBAzitam tataste parABUtAH
+sp017-000439_007	aTa vyAkaraRamityasya Sabdasya kaH padArTaH sUtram
+sp017-000440_007	sUtre vyAkaraRe zazWyarToऽnupapannaH
+sp017-000441_007	sUtre vyAkaraRe zazWyarTo nopapadyate
+sp017-000442_007	vyAkaraRasya sUtramiti
+sp017-000443_007	kim hi tadanyat sUtrAd vyAkaraRam yasyAdaH sUtram syAt
+sp017-000444_007	SabdApratipattiH
+sp017-000445_007	SabdAnAm cApratipattiH prApnoti
+sp017-000446_007	vyAkaraRAcCabdAnpratipadyAmahe iti
+sp017-000447_007	na hi sUtrata eva SabdAnpratipadyante
+sp017-000448_007	kim tarhi vyAKyAnataSca
+sp017-000449_007	nanu ca tadeva sUtram vigfhItam vyAKyAnam Bavati
+sp017-000450_007	na kevalAni carcApadAni vyAKyAnam vfdDiH At Ejiti
+sp017-000451_007	kim tarhi udAharaRam pratyudAharaRam vAkyADyAhAra ityetatsamuditam vyAKyAnam Bavati
+sp017-000452_007	evam tarhi SabdaH
+sp017-000453_007	Sabde lyuqarTaH
+sp017-000454_007	yadi Sabdo vyAkaraRam lyuqarTo nopapadyate
+sp017-000455_007	vyAkriyante SabdA aneneti vyAkaraRam
+sp017-000456_007	na hi Sabdena kiYcid vyAkriyate
+sp017-000457_007	kena tarhi sUtreRa
+sp017-000458_007	Bave ca tadDitaH
+sp017-000459_007	Bave ca tadDito nopapadyate
+sp017-000460_007	vyAkaraRe Bavo yogo vEyAkaraRaH iti
+sp017-000461_007	na hi Sabde Bavo yogaH
+sp017-000462_007	kva tarhi sUtre
+sp017-000463_007	proktAdayaSca tadDitA nopapadyante
+sp017-000464_007	pARininA proktam pARinIyam
+sp017-000465_007	ApiSalam kASakftsnamiti
+sp017-000466_007	nahi pARininA SabdAH proktAH
+sp017-000467_007	kim tarhi sUtram
+sp017-000468_007	Bave ca tadDitaH proktAdayaSca tadDitAH iti
+sp017-000469_007	na proktAdayaSca tadDitAH ityeva Baveऽpi tadDitaScoditaH syAt
+sp017-000470_007	purastAdidamAcAryeRa dfzwam Bave ca tadDitaH iti tatpaWitam
+sp017-000471_007	tata uttarakAlamidam dfzwam proktAdayaSca tadDitAH iti tadapi paWitam
+sp017-000472_007	na cedAnImAcAryAH sUtrARi kftvA nivartayanti
+sp017-000473_007	ayam tAvat adozo yaducyate Sabde lyuqarTaH iti
+sp017-000474_007	nAvaSyam karaRADikaraRayoreva lyuqviDIyate
+sp017-000475_007	kim tarhi anyezvapi kArakezu kftyalyuwo bahulam iti
+sp017-000476_007	tadyaTA praskandanam prapatanamiti
+sp017-000477_007	aTavA SabdErapi SabdA vyAkriyante
+sp017-000478_007	tadyaTA gOrityukte sarve sandehA nivartante nASvo na gardaBa iti
+sp017-000479_007	ayam tarhi dozaH Bave ca tadDitaH proktAdayaSca tadDitAH iti
+sp017-000480_007	evam tarhi lakzyalakzaRe vyAkaraRam
+sp017-000481_007	lakzyam ca lakzaRam cEtatsamuditam vyAkaraRam BavatIti
+sp017-000482_007	kim punarlakzyam kim lakzaRam
+sp017-000483_007	Sabdo lakzyaH sUtram lakzaRam
+sp017-000484_007	evamapi ayam dozaH samudAye vyAkaraRaSabdaH pravftto avayave nopapadyate
+sp017-000485_007	sUtrARi cApyaDIyAna izyate vEyAkaraRa iti
+sp017-000486_007	nEza dozaH samudAyezu hi SabdAH pravfttA avayavezvapi vartante
+sp017-000487_007	tadyaTA pUrve paYjAlAH uttare paYcAlAH tElam Buktam Gftam Buktam Suklo nIlaH kapilaH kfzRa iti
+sp017-000488_007	evamayam samudAye vyAkaraRaSabdaH pravfttoऽvayavezvapi vartate
+sp017-000489_007	aTa vA punarastu sUtram
+sp017-000490_007	nanu coktam sUtre vyAkaraRe zazWyarToऽnupapannaH iti
+sp017-000491_007	nEza dozaH vyapadeSivadBAvena Bavizyati
+sp017-000492_007	yadapyucyate SabdApratipattiriti
+sp017-000493_007	na hi sUtrata eva SabdAn pratipadyante
+sp017-000494_007	kintarhi vyAKyAnataSceti
+sp017-000495_007	parihftametat tadeva sUtram vigfhItam vyAKyAnam BavatIti
+sp017-000496_007	nanu coktam na kevalAni carcApadAni vyAKyAnam vfdDiH At Ejiti
+sp017-000497_007	kintarhi udAharaRam pratyudAharaRam vAkyADyAhAra ityetatsamuditam vyAKyAnam Bavatiti
+sp017-000498_007	avijAnata etadevam Bavati
+sp017-000499_007	sUtrata eva hi SabdAnpratipadyante
+sp017-000500_007	yo hyutsUtram kaTayennAdo gfhyeta
+sp017-000501_007	aTa kimarTo varRAnAmupadeSaH
+sp017-000502_007	vfttisamavAyArTa upadeSaH
+sp017-000503_007	vfttisamavAyArTo varRAnAmupadeSaH
+sp017-000504_007	kimidam vfttisamavAyArTa iti
+sp017-000505_007	vfttaye samavAyo vfttisamavAyaH
+sp017-000506_007	vfttyarTo vA samavAyo vfttisamavAyaH
+sp017-000507_007	vfttiprayojano vA samavAyo vfttisamavAyaH
+sp017-000508_007	kA punarvfttiH SAstrapravfttiH
+sp017-000509_007	aTa kaH samavAyaH
+sp017-000510_007	varRAnAm AnupUrvyeRa sanniveSaH
+sp017-000511_007	aTa ka upadeSaH uccAraRam
+sp017-000512_007	kuta etat diSiruccAraRakriyA
+sp017-000513_007	upadizwA ime varRA iti
+sp017-000514_007	anubanDakaraRArTaSca varRAnAmupadeSaH
+sp017-000515_007	sa eza varRAnAmupadeSo vfttisamavAyArTaScAnubanDakaraRArTaSca
+sp017-000516_007	vfttisamavAyaScAnubanDakaraRam ca pratyAhArArTam
+sp017-000517_007	pratyAhAro vfttyarTaH
+sp017-000518_007	izwabudDarTaSca varRAnAmupadeSaH
+sp017-000519_007	izwAn varRAn BotsyAmahe iti
+sp017-000520_007	na hi anupadiSya varRAn izwA varRAH SakyA vijYAtum
+sp017-000521_008	izwabudDyarTaSceti cedudAttAnudAttasvaritAnunAsikadIrGaplutAnAm upadeSaH kartavyaH
+sp017-000522_008	evaNguRA api hi varRA izyante
+sp017-000523_008	AkftyupadeSAtsidDam
+sp017-000524_008	avarRAkftirupadizwA sarvAvarRakulam grahIzyati
+sp017-000525_008	taTevarRAkftiH taTovarRAkftiH
+sp017-000526_008	AkftyupadeSAtsidDamiti cetsaMvftAdInAm pratizeDo vaktavyaH
+sp017-000527_008	ke punaH saMvftAdayaH
+sp017-000528_008	saMvftaH kalo DmAta eRIkfto ambUkftoऽrdDako grasto nirastaH pragIta upagItaH kzviRRo romaSa iti
+sp017-000529_008	apara Aha
+sp017-000530_008	grastam nirastam avalambitam nirhatamambUkftam DmAtamaTo vikampitam
+sp017-000531_008	sandazwameRIkftamarDakam drutam vikIrRametAH svaradozaBAvanAH
+sp017-000532_008	nEza dozaH
+sp017-000533_008	gargAdibidAdipAWAt saMvftAdInAm nivfttirBavizyati
+sp017-000534_008	samudAyasADutvArTam tu gargAdibidAdipAWaH
+sp017-000535_008	astyanyad gargAdibidAdipAWe prayojanam
+sp017-000536_008	kim samudAyAnAm sADutvam yaTA syAditi
+sp017-000537_008	pratyApatti vacanam
+sp017-000538_008	evam tarhyazwAdaSaDA BinnAm nivfttakalAdikAmavarRasya pratyApattim vakzyAmi
+sp017-000539_008	sA tarhi vaktavyA
+sp017-000540_008	liNgArTA tu pratyApattiH
+sp017-000541_008	liNgArTA sA tarhi Bavati
+sp017-000542_008	tattarhi vaktavyam
+sp017-000543_008	yadyapyetaducyate
+sp017-000544_008	aTa vetarhi anekamanubanDaSatam noccAryam itsaYjYA ca na vaktavyA
+sp017-000545_008	lopaSca na vaktavyaH
+sp017-000546_008	yadanubanDEH kriyate tatkalAdiBiH karizyate
+sp017-000547_008	siDyatyevam apARinIyam tu Bavati
+sp017-000548_008	yaTAnyAsamevAstu
+sp017-000549_008	nanu coktam AkftyupadeSAtsidDaScetsaMvftAdInAm pratizeDaH iti
+sp017-000550_008	parihftametat gargAdibidAdipAWAtsaMvftAdInAm nivfttirBavizyatIti
+sp017-000551_008	nanu cAnyad gargAdibidAdipAWe prayojanamuktam
+sp017-000552_008	kim samudAyAnAm sADutvam yaTA syAditi
+sp017-000553_008	evam tarhi uBayamanena kriyate
+sp017-000554_008	pAWaScEva viSezyate kalAdayaSca nivartyante
+sp017-000555_008	kaTam punarekena yatnenoBayam laByam
+sp017-000556_008	laByamityAha
+sp017-000557_008	kaTam dvigatA api hetavo Bavanti
+sp017-000558_008	tadyaTA AmrASca siktAH pitaraSca prIRitA iti
+sp017-000559_008	taTA vAkyAni dvizWAni Bavanti
+sp017-000560_008	Sveto DAvati alambusAnAm yAteti
+sp017-000561_008	aTa vA idam tAvadayam prazwavyaH
+sp017-000562_008	kveme saMvftAdayaH SrUyeranniti
+sp017-000563_008	Agamezu AgamAH SudDAH paWyante
+sp017-000564_008	vikArezu tarhi
+sp017-000565_008	vikArA api SudDAH paWyante
+sp017-000566_008	pratyayezu tarhi
+sp017-000567_008	pratyayAH api SudDAH paWyante
+sp017-000568_008	DAtuzu tarhi
+sp017-000569_008	DAtavoऽpi SudDaH paWyante
+sp017-000570_008	prAtipadikezu tarhi prAtipadikAnyapi SudDAni paWyante
+sp017-000571_008	yAni tarhyagrahaRAni prAtipadikAni
+sp017-000572_008	etezAmapi svaravarRAnupUrvIjYAnArTamupadeSaH kartavyaH
+sp017-000573_008	SaSaH zazaH iti mA BUt
+sp017-000574_008	palASaH palAza iti mA BUt
+sp017-000575_008	maYcako maYjaka iti mA BUt
+sp017-000576_008	AgamASca vikArASca pratyayAH saDAtuBiH
+sp017-000577_008	uccAryante tatastezu neme prAptAH kalAdayaH
+sp017-000578_009	aTa dvitIyam pratyAhArAhnikam
+sp017-000579_009	aiuR
+sp017-000580_009	akArasya vivftopadeSa AkAragrahaRArTaH
+sp017-000581_009	akArasya vivftopadeSaH kartavyaH
+sp017-000582_009	kim prayojanam
+sp017-000583_009	AkAragrahaRArTaH
+sp017-000584_009	akAraH savarRagrahaRenAkAramapi taTA gfhRIyAt
+sp017-000585_009	kim ca kAraRam na gfhRIyAt
+sp017-000586_009	vivAraBedAt
+sp017-000587_009	kimucyate vivAraBedAditi na punaH kAlaBedAdapi
+sp017-000588_009	yaTEva hyayam vivAraBinna evam kAlaBinnoऽpi
+sp017-000589_009	kimucyata iti
+sp017-000590_009	satyameva tat
+sp017-000591_009	vakzyati tulyAsyaprayatnam savarRamityatrAsyagrahaRasya prayojanam
+sp017-000592_009	Asye yezAm tulyo deSaH prayatnaSca te savarRasaYjYA BavantIti
+sp017-000593_009	bAhyaSca punarAsyAtkAlaH
+sp017-000594_009	tena syAdeva kAlaBinnasya grahaRam na punarvivAraBinnasya
+sp017-000595_009	kim punaridam vivftasyopadiSyamAnasya prayojanamanvAKyAyate AhosvitsaMvftasyopadiSyamAnasya vivftopadeSaScodyate
+sp017-000596_009	vivftasyopadiSyamAnasya prayojanamanvAKyAyate
+sp017-000597_009	kaTam jYAyate
+sp017-000598_009	yadayam a a ityakArasya vivftasya saMvftatApratyApattim SAsti
+sp017-000599_009	nEtadasti jYApakam
+sp017-000600_009	asti hi anyadetasya vacane prayojanam
+sp017-000601_009	kim atiKawvaH atimAla ityatrAntaryato vivftasya vivftaH prApnoti
+sp017-000602_009	saMvftaH syAdityevamarTA pratyApattiH
+sp017-000603_009	nEtadasti nEva loke na ca vede akAro vivftosti
+sp017-000604_009	kastarhi saMvftaH yosti sa Bavizyati
+sp017-000605_009	tadetatpratyApattivacanam jYApakameva Bavizyati vivftasyopadiSyamAnasya prayojanamanvAKyAyate iti
+sp017-000606_009	kaH punaratra viSezaH
+sp017-000607_009	vivftasyopadiSyamAnasya prayojanamanvAKyAyeta saMvftasyopadiSyamAnasya vA vivftopadeSaScodyeteti
+sp017-000608_009	na Kalu kaScidviSezaH
+sp017-000609_009	AhopuruzikAmAtram tu
+sp017-000610_009	BavAnAha saMvftasyopadiSyamAnasya vivftopadeSaScodyata iti
+sp017-000611_009	vayam tu brUmo vivftasyopadiSyamAnasya prayojanamanvAKyAyata iti
+sp017-000612_009	tasya vivftopadeSAdanyatrApi vivftopadeSaH savarRagrahaRArTaH
+sp017-000613_009	tasyEtasyAkzarasamAmnAyikasya vivftopadeSAdanyatrApi vivftopadeSaH kartavyaH
+sp017-000614_009	DAtuprAtipadikapratyayanipAtasTasya
+sp017-000615_009	kim prayojanam savarRagrahaRArTaH
+sp017-000616_009	AkzarasamAmnAyikenA asya grahaRam yaTA syAt
+sp017-000617_009	kim ca kAraRam na syAt
+sp017-000618_009	vivAraBedAdeva
+sp017-000619_009	AcAryapravfttirjYApayati BavatyAkzarasamAmnAyikena DAtvAdisTasya grahaRamiti
+sp017-000620_009	yadayamakaH savarRe dIrGa iti pratyAhAreऽko grahaRam karoti
+sp017-000621_009	kaTam kftvA jYApakam
+sp017-000622_009	na hi dvayorAkzarasamAmnAyikayoryugapatsamavasTAnamasti
+sp017-000623_009	nEtadasti jYApakam
+sp017-000624_009	asti hyanyadetasya vacane prayojanam
+sp017-000625_009	kim yasyAkzarasamAmnAyikena grahaRamasti tadarTametatsyAt KawvAQakam mAlAQakam iti
+sp017-000626_009	sati prayojane na jYApakam Bavati
+sp017-000627_009	tasmAdvivftopadeSaH kartavyaH
+sp017-000628_009	ka eza yatnaScodyate vivfta upadeSo nAma
+sp017-000629_009	vivfto vA upadiSyeta saMvfto vA
+sp017-000630_009	ko nvatra viSezaH
+sp017-000631_009	sa eza evamarTo yatnaH kriyate
+sp017-000632_009	yAnyetAni prAtipadikAnyagrahaRAni tezAm etenAByupAyenopadeSaScodyate tad guru Bavati
+sp017-000633_009	tasmAd vaktavyam DAtvAdisTaSca vivfta iti
+sp017-000634_009	dIrGaplutavacane ca saMvftanivfttyarTo vivftopadeSaH kartavyaH
+sp017-000635_009	dIrGaplutO saMvftO mA BUtAmiti
+sp017-000636_009	vfkzAByAm devadattA iti
+sp017-000637_009	nEza dozaH nEva loke na ca vede dIrGaplutO saMvftO staH
+sp017-000638_009	kO tarhi vivftO yO stastO BavizyataH
+sp017-000639_009	sTAnI prakalpayedetAvanusvAro yaTA yaRam
+sp017-000640_009	saMvftaH sTAnI saMvftO dIrGaplutO prakalpayet
+sp017-000641_009	anusvAro yaTA yaRam
+sp017-000642_009	tadyaTA sa~yyantA sa~vvatsaraH ya~llokam ta~llokamiti
+sp017-000643_009	anusvAraH sTAnI yaRamanunAsikam prakalpayati
+sp017-000644_009	vizama upanyAsaH
+sp017-000645_009	yuktam yatsatastatra praklfptirBavati
+sp017-000646_009	santi hi yaRaH sAnunAsikA niranunAsikASca
+sp017-000647_009	dIrGaplutO punarnEva loke nEva ca vede saMvftO staH
+sp017-000648_009	kO tarhi vivftO yO stastO BavizyataH
+sp017-000649_009	evamapi kuta etat
+sp017-000650_009	tulyasTAnO prayatnaBinnO BavizyataH
+sp017-000651_009	na punastulyapratyatnO sTAnaBinnO syAtAmIkAra UkAro veti
+sp017-000652_009	vakzyati sTAnentaratamaH ityatra sTAna ityanuvartamAne punaH sTAnegrahaRasya prayojanam
+sp017-000653_009	yatrAnekaviDamAntaryam tatra sTAnata Antaryam balIyo Bavati iti
+sp017-000654_009	tatrAnuvfttinirdeSe savarRAnAm grahaRam na prApnoti asya cvO yasyeti ca
+sp017-000655_009	kim kAraRam anaRtvAt
+sp017-000656_009	na hyeteऽRo yeऽnuvfttO
+sp017-000657_009	ke tarhi yeऽkzarasamAmnAye upadiSyante
+sp017-000658_009	ekatvAdakArasya sidDam
+sp017-000659_009	ekoऽyamakAro yaScAkzarasamAmnAye yaScAnuvfttO yaSca DAtvAdisTaH
+sp017-000660_009	anubanDasaNkarastu prApnoti
+sp017-000661_009	karmaRyaR Atoऽnupasarge kaH iti keऽpi Ritkftam prApnoti
+sp017-000662_009	ekAjanekAjgrahaRezu cAnupapattirBavati
+sp017-000663_009	tatra ko dozaH
+sp017-000664_009	kiriRA giriRetyekAjlakzaRamantodAttatvam prApnoti
+sp017-000665_009	iha ca Gawena tarati Gawika iti dvyajlakzaRazWanna prApnoti
+sp017-000666_009	dravyavaccopacArAH prApnuvanti
+sp017-000667_009	tadyaTA dravyezu nEkena GawenAneko yugapatkAryam karoti
+sp017-000668_009	evam imamakAram nAneko yugapaduccArayet
+sp017-000669_010	vizayeRa tu nAnAliNgakaraRAtsidDam
+sp017-000670_010	yadayam vizaye vizaye nAnAliNgam akAram karoti
+sp017-000671_010	karmaRyaR Atonupasarge ka iti
+sp017-000672_010	tena jYAyate nAnubanDasaNkaroऽstIti
+sp017-000673_010	yadi hi syAnnAnAliNgakaraRamanarTakam syAdekamevAyam sarvaguRamuccArayet
+sp017-000674_010	nEtadasti jYApakam
+sp017-000675_010	itsaYjYApraklfptyarTametatsyAt
+sp017-000676_010	na hyayamanubanDEH SalyakavacCakya upacetum
+sp017-000677_010	itsaYjYAyAm hi dozaH syAt
+sp017-000678_010	Ayamya hi dvayoritsaYjYA syAt
+sp017-000679_010	kayoH AdyantayoH
+sp017-000680_010	evam tarhi vizayeRa punarliNgakaraRAtsidDam
+sp017-000681_010	yadayam vizaye vizaye punarliNgamakAram karoti
+sp017-000682_010	prAgdIvyatoऽR SivAdiByoऽRiti
+sp017-000683_010	tena jYAyate nAnubanDasaNkaroऽstIti
+sp017-000684_010	yadi hi syAtpunarliNgakaraRam anarTakam syAt
+sp017-000685_010	aTa vA punarastu vizayeRa tu nAnAliNgakaraRAtsidDamityeva
+sp017-000686_010	nanu coktam itsaYjYApraklfptyarTametatsyAditi
+sp017-000687_010	nEza dozaH lokata etatsidDam
+sp017-000688_010	tadyaTA loke kaScidevam devadattamAha
+sp017-000689_010	iha muRqo Bava iha jawilo Bava iha SiKI Baveti
+sp017-000690_010	yalliNgo yatrocyate talliNgastatropatizWate
+sp017-000691_010	evamayamakAro yalliNgo yatrocyate talliNgastatropasTAsyate
+sp017-000692_010	yadapyucyate ekAjanekAjgrahaRezu cAnupapattiH iti
+sp017-000693_010	ekAjanekAjgrahaRezu cAvfttisaNKyAnAt
+sp017-000694_010	ekAjanekAjgrahaRezu cAvftteH saNKyAnAdanekActvam Bavizyati
+sp017-000695_010	tadyaTA saptadaSa sAmiDenyo Bavantiti triH praTamAmanvAha triruttamAm ityAvfttitaH saptadaSatvam Bavati
+sp017-000696_010	evamihApyAvfttito anekActvam Bavizyati
+sp017-000697_010	BavedAvfttitaH kAryam parihftam
+sp017-000698_010	iha tu Kalu kiriRA giriRA ityekAjlakzaRamantodAttatvam prApnotyeva
+sp017-000699_010	etadapi sidDam kaTam lokataH
+sp017-000700_010	tadyaTA fzisahasramekAm kapilAmekEkaSaH sahasrakftvo dattvA tayA sarve te sahasradakziRAH sampannAH
+sp017-000701_010	evamihApyanekActvam Bavizyati
+sp017-000702_010	yadapyucyate dravyavaccopacArAH prApnuvantIti
+sp017-000703_010	Baved yadasamBavati kAryam tannAneko yugapatkuryAt
+sp017-000704_010	yattu Kalu samBavati kAryamanekoऽpi tadyugapatkaroti
+sp017-000705_010	tadyaTA Gawasya darSanam sparSanam vA
+sp017-000706_010	samBavati cedam kAryamakArasya uccAraRam nAma anekoऽpi tad yugapatkarizyati
+sp017-000707_010	AnyaBAvyam tu kAlaSabdavyavAyAt
+sp017-000708_010	AnyaBAvyam tvakArasya
+sp017-000709_010	kutaH kAlaSabdavyavAyAt
+sp017-000710_010	kAlavyavAyAt daRqa grahaRam
+sp017-000711_010	SabdavyavAyAt daRqaH
+sp017-000712_011	na cEkasyAtmano vyavAyena Bavitavyam
+sp017-000713_011	Bavati ced BavatyAnyaBAvyamakArasya
+sp017-000714_011	yugapacca deSapfTaktvadarSanAnmanyAmahe AnyaBAvyamakArasyeti
+sp017-000715_011	yadayam yugapaddeSapfTaktvezUpalaByate aSvaH arkaH arTaH iti
+sp017-000716_011	na hyeko devadatto yugapatsrugGne ca Bavati maTurAyAm ca
+sp017-000717_011	yadi punarime varRAH Sakunivat syuH
+sp017-000718_011	tadyaTA Sakunaya ASugAmitvAtpurastAdutpatitAH paScAd dfSyante
+sp017-000719_011	evamayamakAro da ityatra dfzwo Rqa ityatra dfSyate
+sp017-000720_011	nEvam Sakyam anityatvamevam syAt
+sp017-000721_011	nityASca SabdAH
+sp017-000722_011	nityezu ca Sabdezu kUwasTEravicAliBiH varREH BavitavyamanapAyopajanavikAriBiH
+sp017-000723_011	yadi cAyam da ityatra dfzwo Rqa ityatra dfSyeta nAyam kUwasTaH syAt
+sp017-000724_011	yadi punarime varRAH Adityavat syuH
+sp017-000725_011	tadyaTA eka AdityoऽnekADikaraRasTo yugapaddeSapfTakttvezUpalaByate
+sp017-000726_011	vizama upanyAsaH
+sp017-000727_011	nEko drazwA AdityamanekADikaraRasTam yugapad deSapfTaktvezUpalaBate
+sp017-000728_011	akAram punarupalaBate
+sp017-000729_011	akAramapi nopalaBate
+sp017-000730_011	kim kAraRam
+sp017-000731_011	SrotropalabDirbudDinirgrAhyaH prayogeRABijvalita AkASadeSaH SabdaH
+sp017-000732_011	ekam ca punaH AkASam
+sp017-000733_011	AkASadeSA api bahavaH
+sp017-000734_011	yAvatA bahavaH tasmAt AnyaBAvyamakArasya
+sp017-000735_011	AkftigrahaRAtsidDam
+sp017-000736_011	avarRAkftirupadizwA sarvamavarRakulam grahIzyati taTevarRAkftiH taTovarRAkftiH
+sp017-000737_011	tadvacca taparakaraRam evam ca kftvA taparAH kriyante
+sp017-000738_011	AkftigrahaRena atiprasaktamiti
+sp017-000739_011	nanu ca savarRagrahaRenAtiprasaktamiti kftvA taparAH kriyeran
+sp017-000740_011	pratyAKyAyate tat
+sp017-000741_011	savarReऽRgrahaRam apariBAzyamAkftigrahaRAdananyatvAcceti
+sp017-000742_011	halgrahaRezu ca
+sp017-000743_011	kim AkftigrahaRAt sidDamityeva
+sp017-000744_011	Jalo Jali avAttAm avAttam avAtta
+sp017-000745_011	yatrEtannAsti aR savarRAn gfhRAti iti
+sp017-000746_011	rUpasAmAnyAdvA sidDametat
+sp017-000747_011	tadyaTA tAneva SAwakAnAcCAdayAmo ye maTurAyAm tAneva SAlIn BuYjmahe
+sp017-000748_011	ye magaDezu tadevedam BavataH kArzApaRam yanmaTurAyAm gfhItam
+sp017-000749_011	anyasmiMScAnyasmin rUpasAmAnyAt tadevedamiti Bavati
+sp017-000750_011	evamihApi rUpasAmAnyAtsidDam

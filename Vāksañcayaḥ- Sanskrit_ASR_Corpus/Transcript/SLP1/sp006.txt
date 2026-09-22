@@ -1,0 +1,2161 @@
+sp006-000001_GB_00-00	SANkaraBAzyam
+sp006-000002_GB_00-00	marIcyAdIn agre sfzwvA prajApatIn pravfttilakzaRam Darmam grAhayAmAsa vedoktam
+sp006-000003_GB_00-00	dviviDo hi vedokto DarmaH pravfttilakzaRo nivfttilakzaRaSca
+sp006-000004_GB_00-00	dIrGeRa kAlena
+sp006-000005_GB_00-00	anuzWAtFRAm kAmodBavAt hIyamAnavivekavijYAnahetukena aDarmeRa aBiBUyamAne Darme
+sp006-000006_GB_00-00	pravarDamAne ca aDarme jagataH sTitim paripipAlayizuH sa AdikartA nArAyaRAKyo vizRuH
+sp006-000007_GB_00-00	brAhmaRatvasya hi rakzaRena rakzitaH syAt vEdiko DarmaH tadaDInatvAt varRASramaBedAnAm
+sp006-000008_GB_00-00	ajaH avyayo BUtAnAmISvaro nityaSudDabudDamuktasvaBAvaH api san svamAyayA dehavAniva jAta iva ca lokAnugraham kurvan iva lakzyate
+sp006-000009_GB_00-00	guRADikEH hi gfhItaH anuzWIyamAnaSca DarmaH pracayam gamizyatIti
+sp006-000010_GB_00-00	tam Darmam BagavatA yaTopadizwam vedavyAsaH sarvajYo BagavAn gItAKyEH saptaBiH SlokaSatEH upanibabanDa
+sp006-000011_GB_00-00	tadarTAvizkaraRAya anekEH vivftapadapadArTavAkyArTanyAyamapi atyantavirudDAnekArTavatvena lOkikEH gfhyamARam upalaBya
+sp006-000012_GB_00-00	aham vivekataH arTanirDAraRArTam saNkzepato vivaraRam karizyAmi
+sp006-000013_GB_00-00	tasya asya gItASAstrasya saNkzepataH prayojanam param niHSreyasam sahetukasya saMsArasya atyantoparamalakzaRam
+sp006-000014_GB_00-00	taTA imameva gItArTa Darmam uddiSya BagavatA eva uktam
+sp006-000015_GB_00-00	sa hi DarmaH suparyApto brahmaRaH padavedane iti anugItAsu
+sp006-000016_GB_00-00	kiYca anyadapi tatrEva uktam
+sp006-000017_GB_00-00	iha api ca ante uktam arjunAya
+sp006-000018_GB_00-00	san ISvarArpaRabudDyA anuzWIyamAnaH sattvaSudDaye Bavati PalABisanDivarjitaH
+sp006-000019_GB_00-00	taTA ca imam evArTam aBisanDAya vakzyati
+sp006-000020_GB_00-00	yoginaH karma kurvanti saNgam tyaktvAtmaSudDaye
+sp006-000021_GB_00-00	aBivyaYjayat viSizwaprayojanasambanDABiDeyavat gItASAstram
+sp006-000022_GB_00-00	yataH tadarTe vijYAte samastapuruzArTasidDiH ataH tadvivaraRe yatnaH kriyate mayA
+sp006-000023_GB_02	iti etadantaH prARinAm SokamohAdisaMsArabIjaBUta dozodBavakAraRapradarSanArTatvena vyAKyeyo granTaH
+sp006-000024_GB_02	taTAhi arjunena rAjyaguruputramitrasuhftsvajanasambanDibAnDavezu aham ezAm mama ete
+sp006-000025_GB_02	ityevam BrAntipratyayanimittasnehavicCedAdinimittO AtmanaH SokamohO pradarSitO
+sp006-000026_GB_02	SokamohAByAm hi aBiBUtavivekavijYAnaH svata eva kzAtraDarme yudDe pravfttaH api tasmAt yudDAt upararAma
+sp006-000027_GB_02	paraDarmam ca BikzAjIvanAdikam kartum pravavfte
+sp006-000028_GB_02	taTA ca sarvaprARinAm SokamohAdidozAvizwacetasAm svaBAvata eva svaDarmaparityAgaH pratizidDasevA ca syAt
+sp006-000029_GB_02	svaDarme pravfttAnAmapi tezAm vANmanaHkAyAdInAm pravfttiH PalABisanDipUrvikA eva sAhaNkArA ca Bavati
+sp006-000030_GB_02	tatra evam sati DarmADarmopacayAt izwAnizwajanmasuKaduHKa samprAptilakzaRaH saMsAraH anuparato Bavati
+sp006-000031_GB_02	ityataH saMsArabIjaBUtO SokamohO tayoSca sarvakarmasannyAsapUrvakAt AtmajYAnAt nAnyato nivfttiH iti
+sp006-000032_GB_02	tadupadidikzuH sarvalokAnugrahArTam arjunam nimittIkftya Aha BagavAnvAsudevaH
+sp006-000033_GB_02	aSocyAn ityAdi
+sp006-000034_GB_02	tatra kecidAhuH sarvakarmasannyAsapUrvakAt AtmajYAnanizWAmAtrAdeva kevalAt kEvalyam na prApyate eva
+sp006-000035_GB_02	kim tarhi agnihotrAdiSrOtasmArtakarmasahitAt jYAnAt kEvalyaprAptiH iti sarvAsu gItAsu niScitaH arTa iti
+sp006-000036_GB_02	jYApakam ca AhuH asya arTasya
+sp006-000037_GB_02	hiMsAdiyuktatvAt vEdikam karma aDarmAya itIyamapi ASaNkA na kAryA
+sp006-000038_GB_02	kaTam
+sp006-000039_GB_02	kzAtram karma yudDalakzaRam guruBrAtfputrAdihiMsAlakzaRam atyantam krUramapi svaDarmaH iti kftvA na aDarmAya
+sp006-000040_GB_02	tadakaraRe ca
+sp006-000041_GB_02	iti bruvatA yAvajjIvAdiSruticoditAnAm paSvAdihiMsAlakzaRAnAm ca karmaRAm prAgeva na aDarmatvam iti suniScitam uktam Bavati iti
+sp006-000042_GB_02	tadasat
+sp006-000043_GB_02	jYAnakarmanizWayoH viBAgavacanAt budDidvayASrayayoH
+sp006-000044_GB_02	aSocyAn ityAdinA BagavatA yAvat
+sp006-000045_GB_02	svaDarmamapi cAvekzya iti etadantena granTena yat paramArTAtmatattvanirUpaRam kftam tatsANKyam
+sp006-000046_GB_02	tadvizayA budDiH Atmano janmAdi zaqvikriyABAvAt akartA AtmA iti prakaraRArTanirUpaRAt yA jAyate sA sANKyAbudDiH
+sp006-000047_GB_02	sA yezAm jYAninAm ucitA Bavati
+sp006-000048_GB_02	te sANKyAH
+sp006-000049_GB_02	etasyA budDeH janmanaH prAk Atmano dehAdivyatiriktatvakartftvaBoktftvAdyapekzo DarmADarmavivekapUrvako mokzasADanAnuzWAnanirUpaRalakzaRo yogaH
+sp006-000050_GB_02	tadvizayA budDiH yogabudDiH
+sp006-000051_GB_02	sA yezAm karmiRAm ucitA Bavati te yoginaH
+sp006-000052_GB_02	tayoSca sAN KyabudDyASrayAm jYAnayogena nizWAm sAN KyAnAm viBaktAm vakzyati
+sp006-000053_GB_02	taTA ca yogabudDyASrayAm karmayogena nizWAm viBaktAm vakzyati
+sp006-000054_GB_02	karmayogena yoginAm iti
+sp006-000055_GB_02	evam sAN KyabudDim yogabudDim ca ASritya dve nizWe viBakte BagavatA eva ukte jYAnakarmaRoH
+sp006-000056_GB_02	kartftvAkartftvEkatvAnekatva budDyASrayayoH ekapuruzASrayatvAsamBavam paSyatA
+sp006-000057_GB_02	yaTA etadviBAgavacanam taTEva darSitam SAtapaTIye brAhmaRe
+sp006-000058_GB_02	etameva pravrAjino lokamicCanto brAhmaRAH pravrajanti
+sp006-000059_GB_02	bfhadAraRyake catuH catuH dvAviMSati iti sarvakarmasannyAsam viDAya tacCezeRa
+sp006-000060_GB_02	kim prajayA karizyAmo yezAm noऽyamAtmAyam lokaH
+sp006-000061_GB_02	bfhadAraRyake catur catuH dvAviMSati iti
+sp006-000062_GB_02	tatra eva ca
+sp006-000063_GB_02	bfhadAraRyake ekam catuH saptadaSa iti avidyAkAmavata eva sarvARi karmARi SrOtAdIni darSitAni
+sp006-000064_GB_02	teByo vyutTAya pravrajanti
+sp006-000065_GB_02	iti vyutTAnamAtmAnameva lokam icCataH akAmasya vihitam
+sp006-000066_GB_02	tadetat viBAgavacanam anupapannam syAt
+sp006-000067_GB_02	yadi SrOtakarmajYAnayoH samucCayoऽBipretaH syAdBagavataH
+sp006-000068_GB_02	na ca arjunasya praSna upapanno Bavati
+sp006-000069_GB_02	jyAyasI cetkarmaRaste ityAdiH
+sp006-000070_GB_02	ekapuruzAnuzWeyatvAsamBavam budDikarmaRoH BagavatA pUrvam anuktam
+sp006-000071_GB_02	kaTam arjunaH aSrutam budDeSca karmaRo jyAyastvam Bagavati aDyAropayet mfzA eva
+sp006-000072_GB_02	kiYca yadi budDikarmaRoH sarvezAm samucCaya uktaH syAt arjunasya api sa ukta eva iti
+sp006-000073_GB_02	iti kaTam uBayoH upadeSe sati anyataravizayaH eva praSnaH syAt
+sp006-000074_GB_02	na hi pittapraSamanArTino vEdyena maDuram SItam ca Boktavyam iti upadizwe
+sp006-000075_GB_02	tayoH anyatarat pittapraSamanakAraRam brUhi iti praSnaH samBavati
+sp006-000076_GB_02	aTa arjunasya BagavaduktavacanArTavivekAnavaDAraRanimittaH praSnaH kalpayet
+sp006-000077_GB_02	taTApi BagavatA praSnAnurUpam prativacanam deyam
+sp006-000078_GB_02	mayA budDikarmaRoH samucCaya uktaH kimarTam itTam tvam BrAntaH asi iti
+sp006-000079_GB_02	na tu punaH prativacanam ananurUpam pfzwAt anyadeva
+sp006-000080_GB_02	dve nizWe mayA purA prokte iti vaktum yuktam
+sp006-000081_GB_02	na api smArtenEva karmaRA budDeH samuccaye aBiprete viBAgavacanAdi sarvam upapannam
+sp006-000082_GB_02	kiYca kzatriyasya yudDam smArtam karma svaDarma iti jAnataH
+sp006-000083_GB_02	iti upAlamBaH anupapannaH
+sp006-000084_GB_02	tasmAdgItASAstre IzanmAtreRApi SrOtena smArtena vA karmaRA AtmajYAnasya samuccayo na kenaciddarSayitum SakyaH
+sp006-000085_GB_02	yasya tu ajYAnAt rAgAdidozato vA karmaRi pravfttasya yajYena dAnena tapasA vA viSudDasattvasya
+sp006-000086_GB_02	jYAnamutpannam paramArTatattvavizayamekameva idam sarvam brahma akartf ca iti
+sp006-000087_GB_02	tasya karmaRi karmaprayojane ca nivftte api lokasaNgrahArTam yatnapUrvam yaTA pravfttaH
+sp006-000088_GB_02	taTA eva karmaRi pravfttasya yatpravfttirUpam dfSyate na tatkarma yena budDeH samuccayaH syAt
+sp006-000089_GB_02	yaTA Bagavato vAsudevasya kzAtrakarmacezwitam na jYAnena samuccIyate puruzArTasidDaye
+sp006-000090_GB_02	tadvat PalABisanDyahaNkArABAvasya tulyatvAt viduzaH
+sp006-000091_GB_02	yaTA ca svargAdikAmArTinaH agnihotrAdikAmasADananuzWAnAya AhitAgneH kAmye eva agnihotrAdO pravfttasya
+sp006-000092_GB_02	sAmi kfte vinazwe api kAme tadeva agnihotrAdyanutizWataH api na tatkAmyam agnihotrAdi Bavati
+sp006-000093_GB_02	taTA ca darSayati BagavAn
+sp006-000094_GB_02	iti tatra tatra
+sp006-000095_GB_02	iti tattu praviBajya vijYeyam
+sp006-000096_GB_02	tatkaTam
+sp006-000097_GB_02	yadi tAvat pUrve janakAdayaH tattvavidaH api pravfttakarmARaH syuH
+sp006-000098_GB_02	te lokasaNgrahArTam
+sp006-000099_GB_02	iti jYAnenEva saMsidDim AsTitAH
+sp006-000100_GB_02	karmasannyAse prApteऽpi karmaRA saha eva saMsidDim AsTitA
+sp006-000101_GB_02	na karmasannyAsam kftavanta yezaH arTaH
+sp006-000102_GB_02	aTa na te tattvavidaH
+sp006-000103_GB_02	ISvarasamarpitena karmaRA sADanaBUtena saMsidDim sattvaSudDim jYAnotpattilakzaRAm vA saMsidDim AsTitA janakAdaya iti vyAKyeyam
+sp006-000104_GB_02	etameva arTam vakzyati BagavAn
+sp006-000105_GB_02	iti uktvA sidDim prAptasya ca punaH jYAnanizWAm vakzyati
+sp006-000106_GB_02	tasmAdgItAsu kevalAdeva tattvajYAnAt mokzaprAptiH na karmasamuccitAt
+sp006-000107_GB_02	iti niScitaH arTaH
+sp006-000108_GB_02	yaTA cAyamarTaH taTA prakaraRaSo viBajya tatra tatra darSayizyAmaH
+sp006-000109_GB_02	tatra evam DarmasammUQacetaso mahati SokasAgare nimagnasya arjunasya
+sp006-000110_GB_02	anyatra AtmajYAnAt udDaraRam apaSyan BagavAnvAsudevaH tataH arjunam uddiDArayizuH AtmajYAnAyAvatArayan Aha
+sp006-000111_GB_02	na SocyA aSocyAH BIzmadroRAdayaH
+sp006-000112_GB_02	sadvfttatvAt paramArTarUpeRa ca nityatvAt tAn
+sp006-000113_GB_02	anuSocitavAnasi te mriyante mannimittam aham tEH vinABUtaH kim karizyAmi rAjyasuKAdinA iti
+sp006-000114_GB_02	tvam prajYAvAdAn prajYAvatAm budDimatAm vAdAMSca vacanAni ca BAzase
+sp006-000115_GB_02	tadetat mOQyam pARqityam ca virudDam Atmani darSayasi unmatta iva iti aBiprAyaH
+sp006-000116_GB_02	yasmAt gatAsUn gataprARAn mftAn agatAsUn agataprARAn jIvataH ca na anuSocanti paRqitAH AtmajYAH
+sp006-000117_GB_02	paRqA AtmavizayA budDiH yezAm te hi paRqitAH
+sp006-000118_GB_02	pARqityam nirvidya
+sp006-000119_GB_02	bfhadAraRyake tri paYca ekam iti SruteH
+sp006-000120_GB_02	paramArTatastu nityAn aSocyAn anuSocasi ato mUQaH asi iti aBiprAyaH
+sp006-000121_GB_02	kutaste aSocyAH yato nityAH kaTam
+sp006-000122_GB_02	na tu eva jAtu kadAcit aham nAsam kim tu Asameva
+sp006-000123_GB_02	atItezu dehotpattivinASezu nityameva aham Asam iti aBiprAyaH
+sp006-000124_GB_02	taTA na tvam na AsIH kim tu AsIH eva
+sp006-000125_GB_02	trizvapi kAlezu nityA AtmasvarUpeRa iti arTaH
+sp006-000126_GB_02	dehaBedAnuvfttyA bahuvacanam na AtmaBedABiprAyeRa
+sp006-000127_GB_02	tatra kaTamiva nitya AtmA iti dfzwAntamAha
+sp006-000128_GB_02	dehaH asya astIti dehI tasya dehino dehavadAtmanaH asmin vartamAne dehe yaTA yena prakAreRa kOmAram kumAraBAvo bAlyAvasTA
+sp006-000129_GB_02	yOvanam yUno BAvo maDyamAvasTA jarA vayohAniH jIrRAvasTA iti etAH tisraH avasTAH anyonyavilakzaRAH
+sp006-000130_GB_02	tAsAm praTamAvasTAnASe na nASo
+sp006-000131_GB_02	kim tarhi
+sp006-000132_GB_02	avikriyasya eva dvitIyatftIyAvasTAprAptiH Atmano dfzwA
+sp006-000133_GB_02	taTA tadvadeva dehAt anyo dehAntaram tasya prAptiH dehAntaraprAptiH avikriyasya eva Atmana ityarTaH
+sp006-000134_GB_02	DIro DImAn tatra evam sati na muhyati na moham Apadyate
+sp006-000135_GB_02	yadyapi AtmavinASanimitto moho na samBavati nitya AtmA iti vijYAnataH
+sp006-000136_GB_02	taTApi SItozRasuKaduHKaprAptinimitto moho lOkiko dfSyate
+sp006-000137_GB_02	suKaviyoganimitto duHKasaMyoganimittaSca Soka iti etat arjunasya vacanamASaNkya Aha
+sp006-000138_GB_02	mAtrA ABiH mIyante SabdAdaya iti SrotrAdIni indriyARi
+sp006-000139_GB_02	mAtrARAm sparSAH SabdAdiBiH saMyogAH te
+sp006-000140_GB_02	SItozRasuKaduHKadAH SItam uzRam suKam duHKam ca prayacCanti iti
+sp006-000141_GB_02	aTavA spfSyante iti sparSA vizayAH SabdAdayaH
+sp006-000142_GB_02	mAtrASca sparSASca SItozRasuKaduHKadAH
+sp006-000143_GB_02	SItam kadAcit suKam kadAcit duHKam taTA uzRamapi anityarUpam
+sp006-000144_GB_02	suKaduHKe punaH niyatarUpe yato na vyaBicarataH
+sp006-000145_GB_02	ataH tAByAm pfTak SItozRayoH grahaRam
+sp006-000146_GB_02	yasmAt te mAtrAsparSAdaya AgamApAyina AgamApAyaSIlAH tasmAt anityA
+sp006-000147_GB_02	ataH tAn SItozRAdIn titikzasva prasahasva
+sp006-000148_GB_02	tezu harzam vizAdam ca mA kArzIH ityarTaH
+sp006-000149_GB_02	SItozRAdIn sahataH kim syAditi SfRu
+sp006-000150_GB_02	yam hi puruzam samaduHKasuKam same duHKasuKe yasya tam samaduHKasuKam suKaduHKaprAptO harzavizAdarahitam DIram DImantam
+sp006-000151_GB_02	na vyaTayanti na cAlayanti nityAtmadarSanAt ete yaToktAH SItozRAdayaH
+sp006-000152_GB_02	sa nityAtmadarSananizWo dvandvasahizRuH amftatvAya amftaBAvAya mokzAya kalpate samarTo Bavati
+sp006-000153_GB_02	itaSca SokamohO akftvA SItozRAdisahanam yuktam yasmAt
+sp006-000154_GB_02	nAsataH avidyamAnasya SItozRAdeH sakAraRasya na vidyate nAsti BAvo Bavanam astitA
+sp006-000155_GB_02	na hi SItozRAdi sakAraRam pramAREH nirUpyamARam vastusamBavati
+sp006-000156_GB_02	vikAro hi saH vikAraSca vyaBicarati
+sp006-000157_GB_02	yaTA GawAdisaMsTAnam cakzuzA nirUpyamARam mfdvyatirekeRAnupalabDeH asat
+sp006-000158_GB_02	taTA sarvo vikAraH kAraRavyatirekeRAnupalabDeH asan
+sp006-000159_GB_02	janmapraDvaMsAByAm prAk UrDvam ca anupalabDeH
+sp006-000160_GB_02	mfdAdikAraRasya tatkAraRasya ca tat kAraRavyatirekeRAnupalabDeH asattvam
+sp006-000161_GB_02	tadasattve ca sarvABAvaprasaNga iti cet na sarvatra budDidvayopalabDeH sadbudDiH asadbudDiH iti
+sp006-000162_GB_02	yadvizayA budDiH na vyaBicarati tat sat
+sp006-000163_GB_02	yadvizayA budDi vyaBicarati tadasat
+sp006-000164_GB_02	iti sadasadviBAge budDitantre sTite sarvatra dve budDI sarvEH upalaByete samAnADikaraRe
+sp006-000165_GB_02	na nIlotpalavat san GawaH san pawaH san hastI ityevam sarvatra
+sp006-000166_GB_02	tayoH budDyoH GawAdibudDiH vyaBicarati
+sp006-000167_GB_02	taTA ca darSitam
+sp006-000168_GB_02	na tu sadbudDiH
+sp006-000169_GB_02	tasmAt GawAdibudDivizayaH asan vyaBicArAt
+sp006-000170_GB_02	na tu sadbudDivizayaH avyaBicArAt
+sp006-000171_GB_02	Gawe vinazwe GawabuddO vyaBicarantyAm sadbudDiH api vyaBicarati iti cet na pawAdO api sadbudDidarSanAt
+sp006-000172_GB_02	viSezaRavizayA eva sA sadbudDiH
+sp006-000173_GB_02	sadbudDivat GawabudDiH api GawAntare dfSyate iti cet na pawAdO adarSanAt
+sp006-000174_GB_02	sadbudDirapi nazwe Gawe na dfSyate iti cet na
+sp006-000175_GB_02	viSezyABAvAt sadbudDiH viSezaRavizayA satI viSezyABAve viSezaRa anupapattO kiMvizayA syAt
+sp006-000176_GB_02	na tu punaH sadbudDeH vizayABAvAt
+sp006-000177_GB_02	ekADikaraRatvam GawAdiviSezyABAve na yuktam iti cet na
+sp006-000178_GB_02	idamudakam iti marIcyAdO anyatarABAve api sAmAnADikaraRyadarSanAt
+sp006-000179_GB_02	tasmAddehAdeH dvandvasya ca sakAraRasya asato na vidyate BAva iti
+sp006-000180_GB_02	taTA sataH ca AtmanaH aBAvaH avidyamAnatA na vidyate sarvatra avyaBicArAt iti avocAma
+sp006-000181_GB_02	evam AtmAnAtmanoH sadasatoH uBayoH api dfzwa upalabDaH anto nirRayaH sat sadeva asat asadeva iti tu anayoH yaToktayoH tattvadarSiBiH
+sp006-000182_GB_02	taditi sarvanAma sarvam ca brahma
+sp006-000183_GB_02	tasya nAma taditi tadBAvaH tattvam brahmaRo yATAtmyam
+sp006-000184_GB_02	taddrazwum SIlam yezAm te tattvadarSinaH tEH tattvadarSiBiH
+sp006-000185_GB_02	tvamapi tattvadarSinAm dfzwim ASritya Sokam moham ca hitvA SItozRAdIni niyatAniyatarUpARi dvandvAni
+sp006-000186_GB_02	vikAraH ayam asan eva marIcijalavat miTyAvaBAsate iti manasi niScitya titikzasva iti aBiprAyaH
+sp006-000187_GB_02	kim punastad yat sadeva sarvadA eva asti iti ucyate
+sp006-000188_GB_02	avinASi na vinazwum SIlam asya iti
+sp006-000189_GB_02	tuSabdaH asato viSezaRArTaH
+sp006-000190_GB_02	tadvidDi vijAnIhi
+sp006-000191_GB_02	kim yena sarvam idam jagat tatam vyAptam sadAKyena brahmaRA sAkASam AkASena iva GawAdayaH
+sp006-000192_GB_02	vinASam adarSanam aBAvam
+sp006-000193_GB_02	avyayasya na vyeti upacayApacayO na yAti iti avyayam tasya avyayasya
+sp006-000194_GB_02	na etat sadAKyam brahma svena rUpeRa vyeti vyaBicarati niravayavatvAt dehAdivat
+sp006-000195_GB_02	na api AtmIyena AtmIyABAvAt
+sp006-000196_GB_02	yaTA devadatto DanahAnyA vyeti na tu evam brahma vyeti
+sp006-000197_GB_02	ataH avyayasya asya brahmaRo vinASam na kaScit kartum arhati
+sp006-000198_GB_02	na kaScit AtmAnam vinASayitum Saknoti ISvaraH api
+sp006-000199_GB_02	AtmA hi brahma svAtmani ca kriyAviroDAt
+sp006-000200_GB_02	kim punastadasat yatsvAtmasattAm vyaBicarati iti ucyate
+sp006-000201_GB_02	antavantaH anto vinASo vidyate yezAm te antavanto
+sp006-000202_GB_02	yaTA mfgatfzRikAdO sadbudDiH anuvfttA pramARanirUpaRAnte vicCidyate sa tasyA antaH
+sp006-000203_GB_02	taTA ime dehAH svapnamAyAdehAdivacca antavantaH
+sp006-000204_GB_02	nityasya SarIriRaH SarIravataH anASinaH aprameyasya AtmanaH antavantaH iti uktA vivekiBiH ityarTaH
+sp006-000205_GB_02	nityasya anASina iti na punaruktam
+sp006-000206_GB_02	nityatvasya dviviDatvAt loke nASasya ca
+sp006-000207_GB_02	yaTA deho BasmIBUtaH adarSanam gato nazwa ucyate
+sp006-000208_GB_02	vidyamAnaH api anyaTA pariRato vyADyAdiyukto jAto nazwa ucyate
+sp006-000209_GB_02	tatra anASino nityasya iti dviviDena api nASena asambanDaH asya ityarTaH
+sp006-000210_GB_02	anyaTA pfTivyAdivat api nityatvam syAt AtmanaH
+sp006-000211_GB_02	tat mA BUditi nityasya anASina iti Aha
+sp006-000212_GB_02	aprameyasya na prameyasya pratyakzAdipramAREH aparicCedyasya ityarTaH
+sp006-000213_GB_02	nanu Agamena AtmA paricCidyate pratyakzAdinA ca pUrvam
+sp006-000214_GB_02	na AtmanaH svataHsidDatvAt
+sp006-000215_GB_02	sidDe hi Atmani pramAtari pramitsoH pramARAnvezaRA Bavati
+sp006-000216_GB_02	na hi pUrvam itTamaham iti AtmAnam apramAya paScAt prameyaparicCedAya pravartate
+sp006-000217_GB_02	na hi AtmA nAma kasyacit aprasidDo Bavati
+sp006-000218_GB_02	SAstram tu antyam pramARam atadDarmADyAropaRamAtranivartakatvena pramARatvam Atmani pratipadyate
+sp006-000219_GB_02	na tu ajYAta arTajYApakatvena
+sp006-000220_GB_02	taTA ca SrutiH
+sp006-000221_GB_02	yasmAdevam nityaH avikriyaSca AtmA tasmAt yuDyasva yudDAt uparamam mA kArzIH ityarTaH
+sp006-000222_GB_02	na hi atra yudDakartavyatA viDIyate yudDe pravftta eva hi asO SokamohapratibadDaH tUzRImAste
+sp006-000223_GB_02	tasya kartavyapratibanDApanayanamAtram BagavatA kriyate
+sp006-000224_GB_02	tasmAt yuDyasva iti anuvAdamAtram na viDiH
+sp006-000225_GB_02	SokamohAdisaMsArakAraRanivfttyarTam gItASAstram na pravartakam iti etasya arTasya sAkziBUte fcO AnInAya BagavAn
+sp006-000226_GB_02	yattu manyase
+sp006-000227_GB_02	iti ezA budDiH mfzA eva te
+sp006-000228_GB_02	ya enam prakftam dehinam vetti jAnAti hantAram hananakriyAyAH kartAram yaSca enam anyo manyate
+sp006-000229_GB_02	tO uBO na vijAnIto na jYAtavantO avivekena AtmAnam
+sp006-000230_GB_02	aham pratyaya vizayam
+sp006-000231_GB_02	hantA aham hataH asmi aham iti dehahananena AtmAnam yO vijAnItaH tO AtmasvarUpAnaBijYO ityarTaH
+sp006-000232_GB_02	yasmAt na ayam AtmA hanti na hananakriyAyAH kartA Bavati
+sp006-000233_GB_02	na hanyate na ca karma Bavati ityarTaH avikriyatvAt
+sp006-000234_GB_02	kaTam avikraya AtmA iti dvitIyo mantraH
+sp006-000235_GB_02	na jAyate na utpadyate janilakzaRA vastuvikriyA na Atmano vidyate ityarTaH
+sp006-000236_GB_02	vASabdaH cArTe
+sp006-000237_GB_02	na mriyate ca iti antyA vinASalakzaRA vikriyA pratiziDyate
+sp006-000238_GB_02	kadAcit SabdaH sarvavikriyApratizeDEH sambaDyate
+sp006-000239_GB_02	na kadAcit jAyate na kadAcit mriyate iti evam
+sp006-000240_GB_02	yasmAt ayam AtmA BUtvA BavanakriyAm anuBUya paScAt aBavitA aBAvam gantA na BUyaH punaH tasmAt na mriyate
+sp006-000241_GB_02	yohi BUtvA na BavitA sa mriyate iti ucyate loke
+sp006-000242_GB_02	vASabdAt naSabdAcca ayam AtmA aBUtvA BavitA vA dehavat na BUyaH
+sp006-000243_GB_02	punaH tasmAt na jAyate
+sp006-000244_GB_02	yo hi aBUtvA BavitA sa jAyate iti ucyate
+sp006-000245_GB_02	nEvamAtmA ato na jAyate
+sp006-000246_GB_02	yasmAt evam tasmAt ajaH yasmAt na mriyate tasmAt nityaSca
+sp006-000247_GB_02	yadyapi AdyantayoH vikriyayoH pratizeDe sarvA vikriyAH pratizidDA Bavanti
+sp006-000248_GB_02	taTApi maDyaBAvinInAm vikriyARAm svaSabdEH eva tadarTEH pratizeDaH kartavya iti anuktAnAmapi yOvanAdisamastavikriyARAm pratizeDo yaTA syAt iti Aha
+sp006-000249_GB_02	SASvata ityAdinA
+sp006-000250_GB_02	SASvata iti apakzayalakzaRA vikriyA pratiziDyate
+sp006-000251_GB_02	SaSvadBavaH SASvataH
+sp006-000252_GB_02	na apakzIyate svarUpeRa niravayavatvAt nirguRatvAt ca
+sp006-000253_GB_02	na api guRakzayeRa apakzayaH
+sp006-000254_GB_02	apakzayaviparItApi vfdDilakzaRA vikriyA pratiziDyate purARa iti
+sp006-000255_GB_02	yo hi avayavAgamena upacIyate sa varDate aBinava iti ca ucyate
+sp006-000256_GB_02	ayam tu AtmA niravayavatvAt purApi nava eva iti purARo na varDate ityarTaH
+sp006-000257_GB_02	taTA na hanyate
+sp006-000258_GB_02	hantiH atra vipariRAmArTo drazwavyaH apunaruktatAyE
+sp006-000259_GB_02	na vipariRamyate ityarTaH
+sp006-000260_GB_02	asmin mantre zaq BAvavikArA lOkikavastuvikriyA Atmani pratiziDyante
+sp006-000261_GB_02	sarvaprakAravikriyArahitAtmA iti vAkyArTaH
+sp006-000262_GB_02	yasmAdevam tasmAt uBO tO na vijAnIta iti pUrveRa mantreRa asya sambanDaH
+sp006-000263_GB_02	iti anena mantreRa hananakriyAyAH kartA karma ca na Bavati iti pratijYAya
+sp006-000264_GB_02	veda vijAnAti avinASinam antyaBAvavikArarahitam nityam vipariRAmarahitam yo veda iti sambanDaH
+sp006-000265_GB_02	enam pUrveRa mantreRa uktalakzaRam ajam janmarahitam avyayam apakzayarahitam kaTam kena prakAreRa
+sp006-000266_GB_02	saH vidvAn puruzaH aDikfto hanti hananakriyAm karoti kaTam vA GAtayati hantAram prayojayati
+sp006-000267_GB_02	na kaTaYcit kaYcit hanti na kaTaYcit kaYcit GAtayati iti uBayatra Akzepa eva arTaH praSnArTAsamBavAt
+sp006-000268_GB_02	hetvarTasya avikriyatvasya tulyatvAt viduzaH sarvakarmapratizeDa eva prakAraRArTaH aBipreto BagavataH
+sp006-000269_GB_02	hantestu Akzepa udAharaRArTatvena
+sp006-000270_GB_02	viduzaH kam karmAsamBave hetuviSezam paSyan karmARi Akzipati BagavAn
+sp006-000271_GB_02	kaTam sa puruzaH
+sp006-000272_GB_02	nanu ukta eva AtmanaH avikriyatvam sarvakarmAsamBavakAraRaviSezaH
+sp006-000273_GB_02	satyamukto na tu sa kAraRaviSezaH anyatvAt viduzaH avikriyAt Atmana iti
+sp006-000274_GB_02	na hi avikriyam sTARum viditavataH karma na samBavati iti cet na viduza AtmatvAt
+sp006-000275_GB_02	na dehAdisaNGAtasya vidvattA
+sp006-000276_GB_02	ataH pAriSezyAt asaMhatAtmA vidvAn avikriya iti tasya viduzaH karmAsamBavAt Akzepo yuktaH
+sp006-000277_GB_02	yaTA budDyAdyAhftasya SabdAdyarTasya avikriya eva san budDivfttyavivekavijYAnena avidyayA upalabDA AtmA kalpyate
+sp006-000278_GB_02	evameva AtmAnAtmavivekajYAnena budDivfttyA vidyayA asatyarUpayA eva paramArTataH avikriya eva AtmA vidvAn ucyate
+sp006-000279_GB_02	viduzaH karmAsamBavavacanAt yAni karmARi SAstreRa viDIyante tAni aviduzo vihitAni iti Bagavato niScayaH avagamyate
+sp006-000280_GB_02	nanu vidyApi aviduza eva viDIyate viditavidyasya pizwapezaRavat vidyAviDAnAnarTakyAt
+sp006-000281_GB_02	tatra aviduzaH karmARi viDIyante na viduza iti viSezo na upapadyate na anuzWeyasya BAvABAvaviSezopapatteH
+sp006-000282_GB_02	agnihotrAdiviDyarTajYAnottarakAlam agnihotrAdikarma anekasADanopasaMhArapUrvakam anuzWeyam
+sp006-000283_GB_02	kartA aham mama kartavyam
+sp006-000284_GB_02	ityevam prakAravijYAnavataH aviduzo yaTA anuzWeyam Bavati na tu taTA
+sp006-000285_GB_02	na jAyate ityAdi AtmasvarUpaviDyarTajYAnottarakAlaBAvi kiYcidanuzWeyam Bavati
+sp006-000286_GB_02	kim tu na aham kartA na BoktA ityAdi AtmEkatvAkartftvAdi vizayajYAnAt anyat na upapadyate iti eza viSeza upapadyate
+sp006-000287_GB_02	yaH punaH kartA aham iti vetti AtmAnam
+sp006-000288_GB_02	tasya mama idam kartavyam iti avaSyamBAvinI budDiH syAt
+sp006-000289_GB_02	tadapekzayA saH aDikriyate iti tam prati karmARi
+sp006-000290_GB_02	sa ca avidvAn
+sp006-000291_GB_02	iti vacanAt viSezitasya ca viduzaH karmAkzepavacanAt
+sp006-000292_GB_02	tasmAt viSezitasya avikriyAtmadarSino viduzo mumukzoSca sarvakarmasannyAse eva aDikAraH
+sp006-000293_GB_02	ata eva BagavAn nArAyaRaH sANKyAn viduzaH aviduzaSca karmiRaH praviBajya dve nizWe grAhayati
+sp006-000294_GB_02	taTA ca putrAya Aha BagavAn vyAsaH
+sp006-000295_GB_02	mahABArate SAntiparvaRi ekacatvAriMSaduttara dviSatatame aDyAye zazWaH SlokaH ityAdi
+sp006-000296_GB_02	taTA ca kriyApaTaScEva purastAt paScAtsannyAsaSca iti
+sp006-000297_GB_02	etameva viBAgam punaH punaH darSayizyati BagavAn
+sp006-000298_GB_02	ahaNkAravimUQAtmA kartA ahamiti manyate
+sp006-000299_GB_02	tattvavittu na aham karomi iti
+sp006-000300_GB_02	tatra kecitpaRqitammanyA vadanti
+sp006-000301_GB_02	janmAdizaqBAvavikriyArahitaH avikriyaH akartA ekaH aham AtmA
+sp006-000302_GB_02	iti na kasyacit jYAnam utpadyate yasmin sati sarvakarmasannyAsaH upadiSyate
+sp006-000303_GB_02	na na jAyate ityAdi SAstropadeSa anarTakyAt
+sp006-000304_GB_02	yaTA ca SAstropadeSasAmarTyAt DarmA astitvavijYAnam kartuSca dehAntarasambanDavijYAnam ca utpadyate
+sp006-000305_GB_02	taTA SAstrAt tasyEva AtmanaH avikriyatvAkartftvEkatvAdivijYAnam kasmAt na utpadyate iti prazwavyAH
+sp006-000306_GB_02	karaRAgocaratvAt iti cet na
+sp006-000307_GB_02	SAstrAcAryopadeSaSamadamAdisaMskftam mana AtmadarSane karaRam
+sp006-000308_GB_02	taTA ca tadaDigamAya anumAne Agame ca sati jYAnam na upapadyate iti
+sp006-000309_GB_02	jYAnam ca utpadyamAnam tadviparItamajYAnam avaSyam bADate iti aByupagantavyam
+sp006-000310_GB_02	tacca ajYAnam darSitam
+sp006-000311_GB_02	hantA aham hataH asmi iti
+sp006-000312_GB_02	iti atra ca Atmano hananakriyAyAH kartftvam karmatvam hetukartftvam ca ajYAnakftam darSitam
+sp006-000313_GB_02	tacca sarvakriyAsvapi samAnam kartftvAdeH avidyAkftatvam avikriyatvAdAtmanaH
+sp006-000314_GB_02	vikriyAvAn hi kartA AtmanaH karmaBUtam anyam prayojayati kuru iti
+sp006-000315_GB_02	tadetat aviSezeRa viduzaH sarvakriyAsu kartftvam hetukartftvam ca pratizeDati BagavAn viduzaH karmADikArABAvapradarSanArTam
+sp006-000316_GB_02	ityAdinA
+sp006-000317_GB_02	kva punaH viduzaH aDikAra iti etaduktam pUrvameva
+sp006-000318_GB_02	taTA ca sarvakarmasannyAsam vakzyati
+sp006-000319_GB_02	sarvakarmARi manasA ityAdinA
+sp006-000320_GB_02	nanu manasA iti vacanAt na vAcikAnAm kAyikAnAm ca sannyAsaH iti cet na
+sp006-000321_GB_02	sarvakarmARi iti viSezitatvAt
+sp006-000322_GB_02	mAnasAnAmeva sarvakarmaRAmiti cet na
+sp006-000323_GB_02	manovyApArapUrvakatvAt vAk kAyavyApArARAm manovyApArABAve tadanupapatteH
+sp006-000324_GB_02	SAstrIyARAm vAkkAyakarmaRAm kAraRAni mAnasAni varjayitvA anyAni sarvakarmARi manasA sannyasyet iti cet na
+sp006-000325_GB_02	iti viSezaRAt
+sp006-000326_GB_02	sarvakarmasannyAsaH ayam Bagavata ukto marizyato na jIvata iti cet na
+sp006-000327_GB_02	iti viSezaRAnupapatteH
+sp006-000328_GB_02	na hi sarvakarmasannyAsena mftasya taddehe Asanam samBavati
+sp006-000329_GB_02	dehe sannyasya iti sambanDo na dehe Aste iti cet na
+sp006-000330_GB_02	sarvatra AtmanaH avikriyatvAvaDAraRAt
+sp006-000331_GB_02	AsanakriyAyASca aDikaraRApekzatvAt tadanapekzatvAcca sannyAsasya
+sp006-000332_GB_02	sampUrvastu nyAsaSabdaH iha tyAgArTo na nikzepArTaH
+sp006-000333_GB_02	tasmAt gItASAstre AtmajYAnavataH sannyAse eva aDikAro
+sp006-000334_GB_02	na karmaRi iti tatra tatra uparizwAt AtmajYAnaprakaraRe darSayizyAmaH
+sp006-000335_GB_02	prakftam tu vakzyAmaH
+sp006-000336_GB_02	tatra AtmanaH avinASitvam pratijYAtam tat kim iva ucyate
+sp006-000337_GB_02	vAsAMsi vastrARi jIrRAni durbalatAm gatAni yaTA loke vihAya parityajya
+sp006-000338_GB_02	navAni aBinavAni gfhRAti upAdatte naraH puruzaH aparARi anyAni
+sp006-000339_GB_02	taTA tadvadeva SarIrARi vihAya jIrRAni anyAni saMyAti
+sp006-000340_GB_02	saNgacCati navAni dehI AtmA puruzavat avikriya eva ityarTaH
+sp006-000341_GB_02	kasmAt avikriya eva iti Aha
+sp006-000342_GB_02	enam prakftam dehinam na cCindanti SastrARi
+sp006-000343_GB_02	niravayavatvAt na avayavaviBAgam kurvanti SastrARi asyAdIni
+sp006-000344_GB_02	taTA na enam dahati pAvakaH
+sp006-000345_GB_02	agniH api na BasmIkaroti
+sp006-000346_GB_02	apAm hi sAvayavasya vastunaH ArdrIBAvakaraRena avayavaviSlezApAdane sAmarTyam tat na niravayave Atmani samBavati
+sp006-000347_GB_02	taTA snehavat dravyam snehaSozaRena nASayati vAyuH
+sp006-000348_GB_02	enam svAtmAnam na Sozayati mArutaH api
+sp006-000349_GB_02	yata evam tasmAt
+sp006-000350_GB_02	yasmAt anyonyanASahetUni BUtAni enam AtmAnam nASayitum na utsahante tasmAt nityaH
+sp006-000351_GB_02	nityatvAt sarvagataH
+sp006-000352_GB_02	sarvagatatvAt sTARuH
+sp006-000353_GB_02	sTARuH iva sTira iti etat
+sp006-000354_GB_02	sTiratvAt acalaH ayam AtmA
+sp006-000355_GB_02	ataH sanAtanaH cirantano na kAraRAtkutaScit nizpannaH
+sp006-000356_GB_02	aBinava ityarTaH
+sp006-000357_GB_02	na etezAm SlokAnAm pOnaruktyam codanIyam yadekenEva Slokena Atmano nityatvam avikriyatvam ca uktam
+sp006-000358_GB_02	tatra yadeva Atmavizayam kiYciducyate tat etasmAt SlokArTAt na atiricyate kiYcit SabdataH punaruktam kiYcit arTata iti
+sp006-000359_GB_02	durboDatvAt AtmavastunaH punaH punaH prasaNgam ApAdya SabdAntareRa tadevam vastu nirUpayati BagavAn vAsudevaH
+sp006-000360_GB_02	kaTam nu nAma saMsAriRAm avyaktam tattvam budDigocaratAmApannam sat saMsAranivfttaye syAditi
+sp006-000361_GB_02	kim ca
+sp006-000362_GB_02	avyaktaH sarvakaraRAvizayatvAt na vyajyate iti avyaktaH
+sp006-000363_GB_02	ayam AtmA
+sp006-000364_GB_02	ata eva acintyaH ayam
+sp006-000365_GB_02	yadDi indriyagocaram vastu tat cintAvizayatvam Apadyate
+sp006-000366_GB_02	ayam tu AtmA anindriyagocaratvAt acintyaH
+sp006-000367_GB_02	yaTA kzIram daDyAtaYcatanAdinA vikAri na taTA ayamAtmA
+sp006-000368_GB_02	niravayavatvAcca avikriyaH
+sp006-000369_GB_02	na hi niravayavam kiYcit vikriyAtmakam dfzwam
+sp006-000370_GB_02	avikriyatvAt avikAryaH ayamAtmA ucyate
+sp006-000371_GB_02	tasmAdevam yaToktaprakAreRa
+sp006-000372_GB_02	AtmAnam viditvA tvam na anuSocitum arhasi
+sp006-000373_GB_02	hantA aham ezAm
+sp006-000374_GB_02	mayA ete hanyante iti
+sp006-000375_GB_02	AtmanaH anityatvam aByupagamya idamucyate
+sp006-000376_GB_02	aTa ca iti aByupagamArTaH
+sp006-000377_GB_02	enam prakftam AtmAnam nityajAtam lokaprasidDyA pratyanekaSarIrotpattim jAto jAta iti manyase
+sp006-000378_GB_02	taTA pratitadvinASam nityam vA manyase mftam mfto mfta iti
+sp006-000379_GB_02	taTApi taTABAvini api Atmani tvam mahAbAho evam na Socitum arhasi
+sp006-000380_GB_02	janmavato nASo nASavato janma ca iti etO avaSyam BAvinO iti
+sp006-000381_GB_02	taTA ca sati
+sp006-000382_GB_02	jAtasya hi labDajanmano DruvaH avyaBicArI mftyuH maraRam Druvam janma mftasya ca
+sp006-000383_GB_02	tasmAt aparihAryaH ayam janmamaraRalakzaRaH arTaH
+sp006-000384_GB_02	tasmin aparihArye arTe na tvam Socitum arhasi
+sp006-000385_GB_02	kAryakaraRasaNGAtAtmakAni api BUtAni uddiSya Soko na yuktaH kartum yataH
+sp006-000386_GB_02	avyaktAni avyaktam adarSanam anupalabDiH AdiH yezAm BUtAnAm putramitrAdikAryakaraRasaNGAtAtmakAnAm tAni avyaktAdIni BUtAni prAgutpatteH
+sp006-000387_GB_02	utpannAni ca prAk maraRAt vyaktamaDyAni
+sp006-000388_GB_02	avyaktaniDanAni eva punaH avyaktam adarSanam niDanam maraRam yezAm tAni avyaktaniDanAni
+sp006-000389_GB_02	maraRAdUrDvamapi avyaktatAmeva pratipadyante ityarTaH
+sp006-000390_GB_02	taTA ca uktam
+sp006-000391_GB_02	tatra kA paridevanA ko vA pralApaH adfzwadfzwapraRazwaBrAntiBUtezu BUtezu ityarTaH
+sp006-000392_GB_02	durvijYeyaH ayam prakfta AtmA kim tvAmeva ekam upAlaBe sADAraRe BrAntinimitte
+sp006-000393_GB_02	kaTam durvijYeyaH ayamAtmA iti AhA
+sp006-000394_GB_02	AScaryavat AScaryam adfzwapUrvam adButam akasmAddfSyamAnam tena tulyam
+sp006-000395_GB_02	AScaryavat AScaryam iva enam AtmAnam paSyati kaScit
+sp006-000396_GB_02	AScaryavat enam vadati taTA eva ca anyaH
+sp006-000397_GB_02	AScaryavacca enam anyaH SfRoti
+sp006-000398_GB_02	SrutvA dfzwvA uktvApi enam veda na ca eva kaScit
+sp006-000399_GB_02	aTavA yaH ayam AtmAnam paSyati sa AScaryatulyo yo vadati yaSca SfRoti saH anekasahasrezu kaScideva Bavati
+sp006-000400_GB_02	ato durboDa AtmA iti aBiprAyaH
+sp006-000401_GB_02	aTa idAnIm prakaraRArTam upasaMharanbrUte
+sp006-000402_GB_02	dehI SarIrI nityam sarvadA sarvAvasTAsu avaDyo niravayavatvAt nityatvAcca tatra avaDyaH
+sp006-000403_GB_02	ayam dehe SarIre sarvasya sarvagatatvAt sTAvarAdizu sTitaH api
+sp006-000404_GB_02	sarvasya prARijAtasya dehe vaDyamAne api ayam dehI na vaDyo yasmAt tasmAt BIzmAdIni sarvARi BUtAni uddiSya na tvam Socitum arhasi
+sp006-000405_GB_02	iha paramArTatattvApekzAyAm Soko moho vA na samBavatIti uktam
+sp006-000406_GB_02	na kevalam paramArTatattvApekzAyAmeva kim tu
+sp006-000407_GB_02	svaDarmam api svo DarmaH kzatriyasya yudDam tam api avekzya tvam na vikampitum pracalitum na arhasi
+sp006-000408_GB_02	svABAvikAdDarmAt AtmasvABAvyAt iti aBiprAyaH
+sp006-000409_GB_02	tacca yudDam pfTivIjayadvAreRa DarmArTam prajArakzaRArTam ca iti DarmAt anapetam param Darmyam
+sp006-000410_GB_02	tasmAt DarmyAt yudDAt SreyaH anyat kzatriyasya na vidyate hi yasmAt
+sp006-000411_GB_02	kutaSca tat yudDam kartavyamiti ucyate
+sp006-000412_GB_02	yadfcCayA ca aprArTitatayA upapannam Agatam svargadvAram apAvftam
+sp006-000413_GB_02	udDAwitam ye etat IdfSam yudDam laBante kzatriyAH he pArTa kim na suKinaH te
+sp006-000414_GB_02	evam kartavyatAprAptamapi
+sp006-000415_GB_02	aTa cet tvam imam Darmyam DarmAt anapetam saNgrAmam yudDam na karizyasi cet
+sp006-000416_GB_02	tataH tadakaraRAt svaDarmam kIrtim ca mahAdevAdisamAgamanimittAm hitvA kevalam pApam avApsyasi
+sp006-000417_GB_02	na kevalam svaDarmakIrtiparityAgaH
+sp006-000418_GB_02	akIrtim cApi BUtAni kaTayizyanti te tava avyayAm dIrGakAlAm
+sp006-000419_GB_02	DarmAtmA SUra iti evamAdiBiH guREH samBAvitasya ca akIrtiH maraRAt atiricyate
+sp006-000420_GB_02	samBAvitasya ca akIrteH varam maraRam ityarTaH
+sp006-000421_GB_02	BayAt karRAdiByo raRAt yudDAt uparatam nivfttam maMsyante cintayizyanti na kfpayA iti tvAm mahAraTAH duryoDanapraBftayaH
+sp006-000422_GB_02	yezAm ca tvam duryoDanAdInAm bahumato bahuBiH guREH yukta iti evam mataH bahumato BUtvA punaH yAsyasi lAGavam laGuBAvam
+sp006-000423_GB_02	avAcyavAdAn avaktavyavAdAn ca bahUn anekaprakArAn vadizyanti tava ahitAH
+sp006-000424_GB_02	Satravo nindantaH kutsayantaH tava tvadIyam sAmarTyam nivAtakavacAdi yudDanimittam
+sp006-000425_GB_02	tasmAt tato nindAprApteH duHKAt duHKataram nu kim
+sp006-000426_GB_02	tataH kazwataram duHKam na asti ityarTaH
+sp006-000427_GB_02	yudDe punaH kriyamARe karRAdiBiH
+sp006-000428_GB_02	hato vA prApsyasi svargam hataH san svargam prApsyasi
+sp006-000429_GB_02	jitvA vA karRAdIn SUrAn Bokzyase mahIm
+sp006-000430_GB_02	uBayaTApi tava lABa eva iti aBiprAyaH
+sp006-000431_GB_02	yata evam
+sp006-000432_GB_02	jezyAmi SatrUn marizyAmi vA iti niScayam kftvA ityarTaH
+sp006-000433_GB_02	tatra yudDam svaDarma iti evam yuDyamAnasya upadeSamimam SfRu
+sp006-000434_GB_02	suKaduHKe same tulye kftvA rAgadvezO akftva iti etat
+sp006-000435_GB_02	na evam yudDam kurvan pApam avApsyasi
+sp006-000436_GB_02	iti eza upadeSaH prAsaNgikaH
+sp006-000437_GB_02	SokamohApanayanAya lOkiko nyAyaH
+sp006-000438_GB_02	ityAdyEH SlokEH ukto na tu tAtparyeRa
+sp006-000439_GB_02	tacca uktam upasaMharati
+sp006-000440_GB_02	iti SAstravizayaviBAgapradarSanAya
+sp006-000441_GB_02	iha hi pradarSite punaH SAstravizayaviBAge uparizwAt
+sp006-000442_GB_02	iti nizWAdvayavizayam SAstram suKam pravartizyate
+sp006-000443_GB_02	SrotAraSca vizayaviBAgena suKam grahIzyanti iti ata Aha
+sp006-000444_GB_02	ezA te tuByam aBihitA uktA sAN Kye paramArTavastuvivekavizaye
+sp006-000445_GB_02	budDiH jYAnam sAkzAt SokamohAdisaMsArahetudozanivfttikAraRam
+sp006-000446_GB_02	yoge tu tatprAptyupAye niHsaNgatayA dvandvaprahARapUrvakam ISvarArADanArTe karmayoge karmAnuzWAne samADiyoge ca imAm anantarameva ucyamAnAm budDim SfRu
+sp006-000447_GB_02	tAm budDim stOti prarocanArTam
+sp006-000448_GB_02	budDyA yayA yogavizayayA yukto he pArTa
+sp006-000449_GB_02	karmabanDam karma eva DarmADarmAKyo banDaH karmabanDaH tam prahAsyasi ISvaraprasAdanimittajYAnaprApteH iti aBiprAyaH
+sp006-000450_GB_02	kiYca anyat
+sp006-000451_GB_02	na iha mokzamArge karmayoge aBikramanASaH aBikramaRam aBikramaH prAramBaH tasya nASaH na asti yaTA kfzyAdeH
+sp006-000452_GB_02	yogavizaye prAramBasya na anEkAntikaPalatvam ityarTaH
+sp006-000453_GB_02	na api cikitsAvat pratyavAyo vidyate
+sp006-000454_GB_02	kim tu Bavati svalpam api asya yogaDarmasya anuzWitam
+sp006-000455_GB_02	trAyate rakzati mahataH saMsAraBayAt janmamaraRAdilakzaRAt
+sp006-000456_GB_02	yA iyam sAN Kye budDeH uktA yoge ca vakzyamARalakzaRA sA
+sp006-000457_GB_02	vyavasAyAtmikA niScayasvaBAvA ekA eva budDiH itaraviparItabudDiSAKABedasya bADikA
+sp006-000458_GB_02	samyakpramARajanitatvAt iha SreyomArge he kurunandana
+sp006-000459_GB_02	yAH punaH itarA budDayo yAsAm SAKABedapracAravaSAt anantaH apAraH anuparataH saMsAro nityapratato vistIrRo Bavati
+sp006-000460_GB_02	pramARajanitavivekabudDinimittavaSAcca uparatAsu anantaBedabudDizu saMsAraH api uparamate
+sp006-000461_GB_02	tA budDayo bahuSAKAH bahvayaH SAKAH yAsAm tAm bahuSAKAH bahuBedA iti etat
+sp006-000462_GB_02	pratiSAKABedena hi anantASca budDayaH
+sp006-000463_GB_02	kezAm
+sp006-000464_GB_02	avyavasAyinAm pramARajanitavivekabudDirahitAnAm ityarTaH
+sp006-000465_GB_02	yezAm vyavasAyAtmikA budDirnAsti te
+sp006-000466_GB_02	avipaScitaH alpameDasaH avivekina ityarTaH
+sp006-000467_GB_02	vedavAdaratAH bahvarTavAdaPalasADanaprakASakezu vedavAkyezu ratAH
+sp006-000468_GB_02	he pArTa na anyat svargaprAptyAdiPalasADaneByaH karmaByaH
+sp006-000469_GB_02	asti iti evam vAdino vadanaSIlAH
+sp006-000470_GB_02	te ca
+sp006-000471_GB_02	kAmAtmAnaH kAmasvaBAvAH kAmaparA ityarTaH
+sp006-000472_GB_02	svargaparAH svargaH paraH puruzArTo yezAm te svargaparAH svargapraDAnA
+sp006-000473_GB_02	karmaRaH Palam karmaPalam janma eva karmaPalam janmakarmaPalam tat pradadAtIti janmakarmaPalapradA
+sp006-000474_GB_02	tAm vAcam pravadanti iti anuzajyate
+sp006-000475_GB_02	kriyARAm viSezAH kriyAviSezAH te bahulA yasyAm vAci tAm svargapaSuputrAdyarTAH yayA vAcA bAhulyena prakASyante
+sp006-000476_GB_02	BogESvaryagatim prati BogaSca ESvaryam ca BogESvarye
+sp006-000477_GB_02	tayoH gatiH prAptiH BogESvaryagatiH
+sp006-000478_GB_02	tAm prati sADanaBUtA ye kriyAviSezAH tadbahulAm tAm vAcam pravadanto mUQAH saMsAre parivartante iti aBiprAyaH
+sp006-000479_GB_02	tezAm ca
+sp006-000480_GB_02	BogESvaryaprasaktAnAm BogaH kartavyam ESvaryam ca iti BogESvaryayoH eva praRayavatAm tadAtmaBUtAnAm
+sp006-000481_GB_02	tayA kriyAviSezabahulayA vAcA apahftacetasAm AcCAditavivekaprajYAnAm vyavasAyAtmikA
+sp006-000482_GB_02	sAN Kye yoge vA budDiH samADO samADIyate asmin puruzopaBogAya sarvam iti samADiH
+sp006-000483_GB_02	antaHkaraRam budDiH tasmin samADO na viDIyate na Bavati ityarTaH
+sp006-000484_GB_02	ya evam vivekabudDirahitAH tezAm kAmAtmanAm
+sp006-000485_GB_02	trEguRyavizayAH trEguRyam saMsAro vizayaH prakASayitavyo yezAm te vedAH trEguRyavizayAH
+sp006-000486_GB_02	tvam tu nistrEguRyo Bava arjuna nizkAmo Bava ityarTaH
+sp006-000487_GB_02	nirdvandvaH suKaduHKahetU sapratipakzO padArTO dvandvaSabdavAcyO tato nirgato nirdvandvo Bava
+sp006-000488_GB_02	tvam nityasattvasTaH sadA sattvaguRASrito Bava
+sp006-000489_GB_02	taTA niryogakzemaH anupAttasya upAdAnam yogaH upAttasya rakzaRam kzemaH
+sp006-000490_GB_02	yogakzemapraDAnasya Sreyasi pravfttiH duzkarA iti ato niryogakzemo Bava
+sp006-000491_GB_02	AtmavAn apramattaSca Bava
+sp006-000492_GB_02	eza tava upadeSaH svaDarmam anutizWataH
+sp006-000493_GB_02	sarvezu vedoktezu karmasu yAni anantAni PalAni tAni na apekzyante cet
+sp006-000494_GB_02	kimarTam tAni ISvarAya iti anuzWIyante iti ucyate SfRu
+sp006-000495_GB_02	yaTA loke kUpataqAgAdyanekasmin udapAne paricCinnodake yAvAn yAvatparimARaH snAnapAnAdiH
+sp006-000496_GB_02	arTaH Palam prayojanam sa sarvaH arTaH sarvataH samplutodake tAvAneva sampadyate tatra antarBavati ityarTaH
+sp006-000497_GB_02	evam tAvAn tAvatparimARa eva sampadyate sarvezu vedezu vedoktezu karmasu yaH arTo yatkarmaPalam
+sp006-000498_GB_02	saH arTo brAhmaRasya sannyAsinaH paramArTatattvam vijAnato
+sp006-000499_GB_02	yaH arTo vijYAnaPalam sarvataHsamplutodakasTAnIyam tasmin tAvAneva sampadyate tatra eva antarBavati ityarTaH
+sp006-000500_GB_02	iti ca vakzyati
+sp006-000501_GB_02	tasmAt prAgjYAnanizWADikAraprApteH karmaRe aDikftena kUpataqAgAdyarTasTAnIyamapi karma kartavyam
+sp006-000502_GB_02	karmaRI eva aDikAro na jYAnanizWAyAm te tava
+sp006-000503_GB_02	tatra ca karma kurvato mA Palezu aDikAraH astu
+sp006-000504_GB_02	karmaPalatfzRA mA BUt kadAcana kasyAYcidapi avasTAyAmityarTaH
+sp006-000505_GB_02	yadA karmaPale tfzRA te syAt tadA karmaPalaprApteH hetuH syAH
+sp006-000506_GB_02	evam mA karmaPalahetuH BUH
+sp006-000507_GB_02	yadA hi karmaPalatfzRAprayuktaH karmaRi pravartate tadA karmaPalasyEva janmano hetuH Bavet
+sp006-000508_GB_02	yadi karmaPalam na izyate kim karmaRA duHKarUpeRa iti mA te tava saNgaH astu akarmaRi akaraRe prItiH mA BUt
+sp006-000509_GB_02	yadi karmaPalaprayuktena na kartavyam karma kaTam tarhi kartavyamiti ucyate
+sp006-000510_GB_02	yogasTaH san kuru karmARi kevalam ISvarArTam
+sp006-000511_GB_02	tatrApi ISvaro me tuzyatu iti saNgam tyaktvA DanaYjaya
+sp006-000512_GB_02	PalatfzRASUnyena kriyamARe karmaRi sattvaSudDijA jYAnaprAptilakzaRA sidDiH
+sp006-000513_GB_02	tadviparyayajA asidDiH
+sp006-000514_GB_02	tayoH sidDyasidDyoH api samaH tulyo BUtvA kuru karmARi
+sp006-000515_GB_02	kaH asO yogo yatrasTaH kuru iti uktam
+sp006-000516_GB_02	idameva tat sidDyasidDyoH samatvam yoga ucyate
+sp006-000517_GB_02	yatpunaH samatvabudDiyuktam ISvarArADanArTam karma etasmAtkarmaRaH
+sp006-000518_GB_02	dUreRa ativiprakarzeRa hi avaram nikfzwam karma PalArTinA kriyamARam budDiyogAt samatvabudDiyuktAt karmaRo janmamaraRAdihetutvAt
+sp006-000519_GB_02	DanaYjaya yata evam yogavizayAyAm budDO tatparipAkajAyAm vA sAN KyabudDO SaraRam
+sp006-000520_GB_02	ASrayam aBayaprAptikAraRam anvicCa prArTayasva
+sp006-000521_GB_02	paramArTajYAnaSaraRo Bava ityarTaH
+sp006-000522_GB_02	yataH avaram karma kurvARAH kfpaRA dInAH PalahetavaH PalatfzRAprayuktAH santaH
+sp006-000523_GB_02	bfhadAraRyake tri azwa daSa iti SruteH
+sp006-000524_GB_02	samatvabudDiyuktaH san svaDarmamanutizWan yatPalam prApnoti tat SfRu
+sp006-000525_GB_02	budDiyuktaH samatvavizayayA budDyA yukto budDiyukto
+sp006-000526_GB_02	jahAti parityajati iha asmin loke uBe sukftaduzkfte puRyapApe sattvaSudDijYAnaprAptidvAreRa yataH
+sp006-000527_GB_02	tasmAt samatvabudDiyogAya yujyasva Gawasva
+sp006-000528_GB_02	yogo hi karmasu kOSalam
+sp006-000529_GB_02	svaDarmAKyezu karmasu vartamAnasya yA sidDyAsidDyoH samatvabudDiH ISvarArpitacetastayA tat kOSalam kuSalaBAvaH
+sp006-000530_GB_02	tadDi kOSalam yat banDasvaBAvAnyapi karmARi samatvabudDyA svaBAvAt nivartante
+sp006-000531_GB_02	tasmAt samatvabudDiyukto Bava tvam
+sp006-000532_GB_02	yasmAt
+sp006-000533_GB_02	karmajam Palam tyaktvA iti vyavahitena sambanDaH
+sp006-000534_GB_02	izwAnizwadehaprAptiH karmajam Palam karmaByo jAtam
+sp006-000535_GB_02	budDiyuktAH samatvabudDiyuktAH hi yasmAt Palam tyaktvA parityajya manIziRo jYAnino BUtvA
+sp006-000536_GB_02	janmabanDavinirmuktA janma eva banDo janmabanDaH
+sp006-000537_GB_02	tena vinirmuktAH jIvanta eva janmabanDa vinirmuktAH santaH
+sp006-000538_GB_02	padam paramam vizRoH mokzAKyam gacCanti anAmayam sarvopadravarahitamityarTaH
+sp006-000539_GB_02	iti AraBya paramArTadarSanalakzaRA eva sarvataHsamplutodakasTAnIyA karmayogajasattvaSudDijanitA budDiH darSitA
+sp006-000540_GB_02	sAkzAtsukftaduzkftaprahARAdihetutvaSravaRAt
+sp006-000541_GB_02	yogAnuzWAnajanitasattvaSudDijA budDiH kadA prApsyate iti ucyate
+sp006-000542_GB_02	yadA yasminkAle te tava mohakalilam mohAtmakam avivekarUpam kAluzyam
+sp006-000543_GB_02	yena AtmAnAtmavivekaboDam kaluzIkftya vizayam prati antaHkaraRam pravartate
+sp006-000544_GB_02	tadeva budDiH vyatitarizyati vyatikramizyati
+sp006-000545_GB_02	SudDaBAvam Apatsyate ityarTaH
+sp006-000546_GB_02	tadA tasmin kAle gantAsi prApsyasi nirvedam vErAgyam Srotavyasya Srutasya ca
+sp006-000547_GB_02	tadA Srotavyam Srutam ca nizPalam pratipadyate iti aBiprAyaH
+sp006-000548_GB_02	mohakalilAtyayadvAreRa labDAtmavivekajaprajYaH kadA karmayogajam Palam paramArTayogam avApsyAmi iti cet tat SfRu
+sp006-000549_GB_02	SrutivipratipannA anekasADyasADanasambanDaprakASanaSrutiBiH SravaREH vipratipannA nAnApratipannA SrutivipratipannA
+sp006-000550_GB_02	vikziptA satI te tava budDiH yadA yasmin kAle sTAsyati sTirIBUtvA Bavizyati
+sp006-000551_GB_02	niScalA vikzepacalanavarjitA satI samADO samADIyate cittamAsminniti samADiH AtmA tasmin Atmani iti etat
+sp006-000552_GB_02	acalA tatrApi vikalpavarjitA iti etat
+sp006-000553_GB_02	budDiH antaHkaraRam
+sp006-000554_GB_02	tadA tasminkAle yogam avApsyasi vivekaprajYAm samADim prApsyasi
+sp006-000555_GB_02	praSnabIjam pratilaBya arjuna uvAca labDasamADiprajYasya lakzaRabuButsayA
+sp006-000556_GB_02	sTitA pratizWitA ahamasmi param brahma iti prajYA yasya saH sTitaprajYaH
+sp006-000557_GB_02	kim BAzaRam vacanam kaTam asO parEH BAzyate samADisTasya samADO sTitasya keSava
+sp006-000558_GB_02	sTitaDIH sTitaprajYaH svayam vA kim praBAzeta
+sp006-000559_GB_02	kim AsIta vrajeta kim Asanam vrajanam vA tasya kaTamityarTaH
+sp006-000560_GB_02	sTitaprajYasya lakzaRamanena Slokena pfcCyati
+sp006-000561_GB_02	yo hyAdita eva sannyasya karmARi jYAnayoganizWAyAm pravfttaH
+sp006-000562_GB_02	yaSca karmayogena tayoH prajahAti ityAraBya A aDyAyaparisamApteH sTitaprajYalakzaRam sADanam copadiSyate
+sp006-000563_GB_02	sarvatrEva hi aDyAtmaSAstre kftArTalakzaRAni yAni tAnyeva sADanAni upadiSyante yatnasADyatvAt
+sp006-000564_GB_02	yAni yatnasADyAni sADanAni lakzaRAni ca Bavanti tAni SrIBagavAnuvAca
+sp006-000565_GB_02	SrIBagavAnuvAca
+sp006-000566_GB_02	prajahAti prakarzeRa jahAti parityajati
+sp006-000567_GB_02	yadA yasminkAle sarvAn samastAn kAmAn icCABedAn he pArTa manogatAn manasi pravizwAn hfdi pravizwAn
+sp006-000568_GB_02	sarvakAmaparityAge tuzwikAraRABAvAt SarIraDAraRanimittaSeze ca sati unmattapramattasyeva pravfttiH prAptA
+sp006-000569_GB_02	ityata ucyate
+sp006-000570_GB_02	Atmanyeva pratyagAtmasvarUpe eva AtmanA svenEva bAhyalABanirapekzaH tuzwaH
+sp006-000571_GB_02	paramArTadarSanAmftarasalABena anyasmAdalampratyayavAn sTitaprajYaH sTitA pratizWitA AtmAnAtmavivekajA prajYA yasya saH sTitaprajYaH
+sp006-000572_GB_02	vidvAn tadA ucyate
+sp006-000573_GB_02	tyaktaputravittalokEzaRaH sannyAsI AtmArAma AtmakrIqaH sTitaprajYa ityarTaH
+sp006-000574_GB_02	duHKezu ADyAtmikAdizu prAptezu na udvignam na prakzuBitam duHKaprAptO mano yasya soऽyam anudvignamanAH
+sp006-000575_GB_02	taTA suKezu prAptezu vigatA spfhA tfzRA yasya
+sp006-000576_GB_02	na agniriva inDanAdyADAne suKAnyanu vivarDate sa vigataspfhaH
+sp006-000577_GB_02	vItarAgaBayakroDaH rAgaSca Bayam ca kroDaSca vItA vigatA yasmAt sa vItarAgaBayakroDaH
+sp006-000578_GB_02	sTitaDIH sTitaprajYo muniH sannyAsI tadA ucyate
+sp006-000579_GB_02	yaH muniH sarvatra dehajIvitAdizvapi anaBisnehaH
+sp006-000580_GB_02	aBisnehavarjitaH tattat prApya SuBASuBam tattat SuBam aSuBam vA labDvA
+sp006-000581_GB_02	na aBinandati na dvezwi SuBam prApya na tfpyati na hfzyati
+sp006-000582_GB_02	aSuBam ca prApya na dvezwi ityarTaH
+sp006-000583_GB_02	tasya evam harzavizAdavarjitasya vivekajA prajYA pratizWitA Bavati
+sp006-000584_GB_02	yadA saMharate samyagupasaMharate ca ayam jYAnanizWAyAm pravftto yatiH kUrmaH aNgAni iva
+sp006-000585_GB_02	yaTA kUrmaH BayAt svAnyaNgAni upasaMharati sarvaSaH sarvataH
+sp006-000586_GB_02	evam jYAnanizWaH indriyARi indriyArTeByaH sarvavizayeByaH upasaMharate
+sp006-000587_GB_02	tasya prajYA pratizWitA ityuktArTam vAkyam
+sp006-000588_GB_02	tatra vizayAnanAharataH AturasyApi indriyARi kUrmANgAnIva saMhriyante
+sp006-000589_GB_02	na tu tadvizayo rAgaH sa kaTam saMhriyate iti ucyate
+sp006-000590_GB_02	yadyapi vizayAH vizayopalakzitAni vizayaSabdavAcyAni indriyARi nirAhArasya anAhriyamARavizayasya
+sp006-000591_GB_02	kazwe tapasi sTitasya mUrKasyApi vinivartante dehino dehavataH rasavarjam raso rAgo vizayezu yaH tam varjayitvA
+sp006-000592_GB_02	rasaSabdo rAge prasidDaH svarasena pravfttaH rasikaH rasajYaH ityAdidarSanAt
+sp006-000593_GB_02	soऽpi raso raYjanArUpaH sUkzmaH asya yateH
+sp006-000594_GB_02	param paramArTatattvam brahma dfzwvA upalaBya ahameva tat iti vartamAnasya nivartate nirbIjam vizayavijYAnam sampadyate ityarTaH
+sp006-000595_GB_02	na asati samyagdarSane rasasya ucCedaH
+sp006-000596_GB_02	tasmAt samyagdarSanAtmikAyAH prajYAyAH sTEryam kartavyamityaBiprAyaH
+sp006-000597_GB_02	samyagdarSanalakzaRaprajYAsTEryam cikIrzatA AdO indriyARi svavaSe sTApayitavyAni
+sp006-000598_GB_02	yasmAt tadanavasTApane dozamAha
+sp006-000599_GB_02	yatataH prayatnam kurvataH api hi yasmAt kOnteya puruzasya vipaScito meDAvinaH api iti vyavahitena sambanDaH
+sp006-000600_GB_02	indriyARi pramATIni pramaTanaSIlAni vizayABimuKam hi puruzam vikzoBayanti AkulIkurvanti
+sp006-000601_GB_02	AkulIkftya ca haranti prasaBam prasahya prakASameva paSyato vivekavijYAnayuktam manaH
+sp006-000602_GB_02	yataH tasmAt
+sp006-000603_GB_02	tAni sarvARi saMyamya saMyamanam vaSIkaraRam kftvA yuktaH samAhitaH san AsIta matparaH
+sp006-000604_GB_02	aham vAsudevaH sarvapratyagAtmA paro yasya sa matparo na anyaH aham tasmAt iti AsIta ityarTaH
+sp006-000605_GB_02	evam AsInasya yateH vaSe hi yasya indriyARi vartante aByAsabalAt tasya prajYA pratizWitA
+sp006-000606_GB_02	aTa idAnIm parABavizyataH sarvAnarTamUlam idamucyate
+sp006-000607_GB_02	DyAyataH cintayato vizayAn SabdAdi vizayaviSezAn AlocayataH
+sp006-000608_GB_02	puMsaH puruzasya saNga AsaktiH prItiH tezu vizayezu upajAyate
+sp006-000609_GB_02	saNgAt prIteH saYjAyate samutpadyate kAmaH tfzRA
+sp006-000610_GB_02	kAmAt kutaScit pratihatAt kroDaH aBijAyate
+sp006-000611_GB_02	kroDAt Bavati sammohaH avivekaH kAryAkAryavizayaH
+sp006-000612_GB_02	krudDo hi sammUQaH san gurumapyAkroSati
+sp006-000613_GB_02	sammohAt smftiviBramaH SAstrAcAryopadeSAhitasaMskArajanitAyAH smfteH syAt
+sp006-000614_GB_02	viBramo BraMSaH smftyutpattinimittaprAptO anutpattiH
+sp006-000615_GB_02	tataH smftiBraMSAt budDinASaH budDernASaH
+sp006-000616_GB_02	kAryAkAryavizayavivekAyogyatA antaHkaraRasya budDernASa ucyate
+sp006-000617_GB_02	budDinASAt praRaSyati
+sp006-000618_GB_02	tAvadeva hi puruzaH yAvadantaHkaraRam tadIyam kAryAkAryavizayavivekayogyam
+sp006-000619_GB_02	tadayogyatve nazwa eva puruzo Bavati
+sp006-000620_GB_02	ataH tasyAntaHkaraRasya budDernASAt praRaSyati puruzArTAyogyo BavatItyarTaH
+sp006-000621_GB_02	sarvAnarTasya mUlam uktam vizayABiDyAnam
+sp006-000622_GB_02	aTa idAnIm mokzakAraRamidamucyate
+sp006-000623_GB_02	rAgadvezaviyuktEH rAgaSca dvezaSca rAgadvezO
+sp006-000624_GB_02	tatpuraHsarA hi indriyARAm pravfttiH svABAvikI
+sp006-000625_GB_02	tatra yo mumukzuH Bavati saH tAByAm viyuktEH SrotrAdiBiH indriyEH vizayAn avarjanIyAn caran upalaBamAnaH
+sp006-000626_GB_02	AtmavaSyEH Atmano vaSyAni vaSIBUtAni tEH AtmavaSyEH
+sp006-000627_GB_02	viDeyAtmA icCAto viDeya AtmA antaHkaraRam yasya saH ayam prasAdam aDigacCati
+sp006-000628_GB_02	prasAdaH prasannatA svAsTyam
+sp006-000629_GB_02	prasAde sati kim syAt iti ucyate
+sp006-000630_GB_02	prasAde sarvaduHKAnAm ADyAtmikAdInAm hAniH vinASaH asya yateH upajAyate
+sp006-000631_GB_02	prasannacetasaH svasTAntaHkaraRasya hi yasmAt ASu SIGram budDiH paryavatizWate AkASamiva pari samantAt avatizWate
+sp006-000632_GB_02	AtmasvarUpeRa eva niScalIBavati ityarTaH
+sp006-000633_GB_02	evam prasannacetasaH avasTitabudDeH kftakftyatA yataH
+sp006-000634_GB_02	tasmAt rAgadvezaviyuktEH indriyEH SAstrAvirudDezu avarjanIyezu yuktaH samAcaret iti vAkyArTaH
+sp006-000635_GB_02	na asti na vidyate na Bavati ityarTaH
+sp006-000636_GB_02	budDiH AtmasvarUpavizayA ayuktasya asamAhitAntaHkaraRasya
+sp006-000637_GB_02	na ca asti ayuktasya BAvanA AtmajYAnABiniveSaH
+sp006-000638_GB_02	taTA na ca asti aBAvayataH AtmajYAnABiniveSam akurvataH SAntiH upaSamaH
+sp006-000639_GB_02	aSAntasya kutaH suKam
+sp006-000640_GB_02	indriyARAm hi vizayasevAtfzRAto nivfttiH yA tatsuKam na vizayavizayA tfzRA
+sp006-000641_GB_02	duHKameva hi sA
+sp006-000642_GB_02	na tfzRAyAm satyAm suKasya ganDamAtramapi upapadyate ityarTaH
+sp006-000643_GB_02	ayuktasya kasmAdbudDiH nAsti iti ucyate
+sp006-000644_GB_02	indriyARAm hi yasmAt caratAm svasvavizayezu pravartamAnAnAm yat manaH anuviDIyate anupravartate
+sp006-000645_GB_02	tat indriyavizayavikalpane pravfttam manaH asya yateH harati prajYAm AtmAnAtmavivekajAm nASayati
+sp006-000646_GB_02	kaTam
+sp006-000647_GB_02	vAyuH nAvam iva amBasi
+sp006-000648_GB_02	udake jigamizatAm mArgAdudDftya unmArge yaTA vAyuH nAvam pravartayati
+sp006-000649_GB_02	evam AtmavizayAm prajYAm hftvA mano vizayavizayAm karoti
+sp006-000650_GB_02	yatato hyapi iti upanyastasya arTasya anekaDA upapattim uktvA tam cArTam upapAdya upasaMharati
+sp006-000651_GB_02	indriyARAm pravfttO doza upapAdito yasmAt
+sp006-000652_GB_02	tasmAt yasya yateH he mahAbAho
+sp006-000653_GB_02	nigfhItAni sarvaSaH sarvaprakArEH mAnasAdiBedEH indriyARi indriyArTeByaH SabdAdiByaH tasya prajYA pratizWitA
+sp006-000654_GB_02	yaH ayam lOkiko vEdikaSca vyavahAraH sa utpannavivekajYAnasya sTitaprajYasya avidyAkAryatvAt avidyAnivfttO nivartate
+sp006-000655_GB_02	avidyAyASca vidyAviroDAt nivfttiH
+sp006-000656_GB_02	ityetamarTam sPuwIkurvan Aha
+sp006-000657_GB_02	yA niSA rAtriH sarvapadArTAnAm avivekakarI tamaHsvaBAvatvAt sarvezAm BUtAnAm sarva BUtAnAm
+sp006-000658_GB_02	kim tat paramArTatattvam sTitaprajYasya vizayaH
+sp006-000659_GB_02	yaTA naktaYcarARAm ahaH eva sat anyezAm niSA Bavati tadvat
+sp006-000660_GB_02	naktaYcarasTAnIyAnAmajYAnAm sarvaBUtAnAm niSA iva niSA paramArTatattvam agocaratvAt atadbudDInAm
+sp006-000661_GB_02	tasyAm paramArTatattvalakzaRAyAm ajYAnanidrAyAH prabudDo jAgarti saMyamI saMyamavAn jitendriyo yogI ityarTaH
+sp006-000662_GB_02	yasyAm grAhyagrAhakaBedalakzaRAyAm avidyAniSAyAm prasuptAni eva BUtAni jAgrati iti ucyate
+sp006-000663_GB_02	yasyAm niSAyAm prasuptA iva svapnadfSaH sA niSA avidyArUpatvAt paramArTatattvam paSyato muneH
+sp006-000664_GB_02	ataH karmARi avidyAvasTAyAmeva codyante
+sp006-000665_GB_02	na vidyAvasTAyAm
+sp006-000666_GB_02	vidyAyAm hi satyAm udite savitari SArvaramiva tamaH praRASamupagacCati avidyA
+sp006-000667_GB_02	prAg vidyotpatteH avidyA pramARabudDyA gfhyamARA kriyAkArakaPalaBedarUpA satI sarvakarmahetutvam pratipadyate
+sp006-000668_GB_02	na apramARabudDyA gfhyamARAyAH karmahetutvopapattiH
+sp006-000669_GB_02	pramARaBUtena vedena mama coditam kartavyam karma iti hi karmaRi kartA pravartate
+sp006-000670_GB_02	na avidyAmAtramidam sarvam niSeva iti
+sp006-000671_GB_02	yasya punaH niSA iva avidyAmAtramidam sarvam BedajAtam iti
+sp006-000672_GB_02	jYAnam tasya AtmajYasya sarvakarmasannyAse eva aDikAro na pravfttO
+sp006-000673_GB_02	taTA ca darSayizyati
+sp006-000674_GB_02	ityAdinA jYAnanizWAyAmeva tasya aDikAram
+sp006-000675_GB_02	tatrApi pravartakapramARABAve pravfttyanupapattiH iti cet na
+sp006-000676_GB_02	svAtmavizayatvAt AtmajYAnasya
+sp006-000677_GB_02	na hi AtmanaH svAtmani pravartakapramARa apekzatA AtmatvAdeva
+sp006-000678_GB_02	tadantatvAcca sarvapramARAnAm pramARatvasya
+sp006-000679_GB_02	na hi AtmasvarUpADigame sati punaH pramARaprameyavyavahAraH samBavati
+sp006-000680_GB_02	pramAtftvam hi Atmano nivartayati antyam pramARam
+sp006-000681_GB_02	nivartayadeva ca apramARIBavati svapnakAlapramARamiva praboDe
+sp006-000682_GB_02	loke ca vastvaDigame pravfttihetuttvAdarSanAt pramARasya
+sp006-000683_GB_02	tasmAt na AtmavidaH karmaRi aDikAra iti sidDam
+sp006-000684_GB_02	viduzaH tyaktEzaRasya sTitaprajYasya yateH eva mokzaprAptiH
+sp006-000685_GB_02	na tu asannyAsinaH kAmakAmina iti etamarTam dfzwAntena pratipAdayizyan Aha
+sp006-000686_GB_02	ApUryamARam adBiH acalapratizWam acalatayA pratizWA avasTitiH yasya tam acalapratizWam
+sp006-000687_GB_02	samudram ApaH sarvato gatAH praviSanti svAtmasTam avikriyam eva santam yadvat
+sp006-000688_GB_02	tadvat kAmA vizayasanniDO api sarvata icCAviSezA yam puruzam
+sp006-000689_GB_02	na svAtmavaSam kurvanti
+sp006-000690_GB_02	saH SAntim mokzam Apnoti na itaraH kAmakAmI kAmyante iti kAmAH vizayAH
+sp006-000691_GB_02	tAn kAmayitum SIlam yasya sa kAmakAmI na eva prApnoti ityarTaH
+sp006-000692_GB_02	yasmAdevam tasmAt
+sp006-000693_GB_02	vihAya parityajya kAmAn yaH sannyAsI pumAn sarvAn aSezataH kAr tsnyena carati jIvanamAtracezwASezaH paryawati ityarTaH
+sp006-000694_GB_02	niHspfhaH SarIrajIvanamAtreऽpi nirgatA spfhA yasya saH niHspfhaH san
+sp006-000695_GB_02	nirmamaH SarIrajIvanamAtrAkziptaparigrahe api mama idam iti aBiniveSavarjitaH
+sp006-000696_GB_02	nirahaNkAro vidyAvattvAdinimittAtmasamBAvanArahita ityarTaH
+sp006-000697_GB_02	sa evamBUtaH sTitaprajYo brahmavit SAntim sarvasaMsAraduHKoparamalakzaRAm nirvARAKyAm
+sp006-000698_GB_02	aDigacCati prApnoti brahmaBUto Bavati ityarTaH
+sp006-000699_GB_02	sA ezA jYAnanizWA stUyate
+sp006-000700_GB_02	ezA yaToktA brAhmI brahmaRi BavA iyam sTitiH sarvam karma sannyasya brahmarUpeRa eva avasTAnam iti etat
+sp006-000701_GB_02	he pArTa na enAm sTitim prApya labDvA na vimuhyati na moham prApnoti
+sp006-000702_GB_02	sTitvA asyAm sTitO brAhmyAm yaToktAyAm antakAleऽpi
+sp006-000703_GB_02	antaTa vayasi api brahmanirvARam brahmanirvftim mokzam fcCati gacCati
+sp006-000704_GB_02	kimu vaktavyam brahmacaryAdeva sannyasya yAvajjIvam yo brahmaRi eva avatizWate sa brahmanirvARam fCati iti
+sp006-000705_GB_02	SrIBagavadgItABAzye brahmavidyAyAm yogaSAstre SrIkfzRArjunasaMvAde sANKyayogo nAma dvitIyoऽDyAyaH
+sp006-000706_GB_03-00	SAstrasya pravfttinivfttivizayaBUte dve budDI BagavatA nirdizwe
+sp006-000707_GB_03-00	sAN Kye budDiH yoge budDiH iti ca
+sp006-000708_GB_03-00	iti AraBya A aDyAyaparisamApteH
+sp006-000709_GB_03-00	sAN KyabudDyASritAnAm sannyAsam kartavyam uktvA tezAm tannizWatayA eva ca kftArTatA uktA
+sp006-000710_GB_03-00	ezA brAhmI sTitiH iti
+sp006-000711_GB_03-00	arjunAya ca
+sp006-000712_GB_03-00	iti karma eva kartavyam uktavAn yogabudDim ASritya na tata eva SreyaHprAptim uktavAn
+sp006-000713_GB_03-00	tadetadAlakzya paryAkulIBUtabudDiH arjuna uvAca
+sp006-000714_GB_03-00	kaTam BaktAya SreyorTine yat sAkzAt SreyaHsADanam sAN KyabudDinizWAm SrAvayitvA
+sp006-000715_GB_03-00	mAm karmaRi dfzwAnekAnarTayukte pAramparyeRa api anEkAntikaSreyaHprAptiPale niyuYjyAditi yuktaH paryAkulIBAvaH arjunasya
+sp006-000716_GB_03-00	tadanurUpaSca praSnaH jyAyasI cet ityAdi
+sp006-000717_GB_03-00	praSnApAkaraRavAkyam ca BagavatA uktam yaToktaviBAgavizaye SAstre
+sp006-000718_GB_03-00	kecittu arjunasya praSnArTam anyaTA kalpayitvA tatpratikUlam BagavataH prativacanam varRayanti
+sp006-000719_GB_03-00	yaTA ca AtmanA sambanDagranTe gItArTo nirUpitaH tatpratikUlam ca iha punaH praSnaprativacanayoH arTam nirUpayanti
+sp006-000720_GB_03-00	kaTam tatra sambanDagranTe tAvat
+sp006-000721_GB_03-00	sarvezAm ASramiRAm jYAnakarmaRoH samuccayo gItASAstre nirUpitaH arTa iti uktam
+sp006-000722_GB_03-00	punaH viSezitam ca yAvajjIvaSruticoditAni karmARi parityajya
+sp006-000723_GB_03-00	kevalAdeva jYAnAt mokzaH prApyate iti etat ekAntena eva pratizidDam iti
+sp006-000724_GB_03-00	iha tu ASramavikalpam darSayatA yAvajjIvaSruticoditAnAmeva karmaRAm parityAga uktaH
+sp006-000725_GB_03-00	tat kaTam IdfSam virudDam arTam arjunAya brUyAt BagavAn
+sp006-000726_GB_03-00	SrotA vA kaTam virudDam arTam avaDArayet
+sp006-000727_GB_03-00	tatra etat syAt gfhasTAnAmeva SrOtakarmaparityAgena kevalAdeva jYAnAt mokzaH pratiziDyate
+sp006-000728_GB_03-00	na tu ASramAntarARAm iti
+sp006-000729_GB_03-00	etadapi pUrvottaravirudDam eva
+sp006-000730_GB_03-00	sarvASramiRAm jYAnakarmaRoH samuccayo gItASAstre niScitaH arTa iti pratijYAya
+sp006-000731_GB_03-00	iha kaTam tadvirudDam kevalAdeva jYAnAt mokzam brUyAdASramAntarARAm
+sp006-000732_GB_03-00	aTa matam SrOtakarmApekzayA etadvacanam kevalAdeva jYAnAt SrOtakarmarahitAt gfhasTAnAm mokzaH pratiziDyate iti
+sp006-000733_GB_03-00	tatra gfhasTAnAm vidyamAnam api smArtam karma avidyamAnavat apekzya jYAnAdeva kevalAt na mokza iti ucyate iti
+sp006-000734_GB_03-00	etadapi virudDam
+sp006-000735_GB_03-00	gfhasTasyEva smArtakarmaRA samuccitAt jYAnAt mokzaH pratiziDyate
+sp006-000736_GB_03-00	na tu ASramAntarARAm iti kaTam vivekiBiH Sakyam avaDArayitum
+sp006-000737_GB_03-00	yadi mokzasADanatvena smArtAni karmARi UrDvaretasAm samuccIyante
+sp006-000738_GB_03-00	taTA gfhasTasya api izyatAm smArtEH eva samuccayo na SrOtEH
+sp006-000739_GB_03-00	aTa SrOtEH smArtESca gfhasTasya eva samuccayo mokzAya UrDvaretasAm tu smArtakarmamAtrasamuccitAt jYAnAt mokza iti
+sp006-000740_GB_03-00	tatra evam sati gfhasTasya AyAsabAhulyam SrOtam smArtam ca bahuduHKarUpam karma Sirasi Aropitam syAt
+sp006-000741_GB_03-00	aTa gfhasTasya eva AyAsabAhulyakAraRAt mokzaH syAt
+sp006-000742_GB_03-00	na ASramAntarARAm SrOtanityakarmarahitatvAt iti
+sp006-000743_GB_03-00	tadapi asat
+sp006-000744_GB_03-00	sarvopanizatsu itihAsapurARayogaSAstre ca jYAnANgatvena mumukzoH sarvakarmasannyAsaviDAnAt
+sp006-000745_GB_03-00	ASramavikalpasamuccayaviDAnAcca SrutismftyoH
+sp006-000746_GB_03-00	sidDaH tarhi sarvASramiRAm jYAnakarmaRoH samuccayaH
+sp006-000747_GB_03-00	na mumukzoH sarvakarmasannyAsaviDAnAt
+sp006-000748_GB_03-00	vyutTAyATa BikzAcaryam caranti
+sp006-000749_GB_03-00	tasmAt sannyAsamezAm tapasAmatiriktamAhuH
+sp006-000750_GB_03-00	nAciketa upanizat dvi ekonASIti
+sp006-000751_GB_03-00	nyAsa evAtyareca yat
+sp006-000752_GB_03-00	nAciketa upanizat dvi azwa saptati iti
+sp006-000753_GB_03-00	na karmaRA na prajayA Danena tyAgenEke amftatvamAnaSuH
+sp006-000754_GB_03-00	nAciketa upanizat dvi dvAdaSa iti ca
+sp006-000755_GB_03-00	brahmacaryAdeva pravrajet jAbAla upanizat caturTa ityAdyAH SrutayaH
+sp006-000756_GB_03-00	tasmAtkarma na kurvanti yatayaH pAradarSinaH
+sp006-000757_GB_03-00	iha api
+sp006-000758_GB_03-00	mokzasya ca akAryatvAt mumukzoH karmAnarTakyam
+sp006-000759_GB_03-00	nityAni pratyavAyaparihArArTam anuzWeyAn iti cet na
+sp006-000760_GB_03-00	asannyAsivizayatvAt pratyavAyaprApteH
+sp006-000761_GB_03-00	na hi agnikAryAdyakaraRAt sannyAsinaH pratyavAyaH
+sp006-000762_GB_03-00	kalpayitum Sakyo yaTA brahmacAriRAm asannyAsinA् api karmiRAm
+sp006-000763_GB_03-00	na tAvat nityAnAm karmaRAm aBAvAdeva BAvarUpasya pratyavAyasya utpattiH kalpayitum SakyA
+sp006-000764_GB_03-00	yadi vihitAkaraRAdasamBAvyam api pratyavAyam brUyAt vedaH
+sp006-000765_GB_03-00	tadA anarTakaro vedaH apramARam iti uktam syAt
+sp006-000766_GB_03-00	vihitasya karaRAkaraRayoH duHKamAtraPalatvAt
+sp006-000767_GB_03-00	taTA ca kArakam SAstram na jYApakam iti anupapannArTam kalpitam syAt
+sp006-000768_GB_03-00	na ca etad izwam
+sp006-000769_GB_03-00	tasmAt na sannyAsinAm karmaRi
+sp006-000770_GB_03-00	ato jYAnakarmaRoH samuccayAnupapattiH
+sp006-000771_GB_03-00	iti arjunasya praSnAnupapatteH ca
+sp006-000772_GB_03-00	yadi hi BagavatA dvitIye aDyAye jYAnam karma ca samuccayena tvayA anuzWeyam iti uktam syAt
+sp006-000773_GB_03-00	tataH arjunasya praSnaH anupapanno
+sp006-000774_GB_03-00	arjunAya cet budDikarmaRI tvayA anuzWeye iti ukte yA karmaRo jyAyasI budDiH sA api uktA eva iti
+sp006-000775_GB_03-00	iti praSno na kaTaYcana upapadyate
+sp006-000776_GB_03-00	na ca arjunasya eva jyAyasI budDiH na anuzWeyA iti BagavatA uktam pUrvam iti kalpayitum yuktam
+sp006-000777_GB_03-00	yena jyAyasI cet iti praSnaH syAt
+sp006-000778_GB_03-00	yadi punaH ekasya puruzasya jYAnakarmaRoH viroDAt yugapat anuzWAnam na samBavatIti
+sp006-000779_GB_03-00	BinnapuruzAnuzWeyatvam BagavatA pUrvam uktam syAt tataH ayam praSna upapannaH
+sp006-000780_GB_03-00	jyAyasI cet ityAdiH
+sp006-000781_GB_03-00	avivekataH praSnakalpanAyAm api BinnapuruzAnuzWeyatvena BagavataH prativacanam na upapadyate
+sp006-000782_GB_03-00	na ca ajYAnanimittam Bagavatprativacanam kalpyam
+sp006-000783_GB_03-00	asmAcca BinnapuruzAnuzWeyatvena jYAnakarmanizWayoH BagavataH prativacanadarSanAt jYAnakarmaRoH samuccayAnupapattiH
+sp006-000784_GB_03-00	tasmAt kevalAdeva jYAnAt mokza iti ezaH arTo niScito gItAsu sarvopanizatsu ca
+sp006-000785_GB_03-00	jYAnakarmaRoH ekam vada niScitya iti ca ekavizayA eva prArTanA anupapannA uBayoH samuccayasamBave
+sp006-000786_GB_03-00	iti ca jYAnanizWAsamBavam arjunasya avaDAraRena darSayizyati
+sp006-000787_GB_03-01	jyAyasI SreyasI cet yadi karmaRaH sakASAt te tava matA aBipretA budDiH jYAnam he janArdana
+sp006-000788_GB_03-01	yadi budDikarmaRI samuccite izwe tadA ekam SreyaHsADanam iti karmaRo jyAyasI budDiH iti
+sp006-000789_GB_03-01	karmaRaH atiriktakaraRam budDeH anupapannam arjunena kftam syAt
+sp006-000790_GB_03-01	na hi tadeva tasmAt PalataH atiriktam syAt
+sp006-000791_GB_03-01	taTA karmaRaH SreyaskarI BagavatA uktA budDiH
+sp006-000792_GB_03-01	aSreyaskaram ca karma kuru iti mAm pratipAdayati tat kim nu kAraRam iti
+sp006-000793_GB_03-01	Bagavata upAlamBam iva kurvan tat kim kasmAt karmaRi Gore krUre hiMsAlakzaRe
+sp006-000794_GB_03-01	mAm niyojayasi keSava iti ca yad Aha tacca na upapadyate
+sp006-000795_GB_03-01	aTa smArtena eva karmaRA samuccayaH sarvezAm BagavatA uktaH arjunena ca avaDAritaH cet
+sp006-000796_GB_03-01	tatkim karmaRi Gore mAm niyojayasi ityAdi kaTam yuktam vacanam
+sp006-000797_GB_03-02	vyAmiSreRa iva yadyapi viviktABiDAyI BagavAn taTApi mama mandabudDeH vyAmiSram iva BagavadvAkyam pratiBAti
+sp006-000798_GB_03-02	tena mama budDim mohayasi iva
+sp006-000799_GB_03-02	mama budDivyAmohApanayAya hi pravfttaH tvam tu kaTam mohayasi ato bravImi budDim mohayasi iva me mama iti
+sp006-000800_GB_03-02	tvam tu BinnakartfkayoH jYAnakarmaRoH ekapuruzAnuzWAnAsamBavam yadi manyase
+sp006-000801_GB_03-02	tatra evam sati tat tayoH ekam budDim karma vA idam eva arjunasya yogyam budDiSaktyavasTAnurUpam iti niScitya vada brUhi
+sp006-000802_GB_03-02	yena jYAnena karmaRA vA anyatareRa SreyaH aham ApnuyAm prApnuyAm
+sp006-000803_GB_03-02	yadi hi karmanizWAyAm guRaBUtam api jYAnam BagavatA uktam syAt
+sp006-000804_GB_03-02	tat kaTam tayoH ekam vada iti ekavizayA eva arjunasya SuSrUzA syAt
+sp006-000805_GB_03-02	na hi BagavatA uktam anyatarad eva jYAnakarmaRoH vakzyAmi na eva dvayam iti
+sp006-000806_GB_03-02	yena uBayaprAptyasamBavam Atmano manyamAna ekam eva prArTayet
+sp006-000807_GB_03-03	SrIBagavAnuvAca
+sp006-000808_GB_03-03	loke asmin SAstrAnuzWAnADikftAnAm trEvarRikAnAm dviviDA dviprakArA nizWA sTitiH
+sp006-000809_GB_03-03	anuzWeyatAtparyam purA pUrvam sargAdO prajAH sfzwvA tAsAm aByudayaniHSreyasaprAptisADanam vedArTasampradAyam AvizkurvatA
+sp006-000810_GB_03-03	proktA mayA sarvajYena ISvareRa he anaGa apApa
+sp006-000811_GB_03-03	tatra kA sA dviviDA nizWA iti Aha
+sp006-000812_GB_03-03	jYAnayogena jYAnameva yogaH tena sANKyAnAm AtmAnAtmavizayavivekavijYAnavatAm brahmacaryASramAdeva
+sp006-000813_GB_03-03	kftasannyAsAnAm vedAntavijYAnasuniScitArTAnAm paramahaMsaparivrAjakAnAm brahmaRi eva avasTitAnAm nizWA proktA
+sp006-000814_GB_03-03	karmayogena karma eva yogaH karmayogaH
+sp006-000815_GB_03-03	tena karmayogena yoginAm karmiRAm nizWA proktA ityarTaH
+sp006-000816_GB_03-03	yadi ca ekena puruzeRa ekasmE puruzArTAya jYAnam karma ca samuccitya anuzWeyam
+sp006-000817_GB_03-03	BagavatA izwam uktam vakzyamARam vA gItAsu vedezu ca uktam kaTam iha arjunAya
+sp006-000818_GB_03-03	upasannAya priyAya viSizwaBinnapuruzakartfke eva jYAnakarmanizWe brUyAt
+sp006-000819_GB_03-03	yadi punaH arjuno jYAnam karma ca dvayam SrutvA svayameva anuzWAsyati anyezAm tu BinnapuruzAnuzWeyatAm vakzyAmi iti
+sp006-000820_GB_03-03	matam BagavataH kalpyeta tadA rAgadvezavAn apramARaBUto BagavAn kalpitaH syAt
+sp006-000821_GB_03-03	taccAyuktam
+sp006-000822_GB_03-03	tasmAt kayApi yuktyA na samuccayo jYAnakarmaRoH
+sp006-000823_GB_03-03	yadarjunena uktam karmaRo jyAyastvam budDeH tacca sTitam anirAkaraRAt
+sp006-000824_GB_03-03	tasyASca jYAnanizWAyAH sannyAsinAm eva anuzWeyatvam BinnapuruzAnuzWeyatvavacanAt ca
+sp006-000825_GB_03-03	BagavataH evam eva anumatam iti gamyate
+sp006-000826_GB_03-04	karma na AraBe iti evam manvAnam Alakzya Aha BagavAn
+sp006-000827_GB_03-04	aTavA jYAnakarmanizWayoH parasparaviroDAt ekena puruzeRa yugapat anuzWAtum aSaktyatve sati
+sp006-000828_GB_03-04	itaretarAnapekzayoH eva puruzArTahetutve prApte
+sp006-000829_GB_03-04	karmanizWAyA jYAnanizWAprAptihetutvena puruzArTahetutvam na svAtantryeRa
+sp006-000830_GB_03-04	jYAnanizWA tu karmanizWopAyalabDAtmikA satI svAtantryeRa puruzArTahetuH anyAnapekzA iti etam arTam pradarSayizyan Aha BagavAn
+sp006-000831_GB_03-04	na karmaRAm anAramBAt aprAramBAt karmARAm kriyARAm yajYAdInAm iha janmani janmAntare vA anuzWitAnAm
+sp006-000832_GB_03-04	upAttaduritakzayahetutvena sattvaSudDikAraRAnAm tatkAraRatvena ca jYAnotpattidvAreRa jYAnanizWAhetUnAm
+sp006-000833_GB_03-04	mahABArate SAntiparvaRi mokzaDarmaparvaRi manubfhaspati saMvAde caturaDika dviSatatamoऽDyAyaH azwamaH SlokaH ityAdismaraRAt
+sp006-000834_GB_03-04	anAramBAt anuzWAnAt nEzkarmyam nizkarmaBAvam karmaSUnyatAm jYAnayogena nizWAm nizkriyAtmasvarUpeRa eva avasTAnam iti yAvat
+sp006-000835_GB_03-04	puruzo na aSnute na prApnoti ityarTaH
+sp006-000836_GB_03-04	karmaRAmanAramBAt nEzkarmyam na aSnute iti vacanAt tadviparyayAt tezAm AramBAt nEzkarmyam aSnute iti gamyate
+sp006-000837_GB_03-04	kasmAt punaH kAraRAt karmaRAm manAramBAt nEzkarmyam nASnute iti
+sp006-000838_GB_03-04	ucyate
+sp006-000839_GB_03-04	karmAramBasya eva nEzkarmyopAyatvAt
+sp006-000840_GB_03-04	na hi upAyam antareRa upeyaprAptiH asti
+sp006-000841_GB_03-04	karmayogopAyatvam ca nEzkarmyalakzaRasya jYAnayogasya SrutO iha ca pratipAdanAt
+sp006-000842_GB_03-04	SrutO tAvat prakftasya Atmalokasya vedyasya vedanopAyatvena
+sp006-000843_GB_03-04	bfhadAraRyaka upanizat catuH catuH dvAviMSati ityAdinA karmayogasya jYAnayogopAyatvam pratipAditam
+sp006-000844_GB_03-04	iha api ca
+sp006-000845_GB_03-04	ityAdi pratipAdayizyati
+sp006-000846_GB_03-04	nanu ca
+sp006-000847_GB_03-04	ityAdO kartavyakarmasannyAsAdapi nEzkarmyaprAptim darSayati loke ca karmaRAm manAramBAt nEzkarmyam iti prasidDataram
+sp006-000848_GB_03-04	ataSca nEzkarmyArTinaH kim karmAramBeRa iti prAptam
+sp006-000849_GB_03-04	ata Aha na ca sannyasanAdeva iti
+sp006-000850_GB_03-04	na api sannyasanAdeva kevalAt karmaparityAgamAtrAdeva jYAnarahitAt
+sp006-000851_GB_03-04	sidDim nEzkarmyalakzaRAm jYAnayogena nizWAm samaDigacCati na prApnoti
+sp006-000852_GB_03-05	nEzkarmyalakzaRAm puruzo na aDigacCati iti hetvAkANkzAyAm Aha
+sp006-000853_GB_03-05	na hi yasmAt kzaRam api kAlam jAtu kadAcit kaScit tizWati akarmakft san
+sp006-000854_GB_03-05	kasmAt
+sp006-000855_GB_03-05	kAryate hi yasmAt avaSa eva karma sarvaH prARI prakftijEH prakftito jAtEH sattvarajastamoBiH guREH
+sp006-000856_GB_03-05	ajYa iti vAkyaSezo yato vakzyati
+sp006-000857_GB_03-05	caturdaSatame aDyAye trayoviMSatitamaH SlokaH
+sp006-000858_GB_03-05	guREryo na vicAlyate iti sAN KyAnAm pfTakkaraRAt
+sp006-000859_GB_03-05	tftIye aDyAye tArtIyaH SlokaH
+sp006-000860_GB_03-05	ajYAnAmeva hi karmayo na jYAninAm
+sp006-000861_GB_03-05	jYAninAm tu guREH acAlyamAnAnAm svataH calanABAvAt karmayogo na upapadyate
+sp006-000862_GB_03-05	taTA ca vyAKyAtam vedAvinASinam iti atra dvitIye aDyAye ekaviMSatitamaH SlokaH
+sp006-000863_GB_03-06	karmendriyARi hastAdIni saMyamya saMhftya yaH Aste tizWati
+sp006-000864_GB_03-06	manasA smaran cintayan indriyArTAn vizayAn vimUQAtmA
+sp006-000865_GB_03-06	vimUQAntaHkaraRo miTyAcAro mfzAcAraH pApAcAraH sa ucyate
+sp006-000866_GB_03-07	yastu punaH karmaRI aDikftaH ajYo budDIndriyARi manasA niyamya AraBate arjuna karmendriyEH vAkpARyAdiBiH
+sp006-000867_GB_03-07	kim AraBate iti Aha
+sp006-000868_GB_03-07	karmayogam asaktaH san sa viSizyate itarasmAt miTyAcArAt
+sp006-000869_GB_03-08	niyatam nityam yo yasmin karmaRi aDikftaH PalAya ca aSrutam tat niyatam karma
+sp006-000870_GB_03-08	tat kuru tvam he arjuna yataH karma jyAyaH aDikataram Palato hi yasmAt akarmaRaH akaraRAt anAramBAt
+sp006-000871_GB_03-08	kaTam SarIrayAtrA SarIrasTitiH api ca te tava na prasiDyet prasidDim na gacCet akarmaRaH akaraRAt
+sp006-000872_GB_03-08	ato dfzwaH karmAkarmaRoH viSezo loke
+sp006-000873_GB_03-09	yajYo vE vizRuH tEttarIya saMhitA eka sapta catuH iti SruteryajYa ISvaraH
+sp006-000874_GB_03-09	tadarTam yat kriyate tat yajYArTam karma
+sp006-000875_GB_03-09	tasmAt karmaRaH anyatra anyena karmaRA lokaH ayam aDikftaH karmakft
+sp006-000876_GB_03-09	karmabanDanaH karma banDanam yasya saH ayam karmabanDano loko na tu yajYArTAt
+sp006-000877_GB_03-09	ataH tadarTam yajYArTam karma kOnteya muktasaNgaH karmaPalasaNgavarjitaH san samAcarA nivartaya
+sp006-000878_GB_03-10	sahayajYA yajYasahitAH prajA trayo varRAH tAH sfzwvA utpAdya purA sargAdO uvAca uktavAn
+sp006-000879_GB_03-10	prajApatiH prajAnAm srazwA anena yajYena prasavizyaDvam prasavo vfdDiH utpattiH tam kuruDvam
+sp006-000880_GB_03-10	eza yajYo vo yuzmAkam astu Bavatu
+sp006-000881_GB_03-10	izwakAmaDuk izwAn aBipretAn kAmAn PalaviSezAn dogDi iti izwakAmaDuk
+sp006-000882_GB_03-11	devAn indrAdIn BAvayata varDayata anena yajYena
+sp006-000883_GB_03-11	te devA BAvayantu ApyAyayantu vfzwyAdinA vo yuzmAn
+sp006-000884_GB_03-11	evam parasparam anyonyam BAvayantaH SreyaH param mokzalakzaRam jYAnaprAptikrameRa avApsyaTa
+sp006-000885_GB_03-11	svargam vA param SreyaH avApsyaTa
+sp006-000886_GB_03-12	izwAn aBipretAn BogAn hi vo yuzmaByam devA dAsyante vitarizyanti strIpaSuputrAdIn
+sp006-000887_GB_03-12	yajYaBAvitA yajYEH varDitAH tozitA ityarTaH
+sp006-000888_GB_03-12	tEH devEH dattAn BogAn apradAya adattvA AnfRyam akftvA ityarTaH
+sp006-000889_GB_03-12	eByo deveByaH yo BuNkte svadehendriyARi eva tarpayati
+sp006-000890_GB_03-12	stena eva taskara eva sa devAdisvApahArI
+sp006-000891_GB_03-13	devayajYAdIn nirvartya tacCizwam aSanam amftAKyam aSitum SIlam yezAm te yajYaSizwASinaH santaH
+sp006-000892_GB_03-13	sarvapApEH cullyAdipaYcasUnAkftEH pramAdakftahiMsAdijanitESca anyEH
+sp006-000893_GB_03-13	ye tu AtmamBaraRo BuYjate te tu aGam pApam svayam api pApA ye pacanti
+sp006-000894_GB_03-13	pAkam nirvartayanti AtmakAraRAt AtmahetoH
+sp006-000895_GB_03-14	kaTam iti ucyate
+sp006-000896_GB_03-14	annAt BuktAt lohitaretaHpariRatAt pratyakzam Bavanti jAyante BUtAni
+sp006-000897_GB_03-14	parjanyAt vfzweH annasya samBavaH annasamBavaH
+sp006-000898_GB_03-14	yajYAt Bavati parjanyaH
+sp006-000899_GB_03-14	manusmfti tri zawsaptati iti smfteH
+sp006-000900_GB_03-14	yajYaH apUrvam sa ca yajYaH karmasamudBava ftvigyajamAnayoSca vyApAraH karma
+sp006-000901_GB_03-14	tataH samudBavo yasya yajYasya apUrvasya sa yajYaH karmasamudBavaH
+sp006-000902_GB_03-15	karma brahmodBavam brahma vedaH sa udBavaH kAraRam yasya tat karma brahmodBavam vidDi jAnIhi
+sp006-000903_GB_03-15	brahmA punaH vedAKyam akzarasamudBavam akzaram brahma paramAtmA samudBavo yasya tat akzarasamudBavam
+sp006-000904_GB_03-15	brahma veda ityarTaH
+sp006-000905_GB_03-15	yasmAt sAkzAt paramAtmAKyAt akzarAt puruzaniHSvAsavat samudBUtam brahma
+sp006-000906_GB_03-15	tasmAt sarvArTaprakASakatvAt sarvagatam
+sp006-000907_GB_03-15	sarvagatam api sat nityam sadA yajYaviDipraDAnatvAt yajYe pratizWitam
+sp006-000908_GB_03-16	evam ISvareRa vedayajYapUrvakam jagat cakram vartitam na anuvartayati iha
+sp006-000909_GB_03-16	loke yaH karmaRi aDikftaH san aGAyuH aGam pApam AyuH jIvanam yasya saH aGAyuH
+sp006-000910_GB_03-16	pApajIvana iti yAvat
+sp006-000911_GB_03-16	indriyArAma indriyEH ArAma AramaRam AkrIqA vizayezu yasya sa indriyArAmaH moGam vfTA he pArTa sa jIvati
+sp006-000912_GB_03-16	tasmAdajYena aDikftena kartavyam eva karma iti prakaraRArTaH
+sp006-000913_GB_03-16	prAgAtmajYAnanizWAyogyatAprApteH tAdarTyena karmayogAnuzWAnam aDikftena anAtmajYena kartavyam eva iti etat
+sp006-000914_GB_03-16	ityata AraBya
+sp006-000915_GB_03-16	iti evam antena pratipAdya
+sp006-000916_GB_03-16	iti evam antenApi granTena prAsaNgikam aDikftasya anAtmavidaH karmAnuzWAne bahu kAraRam uktam
+sp006-000917_GB_03-16	tadakaraRe ca dozasaNkIrtanam kftam
+sp006-000918_GB_03-17	pUrvoktakarmayogAnuzWAnopAyaprApyAm anAtmavidyA jYAnayogena eva nizWAm AtmavidBiH sANKyEH anuzWeyAm
+sp006-000919_GB_03-17	aprAptena eva iti evamarTam arjunasya praSnam ASaNkya svayameva vA SAstrArTasya vivekapratipattyarTam
+sp006-000920_GB_03-17	bfhadAraRyaka upanizat tri paYca ekaH iti evam SrutyarTam iha gItASAstre pratipAdayizitam Avizkurvan Aha BagavAn
+sp006-000921_GB_03-17	yastu sANKya AtmajYAnanizWa AtmaratiH Atmani eva ratiH na vizayezu yasya sa AtmaratiH eva syAt BavedAtmatfptaH ca
+sp006-000922_GB_03-17	AtmanA eva tfpto na annarasAdinA
+sp006-000923_GB_03-17	mAnavo manuzyaH sannyAsI Atmani eva ca santuzwaH
+sp006-000924_GB_03-17	santozo hi bAhyArTalABe sarvasya Bavati tam anapekzya Atmani eva ca santuzwaH sarvato vItatfzRa iti etat
+sp006-000925_GB_03-17	ya IdfSA Atmavit tasya kAryam karaRIyam na vidyate na asti ityarTaH
+sp006-000926_GB_03-18	na eva tasya paramAtmarate kftena karmaRA arTaH prayojanam asti
+sp006-000927_GB_03-18	astu tarhi akftena akaraRena pratyavAyAKyaH anarTaH
+sp006-000928_GB_03-18	na akftena iha loke kaScana kaScid api pratyavAyaprAptirUpA AtmahAnilakzaRo vA na eva asti
+sp006-000929_GB_03-18	na ca asya sarvaBUtezu brahmAdisTAvarAntezu BUtezu kaScidarTavyapASrayaH
+sp006-000930_GB_03-18	prayojananimittakriyAsADyo vyapASrayo vyapASrayaRam
+sp006-000931_GB_03-18	kaYcit BUtaviSezam ASritya na sADyaH kaScidarTaH asti
+sp006-000932_GB_03-18	yena tadarTA kriyA anuzWeyA syAt
+sp006-000933_GB_03-18	na tvam etasmin sarvataH samplutodakasTAnIye samyagdarSane vartase
+sp006-000934_GB_03-19	tasmAdasaktaH saNgavarjitaH satatam sarvadA kAryam kartavyam nityam karma samAcara nirvartaya
+sp006-000935_GB_03-19	asakto hi yasmAt samAcaran ISvarArTam karma kurvan
+sp006-000936_GB_03-19	param mokzam Apnoti pUruzaH sattvaSudDidvAreRa ityarTaH
+sp006-000937_GB_03-20	karmaRA eva hi yasmAt pUrve kzatriyA vidvAMsaH saMsidDim mokzam gantum AsTitAH pravfttA
+sp006-000938_GB_03-20	janakAdayo janaka aSvapatipraBftayaH
+sp006-000939_GB_03-20	yadi te prAptasamyagdarSanAH tato lokasaNgrahArTam prArabDakarmatvAt karmaRA saha eva asannyasya eva karma saMsidDim AsTitA ityarTaH
+sp006-000940_GB_03-20	aTa aprAptasamyagdarSanA janakAdayaH
+sp006-000941_GB_03-20	tadA karmaRA sattvaSudDisADanaBUtena krameRa saMsidDim AsTitA iti vyAKyeyaH SlokaH
+sp006-000942_GB_03-20	aTa manyase pUrvEH api janakAdiBiH api ajAnadBiH eva
+sp006-000943_GB_03-20	kartavyam karma kftam tAvatA na avaSyam anyena kartavyam samyagdarSanavatA kftArTena iti
+sp006-000944_GB_03-20	taTApi prArabDakarmAyattaH tvam lokasaNgraham eva api
+sp006-000945_GB_03-20	lokasya unmArgapravfttinivAraRam lokasaNgrahaH tamevApi prayojanam sampaSyan kartum arhasi
+sp006-000946_GB_03-21	yadyat karma Acarati yezu yezu SrezWaH praDAnaH tattadeva karma Acarati itaraH
+sp006-000947_GB_03-21	anyo janaH tadanugataH
+sp006-000948_GB_03-21	kiYca saH SrezWo yat pramARam kurute lOkikam vEdikam vA
+sp006-000949_GB_03-21	lokaH tadanuvartate tadeva pramARIkaroti ityarTaH
+sp006-000950_GB_03-22	na me mama pArTa na asti na vidyate kartavyam trizu api lokezu kiYcana kiYcidapi
+sp006-000951_GB_03-22	kasmAt na anavAptam aprAptam avAptavyam prApaRIyam taTApi varte eva ca karmaRi aham
+sp006-000952_GB_03-23	yadi punaH aham na varteyam jAtu kadAcit karmaRi atandritaH analasaH san
+sp006-000953_GB_03-23	mama SrezWasya sato vartma mArgam anuvartante manuzyA he pArTa sarvaSaH sarvaprakArEH
+sp006-000954_GB_03-24	utsIdeyuH vinaSyeyuH ime sarve lokA lokasTitinimittasya karmaRaH aBAvAt na kuryAm karma cedaham
+sp006-000955_GB_03-24	kiYca saNkarasya ca kartA syAm
+sp006-000956_GB_03-24	tena kAraRena upahanyAm imAH prajAH
+sp006-000957_GB_03-24	prajAnAmanugrahAya pravfttaH tad upahatim upahananam kuryAm ityarTaH
+sp006-000958_GB_03-24	mama ISvarasya ananurUpam Apadyeta
+sp006-000959_GB_03-25	saktAH karmaRi asya karmaRaH Palam mama Bavizyati iti kecit
+sp006-000960_GB_03-25	avidvAMso yaTA kurvanti BArata kuryAt vidvAn Atmavit taTA asaktaH san
+sp006-000961_GB_03-25	tadvat kimarTam karoti tat SfRu
+sp006-000962_GB_03-25	cikIrzuH kartum icCuH lokasaNgraham
+sp006-000963_GB_03-26	anyasya vA lokasaNgraham muktvA tataH tasya AtmavidaH idam upadiSyate
+sp006-000964_GB_03-26	budDeH Bedo budDiBedo mayA idam kartavyam Boktavyam ca asya karmaRaH Palam iti
+sp006-000965_GB_03-26	niScitarUpAyA budDeH Bedanam cAlanam budDiBedaH tam na janayet na utpAdayet
+sp006-000966_GB_03-26	ajYAnAm avivekinAm karmasaNginAm karmaRi AsaktAnAm AsaNgavatAm
+sp006-000967_GB_03-26	kim tu kuryAt
+sp006-000968_GB_03-26	jozayet kArayet sarvakarmARi vidvAn svayam tadeva aviduzAm karma yuktaH aBiyuktaH samAcaran
+sp006-000969_GB_03-27	prakfteH prakftiH praDAnam sattvarajastamasAm guRAnAm sAmyAvasTA
+sp006-000970_GB_03-27	tasyAH prakfteH guREH vikArEH kAryakaraRarUpEH kriyamARAni karmARi
+sp006-000971_GB_03-27	lOkikAni SAstrIyARi ca sarvaSaH sarvaprakArEH ahaNkAravimUQAtmA
+sp006-000972_GB_03-27	kAryakaraRasaNGAtAtmapratyayaH ahaNkAraH tena viviDam nAnAviDam mUQAtmA antaHkaraRam yasya saH ayam
+sp006-000973_GB_03-27	kAryakaraRaDarmA kAryakaraRABimAnI avidyayA karmARi Atmani manyamAnaH tattatkarmaRAm aham kartA iti manyate
+sp006-000974_GB_03-28	tattvavit tu mahAbAho
+sp006-000975_GB_03-28	kasya tattvavit
+sp006-000976_GB_03-28	guRakarmaviBAgayoH guRaviBAgasya karmaviBAgasya ca tattvavit ityarTaH
+sp006-000977_GB_03-28	guRAH karaRAtmakA guRezu vizayAtmakezu vartante na AtmA iti matvA na sajjate saktim na karoti
+sp006-000978_GB_03-29	prakfteH guREH samyak mUQAH sammohitAH santaH sajjante guRAnAm karmasu guRakarmasu vayam karma kurmaH PalAya iti
+sp006-000979_GB_03-29	tAn karmasaNginaH akftsnavidaH karmaPalamAtradarSino mandAn mandaprajYAn kftsnavit
+sp006-000980_GB_03-29	Atmavit svayam na vicAlayet budDiBedakaraRam eva cAlanam tat na kuryAdityarTaH
+sp006-000981_GB_03-30	mayi vAsudeve parameSvare sarvajYe sarvAtmani sarvARi karmARi sannyasya nikzipya aDyAtmacetasA vivekabudDyA
+sp006-000982_GB_03-30	aham kartA ISvarAya Bftyavat karomi iti anayA budDyA
+sp006-000983_GB_03-30	tava sa tvam nirmamo BUtvA yuDyasva vigatajvaro vigatasantApo vigataSokaH san ityarTaH
+sp006-000984_GB_03-31	ye me madIyam idam matam anutizWanti anuvartante mAnavA manuzyAH
+sp006-000985_GB_03-31	SradDAvantaH SradDaDAnA anasUyantaH asUyA ca mayi gurO vAsudeve akurvantaH
+sp006-000986_GB_03-31	mucyante te api evam BUtAH karmaBiH DarmADarmAKyEH
+sp006-000987_GB_03-32	ye tu tadviparItA etat mama matam aByasUyanto na anutizWanti na anuvartante me matam
+sp006-000988_GB_03-32	sarvezu jYAnezu viviDam mUQAH te
+sp006-000989_GB_03-32	sarvajYAnavimUQAn tAn vidDi nazwAn nASam gatAn acetasaH avivekinaH
+sp006-000990_GB_03-33	paraDarmam anutizWanti svaDarmam ca na anuvartante
+sp006-000991_GB_03-33	tvatpratikUlAH kaTam na biByati tvacCAsanAtikramadozAt
+sp006-000992_GB_03-33	tatra Aha
+sp006-000993_GB_03-33	sadfSam anurUpam cezwate
+sp006-000994_GB_03-33	kasyAH svasyAH svakIyAyAH prakfteH
+sp006-000995_GB_03-33	prakftiH nAma pUrvakftaDarmADarmAdisaMskAro vartamAnajanmAdO aBivyaktaH sA prakftiH
+sp006-000996_GB_03-33	tasyAH sadfSam eva sarvo jantuH jYAnavAn api kim punaH mUrKaH
+sp006-000997_GB_03-33	tasmAt prakftim yAnti BUtAni
+sp006-000998_GB_03-33	nigrahaH kim karizyati mama vA anyasya vA
+sp006-000999_GB_03-34	na ca prakftiSUnyaH kaScidasti
+sp006-001000_GB_03-34	tataH puruzakArasya vizayAnupapatteH SAstrAnarTakyaprAptO idam ucyate
+sp006-001001_GB_03-34	indriyasya indriyasya arTe sarvendriyARAm arTe SabdAdivizaye izwe rAgaH anizwe dveza iti
+sp006-001002_GB_03-34	evam pratIndriyArTe rAgadvezO avaSyamBAvinO tatra ayam puruzakArasya SAstrArTasya ca vizaya ucyate
+sp006-001003_GB_03-34	SAstrArTe pravfttaH pUrvameva rAgadvezayoH vaSam na AgacCet
+sp006-001004_GB_03-34	yA hi puruzasya prakftiH sA rAgadvezapuraHsarA eva svakArye puruzam pravartayati
+sp006-001005_GB_03-34	tadA svaDarmaparityAgaH paraDarmAnuzWAnam ca Bavati
+sp006-001006_GB_03-34	yadA punaH rAgadvezO tatpratipakzeRa niyamayati tadA SAstradfzwiH eva puruzo Bavati na prakftivaSaH
+sp006-001007_GB_03-34	tasmAt tayo rAgadvezayoH vaSam na AgacCet
+sp006-001008_GB_03-34	yataH tO hi asya puruzasya paripanTinO SreyomArgasya viGnakartArO taskarO iva ityarTaH
+sp006-001009_GB_03-35	paraDarmaH api DarmatvAdanuzWeya eva iti tadasat
+sp006-001010_GB_03-35	SreyAn praSasyataraH svo DarmaH svaDarmo viguRaH api vigataguRaH api anuzWIyamAnaH
+sp006-001011_GB_03-35	paraDarmAt svanuzWitAt sAdguRyena sampAditAdapi
+sp006-001012_GB_03-35	svaDarme sTitasya niDanam maraRam api SreyaH paraDarme sTitasya jIvitAt
+sp006-001013_GB_03-35	kasmAt paraDarmo BayAvaho narakAdilakzaRam Bayam Avahati yataH
+sp006-001014_GB_03-36	yadyapi anarTamUlam
+sp006-001015_GB_03-36	iti ca uktam vikziptam anavaDAritam ca taduktam
+sp006-001016_GB_03-36	tat saNkziptam niScitam ca idam eva iti jYAtum icCan
+sp006-001017_GB_03-36	arjunaH uvAca jYAte hi tasmin taducCedAya yatnam kuryAm iti
+sp006-001018_GB_03-36	aTa kena hetuBUtena prayuktaH san rAjYA iva BftyaH ayam pApam karma carati Acarati
+sp006-001019_GB_03-36	pUruzaH svayam anicCan api he vArzReya vfzRikulaprasUta
+sp006-001020_GB_03-36	balAdiva niyojito rAjYA iva iti ukto dfzwAntaH
+sp006-001021_GB_03-37	vizRupurARe zaw paYca catuHsaptati
+sp006-001022_GB_03-37	ESvaryAdizawkam yasmin vAsudeve nityam apratibadDatvena sAmastyena ca vartate
+sp006-001023_GB_03-37	vizRupurARe zaw paYca azwasaptati
+sp006-001024_GB_03-37	utpattyAdivizayam ca vijYAnam yasya sa vAsudevo vAcyo BagavAn iti
+sp006-001025_GB_03-37	kAma eza sarvalokaSatruH yannimittA sarvAnarTaprAptiH prARinAm
+sp006-001026_GB_03-37	sa eza kAmaH pratihataH kenacit kroDatvena pariRamate
+sp006-001027_GB_03-37	ataH kroDaH api eza eva rajoguRasamudBavo rajoguRAt samudBavo yasya sa kAmo rajoguRasamudBavo rajoguRasya vA samudBavaH
+sp006-001028_GB_03-37	kAmo hi udBUto rajaH pravartayan puruzam pravartayati
+sp006-001029_GB_03-37	tfzRayA hi aham kArita iti duHKitAnAm rajaHkArye sevAdO pravfttAnAm pralApaH SrUyate
+sp006-001030_GB_03-37	mahASano mahat aSanam asya iti mahASanaH
+sp006-001031_GB_03-37	ata eva mahApApmA kAmena hi prerito jantuH pApam karoti
+sp006-001032_GB_03-37	ato vidDi enam kAmam iha saMsAre vEriRam
+sp006-001033_GB_03-38	DUmena sahajena Avriyate vahniH prakASAtmakaH aprakASAtmakena yaTA vA AdarSo malena ca
+sp006-001034_GB_03-38	yaTA ulbena garBavezwanena jarAyuRA Avfta AcCAdito garBaH taTA tena idam Avftam
+sp006-001035_GB_03-39	Avftam etena jYAnam jYAnino nityavEriRA
+sp006-001036_GB_03-39	jYAnI hi jAnAti anena aham anarTe prayuktaH pUrvam eva iti
+sp006-001037_GB_03-39	duHKI ca Bavati nityam eva
+sp006-001038_GB_03-39	ataH asO jYAnino nityavErI na tu mUrKasya
+sp006-001039_GB_03-39	sa hi kAmam tfzRAkAle mitram iva paSyan tatkArye duHKe prApte jAnAti
+sp006-001040_GB_03-39	tfzRayA aham duHKitvam ApAdita iti
+sp006-001041_GB_03-39	na pUrvam eva ato jYAnina eva nityavErI
+sp006-001042_GB_03-39	kiMrUpeRa kAmarUpeRa kAma icCA eva rUpam asya iti kAmarUpaH tena
+sp006-001043_GB_03-39	duzpUreRa duHKena pUraRam asya iti duzpUraH tena
+sp006-001044_GB_03-39	analena na asya alam paryAptiH vidyate iti analaH tena
+sp006-001045_GB_03-40	jYAte hi SatroH aDizWAne suKena SatrunibarhaRam kartum Sakyate iti
+sp006-001046_GB_03-40	indriyARi mano budDiH ca asya kAmasya aDizWAnam ASraya ucyate
+sp006-001047_GB_03-40	etEH indriyAdiBiH ASrayEH vimohayati viviDam mohayati
+sp006-001048_GB_03-40	eza kAmo jYAnam Avftya AcCAdya dehinam SarIriRam
+sp006-001049_GB_03-41	tasmAt tvam indriyARi AdO pUrvam niyamya vaSIkftya
+sp006-001050_GB_03-41	BaratarzaBa pApmAnam pApAcAram kAmam prajahihi parityaja
+sp006-001051_GB_03-41	enam prakftam vEriRam jYAnavijYAnanASanam jYAnam SAstrata AcAryataSca AtmAdInAm avaboDaH
+sp006-001052_GB_03-41	vijYAnam viSezataH tadanuBavaH
+sp006-001053_GB_03-41	tayoH jYAnavijYAnayoH SreyaHprAptihetvoH nASanam prajahihi AtmanaH parityaja ityarTaH
+sp006-001054_GB_03-42	tatra kimASrayaH kAmam jahyAt iti ucyate
+sp006-001055_GB_03-42	indriyARi SrotrAdIni paYca deham sTUlam bAhyam paricCinnam ca apekzya
+sp006-001056_GB_03-42	sOkzmyAntarasTatvavyApitvAdi apekzyA parARi prakfzwAni AhuH paRqitAH
+sp006-001057_GB_03-42	taTA indriyeByaH param manaH saNkalpavikalpAtmakam
+sp006-001058_GB_03-42	taTA manasastu parA budDiH niScayAtmikA
+sp006-001059_GB_03-42	taTA yaH sarvadfSyeByo budDyanteByaH AByantaraH
+sp006-001060_GB_03-42	yam dehinam indriyAdiBiH ASrayEH yuktaH kAmo jYAnAvaraRadvAreRa mohayati iti uktam
+sp006-001061_GB_03-42	sa budDeH drazwA paramAtmA
+sp006-001062_GB_03-43	evam budDeH param AtmAnam budDvA jYAtvA saMstaBya samyak stamBanam kftvA
+sp006-001063_GB_03-43	svena eva AtmanA saMskftena manasA samyak samADAya ityarTaH
+sp006-001064_GB_03-43	jahi enam Satrum he mahAbAho kAmarUpam durAsadam duHKena Asada
+sp006-001065_GB_03-43	AsAdanam prAptiH yasya tam durAsadam durvijYeyAnekaviSezam iti
+sp006-001066_GB_03-43	iti SrImahABArate SatasAhasryAm saMhitAyAm vEyAsikyAm BIzmaparvaRi
+sp006-001067_GB_03-43	SrImadBagavadgItAsUpanizatsu brahmavidyAyAm yogaSAstre SrIkfzRArjunasaMvAde karmayogo nAma tftIyoऽDyAyaH
+sp006-001068_GB_04-01-10	yaH ayam yogaH aDyAyadvayenokto jYAnanizWAlakzaRaH sasannyAsaH karmayogopAyaH
+sp006-001069_GB_04-01-10	yasmin vedArTaH parisamAptaH pravfttilakzaRo nivfttilakzaRaSca
+sp006-001070_GB_04-01-10	gItAsu ca sarvAsu ayam eva yogo vivakzito BagavatA
+sp006-001071_GB_04-01-10	ataH parisamAptam vedArTam manvAnaH tam vaMSakaTanena stOti SrIBagavAn
+sp006-001072_GB_04-01-10	imam aDyAyadvayenoktam yogam vivasvate AdityAya sargAdO proktavAn aham
+sp006-001073_GB_04-01-10	jagatparipAlayitFRAm kzatriyARAm balADAnAya tena yogabalena yuktAH samarTA Bavanti brahma parirakzitum
+sp006-001074_GB_04-01-10	brahmakzatraparipAlite jagat paripAlayitumalam
+sp006-001075_GB_04-01-10	avyayam avyayaPalatvAt
+sp006-001076_GB_04-01-10	sa ca vivasvAn manave prAha
+sp006-001077_GB_04-01-10	manuH ikzvAkave svaputrAya AdirAjAya abravIt
+sp006-001078_GB_04-01-10	evam kzatriyaparamparAprAptam imam rAjarzayoH rAjAnaSca te fzayaSca rAjarzayo viduH imam yogam
+sp006-001079_GB_04-01-10	sa yogaH kAlena iha mahatA dIrGeRa nazwo vicCinnasampradAyaH saMvftto
+sp006-001080_GB_04-01-10	he parantapa Atmano vipakzaBUtAH para ucyante
+sp006-001081_GB_04-01-10	tAn SOryatejogaBastiBiH BAnuH iva tApayatIti parantapaH SatrutApana ityarTaH
+sp006-001082_GB_04-01-10	durbalAn ajitendriyAn prApya nazwam yogam imam upalaBya lokam ca apuruzArTasambanDinam
+sp006-001083_GB_04-01-10	sa eva ayam mayA te tuByam adya idAnIm yogaH proktaH purAtanaH
+sp006-001084_GB_04-01-10	BaktaH asi me saKA ca asi iti
+sp006-001085_GB_04-01-10	rahasyam hi yasmAt etat uttamam yogo jYAnam ityarTaH
+sp006-001086_GB_04-01-10	BagavatA vipratizidDam uktam iti mA BUt kasyacit budDiH iti parihArArTam codyam iva kurvan arjuna uvAca
+sp006-001087_GB_04-01-10	param pUrvam sargAdO janma utpattiH vivasvato Adityasya
+sp006-001088_GB_04-01-10	tat kaTametat vijAnIyAm avirudDArTatayA yaH tvam eva AdO proktavAn imam yogam sa eva tvam idAnIm mahyam proktavAn asi iti
+sp006-001089_GB_04-01-10	yA vAsudeve anISvarAsarvajYASaNkA mUrKARAm tAm pariharan SrIBagavAnuvAca yadarTo hi arjunasya praSnaH
+sp006-001090_GB_04-01-10	bahUni me mama vyatItAni atikrAntAni janmAni tava ca he arjuna
+sp006-001091_GB_04-01-10	tAni aham veda jAne sarvARi na tvam vetTa jAnIze
+sp006-001092_GB_04-01-10	DarmADarmAdipratibadDajYAnaSaktitvAt
+sp006-001093_GB_04-01-10	aham punaH nityaSudDabudDamuktasvaBAvatvAt anAvaraRajYAnaSaktiH iti veda aham he parantapa
+sp006-001094_GB_04-01-10	kaTam tarhi tava nityeSvarasya DarmADarmABAve api janma iti ucyate
+sp006-001095_GB_04-01-10	ajaH api janmarahitaH api san
+sp006-001096_GB_04-01-10	taTA avyayAtmA akzIRajYAnaSaktisvaBAvaH api san
+sp006-001097_GB_04-01-10	taTA BUtAnAm brahmAdistambaparyantAnAm ISvara ISanaSIlaH api san
+sp006-001098_GB_04-01-10	prakftim svAm mama vEzRavIm mAyAm triguRAtmikAm
+sp006-001099_GB_04-01-10	yasyA vaSe sarvam jagat vartate yayA mohitam sat svam AtmAnam vAsudevam na jAnAti
+sp006-001100_GB_04-01-10	tAm prakftim svAm aDizWAya vaSIkftya samBavAmi
+sp006-001101_GB_04-01-10	dehavAn iva BavAmi jAta iva AtmamAyayA Atmano mAyayA na paramArTato lokavat
+sp006-001102_GB_04-01-10	tacca janma kadA kimarTam ca iti ucyate
+sp006-001103_GB_04-01-10	aByutTAnam udBavaH aDarmasya tadA AtmAnam sfjAmi aham mAyayA
+sp006-001104_GB_04-01-10	paritrARAya parirakzaRAya sADUnAm sanmArgasTAnAm
+sp006-001105_GB_04-01-10	vinASAya ca duzkftAm pApakAriRAm
+sp006-001106_GB_04-01-10	kiYca DarmasaMsTApanArTAya Darmasya samyak sTApanam tadarTam samBavAmi yuge yuge pratiyugam
+sp006-001107_GB_04-01-10	janma mAyArUpam karma ca sADu paritrARAdi me mama divyam aprAkftam ESvaram evam yaToktam yo vetti tattvataH
+sp006-001108_GB_04-01-10	tattvena yaTAvat tyaktvA deham imam punarjanma punarutpattim na eti na prApnoti
+sp006-001109_GB_04-01-10	mAm eti AgacCati sa mucyate he arjuna
+sp006-001110_GB_04-01-10	na eza mokzamArga idAnIm pravfttaH kim tarhi pUrvamapi
+sp006-001111_GB_04-01-10	vItarAgaBayakroDAH rAgaSca Bayam ca kroDaSca vItA vigatA yeByaH te vItarAgaBayakroDAH
+sp006-001112_GB_04-01-10	manmayA brahmavida ISvarABedadarSinaH mAm eva parameSvaram upASritAH kevalajYAnanizWA ityarTaH
+sp006-001113_GB_04-01-10	bahavaH aneke jYAnatapasA jYAnam eva ca paramAtmavizayam tapaH tena jYAnatapasA
+sp006-001114_GB_04-01-10	pUtAH parAm SudDim gatAH santo madBAvam ISvaraBAvam mokzam AgatAH samanuprAptAH
+sp006-001115_GB_04-01-10	itarataponirapekzajYAnanizWA ityasya liNgam jYAnatapasA iti viSezaRam
+sp006-001116_GB_04-11	ye yaTA yena prakAreRa yena prayojanena yatPalArTitayA mAm prapadyante tAn taTA eva
+sp006-001117_GB_04-11	tatPaladAnena BajAmi anugfhRAmi aham iti etat
+sp006-001118_GB_04-11	tezAm mokzam prati anarTitvAt
+sp006-001119_GB_04-11	na hi ekasya mumukzutvam PalArTitvam ca yugapat samBavati
+sp006-001120_GB_04-11	ato ye PalArTinaH tAn PalapradAnena
+sp006-001121_GB_04-11	ye yaToktakAriRastu aPalArTino mumukzavaH ca tAn jYAnapradAnena
+sp006-001122_GB_04-11	ye jYAninaH sannyAsino mumukzavaH ca tAn mokzapradAnena
+sp006-001123_GB_04-11	taTA ArtAn ArtiharaRena iti evam yaTA prapadyante ye tAn taTA eva BajAmi ityarTaH
+sp006-001124_GB_04-11	na punaH rAgadvezanimittam mohanimittam vA kaYcit BajAmi
+sp006-001125_GB_04-11	sarvaTA api sarvAvasTasya mama ISvarasya vartma mArgam anuvartante manuzyAH
+sp006-001126_GB_04-11	yatPalArTitayA yasmin karmaRi aDikftA ye prayatante te manuzyA ucyante
+sp006-001127_GB_04-11	he pArTa sarvaSaH sarvaprakArEH
+sp006-001128_GB_04-12	sarvaPalapradAnasamarTe ca tvayi sati vAsudevaH sarvam iti jYAnena eva mumukzavaH santaH
+sp006-001129_GB_04-12	kasmAt tvAmeva sarve na pratipadyante iti
+sp006-001130_GB_04-12	SfRu tatra kAraRam
+sp006-001131_GB_04-12	kANkzantaH aBIpsantaH karmaRAm sidDim Palanizpattim prArTayantaH
+sp006-001132_GB_04-12	yajanta iha asmin loke devatA indrAgnyAdyAH
+sp006-001133_GB_04-12	bfhadAraRyaka upanizat eka catuH daSa iti SruteH
+sp006-001134_GB_04-12	tezAm hi BinnadevatAyAjinAm PalAkANkziRAm kzipram SIGram hi yasmAt mAnuze loke
+sp006-001135_GB_04-12	manuzyaloke hi SAstrADikAraH
+sp006-001136_GB_04-12	kzipram hi mAnuze loke iti viSezaRAt anyezu api karmaPalasidDim darSayati BagavAn
+sp006-001137_GB_04-12	mAnuze loke varRASramAdikarmADikAra iti viSezaH
+sp006-001138_GB_04-12	tezAm varRASramAdyaDikArikarmaRAm PalasidDiH kzipram Bavati
+sp006-001139_GB_04-12	karmajA karmaRo jAtA
+sp006-001140_GB_04-13	na anyezu lokezu iti niyamaH kinnimitta iti
+sp006-001141_GB_04-13	aTavA varRASramAdipraviBAgopetA manuzyA mama vartma anuvartante sarvaSa iti uktam
+sp006-001142_GB_04-13	kasmAtpunaH kAraRAt niyamena tava eva vartma anuvartante na anyasya iti ucyate
+sp006-001143_GB_04-13	cAturvarRyam catvAra eva varRAH cAturvarRyam mayA ISvareRa sfzwam utpAditam
+sp006-001144_GB_04-13	guRakarmaviBAgaSo guRaviBAgaSaH karmaviBAgaSaSca
+sp006-001145_GB_04-13	guRAH sattvarajastamAMsi
+sp006-001146_GB_04-13	tatra sAttvikasya sattvapraDAnasya brAhmaRasya Samo damastapa ityAdIni karmARi
+sp006-001147_GB_04-13	sattvopasarjana rajaHpraDAnasya kzatriyasya SOryatejaHpraBftIni karmARi
+sp006-001148_GB_04-13	tamaupasarjanarajaHpraDAnasya vESyasya kfzyAdIni karmARi
+sp006-001149_GB_04-13	rajaupasarjanatamaHpraDAnasya SUdrasya SuSrUzA eva karma
+sp006-001150_GB_04-13	iti evam guRakarmaviBAgaSaH cAturvarRyam mayA sfzwam ityarTaH
+sp006-001151_GB_04-13	tacca idam cAturvarRyam na anyezu lokezu ato mAnuze loke iti viSezaRam
+sp006-001152_GB_04-13	hanta tarhi cAturvarRya sargAdeH karmaRaH kartftvAt tatPalena yujyase ato na tvam nityamukto nityeSvara iti ucyate
+sp006-001153_GB_04-13	yadyapi mAyAsaMvyavahAreRa tasya karmaRaH kartAram api santam mAm paramArTato vidDi akartAram
+sp006-001154_GB_04-13	ata eva avyayam asaMsAriRam ca mAm vidDi
+sp006-001155_GB_04-14	na mAm tAni karmARi limpanti dehAdyAramBakatvena ahaNkArABAvAt
+sp006-001156_GB_04-14	na ca tezAm karmaRAm Palezu me spfhA tfzRA
+sp006-001157_GB_04-14	yezAm tu saMsAriRAm aham kartA iti aBimAnaH karmasu spfhA tatPalezu ca
+sp006-001158_GB_04-14	tAn karmARi limpanti iti yuktam
+sp006-001159_GB_04-14	iti evam yaH anyaH api mAm Atmatvena aBijAnAti
+sp006-001160_GB_04-14	na aham kartA na me karmaPale spfhA iti sa karmaBiH na baDyate
+sp006-001161_GB_04-14	tasyApi na dehAdyAramBakARi karmARi Bavanti ityarTaH
+sp006-001162_GB_04-15	evam jYAtvA kftam karma pUrvaH api atikrAntEH mumukzuBiH
+sp006-001163_GB_04-15	kuru tena karma eva tvam na tUzRImAsanam na api sannyAsaH kartavyaH
+sp006-001164_GB_04-15	tasmAt tvam pUrvEH api anuzWitatvAt yadi anAtmajYaH tvam tadA AtmaSudDyarTam
+sp006-001165_GB_04-15	tattvaviccet lokasaNgrahArTam pUrvEH janakAdiBiH pUrvataram kftam na aDunAtanam kftam nirvartitam
+sp006-001166_GB_04-16	kim viSezitena pUrvEH pUrvataram kftam iti ucyate yasmAt mahadvEzamyam karmaRi
+sp006-001167_GB_04-16	kim karma kim ca akarma iti kavayo meDAvinaH api atra asmin karmAdivizaye mohitA moham gatAH
+sp006-001168_GB_04-16	ataH te tuByam aham karma akarma ca pravakzyAmi
+sp006-001169_GB_04-17	karma nAma dehAdicezwA lokaprasidDam
+sp006-001170_GB_04-17	akarma tadakriyA tUzRIm Asanam
+sp006-001171_GB_04-17	kim tatra bodDavyam iti
+sp006-001172_GB_04-17	kasmAt ucyate
+sp006-001173_GB_04-17	karmaRaH SAstravihitasya hi yasmAdapi asti bodDavyam
+sp006-001174_GB_04-17	bodDavyam ca asti eva vikarmaRaH pratizidDasya
+sp006-001175_GB_04-17	taTA akarmaRaH ca tUzRImBAvasya bodDavyam asti iti trizu api aDyAhAraH kartavyaH
+sp006-001176_GB_04-17	yasmAt gahanA vizamA durjYAnA
+sp006-001177_GB_04-17	karmaRa iti upalakzaRArTam karmAdInAm karmAkarmavikarmaRAm gatiH yATAtmyam tattvam ityarTaH
+sp006-001178_GB_04-18-01	karmaRi karma kriyate iti vyApAramAtram
+sp006-001179_GB_04-18-01	tasmin karmaRi akarma karmABAvam yaH paSyet
+sp006-001180_GB_04-18-01	akarmaRi ca karmABAve kartftantratvAt pravfttinivfttyoH vastu aprApyEva hi
+sp006-001181_GB_04-18-01	sarva eva kriyAkArakAdivyavahAraH avidyABUmO eva
+sp006-001182_GB_04-18-01	karma yaH paSyet paSyati
+sp006-001183_GB_04-18-01	sa budDimAn manuzyezu sa yukto yogI
+sp006-001184_GB_04-18-01	kftsnakarmakft samastakarmakfcca sa iti stUyate karmAkarmaRoH itaretaradarSI
+sp006-001185_GB_04-18-01	nanu kim idam virudDam ucyate
+sp006-001186_GB_04-18-01	karmaRi akarma yaH paSyediti
+sp006-001187_GB_04-18-01	akarmaRi ca karma iti
+sp006-001188_GB_04-18-01	na hi karma akarma syAt akarma vA karma
+sp006-001189_GB_04-18-01	tatra virudDam kaTam paSyed drazwA
+sp006-001190_GB_04-18-01	nanu akarma eva paramArTataH sat karmavat avaBAsate mUQadfzweH lokasya
+sp006-001191_GB_04-18-01	taTA karma eva akarmavat
+sp006-001192_GB_04-18-01	tatra yaTABUtadarSanArTam Aha BagavAn karmaRi akarma yaH paSyet ityAdi
+sp006-001193_GB_04-18-01	ato na virudDam
+sp006-001194_GB_04-18-01	budDimattvAdyupapatteSca
+sp006-001195_GB_04-18-01	bodDavyam iti ca yaTABUtadarSanam ucyate
+sp006-001196_GB_04-18-01	na ca viparItajYAnAt aSuBAt mokzaRam syAt
+sp006-001197_GB_04-18-01	iti ca uktam
+sp006-001198_GB_04-18-01	tasmAt karmAkarmaRI viparyayeRa gfhIte prARiBiH
+sp006-001199_GB_04-18-01	tadviparyayagrahaRanivfttyarTam Bagavato vacanam karmaRi akarma yaH ityAdi
+sp006-001200_GB_04-18-01	na ca atra karmADikaraRam akarma asti kuRqe badarARIva
+sp006-001201_GB_04-18-01	na api akarmADikaraRam karma asti
+sp006-001202_GB_04-18-01	karmABAvatvAt akarmaRaH
+sp006-001203_GB_04-18-01	ato viparItagfhIte eva karmAkarmaRI lOkikEH
+sp006-001204_GB_04-18-01	yaTA mfgatfzRikAyAm udakam SuktikAyAm vA rajatam
+sp006-001205_GB_04-18-01	nanu karma karma eva sarvezAm na kvacit vyaBicarati tanna
+sp006-001206_GB_04-18-01	nOsTasya nAvi gacCantyAm tawasTezu agatizu nagezu pratikUlagatidarSanAt
+sp006-001207_GB_04-18-01	dUrezu cakzuzA asannikfzwezu gacCatsu gatyaBAvadarSanAt
+sp006-001208_GB_04-18-01	evam ihApi akarmaRi ahaNkaromi iti karmadarSanam
+sp006-001209_GB_04-18-01	karmaRi ca akarmadarSanam viparItadarSanam yena tannirAkaraRArTam ucyate karmaRi akarma yaH paSyet ityAdi
+sp006-001210_GB_04-18-01	tadetat uktaprativacanam api asakft
+sp006-001211_GB_04-18-01	atyantaviparItadarSanaBAvitatayA momuhyamAno lokaH
+sp006-001212_GB_04-18-01	Srutamapi asakft tattvam vismftya miTyAprasaNgam avatArya avatArya codayati iti
+sp006-001213_GB_04-18-01	punaH punaH uttaram Aha BagavAn durvijYeyatvam ca Alakzya vastunaH
+sp006-001214_GB_04-18-01	ityAdinA Atmani karmABAvaH SrutismftinyAyaprasidDa ukto vakzyamARaSca
+sp006-001215_GB_04-18-01	tasmin Atmani karmABAve akarmaRi karmaviparItadarSanam atyantanirUQam
+sp006-001216_GB_04-18-01	dehAdyASrayam ca karma Atmani aDyAropya
+sp006-001217_GB_04-18-01	iti ca taTA
+sp006-001218_GB_04-18-01	iti kAryakaraRASrayam vyApAroparamam tatkftam ca suKitvam Atmani aDyAropya
+sp006-001219_GB_04-18-01	iti aBimanyate lokaH
+sp006-001220_GB_04-18-01	tatra idam lokasya vipararItadarSanApanayAya Aha BagavAn
+sp006-001221_GB_04-18-01	karmaRi akarma yaH paSyet ityAdi
+sp006-001222_GB_04-18-02	yataH paRqitaH api aham karomi iti manyate
+sp006-001223_GB_04-18-02	ataH AtmasamavetatayA sarvalokaprasidDe karmaRi nadIkUlasTezu iva vfkzezu gatiprAtilomyena
+sp006-001224_GB_04-18-02	akarma karmABAvam yaTABUtam gatyaBAvam iva vfkzezu yaH paSyet
+sp006-001225_GB_04-18-02	akarmaRi ca kAryakaraRavyApAroparame karmavat Atmani aDyAropite tUzRIm akurvan suKam Asa iti ahaNkArABisanDihetutvAt
+sp006-001226_GB_04-18-02	tasmin akarmaRi ca karma yaH paSyet
+sp006-001227_GB_04-18-02	ya evam karmAkarmaviBAgajYaH sa budDimAn paRqito manuzyezu
+sp006-001228_GB_04-18-02	sa yukto yogI kftsnakarmakfcca saH aSuBAt mokzitaH kftakftyo Bavati ityarTaH
+sp006-001229_GB_04-18-02	ayam SlokaH anyaTA vyAKyAtaH kEScit
+sp006-001230_GB_04-18-02	nityAnAm kila karmaRAm ISvarArTe anuzWIyamAnAnAm tatPalABAvAt akarmARi tAni ucyante gORyA vfttyA
+sp006-001231_GB_04-18-02	tezAm ca akaraRam akarma
+sp006-001232_GB_04-18-02	tacca pratyavAyaPalatvAt karma ucyate gORyA eva vfttyA
+sp006-001233_GB_04-18-02	tatra nitye karmaRi akarma yaH paSyet PalABAvAt
+sp006-001234_GB_04-18-02	yaTA DenuH api gOH agOH ucyate
+sp006-001235_GB_04-18-02	kzIrAKyam Palam na prayacCatIti tadvat
+sp006-001236_GB_04-18-02	taTA nityAkaraRe tu akarmaRi ca karma yaH paSyet narakAdipratyavAyaPalam prayacCati iti
+sp006-001237_GB_04-18-02	na etat yuktam vyAKyAnam
+sp006-001238_GB_04-18-02	evam jYAnAt aSuBAt mokzAnupapatteH
+sp006-001239_GB_04-18-02	iti BagavatA uktam vacanam bADyeta kaTam
+sp006-001240_GB_04-18-02	nityAnAmanuzWAnAt aSuBAt syAnnAma mokzaRam na tu tezAm PalABAvajYAnAt
+sp006-001241_GB_04-18-02	na hi nityAnAm PalABAvajYAnam aSuBamuktiPalatvena coditam nityakarmajYAnam vA
+sp006-001242_GB_04-18-02	na ca BagavatA eva iha uktam
+sp006-001243_GB_04-18-02	etena akarmaRi karmadarSanam pratyuktam
+sp006-001244_GB_04-18-02	na hi akarmaRi karma iti darSanam kartavyatayA iha codyate nityasya tu kartavyatAmAtram
+sp006-001245_GB_04-18-02	na ca akaraRAt nityasya pratyavAyo BavatIti vijYAnAt kiYcit Palam syAt
+sp006-001246_GB_04-18-02	nApi nityAkaraRam jYeyatvena coditam
+sp006-001247_GB_04-18-02	nApi karma akarma iti miTyAdarSanAt aSuBAt mokzaRam budDimattvam yuktatA kftsnakarmakfttvAdi ca Palam upapadyate stutirvA
+sp006-001248_GB_04-18-02	miTyAjYAnameva hi sAkzAt aSuBarUpam kutaH anyasmAdaSuBAt mokzaRam
+sp006-001249_GB_04-18-02	na hi tamaH tamaso nivartakam Bavati
+sp006-001250_GB_04-18-02	nanu karmaRi yadakarmadarSanam akarmaRi vA karmadarSanam na tat miTyAjYAnam
+sp006-001251_GB_04-18-02	kim tarhi gORam PalaBAvABAvanimittam
+sp006-001252_GB_04-18-02	na karmAkarmavijYAnAdapi gORAt Palasya aSravaRAt
+sp006-001253_GB_04-18-02	nApi SrutahAnyaSrutaparikalpanAyA kaScit viSezo laByate
+sp006-001254_GB_04-18-02	svaSabdenApi Sakyam vaktum nityakarmaRAm Palam nAsti akaraRAcca tezAm narakapAtaH syAditi
+sp006-001255_GB_04-18-02	tatra vyAjena paravyAmoharUpeRa karmaRi akarma yaH paSyedityAdinA kim
+sp006-001256_GB_04-18-02	tatra evam vyAcakzARena BagavatA uktam vAkyam lokavyAmohArTamiti vyaktam kalpitam syAt
+sp006-001257_GB_04-18-02	na ca etat CadmarUpeRa vAkyena rakzaRIyam vastu
+sp006-001258_GB_04-18-02	nApi SabdAntareRa punaH punaH ucyamAnam suboDaH syAt ityevam vaktum yuktam
+sp006-001259_GB_04-18-02	iti atra hi sPuwatara uktaH arTo na punaH vaktavyo Bavati
+sp006-001260_GB_04-18-02	sarvatra ca praSastam bodDavyam ca kartavyameva
+sp006-001261_GB_04-18-02	na nizprayojanam bodDavyam iti ucyate
+sp006-001262_GB_04-18-02	na ca miTyAjYAnam bodDavyam Bavati tatpratyupasTApitam vA vastvABAsam
+sp006-001263_GB_04-18-02	nApi nityAnAm akaraRAt aBAvAt pratyavAyaBAvotpattiH
+sp006-001264_GB_04-18-02	iti vacanAt
+sp006-001265_GB_04-18-02	CAndogya upanizat zaw dvi dvi iti ca darSitam asataH sajjanmapratizeDAt
+sp006-001266_GB_04-18-02	asataH sadutpattim bruvatA asadeva sadBavet sacca asadBavet iti uktam syAt
+sp006-001267_GB_04-18-02	tacca ayuktam sarvapramARaviroDAt
+sp006-001268_GB_04-18-02	na ca nizPalam vidaDyAt karma SAstram duHKasvarUpatvAt
+sp006-001269_GB_04-18-02	duHKasya ca budDipUrvakatayA kAryatvAnupapatteH
+sp006-001270_GB_04-18-02	tadakaraRe ca narakapAtAByupagame anarTA eva uBayaTApi karaRe akaraRe ca SAstram nizPalam kalpitam syAt
+sp006-001271_GB_04-18-02	svAByupagamaviroDaH ca nityam nizPalam karma iti aByupagamya mokzaPalAya iti bruvataH
+sp006-001272_GB_04-18-02	tasmAt yaTASruta eva arTaH karmaRi akarma yaH ityAdeH
+sp006-001273_GB_04-18-02	taTA ca vyAKyAtaH asmABiH SlokaH
+sp006-001274_GB_04-19	yasya yaToktadarSinaH sarve yAvantaH samAramBAH karmARi samAraByante iti samAramBAH
+sp006-001275_GB_04-19	kAmasaNkalpavarjitAH kAmEH tatkAraRESca saNkalpEH varjitA muDA eva cezwAmAtrA anuzWIyante
+sp006-001276_GB_04-19	pravfttena cet lokasaNgrahArTam nivfttena cet jIvanamAtrArTam
+sp006-001277_GB_04-19	tam jYAnAgnidagDakarmARam karmAdO akarmAdidarSanam jYAnam tadeva agniH
+sp006-001278_GB_04-19	tena jYAnAgninA dagDAni SuBASuBalakzaRAni karmARi yasya
+sp006-001279_GB_04-19	tam AhuH paramArTataH paRqitam buDAH brahmavidaH
+sp006-001280_GB_04-20	karmaRi na pravartate yadyapi prAg vivekataH pravfttaH
+sp006-001281_GB_04-20	yastu prArabDakarmA san uttarakAlam utpannAtmasamyagdarSanaH syAt
+sp006-001282_GB_04-20	sa karmaRi prayojanam apaSyan sasADanam karma parityajatyeva
+sp006-001283_GB_04-20	sa kutaScit nimittAt karmaparityAgAsamBave sati
+sp006-001284_GB_04-20	karmaRi tatPale ca saNgarahitatayA svaprayojanABAvAt lokasaNgrahArTam pUrvavat karmaRi pravfttoऽpi na eva kiYcit karoti
+sp006-001285_GB_04-20	jYAnAgnidagDakarmatvAt tadIyam karma akarma eva sampadyate iti etam arTam darSayizyan Aha
+sp006-001286_GB_04-20	tyaktvA karmasu aBimAnam PalAsaNgam ca yaToktena jYAnena nityatfpto nirAkANkzo vizayezu ityarTaH
+sp006-001287_GB_04-20	nirASraya ASrayarahitaH ASrayo nAma yadASritya puruzArTam sisADayizati
+sp006-001288_GB_04-20	dfzwAdfzwezwaPalasADanASrayarahita ityarTaH
+sp006-001289_GB_04-20	viduzA kriyamARam karma paramArTataH akarma eva tasya nizkriyAtmadarSanasampannatvAt
+sp006-001290_GB_04-20	tena evamBUtena prayojanABAvAt sasADanam karma parityaktavyam eva iti prApte
+sp006-001291_GB_04-20	tato nirgamAsamBavAt lokasaNgrahacikIrzayA SizwavigarhaRAparijihIrzayA vA
+sp006-001292_GB_04-20	pUrvavat karmaRi aBipravfttaH api nizkriyAtmadarSanasampannatvAt na eva kiYcit karoti saH
+sp006-001293_GB_04-21	sa dfzwAdfzwezwavizayASIrvivarjitatayA dfzwAdfzwArTe karmaRi prayojanam apaSyan sasADanam karma sannyasya
+sp006-001294_GB_04-21	SarIrayAtrAmAtracezwo yatiH jYAnanizWo mucyate ityetamarTam darSayitum Aha
+sp006-001295_GB_04-21	nirASIH nirgatA ASizo yasmAt sa nirASIH
+sp006-001296_GB_04-21	yatacittAtmA cittam antaHkaraRam AtmA bAhyaH kAryakaraRasaNGAtaH
+sp006-001297_GB_04-21	tO uBO api yatO saMyatO yena saH yatacittAtmA
+sp006-001298_GB_04-21	tyaktasarvaparigrahaH tyaktaH sarvaH parigraho yena sa tyaktasarvaparigrahaH
+sp006-001299_GB_04-21	SArIram SarIrasTitimAtraprayojanam
+sp006-001300_GB_04-21	kevalam tatrApi aBimAnavarjitam karma kurvan na Apnoti na prApnoti kilbizam anizwarUpam pApam Darmam ca
+sp006-001301_GB_04-21	DarmaH api mumukzoH kilbizameva banDApAdakatvAt
+sp006-001302_GB_04-21	kiYca SArIram kevalam karma ityatra kim SarIranirvartyam SArIram karma aBipretam
+sp006-001303_GB_04-21	Ahosvit SarIrasTitimAtraprayojanam SArIram karma iti
+sp006-001304_GB_04-21	kim ca ato yadi SarIranirvartyam SArIram karma yadi vA SarIrasTitimAtraprayojanam SArIram iti ucyate
+sp006-001305_GB_04-21	yadA SarIranirvartyam karma SArIram aBipretam syAt
+sp006-001306_GB_04-21	tadA dfzwAdfzwaprayojanam karma pratizidDamapi SarIreRa kurvan na Apnoti kilbizam iti bruvato virudDABiDAnam prasajyeta
+sp006-001307_GB_04-21	SAstrIyam ca karma dfzwAdfzwaprayojanam SarIreRa kurvan na Apnoti kilbizam
+sp006-001308_GB_04-21	ityapi bruvataH aprAptapratizeDaprasaNgaH
+sp006-001309_GB_04-21	SArIram karma kurvan iti viSezaRAt kevalaSabdaprayogAcca vANmanasanirvartyam karma
+sp006-001310_GB_04-21	viDipratizeDavizayam DarmADarmaSabdavAcyam kurvan prApnoti kilbizam iti uktam syAt
+sp006-001311_GB_04-21	tatrApi vANmanasAByAm vihitAnuzWAnapakze kilbizaprAptivacanam virudDam Apadyeta
+sp006-001312_GB_04-21	pratizidDasevApakzeऽpi BUtArTAnuvAdamAtram anarTakam syAt
+sp006-001313_GB_04-21	yadA tu SarIrasTitimAtraprayojanam SArIram karma aBipretam Bavet
+sp006-001314_GB_04-21	tadA dfzwAdfzwaprayojanam karma viDipratizeDagamyam SarIravANmanasanirvartyam anyadakurvan
+sp006-001315_GB_04-21	tEH eva SarIrAdiBiH SarIrasTitimAtraprayojanam kevalaSabdaprayogAt aham karomi iti
+sp006-001316_GB_04-21	aBimAnavarjitaH SarIrAdicezwAmAtram lokadfzwyA kurvan na Apnoti kilbizam
+sp006-001317_GB_04-21	evamBUtasya pApaSabdavAcyakilbizaprAptyasamBavAt kilbizam saMsAram na Apnoti
+sp006-001318_GB_04-21	jYAnAgnidagDasarvakarmatvAt apratibanDena mucyate eva iti pUrvoktasamyagdarSanaPalAnuvAda eva ezaH
+sp006-001319_GB_04-21	evam SArIram kevalam karma iti asya arTa parigrahe niravadyam Bavati
+sp006-001320_GB_04-22	yAcanAdinA SarIrasTitO kartavyatAyAm prAptAyAm
+sp006-001321_GB_04-22	boDAyana smftiH ekaviMSati azwa dvAdaSa
+sp006-001322_GB_04-22	ityAdinA vacanena anujYAtam yateH SarIrasTitihetoH annAdeH prAptidvAram Avizkurvan Aha
+sp006-001323_GB_04-22	yadfcCAlABasantuzwaH aprArTitopanato lABo yadfcCAlABaH tena santuzwaH saYjAtAlampratyayaH
+sp006-001324_GB_04-22	dvandvAtIto dvandvaH SItozRAdiBiH hanyamAnaH api avizaRRacitto dvandvAtIta ucyate
+sp006-001325_GB_04-22	vimatsaro vigatamatsaro nirvErabuddiH samaH tulyo yadfcCAlABasya sidDO asidDO ca
+sp006-001326_GB_04-22	ya evamBUto yatiH annAdeH SarIrasTitihetoH lABAlABayoH samo harzavizAdavarjitaH
+sp006-001327_GB_04-22	karmAdO akarmAdidarSI yaTABUtAtmadarSananizWaH SarIrasTitimAtraprayojane BikzAwanAdikarmaRi
+sp006-001328_GB_04-22	SarIrAdinirvartye na eva kiYcit karomi aham
+sp006-001329_GB_04-22	guRA guRezu vartante iti evam sadA samparicakzARa AtmanaH kartftvABAvam paSyan
+sp006-001330_GB_04-22	na eva kiYcit BikzAwanAdikam karma karoti
+sp006-001331_GB_04-22	lokavyavahArasAmAnyadarSanena tu lOkikEH Aropitakartftve BikzAwanAdO karmaRi kartA Bavati
+sp006-001332_GB_04-22	svAnuBavena tu SAstrapramARAdijanitena akartA eva
+sp006-001333_GB_04-22	sa evam parADyAropitakartftvaH SarIrasTitimAtraprayojanam BikzAwanAdikam karma kftvA api na nibaDyate
+sp006-001334_GB_04-22	banDahetoH karmaRaH sahetukasya jYAnAgninA dagDatvAt iti uktAnuvAda eva ezaH
+sp006-001335_GB_04-23	iti anena Slokena yaH prArabDakarmA san yadA nizkriyabrahmAtmadarSanasampannaH syAt
+sp006-001336_GB_04-23	tadA tasya AtmanaH kartfkarmaprayojanABAvadarSinaH karmaparityAge prApte kutaScit nimittAt tadasamBave sati
+sp006-001337_GB_04-23	pUrvavat tasmin karmaRi aBipravfttaH api
+sp006-001338_GB_04-23	na eva kiYcit karoti sa iti karmABAvaH pradarSitaH
+sp006-001339_GB_04-23	yasya evam karmABAvo darSitaH tasya eva
+sp006-001340_GB_04-23	gatasaNgasya sarvatonivfttAsakteH muktasya nivfttaDarmADarmAdibanDanasya
+sp006-001341_GB_04-23	jYAnAvasTitacetaso jYAne eva avasTitam ceto yasya saH ayam jYAnAvasTitacetAH tasya
+sp006-001342_GB_04-23	yajYAya yajYanirvfttyarTam Acarato nivartayataH karma samagram sahAgreRa Palena vartate
+sp006-001343_GB_04-23	iti samagram karma tat samagram pravilIyate vinaSyati ityarTaH
+sp006-001344_GB_04-24	brahma arpaRam yena kAraRena brahmavit haviH agnO arpayati tat brahma eva iti paSyati
+sp006-001345_GB_04-24	tasya AtmavyatirekeRa aBAvam paSyati yaTA SuktikAyAm rajatABAvam paSyati
+sp006-001346_GB_04-24	taducyate brahma eva arpaRam iti
+sp006-001347_GB_04-24	yaTA yadrajatam tat SuktikA eva iti
+sp006-001348_GB_04-24	brahma arpaRam iti asamaste pade
+sp006-001349_GB_04-24	yat arpaRabudDyA gfhyate loke tat asya brahmavido brahma eva ityarTaH
+sp006-001350_GB_04-24	brahma haviH taTA yat havirbudDyA gfhyamARam tat brahma eva asya
+sp006-001351_GB_04-24	taTA brahmAgnO iti samastam padam
+sp006-001352_GB_04-24	agniH api brahma eva yatra hUyate brahmaRA kartrA brahma eva kartA ityarTaH
+sp006-001353_GB_04-24	yat tena hutam havanakriyA tat brahma eva
+sp006-001354_GB_04-24	Palam tadapi brahma eva
+sp006-001355_GB_04-24	brahma eva karma brahmakarma tasmin samADiH
+sp006-001356_GB_04-24	yasya sa brahmakarmasamADiH tena brahmakarmasamADinA brahma eva gantavyam
+sp006-001357_GB_04-24	evam lokasaNgraham cikIrzURApi kriyamARam karma paramArTataH akarma
+sp006-001358_GB_04-24	brahmabudDyupamfditatvAt
+sp006-001359_GB_04-24	evam sati nivfttakarmaRaH api sarvakarmasannyAsinaH samyagdarSanastutyarTam yajYatvasampAdanam jYAnasya sutarAm upapadyate
+sp006-001360_GB_04-24	yat arpaRAdi aDiyajYe prasidDam tat asya aDyAtmam brahma eva paramArTadarSina iti
+sp006-001361_GB_04-24	anyaTA sarvasya brahmatve arpaRAdInAm eva viSezato brahmatvABiDAnam anarTakam syAt
+sp006-001362_GB_04-24	tasmAt brahma eva idam sarvam iti aBijAnato viduzaH sarvakarmABAvaH
+sp006-001363_GB_04-24	kArakabudDyaBAvAcca
+sp006-001364_GB_04-24	na hi kArakabudDirahitam yajYAKyam karma dfzwam
+sp006-001365_GB_04-24	sarvameva agnihotrAdikam karma SabdasamarpitadevatAviSezasampradAnAdikArakabudDimat kartraBimAnaPalABisanDimacca dfzwam
+sp006-001366_GB_04-24	na upamfditakriyAkArakaPalaBedabudDimat kartftvABimAnaPalABisanDirahitam vA
+sp006-001367_GB_04-24	idam tu brahmabudDyupamfditArpaRAdikArakakriyAPalaBedabudDi karma
+sp006-001368_GB_04-24	ataH akarma eva tat
+sp006-001369_GB_04-24	taTA ca darSitam
+sp006-001370_GB_04-24	ityAdiBiH
+sp006-001371_GB_04-24	taTA ca darSayan tatra tatra kriyAkArakaPalaBedabudDyupamardam karoti
+sp006-001372_GB_04-24	dfzwA ca kAmyAgnihotrAdO kAmopamardena kAmyAgnihotrAdihAniH
+sp006-001373_GB_04-24	taTA matipUrvakAmatipUrvakAdInAm karmaRAm kAryaviSezasya AramBakatvam dfzwam
+sp006-001374_GB_04-24	taTA ihApi brahmabudDyupamfditArpaRAdikArakakriyAPalaBedabudDeH bAhyacezwAmAtreRa karmApi viduzaH akarma sampadyate
+sp006-001375_GB_04-24	ata uktam samagram pravilIyate iti
+sp006-001376_GB_04-24	atra kecidAhuH yadbrahma tadarpaRAdIni
+sp006-001377_GB_04-24	brahma eva kila arpaRAdinA paYcaviDena kArakAtmanA vyavasTitam sat tad eva karma karoti
+sp006-001378_GB_04-24	tatra na arpaRAdibudDiH nivartyate kim tu arpaRAdizu brahmabudDiH ADIyate
+sp006-001379_GB_04-24	yaTA pratimAdO vizRvAdibudDiH yaTA vA nAmAdO brahmabudDiH iti
+sp006-001380_GB_04-24	satyam evamapi syAt yadi jYAnayajYastutyarTam prakaraRam na syAt
+sp006-001381_GB_04-24	atra tu samyagdarSanam jYAnayajYaSabditam anekAn yajYaSabditAn kriyAviSezAn upanyasya
+sp006-001382_GB_04-24	iti jYAnam stOti
+sp006-001383_GB_04-24	atra ca samarTamidam vacanam brahmArpaRam ityAdi jYAnasya yajYatvasampAdane anyaTA sarvasya brahmatve arpaRAdInAmeva
+sp006-001384_GB_04-24	viSezato brahmatvABiDAnam anarTakam syAt
+sp006-001385_GB_04-24	ye tu arpaRAdizu pratimAyAm vizRudfzwivat brahmadfzwiH kzipyate nAmAdizu iva ca
+sp006-001386_GB_04-24	iti bruvate na tezAm brahmavidyA uktA iha vivakzitA syAt
+sp006-001387_GB_04-24	arpaRAdivizayatvAt jYAnasya
+sp006-001388_GB_04-24	na ca dfzwisampAdanajYAnena mokzaPalam prApyate
+sp006-001389_GB_04-24	iti ca ucyate
+sp006-001390_GB_04-24	virudDam ca samyagdarSanam antareRa mokzaPalam prApyate iti
+sp006-001391_GB_04-24	prakftaviroDaSca samyagdarSanam ca prakftam
+sp006-001392_GB_04-24	ityatra ante ca samyagdarSanam tasya eva upasaMhArAt
+sp006-001393_GB_04-24	ityAdinA samyagdarSanastutim eva kurvan upakzIRaH aDyAyaH
+sp006-001394_GB_04-24	tatra akasmAt arpaRAdO brahmadfzwiH aprakaraRe pratimAyAm iva vizRudfzwiH ucyate iti anupapannam
+sp006-001395_GB_04-24	tasmAt yaTAvyAKyAtArTa eva ayam SlokaH
+sp006-001396_GB_04-25	dEvam eva devA ijyante yena yajYena asO dEvo yajYaH
+sp006-001397_GB_04-25	tameva apare yajYam yoginaH karmiRaH paryupAsate kurvanti ityarTaH
+sp006-001398_GB_04-25	brahmAgnO satyam jYAnamanantam brahma
+sp006-001399_GB_04-25	tEttarIya upanizat dvi eka
+sp006-001400_GB_04-25	vijYAnamAnandam brahma bfhadAraRyaka upanizat tri nava azwAviMSati
+sp006-001401_GB_04-25	bfhadAraRyaka upanizat tri catuH ekam
+sp006-001402_GB_04-25	ityAdivacanoktam aSanAyAdisarvasaMsAraDarmavarjitam neti neti iti nirastASezaviSezam brahmaSabdena ucyate
+sp006-001403_GB_04-25	brahma ca tadagniSca sa homADikaraRatvavivakzayA brahmAgniH
+sp006-001404_GB_04-25	tasmin brahmAgnO apare anye brahmavidaH
+sp006-001405_GB_04-25	yajYam yajYaSabdavAcya AtmA AtmanAmasu yajYaSabdasya pAWAt
+sp006-001406_GB_04-25	tam AtmAnam yajYam paramArTataH param eva brahma
+sp006-001407_GB_04-25	santam budDyAdyupADisaMyuktam aDyastasarvopADiDarmakam AhutirUpam
+sp006-001408_GB_04-25	yajYena eva AtmanA eva uktalakzaRena upajuhvati prakzipanti
+sp006-001409_GB_04-25	sopADikasya Atmano nirupADikena parabrahmasvarUpeRa eva
+sp006-001410_GB_04-25	yaddarSanam sa tasmin homaH tam kurvanti brahmAtmEkatvadarSananizWAH sannyAsina ityarTaH
+sp006-001411_GB_04-26	SrotrAdIni indriyARi anye yoginaH saMyamAgnizu
+sp006-001412_GB_04-26	pratIndriyam saMyamo Bidyate iti bahuvacanam
+sp006-001413_GB_04-26	saMyamA eva agnayaH tezu juhvati indriyasaMyamam eva kurvanti ityarTaH
+sp006-001414_GB_04-26	SabdAdIn vizayAn anye indriyAgnizu juhvati
+sp006-001415_GB_04-26	indriyARi eva agnayaH tezu indriyAgnizu juhvati SrotrAdiBiH avirudDavizayagrahaRam homam manyante
+sp006-001416_GB_04-27	sarvARi indriyakarmARi indriyARAm karmARi indriyakarmARi
+sp006-001417_GB_04-27	taTA prARakarmARi prARo vAyuH ADyAtmikaH tatkarmARi AkuYcanaprasAraRAdIni tAni
+sp006-001418_GB_04-27	ca apare AtmasaMyamayogAgnO Atmani saMyama AtmasaMyamaH
+sp006-001419_GB_04-27	sa eva yogAgniH tasmin AtmasaMyamayogAgnO juhvati prakzipanti
+sp006-001420_GB_04-27	jYAnadIpite snehenEva pradIpite vivekavijYAnena ujjvalaBAvam ApAdite pravilApayanti ityarTaH
+sp006-001421_GB_04-28	dravyayajYAH tIrTezu dravyaviniyogam yajYabudDyA kurvanti ye te dravyayajYAH
+sp006-001422_GB_04-28	tapoyajYAH ye tapasvinaH te tapoyajYAH
+sp006-001423_GB_04-28	yogayajYAH prARAyAmapratyAhArAdilakzaRo yogo yajYo yezAm te yogayajYAH
+sp006-001424_GB_04-28	taTA apare svADyAyajYAnayajYASca svADyAyo yaTAviDi fgAdyaByAso yajYo yezAm te svADyAyayajYAH
+sp006-001425_GB_04-28	jYAnayajYAH jYAnam SAstrArTaparijYAnam yajYo yezAm te jYAnayajYASca yatayo yatanaSIlAH
+sp006-001426_GB_04-28	saMSitavratAH samyak SitAni tanUkftAni tIkzRIkftAni vratAni yezAm te saMSitavratAH
+sp006-001427_GB_04-29	apAne apAnavfttO juhvati prakzipanti prARam prARavfttim pUrakAKyam prARAyAmam kurvanti ityarTaH
+sp006-001428_GB_04-29	prARe apAnam taTA apare juhvati recakAKyam ca prARAyAmam kurvanti iti etat
+sp006-001429_GB_04-29	prARApAnagatI muKanAsikAByAm vAyoH nirgamanam prARasya gatiH
+sp006-001430_GB_04-29	tadviparyayeRa aDogamanam apAnasya te prARApAnagatI ete
+sp006-001431_GB_04-29	rudDvA niruDya prARAyAmaparAyaRAH prARAyAmatatparAH kumBakAKyam prARAyAmam kurvanti ityarTaH
+sp006-001432_GB_04-30	apare niyatAhArA niyataH parimitAhAro yezAm te niyatAhArAH santaH
+sp006-001433_GB_04-30	prARAn vAyuBedAn prARezu eva juhvati
+sp006-001434_GB_04-30	yasya yasya vAyoH jayaH kriyate itarAn vAyuBedAn tasmin tasmin juhvati
+sp006-001435_GB_04-30	te tatra pravizwA iva Bavanti
+sp006-001436_GB_04-30	sarve api ete yajYavido yajYakzapitakalmazAH yajYEH yaToktEH kzapito nASitaH kalmazo yezAm te yajYakzapitakalmazAH
+sp006-001437_GB_04-31	yajYaSizwAmftaBujo yajYAnAm Sizwam yajYaSizwam yajYaSizwam ca tadamftam ca yajYaSizwAmftam
+sp006-001438_GB_04-31	tat BuYjate iti yajYaSizwAmftaBujo
+sp006-001439_GB_04-31	yaToktAn yajYAn kftvA tacCizwena kAlena yaTAviDicoditam annam amftAKyam BuYjate iti
+sp006-001440_GB_04-31	yajYaSizwAmftaBujo yAnti gacCanti brahma sanAtanam cirantanam mumukzavaScet
+sp006-001441_GB_04-31	kAlAtikramApekzayA iti sAmarTyAt gamyate
+sp006-001442_GB_04-31	na ayam lokaH sarvaprARisADAraRaH api asti
+sp006-001443_GB_04-31	yaToktAnAm yajYAnAm ekaH api yajYo yasya na asti sa ayajYaH
+sp006-001444_GB_04-31	tasya kutaH anyo viSizwasADanasADyaH kurusattama
+sp006-001445_GB_04-32	evam yaToktA bahuviDA bahuprakArA yajYA vitatA vistIrRA brahmaRo vedasya
+sp006-001446_GB_04-32	muKe dvAre vedadvAreRa avagamyamAnA brahmaRo muKe vitatA ucyante
+sp006-001447_GB_04-32	karmajAn kAyikavAcikamAnasakarmodBAvAn vidDi tAn sarvAn anAtmajAn
+sp006-001448_GB_04-32	nirvyApAro hi AtmA
+sp006-001449_GB_04-32	na madvyApArA ime nirvyApAraH aham udAsIna iti
+sp006-001450_GB_04-32	evam jYAtvA asmAt samyagdarSanAt mokzyase saMsArabanDanAt ityarTaH
+sp006-001451_GB_04-33	yajYASca aneke upadizwAH
+sp006-001452_GB_04-33	tEH sidDapuruzArTaprayojanEH jYAnam stUyate
+sp006-001453_GB_04-33	SreyAn dravyamayAt dravyasADanasADyAt yajYAt jYAnayajYo he parantapa
+sp006-001454_GB_04-33	dravyamayo hi yajYaH Palasya AramBako jYAnayajYo na PalAramBakaH ataH SreyAn praSasyataraH
+sp006-001455_GB_04-33	kaTam yataH sarvam karma samastam aKilam apratibadDam
+sp006-001456_GB_04-33	pArTa jYAne mokzasADane sarvataHsamplutodakasTAnIye parisamApyate antarBavati ityarTaH
+sp006-001457_GB_04-33	CAndogya upanizat catuH ekaH catuH iti SruteH
+sp006-001458_GB_04-34	tadvidDi vijAnIhi yena viDinA prApte iti AcAryAn aBigamya
+sp006-001459_GB_04-34	praRipAtena prakarzeRa nIcEH patanam praRipAto dIrGanamaskAraH
+sp006-001460_GB_04-34	tena kaTam banDaH kaTam mokzaH kA vidyA kA ca avidyA iti
+sp006-001461_GB_04-34	guruSuSrUzayA
+sp006-001462_GB_04-34	evam AdinA praSrayeRa AvarjitA AcAryA upadekzyanti kaTayizyanti
+sp006-001463_GB_04-34	te jYAnam yaToktaviSezaRam jYAninaH
+sp006-001464_GB_04-34	jYAnavantaH api kecit yaTAvat tattvadarSanaSIlA
+sp006-001465_GB_04-34	apare na ato viSinazwi tattvadarSina iti
+sp006-001466_GB_04-34	ye samyagdarSinaH tEH upadizwam jYAnam kAryakzamam Bavati na itarat iti Bagavato matam
+sp006-001467_GB_04-35	yad jYAtvA yad jYAnam tEH upadizwam aDigamya prApya punaH BUyo
+sp006-001468_GB_04-35	moham evam yaTA idAnIm moham gataH asi punaH evam na yAsyasi he pARqava
+sp006-001469_GB_04-35	kiYca yena jYAnena BUtAni aSezeRa brahmAdIni stambaparyantAni
+sp006-001470_GB_04-35	drakzyasi sAkzAt Atmani pratyagAtmani matsaMsTAni imAni BUtAni iti
+sp006-001471_GB_04-35	aTo api mayi vAsudeve parameSvare ca imAni iti
+sp006-001472_GB_04-35	kzetrajYeSvarEkatvam sarvopanizatprasidDam drakzyasi ityarTaH
+sp006-001473_GB_04-36	api cet asi pApeByaH pApakfdByaH sarveByaH atiSayena pApakft pApakfttamaH
+sp006-001474_GB_04-36	sarvam jYAnaplavena eva jYAnam eva plavam kftvA vfjinam vfjinArRavam pApam santarizyasi
+sp006-001475_GB_04-36	DarmaH api iha mumukzoH pApam ucyate
+sp006-001476_GB_04-37	yaTA eDAMsi kAzWAni samidDaH samyak idDo dIptaH agniH BasmasAt BasmIBAvam kurute arjuna
+sp006-001477_GB_04-37	jYAnam eva agniH jYAnAgniH sarvakarmARi BasmasAt kurute taTA nirbIjIkaroti ityarTaH
+sp006-001478_GB_04-37	na hi sAkzAdeva jYAnAgniH karmARi inDanavat BasmIkartum Saknoti
+sp006-001479_GB_04-37	tasmAt samyagdarSanam sarvakarmaRAm nirbIjatve kAraRam iti aBiprAyaH
+sp006-001480_GB_04-37	sAmarTyAt yena karmaRA SarIram ArabDam tat pravfttaPalatvAt upaBogena eva kzIyate
+sp006-001481_GB_04-37	ato yAni apravfttaPalAni jYAnotpatteH prAk kftAni jYAnasahaBAvIni ca
+sp006-001482_GB_04-37	atItAnekajanmakftAni ca tAni eva sarvARi BasmasAt kurute
+sp006-001483_GB_04-38	na hi jYAnena sadfSam tulyam pavitram pAvanam SudDikaram iha vidyate
+sp006-001484_GB_04-38	tat jYAnam svayam eva yogasaMsidDo yogena karmayogena samADiyogena ca saMsidDaH
+sp006-001485_GB_04-38	saMskfto yogyatAm Apanno mumukzuH kAlena mahatA Atmani vindati laBate ityarTaH
+sp006-001486_GB_04-39	SradDAvAn SradDAluH laBate jYAnam
+sp006-001487_GB_04-39	SradDAlutve api Bavati kaScit mandaprasTAnaH ata Aha tatparo
+sp006-001488_GB_04-39	gurUpasadanAdO aBiyuktaH jYAnalabDyupAye
+sp006-001489_GB_04-39	SradDAvAn tatparaH api ajitendriyaH syAt iti yataH Aha
+sp006-001490_GB_04-39	saMyatendriyaH saMyatAni vizayeByo nivartitAni yasya indriyARi sa saMyatendriyaH
+sp006-001491_GB_04-39	ya evamBUtaH SradDAvAn tatparaH saMyatendriyaH ca saH avaSyam jYAnam laBate
+sp006-001492_GB_04-39	praRipAtAdiH tu bAhyaH anEkAntikaH api Bavati
+sp006-001493_GB_04-39	mAyAvitvAdisamBavAt na tu tat SradDAvattvAdO iti ekAntato jYAnalabDyupAyaH
+sp006-001494_GB_04-39	kim punaH jYAnalABAt syAt iti ucyate
+sp006-001495_GB_04-39	jYAnam labDvA parAm mokzAKyAm SAntim uparatim acireRa kzipram eva aDigacCati
+sp006-001496_GB_04-39	samyagdarSanAt kzipram mokzo BavatIti sarvaSAstranyAyaprasidDaH suniScitaH arTaH
+sp006-001497_GB_04-40	kaTam ucyate
+sp006-001498_GB_04-40	ajYaH ca anAtmajYaH aSraddaDAnaH ca saMSayAtmA ca vinaSyati
+sp006-001499_GB_04-40	ajYASraddaDAnO yadyapi vinaSyataH taTApi na taTA yaTA saMSayAtmA
+sp006-001500_GB_04-40	saMSayAtmA tu pApizWaH sarvezAm kaTam
+sp006-001501_GB_04-40	na ayam sADAraRaH api lokaH asti
+sp006-001502_GB_04-40	taTA na paro loko
+sp006-001503_GB_04-40	na suKam tatra api saMSayopapatteH saMSayAtmanaH saMSayacittasya
+sp006-001504_GB_04-40	tasmAt saMSayo na kartavyaH
+sp006-001505_GB_04-41	yogasannyastakarmARam paramArTadarSanalakzaRena yogena sannyastAni karmARi yena paramArTadarSinA
+sp006-001506_GB_04-41	DarmADarmAKyAni tam yogasannyastakarmARam
+sp006-001507_GB_04-41	kaTam yogasannyastakarmA iti Aha
+sp006-001508_GB_04-41	jYAnena AtmeSvarEkatvadarSanalakzaRena saYCinnaH saMSayo yasya sa jYAnasaYCinnasaMSayaH
+sp006-001509_GB_04-41	ya evam yogasannyastakarmA tam Atmavantam apramattam guRacezwArUpeRa dfzwAni
+sp006-001510_GB_04-41	karmARi na nibaDnanti anizwAdirUpam Palam na AraBante he DanaYjaya
+sp006-001511_GB_04-42	karmaBiH jYAnAgnidagDakarmatvAt eva
+sp006-001512_GB_04-42	yasmAcca jYAnakarmAnuzWAnavizaye saMSayavAn vinaSyati
+sp006-001513_GB_04-42	tasmAt pApizWam ajYAnasamBUtam ajYAnAt avivekAt jAtam hftsTam hfdi budDO sTitam
+sp006-001514_GB_04-42	jYAnAsinA SokamohAdidozaharam samyagdarSanam jYAnam
+sp006-001515_GB_04-42	tadeva asiH KaqgaH tena jYAnAsinA AtmanaH svasya AtmavizayatvAt saMSayasya
+sp006-001516_GB_04-42	na hi parasya saMSayaH pareRa cCettavyatAm prApto yena svasya iti viSezyate
+sp006-001517_GB_04-42	ata AtmavizayaH api svasya eva Bavati
+sp006-001518_GB_04-42	CittvA enam saMSayam svavinASahetuBUtam yogam samyagdarSanopAyakarmAnuzWAnam AtizWa kuru ityarTaH
+sp006-001519_GB_04-42	uttizWa ca idAnIm yudDAya BArata iti
+sp006-001520_GB_04-42	iti SrImahABArate SatasAhasryAm saMhitAyAm vEyAsikyAm BIzmaparvaRi
+sp006-001521_GB_04-42	SrImadBagavadgItAsu upanizatsu brahmavidyAyAm yogaSAstre SrIkfzRArjunasaMvAde jYAnakarmasannyAsayogo nAma caturToऽDyAyaH
+sp006-001522_GB_04-42	iti SrImatparamahaMsaparivrAjakAcArya govindaBagavatpUjyapAdaSizya SrImacCaNkaraBagavataH kftO SrIBagavadgItABAzye brahmayajYapraSaMsAnAma caturToऽDyAyaH
+sp006-001523_GB_05-00_1	ityantEH vacanEH sarvakarmasannyAsam avocat BagavAn
+sp006-001524_GB_05-00_1	iti anena vacanena yogam ca karmAnuzWAnalakzaRam anutizWa iti uktavAn
+sp006-001525_GB_05-00_1	tayoH uBayoSca karmAnuzWAnakarmasannyAsayoH sTitigativat parasparaviroDAt ekena saha kartum aSakyatvAt
+sp006-001526_GB_05-00_1	kAlaBedena ca anuzWAnaviDAnABAvAt arTAt etayoH anyatarakartavyatAprAptO satyAm
+sp006-001527_GB_05-00_1	yat praSasyataram etayoH karmAnuzWAnakarmasannyAsayoH tat kartavyam na itarat iti
+sp006-001528_GB_05-00_1	evam manyamAnaH praSasyatarabuButsayA arjuna uvAca
+sp006-001529_GB_05-00_1	nanu ca Atmavido jYAnayogena nizWAm pratipipAdayizan pUrvodAhftEH vacanEH BagavAn sarvakarmasannyAsam avocat
+sp006-001530_GB_05-00_1	na tu anAtmajYasya
+sp006-001531_GB_05-00_1	ataSca karmAnuzWAnakarmasannyAsayoH BinnapuruzavizayatvAt anyatarasya
+sp006-001532_GB_05-00_1	praSasyataratvabuButsayA praSnaH anupapannaH
+sp006-001533_GB_05-00_1	satyameva tvadaBiprAyeRa praSno na upapadyate prazwuH svABiprAyeRa punaH praSno yujyate eva iti vadAmaH
+sp006-001534_GB_05-00_1	pUrvodAhftEH vacanEH BagavatA karmasannyAsasya kartavyatayA vivakzitatvAt prADAnyam
+sp006-001535_GB_05-00_1	antareRa ca kartAram tasya kartavyatvAsamBavAt anAtmavidapi kartA pakze prAptaH anUdyateva
+sp006-001536_GB_05-00_1	na punaH Atmavitkartfkatvam eva sannyAsasya vivakzitam iti
+sp006-001537_GB_05-00_1	evam manvAnasya arjunasya karmAnuzWAnakarmasannyAsayoH avidvatpuruzakartfkatvam api astIti pUrvoktena prakAreRa tayoH parasparaviroDAt
+sp006-001538_GB_05-00_1	anyatarasya kartavyatve prApte praSasyataram ca kartavyam na itarat iti praSasyataravividizayA praSno na anupapannaH
+sp006-001539_GB_05-00_1	prativacanavAkyArTanirUpaRenApi prazwuH aBiprAya evam eva iti gamyate kaTam
+sp006-001540_GB_05-00_1	sannyAsakarmayogO niHSreyasakarO tayostu karmayogo viSizyate paYcamADyAyaH dvitIyaH SlokaH iti prativacanam
+sp006-001541_GB_05-00_1	etannirUpyam kimanena AtmavitkartfkayoH sannyAsakarmayogayoH niHSreyasakaratvam prayojanam uktvA
+sp006-001542_GB_05-00_1	tayoreva kutaScit viSezAt karmasannyAsAt karmayogasya viSizwatvam ucyate
+sp006-001543_GB_05-00_1	Ahosvit anAtmavitkartfkayoH sannyAsakarmayogayoH taduBayam ucyate iti
+sp006-001544_GB_05-00_1	kiYca ato yadi AtmavitkartfkayoH karmasannyAsakarmayogayoH niHSreyasakaratvam
+sp006-001545_GB_05-00_1	tayostu karmasannyAsAt karmayogasya viSizwatvam ucyate
+sp006-001546_GB_05-00_1	yadi vA anAtmavitkartfkayoH sannyAsakarmayogayoH taduBayam ucyate iti
+sp006-001547_GB_05-00_1	atra ucyate AtmavitkartfkayoH sannyAsakarmayogayoH asamBavAt tayoH niHSreyasakaratvavacanam tadIyAt ca
+sp006-001548_GB_05-00_1	karmasannyAsAt karmayogasya viSizwatvABiDAnam iti etaduBayam anupapannam
+sp006-001549_GB_05-00_1	yadi anAtmavidaH karmasannyAsaH tatpratikUlaSca karmAnuzWAnalakzaRaH karmayogaH samBavetAm
+sp006-001550_GB_05-00_1	tadA tayoH niHSreyasakaratvoktiH
+sp006-001551_GB_05-00_1	karmayogasya ca karmasannyAsAt viSizwatvABiDAnam iti etat uBayam upapadyate
+sp006-001552_GB_05-00_1	Atmavidastu sannyAsakarmayogayoH asamBavAt tayoH niHSreyasakaratvABiDAnam karmasannyAsAt ca karmayogo viSizyate iti ca anupapannam
+sp006-001553_GB_05-00_2	yadA ca anyatarasya asamBavaH tadA kim karmasannyAsasya uta karmayogasya iti
+sp006-001554_GB_05-00_2	asamBave kAraRam ca vaktavyam iti
+sp006-001555_GB_05-00_2	atra ucyate Atmavido nivfttamiTyAjYAnatvAt viparyayajYAnamUlasya karmayogasya asamBavaH syAt
+sp006-001556_GB_05-00_2	janmAdisarvavikriyArahitatvena nizkriyam AtmAnam Atmatvena yo vetti
+sp006-001557_GB_05-00_2	yasya AtmavidaH samyagdarSanena apAstamiTyAjYAnasya nizkriyAtmasvarUpAvasTAnalakzaRam sarvakarmasannyAsam uktvA
+sp006-001558_GB_05-00_2	tadviparItasya miTyAjYAnamUlakartftvABimAnapuraHsarasya
+sp006-001559_GB_05-00_2	sakriyAtmasvarUpAvasTAnarUpasya karmayogasya iha SAstre tatra tatra AtmasvarUpanirUpaRapradeSezu
+sp006-001560_GB_05-00_2	samyagjYAnamiTyAjYAnatatkAryaviroDAt aBAvaH pratipAdyate yasmAt
+sp006-001561_GB_05-00_2	tasmAt Atmavido nivfttamiTyAjYAnasya viparyayajYAnamUlaH karmayogo na samBavatIti yuktam uktam syAt
+sp006-001562_GB_05-00_2	kezu kezu punaH AtmasvarUpanirUpaRapradeSezu AtmavidaH karmABAvaH pratipAdyate iti atra ucyate
+sp006-001563_GB_05-00_2	ityAdO tatra tatra AtmavidaH karmABAva ucyate
+sp006-001564_GB_05-00_2	nanu ca karmayogaH api AtmasvarUpanirUpaRapradeSezu tatra tatra pratipAdyate eva tadyaTA
+sp006-001565_GB_05-00_2	ataSca kaTam AtmavidaH karmayogasya asamBavaH syAt iti
+sp006-001566_GB_05-00_2	atra ucyate samyagjYAnamiTyAjYAnatatkAryaviroDAt
+sp006-001567_GB_05-00_2	iti anena sANKyAnAm AtmatattvavidAm anAtmavitkartfkakarmayoganizWAto
+sp006-001568_GB_05-00_2	nizkriyAtmasvarUpAvasTAnalakzaRAyA jYAnayoganizWAyAH pfTakkaraRAt
+sp006-001569_GB_05-00_2	kftakftyatvena AtmavidaH prayojanAntarABAvAt
+sp006-001570_GB_05-00_2	iti kartavyAntarABAvavacanAcat ca
+sp006-001571_GB_05-00_2	ityAdinA ca AtmajYAnANgatvena karmayogasya viDAnAt
+sp006-001572_GB_05-00_2	iti anena ca utpannasamyagdarSanasya karmayogABAvavacanAt
+sp006-001573_GB_05-00_2	iti ca SarIrasTitikAraRAtiriktasya karmaRo nivAraRAt
+sp006-001574_GB_05-00_2	iti anena ca SarIrasTitimAtraprayuktezu api darSanaSravaRAdikarmasu AtmayATAtmyavidaH
+sp006-001575_GB_05-00_2	karomi iti pratyayasya samAhitacetastayA sadA akartavyatvopadeSAt
+sp006-001576_GB_05-00_2	AtmatattvavidaH samyagdarSanavirudDo miTyAjYAnahetukaH karmayogaH svapne api na samBAvayitum Sakyate yasmAt
+sp006-001577_GB_05-00_2	tasmAt anAtmavitkartfkayoH eva sannyAsakarmayogayoH niHSreyasakaratvavacanam tadIyAcca
+sp006-001578_GB_05-00_2	karmasannyAsAt pUrvoktAtmavitkartfka sarvakarmasannyAsavilakzaRAt satI eva
+sp006-001579_GB_05-00_2	kartftvavijYAne karmEkadeSavizayAt yamaniyamAdisahitatvena ca duranuzWeyatvAt sukaratvena ca
+sp006-001580_GB_05-00_2	karmayogasya viSizwatvABiDAnam iti
+sp006-001581_GB_05-00_2	evam prativacanavAkyArTanirUpaRena api pUrvoktaH prazwuH aBiprAyo niScIyate iti sTitam
+sp006-001582_GB_05-00_2	iti atra jYAnakarmaRoH sahAsamBave
+sp006-001583_GB_05-00_2	yat Sreya etayoH tat me brUhi
+sp006-001584_GB_05-00_2	iti evam pfzwaH arjunena BagavAn sAN KyAnAm sannyAsinAm jYAnayogena nizWA
+sp006-001585_GB_05-00_2	punaH karmayogena yoginAm nizWA proktA iti nirRayam cakAra
+sp006-001586_GB_05-00_2	na ca sannyasanAdeva kevalAt sidDim samaDigacCati iti vacanAt
+sp006-001587_GB_05-00_2	jYAnasahitasya sidDisADanatvam izwam karmayogasya ca viDAnAt
+sp006-001588_GB_05-00_2	jYAnarahitaH sannyAsaH SreyAn kim vA karmayogaH SreyAn
+sp006-001589_GB_05-00_2	iti etayoH viSezabuButsayA
+sp006-001590_GB_05-01	sannyAsam parityAgam karmaRAm SAstrIyARAm anuzWAna viSezARAm SaMsasi kaTayasi iti etat
+sp006-001591_GB_05-01	punaH yogam ca tezAmeva anuzWAnam avaSyakartavyam SaMsasi
+sp006-001592_GB_05-01	ato me katarat Sreya iti saMSayaH kim karmAnuzWAnam SreyaH kim vA tadDAnam iti
+sp006-001593_GB_05-01	praSasyataram ca anuzWeyam ataSca
+sp006-001594_GB_05-01	yat SreyaH praSasyataram etayoH karmasannyAsakarmAnuzWAnayoH yadanuzWAnAt SreyovAptiH mama syAditi manyase
+sp006-001595_GB_05-01	tadekam anyatarat sahEkapuruzAnuzWeyatvAsamBavAt me brUhi suniScitam aBipretam tava iti
+sp006-001596_GB_05-02	SrIBagavAn uvAca
+sp006-001597_GB_05-02	sannyAsaH karmaRAm parityAgaH karmayogaH ca tezAm anuzWAnam tO uBO api niHSreyasakarO niSreyasam mokzam kurvAte
+sp006-001598_GB_05-02	jYAnotpattihetutvena uBO yadyapi niHSreyasakarO taTApi tayoH tu
+sp006-001599_GB_05-02	niHSreyasahetvoH karmasannyAsAt kevalAt karmayogo viSizyate iti karmayogam stOti
+sp006-001600_GB_05-03	jYeyo jYAtavyaH sa karmayogI nityasannyAsI iti yo na dvezwi kiYcit na kANkzati duHKasuKe tatsADane ca
+sp006-001601_GB_05-03	evaMviDo yaH karmaRi vartamAnaH api sa nityasannyAsI iti jYAtavya ityarTaH
+sp006-001602_GB_05-03	nirdvandvo dvandvavarjito hi yasmAt mahAbAho suKam banDAt anAyAsena pramucyate
+sp006-001603_GB_05-04	niHSreyasakaratvameva iti prApte idam ucyate
+sp006-001604_GB_05-04	sAN KyayogO pfTak virudDaBinnaPalO bAlAH pravadanti na paRqitAH
+sp006-001605_GB_05-04	paRqitAstu jYAnina ekam Palam avirudDam icCanti kaTam
+sp006-001606_GB_05-04	ekamapi sANKyayogayoH samyagAsTitaH samyaganuzWitavAn ityarTaH
+sp006-001607_GB_05-04	uBayoH vindate Palam
+sp006-001608_GB_05-04	uBayoH tadeva hi niHSreyasam Palam ato na Pale viroDaH asti
+sp006-001609_GB_05-04	nanu sannyAsakarmayogaSabdena prastutya sAN KyayogayoH PalEkatvam kaTamiha aprakftam bravIti
+sp006-001610_GB_05-04	na eza dozaH
+sp006-001611_GB_05-04	yadyapi arjunena sannyAsam karmayogam ca kevalam aBipretya praSnaH kftaH
+sp006-001612_GB_05-04	BagavAn tu tadaparityAgena eva svABipretam ca viSezam saMyojya SabdAntaravAcyatayA prativacanam dadO
+sp006-001613_GB_05-04	sAN KyayogO iti
+sp006-001614_GB_05-04	tO eva sannyAsakarmayogO jYAna tadupAya samabudDitvAdisaMyuktO sAN KyayogaSabdavAcyO iti Bagavato matam
+sp006-001615_GB_05-04	ato na aprakftaprakriyA iti
+sp006-001616_GB_05-05	yat sANKyEH jYAnanizWEH sannyAsiBiH prApyate sTAnam mokzAKyam
+sp006-001617_GB_05-05	tadyogEH api jYAnaprAptyupAyatvena ISvare samarpya karmARi AtmanaH Palam anaBisanDAya anutizWanti ye
+sp006-001618_GB_05-05	te yoginaH tErapi paramArTajYAnasannyAsaprAptidvAreRa gamyate iti aBiprAyaH
+sp006-001619_GB_05-05	ataH ekam sAN Kyam yogam ca yaH paSyati PalEkatvAt sa samyak paSyati ityarTaH
+sp006-001620_GB_05-06	kaTam tarhi idamuktam
+sp006-001621_GB_05-06	SfRu tatra kAraRam
+sp006-001622_GB_05-06	tvayA pfzwam kevalam karmasannyAsam karmayogam ca aBipretya tayoH anyataraH kaH SreyAn
+sp006-001623_GB_05-06	tadanurUpam prativacanam mayA uktam karmasannyAsAt karmayogo viSizyate iti jYAnam anapekzya
+sp006-001624_GB_05-06	jYAnApekzastu sannyAsaH sAN Kyam iti mayA aBipretaH
+sp006-001625_GB_05-06	paramArTayogaSca sa eva
+sp006-001626_GB_05-06	yastu karmayogo vEdikaH sa tAdarTyAt yogaH sannyAsa iti ca upacaryate
+sp006-001627_GB_05-06	kaTam tAdarTyam iti ucyate
+sp006-001628_GB_05-06	sannyAsastu pAramArTiko duHKam Aptum prAptum ayogato yogena vinA
+sp006-001629_GB_05-06	yogayukto vEdikena karmayogena ISvarasamarpitarUpeRa PalanirapekzeRa yukto
+sp006-001630_GB_05-06	muniH mananAt ISvarasvarUpasya muniH
+sp006-001631_GB_05-06	nArAyaRopanizat dvi azwasaptati iti SruteH
+sp006-001632_GB_05-06	brahma paramArTasannyAsam paramArTajYAnanizWAlakzaRam nacireRa kziprameva aDigacCati prApnoti
+sp006-001633_GB_05-06	ato mayA uktam
+sp006-001634_GB_05-07	yogena yukto yogayukto viSudDAtmA viSudDasattvo vijitAtmA vijitadeho
+sp006-001635_GB_05-07	jitendriyaH ca sarvaBUtAtmaBUtAtmA sarvezAm brahmAdInAm stambaparyantAnAm BUtAnAm AtmaBUta AtmA pratyakcetaso
+sp006-001636_GB_05-07	yasya sa sarvaBUtAtmaBUtAtmA samyagdarSI ityarTaH
+sp006-001637_GB_05-07	sa tatra evam vartamAno lokasaNgrahAya karma
+sp006-001638_GB_05-07	na karmaBiH baDyate ityarTaH
+sp006-001639_GB_05-08	na eva kiYcit karomIti yuktaH samAhitaH san manyeta cintayet
+sp006-001640_GB_05-08	tattvavit Atmano yATAtmyam tattvam vettIti tattvavit paramArTadarSI ityarTaH
+sp006-001641_GB_05-0809	manyeta iti pUrveRa sambanDaH
+sp006-001642_GB_05-0809	yasya evam tattvavidaH sarvakAryakaraRacezwAsu karmasu akarma eva paSyataH samyagdarSinaH
+sp006-001643_GB_05-0809	tasya sarvakarmasannyAse eva aDikAraH karmaRaH aBAvadarSanAt
+sp006-001644_GB_05-0809	na hi mfgatfzRikAyAm udakabudDyA pAnAya pravftta udakavABAvajYAneऽpi tatra eva pAnaprayojanAya pravartate
+sp006-001645_GB_05-10	brahmaRi ISvare ADAya nikzipya tadarTam karomi iti Bftya iva svAmyarTam sarvARi karmARi mokzeऽpi Pale
+sp006-001646_GB_05-11	kAyena dehena manasA budDyA ca kevalEH mamatvavarjitEH ISvarAya eva karma karomi na mama PalAya iti mamatvabudDiSUnyEH
+sp006-001647_GB_05-11	indriyEH api kevalaSabdaH kAyAdiBiH api pratyekam sambaDyate sarvavyApArezu mamatAvarjanAya
+sp006-001648_GB_05-11	yoginaH karmiRaH karma kurvanti saNgam tyaktvA Palavizayam AtmaSudDaye sattvaSudDaye ityarTaH
+sp006-001649_GB_05-11	tasmAt tatra eva tava aDikAra iti kuru karma eva
+sp006-001650_GB_05-12	yukta ISvarAya karmARi na mama PalAya iti evam samAhitaH san
+sp006-001651_GB_05-12	karmaPalam tyaktvA parityajya SAntim mokzAKyAm Apnoti
+sp006-001652_GB_05-12	nEzWikIm nizWAyAm BavAm sattvaSudDijYAnaprAptisarvakarmasannyAsajYAnanizWAkrameRa iti vAkyaSezaH
+sp006-001653_GB_05-12	yastu punaH ayuktaH asamAhitaH kAmakAreRa karaRam kAraH kAmasya kAraH kAmakAraH
+sp006-001654_GB_05-12	tena kAmakAreRa kAmapreritatayA ityarTaH
+sp006-001655_GB_05-12	mama PalAya idam karomi karma iti evam Pale sakto nibaDyate
+sp006-001656_GB_05-12	ataH tvam yukto Bava ityarTaH
+sp006-001657_GB_05-13	sarvARi karmARi sarvakarmARi sannyasya parityajya nityam nEmittikam kAmyam pratizidDam ca sarva karmARi tAni
+sp006-001658_GB_05-13	manasA vivekabudDyA karmAdO akarmasandarSanena santyajya ityarTaH
+sp006-001659_GB_05-13	Aste tizWati suKam
+sp006-001660_GB_05-13	tyaktavANmanaHkAyacezwo nirAyAsaH prasannacittA AtmanaH anyatra
+sp006-001661_GB_05-13	nivfttabAhyasarvaprayojana iti suKam Aste iti ucyate
+sp006-001662_GB_05-13	vaSI jitendriya ityarTaH
+sp006-001663_GB_05-13	kva kaTam Aste iti Aha navadvAre pure
+sp006-001664_GB_05-13	sapta SIrzaRyAni Atmana upalabDidvArARi
+sp006-001665_GB_05-13	arvAk dve mUtrapurIzavisargArTe tEH dvArEH navadvAram puram ucyate
+sp006-001666_GB_05-13	SarIram puram iva puram AtmEkasvAmikam
+sp006-001667_GB_05-13	tadarTaprayojanESca indriyamanobudDivizayEH anekaPalavijYAnasya utpAdakEH pOrEH iva aDizWitam
+sp006-001668_GB_05-13	tasmin navadvAre pure dehI sarvam karma sannyasya Aste
+sp006-001669_GB_05-13	kim viSezaRena
+sp006-001670_GB_05-13	sarvo hi dehI sannyAsI asannyAsI vA dehe eva Aste tatra anarTakam viSezaRam iti
+sp006-001671_GB_05-13	ucyate yastu ajYo dehI dehendriyasaNGAtamAtrAtmadarSI sa sarvo gehe BUmO Asane vA Ase iti manyate
+sp006-001672_GB_05-13	na hi dehamAtrAtmadarSino gehe iva dehe Ase iti pratyayaH samBavati
+sp006-001673_GB_05-13	dehAdisaNGAtavyatiriktAtmadarSinaH tu dehe Ase iti pratyaya upapadyate
+sp006-001674_GB_05-13	parakarmaRAm ca parasmin Atmani avidyayA aDyAropitAnAm vidyayA vivekajYAnena manasA sannyAsa upapadyate
+sp006-001675_GB_05-13	utpannavivekajYAnasya sarvakarmasannyAsinaH api gehe iva dehe eva navadvAre pure
+sp006-001676_GB_05-13	Asanam prArabDaPalakarmasaMskAraSezAnuvfttyA dehe eva viSezavijYAnotpatteH
+sp006-001677_GB_05-13	dehe eva Aste iti astyeva viSezaRaPalam vidvadavidvat pratyayaBedApekzatvAt
+sp006-001678_GB_05-13	yadyapi kAryakaraRakarmARi avidyayA Atmani aDyAropitAni sannyasya Aste iti uktam
+sp006-001679_GB_05-13	taTApi AtmasamavAyi tu kartftvam kArayitftvam ca syAt iti ASaNkya Aha
+sp006-001680_GB_05-13	na eva kurvan svayam na kAryakaraRAni kArayan kriyAsu pravartayan
+sp006-001681_GB_05-13	kim yat tat kartftvam kArayitftvam ca dehinaH svAtmasamavAyi sat sannyAsAt na Bavati
+sp006-001682_GB_05-13	yaTA gacCato gatiH gamanavyApAraparityAge na syAt tadvat
+sp006-001683_GB_05-13	kim vA svata eva Atmano nAstIti
+sp006-001684_GB_05-13	atra ucyate nAsti AtmanaH svataH kartftvam kArayitftvam ca
+sp006-001685_GB_05-13	bfhadAraRyaka upanizat catuH triH catuH iti ca SruteH
+sp006-001686_GB_05-14	na kartftvam kuru iti na api karmARi raTaGawaprAsAdAdIni IpsitatamAni lokasya sfjati utpAdayati praBuH AtmA
+sp006-001687_GB_05-14	nApi raTAdi kftavataH tatPalena saMyogam na karmaPalasaMyogam
+sp006-001688_GB_05-14	yadi kiYcidapi svato na karoti na kArayati ca dehI
+sp006-001689_GB_05-14	kaH tarhi kurvan kArayan ca pravartate iti ucyate
+sp006-001690_GB_05-14	svaBAvastu svo BAvaH svaBAvaH avidyAlakzaRA prakftiH mAyA pravartate dEvI hi ityAdinA vakzyamARA
+sp006-001691_GB_05-15	na Adatte na ca gfhRAti BaktasyApi kasyacit pApam
+sp006-001692_GB_05-15	na ca eva Adatte sukftam BaktEH prayuktam viBuH
+sp006-001693_GB_05-15	kimarTam tarhi BaktEH pUjAdilakzaRam yAgadAnahomAdikam ca sukftam prayujyate iti Aha
+sp006-001694_GB_05-15	ajYAnena Avftam jYAnam vivekavijYAnam tena muhyanti
+sp006-001695_GB_05-15	karomi kArayAmi Bokzye BojayAmi iti evam moham gacCanti avivekinaH saMsAriRo jantavaH
+sp006-001696_GB_05-16	jYAnena tu yena ajYAnena AvftAH muhyanti jantavaH
+sp006-001697_GB_05-16	tadajYAnam yezAm jantUnAm vivekajYAnena AtmavizayeRa nASitam Atmano Bavati tezAm Adityavat
+sp006-001698_GB_05-16	yaTA AdityaH samastam rUpajAtam avaBAsayati tadvat
+sp006-001699_GB_05-16	jYAnam jYeyam vastu sarvam prakASayati tat param paramArTatattvam
+sp006-001700_GB_05-17	tasmin gatA budDiH yezAm te tadbudDayaH tadAtmAnaH tadeva param brahma AtmA yezAm te tadAtmAnaH
+sp006-001701_GB_05-17	tannizWAH nizWA aBiniveSaH tAtparyam sarvARi karmARi sannyasya brahmaRI eva avasTAnam yezAm te tannizWAH
+sp006-001702_GB_05-17	tatparAyaRAH ca tadeva param ayanam parA gatiH yezAm Bavati te tatparAyaRAH kevalAtmarataya ityarTaH
+sp006-001703_GB_05-17	yezAm jYAnena nASitam AtmanaH ajYAnam te gacCanti evaMviDA apunarAvfttim apunardehasambanDaH
+sp006-001704_GB_05-17	jYAnanirDUtakalmazA yaToktena jYAnena nirDUtA nASitaH kalmazaH pApAdisaMsArakAraRadozA yezAm te jYAnanirDUtakalmazA yataya ityarTaH
+sp006-001705_GB_05-18	vidyAvinayasampanne vidyA ca vinayaSca vidyAvinayO
+sp006-001706_GB_05-18	vidyA Atmano boDo vinaya upaSamaH
+sp006-001707_GB_05-18	tAByAm vidyAvinayAByAm sampanno vidyAvinayasampanno vidvAn vinItaSca yo brAhmaRaH tasmin
+sp006-001708_GB_05-18	vidyAvinayasampanne uttamasaMskAravati brAhmaRe sAttvike
+sp006-001709_GB_05-18	maDyamAyAm ca rAjasyAm gavi saMskArahInAyAm atyantam eva kevalatAmase hastyAdO ca
+sp006-001710_GB_05-18	sattvAdiguREH tajjESca saMskArEH taTA rAjasEH taTA tAmasESca saMskArEH
+sp006-001711_GB_05-18	atyantam eva aspfzwam samam ekam avikriyam brahma drazwum SIlam yezAm te paRqitAH samadarSinaH
+sp006-001712_GB_05-19	gOtamasmfti saptadaSa viMSati iti smfteH
+sp006-001713_GB_05-19	na te dozavantaH kaTam
+sp006-001714_GB_05-19	iha eva jIvadBiH eva tEH samadarSiBiH paRqitEH jito vaSIkftaH sargo janma
+sp006-001715_GB_05-19	yezAm sAmye sarvaBUtezu brahmaRi samaBAve sTitam niScalIBUtam manaH antaHkaraRam
+sp006-001716_GB_05-19	nirdozam yadyapi dozavatsu SvapAkAdizu mUQEH taddozEH dozavadiva viBAvyate
+sp006-001717_GB_05-19	taTApi taddozEH aspfzwam iti nirdozam dozavarjitam hi yasmAt
+sp006-001718_GB_05-19	nApi svaguRaBedaBinnam nirguRatvAt cEtanyasya
+sp006-001719_GB_05-19	vakzyati ca BagavAn icCAdInAm kzetraDarmatvam
+sp006-001720_GB_05-19	anAditvAt nirguRatvAt iti ca
+sp006-001721_GB_05-19	nApi anyA viSezA Atmano BedakAH santi
+sp006-001722_GB_05-19	pratiSarIram tezAm sattve pramARAnupapatteH
+sp006-001723_GB_05-19	ataH samam brahma ekam ca
+sp006-001724_GB_05-19	tasmAt brahmaRi eva te sTitAH
+sp006-001725_GB_05-19	tasmAt na dozaganDamAtram api tAn spfSati
+sp006-001726_GB_05-19	dehAdisaNGAtAtmadarSanABimAnABAvAt dehAdisaNGAtAtmadarSanABimAnavadvizayam tu tat sUtram
+sp006-001727_GB_05-19	iti pUjAvizayatvaviSezaRAt
+sp006-001728_GB_05-19	dfSyate hi brahmavit zaqaNgavit caturvedavit iti pUjAdAnAdO guRaviSezasambanDaH kAraRam
+sp006-001729_GB_05-19	brahma tu sarvaguRadozasambanDavarjitam iti ato brahmaRi te sTitA iti yuktam
+sp006-001730_GB_05-19	karmavizayam ca samAsamAByAm ityAdi
+sp006-001731_GB_05-19	idam tu sarvakarmasannyAsavizayam prastutam
+sp006-001732_GB_05-19	sarvakarmARi manasA iti AraBya A aDyAyaparisamApteH
+sp006-001733_GB_05-20	na prahfzyet na praharzam kuryAt priyam izwam prApya labDvA
+sp006-001734_GB_05-20	na udvijet prApya eva ca apriyam anizwam labDvA
+sp006-001735_GB_05-20	dehamAtrAtmadarSinAm hi priyApriyaprAptI harzavizAdasTAne na kevalAtmadarSinaH tasya priyApriyaprAptyasamBavAt
+sp006-001736_GB_05-20	kiYca sarvaBUtezu ekaH samo nirdoza AtmA iti sTirA nirvicikitsA budDiH yasya sa sTirabudDiH asammUQaH
+sp006-001737_GB_05-20	sammohavarjitaSca syAt yaTokto brahmavit brahmaRi sTitaH
+sp006-001738_GB_05-20	akarmakft sarvakarmasannyAsI ityarTaH
+sp006-001739_GB_05-21	bAhyasparSezu bAhyASca sparSASca te bAhyasparSAH spfSyante iti sparSAH SabdAdayo vizayAH tezu bAhyasparSezu
+sp006-001740_GB_05-21	asaktAtmA antaHkaraRam yasya saH ayam asaktAtmA vizayezu prItivarjitaH san
+sp006-001741_GB_05-21	vindati laBate Atmani yat suKam tat vindati iti etat
+sp006-001742_GB_05-21	brahmaRi yogaH samADiH brahmayogaH tena brahmayogena yuktaH samAhitaH tasmin vyApfta AtmA antaHkaraRam
+sp006-001743_GB_05-21	yasya sa brahmayogayuktAtmA suKam akzayam aSnute prApnoti
+sp006-001744_GB_05-21	tasmAt bAhyavizayaprIteH kzaRikAyA indriyARi nivartayet Atmani akzayasuKArTI ityarTaH
+sp006-001745_GB_05-22	ye hi yasmAt saMsparSajA vizayendriyasaMsparSeByo jAtA BogA Buktayo duHKayonaya eva te avidyAkftatvAt
+sp006-001746_GB_05-22	dfSyante hi ADyAtmikAdIni duHKAni tannimittAni eva
+sp006-001747_GB_05-22	yaTA ihaloke taTA paraloke api iti gamyate evaSabdAt
+sp006-001748_GB_05-22	na saMsAre suKasya ganDamAtramapi asti iti budDvA vizayamfgatfzRikAyA indriyARi nivartayet
+sp006-001749_GB_05-22	na kevalam duHKayonaya AdyantavantaSca AdiH vizayendriyasaMyogo BogAnAm antaSca tadviyoga eva
+sp006-001750_GB_05-22	ata AdyantavantaH anityA maDyakzaRaBAvitvAt ityarTaH
+sp006-001751_GB_05-22	kOnteya na tezu Bogezu ramate buDo vivekI avagataparamArTatattvaH
+sp006-001752_GB_05-22	atyantamUQAnAmeva hi vizayezu ratiH dfSyate yaTA paSupraBftInAm
+sp006-001753_GB_05-23	iti tatparihAre yatnADikyam kartavyam iti Aha BagavAn
+sp006-001754_GB_05-23	Saknoti utsahate iha eva jIvan eva yaH soQum prasahitum prAk pUrvam SarIravimokzaRAt AmaraRAt
+sp006-001755_GB_05-23	maraRasImAkaraRam jIvataH avaSyamBAvi hi kAmakroDodBavo vegaH
+sp006-001756_GB_05-23	anantanimittavAn hi sa iti yAvat maraRam tAvat na visramBaRIya ityarTaH
+sp006-001757_GB_05-23	kAma indriyagocaraprApte izwe vizaye SrUyamARe smaryamARe vA anuBUte suKahetO yA garDiH tfzRA sa kAmaH
+sp006-001758_GB_05-23	kroDaSca AtmanaH pratikUlezu duHKahetuzu dfSyamAnezu SrUyamARezu smaryamARezu vA yo dvezaH saH kroDaH
+sp006-001759_GB_05-23	tO kAmakroDO udBavO yasya vegasya saH kAmakroDodBavo vegaH
+sp006-001760_GB_05-23	romAYcanahfzwanetravadanAdiliNgaH antaHkaraRaprakzoBarUpaH kAmodBavo vegaH
+sp006-001761_GB_05-23	gAtraprakampaprasvedasandazwOzWapuwaraktanetrAdiliNgaH kroDodBavo vegaH
+sp006-001762_GB_05-23	tam kAmakroDodBavam vegaH ya utsahate prasahate soQum prasahitum sa yukto yogI suKI ca iha loke naraH
+sp006-001763_GB_05-24	yaH antaHsuKaH antarAtmani suKam yasya saH antaHsuKaH
+sp006-001764_GB_05-24	taTA antareva Atmani ArAma AkrIqA yasya saH antarArAmaH
+sp006-001765_GB_05-24	taTA eva antarAtmA eva jyotiH prakASo yasya saH antarjyotiH eva
+sp006-001766_GB_05-24	yaH IdfSaH sa yogI brahmanirvARam brahmaRi nirvftim mokzam iha jIvanneva brahmaBUtaH san aDigacCati prApnoti
+sp006-001767_GB_05-25	laBante brahmanirvARam mokzam fzayaH samyagdarSinaH sannyAsinaH kzIRakalmazAH kzIRapApAdi dozAH
+sp006-001768_GB_05-25	CinnadvEDAH CinnasaMSayAH yatAtmAnaH saMyatendriyAH
+sp006-001769_GB_05-25	sarvaBUtahite ratAH sarvezAm BUtAnAm hite AnukUlye ratA ahiMsakA ityarTaH
+sp006-001770_GB_05-26	kAmakroDaviyuktAnAm kAmaSca kroDaSca kAmakroDO tAByAm viyuktAnAm
+sp006-001771_GB_05-26	yatInAm sannyAsinAm yatacetasAm saMyatAntaHkaraRAnAm aBita uBayato jIvatAm mftAnAm ca
+sp006-001772_GB_05-26	brahmanirvARam mokzo vartate viditAtmanAm vidito jYAta AtmA yezAm te viditAtmAnaH
+sp006-001773_GB_05-26	tezAm viditAtmanAm samyagdarSinAm ityarTaH
+sp006-001774_GB_05-27	karmayogaSca ISvarArpitasarvaBAvena ISvare brahmaRi ADAya kriyamARaH
+sp006-001775_GB_05-27	sattvaSudDijYAnaprAptisarvakarmasannyAsakrameRa mokzAya iti BagavAn pade pade abravIt vakzyati ca
+sp006-001776_GB_05-27	aTa idAnIm DyAnayogam samyagdarSanasya antaraNgam vistareRa vakzyAmi iti
+sp006-001777_GB_05-27	tasya sUtrasTAnIyAn SlokAn upadiSati sma
+sp006-001778_GB_05-27	sparSAn SabdAdIn kftvA bahiH bAhyAn
+sp006-001779_GB_05-27	SrotrAdidvAreRa antarbudDO praveSitAH SabdAdayo vizayAH
+sp006-001780_GB_05-27	tAn acintayato bAhyA bahiH eva kftA Bavanti
+sp006-001781_GB_05-27	tAn evam bahiH kftvA cakzuSca eva antare BruvoH kftvA iti anuzajyate
+sp006-001782_GB_05-27	taTA prARApAnO nAsAByantaracAriRO samO kftvA
+sp006-001783_GB_05-28	yatendriyamanobudDiH yatAni saMyatAni indriyARi mano budDiSca yasya sa yatendriyamanobudDiH mananAt muniH sannyAsI
+sp006-001784_GB_05-28	mokzaparAyaRa evam dehasaMsTAno mokzaparAyaRo mokza eva param ayanam parA gatiH yasya saH ayam mokzaparAyaRo muniH Bavet
+sp006-001785_GB_05-28	vigatecCABayakroDa icCA ca Bayam ca kroDaSca icCABayakroDAH te vigatA yasmAn sa vigatecCABayakroDaH
+sp006-001786_GB_05-28	ya evam vartate sadA sannyAsI mukta eva sa na tasya mokzaH anyaH kartavyaH asti
+sp006-001787_GB_05-29	BoktAram yajYAnAm tapasAm ca kartfrUpeRa devatArUpeRa ca
+sp006-001788_GB_05-29	sarvalokamaheSvaram sarvezAm lokAnAm mahAntam ISvaram sarvalokamaheSvaram
+sp006-001789_GB_05-29	suhfdam sarvaBUtAnAm sarvaprARinAm pratyupakAranirapekzatayA upakAriRam sarvaBUtAnAm hfdayeSayam
+sp006-001790_GB_05-29	sarvakarmaPalADyakzam sarvapratyayasAkziRam mAm nArAyaRam jYAtvA SAntim sarvasaMsAroparatim fcCati prApnoti
+sp006-001791_GB_05-29	iti SrImahABArate SatasAhasryAm saMhitAyAm vEyAsikyAm BIzmaparvaRi
+sp006-001792_GB_05-29	SrImadBagavadgItAsu upanizatsu brahmavidyAyAm yogaSAstre SrIkfzRArjunasaMvAde karmasannyAsayogo nAma paYcamoऽDyAyaH
+sp006-001793_GB_05-29	iti SrImatparamahaMsaparivrAjakAcArya govindaBagavatpUjyapAdaSizya SrImacCaNkaraBagavataH kftO SrImadBagavadgItABAzye prakftigarBonAma paYcamoऽDyAyaH
+sp006-001794_GB_06-11	prAptayoga lakzaRam yatPalAdi ca iti ata AraByate
+sp006-001795_GB_06-11	tatra Asanam eva tAvat praTamam ucyate
+sp006-001796_GB_06-11	SucO SudDe vivikte svaBAvataH saMskArato vA deSe sTAne pratizWApya
+sp006-001797_GB_06-11	sTiram acalam Atmana Asanam na atyucCritam na atIva ucCritam na api atinIcam
+sp006-001798_GB_06-11	tacca cElAjinakuSottaram cElam ajinam kuSAH ca uttare yasmin Asane tadAsanam cElAjinakuSottaram
+sp006-001799_GB_06-11	pAWakramAt viparItaH atra kramaH cElAdInAm
+sp006-001800_GB_06-12	tatra tasmin Asane upaviSya yogam yuYjyAt
+sp006-001801_GB_06-12	kaTam sarvavizayeBya upasaMhftya ekAgram manaH kftvA yatacittendriyakriyaH
+sp006-001802_GB_06-12	cittam ca indriyARi ca cittendriyARi tezAm kriyAH saMyatA tasya sa yatacittendriyakriyaH
+sp006-001803_GB_06-12	sa kimarTam yogam yuYjyAt iti Aha
+sp006-001804_GB_06-12	AtmaviSudDaye antaHkaraRasya viSudDyarTam iti etat
+sp006-001805_GB_06-13	aDunA SarIraDAraRam kaTamiti ucyate
+sp006-001806_GB_06-13	samam kAyaSirogrIvam kAyaSca SiraSca grIvA ca kAyaSirogrIvam tat samam DArayan acalam ca
+sp006-001807_GB_06-13	samam DArayataH calanam samBavati
+sp006-001808_GB_06-13	ato viSinazwi acalam iti
+sp006-001809_GB_06-13	sTiraH sTiro BUtvA ityarTaH
+sp006-001810_GB_06-13	svam nAsikAgram samprekzya samyak prekzaRam darSanam kftvA iva iti
+sp006-001811_GB_06-13	ivaSabdo lupto drazwavyaH
+sp006-001812_GB_06-13	na hi svanAsikAgrasamprekzaRam iha viDitsitam
+sp006-001813_GB_06-13	kim tarhi cakzuzo dfzwisannipAtaH
+sp006-001814_GB_06-13	sa ca antaHkaraRasamADAnApekzo vivakzitaH
+sp006-001815_GB_06-13	svanAsikAgrasamprekzaRam eva cet vivakzitam
+sp006-001816_GB_06-13	manaH tatra eva samADIyate na Atmani
+sp006-001817_GB_06-13	Atmani hi manasaH samADAnam vakzyati
+sp006-001818_GB_06-13	tasmAt ivaSabdalopena akzRoH dfzwisannipAta eva samprekzya iti ucyate
+sp006-001819_GB_06-13	diSaSca anavalokayan diSAm ca avalokanam antarA akurvan iti etat
+sp006-001820_GB_06-14	praSAntAtmA prakarzeRa SAnta AtmA antaHkaraRam yasya soH ayam praSAntAtmA
+sp006-001821_GB_06-14	vigataBIH vigataBayo brahmacArivrate sTito brahmacAriRo vratam brahmacaryam
+sp006-001822_GB_06-14	guruSuSrUzABikzABuktyAdi tasmin sTitaH
+sp006-001823_GB_06-14	tadanuzWAtA BavedityarTaH
+sp006-001824_GB_06-14	kiYca manassaMyamya manaso vfttiH upasaMhftya iti etat
+sp006-001825_GB_06-14	maccitto mayi parameSvare cittam yasya saH ayam maccitto
+sp006-001826_GB_06-14	yuktaH samAhitaH san AsIta upaviSet
+sp006-001827_GB_06-14	matparaH aham paro yasya saH ayam matparaH
+sp006-001828_GB_06-14	Bavati kaScit rAgI strIcitto na tu striyameva paratvena gfhRAti
+sp006-001829_GB_06-14	kim tarhi rAjAnam mahAdevam vA
+sp006-001830_GB_06-14	ayam tu maccitto matparaSca
+sp006-001831_GB_06-15	yuYjan samADAnam kurvan evam yatoktena viDAnena sadA AtmAnam yogI niyatamAnaso
+sp006-001832_GB_06-15	niyatam saMyatam mAnasam mano yasya saH ayam niyatamAnasaH
+sp006-001833_GB_06-15	SAntim uparatim nirvARaparamAm nirvARam mokzaH tat paramA nizWA yasyAH SAnteH
+sp006-001834_GB_06-15	sA nirvARaparamA tAm nirvARaparamAm
+sp006-001835_GB_06-15	matsaMsTAm madaDInAm aDigacCati prApnoti
+sp006-001836_GB_06-16	na atyaSnata Atmasammitam annaparimARam atItya aSnataH
+sp006-001837_GB_06-16	atyaSnato na yogaH asti
+sp006-001838_GB_06-16	na ca ekAntam anaSnato yogaH asti
+sp006-001839_GB_06-16	SatapaTabrAhmaRe nava dve eka dve iti SruteH
+sp006-001840_GB_06-16	tasmAdyogI na AtmasammitAt annAt aDikam nyUnam vA aSnIyAt
+sp006-001841_GB_06-16	aTavA yogino yogaSAstre paripaWItAt annaparimARAt atimAtram aSnato yogo nAsti
+sp006-001842_GB_06-16	ityAdiparimARam
+sp006-001843_GB_06-17	yuktAhAravihArasya Ahriyate iti AhAraH annam viharaRam vihAraH pAdakramaH
+sp006-001844_GB_06-17	tO yuktO niyataparimARO yasya taTA
+sp006-001845_GB_06-17	yuktacezwasya yuktA niyatA cezwA yasya karmasu
+sp006-001846_GB_06-17	taTA yuktasvapnAvaboDasya yuktO svapnaSca avaboDaSca tO niyatakAlO yasya
+sp006-001847_GB_06-17	tasya yuktAhAravihArasya yuktacezwasya karmasu yuktasvapnAvaboDasya yogino yogo Bavati duHKahA
+sp006-001848_GB_06-17	duHKAni sarvARi hanti iti duHKahA
+sp006-001849_GB_06-17	sarvasaMsAraduHKakzayakft yogo Bavati ityarTaH
+sp006-001850_GB_06-18	yadA viniyatam cittam viSezeRa niyatam saMyatam ekAgratAm Apannam cittam hitvA brahmacintAm Atmani eva kevale avatizWate
+sp006-001851_GB_06-18	svAtmani sTitim laBate ityarTaH
+sp006-001852_GB_06-18	niHspfhaH sarvakAmeByo nirgatA dfzwAdfzwavizayeByaH
+sp006-001853_GB_06-18	spfhA tfzRA yasya yoginaH sa yuktaH samAhita iti ucyate tadA tasminkAle
+sp006-001854_GB_06-19	yaTA dIpaH pradIpo nivAtasTo nivAte vAtavarjite deSe sTito na iNgate na calati
+sp006-001855_GB_06-19	sA upamA upamIyate anayA iti upamA yogajYEH cittapracAradarSiBiH smftA cintitA
+sp006-001856_GB_06-19	saMyatAntaHkaraRasya yuYjato yogam anutizWata AtmanaH samADim anutizWata ityarTaH
+sp006-001857_GB_06-20	yatra yasmin kAle uparamate cittam uparatim gacCati nirudDam sarvato nivAritapracAram yogasevayA yogAnuzWAnena
+sp006-001858_GB_06-20	yatra ca eva yasmin ca kAle AtmanA samADipariSudDena antaHkaraRena AtmA
+sp006-001859_GB_06-20	param cEtanya jyotiHsvarUpam paSyan upalaBamAnaH sve eva Atmani tuzyati tuzwim Bajate
+sp006-001860_GB_06-21	suKam Atyantikam atyantam eva BavatIti Atyantikam anantam ityarTaH
+sp006-001861_GB_06-21	yattat budDigrAhyam budDyA eva indriyanirapekzayA gfhyate iti budDigrAhyam
+sp006-001862_GB_06-21	atIndriyam indriyagocarAtItam avizayajanitam ityarTaH
+sp006-001863_GB_06-21	vetti tat IdfSam suKam anuBavati yatra yasmin kAle
+sp006-001864_GB_06-21	na ca eva ayam vidvAn AtmasvarUpe sTitaH
+sp006-001865_GB_06-21	tasmAt na eva calati tattvataH tattvasvarUpAt na pracyavate ityarTaH
+sp006-001866_GB_06-22	yam labDvA yam AtmalABam labDvA prApya ca aparam anyallABAntaram
+sp006-001867_GB_06-22	tataH aDikam asti iti na manyate cintayati
+sp006-001868_GB_06-22	kiYca yasmin Atmatattve sTito duHKena SastranipAtAdilakzaRena
+sp006-001869_GB_06-22	guruRA mahatA api na vicAlyate
+sp006-001870_GB_06-23	tam vidyAt vijAnIyAt duHKasaMyogaviyogam duHKEH saMyogo duHKasaMyogaH
+sp006-001871_GB_06-23	tena viyogo duHKasaMyogaviyogaH
+sp006-001872_GB_06-23	tam duHKasaMyogaviyogam yoga iti eva saYjYitam viparItalakzaRena vidyAt vijAnIyAt ityarTaH
+sp006-001873_GB_06-23	yogaPalam upasaMhftya punaH anvAramBeRa yogasya kartavyatA ucyate
+sp006-001874_GB_06-23	niScayAnirvedayoH yogasADanatvaviDAnArTam
+sp006-001875_GB_06-23	sa yaToktaPalo yogo niScayena aDyavasAyena yoktavyaH anirviRRacetasA
+sp006-001876_GB_06-23	na nirviRRam anirviRRam
+sp006-001877_GB_06-23	kim tat cetaH tena nirvedarahitena cetasA cittena ityarTaH
+sp006-001878_GB_06-24	saNkalpapraBavAn saNkalpaH praBavo yezAm kAmAnAm te saNkalpapraBavAH kAmAH
+sp006-001879_GB_06-24	tAn tyaktvA parityajya sarvAn aSezato nirlepena
+sp006-001880_GB_06-24	kiYca manasA eva vivekayuktena indriyagrAmam indriyasamudAyam viniyamya niyamanam kftvA samantataH samantAt
+sp006-001881_GB_06-25	SanEH SanEH na sahasA uparamet uparatim kuryAt
+sp006-001882_GB_06-25	kayA budDyA kiMviSizwayA
+sp006-001883_GB_06-25	DftigfhItayA DftyA DEryeRa gfhItayA DftigfhItayA DEryeRa yuktyA ityarTaH
+sp006-001884_GB_06-25	AtmasaMsTam Atmani saMsTitam AtmA eva sarvam na tataH anyat kiYcidasti
+sp006-001885_GB_06-25	iti evam AtmasaMsTam manaH kftvA na kiYcidapi cintayet
+sp006-001886_GB_06-25	eza yogasya paramo viDiH
+sp006-001887_GB_06-26	yato yato yasmAt yasmAt nimittAt SabdAdeH
+sp006-001888_GB_06-26	niScarati nirgacCati svaBAvadozAt manaH caYcalam
+sp006-001889_GB_06-26	atyarTam calam ata eva asTiram tataH tataH tasmAttasmAt SabdAdeH nimittAt
+sp006-001890_GB_06-26	niyamya tat tat nimittam yATAtmyanirUpaRena ABAsIkftya
+sp006-001891_GB_06-26	vErAgyaBAvanayA ca etat mana Atmani eva vaSam nayet AtmavaSyatAm ApAdayet
+sp006-001892_GB_06-26	evam yogAByAsabalAt yogina Atmani eva praSAmyati manaH
+sp006-001893_GB_06-27	praSAntamanasam praSAntam mano yasya sa praSAntamanAH
+sp006-001894_GB_06-27	tam praSAntamanasam hi enam yoginam suKam uttamam niratiSayam
+sp006-001895_GB_06-27	upEti upagacCati SAntarajasam prakzIRamohAdikleSarajasam ityarTaH
+sp006-001896_GB_06-27	brahmaBUtam jIvanmuktam brahma eva sarvam iti evam niScayavantam brahmaBUtam
+sp006-001897_GB_06-27	akalmazam aDarmAdivarjitam
+sp006-001898_GB_06-28	yuYjan evam yaToktena krameRa yogI yogAntarAyavarjitaH sadA AtmAnam vigatakalmazo vigatapApaH
+sp006-001899_GB_06-28	suKena anAyAsena brahmasaMsparSam brahmaRA pareRa saMsparSo yasya tat brahmasaMsparSam
+sp006-001900_GB_06-28	suKam atyantam antam atItya vartate iti atyantam
+sp006-001901_GB_06-28	utkfzwam niratiSayam aSnute vyApnoti
+sp006-001902_GB_06-29	sarvaBUtasTam sarvezu BUtezu sTitam svam AtmAnam sarvaBUtAni ca Atmani
+sp006-001903_GB_06-29	brahmAdIni stambaparyantAni ca sarvaBUtAni Atmani ekatAm gatAni
+sp006-001904_GB_06-29	Ikzate paSyati yogayuktAtmA samAhitAntaHkaraRaH
+sp006-001905_GB_06-29	sarvatra samadarSanaH sarvezu brahmAdisTAvarAntezu vizamezu sarvaBUtezu samam nirviSezam brahmAtmEkatvavizayam darSanam jYAnam yasya sa sarvatra samadarSanaH
+sp006-001906_GB_06-30	yo mAm paSyati vAsudevam sarvasya AtmAnam sarvatra sarvezu BUtezu sarvam ca brahmAdiBUtajAtam mayi sarvAtmani paSyati
+sp006-001907_GB_06-30	tasya evam AtmEkatvadarSinaH aham ISvaro na praRaSyAmi na parokzatAm gamizyAmi
+sp006-001908_GB_06-30	sa ca me na praRaSyati sa ca vidvAn mama vAsudevasya na praRaSyati na parokzI Bavati
+sp006-001909_GB_06-30	tasya ca mama ca ekAtmakatvAt
+sp006-001910_GB_06-30	svAtmA hi nAma AtmanaH priya eva Bavati yasmAcca ahameva sarvAtmEkatvadarSI
+sp006-001911_GB_06-31	iti etat pUrvaSlokArTam samyagdarSanam anUdya tatPalam mokzaH aBiDIyate
+sp006-001912_GB_06-31	sarvaTA sarvaprakArEH vartamAnaH api samyagdarSI yogI mayi vEzRave parame pade vartate
+sp006-001913_GB_06-31	nityamukta eva sa na mokzam prati kenacit pratibaDyate ityarTaH
+sp006-001914_GB_06-32	Atma upamyena AtmA svayameva upamIyate anayA iti upamA tasyA upamAyA BAva Opamyam tena AtmOpamyena
+sp006-001915_GB_06-32	sarvatra sarvaBUtezu samam tulyam paSyati yaH arjuna
+sp006-001916_GB_06-32	sa ca kim samam paSyati iti ucyate
+sp006-001917_GB_06-32	yaTA mama suKam izwam taTA sarvaprARinAm suKam anukUlam
+sp006-001918_GB_06-32	vASabdaH cArTe
+sp006-001919_GB_06-32	yadi vA yacca duHKam mama pratikUlam anizwam yaTA taTA sarvaprARinAm duHKam anizwam pratikUlam
+sp006-001920_GB_06-32	iti evam AtmOpamyena suKaduHKe anukUlapratikUle tulyatayA sarvaBUtezu samam paSyati
+sp006-001921_GB_06-32	na kasyacit pratikUlam Acarati ahiMsaka ityarTaH
+sp006-001922_GB_06-32	ya evam ahiMsakaH samyagdarSananizWaH sa yogI parama utkfzwo mataH aBipretaH sarvayoginAm maDye
+sp006-001923_GB_06-33	yaH ayam yogaH tvayA proktaH sAmyena samatvena he maDusUdana etasya yogasya aham na paSyAmi na upalaBe
+sp006-001924_GB_06-33	caYcalatvAt manasaH kim
+sp006-001925_GB_06-33	sTirAm acalAm sTitim prasidDam etat
+sp006-001926_GB_06-34	caYcalam hi manaH kfzRa iti kfzateH vileKanArTasya rUpam
+sp006-001927_GB_06-34	BaktajanapApAdidozAkarzaRAt kfzRaH
+sp006-001928_GB_06-34	na kevalam atyarTam caYcalam pramATi ca pramaTanaSIlam pramaTnAti SarIram indriyARi ca vikzipati paravaSIkaroti
+sp006-001929_GB_06-34	kiYca balavat na kenacit niyantum Sakyam
+sp006-001930_GB_06-34	kiYca dfQam tantunAgavat acCedyam
+sp006-001931_GB_06-34	tasya evamBUtasya manasaH aham nigraham niroDam manye vAyoH iva
+sp006-001932_GB_06-34	yaTA vAyoH duzkaro nigrahaH tataH api manaso duzkaram manye iti aBiprAyaH
+sp006-001933_GB_06-35	SrIBagavAnuvAca
+sp006-001934_GB_06-35	asaMSayam nAsti saMSayo mano durnigraham calam ityatra he mahAbAho
+sp006-001935_GB_06-35	kintu aByAsena tu aByAso nAma cittaBUmO kasyAYcit samAnapratyayAvfttiH cittasya
+sp006-001936_GB_06-35	vErAgyam nAma dfzwAdfzwezwaBogezu dozadarSanAByAsAt vEtfzRyam
+sp006-001937_GB_06-35	tena ca vErAgyeRa gfhyate vikzeparUpaH pracAraH cittasya
+sp006-001938_GB_06-35	evam tat mano gfhyate nigfhyate niruDyate ityarTaH
+sp006-001939_GB_06-36	asaMyatAtmanA aByAsavErAgyAByAm asaMyata AtmA antaHkaraRam yasya saH ayam asaMyatAtmA
+sp006-001940_GB_06-36	tena asaMyatAtmanA yogo duzprApo duHKena prApyate iti me matiH
+sp006-001941_GB_06-36	yastu punaH vaSyAtmA aByAsavErAgyAByAm vaSyatvam ApAdita AtmA mano yasya saH ayam vaSyAtmA
+sp006-001942_GB_06-36	tena vaSyAtmanA tu yatatA BUyaH api prayatnam kurvatA SakyaH avAptum yoga upAyato yaToktAt upAyAt
+sp006-001943_GB_06-37	yogasidDiPalam ca mokzasADanam samyagdarSanam na prAptam
+sp006-001944_GB_06-37	iti yogI yogamArgAt maraRakAle calitacitta iti tasya nASamaSaNkya
+sp006-001945_GB_06-37	arjuna uvAca
+sp006-001946_GB_06-37	ayatiH aprayatnavAn yogamArge SradDayA AstikyabudDyA ca upeto yogAt antakAle api calitam mAnasam mano yasya sa calitamAnaso
+sp006-001947_GB_06-37	BrazwasmftiH saH aprApya yogasaMsidDim yogaPalam samyagdarSanam kAm gatim he kfzRa gacCati
+sp006-001948_GB_06-38	kaccit kim na uBayaviBrazwaH karmamArgAt yogamArgAcca viBrazwaH san CinnABramiva naSyati
+sp006-001949_GB_06-38	kim vA na naSyati apratizWo nirASrayo he mahAbAho vimUQaH san brahmaRaH paTi brahmaprAptimArge
+sp006-001950_GB_06-39	etat me mama saMSayam kfzRa cCettum apanetum arhasi aSezataH
+sp006-001951_GB_06-39	tvadanyaH tvattaH anya fziH devo vA cCettA nASayitA
+sp006-001952_GB_06-39	saMSayasya asya na hi yaH syAt upapadyate samBavati
+sp006-001953_GB_06-39	ataH tvameva cCettum arhasi ityarTaH
+sp006-001954_GB_06-40	he pArTa na eva iha loke na amutra parasmin vA loke vinASaH tasya vidyate
+sp006-001955_GB_06-40	nAsti nASo nAma pUrvasmAt hInajanmaprAptiH sa yogaBrazwasya na asti
+sp006-001956_GB_06-40	na hi yasmAt kalyARakft SuBakft kaScit durgatim kutsitAm gatim he tAta
+sp006-001957_GB_06-40	tanoti AtmAnam putrarUpeRa iti pitA tAta ucyate
+sp006-001958_GB_06-40	pitA eva putra iti putraH api tAta ucyate
+sp006-001959_GB_06-40	SizyaH api putra ucyate
+sp006-001960_GB_06-41	yogamArge pravfttaH sannyAsI sAmarTyAt prApya gatvA puRyakftAm aSvameDAdiyAjinAm lokAn
+sp006-001961_GB_06-41	tatra ca uzitvA vAsam anuBUya SASvatIH nityAH samAH saMvatsarAn
+sp006-001962_GB_06-41	tadBogakzaye SucInAm yaToktakAriRAm SrImatAm viBUtimatAm gehe gfhe yogaBrazwaH aBijAyate
+sp006-001963_GB_06-42	aTavA SrImatAm kulAt anyasmin yoginAmeva daridrARAm kule Bavati jAyate DImatAm budDimatAm
+sp006-001964_GB_06-42	etat hi janma yat daridrARAm yoginAm kule
+sp006-001965_GB_06-42	durlaBataram duHKalaByataram pUrvamapekzya loke janma yat IdfSam yaToktaviSezaRe kule
+sp006-001966_GB_06-43	tatra yoginAm kule tam budDisaMyogam budDyA saMyogam budDisaMyogam
+sp006-001967_GB_06-43	laBate pOrvadehikam pUrvasmin dehe Bavam pOrvadehikam
+sp006-001968_GB_06-43	yatate ca prayatnam karoti tataH tasmAt pUrvakftAt saMskArAt
+sp006-001969_GB_06-43	BUyo bahutaram saMsidDO saMsidDinimittam he kurunandana
+sp006-001970_GB_06-44	yaH pUrvajanmani kftaH aByAsaH sa pUrvAByAsaH
+sp006-001971_GB_06-44	tena eva balavatA hriyate hi yasmAt avaSaH api sa yogaBrazwaH
+sp006-001972_GB_06-44	na kftam cet yogAByAsa saMskArAt balavattaram aDarmAdilakzaRam karma
+sp006-001973_GB_06-44	tadA yogAByAsajanitena saMskAreRa hriyate
+sp006-001974_GB_06-44	aDarmaScet balavattaraH kftaH
+sp006-001975_GB_06-44	tena yogajaH api saMskAraH aBiBUyate eva
+sp006-001976_GB_06-44	tatkzaye tu yogajaH saMskAraH svayameva kAryam AraBate
+sp006-001977_GB_06-44	na dIrGakAlasTasyApi vinASaH tasya asti ityarTaH
+sp006-001978_GB_06-44	jijYAsuH api yogasya svarUpam jYAtumicCan yogamArge pravfttaH sannyAsI yogaBrazwaH
+sp006-001979_GB_06-44	sAmarTyAt saH api Sabdabrahma vedoktakarmAnuzWAnaPalam ativartate apAkarizyati
+sp006-001980_GB_06-44	kimuta budDvA yo yogam tannizWaH aByAsam kuryAt
+sp006-001981_GB_06-45	tatra yogI vidvAn saMSudDakilbizo viSudDakilbizaH saMSudDapApaH
+sp006-001982_GB_06-45	anekezu janmasu kiYcitkiYcit saMskArajAtam upacitya tena upacitena anekajanmakftena saMsidDaH
+sp006-001983_GB_06-45	anekajanmasaMsidDaH tato labDasamyagdarSanaH san yAti parAm prakfzwAm gatim
+sp006-001984_GB_06-46	tapasviByaH aDiko yogI jYAniByaH api jYAnam atra SAstrapARqityam
+sp006-001985_GB_06-46	tadvadByaH api mato jYAtaH aDikaH SrezWa iti
+sp006-001986_GB_06-46	karmiByaH agnihotrAdi karma tadvadByaH aDiko yogI viSizwo yasmAt tasmAt yogI Bava arjuna
+sp006-001987_GB_06-47	yoginAmapi sarvezAm rudrAdityAdiDyAnaparARAm maDye madgatena mayi vAsudeve samAhitena
+sp006-001988_GB_06-47	antarAtmanA antaHkaraRena SradDAvAn SraddaDAnaH san Bajate sevate yo mAm
+sp006-001989_GB_06-47	sa me mama yuktatamaH atiSayena yukto mataH aBipreta iti
+sp006-001990_GB_07-01	iti praSnabIjam upanyasya svayameva IdfSam madIyam tattvam
+sp006-001991_GB_07-01	evam madgatAntarAtmA syAditi etadvivakzuH
+sp006-001992_GB_07-01	SrIBagavAnuvAca
+sp006-001993_GB_07-01	mayi vakzyamARaviSezaRe parameSvare Asaktam mano yasya sa mayyAsaktamanA
+sp006-001994_GB_07-01	he pArTa yogam yuYjan manaHsamADAnam kurvan
+sp006-001995_GB_07-01	madASrayaH ahameva parameSvara ASrayo yasya sa madASrayaH
+sp006-001996_GB_07-01	yo hi kaScit puruzArTena kenacidarTI Bavati sa tatsADanam karma agnihotrAdi tapo dAnam vA kiYcit ASrayam pratipadyate
+sp006-001997_GB_07-01	ayam tu yogI mAmeva ASrayam pratipadyate hitvA anyat sADanAntaram mayi eva AsaktamanA Bavati
+sp006-001998_GB_07-01	yastvam evamBUtaH san
+sp006-001999_GB_07-01	samastam viBUtibalaSaktyESvaryAdiguRasampannam mAm yaTA yena prakAreRa
+sp006-002000_GB_07-01	jYAsyasi saMSayamantareRa evameva BagavAn iti tat SfRu ucyamAnam mayA
+sp006-002001_GB_07-02	jYAnam te tuByam aham savijYAnam vijYAnasahitam svAnuBavasaMyuktam idam vakzyAmi kaTayizyAmi aSezataH kAr tsnyena
+sp006-002002_GB_07-02	tadjYAnam vivakzitam stOti SrotuH aBimuKIkaraRAya
+sp006-002003_GB_07-02	yadjYAtvA yadjYAnam jYAtvA
+sp006-002004_GB_07-02	punaH jYAtavya puruzArTasADanam avaSizyate
+sp006-002005_GB_07-02	na avaSezo Bavati iti
+sp006-002006_GB_07-02	mattattvajYo yaH saH sarvajYo Bavati ityarTaH
+sp006-002007_GB_07-02	ato viSizwaPalatvAt durlaBam jYAnam
+sp006-002008_GB_07-03	manuzyARAm maDye sahasrezu anekezu kaScit yatati prayatnam karoti sidDaye sidDyarTam
+sp006-002009_GB_07-03	tezAm yatatAmapi sidDAnAm sidDA eva hi te ye mokzAya yatante tezAm kaScideva mAm vetti tattvato yaTAvat
+sp006-002010_GB_07-04	BUmiH iti pfTivItanmAtramucyate na sTUlA BinnA prakftirazwaDA iti vacanAt
+sp006-002011_GB_07-04	taTA abAdayaH api tanmAtrARi eva ucyante
+sp006-002012_GB_07-04	ApaH analo vAyuH Kam
+sp006-002013_GB_07-04	mana iti manasaH kAraRam ahaNkAro gfhyate
+sp006-002014_GB_07-04	budDiH iti ahaNkArakAraRam mahattattvam
+sp006-002015_GB_07-04	ahaNkAra iti avidyAsaMyuktam avyaktam
+sp006-002016_GB_07-04	yaTA vizasaMyuktam annam vizam ucyate
+sp006-002017_GB_07-04	evam ahaNkAravAsanAvat avyaktam mUlakAraRam ahaNkAra iti ucyate
+sp006-002018_GB_07-04	pravartakatvAt ahaNkArasya
+sp006-002019_GB_07-04	ahaNkAra eva hi sarvasya pravfttibIjam dfzwam loke
+sp006-002020_GB_07-04	itIyam yaToktA prakftiH me mama ISvarI mAyASaktiH azwaDA BinnA Bedam AgatA
+sp006-002021_GB_07-05	aparA na parA nikfzwA aSudDA anarTakarI saMsArabanDanAtmikA iyam
+sp006-002022_GB_07-05	itaH asyA yaToktAyAH tu anyAm viSudDAm prakftim mama AtmaBUtAm vidDi
+sp006-002023_GB_07-05	me parAm prakfzwAm jIvaBUtAm kzetrajYalakzaRAm prARaDAraRanimittaBUtAm he mahAbAho
+sp006-002024_GB_07-05	yayA prakftyA idam DAryate jagat antaH pravizwayA
+sp006-002025_GB_07-06	etadyonIni ete parApare kzetrakzetrajYalakzaRe prakftI yoniH yezAm BUtAnAm tAni etadyonIni
+sp006-002026_GB_07-06	BUtAni sarvARi iti evam upaDAraya jAnIhi
+sp006-002027_GB_07-06	yasmAt mama prakftI yoniH kAraRam sarvaBUtAnAm
+sp006-002028_GB_07-06	ataH aham kftsnasya samastasya jagataH praBava utpattiH pralayo vinASaH taTA
+sp006-002029_GB_07-06	prakftidvayadvAreRa aham sarvajYa ISvaro jagataH kAraRam ityarTaH
+sp006-002030_GB_07-07	mattaH parameSvarAt parataramanyat kAraRAntaram kiYcit na asti na vidyate
+sp006-002031_GB_07-07	ahameva jagatkAraRam ityarTaH
+sp006-002032_GB_07-07	he DanaYjaya yasmAt evam tasmAt mayi parameSvare sarvARi BUtAni
+sp006-002033_GB_07-07	sarvam idam jagat protam anusyUtam anugatam anuvidDi graTitam ityarTaH
+sp006-002034_GB_07-07	dIrGatantuzu pawavat sUtre ca maRigaRA iva
+sp006-002035_GB_07-08	rasaH aham apAm yaH sAraH sa rasaH tasmin rasaBUte mayi ApaH protA ityarTaH
+sp006-002036_GB_07-08	evam sarvatra
+sp006-002037_GB_07-08	yaTA aham apsu rasa evam praBA asmi SaSisUryayoH
+sp006-002038_GB_07-08	praRava oNkAraH sarvavedezu tasmin praRavaBUte mayi sarve vedAH protAH
+sp006-002039_GB_07-08	taTA Ke AkASe SabdaH sAraBUtaH tasmin mayi Kam protam
+sp006-002040_GB_07-08	taTA pOruzam puruzasya BAvo yataH pumbudDiH nfzu tasmin mayi puruzAH protAH
+sp006-002041_GB_07-09	puRyaH suraBiH ganDaH pfTivyAm ca aham tasmin mayi ganDaBUte pfTivI protA
+sp006-002042_GB_07-09	puRyatvam ganDasya svaBAvata eva pfTivyAm darSitam abAdizu rasAdeH puRyatvopalakzaRArTam
+sp006-002043_GB_07-09	apuRyatvam tu ganDAdInAm avidyADarmAdyapekzam saMsAriRAm BUtaviSezasaMsarganimittam Bavati
+sp006-002044_GB_07-09	tejo dIptiH ca asmi viBAvasO agnO
+sp006-002045_GB_07-09	taTA jIvanam sarvaBUtezu yena jIvanti sarvARi BUtAni tajjIvanam
+sp006-002046_GB_07-09	tapaSca asmi tapasvizu tasmin tapasi mayi tapasvinaH protAH
+sp006-002047_GB_07-10	bIjam prarohakAraRam mAm vidDi sarvaBUtAnAm he pArTa sanAtanam cirantanam
+sp006-002048_GB_07-10	kiYca budDiH vivekaSaktiH antaHkaraRasya budDimatAm vivekaSaktimatAm asmi
+sp006-002049_GB_07-10	tejaH prAgalByam tadvatAm tejasvinAm aham
+sp006-002050_GB_07-11	balam sAmarTyam ojo balavatAmaham tadbalam ca kAmarAgavivarjitam kAmaSca rAgaSca kAmarAgO
+sp006-002051_GB_07-11	kAmaH tfzRA asannikfzwezu vizayezu rAgo raYjanA prAptezu vizayezu
+sp006-002052_GB_07-11	tAByAm vivarjitam dehAdiDAraRamAtrArTam balam ahamasmi
+sp006-002053_GB_07-11	na tu yat saMsAriRAm tfzRArAgakAraRam
+sp006-002054_GB_07-11	kiYca DarmAvirudDo DarmeRa SAstrArTena avirudDo yaH prARizu BUtezu kAmo
+sp006-002055_GB_07-11	yaTA dehaDAraRamAtrAdyarTaH aSanapAnAdivizayaH kAmaH asmi he BaratarzaBa
+sp006-002056_GB_07-12	ye ca eva sAttvikAH sattvanirvftA BAvAH padArTA rAjasA rajonirvftAH tAmasAH tamonirvftAH ca
+sp006-002057_GB_07-12	ye kecit prARinAm svakarmavaSAt jAyante BAvAH
+sp006-002058_GB_07-12	tAn matta eva jAyamAnAn iti evam vidDi sarvAn samastAn eva
+sp006-002059_GB_07-12	yadyapi te matto jAyante taTApi na tu aham tezu tadaDInaH tadvaSaH yaTA saMsAriRaH
+sp006-002060_GB_07-12	te punaH mayi madvaSA madaDInAH
+sp006-002061_GB_07-13	saMsAradozabIjapradAhakAraRam mAm na aBijAnAti jagat iti anukroSam darSayati BagavAn
+sp006-002062_GB_07-13	tacca kinnimittam jagataH ajYAnam iti ucyate
+sp006-002063_GB_07-13	triBiH guRamayEH guRavikArE rAgadvezamohAdiprakArEH BAvEH padArTEH eBiH yaToktEH sarvam idam prARijAtam jagat
+sp006-002064_GB_07-13	mohitam avivekitAmApAditam sat na aBijAnAti mAm
+sp006-002065_GB_07-13	eByo yaTokteByo guReByaH param vyatiriktam vilakzaRam ca
+sp006-002066_GB_07-13	avyayam vyayarahitam janmAdisarvaBAvavikAravarjitam ityarTaH
+sp006-002067_GB_07-14	dEvI devasya mama ISvarasya vizRoH svaBUtA hi yasmAt ezA yaToktA guRamayI mama mAyA duratyayA
+sp006-002068_GB_07-14	duHKena atyayaH atikramaRam yasyAH sA duratyayA
+sp006-002069_GB_07-14	tatra evam sati sarvaDarmAn parityajya mAm eva mAyAvinam svAtmaBUtam
+sp006-002070_GB_07-14	sarvAtmanA ye prapadyante te mAyAm etAm sarvaBUtamohinIm taranti atikrAmanti
+sp006-002071_GB_07-14	saMsArabanDanAt mucyante ityarTaH
+sp006-002072_GB_07-15	kasmAt tvAm eva sarve na prapadyante iti ucyate
+sp006-002073_GB_07-15	na mAm parameSvaram duzkftinaH pApakAriRo mUQAH prapadyante narADamA narARAm maDye aDamA nikfzwAH
+sp006-002074_GB_07-15	te ca mAyayA apahftajYAnAH sammuzitajYAnA Asuram BAvam hiMsAnftAdilakzaRam ASritAH
+sp006-002075_GB_07-16	caturviDAH catuzprakArA Bajante sevante mAm janAH sukftinaH puRyakarmARo he arjuna
+sp006-002076_GB_07-16	Arta ArtiparigfhItaH taskaravyAGrarogAdinA aBiBUta Apanno
+sp006-002077_GB_07-16	jijYAsuH Bagavattattvam jYAtum icCati yaH
+sp006-002078_GB_07-16	arTArTI DanakAmo jYAnI vizRoH tattvavicca he BaratarzaBa
+sp006-002079_GB_07-17	tezAm caturRAm maDye jYAnI tattvavit tatvavittvAt nityayukto Bavati ekaBaktiSca
+sp006-002080_GB_07-17	anyasya BajanIyasya adarSanAt
+sp006-002081_GB_07-17	ataH sa ekaBaktiH viSizyate viSezam ADikyam Apadyate atiricyate ityarTaH
+sp006-002082_GB_07-17	priyo hi yasmAt aham AtmA jYAninaH ataH tasya aham atyarTam priyaH
+sp006-002083_GB_07-17	prasidDam hi loke AtmA priyo Bavati iti
+sp006-002084_GB_07-17	tasmAt jYAninaH AtmatvAt vAsudevaH priyo Bavati ityarTaH
+sp006-002085_GB_07-17	sa ca jYAnI mama vAsudevasya AtmA eva iti mama atyarTam priyaH
+sp006-002086_GB_07-18	udArA utkfzwAH sarva eva ete trayaH api mama priyA eva ityarTaH
+sp006-002087_GB_07-18	na hi kaScit madBakto mama vAsudevasya apriyo Bavati
+sp006-002088_GB_07-18	jYAnI tu atyarTam priyo BavatIti viSezaH
+sp006-002089_GB_07-18	tat kasmAt iti Aha
+sp006-002090_GB_07-18	jYAnI tu AtmA eva na anyo matta iti me mama matam niScayaH
+sp006-002091_GB_07-18	AsTita AroQum pravfttaH
+sp006-002092_GB_07-18	sa jYAnI hi yasmAt aham eva BagavAn vAsudevo na anyaH asmi iti evam
+sp006-002093_GB_07-18	yuktAtmA samAhitacittaH san mAm eva param brahma gantavyam anuttamAm gatim gantum pravftta ityarTaH
+sp006-002094_GB_07-19	bahUnAm janmanAm jYAnArTasaMskArASrayARAm ante samAptO jYAnavAn
+sp006-002095_GB_07-19	prAptaparipAkajYAno mAm vAsudevam pratyagAtmAnam pratyakzataH prapadyate
+sp006-002096_GB_07-19	kaTam vAsudevaH sarvam iti
+sp006-002097_GB_07-19	ya evam sarvAtmAnam mAm pratipadyate sa mahAtmA
+sp006-002098_GB_07-19	na tatsamaH anyaH asti aDiko vA
+sp006-002099_GB_07-19	ataH sudurlaBaH
+sp006-002100_GB_07-19	sa manuzyARAm sahasrezu iti uktam
+sp006-002101_GB_07-20	kAmEH tEH tEH putrapaSusvargAdivizayEH hftajYAnA apahftavivekavijYAnAH prapadyante anyadevatAH
+sp006-002102_GB_07-20	prApnuvanti vAsudevAt AtmanaH anyA devatAH
+sp006-002103_GB_07-20	tam tam niyamam devatArADane prasidDo yo yo niyamaH tam tam AsTAya ASritya
+sp006-002104_GB_07-20	prakftyA svaBAvena janmAntarArjitasaMskAraviSezeRa niyatA niyamitAH svayA AtmIyayA
+sp006-002105_GB_07-21	yaH yaH kAmI yAm yAm devatAtanum SradDayA saMyukto BaktaH ca san arcitum pUjayitum icCati
+sp006-002106_GB_07-21	tasya tasya kAminaH acalAm sTirAm SradDAm tAm eva vidaDAmi sTirIkaromi
+sp006-002107_GB_07-22	sa tayA madvihitayA SradDayA yuktaH san tasyA devatAtanvA rADanam ArADanam Ihate cezwate
+sp006-002108_GB_07-22	laBate ca tataH tasyA ArADitAyA devatAtanvAH kAmAn IpsitAn
+sp006-002109_GB_07-22	mayA eva parameSvareRa sarvajYena karmaPalaviBAgajYatayA vihitAn nirmitAn tAn hi
+sp006-002110_GB_07-22	yasmAt te BagavatA vihitAH kAmAH tasmAt tAn avaSyam laBate ityarTaH
+sp006-002111_GB_07-22	hitAn iti padacCede hitatvam kAmAnAm upacaritam kalpyam
+sp006-002112_GB_07-22	na hi kAmA hitAH kasyacit
+sp006-002113_GB_07-23	antavat vinASi tu Palam tezAm tat Bavati alpameDasAm alpaprajYAnAm
+sp006-002114_GB_07-23	devAndevayajo yAnti devAn yajanta iti devayajaH
+sp006-002115_GB_07-23	te devAn yAnti madBaktA yAnti mAm api
+sp006-002116_GB_07-23	evam samAne api AyAse mAmeva na prapadyante anantaPalAya
+sp006-002117_GB_07-23	aho Kalu kazwam vartante iti anukroDam darSayati BagavAn
+sp006-002118_GB_07-24	avyaktam aprakASam vyaktim Apannam prakASam gatam idAnIm manyante mAm nityaprasidDam ISvaram api santam
+sp006-002119_GB_07-24	abudDayaH avivekinaH param BAvam paramAtmasvarUpam ajAnantaH avivekino mama
+sp006-002120_GB_07-24	avyayam vyayarahitam anuttamam niratiSayam madIyam BAvam ajAnanto manyante ityarTaH
+sp006-002121_GB_07-25	na aham prakASaH sarvasya lokasya kezAYcideva madBaktAnAm prakASaH ahamiti aBiprAyaH
+sp006-002122_GB_07-25	yogamAyAsamAvfto yogo guRAnAm yuktiH Gawanam sA eva mAyA yogamAyA
+sp006-002123_GB_07-25	tayA yogamAyayA samAvftaH saYCannaH ityarTaH
+sp006-002124_GB_07-25	ata eva mUQo lokaH ayam na aBijAnAti mAm ajam avyayam
+sp006-002125_GB_07-26	na asO yogamAyA madIyA satI mama ISvarasya mAyAvino jYAnam pratibaDnAti
+sp006-002126_GB_07-26	yaTA anyasyApi mAyAvino mAyAjYAnam tadvat
+sp006-002127_GB_07-26	yata evam ataH
+sp006-002128_GB_07-26	aham tu veda jAne samatItAni samatikrAntAni BUtAni
+sp006-002129_GB_07-26	vartamAnAni ca arjuna BavizyARi ca BUtAni veda aham
+sp006-002130_GB_07-26	mAm tu veda na kaScana madBaktam macCaraRam ekam muktvA
+sp006-002131_GB_07-26	mattattvavedanABAvAt eva na mAm Bajate
+sp006-002132_GB_07-27	icCAdvezasamutTena icCA ca dvezaSca icCAdvezO
+sp006-002133_GB_07-27	tAByAm samuttizWati iti icCAdvezasamutTaH tena icCAdvezasamutTena
+sp006-002134_GB_07-27	kena iti viSezApekzAyAm idamAha
+sp006-002135_GB_07-27	dvandvamohena dvandvanimitto moho dvandvamohaH
+sp006-002136_GB_07-27	tO eva icCAdvezO SItozRavat parasparavirudDO
+sp006-002137_GB_07-27	suKaduHKatadDetuvizayO yaTAkAlam sarvaBUtEH sambaDyamAnO dvandvaSabdena aBiDIyete
+sp006-002138_GB_07-27	tatra yadA icCAdvezO suKaduHKatadDetusamprAptyA labDAtmakO BavataH
+sp006-002139_GB_07-27	tadA tO sarvaBUtAnAm prajYAyAH svavaSApAdanadvAreRa paramArTAtmatattvavizayajYAnotpattibanDakAraRam moham janayataH
+sp006-002140_GB_07-27	na hi icCAdvezadozavaSIkftacittasya yaTABUtArTavizayajYAnam utpadyate bahiH api
+sp006-002141_GB_07-27	kimu vaktavyam tAByAm AvizwabudDeH sammUQasya pratyagAtmani bahupratibanDe jYAnam ca utpadyate iti
+sp006-002142_GB_07-27	ataH tena icCAdvezasamutTena dvandvamohena BArata BaratAnvayaja
+sp006-002143_GB_07-27	sarvaBUtAni sammohitAni santi
+sp006-002144_GB_07-27	sammoha sammUQatAm sarge janmani utpattikAle iti etat yAnti gacCanti he parantapa
+sp006-002145_GB_07-27	mohavaSAni eva sarvaBUtAni jAyamAnAni jAyante iti aBiprAyaH
+sp006-002146_GB_07-27	yata evam ataH tena dvandvamohena pratibadDaprajYAnAni sarvaBUtAni sammohitAni mAm AtmaBUtam na jAnanti
+sp006-002147_GB_07-27	ata eva AtmaBAvena mAm na Bajante
+sp006-002148_GB_07-28	yezAm tu punaH antagatam samAptaprAyam kzIRam pApam janAnAm puRyakarmaRAm puRyam karma
+sp006-002149_GB_07-28	yezAm sattvaSudDikAraRam vidyate te puRyakarmARaH tezAm puRyakarmaRAm
+sp006-002150_GB_07-28	te dvandvamohanirmuktA yaToktena dvandvamohena nirmuktA Bajante mAm paramAtmAnam dfQavratAH
+sp006-002151_GB_07-28	evameva paramArTatattvam nAnyaTA iti evam niScitavijYAnA dfQavratA ucyante
+sp006-002152_GB_07-29	jarAmaraRamokzAya jarAmaraRamokzArTam mAm parameSvaram ASritya matsamAhitacittAH santo yatanti prayatante
+sp006-002153_GB_07-29	ye te yat brahma param tadviduH kftsnam samastam aDyAtmam pratyagAtmavizayam vastu tadviduH
+sp006-002154_GB_07-29	karma ca aKilam samastam viduH
+sp006-002155_GB_07-30	sADiBUtADidEvam aDiBUtam ca aDidEvam ca aDiBUtADidEvam
+sp006-002156_GB_07-30	saha aDiBUtADidEvena sADiBUtADidEvam ca
+sp006-002157_GB_07-30	mAm ye viduH sADiyajYam ca saha aDiyajYena sADiyajYam ye viduH
+sp006-002158_GB_07-30	prayARakAle api ca maraRakAle api ca mAm te viduH yuktacetasaH samAhitacittA iti
+sp006-002159_GB_07-30	iti SrImahABArate SatasAhasryAm saMhitAyAm vEyAsikyAm BIzmaparvaRi
+sp006-002160_GB_07-30	SrImadBagavadgItAsu upanizatsu brahmavidyAyAm yogaSAstre SrIkfzRArjunasaMvAde jYAnavijYAnayogo nAma saptamoऽDyAyaH
+sp006-002161_GB_07-30	iti SrImatparamahaMsaparivrAjakAcArya govindaBagavatpUjyapAdaSizya SrImacCaNkaraBagavataH kftO SrImadBagavadgItABAzye jYAnavijYAnayogo nAma saptamoऽDyAyaH

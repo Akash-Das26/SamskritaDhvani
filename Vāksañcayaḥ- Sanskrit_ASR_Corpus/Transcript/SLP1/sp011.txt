@@ -1,0 +1,596 @@
+sp011-000001_001	OraNgajebaH ali AdilaSahasya patram prAptavAn
+sp011-000002_001	kAPIrarAjyam nirmAtum SivarAjaH prayatamAnaH asti
+sp011-000003_001	etena islAm matasya apAyaH Bavitum arhati
+sp011-000004_001	ataH asmAkam sAhAyyArTam mahat sEnyam prezaRIyam iti
+sp011-000005_001	pUrvam SivarAjaH OraNgajebam api mAyAjAle pAtitavAn AsIt Kalu
+sp011-000006_001	tat apamAnanaSalyam OraNgajebam sarvadA GAtayati sma
+sp011-000007_001	tasyAH vedanAyAH parimArjanArTam tena suyogyaH avasaraH prAptaH AsIt
+sp011-000008_001	OraNgajebasya mAtulaH SayisteKAnaH dehalIsAmrAjyasya dakziRaBAgasya mahApratiniDiH AsIt
+sp011-000009_001	saH OraNgAbAdanagare AsIt
+sp011-000010_001	SivarAjasya upari AkramaRam karaRIyam iti tena dehalItaH AjYA prAptA
+sp011-000011_001	SayisteKAnaH nizRAtaH senAnI rAjanItinipuRaH ca AsIt
+sp011-000012_001	saH svasya sEnyam sajjIkftya yudDArTam prasTitavAn
+sp011-000013_001	tasya sEnyabalam kim iti kim BavantaH jAnanti
+sp011-000014_001	triMSatsahastram sAmAnyAH sEnikAH trisaptatisahasram aSvArohiRaH itarasAhAyyakasAmagrI ca
+sp011-000015_001	BArate videSe ca parAkrameRa praKyAtAH paWARa mogalahabaSI arabbI rajapUta bundela marAWAdivIrAH tasya sEnye Asan
+sp011-000016_001	SivarAjasya kecana bAnDavAH api tasya sEnye Asan
+sp011-000017_001	mahArAjasya anujaH vimAtuH putraH veNkojirAjeBosale eva AsIt
+sp011-000018_001	etEH saha kAcit mahArAzwrIyA brAhmaRastrI api AsIt
+sp011-000019_001	aSvArohiRI sA SAyisteKAnena saha yudDArTam prasTitavatI AsIt
+sp011-000020_001	tasyAH patiH mogalasEnye yudDam kurvan prARArpaRam kftavAn AsIt
+sp011-000021_001	putraH api OraNgajebanimittam prARArpaRam kftavAn AsIt
+sp011-000022_001	tadAraBya sA OraNgajebasya sAhAyyArTam kawibadDA AsIt
+sp011-000023_001	samarANgaRe sA sAkzAt vyAGrI eva
+sp011-000024_001	tasyAH nisspfhasevAm parilakzya OraNgajebaH tAm paRqitA rAyabAgan iti birudANkitAm kftavAn AsIt
+sp011-000025_001	tasyAH vAstavIkam nAma sAvitrIbAyI iti
+sp011-000026_001	tasyAH jIjAbAyyAH ca mAtfgfham varhAqaprAnte samAne eva upamaRqale AsIt
+sp011-000027_001	kintu tayoH BedaH tu svarganarakayoH iva
+sp011-000028_001	ekA svasya putram svam ca svarAjyAya svaDarmasya jYApanAya ca arpita vatI AsIt
+sp011-000029_001	aparA pararAjyaparaDarmayoH sevAyE svam putram ca arpitavatI AsIt
+sp011-000030_001	asmAkam deSasya itihAse A dvAdaSaSatAt varzeByaH dfSyamAnayoH dvayoH manaHpravftyoH pratIke ete mahile
+sp011-000031_001	SayisteKAnasya senA nAma mahAsAgaraH eva
+sp011-000032_001	hastamitAyAH svarAjyasya BUmyAH nimajjanArTam saH senAsAgaraH udgacCan AsIt
+sp011-000033_001	ekatra siddijOharasya senA aparatra SayisteKAnasya senA dvayoH yojanena sArDEkalakzamitam sEnyam tat
+sp011-000034_001	samagram sEnyabalam yojitam cet api SivamahArAjasya samIpe paYcadaSa sahasram sEnikAH na BaveyuH eva
+sp011-000035_001	tannAma daSamaH aMSaH api nAsti SivarAjasya
+sp011-000036_001	SatroH sAmarTyasya kalpanA mahArAjasya kim na AsIt
+sp011-000037_001	atyantam jAgarUkaH saH pratipadam gUQacarAn yojitavAn AsIt
+sp011-000038_001	vastusTiteH samyak parijYAnam AsIt eva tasya
+sp011-000039_001	kintu saH tilamAtramapi vicalitaH nAsIt
+sp011-000040_001	sahyAdreH suputrasya tasya hfdaye kampanam kutaH
+sp011-000041_002	eka zawzawSUnyatamavarzasya yugAdiparvaRaH paredyavi SayisteKAnaH svarAjyasImAm pravizwavAn
+sp011-000042_002	tadAraBya grAmAn nagarARi ca gacCan janapIqanam ArabDavAn
+sp011-000043_002	maWAnAm mandirARAm ca DvaMsanam hananam strIpuruzARAm mAraRa homAH mataparivartanam hiMsAcArAH ca nagnatARqavam kurvanti sma
+sp011-000044_002	durgARi ekEkaSaH vaSIkurvan saH ajagaravat agre saran AsIt
+sp011-000045_002	tasya nigrahaRam api Sakyam nAsIt yataH SivarAjaH panhALadurge asahAyakasTitO badDaH iva AsIt
+sp011-000046_002	evam sati KAnasya nigrahaRam kaH kuryAt
+sp011-000047_002	ekA vfdDA strI
+sp011-000048_002	rAjadurge svarAjyasya rakzAdevatA iva upavizwA jIjAbAyI
+sp011-000049_002	tasyA sUcanAnusAram mAvaLIvIrARAm laGavaH gaRAH haWAt mogalasEnyasya upari AkramaRam kurvanti sma
+sp011-000050_002	anDakAre parvatapradeSe haWAt AkramaRam kftvA yaTASakti SatrUn mArayitvA palAyanam kurvanti sma
+sp011-000051_002	etAdfSam vfkayudDatantram mogalAnAm kfte vinUtanam AsIt
+sp011-000052_002	marAWAnAm cawulASvAnAm padAGAtEH tIkzRaKaqgAnAm prahArEH ca tasya ajagarasya SarIram raktasiktam Bavati sma
+sp011-000053_002	kintu tAvatA eva tasya dfQacarmaRaH Bedanam kftvA prARahAniH kartum SakyA na AsIt
+sp011-000054_002	antato gatvA SayisteKAnaH puRenagaram prAptavAn
+sp011-000055_002	lAlamahalamaDye eva vAsam ArabDavAn saH
+sp011-000056_002	tatrEva SivarAjaH bAlalIlAH kftvA svarAjyasya svapnam dfzwavAn AsIt
+sp011-000057_002	SivarAjasya gfham tat
+sp011-000058_002	kintu tat gfham idAnIm SatrURAm muKyam sTAnam jAtam AsIt
+sp011-000059_002	tadBavanam paritaH sTitam sADENkalakzamitam sEnyam
+sp011-000060_002	itaHparam tu svarAjyasya rAjaDAnyAH rAjadurgasya upari kAlasya karALacCAyA AvftA AsIt
+sp011-000061_002	bijApura parisare vidyamAnena vijayayAtrAm kurvatA netAjipAlakareRa ezA vArtA jYAtA
+sp011-000062_002	panhALadurge SivarAjasya sTitiH kIdfSI iti tena avagatam
+sp011-000063_002	kintu svasya paYcasahastreRa sEnikEH saha gatvA jOharasya pracaRqasEnyam BedayitvA SivamahArAjasya vimocanasya kalpanA api SakyA nAsIt
+sp011-000064_002	tarhi
+sp011-000065_002	netAjiH ekam Bedatantram cintitavAn
+sp011-000066_002	sAkzAt gatvA bijApurasyopari AkramaRam iti
+sp011-000067_002	tadA rAjaDAnyAH rakzaRArTam jOharaH anyaH vA AgacCet eva
+sp011-000068_002	tadA panhALadurgasya AkramaRe SETilyam Bavet
+sp011-000069_002	yataH tadA bijApurasya sarvam sEnyam panhALadurgam prati gatam AsIt
+sp011-000070_002	tAvatA netAjiH hukkerI gokAka DAravAqapraBftIn pradeSAn jitavAn AsIt
+sp011-000071_002	idAnIm saH svasya SUlam bijApurasya hfdayam Bettum prayuktavAn
+sp011-000072_002	SivarAjasya mahAsenApatiH aparaH SivarAjaH iti praKyAtaH netAji pAlakaraH rAjaDAnIm AkrAntum AgacCan asti iti vArtAyAH SravaRAt eva sultAnasya hfdayam stabDam
+sp011-000073_002	tadA nagararakzaRArTam bijApure kevalAH paYcasahasram sEnikAH Asan
+sp011-000074_002	allAhasmaraRam kftvA tAn eva sultAnaH KavAsaKAnasya netftve prezitavAn
+sp011-000075_002	bijApurasya astitvasya vizamaprasaNgaH saH
+sp011-000076_002	kintu BAgyam bijApurasya pakze AsIt
+sp011-000077_002	netAjeH sEnikAH yAvat bijApurasamIpam AgatAH tAvatA atIva SrAntAH Asan
+sp011-000078_002	aPajalasya hananasya anantaram vinA virAmam netAjeH sEnyam yudDe niratam AsIt
+sp011-000079_002	bijApurasya sEnyam tu viSrAntyottarotsAhena yudDArTam Agatam AsIt
+sp011-000080_002	na kevalam tAvat tezAm purataH rAjYaH rAjaDAnyAH ca astitvasya praSnaH AsIt
+sp011-000081_002	ataH tezAm sEnikAnAm AveSaH api ugraH AsIt
+sp011-000082_002	asmin yudDe netAjinA parAjayaH aNgIkaraRIyaH aBavat
+sp011-000083_002	kintu SrAntasya palAyanaratasya ca sEnyasya anusaraRasAhasam api bijApurasEnyena na kftam
+sp011-000084_002	bijApuram rakzitam ityataH eva KavAsaKAnena samADAnam prAptam AsIt
+sp011-000085_002	netAjinA saha BAgyaparIkzaRam kimarTam iti saH cintitavAn
+sp011-000086_002	tAvatA svarAjyam prati AgacCatu iti SivamahArAjaH netAjaye vArtA prezitavAn
+sp011-000087_002	netAjiH tatra prasTitavAn
+sp011-000088_003	agrimayojanAyAH vizaye parAmarSam prAptum netAjiH rAjamAtuH darSanArTam rAjadurgam AgatavAn
+sp011-000089_003	tadA tasyAH manaHsTitiH kaTam syAt cintayantu
+sp011-000090_003	muzwimitam sEnyam avalambya SayisteKAnasya pracaRqasEnyasya sammuKI karaRasya cintanam karaRIyam AsIt
+sp011-000091_003	ekAkinI satI sA svarAjyasya rakzaRam kurvatI AsIt
+sp011-000092_003	A ekAdaSaByaH mAseByaH sA putram na dfzwavatI AsIt
+sp011-000093_003	agre drazwum Saknomi vA na vA iti tasyAH manasi vyAkulatA api AsIt
+sp011-000094_003	SivarAjam mocayitum samarTaH koऽpi na dfSyate sma
+sp011-000095_003	sarveऽpi svasTAnezu svarAjyasya jIvanamaraRasaNGarze niratAH santi
+sp011-000096_003	ante jIjAbAyI putrasya mocanArTam prasTAtum sidDA aBavat
+sp011-000097_003	yadA sA kawibadDA satI yudDArTam prasTitavatI tadA kim karaRIyam iti ajAnantaH rAjadurgasTAH samasyAjAle patitavantaH
+sp011-000098_003	tAvatA netAjiH tatra AgatavAn
+sp011-000099_003	samaye samupasTitam mahAsenApatim dfzwrA sarve samADAnam prAptavantaH
+sp011-000100_003	netAjinA saha siddihilAlaH AsIt
+sp011-000101_003	mahArAjasya mocanArTam rAjamAtA eva prasTitavatI asti iti jYAtvA netAjiH lajjayA avanatamuKaH aBavat
+sp011-000102_003	tayoH darSanena jIjAbAyI krudDA aBavat
+sp011-000103_003	BavatAm rAjA tatra ApajjAle patitaH asti
+sp011-000104_003	yudDAt palAyanam kartum kim lajjA na anuBUyate
+sp011-000105_003	mama Sivasya mocanArTam itaH param ahameva gamizyAmi iti mAtfhfdayasya AkroSaH netAjinA jYAtaH
+sp011-000106_003	tAm samASvAsya kzaRamAtram api virAmam asvIkftya saH tataH pratigatavAn
+sp011-000107_003	panhALadurge cintAturasya mahArAjasya ekEkA api nirIkzA asaPalA BUtvA tam nirASatAgrastam karoti sma
+sp011-000108_003	varzAkAle SatrURAm rakzaRavyavasTAyAm SETilyam Bavet iti saH ASAm kurvan AsIt
+sp011-000109_003	kintu tasya nirASatA aBavat
+sp011-000110_003	netAjiH kimapi kuryAt iti mahArAjasya antimanirIkzA AsIt
+sp011-000111_003	yadi saH bahizwAt AkramaRam kuryAt tarhi AkramaRe SETilyam Bavet
+sp011-000112_003	tadA itaH anyatra gamanam Sakyam Bavet iti SivarAjasya nirIkzA
+sp011-000113_003	tasya nirIkzAnusAram ekadA marAWasEnyam jOharasEnyasya upari AkramaRam akarot
+sp011-000114_003	dUrAt mahArAjena tat dfSyam avalokitam
+sp011-000115_003	saH eva tasya antimA ASAtantuH
+sp011-000116_003	mahArAjasya muKe prakASaH dfzwaH
+sp011-000117_003	kintu anuBavI senAnI siddijOharaH etasya AkramaRasya ASayaH kaH iti avagatavAn
+sp011-000118_003	durgasya AkramaRe yaTA SETilyam na syAt taTA saH jAgarUkatAm ASritavAn
+sp011-000119_003	durgam paritaH itoऽpyaDikam sudfQam sEnyam rakzaRArTam niyojitavAn
+sp011-000120_003	netAjiH dargasya samIpe gantum yaTA na SaknuyAt taTA tam avarudDavAn
+sp011-000121_003	taTApi netAjiH siddihilAlaH ca sarvaviDasAhasam kurvantO SatruvyUham BedayantO agre sarataH sma
+sp011-000122_003	tanmaDye siddihilAlasya putraH patitaH
+sp011-000123_003	tat dfzwvA siddihilAlaH putrasya diSi DAvitavAn
+sp011-000124_003	BrAntAH hilAlasya sEnikAH palAyanam ArabDavantaH
+sp011-000125_003	asmin avasare mahArAjasya dEvAnukUlyam nAsIt
+sp011-000126_003	hatASena netAjinA api pratigantavyam aBavat
+sp011-000127_003	durgasTAH AhArapadArTAH yadA samAptAH Bavizyanti tadA SivarAjena SaraRAgatena Bavitavyam eva
+sp011-000128_003	tAvat AkramaRe kiYcit api SETilyam na syAt iti jOharaH saNkalpam kftavAn AsIt
+sp011-000129_003	etAdfSaparisTitO SivarAjasya maraRam niScitam ityeva asmadIyAnAm videSIyAnAm ca nirIkzakARAm aBiprAyaH AsIt
+sp011-000130_003	netAjiH yadA prayatne viPalaH aBavat tadA SivarAjasya antimA nirIkzA api vinazwA AsIt
+sp011-000131_003	svarAjyena SivamahArAjena ca prAptA eva vipat pUrvam aPajalaKAnAt prAptAyAH vipadaH apekzayA api BIkaratarI AsIt prARAntakAriRI ca AsIt
+sp011-000132_004	SayisteKAnaH puRenagare svasya sTAnam sudfQam kftavAn AsIt
+sp011-000133_004	na kevalam tAvat nAsikasamIpasTam cAkaRadurgam api saH AkrAntavAn
+sp011-000134_004	kintu etadavasare OraNgajebena kftaH kaScana vivekarahitaH nirRayaH SivamahArAjAya sahAyakaH aBavat
+sp011-000135_004	saH AdilaSAhisAmrAjyena saha sanDAnam vinA svatantrarUpeRa yudDam karotu iti SayisteKAnam sUcitavAn AsIt
+sp011-000136_004	yadi dvayoH SatruSaktyoH yojanam syAt tarhi panhALasya AkramaRam SivarAjasya mftyupASAya eva aBavizyat
+sp011-000137_004	panhALadurgasya upari tadA zawsahasram sEnikAnAm sEnyam AsIt
+sp011-000138_004	durgasya aDipatiH tryambakaBAskaraH mutsaddIgaNgADarapantaH ca
+sp011-000139_004	svarAjyasya amoGaratnamekam AsIt tatra
+sp011-000140_004	bAjIpraBudeSapARqe iti tasya nAma
+sp011-000141_004	mahABImaparAkramI saH
+sp011-000142_004	SivamahArAjasya vizaye mahatI BaktiH tasya
+sp011-000143_004	mahArAjam pratyakzamahAdevam manyate sma saH
+sp011-000144_004	AzAQamAsaH samAptaprAyaH AsIt
+sp011-000145_004	durgam pravizwasya mahArAjasya catvAraH mAsAH atItAH Asan
+sp011-000146_004	eka zaw zaw SUnyatamavarzasya julEmAsasya ekAdaSadinANke prAtaH mahArAjena vilakzaRaH svapnaH dfzwaH
+sp011-000147_004	tandrAvasTAyAm eva saH punaH punaH tuLajABavAnyE namaskftavAn
+sp011-000148_004	anantaram utTAya durgasTAn sahakAriRaH AhUya tatra SayisteKAnaH svarAjyam AkrAntavAn asti
+sp011-000149_004	atra vayam siddijOharasya kapimuzWO patitavantaH sma
+sp011-000150_004	itaH surakzitarUpeRa palAyanasya ASAH nirIkzAH ca viPalatAm gatAH santi
+sp011-000151_004	itaHparam kAlayApanam na ucitam
+sp011-000152_004	mayA itaH kaTaYcit vimocanam prAptavyam eva
+sp011-000153_004	SayisteKAnasya upadravaH niyantraRIyaH eva iti uktavAn
+sp011-000154_004	mahArAjasya vacanam SrutvA sahakAriRAm SarIre sarpasarpaRam jAtam iva
+sp011-000155_004	itaH mahArAjasya nirgamanam
+sp011-000156_004	kintu kaTam
+sp011-000157_004	mahatA kutUhalena sarve SfRvantaH Asan
+sp011-000158_004	mahArAjaH svasya yojanAyAH rUpareKAm durgasTeByaH pramuKeByaH vivftavAn
+sp011-000159_004	sA yojanA atyantam sAhasamayI AsIt prARApAyakAriRI ca AsIt
+sp011-000160_004	yojanAyAH praTamaH GawwaH evam
+sp011-000161_004	atra gUQacarARAm pAtram mahat AsIt
+sp011-000162_004	gUQacarARAm yaSaH avalambya eva agrimayojanAyAH saPalatA
+sp011-000163_004	ajagaravat Avezwanam kftavataH jOhara sEnyasya kasmin api BAge durbalA SfNKalA asti kim iti gUQacarEH anvizya Agantavyam AsIt
+sp011-000164_004	rAtreH anDakAre gUQacarAH niSSabdatayA durgAt aDaH gatavantaH
+sp011-000165_004	te kaTam gatavantaH kaTam AgatavantaH
+sp011-000166_004	tAdfSe sarparakzaRe kutra kutra saYcArya AgatAH iti vizaye itihAsaH mUkaH asti
+sp011-000167_004	uzasi te pratyAgatAH
+sp011-000168_004	tEH Anandasya vArtA eva AnItA AsIt makaradaMzwrAsu kaScana laGuH mArgaH asti iti
+sp011-000169_004	palAyanam yadi karaRIyam syAt tarhi tat tataH eva nAnyataH Sakyam tat
+sp011-000170_004	durgasya aDaH AsIt kaScana laGuH mArgaH
+sp011-000171_004	sAmAnyadarSanAt dfggocaraH na Bavati sma saH
+sp011-000172_004	tadekam sTAnam kaTaYcit jOharasya gfDradfzwyA cyutam AsIt
+sp011-000173_004	tatsTalamAtre rakzakAH na Asan
+sp011-000174_004	kintu tat sTAnam paritaH samIpe ca rakzaRam AsIt eva
+sp011-000175_004	astu nAma iti cintayatA SivarAjena saH mArgaH eva niScitaH palAyanAya
+sp011-000176_004	mahArAjasya budDiH vidyudvegena kAryam akarot
+sp011-000177_004	AkasmikarUpeRa durgasya mahAdvAram udGAwitam
+sp011-000178_004	aDastAt eva siddijOharasya sEnikAH paSyantaH Asan
+sp011-000179_004	ananyagatikaH SivarAjaH SaraRAgataH Bavet eva
+sp011-000180_004	nyUnAtinyUnam tasya dUtaH vA AgacCet iti jOharaH pratIkzArataH AsIt
+sp011-000181_004	tAvatA SvetavastraDArI puruzaH kaScit tEH dfzwaH
+sp011-000182_004	SivarAjasya dUtaH eva syAt ayam
+sp011-000183_004	saMSayaH eva nAsti
+sp011-000184_004	antato gatvA SivarAjaH SaraRAgataH
+sp011-000185_004	ezA Anandasya vArtA jOharasya sEnye vAyuvegena prasftA
+sp011-000186_004	jOharaH api etAm vArtAm jYAtavAn
+sp011-000187_004	hfzwaH saH jAgarUkaH api aBavat
+sp011-000188_004	atra SivarAjasya DUrtam tantram kimapi syAt api iti acintayat saH
+sp011-000189_004	durgAt avatIrya AgataH SivarAjasya dUtaH gaNgADarapantaH SivarAja SaraRAgativizayakam patram atyantavinayapUrvakam jOharAya samarpitavAn
+sp011-000190_004	jOharaH api jAgarUkatayA tat patram paWitavAn
+sp011-000191_004	durgasya aDaH yadA BavataH SuBAgamanam aBavat tadA eva aham BavatA melitum izwavAn
+sp011-000192_004	kintu Bayena lajjayA ca aham na AgataH
+sp011-000193_004	yadi BavataH anujYA syAt tarhi aham aDaH Agatya sarvAparADAnAm nimittam kzamAm prArTaye
+sp011-000194_004	BavAn mama pitftulyaH
+sp011-000195_004	pitfvAtsalyena BavatA mahyam aBayam dAtavyam
+sp011-000196_004	SvaH rAtrO ahameva Agatya mama samastam ESvaryam samagrAm BUmim sarvARi durgARi ca BavataH padatale samarpayizyAmi iti
+sp011-000197_004	etat patram dfzwvA jOharaH api kzaRakAlam AScaryeRa stabDaH
+sp011-000198_004	niyamam vinA SaraRAgatiH
+sp011-000199_004	kaTam samBavet etat
+sp011-000200_004	atra niScayena kimapi kutantram syAt
+sp011-000201_004	AdilaSAhaH api tadA tadA jAgarUkaH Bava
+sp011-000202_004	SivarAjaH mahApAtAlayantrI iti jAgarUkatAvacanAni prezayati sma iti acintayat saH
+sp011-000203_004	kintu etAdfSasya patraprezaRasya pfzWaBUmikAyAm SivarAjasya kim tantram syAt
+sp011-000204_004	iti bahuDA cintanena api jOharasya mahAmastizke na sPuritam
+sp011-000205_004	sarvARi api muKAni manasi Akalayya ante saH nirRItavAn yat SivarAjasya patram viSvAsArham iti
+sp011-000206_004	etAdfSyAm asahAyakasTitO SivarAjaH anyat kim vA kartum SaknuyAt
+sp011-000207_004	patre tu sarvam suspazwam asti
+sp011-000208_004	mama Sibiram Agatya mAm vaYcayitum saH mUrKastu na
+sp011-000209_004	yadi kadAcit SvaH rAtrO saH na AgacCet tarhi
+sp011-000210_004	hAniH tu kApi nAsti
+sp011-000211_004	AkramaRam tu yaTApUrvam anuvartate eva
+sp011-000212_004	kadAcit vA tena SaraRAgatiH aNgIkaraRIyA eva Kalu
+sp011-000213_004	mAdfSasya SUrasya caturasenAnAyakasya purataH saH kiyatkAlam krIqitum SaknuyAt
+sp011-000214_004	itaHparam tasya kaTA samAptaprAyA iti AsIt jOharasya cintanam
+sp011-000215_004	varAkaH
+sp011-000216_004	tasmE BagavAn KudA yAvatIm budDiSaktim dattavAn tAvatyAH vyayam kftvA saH cintanam kftavAn
+sp011-000217_004	tasya cintanam atyantam suyogyam AsIt
+sp011-000218_004	kintu SivarAjAya BagavAn mahatIm budDimattAm yat dattavAn tatra jOharasya kaH dozaH
+sp011-000219_004	KudA eva aparADI
+sp011-000220_004	sarvaviDacintanAnantaram jOharaH SivarAjasya vijYaptim aNgIkftavAn
+sp011-000221_004	taTApi saH jAgarUkaH AsIt
+sp011-000222_004	SivarAjasya SaraRAgativArtA sEnye sarvatra prasftA
+sp011-000223_004	SvaH rAtrO saH eva Agamizyati
+sp011-000224_004	caturmAsAtmikI yAtanA samAptA
+sp011-000225_004	tayA ramyakalpanayA sarve AnandaparavaSAH aBavan
+sp011-000226_004	tasya Amode magnasya jOharasya ajYAnena eva rakzaRavyavasTAyAm kiYcit SETilyam jAtam
+sp011-000227_004	SivamahArAjasya sammohanAstram svasya kAryam akarot
+sp011-000228_004	durge mahArAjasya palAyanayojanAyAH vivaraRam sidDam
+sp011-000229_004	mahArAjaH zawSatena yoDEH saha taddine tannAma eka zawzawSUnyatamasya varzasya julEmAsasya dvAdaSe dinANke rAtrO prasTAya gUQacarEH anvizwena mArgeRa palAyanam karizyati
+sp011-000230_004	kutra
+sp011-000231_004	viSAladurgam prati
+sp011-000232_004	panhALadurgAt catvAriMSat mElamite dUre AsIt viSAladurgam
+sp011-000233_004	viSAladurgam yAvat pratipadam GorAH apAyAH
+sp011-000234_004	paritaH vidyamAnAH SatroH gUQacarAH yadi jAnIyuH tarhi sarvanASaH niScitaH
+sp011-000235_004	tadastAm tAvat viSAladurgam prAptam cet apAyAt muktatA kim Bavet
+sp011-000236_004	tatrApi agniparIkzA eva
+sp011-000237_004	jasavantarAva sUryarAvO tat durgam Akramya sTitavantO staH
+sp011-000238_004	Ahatya SivamahArAjasya ezA sAhasamayI kalpanA unmAdakarI eva
+sp011-000239_004	kintu vidyamAnaparisTitO atyantam dUradarSI upAyaH saH
+sp011-000240_004	varzAkAlasya samApteH anantaram jOharasya prahAraH praKaraH aBavizyat
+sp011-000241_004	tadA durgAt palAyanam asADyam aBavizyat
+sp011-000242_004	SayisteKAnasya upadravaH api aDikApAyakarI aBavizyat
+sp011-000243_004	gaNgADarapantaH durgasya upari AgatavAn
+sp011-000244_004	svasya dOtyasya itivfttam vivftam tena
+sp011-000245_004	etAvatA yojanAyAH dvitIyaH GawwaH yaSasvitAm gataH iva
+sp011-000246_004	agrimasopAnAnAm vizaye cintanam api kftam
+sp011-000247_004	rAtriH sannihitA
+sp011-000248_004	kzaRezu gacCatsu SivarAjasya sahacarARAm DEryasAhasO udgatO
+sp011-000249_004	durgasya rakzaRadAyitvam tryambakapante nikzipya mahArAjaH
+sp011-000250_004	etat ajayyam panhALadurgam ajayyarUpeRa eva rakzatu iti sUcitavAn
+sp011-000251_004	rAtriH aBavat
+sp011-000252_004	anDakAraH vyAptaH
+sp011-000253_004	AzAQamAsasya JaYJAvAtena saha vfzwiH api ArabDA
+sp011-000254_004	SivamahArAjaH BavAnImAtaram smftavAn gamBIratayA padAni nidaDat BavanAt bahiH AgatavAn ca
+sp011-000255_004	tena saha
+sp011-000256_004	kazwe prasaNge agrasaro BUtvA dAyitvam nirvoQum mitram kiYcana Bavet eva Kalu
+sp011-000257_004	bAjIpraBudeSapARqe tat pAtram nirvoQum sajjaH atizWat
+sp011-000258_004	zawSatam mAvaLIyoDAH api tena saha prasTitavantaH
+sp011-000259_004	viSAladurgam catvAriMSat mElamite dUre AsIt
+sp011-000260_004	SibikayA mahArAjaH netavyaH
+sp011-000261_004	itarEH pAdAByAm gantavyam
+sp011-000262_004	anyaH mArgaH nAsti
+sp011-000263_004	SibikAvAhakAH mahArAjasya SibikAm vahanti sma
+sp011-000264_004	tezAm pfzWataH eva aparA SibikA sidDA aBavat
+sp011-000265_004	aparA kimarTam
+sp011-000266_004	tat kaH jAnIyAt mahArAjAt fte
+sp011-000267_004	mAvaLIyAH SibikAvAhakAH balayutena Bujena SibikAm UQavantaH
+sp011-000268_004	bAjipraBuH prasTitavAn
+sp011-000269_004	mAvaLIsEnikAH api prasTitavantaH
+sp011-000270_004	agre gUQacarAH Asan
+sp011-000271_004	rAtreH daSavAdanam
+sp011-000272_004	tryambakapantAdayaH sarveऽpi deva asmAkam mahArAjam suKena surakzitasTAnam prApayatu iti mOnaprArTanAm kurvantaH Asan
+sp011-000273_004	vinA Sabdam te durgasya mahAdvAram udGAwitavantaH
+sp011-000274_004	SibikA parivArajanAH ca bahiH nirgatAH
+sp011-000275_004	sarvezu paSyatsu te sarve anDakAre vilInAH aBavan
+sp011-000276_004	gUQacarAn anusarantaH gaRaSaH sarveऽpi padAni sTApayantaH Asan
+sp011-000277_004	savfzwivAyuH vegena vAti sma
+sp011-000278_004	maDye vidyutsaYcAraH api
+sp011-000279_004	jOharasya rakzakAH yadi paSyeyuH tarhi kA gatiH syAt
+sp011-000280_004	he Bagavan
+sp011-000281_004	sA kalpanA api mAstu
+sp011-000282_004	BoH AkASa mA prakASatAm
+sp011-000283_004	sarvezAm manasi ekameva smaraRam
+sp011-000284_004	ekA eva prArTanA jagadamba jagadamba iti
+sp011-000285_004	sarve durgAt avatIrRavantaH
+sp011-000286_004	tadA sarvezAm hfdaye vegena spandanam ArabDam
+sp011-000287_004	mahatyAm vfzwyAm satyAm api sarveऽpi gUQacarAH svedasiktAH
+sp011-000288_004	itaH param Satam padAni paYcASat tadapi samAptam
+sp011-000289_004	rakzaRApaNkteH na mftyureKAyAH samIpam AgatAH Asan te SivasEnikAH
+sp011-000290_004	pUrvam kaYcit avatAripuruzam kasyacit rAkzasasya hastAt vimocayitum kaScit evameva DAvati sma
+sp011-000291_004	saH api sEnikAnAm rakzaRAvyavasTAtaH AtmAnam rakzayan prasTitavAn AsIt
+sp011-000292_004	tadApi tasyAm rAtrO etAdfSaH eva mahAn savarzavAyuH vAti sma
+sp011-000293_004	saH api manasi BagavannAmasmaraRam karoti sma
+sp011-000294_004	saH AsIt vasudevaH
+sp011-000295_004	kaMsasya KaqgAt navajAtaSiSum kfzRam rakzitum prasTitavAn AsIt Kalu saH
+sp011-000296_005	bAjipraBuH itare mAvaLIvIrAH ca kaliyugasya Darmarakzakam etam avatAripuruzam UQvA vasudevaH iva eva DAvantaH Asan
+sp011-000297_005	tezAm yAtrA tu mahatyAm vfzwyAm kaRwakamaye mArge jOharasya sEnikAnAm mftyudaMzwrARAm maDye ca AsIt
+sp011-000298_005	kintu jOharasya rakzakAH SivarAjasya SaraRAgamanasya suKasvapne lInAH Asan
+sp011-000299_005	asmAkam maDye eva mArga kalpayitvA SivarAjaH palAyanam kurvan asti iti kalpanAm kartum api te na SaktAH
+sp011-000300_005	AkramaRareKAm atikramya SivarAjasEnikAH agre gatavantaH
+sp011-000301_005	tezAm gaRaH idAnIm viSAladurgasya diSi prasTitaH AsIt
+sp011-000302_005	tasmin gAQe anDakAre BayaNkare kAnane vanyamfgARAm garjane sati DAvanasparDA pracalantI AsIt
+sp011-000303_005	vipattisamBAvanA apagatA iti yAvat sarve cintayantaH Asan tAvatA
+sp011-000304_005	sar sar iti kaScana SabdaH SrutaH
+sp011-000305_005	sarve api kzaRakAlam stabDAH aBavan
+sp011-000306_005	kaH SabdaH syAt iti jAgarUkatayA paritaH parISIlitavantaH te
+sp011-000307_005	AgataH vyAGraH uta tarakzuH iti tasmin gAQAnDakAre kaTam jYAtum Sakyam
+sp011-000308_005	kintu sarvezAm sandehaH balavattaraH AsIt saH SabdaH manuzyARAm iti
+sp011-000309_005	te siddijOharasya gUQacarAH eva syuH
+sp011-000310_005	Am
+sp011-000311_005	te eva mahArAja SibikayA nayataH janAn te dfzwavantaH Asan
+sp011-000312_005	tadA eva kutracit taqidAGAtaH aBavat
+sp011-000313_005	tatoऽpi BIzaRataraH AGAtaH mAvaLI vIrARAm hfdaye jAtaH AsIt
+sp011-000314_005	agre tu tEH samayena saha sparDA karaRIyA AsIt
+sp011-000315_005	pratikzaRam mftyuH pfzWataH anuDAvati sma
+sp011-000316_005	cintanArTam api samayaH nAsIt
+sp011-000317_005	cintanam yojanA ca pUrvameva samApitA AsIt
+sp011-000318_005	tAdfSe prasaNge kim karaRIyam iti pUrvameva niScitam AsIt
+sp011-000319_005	kzaRakAlam sarve tatrEva sTitavantaH
+sp011-000320_005	riktA SibikA agre AgatA
+sp011-000321_005	tatra SivarAjavezaDArI kaScit puruzaH upavizwavAn
+sp011-000322_005	tam nUtanam mahArAjam SibikayA UQvA zoqaSa viMSatiH vA mAvaLIyavIrAH pUrvatanena mArgeRa DAvanam ArabDavantaH
+sp011-000323_005	bAjipraBupraBftayaH SivarAjaSibikayA saha apareRa parvatamArgeRa DAvitavantaH
+sp011-000324_005	SatruH niScayena anusaraRam kuryAt
+sp011-000325_005	taTA anusftam cedapi SatroH aSvasEnyena gantum aSakyaH durgamaH mArgaH saH
+sp011-000326_005	maDye kiYcit samayAvakASam prAptum nUtanamahArAjasya yuktiH
+sp011-000327_005	taTA prApyamARaH kAlAvakASaH alpaH eva
+sp011-000328_005	yataH viSAladurgam itoऽpi bahudUre AsIt
+sp011-000329_005	siddijOharasya gUQacarAH vegena DAvantaH senASibiram prAptavantaH
+sp011-000330_005	DAvantaH eva siddimasUdam te vArtA prApitavantaH SivarAjaH durgAt palAyitavAn
+sp011-000331_005	viSAladurgasya diSi gacCan asti iti
+sp011-000332_005	SivarAjaH palAyitavAn
+sp011-000333_005	jOharaH sahasravfScikadaMSanam anuBUtavAn iva
+sp011-000334_005	tasya netrayoH purataH gAQAnDakAraH prasftaH
+sp011-000335_005	AdilaSAhaH kim vadet iti kalpanayA eva tasya SUrasya SarIre kampanam ArabDam
+sp011-000336_005	anukzaRam AtmAnam niyantrayan saH svasya jAmAtaram siddimasUdam SivarAjasya grahaRArTam prezitavAn
+sp011-000337_005	tena saha dvisahasram aSvArohiRaH sahastram padAtayaH ca tasmin gAQAnDakAre prasTitAH
+sp011-000338_005	gUQacarEH nirdizwena viSAladurgamArgeRa te DAvanam ArabDavantaH
+sp011-000339_005	GorAraRye anDakAre vfzwyAm paNkamaye mArge patantaH uttizWantaH ca agre gacCanti sma te
+sp011-000340_005	siddimasUdaH api SvaSuraH iva SUraH sAhasI ca nAyakaH
+sp011-000341_005	AkASe kadAcit vidyutsaYcAraH aBavat
+sp011-000342_005	tadA sudUre vfkzasamUhe tEH kiYcit dfSyam dfzwam
+sp011-000343_005	kecana mAvaLIsEnikAH mahArAjasya SibikAm vahantaH DAvantaH dfzwAH tEH
+sp011-000344_005	siddimasUdasya paWARasEnikAH Jawiti SibikAm AkrAntavantaH
+sp011-000345_005	siddimasUdaH sTaba iti AjYApitavAn
+sp011-000346_005	SibikA sTagitA
+sp011-000347_005	antaH kaH asti iti masUdaH darpeRa pfzwavAn
+sp011-000348_005	mAvaLIvIrAH digBrAntAH iva Bayena sKaladvacoBiH SivamahArAjaH iti uktavantaH
+sp011-000349_005	masUdasya Anandasya pAram eva nAsIt
+sp011-000350_005	adyAvaDi kenApi tannAma aPajalena PAjalaKAnena rustumajamAnena mama SvaSureRa vA yat sADayitum na Saktam tat aham sADayan asmi iti cintayan garveRa mattaH aBavat masUdaH
+sp011-000351_005	tasya garvaH sahajaH eva
+sp011-000352_005	SibikAsahitam mAvaLIsEnikAn banDinaH kftvA SvaSurAya svasya amUlyam upAyanam dAtum SvaSurAt sammAnanam prAptum ca icCan masUdaH sagarvam prasTitavAn
+sp011-000353_005	jOharaH vArtAm prAptavAn mama jAmAtA katizucit GaRwAsu eva SivarAjam gfhItvA AnItavAn asti iti
+sp011-000354_005	saH punaScetanam prAptavAn iva santuzwaH
+sp011-000355_005	jAmAtuH sADanayA saH AnandatundilaH aBavat
+sp011-000356_005	sADu sADu jAmAtA nAma etAdfSaH syAt iti svagatam vadan manasi eva tam aSlAGata saH
+sp011-000357_005	sEnye sarvatra vArtA prasftA
+sp011-000358_005	sarvatra Anando nAma AnandaH
+sp011-000359_005	SibikAvAhakAH siddijOharasya purataH SibikAm avatAritavantaH
+sp011-000360_005	antaH gamBIrarUpeRa upavizwaH SivamahArAjaH bahiH AgatavAn
+sp011-000361_005	tasya mahArAjasya vizaye mAvaLIsEnikAnAm mahAn AdaraH
+sp011-000362_005	aneke nAyakAH mahArAjam drazwum utsukatayA samIpam AgatAH
+sp011-000363_005	mahArAjam dfzwavantaH ca
+sp011-000364_005	kecana SivarAjam samIpataH dfzwavantaH Asan
+sp011-000365_005	tEH atra kaScana sandehaganDaH anuBUtaH
+sp011-000366_005	anyaH kaScit syAt ayam iti
+sp011-000367_005	ante mahA rAjasya vicAraRA aBavat
+sp011-000368_005	tadA sarvam suspazwam aBavat ezaH saH SivarAjaH na
+sp011-000369_005	panhALadurgasya SivarAjanAmakaH kaScana kzOrikaH iti
+sp011-000370_005	are allAha
+sp011-000371_005	siddijOharaH siddimasUdaH ityAdInAm nAyakAnAm kA sTitiH syAt iti kzaRam cintayantu
+sp011-000372_005	siddimasUdaH rozAvizwaH aBavat
+sp011-000373_005	kopena dantAn kawakawAyamAnaH saH punaSca viSAladurgasya diSi prasTitavAn
+sp011-000374_005	tena saha tasya sEnyam api prasTitam
+sp011-000375_005	aparatra mahArAjasya SibikAm svIkftya mAvaLIvIrAH sarvAm Saktim prayujya DAvantaH Asan
+sp011-000376_005	maDyarAtraH atItaH
+sp011-000377_005	svarAjyasya mahArAjasya ca prARAH asmAkam pAdayoH Saktim avalambya santi iti te mAvaLIvIrAH spazwam jAnanti sma
+sp011-000378_005	pakzavantO iva te DAvanti sma
+sp011-000379_005	kftrimaSivarAja tantreRa tEH kaScana kAlAvakASaH prAptaH AsIt
+sp011-000380_005	tasya rahasyodGAwanam yadA Bavet tadA SatruH punaSca anuDAvet iti tEH spazwarUpeRa avagatam AsIt
+sp011-000381_005	eka zaw zaw SUnyatamavarzasya julEmAsasya trayodaSaH dinANkaH
+sp011-000382_005	sUryodayaH aBavat
+sp011-000383_005	viSAladurgam azwakroSamite dUre AsIt
+sp011-000384_005	tatrApi SatroH vyUhaBedanam kftvA antaH pravezwavyam AsIt
+sp011-000385_005	tAvatA dUrAt DUlim utkzipantI AgacCantI masUdasya aSvasenA dfzwA
+sp011-000386_005	tasyAH raRaGozaH api SrutaH
+sp011-000387_005	itaHparam kaTA samAptaprAyA
+sp011-000388_005	yataH ArAtri DAvantI AgatA SrAntA SivarAjasya laGumAvaLIsenA
+sp011-000389_005	ekatra siddimasUdaH
+sp011-000390_005	aparatra viSAladurgasya samIpe jasavantarAvasUryarAvayoH bahusaNKyAkA navotsAhinI senA
+sp011-000391_005	pUgakartaryAm sTitaH pUgaH iva SivarAjasya laGusEnyasya sTitiH
+sp011-000392_005	he devi kIdfSI GoraparIkzA ezA
+sp011-000393_005	parisTiteH BIzaRatAm bAjipraBuH avagatavAn
+sp011-000394_005	dvayoH senAsamUhayoH maDye yadi patema tarhi mahArAjasya anyezAm sarvezAm ca antyam niScitam syAt
+sp011-000395_005	kzaRamAtreRApi vilambaH AcaritaH cet prARApAyaH sammuKI karaRIyaH Bavet
+sp011-000396_005	itaHparam vilambaH na ucitaH iti bAjipraBuH niScitavAn
+sp011-000397_005	tadA tEH pravizwaH parvatamArgaH atyantam durgamaH AsIt
+sp011-000398_005	masUdasya senayA tenEva mArgeRa Agantavyam AsIt
+sp011-000399_005	tat avalokayan bAjipraBuH mahArAjam uddiSya itaHparam ekam kzaRam api BavatA atra na Bavitavyam
+sp011-000400_005	anukzaRam viSAladurgam prati prasTAnam karotu
+sp011-000401_005	viSAladurgam prati BavataH prAptiparyantam asmin mArge aham SatrUn avaruRaDmi
+sp011-000402_005	durgaprApteH samanantaram mahABuzuRqiSabdam kArayatu iti niveditavAn
+sp011-000403_005	AtmanaH muKam hAlAhalArTam udGAwya hindujanatAyE etAdfSAH eva amftam pAyitavantaH Kalu
+sp011-000404_005	bAjipraBuH anuroDapUrvakam SivarAjam viSAladurgasya diSi prezitavAn
+sp011-000405_005	mahArAjena saha arDasEnyam prasTitam
+sp011-000406_005	avaSizwam arDasEnyam bAjipraBuH rakzitavAn
+sp011-000407_005	parvatAnAm maDye sTite bilasadfSe durgamamArge kAlaBEravaH iva sasEnyam sTitavAn AsIt saH
+sp011-000408_005	sarve mahArAjampraRamya ApracCanam kftavantaH
+sp011-000409_005	bAjipraBoH vAnarasEnye raRotsAhaH udgataH AsIt
+sp011-000410_005	asmAsu pratyekasmin mahArAjasya rakzaRaBAraH nikziptaH asti iti cintanena eva tezAm utsAhaH SataguRitaH jAtaH AsIt
+sp011-000411_005	masUdasya aSvArohiRaH sEnikAH AgatAH
+sp011-000412_005	upatyakAyAm sTite tasmin mArge pravezwum prayatnam kftavantaH
+sp011-000413_005	yaTA yaTA te AgatavantaH taTA taTA tezAm muRqAni AkASasya diSi utpatanti sma
+sp011-000414_005	tasya mahAbilasya pArSve paWARAnAm tezAm aSvAnAm ca SavAnAm rASiH eva patitaH
+sp011-000415_005	mahArAjasya viSAladurgaprAptyarTam nyUnAtinyUnam GaRwAdvayam apekzitam
+sp011-000416_005	tAvatparyantam SatruH avarodDavyaH AsIt bAjipraBuRA
+sp011-000417_006	punaH punaH SatroH AkramaRam Bavati sma
+sp011-000418_006	yaTA yaTA tezAm AkramaRam Bavati taTA taTA bAjipraBoH hastayoH vidyamAnO uBO KaqgO nftyantO SatrusEnikAnAm KaRqaSaH kartanam kurutaH sma
+sp011-000419_006	panhALadurgam paritaH jOharasya AkramaRam yaTAvat anuvfttam AsIt
+sp011-000420_006	yataH kadAcit SivarAjaH durge eva sTitvA avasare prApte palAyanam na kuryAt Kalu
+sp011-000421_006	viSAladurgasya aDaH Akramya sTitavantO jasavantarAvasUryarAvO SivarAjaH viSAladurgam AgacCan asti iti vArtAm jYAtavantO
+sp011-000422_006	tO sampradAyanizWO hindumarAWanAyakO
+sp011-000423_006	kintu kim kftam tAByAm
+sp011-000424_006	SivarAjam hantum agre prasTitavantO tO
+sp011-000425_006	SivamahArAjaH sarutaH BavAnIKaqgam bahiH AkfzwavAn
+sp011-000426_006	ArAtri DAvanam kftvA tasya sEnyam SrAntam AsIt
+sp011-000427_006	kintu SivamahArAjasya prARarakzaRapraSnaH Kalu
+sp011-000428_006	SrAnteH praSnaH eva nAsIt
+sp011-000429_006	pratipadam AkramaRam BedayantaH SivarAjasEnikAH agre sarantaH Asan
+sp011-000430_006	maDyAhnaH jAtaH
+sp011-000431_006	tasya laGumArgasya dvAre sTitasya bAjipraBoH SarIrAt raktam uccalati sma
+sp011-000432_006	tasya sahayoginaH sarve atulanIyam parAkramam pradarSayantaH DarASAyinaH BavantaH Asan
+sp011-000433_006	ekEkaH daSaguRitasaNKyayA SatrUn saMharati sma
+sp011-000434_006	bAjipraBoH KaqgaprahArAt cyutaH san ekaH api SatrusEnikaH tam mArgam pravezwum na SaktavAn AsIt
+sp011-000435_006	pfTveH upari sTitasya bAjipraBoH tejaH AkASe prajjvalataH sUryatejasA saha sparDate sma
+sp011-000436_006	ante sUryaH eva parAjayam aNgIkftya paScimasAgare muKam gopAyitum aDaH saraRam ArabDavAn
+sp011-000437_006	bAjipraBoH bAhvoH tAdfSadivyaSaktyAH pravAhaH kutaH AgataH syAt
+sp011-000438_006	nizWA DyeyanizWA svarAjyanizWAyAH camatkAraH saH
+sp011-000439_006	viSAladurgasya aDaH SivarAjasya BavAnIKaqgasya AveSasya sammuKe sUryarAvajasavantarAvO hatapraBO jAtO
+sp011-000440_006	tayoH vyUhaH BagnaH jAyamAnaH AsIt
+sp011-000441_006	ante kadAcit saH vyUhaH pUrRarUpeRa BagnaH
+sp011-000442_006	mahArAjaH durgam prati DAvitavAn
+sp011-000443_006	tasya ekA eva cintA SIGram gatvA mahABuzuRqeH GozaH kAraRIyaH bAjipraBoH kfte mama kuSalavArtA prApaRIyA
+sp011-000444_006	tasya amUlyAH prARAH rakzaRIyAH iti
+sp011-000445_006	mahArAjaH DAvan eva mahABuzuRqeH samIpam gatavAn
+sp011-000446_006	sAyam zaqvAdanam tadA
+sp011-000447_006	bAjipraBoH hastAByAm Satruhananam pracalati sma
+sp011-000448_006	ekaviMSatiH GaRwAnAm avirataDAvanena yudDena ca tasya BImakAyaH JarJaritaH AsIt
+sp011-000449_006	SarIrasTam sarvam raktam nirgatam AsIt
+sp011-000450_006	taTApi mahABuzuRqeH GozaSravaRam na Srutam
+sp011-000451_006	tasya Gozasya SravaRAt pUrvam Kaqgasya viSrAntiH nAsti iti SarIrAya bAjipraBuRA AjYA dattA AsIt
+sp011-000452_006	SivamahArAjasya prARarakzaRArTameva tasya janma prAptam AsIt Kalu
+sp011-000453_006	evam sTite kAryasya samApteH pUrvam kAyasya patanam kaTam
+sp011-000454_006	tAvatA Dan Dan Dan iti mahABuzuRqeH GozaH SrutaH
+sp011-000455_006	eka vAram dvivAram trivAram
+sp011-000456_006	punaH punaH GozaH SrUyamARaH AsIt
+sp011-000457_006	mahABuzuRqeH muKAt mahArAjaH bAjipraBum AkArayati sma aham sakuSalam prAptavAn asmi
+sp011-000458_006	BavataH pratIkzAyAm asmi
+sp011-000459_006	SIGrAtiSIGram atra AgacCatu iti
+sp011-000460_006	bAjipraBoH jIvanam sArTakam aBavat
+sp011-000461_006	tAvatA GAtaH kaScana pravfttaH
+sp011-000462_006	SatroH kaScana krUraH prahAraH tasya kaRWe aBavat
+sp011-000463_006	tasya aYjaliparimARakam antimam raktam utsavat utplutya paScime diktawe astam gacCate sUryAya arGyarUpeRa samarpitam aBavat
+sp011-000464_006	tasya antimaH SvAsaH vAyunA Baktisyandanam vahan mahArAjasya AliNganam kartum agacCat
+sp011-000465_006	bAjipraBoH SarIram DarASAyi aBavat
+sp011-000466_006	yatra tasya SarIram patitam tadgAjApurasya sTAnam pAvanam aBavat
+sp011-000467_006	pAvanaKiRqi iti nAmnA saH pradeSaH idAnIm prasidDaH asti
+sp011-000468_006	marAWIBAzayA KiRqi ityasya arTaH ekenEva gantum yogyaH bilasadfSaH durgamaH mArgaH iti
+sp011-000469_006	raktavarRakam pAwalapuzpam vikAsayitum kokilaH ArAtri svasya raktam aBiziYcati iti SrUyate
+sp011-000470_006	prAtaH tasya puzpasya vikasanasamaye vfkzasya aDaH kokilaH mftaH san patitaH Bavati
+sp011-000471_006	svAtantryasaNgrAmasya ekEkam vijayapuzpam vikAsayitum api taTEva
+sp011-000472_006	svAtantryasya aruRodayasya GozaRArTam utTitasya ekEkasyApi kokilasya vIraSrezWasya raktam AvaSyakam Bavati
+sp011-000473_006	svarAjyasya SivAjimahArAjasya ca prARAH rakzitAH aBavan
+sp011-000474_006	saH bAjiH sahyAdreH GorAraRye sTitAya pAvanaKiRqipradeSAya samarpitaH aBavat
+sp011-000475_006	tatratyAyAH mfdaH pratikaRamapi bAjipraBoH hara hara mahAdeva ityanena antimaraRaGozeRa pratiDvanitaH asti
+sp011-000476_006	tatratye vAyumaRqale svarAjyasya yajYakuRqe pUrRAhutirUpeRa ye jIvanam samarpitavantaH santi tezAm jIvanacandanasya suganDaH sammilitaH asti
+sp011-000477_006	bAjipraBoH SarIrapatanasya samanantaram tasya avaSizwAH sEnikAH bAjipraBoH SarIram unnIya araRye adfSyAH aBavan
+sp011-000478_006	tezAm kAryam samAptam AsIt
+sp011-000479_006	mahArAjaH sakuSalam viSAladurgam prAptavAn AsIt
+sp011-000480_007	masUdasya sEnyArTam yadA mArgaH sugamaH aBavat tadA saH sasEnyam viSAladurgasya aDoBAgam prAptavAn
+sp011-000481_007	durgasya aDoBAge sTitvA uttuNge sTitAn durgasya BAgAn nirASatayA paSyan AsIt
+sp011-000482_007	tAvatA SivarAjaH durgam prAptavAn AsIt
+sp011-000483_007	antato gatvA SfgAlena drAkzA na prAptA
+sp011-000484_007	taTApi antimaH prayatnaH karaRIyaH ityASayA siddimasUdaH jasavantarAva sUryarAvAByAm saha viSAladurgam AkrAntum sannAham ArabDavAn
+sp011-000485_007	tat jYAtvA SivamahArAjaH tezAm AkramaRAt pUrvameva te nASanIyAH iti niScitavAn
+sp011-000486_007	anukzaRam durgasTena sEnyena mahArAjasya AjYA prAptA
+sp011-000487_007	durgasya mahAdvAram udGAwya svarAjyasya sEnikAH santaptAH tarakzavaH iva SatrusEnyam AkrAntavantaH
+sp011-000488_007	tezAm AkramaRasya vegenEva SatrusEnyam astavyastam aBavat
+sp011-000489_007	ekenEva prahAreRa tezAm trayARAm nAyakAnAm SaktiyuktI DUlisAt jAte
+sp011-000490_007	pfzWam pradarSya palAyane ekaH aparam atiSete sma
+sp011-000491_007	masUdasya muKam parAjayena kalaNkitam
+sp011-000492_007	hatapraBaH saH panhALadurgam pratigatavAn
+sp011-000493_007	jAmAtA SivarAjam gfhItvA Anezyati iti pratIkzAratasya jOharasya jAmAtuH hatapraBam muKam dfzwvA atIva nirASatA aBavat
+sp011-000494_007	EdamprATamyena jOharaH parABavam anuBUtavAn AsIt
+sp011-000495_007	jAmAtA sajIvam pratyAgataH ityetAvatA eva jOhareRa tfptiH prAptA
+sp011-000496_007	yataH SivarAjam grahItum gatavatsu adyaparyantam ekoऽpi jIvasahitaH nAgataH AsIt Kalu
+sp011-000497_007	mahArAjaH itare durgasTAH ca Anandasya SiKare sTitavantaH iva
+sp011-000498_007	tAdfSAt GorAt apAyakAriprasaNgAt SivarAjaH rakzitaH ityetat kim sAmAnyam
+sp011-000499_007	bAjipraBoH Agamanam ekam avaSizwam AsIt
+sp011-000500_007	tAvatA vArtA AgatA gAjApurasya pAvanaKiRqi sTAne bAjipraBuH mftaH iti
+sp011-000501_007	mahArAjasyopari jAtaH vajrAGAtaH avarRanIyaH AsIt
+sp011-000502_007	SivarAjasya sahacarAH svarAjyasya rakzaRArTam pratipadam prARasamarpaRam kartum sidDAH Asan
+sp011-000503_007	kintu tAdfSe avasare SivarAjasya hfdayam dAruRavedanAm anuBavati sma
+sp011-000504_007	SayisteKAnAya daRqaH sUratasya luRWanam ca
+sp011-000505_007	viSAladurgAt SivarAjaH rAjadurgam prati AgatavAn
+sp011-000506_007	tatra tasya mAtuH hfdayam vyAkulatayA pratIkzAratam AsIt
+sp011-000507_007	ekavarzAnantaram mAtAputrayoH melanam AsIt
+sp011-000508_007	tatrApi mftyumuKAt putraH surakzitarUpeRa pratyAgataH AsIt
+sp011-000509_007	tAdfSyAH BAgyaSAlinyAH mAtuH AnandaH SabdEH kaTam varRayitum SakyaH syAt
+sp011-000510_007	panhALadurgAt SivarAjasya surakzitarUpeRa palAyanasya vArtA SayisteKAnena jYAtA
+sp011-000511_007	saH vArtAm SrutvA diNmUQaH aBavat
+sp011-000512_007	cAkaRasadfSam laGudurgam vaSIkartum tena sArDamAsadvayAtmakaH kAlaH svIkftaH AsIt
+sp011-000513_007	marAWajanAnAm pratIkArasya praKaratA tadA eva tena avagatA AsIt
+sp011-000514_007	itaHparam tu tena sAkzAt SivarAjaH sammuKIkaraRIyaH AsIt
+sp011-000515_007	panhALadurgAt SivarAjasya surakzitarUpeRa nirgamanasya vArtAYjYAtvA AdilaSAhaH kroDena unmattaH aBavat
+sp011-000516_007	kintu pratIkAraH kasya upari sADanIyaH
+sp011-000517_007	tasya kopasya Palam siddijOhareRa anuBUtam
+sp011-000518_007	ezaH eva utkocam svIkftya SivarAjam tyaktavAn iti tena AropaH kftaH
+sp011-000519_007	varAkaH jOharaH
+sp011-000520_007	saSradDasevAyAH uttamam pratiPalam prAptam tena
+sp011-000521_007	kopAvizwaH sultAnaH SivarAjasya jOharasya ca unmUlanam karaRIyam iti saNkalpya svayam sasEnyam prasTitavAn
+sp011-000522_007	ezA vArtA SivamahArAjena jYAtA
+sp011-000523_007	tasmin samaye raRANgaRadvaye yudDakaraRam tena Sakyam na AsIt
+sp011-000524_007	SayisteKAnasya palAyanam kArayitum tena sarvA SaktiH ekatra melanIyA AsIt
+sp011-000525_007	panhALadurgasya pramuKAya tryambaka pantAya durgam siddijOharAya samarpya sasEnyam atra AgacCatu iti sUcanAm prezitavAn
+sp011-000526_007	tadanusAram tryambakapantaH mahArAjena militavAn
+sp011-000527_007	sultAnena kftena avamAnanena jOharaH krudDaH
+sp011-000528_007	bijApurasya fRam mAstu iti niScitya saH karRAwakasya diSi gatavAn
+sp011-000529_007	AdilaSAhaH tam tatrApi na tyaktavAn
+sp011-000530_007	mArge eva tena vizaprASanam kAritavAn saH
+sp011-000531_007	SivarAjasya pfzWataH anuDAvanam vAyoH anusaraRam ca samAnam iti niScitya saH pratigatavAn
+sp011-000532_007	varzAkAle nUtanatayA AkramaRasya sAhasam SayisteKAnaH na kftavAn
+sp011-000533_007	varzAkAlasya samApteH anantaram saH triMSat sahastreRa sEnikEH saha svasya prasidDanAyakam karatalabaKAnam SivarAjasya upari AkramaRArTam prezitavAn
+sp011-000534_007	karatalabaKAnena saha nAyikA rAyabAginI api AsIt
+sp011-000535_007	KAnasya praTamam AkramaRam koNkaRasya araRyapradeSe iti jYAtvA eva sA AScarya cakitA aBavat
+sp011-000536_007	kintu jyezWam nAyakam prativacanam vaktum na Saknoti sma sA
+sp011-000537_007	aparatra navarAtrotsavasya pUjAm prApya SivarAjasya BavAnIKaqgaH nUtanaSatrusaMhArasya raktapAnasya ca pratIkzAyAm AsIt
+sp011-000538_008	paScimaGawwam avatIrya KAnasya sEnyam guptarUpeRa tuNgAraRyam prAviSat
+sp011-000539_008	tAvatA tasmin araRye rahasyarUpeRa sTitAH netAjeH sEnikAH buBukzitAH vyAGrAH iva KAnasEnyam AkrAntavantaH
+sp011-000540_008	anirIkzitena prahAreRa KAnasEnyam uDvastam jAyamAnam AsIt
+sp011-000541_008	pUrvam jAvaLIpradeSe aPajalaKAnena prAptA durgatiH eva karatalabaKAnena api prAptA
+sp011-000542_008	tadA rAyabAginI KAnam sUcitavatI siMhasya guhAm pravizwavataH anyA kA gatiH Bavitum arhati
+sp011-000543_008	BavAn SivarAjam SaraRam gacCatu
+sp011-000544_008	tena prARarakzaRam vA Bavet
+sp011-000545_008	anyaH mArgaH nAsti idAnIm iti
+sp011-000546_008	mahArAjaH SvetASvam Aruhya umbaraKiRqi upari pratyakzaH aBavat
+sp011-000547_008	rAjocitaveSakAraRataH aSvArUQasya tasya DIragamBIrarUpakAraRataH ca uttuNgaSiKarasya upari tasya rUpam atiBavyarUpeRa vijfmBate sma
+sp011-000548_008	KAnasya dUtaH tatra Agatya nAnAviDarUpeRa dayABikzAm yAcitavAn
+sp011-000549_008	mahArAjasya uddeSaH api pUrRaH AsIt
+sp011-000550_008	saH yudDam sTagayitum svasEnyam AdizwavAn
+sp011-000551_008	KAnAt praBUtAni upAyanAni prApya mahArAjena tasmE jIvadAnam kftam
+sp011-000552_008	tasya apArA yudDasAmagrI ESvaryam ca SivamahArAjasya hastagatam aBavat
+sp011-000553_008	SayisteKAnasya upari sADitaH praTamaH pracaRqaH vijayaH AsIt saH
+sp011-000554_008	tataH SivamahArAjasya krudDadfzwiH rAjApurasya diSi patitA
+sp011-000555_008	tatra prAcInam fRam kiYcit pratyarpaRIyam AsIt
+sp011-000556_008	panhALadurgasyopari prasPuwitAyAH iNglIzajanAnAm mahABuzuRqeH nAdaH idAnImapi mahArAjasya karRe guYjati sma
+sp011-000557_008	tezu dinezu rAjApuram bijApurasya ASraye sTitam pramuKam briwizvARijyakendram AsIt
+sp011-000558_008	mahArAjasya vijayASvaH samudratIrasTe koNkaRapradeSe utsAhena DAvanam ArabDavAn
+sp011-000559_008	tasya pramuKam lakzyam tu rAjApuram AsIt
+sp011-000560_008	catussahasrasEnikEH saha haWAt mahArAjaH tasya nagarasya upari AkramaRam akarot
+sp011-000561_008	tatratyAn deSIyavideSIyavaRijaH AhUya daRqaSulkarUpeRa upAyanAni prAptavAn
+sp011-000562_008	kintu iglIzajanAn na AhUtavAn
+sp011-000563_008	yataH mahArAjaH svayam tatra gatvA melitum icCati sma
+sp011-000564_008	kintu tAvatA henrI reviNgawan gIParq ityAdayaH kecana sajjanAH mugDatAm pradarSayantaH SivarAjasya melanArTam AgatAH
+sp011-000565_008	tAn dfzwvA koDataptaH mahArAjaH etAn vaYcakAn gfhRantu iti AjYApitavAn
+sp011-000566_008	tasya AjYAm anusftya sEnikAH tAn itarAn iglIzajanAn ca gfhItavantaH
+sp011-000567_008	iNglIzajanAnAm sarvA sampat prakzAlitA aBavat
+sp011-000568_008	iglIzajanAnAm ahaNkArasya damanam aBavat
+sp011-000569_008	panhALadurge AtmanA kftasya pApasya prAyaScittam anuBUtavantaH te
+sp011-000570_008	mahArAjaH iglIzabanDinaH varzadvayam yAvat kArAgfhe sTApayitvA anantaram vimuktavAn
+sp011-000571_008	asmin avasare kasyApi nirDanasya sampat marAWEH na spfzwA iti tu stutyarhaH vizayaH eva
+sp011-000572_008	rAjApure itaraDanakanakEH saha amUlyam ratnamekam SivarAjaH prAptavAn
+sp011-000573_008	tat ratnam AsIt bALAji AvajiH
+sp011-000574_008	atyantam pratiBAvAn saH agre mahArAjasya AptakAryadarSI aBavat
+sp011-000575_008	svasya pradeSe jAyamAnam vinASam AdilaSAhaH mOnena avalokayan AsIt
+sp011-000576_008	saH ananyagatikaH AsIt
+sp011-000577_008	saH sarvARi tantrARi upayujya viPalaH jAtaH AsIt
+sp011-000578_008	tasya nAyakAH sarve hatapraBAH jAtAH Asan
+sp011-000579_008	nirASatayA baqiyAbegam mekkAyAtrArTam prasTitavatI
+sp011-000580_008	mUzakasya aprAptyA mArjAlena sannyAsaH svIkftaH AsIt
+sp011-000581_008	itaH param viSAladurge militO uBO AstAm saNgameSvarasya jasavanta rAvaH SfNgArapurasya sUryarAvaH ca
+sp011-000582_008	tayoH fRam pratyarpaRIyam AsIt
+sp011-000583_008	tayoH saMsTAnAni SivarAjaH svarAjye yojitavAn
+sp011-000584_008	tadAraBya SivAjeH ADInye sTitiH eva kzemakarI iti SfNgArapurasya sUryarAvaH niScitavAn
+sp011-000585_008	panhALasya gaRanAnAm vyavahAraH samAptaH aBavat
+sp011-000586_008	nUtane pradeSe sarvatra svarAjyasya saMsTApanam aBavat
+sp011-000587_008	tasya suganDaH sarvatra prasftaH
+sp011-000588_008	tadA eva pratApadurgasya upari SivarAjaH BavAnyAH pratizWApanam kftavAn
+sp011-000589_008	itaH param SayisteKAnasya paryAyaH
+sp011-000590_008	vfkayudDatantra ganImakAvA dvArA netAjiH SayisteKAnam GAtayan eva AsIt
+sp011-000591_008	ekadA tu saH azwasahasram sEnikAn svIkftya mogalasEnyasya upari AkramaRam kftavAn
+sp011-000592_008	tena prahAreRa kaTaYcit AtmAnam rakzat mogalasEnyam netAjeH sEnyam anvasarat
+sp011-000593_008	anuDAvanam kurvat tat sEnyam kiYciddUram kAnane nItvA netAjeH sEnyam adfSyam aBavat
+sp011-000594_008	tasmin eva samaye mogalasEnyasya aparasmina pArSve vidyamAnAH netAjeH dvisahasram sEnikAH anATam Sibiram nirAtaNkam luRWitavantaH
+sp011-000595_008	pawagfhARi prARinaH vipulAni SastrAstrARi ca marAWAnAm vaSIBUtAni aBavan
+sp011-000596_008	tadA eva mahArAjaH SayisteKAnasya aparam viKyAtanAyakam nAmadAraKAnam parAjitavAn

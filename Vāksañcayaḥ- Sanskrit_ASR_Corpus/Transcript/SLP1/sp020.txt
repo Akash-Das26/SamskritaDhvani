@@ -1,0 +1,614 @@
+sp020-000001_1998-02-pg16_BM_VV	kftaGnaH brAhmaRaH
+sp020-000002_1998-02-pg16_BM_VV	leKakaH hIrendrakumAraSarmA
+sp020-000003_1998-02-pg16_BM_VV	pUrvam gOtamaH nAma kaScit brAhmaRaH AsIt
+sp020-000004_1998-02-pg16_BM_VV	svaBAvena atIva duzwaH saH BikzAwanam kurvan jIvanam karoti sma
+sp020-000005_1998-02-pg16_BM_VV	pApakAryARi api Acarati sma
+sp020-000006_1998-02-pg16_BM_VV	kadAcit kaScana DarmanizWaH vidvAn tat nagaram AgatavAn
+sp020-000007_1998-02-pg16_BM_VV	saH gOtamam dfzwvA BavAn pApakAryARi tyajatu iti tam boDitavAn
+sp020-000008_1998-02-pg16_BM_VV	gOtamaH tasya upadeSAt praBAvitaH san DanaprApteH upAyam cintayan yAtrAm ArabDavAn
+sp020-000009_1998-02-pg16_BM_VV	yAtrAsamaye saH araRyamaDye mArgaBrazwaH aBavat
+sp020-000010_1998-02-pg16_BM_VV	tatra itastataH saYcaran saH ekam upavanam pravizwavAn
+sp020-000011_1998-02-pg16_BM_VV	tatra maharzeH kaSyapasya putraH rAjaDarmA nAmakaH haMsaH nivasati sma
+sp020-000012_1998-02-pg16_BM_VV	gOtamaH SrAntyA kasyacit vfkzasya aDaH upavizwavAn
+sp020-000013_1998-02-pg16_BM_VV	saH eva vfkzaH tasya haMsasya vAsasTAnam AsIt
+sp020-000014_1998-02-pg16_BM_VV	sAyaNkAle svavAsasTAnam prati AgataH haMsaH tatra upavizwam gOtamam dfzwavAn
+sp020-000015_1998-02-pg16_BM_VV	atiTisatkAraparAyaRaH saH svaparicayam uktvA tam PalAdiBiH satkftavAn
+sp020-000016_1998-02-pg16_BM_VV	tasya SayanArTam puzpEH eva komalAm SayyAm api sajjIkftavAn
+sp020-000017_1998-02-pg16_BM_VV	tatra Sayitam gOtamam svaDavalapakzAByAm vIjayan prItyA samBAzaRam kftavAn
+sp020-000018_1998-02-pg16_BM_VV	kimarTam atra AgatavAn ityapi pfzwavAn
+sp020-000019_1998-02-pg16_BM_VV	gOtamaH svakIyam dAridryam varRayitvA DanaprAptaye aham prayatnam karomi iti uktavAn
+sp020-000020_1998-02-pg16_BM_VV	rAjaDarmA tasya sAhAyyam kartum izwavAn
+sp020-000021_1998-02-pg16_BM_VV	saH gOtamam uktavAn itaH triyojanadUre mama mitram rAkzasarAjaH nivasati
+sp020-000022_1998-02-pg16_BM_VV	BavAn tatra gacCatu
+sp020-000023_1998-02-pg16_BM_VV	saH sAhAyyam karizyati iti
+sp020-000024_1998-02-pg16_BM_VV	prAtaHkAle gOtamaH tataH prasTAya rAkzasarAjasya samIpam AgatavAn
+sp020-000025_1998-02-pg16_BM_VV	rAkzasarAjaH tu saH svamitreRa rAjaDarmaRA prezitaH iti jYAtvA Anandena tasya AtiTyam kftavAn
+sp020-000026_1998-02-pg16_BM_VV	tasmE bahu Danam api dattavAn
+sp020-000027_1998-02-pg16_BM_VV	anantaradine prAtaH tataH prasTAya gOtamaH tadeva vanam AgatavAn yatra rAjaDarmA AsIt
+sp020-000028_1998-02-pg16_BM_VV	tam dfzwrA atIva santuzwaH rAjaDarmA adyApi tasya AtiTyam kftavAn
+sp020-000029_1998-02-pg16_BM_VV	uttamam Bojanam dattavAn
+sp020-000030_1998-02-pg16_BM_VV	BojanAntaram vanyapaSuByaH tasya rakzaRArTam agnim jvAlitavAn
+sp020-000031_1998-02-pg16_BM_VV	ucitasTAne tasya SayanArTam api vyavasTAm kftavAn
+sp020-000032_1998-02-pg16_BM_VV	svayam api tasya pArSve eva Sayanam kftavAn
+sp020-000033_1998-02-pg16_BM_VV	maDyarAtre gOtamasya nidrABaNgaH jAtaH
+sp020-000034_1998-02-pg16_BM_VV	tadA tasya manasi duzwavicAraH utpannaH
+sp020-000035_1998-02-pg16_BM_VV	saH cintitavAn yat mama gfham itaH bahudUre asti
+sp020-000036_1998-02-pg16_BM_VV	loBavaSAt mayA rAkzasarAjAt bahu Danam svIkftam asti
+sp020-000037_1998-02-pg16_BM_VV	tasya BAraH mahAn eva asti
+sp020-000038_1998-02-pg16_BM_VV	mArgamaDye BojanArTam kimapi na laByeta api
+sp020-000039_1998-02-pg16_BM_VV	ataH etam sTUlam haMsam eva mArayitvA nayAmi
+sp020-000040_1998-02-pg16_BM_VV	tena mArge BojanasamasyAyAH parihAraH Bavizyati
+sp020-000041_1998-02-pg16_BM_VV	evam cintayitvA saH krUraH brAhmaRaH pArSve Sayitam tam nizpApam haMsam mAritavAn
+sp020-000042_1998-02-pg16_BM_VV	agnO tasya mAMsam paktvA tat Danam ca gfhItvA tataH nirgatavAn
+sp020-000043_1998-02-pg16_BM_VV	atrAntare rAkzasarAjaH virUpAkzaH api mitrasya vizaye cintitaH AsIt
+sp020-000044_1998-02-pg16_BM_VV	saH svaputram uktavAn putra mama paramamitram rAjaDarmA pratidinam atra AgacCati sma
+sp020-000045_1998-02-pg16_BM_VV	parantu dinadvayAt na AgatavAn eva
+sp020-000046_1998-02-pg16_BM_VV	mama manasi cintA Bavati
+sp020-000047_1998-02-pg16_BM_VV	tasya brAhmaRasya lakzaRAni api SuBasUcakAni na Asan
+sp020-000048_1998-02-pg16_BM_VV	ataH BavAn gatvA mama mitram kaTam asti iti dfzwvA AgacCatu iti
+sp020-000049_1998-02-pg16_BM_VV	pituH AdeSAnusAram rAjakumAraH anyEH rAkzasEH saha rAjaDarmaRaH nivAsasTAnam gatavAn
+sp020-000050_1998-02-pg16_BM_VV	parantu tena tatra rAja DarmaRaH asTIni eva prAptAni
+sp020-000051_1998-02-pg16_BM_VV	kupitaH saH gOtamasya anvezaRam ArabDavAn
+sp020-000052_1998-02-pg16_BM_VV	anatikAle tataH nAtidUre eva rAkzasAH gOtamam dfzwavantaH
+sp020-000053_1998-02-pg16_BM_VV	tam badDvA rAkzasa rAjasya samIpam AnItavantaH
+sp020-000054_1998-02-pg16_BM_VV	pravfttam sarvam tam niveditavantaH ca
+sp020-000055_1998-02-pg16_BM_VV	mitrasya rAjaDarmaRaH maraRavArtAm SrutvA rAkzasarAjaH mUrCitaH aBavat
+sp020-000056_1998-02-pg16_BM_VV	kiYcitkAlAnantaram mUrCAtaH utTitaH saH kopena
+sp020-000057_1998-02-pg16_BM_VV	BoH rAkzasAH etam kftaGnam brAhmaRam mArayitvA etasya mAMsam KAdantu iti uktavAn
+sp020-000058_1998-02-pg16_BM_VV	parantu rAkzasAH rAjan etam pApAtmAnam vayam KAditum na icCAmaH
+sp020-000059_1998-02-pg16_BM_VV	yato hi asya kftaGnasya mAMsam KAditvA vayam api pApinaH eva BavizyAmaH
+sp020-000060_1998-02-pg16_BM_VV	asmin loke sarvapApAnAm prAyaScittam Bavatyeva
+sp020-000061_1998-02-pg16_BM_VV	parantu viSvAsaGAtasya na kimapi prAyaScittam
+sp020-000062_1998-02-pg16_BM_VV	ataH vayam kzantavyAH iti uktavantaH
+sp020-000063_1998-02-pg16_BM_VV	tadanantaram rAkzasarAjaH gOtamasya SarIram KaRqaSaH kArayitvA anyeByaH prARiByaH dattavAn
+sp020-000064_1998-02-pg16_BM_VV	parantu prARiBiH pakziBiH kIwEH api kftaGnasya tasya mAMsam na KAditam eva
+sp020-000065_1998-02-pg16_BM_VV	tataH rAkzasarAjaH rAjaDarmaRaH antyasaMskArasya vyavasTAm kftavAn
+sp020-000066_1998-02-pg16_BM_VV	candanacitAm nirmAya tasya upari asTIni sTApitavAn
+sp020-000067_1998-02-pg16_BM_VV	tasminneva samaye AkASamArge kAmaDenuH indreRa saha gacCantI AsIt
+sp020-000068_1998-02-pg16_BM_VV	tasyAH muKAt kecana amftabindavaH tadupari patitavantaH
+sp020-000069_1998-02-pg16_BM_VV	tena rAjaDarmA jIvitaH aBavat
+sp020-000070_1998-02-pg16_BM_VV	jIvitam mitram dfzwvA atIva prasannaH rAkzasarAjaH prItyA tam AliNgitavAn
+sp020-000071_1998-02-pg16_BM_VV	mahABAratataH udDftA kaTA
+sp020-000072_1998-02-pg18_BM_VV	nipuRaH nyAyADikArI
+sp020-000073_1998-02-pg18_BM_VV	leKakaH kOlagI SezAcAryaH
+sp020-000074_1998-02-pg18_BM_VV	kasmiMScit nagare kaScana nyAyADikArI AsIt
+sp020-000075_1998-02-pg18_BM_VV	saH nyAyavitaraRe atIva dakzaH iti prasidDaH AsIt
+sp020-000076_1998-02-pg18_BM_VV	tasya rAjyasya rAjA etAm vArtAm jYAtavAn
+sp020-000077_1998-02-pg18_BM_VV	tam nyAyADikAriRam parIkzitum izwavAn ca
+sp020-000078_1998-02-pg18_BM_VV	tadarTam saH rAjA svasya vezaparivartanam kftvA vaRik iva vARijyam kurvan
+sp020-000079_1998-02-pg18_BM_VV	tasya nyAyADikAriRaH nagaram prati prasTitaH
+sp020-000080_1998-02-pg18_BM_VV	mArge kaScana BikzukaH tena dfzwaH
+sp020-000081_1998-02-pg18_BM_VV	saH BikzukaH BikzAwanam kurvan AsIt
+sp020-000082_1998-02-pg18_BM_VV	saH vaRijaH samIpam api Agatya BikzAm yAcitavAn
+sp020-000083_1998-02-pg18_BM_VV	tadA vaRigvezaDaraH rAjA tasmE ekam nARakam dattvA tataH prasTAtum udyuktaH
+sp020-000084_1998-02-pg18_BM_VV	Jawiti saH BikzukaH svayam vaRijaH aSvasya upari ArohaRam kftvA
+sp020-000085_1998-02-pg18_BM_VV	mAm api vARijyamelAm nayatu iti uktavAn
+sp020-000086_1998-02-pg18_BM_VV	sA vARijyamelA tu etasya nyAyADikAriRaH nagare eva pracalati sma
+sp020-000087_1998-02-pg18_BM_VV	rAjA aSvam prerayan tat nagaram Agatya Bikzukam aSvAt avataratu iti uktavAn
+sp020-000088_1998-02-pg18_BM_VV	tadA BikzukaH ezaH aSva madIyaH
+sp020-000089_1998-02-pg18_BM_VV	BavAn eva avataratu iti uktavAn
+sp020-000090_1998-02-pg18_BM_VV	dvayoH maDye vivAdaH utpannaH
+sp020-000091_1998-02-pg18_BM_VV	antato gatvA api parihAraH na labDaH
+sp020-000092_1998-02-pg18_BM_VV	tadA rAjA nyAyADikAriRaH samakzam gatvA pravfttam sarvam niveditavAn
+sp020-000093_1998-02-pg18_BM_VV	nyAyADikArI rakzakaBawan AhUya tam Bikzukam aSvasahitam atra Anayantu iti AjYApitavAn
+sp020-000094_1998-02-pg18_BM_VV	yadA BikzukaH aSvena sAkam AgataH tadA nyAyADikArI ezaH aSvaH adya atrEva Bavatu
+sp020-000095_1998-02-pg18_BM_VV	SvaH uBO api nyAyAlayam AgacCatAm
+sp020-000096_1998-02-pg18_BM_VV	tadA nirRayam dAsyAmi iti uktvA tO prezitavAn
+sp020-000097_1998-02-pg18_BM_VV	atrAntare nyAyADikArI vaRijaH aSvasadfSAn eva bahUn aSvAn AnAyya
+sp020-000098_1998-02-pg18_BM_VV	nyAyAlayasya prANgaRe sTApitavAn
+sp020-000099_1998-02-pg18_BM_VV	aparasmin dine dvO api nyAyAlayam AgatavantO
+sp020-000100_1998-02-pg18_BM_VV	nyAyADikArI AdO Bikzukam AhUya etezu aSvezu BavadIyaH aSvaH kaH iti aBijAnAtu iti AdizwavAn
+sp020-000101_1998-02-pg18_BM_VV	BikzukaH aSvam darSitavAn
+sp020-000102_1998-02-pg18_BM_VV	idAnIm nyAyADikArI vaRijam pfTak AhUya tam api aSvam aBijYAtum AdizwavAn
+sp020-000103_1998-02-pg18_BM_VV	saH api tameva aSvam darSitavAn
+sp020-000104_1998-02-pg18_BM_VV	tataH nyAyADikArI nirRayam dattavAn yat aSvaH vaRijaH eva na tu Bikzukasya iti
+sp020-000105_1998-02-pg18_BM_VV	nirASaH BikzukaH lajjayA tataH nirgatavAn
+sp020-000106_1998-02-pg18_BM_VV	tadA rAjA AtmanaH vAstavikam paricayam uktvA nyAyADikAriRam pfzwavAn
+sp020-000107_1998-02-pg18_BM_VV	BavAn kaTam nirRaya kftavAn yat aSvaH madIyaH eva iti
+sp020-000108_1998-02-pg18_BM_VV	nyAyADikArI uktavAn yadA aham Bikzukam aSvasya samIpam nItavAn
+sp020-000109_1998-02-pg18_BM_VV	tadA aSvaH tasya vizaye tiraskAraBAvam darSitavAn
+sp020-000110_1998-02-pg18_BM_VV	parantu yadA Bavantam nItavAn tadA aSvaH Bavate snigDaBAvam pradarSitavAn
+sp020-000111_1998-02-pg18_BM_VV	ataH aSvasya vyavahAram dfzwvA eva aham nirRItavAn yat aSvaH BavadIyaH
+sp020-000112_1998-02-pg18_BM_VV	nyAyADikAriRaH vacanena mahArAjaH nitarAm santuzwaH aBavat
+sp020-000113_1998-05-pg16_BM_VV	BUgolasya AkAraH
+sp020-000114_1998-05-pg16_BM_VV	leKakaH rAGavaH hariharapurAt
+sp020-000115_1998-05-pg16_BM_VV	kadAcit aDyApakaH BUgolaSAstram pAWayan pfzwavAn
+sp020-000116_1998-05-pg16_BM_VV	SvaH nirIkzakaH Agamizyati
+sp020-000117_1998-05-pg16_BM_VV	yadi saH BUgolasya AkAraH kaH iti pfcCati tarhi kim uttaram vaktavyam iti
+sp020-000118_1998-05-pg16_BM_VV	koऽpi CAtraH uttaram na uktavAn
+sp020-000119_1998-05-pg16_BM_VV	tadA aDyApakaH kopena evam BavantaH mOnena tizWanti cet
+sp020-000120_1998-05-pg16_BM_VV	asmAkam vidyAlayasya gOravam apagacCati
+sp020-000121_1998-05-pg16_BM_VV	ezaH BUgolasya AkAraH
+sp020-000122_1998-05-pg16_BM_VV	smarantu sarve iti vadan saH svasya naSyakaraRqakam darSitavAn
+sp020-000123_1998-05-pg16_BM_VV	tat naSyakaraRqakam golAkArakam AsIt
+sp020-000124_1998-05-pg16_BM_VV	anantaradine nirIkzakaH vidyAlayam AgatavAn
+sp020-000125_1998-05-pg16_BM_VV	BUgolasya AkAraH kaH iti ekam CAtram pfzwavAn saH
+sp020-000126_1998-05-pg16_BM_VV	tadA saH CAtraH utTAya uktavAn
+sp020-000127_1998-05-pg16_BM_VV	SrIman BUgolam hyaH golAkArakam AsIt
+sp020-000128_1998-05-pg16_BM_VV	tat adya caturastrAkArakam asti iti
+sp020-000129_1998-05-pg16_BM_VV	aDyApakaH pUrvadine golAkArakam naSyakaraRqakam AnItavAn AsIt
+sp020-000130_1998-05-pg16_BM_VV	tasmin dine tu tasya naSyakaraRqakam caturasrAkArakam AsIt
+sp020-000131_1998-05-pg16_BM_VV	ataH saH CAtraH taTA uttaram dattavAn AsIt
+sp020-000132_1998-06-pg22_BM_VV	samayaH balavattaraH
+sp020-000133_1998-06-pg22_BM_VV	leKikA addepallI rAjeSvarI
+sp020-000134_1998-06-pg22_BM_VV	ekadA vizRuH kasyacit kAryasya nimittam SaNkaram drazwum kElAsam AgatavAn
+sp020-000135_1998-06-pg22_BM_VV	tena saha vizRoH vAhanam garuqaH api AgataH AsIt
+sp020-000136_1998-06-pg22_BM_VV	vizRuSaNkarayoH vArtAlApaH pracalan AsIt
+sp020-000137_1998-06-pg22_BM_VV	kAryarahitaH garuqaH kElAse BramaRam kftvA AgacCAmi iti vicintya tataH nirgatavAn
+sp020-000138_1998-06-pg22_BM_VV	pariBramaRam kurvan garuqaH ekam AScaryakaram dfSyam dfzwavAn
+sp020-000139_1998-06-pg22_BM_VV	kElAse sahasrADikAnAm sarpARAm samUhaH tatra tatra awati sma
+sp020-000140_1998-06-pg22_BM_VV	te sarve sarpAH garuqam upekzya eva nirBayena awanti sma
+sp020-000141_1998-06-pg22_BM_VV	garuqam paritaH Bramanti sma api
+sp020-000142_1998-06-pg22_BM_VV	sarpARAm vyavahAram asahamAnaH garuqaH tezAm pfzWataH DAvitavAn
+sp020-000143_1998-06-pg22_BM_VV	tadA sarveऽpi sarpAH Sivasya SarIram pravizwavantaH
+sp020-000144_1998-06-pg22_BM_VV	Sivasya jawAsu grIvAyAm vakzasi ca upavItAH iva ABaraRAni iva ca sTitavantaH
+sp020-000145_1998-06-pg22_BM_VV	garuqasya upasTitO api sarpARAm nirBItim garuqasya mlAnamuKatAm ca dfzwvA vizRuH garuqam AhUtavAn
+sp020-000146_1998-06-pg22_BM_VV	svahastam tasya pfzWe sTApayitvA sAntvanam kurvan
+sp020-000147_1998-06-pg22_BM_VV	vatsa sarpAH BavataH apekzayA balavattarAH iti BavAn durbalaH iti vA mA cintayatu
+sp020-000148_1998-06-pg22_BM_VV	ezaH kElAsaH asti
+sp020-000149_1998-06-pg22_BM_VV	devAdidevasya BagavataH SaNkarasya AvAsasTAnam asti
+sp020-000150_1998-06-pg22_BM_VV	ataH Bavati sarpARAm anAdaraH yuktaH eva
+sp020-000151_1998-06-pg22_BM_VV	yataH sarpARAm SaktiH aDunA pinAkapARini SaNkare asti
+sp020-000152_1998-06-pg22_BM_VV	ataH BavAn sarpEH saha Satrutvam nirvartayitum asamarTaH Bavati
+sp020-000153_1998-06-pg22_BM_VV	aDunA sarpARAm eva samayaH balavattaraH asti iti uktavAn
+sp020-000154_1998-06-pg22_BM_VV	tadanantaram vizRoH hitavacanAni SrutvA
+sp020-000155_1998-06-pg22_BM_VV	garuqaH sarpamfgayAm parityajya kElAsam drazwum tataH nirgatavAn
+sp020-000156_1998-06-pg22_BM_VV	vizRupurARAntargatA kaTA
+sp020-000157_1998-06-pg23_BM_VV	aho paRqitasya BaktiH
+sp020-000158_1998-06-pg23_BM_VV	leKikA SoBanA
+sp020-000159_1998-06-pg23_BM_VV	kasmiMScit grAme kfzRaSarmA nAma paRqitaH nivasati sma
+sp020-000160_1998-06-pg23_BM_VV	caturzu api vedezu tasya mahat jYAnam AsIt
+sp020-000161_1998-06-pg23_BM_VV	bahavaH janAH vidyArjanAya kfzRaSarmaRaH gfham AgacCanti sma
+sp020-000162_1998-06-pg23_BM_VV	tasmin grAme kAcit nadI pravahati sma
+sp020-000163_1998-06-pg23_BM_VV	nadyAH aparasmin tIre ekA dugDavikretrI nivasati sma
+sp020-000164_1998-06-pg23_BM_VV	sA pratidinam kfzRaSarmaRaH gfham prati dugDam AnIya dadAti sma
+sp020-000165_1998-06-pg23_BM_VV	ekadA tasyAH asvAsTyam aBavat
+sp020-000166_1998-06-pg23_BM_VV	ataH dugDam vikretum sA svaputrIm prezitavatI
+sp020-000167_1998-06-pg23_BM_VV	tataH AraBya putrI eva tatkAryam karoti sma
+sp020-000168_1998-06-pg23_BM_VV	parantu sA bAlikA pratidinam vilambena dugDam AnIya dadAti sma
+sp020-000169_1998-06-pg23_BM_VV	etasmAt kAraRAt prAtaHkAle kfzRaSarmaRaH sarvARi api kAryARi vilambena karaRIyAni ApatitAni
+sp020-000170_1998-06-pg23_BM_VV	tasmAt kupitaH saH ekasmin dine tAm bAlikAm AhUya
+sp020-000171_1998-06-pg23_BM_VV	BavatyAH mAtA dugDam SIGram AnIya dadAti sma
+sp020-000172_1998-06-pg23_BM_VV	BavatI kimarTam vilambam karoti iti pfzwavAn
+sp020-000173_1998-06-pg23_BM_VV	paRqitasya vacanam SrutvA sA bAlikA Bayena
+sp020-000174_1998-06-pg23_BM_VV	mahAtman nadyAH taraRam kftvA eva mayA Agantavyam
+sp020-000175_1998-06-pg23_BM_VV	parantu uzasi Agantum Bayam anuBavAmi iti uktavatI
+sp020-000176_1998-06-pg23_BM_VV	tadA paRqitaH kim Bayam vA saDEryam gacCatu
+sp020-000177_1998-06-pg23_BM_VV	sarvatra BagavAn asti Kalu
+sp020-000178_1998-06-pg23_BM_VV	sarvAntaryAminaH BagavataH rAmasya nAmasmaraRam kurvatI prAtaH SIGram AgacCatu iti AjYApitavAn
+sp020-000179_1998-06-pg23_BM_VV	aparasmin dine paRqitasya utTAnAt pUrvameva sA bAlikA dugDam AnIya sTApitavatI AsIt
+sp020-000180_1998-06-pg23_BM_VV	mandahAsam kurvatIm tAm bAlikAm kfzRaSarmA AScaryeRa dfzwavAn
+sp020-000181_1998-06-pg23_BM_VV	tadA sA SrIman BavataH vacanAnusAram rAmanAmasmaraRam kurvatI nadyAH taraRam kftvA AgatavatI
+sp020-000182_1998-06-pg23_BM_VV	BagavAn rAmaH rakzakaH iva mayA saha AgatavAn
+sp020-000183_1998-06-pg23_BM_VV	kiYcidapi Bayam na aBavat iti uktavatI
+sp020-000184_1998-06-pg23_BM_VV	paRqitaH sandehena tAm dfzwvA
+sp020-000185_1998-06-pg23_BM_VV	BavatyAH matiBramaRam jAtam kim
+sp020-000186_1998-06-pg23_BM_VV	SrIrAmaH kadApi na AgacCati
+sp020-000187_1998-06-pg23_BM_VV	tadapi BavAdfSyA ajYAninyA bAlikayA saha saH Agantum na arhati eva iti vadan hasitavAn
+sp020-000188_1998-06-pg23_BM_VV	tadA sA bAlikA tarhi mayA saha calatu
+sp020-000189_1998-06-pg23_BM_VV	BavAn eva paSyatu kim Bavati iti iti paRqitam uktvA
+sp020-000190_1998-06-pg23_BM_VV	AtmanA saha tam nadItIram nItavatI
+sp020-000191_1998-06-pg23_BM_VV	nadyAm jalapravAhaH mahatA vegena pravahati sma
+sp020-000192_1998-06-pg23_BM_VV	parantu nizkalmazamanasA sA bAlikA rAmanAmasmaraRam kurvatI nadItaraRam ArabDavatI
+sp020-000193_1998-06-pg23_BM_VV	nadyAH maDye sTitvA paRqitam AhUtavatI
+sp020-000194_1998-06-pg23_BM_VV	AScaryacakitaH san saH paRqitaH rAmanAmasmaraRam kurvan nadyAm pAdam sTApitavAn
+sp020-000195_1998-06-pg23_BM_VV	kiYciddUram gatavAn ca
+sp020-000196_1998-06-pg23_BM_VV	tAvati kAle nadyAm JajJAvAtaH ArabDaH
+sp020-000197_1998-06-pg23_BM_VV	tadA paRqitaH Bayena BoH mAm rakzatu nadItIre koऽpi asti kim
+sp020-000198_1998-06-pg23_BM_VV	iti rAmanAmasmaraRam tyaktvA uccEH Akrandanam kftavAn
+sp020-000199_1998-06-pg23_BM_VV	tadA bAlikA SrIman Bayam mAstu
+sp020-000200_1998-06-pg23_BM_VV	rAmanAma japam karotu atra AgacCatu iti SAntasvareRa uktavatI
+sp020-000201_1998-06-pg23_BM_VV	parantu paRqitaH tasyAH vacanam na SrutavAn
+sp020-000202_1998-06-pg23_BM_VV	Akrandanam kurvan saH jale nimagnaH aBavat
+sp020-000203_1998-06-pg23_BM_VV	paRqitasya hastO kevalam jalasyopari dfSyete sma
+sp020-000204_1998-06-pg23_BM_VV	tIrAt rAma rAma iti DvaniH SrUyate sma
+sp020-000205_1998-06-pg24_BM_VV	AjYAyAH anullaNGanam
+sp020-000206_1998-06-pg24_BM_VV	leKakaH candraSeKaraH
+sp020-000207_1998-06-pg24_BM_VV	kasmiMScit grAme kaScit nyAyADikArI AsIt
+sp020-000208_1998-06-pg24_BM_VV	tasmAt grAmasya janAH sarve BItAH Bavanti sma
+sp020-000209_1998-06-pg24_BM_VV	tasya AjYAm ullaNGaya kenApi grAmAt bahiH na gantavyam iti niyamaH AsIt
+sp020-000210_1998-06-pg24_BM_VV	tasmin eva grAme rAmaH BImaH iti dvO snehitO AstAm
+sp020-000211_1998-06-pg24_BM_VV	rAmaH kumBam nirmAti sma
+sp020-000212_1998-06-pg24_BM_VV	BImaH SavayAnam nirmAti sma
+sp020-000213_1998-06-pg24_BM_VV	dvO api paropakAriRO AstAm
+sp020-000214_1998-06-pg24_BM_VV	ekadA BImaH nyAyADikAriRaH anumati vinA nagaram AgatavAn
+sp020-000215_1998-06-pg24_BM_VV	tasmin eva samaye nyAyADikAriRaH banDoH gfhe kAcit vfdDA divaNgatA
+sp020-000216_1998-06-pg24_BM_VV	tadA SavayAnanirmARArTam BImaH na AsIt
+sp020-000217_1998-06-pg24_BM_VV	ataH kupitaH nyAyADikArI aparasmin dine BImam AhUya tarjayitvA
+sp020-000218_1998-06-pg24_BM_VV	itaH param mama anumati vinA kutrApi na gantavyam iti AdizwavAn
+sp020-000219_1998-06-pg24_BM_VV	anyasmin dine kenApi kAraRena rAmeRa BImena ca nagaram gantavyam Apatitam
+sp020-000220_1998-06-pg24_BM_VV	ataH tO nyAyADikAriRaH anumatim prAptum tasya gfham gatavantO
+sp020-000221_1998-06-pg24_BM_VV	parantu nyAyADikArI tasya mAtuH kfte OzaDam Anetum nagaram gatavAn AsIt
+sp020-000222_1998-06-pg24_BM_VV	nyAyADikAriRaH AjYAm ullaNGitum asamarTO tO bahu cintitavantO
+sp020-000223_1998-06-pg24_BM_VV	antato gatvA AvayoH anupasTitO api kasyApi kleSaH na Bavet
+sp020-000224_1998-06-pg24_BM_VV	iti Alocya nyAyADikAriRaH gfhasya purataH SavAyAnadvayam mftkumBadvayam ca sTApayitvA
+sp020-000225_1998-06-pg24_BM_VV	tO nagaram prati prasTitavantO
+sp020-000226_1998-06-pg24_BM_VV	yadi kasyApi etezAm AvaSyakatA Bavati tarhi saH upayogam karotu nAma
+sp020-000227_1998-06-pg24_BM_VV	iti cintayitvA niScintatayA tO gatavantO
+sp020-000228_1998-06-pg24_BM_VV	atrAntare nagaram gataH nyAyADikArI vEdyena saha eva grAmam AgatavAn
+sp020-000229_1998-06-pg24_BM_VV	gfhasya purataH sTitAn janAn SavayAnadvayam ca dfzwvA saH kampitaH aBavat
+sp020-000230_1998-06-pg24_BM_VV	mama Agamane tu vilambaH jAtaH iti vadan vEdyaH tataH eva nirgatavAn
+sp020-000231_1998-06-pg24_BM_VV	bahiH janAnAm kolAhalam SrutvA nyAyADikAriRaH patnI mAtA ca dvAram udGAwya dfzwavatyO
+sp020-000232_1998-06-pg24_BM_VV	te dfzwvA AScaryacakitaH san nyAyADikArI tataH vAstavikaparisTitim jYAtavAn
+sp020-000233_1998-06-pg24_BM_VV	svakIyam avivekam bahuDA ninditavAn ca
+sp020-000234_1998-07-pg17_BM_VV	na sevito yena kzaRam mukundaH
+sp020-000235_1998-07-pg17_BM_VV	leKakaH qAkwar haripAladvivedI
+sp020-000236_1998-07-pg17_BM_VV	maharziH SukaH mahAn tapasvI
+sp020-000237_1998-07-pg17_BM_VV	saH prApaYcikeByaH vizayeByaH vimuKaH san tapaH Acarati sma
+sp020-000238_1998-07-pg17_BM_VV	devalokasya apsarAH ramBA SukamaharzeH tapoBaNgam kartum izwavatI
+sp020-000239_1998-07-pg17_BM_VV	ataH sA tasya samIpam Agatya svIyavilAsaBAvAdiBiH tasya manaH Akrazwum bahu prayatnam kftavatI
+sp020-000240_1998-07-pg17_BM_VV	parantu tasyAH advitIyam sOndarya dfzwvA api SukaH vicalitaH na aBavat
+sp020-000241_1998-07-pg17_BM_VV	ramBA punarapi prayatnam anuvartitavatI
+sp020-000242_1998-07-pg17_BM_VV	tadA SukadevaH tAm pfzwavAn
+sp020-000243_1998-07-pg17_BM_VV	devi BavatI kimarTam mama manaH Akrazwum prayatnam karoti iti
+sp020-000244_1998-07-pg17_BM_VV	ramBA uktavatI aham BavataH tAdfSam rasapAnam kArayitum icCAmi
+sp020-000245_1998-07-pg17_BM_VV	yat BavatA jIvane kadApi na kftam iti
+sp020-000246_1998-07-pg17_BM_VV	SukadevaH uktavAn param devi
+sp020-000247_1998-07-pg17_BM_VV	aham tu adButasya kasyacit rasasya pAnam pratikzaRam kurvan asmi
+sp020-000248_1998-07-pg17_BM_VV	yadi tasmAt rasapAnAt kzaRamapi vaYcitaH BavAmi tarhi jIvanameva vyarTam Bavati
+sp020-000249_1998-07-pg17_BM_VV	arTAt na sevito yena kzaRam mukundaH vfTA gatam tasya narasya jIvanam
+sp020-000250_1998-07-pg17_BM_VV	BagavataH sevanam vinA kzaRamapi manuzyaH yadi tizWati
+sp020-000251_1998-07-pg17_BM_VV	tarhi tasya jIvanameva nirarTakam Bavati
+sp020-000252_1998-07-pg17_BM_VV	ataH devi aham tu mukundapadasevanarUpam rasapAnam kzaRamapi tyaktvA
+sp020-000253_1998-07-pg17_BM_VV	svajIvanam nirarTakam kartum na icCAmi
+sp020-000254_1998-07-pg17_BM_VV	tadvinA anyEH vizayEH mama kim iti
+sp020-000255_1998-07-pg17_BM_VV	taTApi ramBA nirASA na aBavat
+sp020-000256_1998-07-pg17_BM_VV	sA punarapi svakIyam sOndaryam varRayitum ArabDavatI
+sp020-000257_1998-07-pg17_BM_VV	sA uktavatI yat mahilA api BagavatA eva sfzwA
+sp020-000258_1998-07-pg17_BM_VV	ataH mahilA na upekzaRIyA
+sp020-000259_1998-07-pg17_BM_VV	anyacca BavAn na jAnAti yat
+sp020-000260_1998-07-pg17_BM_VV	nArISarIram tAdfSam suganDapUrRam Bavati
+sp020-000261_1998-07-pg17_BM_VV	yat yadi kaScit tat suKam na anuBavati
+sp020-000262_1998-07-pg17_BM_VV	tarhi tasya jIvanameva vyarTam Bavati
+sp020-000263_1998-07-pg17_BM_VV	tadA SukadevaH vinayena uktavAn
+sp020-000264_1998-07-pg17_BM_VV	devi BavatyAH kfpayA idampraTamatayA mayA jYAtam yat nArISarIram tAdfSam suganDapUrRam Bavati
+sp020-000265_1998-07-pg17_BM_VV	Bavatu yadi BagavatpreraRayA punarapi mama manuzyajanma Bavet
+sp020-000266_1998-07-pg17_BM_VV	tarhi etadeva icCAmi yat BavAdfSyAH pUjyAyAH mAtuH garBe navamAsaparyantam uzitvA tat suKam anuBavizyAmi
+sp020-000267_1998-07-pg17_BM_VV	idAnIm tu mayA BagavataH sevA eva karaRIyA asti
+sp020-000268_1998-07-pg17_BM_VV	BavatI mAm kzAmyatu iti
+sp020-000269_1998-07-pg17_BM_VV	paramajYAninA Sukadevena nArISarIrasya nindanam api na kftam
+sp020-000270_1998-07-pg17_BM_VV	svanizWAtaH vicalanam api na kftam
+sp020-000271_1998-07-pg17_BM_VV	tena vismitA ramBA svakIyam prayatnam parityajya pratigatavatI
+sp020-000272_1998-08-pg18_BM_VV	vivekASUnyaH rAjA
+sp020-000273_1998-08-pg18_BM_VV	leKakaH candraSeKaraH
+sp020-000274_1998-08-pg18_BM_VV	kasmiMScit rAjye kaScana mahArAjaH rAjyam karoti sma
+sp020-000275_1998-08-pg18_BM_VV	saH mahArAjaH svaBAvena uttamaH AsIt
+sp020-000276_1998-08-pg18_BM_VV	yadyapi saH uttamaH taTApi sarvadA kAryakaraRasamaye avicArya kAryam karoti sma
+sp020-000277_1998-08-pg18_BM_VV	tasya mantriRaH api tatsadfSAH eva Asan
+sp020-000278_1998-08-pg18_BM_VV	ekadA tasya rAjyasya pArSve sTite vane vasantaH vanavAsinaH rAjasaBAm AgatavantaH
+sp020-000279_1998-08-pg18_BM_VV	tezAm nAyakaH mahArAjam prArTitavAn
+sp020-000280_1998-08-pg18_BM_VV	mahArAja ezu dinezu asmAkam vanapradeSe vyAGrARAm atIva upadravaH asti
+sp020-000281_1998-08-pg18_BM_VV	kfpayA BavAn asmAn vyAGreByaH rakzatu iti
+sp020-000282_1998-08-pg18_BM_VV	vanavAsinAm vacanam SrutvA mahArAjaH kzaRakAlam cintitavAn
+sp020-000283_1998-08-pg18_BM_VV	anantaram saH uktavAn BavantaH niScintatayA tizWantu
+sp020-000284_1998-08-pg18_BM_VV	vyAGrapIqAnivAraRAya aham ucitAm vyavasTAm kalpayAmi iti
+sp020-000285_1998-08-pg18_BM_VV	anantaram saH SilpinaH AhUtavAn
+sp020-000286_1998-08-pg18_BM_VV	taddvArA ekam SilASAsanam leKitavAn ca
+sp020-000287_1998-08-pg18_BM_VV	tasmin SilASAsane evam liKitam AsIt yat
+sp020-000288_1998-08-pg18_BM_VV	asmin pradeSe vyAGrARAm praveSaH nizidDaH asti
+sp020-000289_1998-08-pg18_BM_VV	ataH itaHparam vyAGrAH atra na saYcareyuH
+sp020-000290_1998-08-pg18_BM_VV	sarveऽpi vyAGrAH anyat vanam gacCeyuH iti
+sp020-000291_1998-08-pg18_BM_VV	tataH mahArAjasya AjYAnusAram rAjaBawAH tat SilASAsanam nItvA
+sp020-000292_1998-08-pg18_BM_VV	vane yatra vyAGrAH aDikatayA saYcaranti tatra sTApitavantaH
+sp020-000293_1998-08-pg18_BM_VV	rAjA api vyAGrapIqAnivAraRAya mayA uttamaH upAyaH kftaH iti atIva santuzwaH aBavat
+sp020-000294_1998-08-pg18_BM_VV	yaTA rAjA taTA prajAH itivat te vanavAsinaH api nirBayena tatra saYcAram ArabDavantaH
+sp020-000295_1998-08-pg18_BM_VV	kramaSaH te sarve vyAGrARAm AhAraBUtAH aBavan
+sp020-000296_1998-10-pg15_BM_VV	sarvam BAgyAyattam
+sp020-000297_1998-10-pg15_BM_VV	leKakaH narasiMhaBawwaH
+sp020-000298_1998-10-pg15_BM_VV	kasmiMScit grAme kaScana kfzakaH svaputreRa saha nivasati sma
+sp020-000299_1998-10-pg15_BM_VV	ekadA saH kfzakaH svakzetre bIjAvApam kftavAn
+sp020-000300_1998-10-pg15_BM_VV	tasmin varze vfzwiH api samyak AsIt
+sp020-000301_1998-10-pg15_BM_VV	vAtAvaraRam api atyantam samIcInam AsIt
+sp020-000302_1998-10-pg15_BM_VV	aTa kadAcit kfzakaH putreRa saha kzetram gatavAn
+sp020-000303_1998-10-pg15_BM_VV	putraHkzetram dfzwvA pitaram uktavAn
+sp020-000304_1998-10-pg15_BM_VV	tAta asmin varze vfzwiH samyak asti
+sp020-000305_1998-10-pg15_BM_VV	bIjAvApaH api samaye eva kftaH asti
+sp020-000306_1998-10-pg15_BM_VV	ataH asmin varze DAnyAni aDikAni laByeran iti
+sp020-000307_1998-10-pg15_BM_VV	tadA pitA uktavAn putra sarvam BAgyAyattam iti
+sp020-000308_1998-10-pg15_BM_VV	kAnicana dinAni atItAni
+sp020-000309_1998-10-pg15_BM_VV	bIjAni sarvARi aNkaritAni aBavan
+sp020-000310_1998-10-pg15_BM_VV	tat dfzwvA putraH uktavAn
+sp020-000311_1998-10-pg15_BM_VV	tAta prAyaH sarvARi bIjAni aNkuritAni santi iti
+sp020-000312_1998-10-pg15_BM_VV	tadA pitA punaH sarvam BAgyAyattam iti uktavAn
+sp020-000313_1998-10-pg15_BM_VV	punaH dvitrAH mAsAH atItAH
+sp020-000314_1998-10-pg15_BM_VV	sarvARi aNkurARi sasyAni aBavan
+sp020-000315_1998-10-pg15_BM_VV	puzpam DAnyam ca varDitam
+sp020-000316_1998-10-pg15_BM_VV	tadA putraH punaH pitaH idAnIm bahuDAnyam laByeta
+sp020-000317_1998-10-pg15_BM_VV	asmABiH Avarzam yAvat niScintatayA Bojanam kartum Sakyate iti
+sp020-000318_1998-10-pg15_BM_VV	tadA api pituH uttaram AsIt sarvam BAgyAyattam ityeva
+sp020-000319_1998-10-pg15_BM_VV	gacCatA kAlena yadA DAnyam supakvam jAtam
+sp020-000320_1998-10-pg15_BM_VV	tadA DAnyAdikam kartayitvA sasyAni DAnyAni ca pfTakkftya gfham AnItavantaH
+sp020-000321_1998-10-pg15_BM_VV	tat DAnyam samIkftya tena annam api sidDam kftam
+sp020-000322_1998-10-pg15_BM_VV	kfzakasya gfhe sarve BojanArTam upavizwAH Asan
+sp020-000323_1998-10-pg15_BM_VV	tadA putraH pitaram uktavAn tAta paSyatu asmAkam purataH pariSramasya Palam asti iti
+sp020-000324_1998-10-pg15_BM_VV	tadA api pitA sarvam BAgyAyattam iti uktavAn
+sp020-000325_1998-10-pg15_BM_VV	pituH muKAt bahuvAram etat vacanam SrutvA
+sp020-000326_1998-10-pg15_BM_VV	krudDaH san putraH sTAlikAyAm vidyamAnasya annasya upari pAdAGAtam kftavAn
+sp020-000327_1998-10-pg15_BM_VV	Bojanam akftvA eva tataH utTitavAn
+sp020-000328_1998-10-pg15_BM_VV	kroDasya upaSamanAnantaram saH jYAtavAn yat pituH vacanam satyameva asti iti
+sp020-000329_1998-10-pg15_BM_VV	yataH ISvarecCAm vinA kimapi na Bavati
+sp020-000330_1998-10-pg15_BM_VV	purataH prasftezu annasya pulAkezu ekaH api KAditum yogyaH na AsIt
+sp020-000331_1998-10-pg15_BM_VV	tadA tasya muKAt api sarvam BAgyAyattam iti vacanam niHsftam
+sp020-000332_1998-10-pg16_BM_VV	AtmaboDaH
+sp020-000333_1998-10-pg16_BM_VV	leKakaH vivekAnandaH
+sp020-000334_1998-10-pg16_BM_VV	kasmiMScit grAme kAcit mAtA svaputreRa saha kazwena jIvanam yApayati sma
+sp020-000335_1998-10-pg16_BM_VV	putre mAtuH mahatI prItiH AsIt
+sp020-000336_1998-10-pg16_BM_VV	ekadA putraH gfhasya dvAre upavizwavAn AsIt
+sp020-000337_1998-10-pg16_BM_VV	tasmin samaye mArge kaScana puruzaH gacCan AsIt
+sp020-000338_1998-10-pg16_BM_VV	tvarayA gacCataH tasya kozAt DanasyUtaH patitaH
+sp020-000339_1998-10-pg16_BM_VV	parantu saH tat jYAtum na SaktaH
+sp020-000340_1998-10-pg16_BM_VV	tataH vegena gatavAn ca
+sp020-000341_1998-10-pg16_BM_VV	tatra upavizwaH bAlakaH Jawiti utTAya tam DanasyUtam svIkftya mAtre dattavAn
+sp020-000342_1998-10-pg16_BM_VV	mAtA santozeRa putram uktavatI
+sp020-000343_1998-10-pg16_BM_VV	putra itoऽpi Danam sampAdayatu iti
+sp020-000344_1998-10-pg16_BM_VV	mAtuH vacanam SrutavataH tasya manasi mahAn praBAvaH jAtaH
+sp020-000345_1998-10-pg16_BM_VV	saH bAlakaH pratidinam sarvam kAryam tyaktvA dvAre upavezwum ArabDavAn
+sp020-000346_1998-10-pg16_BM_VV	dinAni atItAni
+sp020-000347_1998-10-pg16_BM_VV	parantu tena kimapi na prAptam
+sp020-000348_1998-10-pg16_BM_VV	tadA saH cintitavAn yat etasmAt koऽpi lABaH nAsti
+sp020-000349_1998-10-pg16_BM_VV	sarvadA kasyApi kozAt Danam na patati
+sp020-000350_1998-10-pg16_BM_VV	ataH mayA eva pAtanIyam iti
+sp020-000351_1998-10-pg16_BM_VV	anantaram saH janasammardaH yatra Bavati tatra gatvA cOryam ArabDavAn
+sp020-000352_1998-10-pg16_BM_VV	pratidinam cOryeRa labDam Danam mAtre dadAti sma
+sp020-000353_1998-10-pg16_BM_VV	mAtA api santuzwA Bavati sma
+sp020-000354_1998-10-pg16_BM_VV	gacCatA kAlena bAlakaH prOQaH jAtaH
+sp020-000355_1998-10-pg16_BM_VV	saH cintitavAn yat etasmAt laGucOryAt koऽpi lABaH nAsti
+sp020-000356_1998-10-pg16_BM_VV	mayA kasyacit Danikasya gfhe cOryam karaRIyam
+sp020-000357_1998-10-pg16_BM_VV	tadA bahu Danam laByate iti
+sp020-000358_1998-10-pg16_BM_VV	ataH saH nagaram prati gatavAn
+sp020-000359_1998-10-pg16_BM_VV	tatra ca maDyarAtrasamaye kasyacit Danikasya gfham pravizwavAn
+sp020-000360_1998-10-pg16_BM_VV	tAvati kAle gfhasvAminaH jAgaraRam aBavat
+sp020-000361_1998-10-pg16_BM_VV	saH kolAhalam kftavAn
+sp020-000362_1998-10-pg16_BM_VV	gfhajanAH api jAgaritAH aBavan
+sp020-000363_1998-10-pg16_BM_VV	sarve militvA tam gfhItvA ArakzakAlayam nItavantaH
+sp020-000364_1998-10-pg16_BM_VV	ArakzakAH tam kArAgAre sTApitavantaH
+sp020-000365_1998-10-pg16_BM_VV	nyAyAlaye tasmE daRqarUpeRa varzadvayAtmakaH kArAgAravAsaH dattaH
+sp020-000366_1998-10-pg16_BM_VV	putrasya vArtAm SrutvA tasya mAtA putreRa melitum nyAyAlayam AgatavatI
+sp020-000367_1998-10-pg16_BM_VV	sA putrAya dAtum Bojanam AnItavatI AsIt
+sp020-000368_1998-10-pg16_BM_VV	putrasya parisTitim dfzwvA sA duHKitA aBavat
+sp020-000369_1998-10-pg16_BM_VV	sA putram Bojayitum annasya ekam kavalam svIkftya tasya muKe sTApitavatI
+sp020-000370_1998-10-pg16_BM_VV	tadA putraH Jawiti tasyAH hastam dantEH dazwavAn
+sp020-000371_1998-10-pg16_BM_VV	anantaram mAtaram uddiSya Kedena uktavAn
+sp020-000372_1998-10-pg16_BM_VV	amba praTamavAram yadA aham DanasyUtam AnIya BavatyE dattavAn
+sp020-000373_1998-10-pg16_BM_VV	tadA BavatI snehasya sTAne yadi capewikAm dattavatI syAt
+sp020-000374_1998-10-pg16_BM_VV	tarhi mama adya etAdfSI duravasTA na AgatA syAt
+sp020-000375_1998-10-pg16_BM_VV	BavatyAH aDikasnehasya kAraRAt eva
+sp020-000376_1998-10-pg16_BM_VV	idAnIm aham kArAgAravAsam anuBavan asmi iti
+sp020-000377_1998-10-pg16_BM_VV	putrasya vacanam SrutavatyAH mAtuH AtmaboDaH aBavat
+sp020-000378_1998-10-pg16_BM_VV	sA rudatI putram uktavatI
+sp020-000379_1998-10-pg16_BM_VV	vatsa mama ajYAnam dUrIkftam BavataH vacanena
+sp020-000380_1998-10-pg16_BM_VV	mama BramaH api apagataH
+sp020-000381_1998-10-pg16_BM_VV	kzantavyA aham
+sp020-000382_1998-10-pg16_BM_VV	BavataH kArAgfhavAsasya samApteH samayasya pratIkzAm karomi
+sp020-000383_1998-10-pg16_BM_VV	BavAn daRqanam samApya sajjanaH BUtvA
+sp020-000384_1998-10-pg16_BM_VV	gfham Agamizyati ityeva mama prasannatAyAH vizayaH iti
+sp020-000385_1998-11-pg17_BM_VV	DarmapAlasya budDimattA
+sp020-000386_1998-11-pg17_BM_VV	leKakaH pI ke nArAyaRan nambyAr
+sp020-000387_1998-11-pg17_BM_VV	kasmiMScit rAjye DarmapAlaH nAma mahArAjaH AsIt
+sp020-000388_1998-11-pg17_BM_VV	saH kadAcit rAjye saYcAram kurvan AsIt
+sp020-000389_1998-11-pg17_BM_VV	evam gamanasamaye saH mArgamaDye parasparam kalaham kurvantO dvO vfdDO dfzwavAn
+sp020-000390_1998-11-pg17_BM_VV	tayoH rUpam samAnam AsIt
+sp020-000391_1998-11-pg17_BM_VV	tat dfzwvA vismitaH saH tO svasamIpam Anetum sEnikAn AjYApitavAn
+sp020-000392_1998-11-pg17_BM_VV	sEnikAH gatvA tO AnItavantaH
+sp020-000393_1998-11-pg17_BM_VV	mahArAjaH tO uddiSya praSnam kftavAn
+sp020-000394_1998-11-pg17_BM_VV	BoH kimarTam BavatoH maDye evam kalahaH pracalati iti
+sp020-000395_1998-11-pg17_BM_VV	tadA tayoH ekataraH uktavAn
+sp020-000396_1998-11-pg17_BM_VV	mahArAja aham agniSarmA nAma brAhmaRaH
+sp020-000397_1998-11-pg17_BM_VV	sudUrAt nagarAt aham patnIputrAByAm saha etena mArgeRa svagrAmam prati gacCan Asam
+sp020-000398_1998-11-pg17_BM_VV	atra sTitam sarovaram dfzwvA vayam kiYcitkAlam sTitavantaH
+sp020-000399_1998-11-pg17_BM_VV	mama patnI putreRa saha jalam pAtum sarovaram gatavatI
+sp020-000400_1998-11-pg17_BM_VV	tadA ezaH puruzaH kutaScit AgatavAn
+sp020-000401_1998-11-pg17_BM_VV	ezaH vadati yat ahameva agniSarmA
+sp020-000402_1998-11-pg17_BM_VV	ezA mama patnI iti
+sp020-000403_1998-11-pg17_BM_VV	ataH kalahaH ArabDaH iti
+sp020-000404_1998-11-pg17_BM_VV	tadA mahArAjaH tasya sTalasya viSeza smftavAn yat
+sp020-000405_1998-11-pg17_BM_VV	tatra kaScana brahmarAkzasaH nivasati
+sp020-000406_1998-11-pg17_BM_VV	saH sarvAn api vaYcayati iti
+sp020-000407_1998-11-pg17_BM_VV	ataH saH niScitavAn yat
+sp020-000408_1998-11-pg17_BM_VV	brahmarAkzasaH eva brAhmaRasya vezam DftvA AgatavAn asti
+sp020-000409_1998-11-pg17_BM_VV	ataH etayoH ekataraH vAstavikaH brAhmaRaH
+sp020-000410_1998-11-pg17_BM_VV	aparaH kapawavezaDaraH brAhmaRaH
+sp020-000411_1998-11-pg17_BM_VV	kaTamapi upAyena tayoH maDye vAstavikaH brAhmaRaH kataraH iti jYAtavyam iti
+sp020-000412_1998-11-pg17_BM_VV	ataH saH brAhmaRasya putram AhUya etayoH kataraH BavataH pitA iti vadatu iti sUcitavAn
+sp020-000413_1998-11-pg17_BM_VV	bAlakaH punaH punaH tO dfzwavAn
+sp020-000414_1998-11-pg17_BM_VV	parantu varRa rUpa AkArAdizu tO samAnO AstAm
+sp020-000415_1998-11-pg17_BM_VV	tayoH maDye kiYcidapi BedaH eva na AsIt
+sp020-000416_1998-11-pg17_BM_VV	ataH saH bAlaH tayoH maDye svapitA kaH iti aBijYAtum na SaktavAn
+sp020-000417_1998-11-pg17_BM_VV	tadA mahArAjaH brAhmaRasya patnIm svasamIpam AhUtavAn
+sp020-000418_1998-11-pg17_BM_VV	rahasi tAm pfzwavAn ca yat
+sp020-000419_1998-11-pg17_BM_VV	BavatyAH patyuH SarIre kimapi viSizwam aBijYAnam asti kim iti
+sp020-000420_1998-11-pg17_BM_VV	tadA sA uktavatI tasya Sirasi ekA sUkzmA SiKA asti iti
+sp020-000421_1998-11-pg17_BM_VV	tataH mahArAjaH vfdDadvayam api svasamIpam AhUtavAn
+sp020-000422_1998-11-pg17_BM_VV	yugapat dvayoH api uzRIzam nizkAsitavAn
+sp020-000423_1998-11-pg17_BM_VV	tadA ekatarasya Sirasi saH sUkzmAm SiKAm dfzwavAn
+sp020-000424_1998-11-pg17_BM_VV	anyasya Sirasi tu SiKA na AsIt
+sp020-000425_1998-11-pg17_BM_VV	ataH tayoH vAstavikaH agniSarmA kataraH iti mahArAjaH jYAtavAn
+sp020-000426_1998-11-pg17_BM_VV	taTApi mahArAjaH kimapi na jYAtamiva sTitavAn
+sp020-000427_1998-11-pg17_BM_VV	anantaram ca upAyena brahmarAkzasaH nivAraRIyaH iti cintitavAn
+sp020-000428_1998-11-pg17_BM_VV	ataH saH sEnikAn AjYApya ekAm bfhatpewIkAm tatra AnAyitavAn
+sp020-000429_1998-11-pg17_BM_VV	tataH tO vfdDO uktavAn aham ekAm parIkzAm karomi
+sp020-000430_1998-11-pg17_BM_VV	tadA BavatoH maDye vAstavikaH agniSarmA kaH iti jYAyate iti
+sp020-000431_1998-11-pg17_BM_VV	kA parIkzA iti tO pfzwavantO
+sp020-000432_1998-11-pg17_BM_VV	BavatoH ekEkaH api etAm pewikAm praviSya bahiH AgacCatu
+sp020-000433_1998-11-pg17_BM_VV	sA eva parIkzA iti
+sp020-000434_1998-11-pg17_BM_VV	dvO api aNgIkftavantO
+sp020-000435_1998-11-pg17_BM_VV	praTamam SiKADArI vfdDaH pewikAm praviSya bahiH AgatavAn
+sp020-000436_1998-11-pg17_BM_VV	anantaram dvitIyaH vfdDaH yadA pewikAm pravizwavAn
+sp020-000437_1998-11-pg17_BM_VV	tadA mahArAjaH Jawiti tasyAH dvArabanDanam kftavAn
+sp020-000438_1998-11-pg17_BM_VV	tAlena kIlanam api kftavAn
+sp020-000439_1998-11-pg17_BM_VV	tataH tasya AjYAnusAram sevakAH tAm pewikAm nadyAm kziptavantaH
+sp020-000440_1998-11-pg17_BM_VV	evam mahArAjaH upAyena brahmarAkzasam nivArya agniSarmaRaH kazwam dUrIkftavAn
+sp020-000441_1998-11-pg17_BM_VV	agniSarmA api mahArAjasya budDimattAm punaH punaH praSaMsan patnIputrAByAm saha svagrAmam gatavAn
+sp020-000442_1998-11-pg18_BM_VV	pESunasya Palam
+sp020-000443_1998-11-pg18_BM_VV	leKakaH sADu viSvavallaBadAsaH
+sp020-000444_1998-11-pg18_BM_VV	kasmiMScit araRye bahuviDAH prARinaH vasanti sma
+sp020-000445_1998-11-pg18_BM_VV	tezAm sarvezAm mahArAjaH siMhaH AsIt
+sp020-000446_1998-11-pg18_BM_VV	ekadA siMhaH kenApi rogeRa pIqitaH aBavat
+sp020-000447_1998-11-pg18_BM_VV	tasya rogasya vizayam jYAtvA sarveऽpi prARinaH tam drazwum AgatavantaH
+sp020-000448_1998-11-pg18_BM_VV	parantu ekaH SfgAlaH tu na AgatavAn eva
+sp020-000449_1998-11-pg18_BM_VV	rogapIqitam AtmAnam drazwum
+sp020-000450_1998-11-pg18_BM_VV	sarveऽpi prARinaH AgatavantaH uta na iti siMhaH na jAnAti sma
+sp020-000451_1998-11-pg18_BM_VV	tadA ekaH uzwraH siMham prati uktavAn
+sp020-000452_1998-11-pg18_BM_VV	BoH mahArAja BavataH anArogyam jYAtvA sarveऽpi prARinaH Bavantam drazwum AgatavantaH
+sp020-000453_1998-11-pg18_BM_VV	kintu ahaNkArI SfgAlaH tu na AgatavAn eva iti
+sp020-000454_1998-11-pg18_BM_VV	tat SrutvA siMhasya mahAn kopaH AgataH
+sp020-000455_1998-11-pg18_BM_VV	anantaradine SfgAlaH anyezAm dvArA jYAtavAn yat
+sp020-000456_1998-11-pg18_BM_VV	uzwraH siMhasya purataH mama vizaye pESunam kftavAn asti iti
+sp020-000457_1998-11-pg18_BM_VV	ataH saH SIGram siMhasya darSanArTam gatavAn
+sp020-000458_1998-11-pg18_BM_VV	dUrAd eva BaktyA tam namaskftavAn ca
+sp020-000459_1998-11-pg18_BM_VV	SfgAlam dfzwvA siMhaH kupitaH san uccasvareRa
+sp020-000460_1998-11-pg18_BM_VV	re mUrKa kimarTam BavAn etAvatparyantam mAm drazwum na AgatavAn iti garjitavAn
+sp020-000461_1998-11-pg18_BM_VV	SfgAlaH vinayam aBinayan uktavAn
+sp020-000462_1998-11-pg18_BM_VV	mahArAja kzantavyaH aham
+sp020-000463_1998-11-pg18_BM_VV	BavataH asvAsTyavArtAm jYAtvA tasya OzaDam svIkftya eva AgacCAmi
+sp020-000464_1998-11-pg18_BM_VV	iti cintayitvA aham vEdyasya samIpam gatavAn Asam
+sp020-000465_1998-11-pg18_BM_VV	ataH mama Agamane vilambaH jAtaH iti
+sp020-000466_1998-11-pg18_BM_VV	santuzwaH siMhaH SAntasvareRa
+sp020-000467_1998-11-pg18_BM_VV	BoH mitra evam vA vEdyaH mannimittam kimapi OzaDam dattavAn vA iti pfzwavAn
+sp020-000468_1998-11-pg18_BM_VV	SfgAlaH uktavAn mahArAja vEdyaH kimapi OzaDam tu na dattavAn
+sp020-000469_1998-11-pg18_BM_VV	kintu saH cikitsAkramam uktavAn asti
+sp020-000470_1998-11-pg18_BM_VV	BavAn yadi uzwrasya raktam pibati tarhi SIGrameva rogasya upaSamanam avaSyam Bavati iti
+sp020-000471_1998-11-pg18_BM_VV	siMhaH uzwram AhUtavAn
+sp020-000472_1998-11-pg18_BM_VV	uzwraH BaktyA AgatavAn
+sp020-000473_1998-11-pg18_BM_VV	siMhaH tu tadupari utpatya tam mArayitvA tasya raktam pItavAn
+sp020-000474_1998-11-pg18_BM_VV	svasya piSunatvAt uzwraH svayameva maraRam prAptavAn
+sp020-000475_1998-12-pg17_BM_VV	samaprADAnyam
+sp020-000476_1998-12-pg17_BM_VV	leKikA SAntA muralIDara kulakarRI
+sp020-000477_1998-12-pg17_BM_VV	kasmiMScit grAme mitradvayam nivasati sma
+sp020-000478_1998-12-pg17_BM_VV	tayoH ekataraH BAgyavAdI AsIt
+sp020-000479_1998-12-pg17_BM_VV	aparaH karmavAdI
+sp020-000480_1998-12-pg17_BM_VV	BAgyavAdI cintayati sma yat sarvam dEvakAraRAt eva Bavati
+sp020-000481_1998-12-pg17_BM_VV	yadi dEvagatiH uttamA asti tarhi aprayatnena api praBUtam Danam laByate
+sp020-000482_1998-12-pg17_BM_VV	parantu karmavAdinaH cintanam tu sarvaTA Binnam AsIt
+sp020-000483_1998-12-pg17_BM_VV	tasya sampUrRaH viSvAsaH karmaRi eva
+sp020-000484_1998-12-pg17_BM_VV	prayatnAt eva sarvam Palati iti tasya aBiprAyaH AsIt
+sp020-000485_1998-12-pg17_BM_VV	kadAcit tayoH maDye vivAdaH pravfttaH
+sp020-000486_1998-12-pg17_BM_VV	bahukAlaparyantam vivAde jAte sati api yadA nirRayaH na jAtaH
+sp020-000487_1998-12-pg17_BM_VV	tadA tO mahArAjasya samIpam gatavantO
+sp020-000488_1998-12-pg17_BM_VV	mahArAja BavAn eva nirRayam vadatu
+sp020-000489_1998-12-pg17_BM_VV	yat BAgyam SrezWam uta karma iti tam niveditavantO
+sp020-000490_1998-12-pg17_BM_VV	mahArAjaH tO dvO api banDinO kftvA kArAgfham prati prezitavAn
+sp020-000491_1998-12-pg17_BM_VV	uktavAn ca trIRi dinAni yAvat BavatoH kArAgfhavAsaH Bavizyati
+sp020-000492_1998-12-pg17_BM_VV	tAvatA vAdanirRayaH svayameva Bavizyati iti
+sp020-000493_1998-12-pg17_BM_VV	kArAgfhe tayoH Bojanasya pAnasya vA kApi vyavasTA na AsIt
+sp020-000494_1998-12-pg17_BM_VV	buBukzayA pipAsayA ca tO dvO durbalO jAtO
+sp020-000495_1998-12-pg17_BM_VV	tftIye dine rAtrisamaye mahArAjaH guptamArgeRa kArAgfhasya antaH gatavAn
+sp020-000496_1998-12-pg17_BM_VV	pAyasena pUritam ekam pAtram tatra sTApitavAn ca
+sp020-000497_1998-12-pg17_BM_VV	kArAgfhe tadA anDakAraH AsIt
+sp020-000498_1998-12-pg17_BM_VV	pAyasasya suganDaH sarvatra prasftaH
+sp020-000499_1998-12-pg17_BM_VV	tadA prayatnavAdI cintitavAn ezaH mama parIkzAkAlaH
+sp020-000500_1998-12-pg17_BM_VV	samIpe eva kutrApi pAyasam asti
+sp020-000501_1998-12-pg17_BM_VV	yadi aham prayatnam karomi tarhi tat pAyasam prAptum Saknomi
+sp020-000502_1998-12-pg17_BM_VV	evam cintayitvA saH mahatA prayatnena hastapAdam saYcAlayan pAyasapAtrasya samIpam AgatavAn
+sp020-000503_1998-12-pg17_BM_VV	pAyasam KAditum ArabDavAn ca
+sp020-000504_1998-12-pg17_BM_VV	tadA ekaH pAzARaKaRqaH tasya muKe lagnaH aBavat
+sp020-000505_1998-12-pg17_BM_VV	saH cintitavAn etena pAzARaKaRqena aham BAgyavAdinam praharAmi
+sp020-000506_1998-12-pg17_BM_VV	vadAmi ca prayatnena eva mama udaram pUrRam
+sp020-000507_1998-12-pg17_BM_VV	atrAntare BAgyavAdI cintayati
+sp020-000508_1998-12-pg17_BM_VV	ezaH mama parIkzAkAlaH
+sp020-000509_1998-12-pg17_BM_VV	samIpe kutrApi pAyasam asti
+sp020-000510_1998-12-pg17_BM_VV	yadi tat mama BAgyAyattam asti tarhi niScayena prApnomi
+sp020-000511_1998-12-pg17_BM_VV	tadarTam prayatnam tu na karizyAmi iti
+sp020-000512_1998-12-pg17_BM_VV	tasmin eva kzaRe ekaH pAzARaKaRqaH tasya upari patati
+sp020-000513_1998-12-pg17_BM_VV	tadA saH ezaH pAzARaKaRqaH eva mama BAgyAyattaH syAt
+sp020-000514_1998-12-pg17_BM_VV	etena eva mama kAryapUrtiH Bavet
+sp020-000515_1998-12-pg17_BM_VV	iti cintayitvA tam svasamIpe rakzitavAn
+sp020-000516_1998-12-pg17_BM_VV	tataH tena eva krameRa daSADikAH pAzARaKaRqAH tena prAptAH
+sp020-000517_1998-12-pg17_BM_VV	sarvAn api saH rakzitavAn
+sp020-000518_1998-12-pg17_BM_VV	prAtaHkAle kArAgfhasya dvAram udGAwitam Bavati
+sp020-000519_1998-12-pg17_BM_VV	mahArAjaH amAtyaH anye ca janAH tatra AgacCanti
+sp020-000520_1998-12-pg17_BM_VV	te sarve paSyanti yatnavAdI pAyasaBakzaRena santfptaH asti
+sp020-000521_1998-12-pg17_BM_VV	sarve jayakAreRa tam aBinandanti
+sp020-000522_1998-12-pg17_BM_VV	kintu yadA te BAgyavAdinam paSyanti
+sp020-000523_1998-12-pg17_BM_VV	tadA tu vismitAH Bavanti
+sp020-000524_1998-12-pg17_BM_VV	yataH tasya purataH daSADikAni amUlyAni ratnAni Asan
+sp020-000525_1998-12-pg17_BM_VV	rAtrO SilAKaRqaH iti matvA tAni eva tena rakzitAni Asan
+sp020-000526_1998-12-pg17_BM_VV	sarve jayakAreRa tam api aBinanditavantaH
+sp020-000527_1998-12-pg17_BM_VV	mahArAjaH idAnIm kIdfSam nirRayam vadati ityeva sarvezAm vicAraH
+sp020-000528_1998-12-pg17_BM_VV	tadA mahArAjaH uktavAn
+sp020-000529_1998-12-pg17_BM_VV	BoH janAH nirarTakaH etayoH vivAdaH
+sp020-000530_1998-12-pg17_BM_VV	yataH yatnena vinA dEvam na Palati
+sp020-000531_1998-12-pg17_BM_VV	dEvena vinA PalaH api na sidDayati
+sp020-000532_1998-12-pg17_BM_VV	ataH tayoH samaprADAnyameva iti
+sp020-000533_1998-12-pg18_BM_VV	parezAm duHKam svaduHKam
+sp020-000534_1998-12-pg18_BM_VV	leKikA vijayalakzmIH sArasvataH
+sp020-000535_1998-12-pg18_BM_VV	kasmiMScit grAme kAcit vfdDA nivasati sma
+sp020-000536_1998-12-pg18_BM_VV	tasyAH ekaH eva putraH
+sp020-000537_1998-12-pg18_BM_VV	mAtA putraH ca atIva dayAparO
+sp020-000538_1998-12-pg18_BM_VV	tayoH gfham atyantam laGu AsIt
+sp020-000539_1998-12-pg18_BM_VV	kadAcit vfdDA rugRA jAtA
+sp020-000540_1998-12-pg18_BM_VV	sA OzaDanirmARArTam loDravfkzasya tvacam izwavatI
+sp020-000541_1998-12-pg18_BM_VV	ataH putram uktavatI
+sp020-000542_1998-12-pg18_BM_VV	putra vane loDravfkzaH asti
+sp020-000543_1998-12-pg18_BM_VV	BavAn tatra gatvA kiYcit tvacam Anayatu iti
+sp020-000544_1998-12-pg18_BM_VV	putraH paraSum gfhItvA vanam gatavAn
+sp020-000545_1998-12-pg18_BM_VV	loDravfkzam dfzwavAn
+sp020-000546_1998-12-pg18_BM_VV	paraSunA tasya tvacam nizkAsya gfham prati AnItavAn
+sp020-000547_1998-12-pg18_BM_VV	vfdDA tat svIkftya OzaDam sajjIkftavatI
+sp020-000548_1998-12-pg18_BM_VV	tasya sevanena sA svasTA api jAtA
+sp020-000549_1998-12-pg18_BM_VV	punaH kadAcit mAtA putrasya Svetavastram raktaraYjitam dfzwavatI
+sp020-000550_1998-12-pg18_BM_VV	AtaNkena sA putram pfzwavatI
+sp020-000551_1998-12-pg18_BM_VV	vatsa BavataH Svetavastram kaTam raktaraYjitam asti
+sp020-000552_1998-12-pg18_BM_VV	kim aBavat iti
+sp020-000553_1998-12-pg18_BM_VV	putraH kimapi na uktavAn
+sp020-000554_1998-12-pg18_BM_VV	mAtA punarapi sAnuroDam pfzwavatI
+sp020-000555_1998-12-pg18_BM_VV	vatsa kim aBavat vadatu iti
+sp020-000556_1998-12-pg18_BM_VV	tadA putraH uktavAn
+sp020-000557_1998-12-pg18_BM_VV	amba tasmin dine BavatI mAm loDravfkzasya tvacam Anetum uktavatI AsIt
+sp020-000558_1998-12-pg18_BM_VV	tasya vfkzasya Cedanasamaye mama manasi vicAraH utpannaH yat
+sp020-000559_1998-12-pg18_BM_VV	tvak nizkAsanasamaye saH vfkzaH kiyatIm vedanAm anuBUtavAn syAt
+sp020-000560_1998-12-pg18_BM_VV	yadyapi saH vfkzaH vaktum na Saknoti taTApi tasya vedanA syAt eva iti
+sp020-000561_1998-12-pg18_BM_VV	adya aham niScitavAn yat tasmin samaye vfkzasya kIdfSI vedanA jAtA syAt iti mayA jYAtavyam iti
+sp020-000562_1998-12-pg18_BM_VV	ataH eva mama SarIrasya kiYcit carma ahameva nizkAsitavAn
+sp020-000563_1998-12-pg18_BM_VV	tataH raktapravAhaH Bavati
+sp020-000564_1998-12-pg18_BM_VV	tena mama Svetavastram raktaraYjitam asti iti
+sp020-000565_1998-12-pg18_BM_VV	putrasya vacanam SrutavatyAH mAtuH netrAByAm aSrupravAhaH ArabDaH
+sp020-000566_1998-12-pg18_BM_VV	putrasya dayAguRam jYAtvA atIva prasannA sA tam gAQam AliNgitavatI
+sp020-000567_1998-SP-pg83_BM_VV	kartavyapAlanam na parityaktavyam
+sp020-000568_1998-SP-pg83_BM_VV	leKakaH qAkwar haripAladvivedI
+sp020-000569_1998-SP-pg83_BM_VV	parvam atipurAtanaH kaScana vawavfkzaH AsIt
+sp020-000570_1998-SP-pg83_BM_VV	tasya vawavfkzasya SAKAH sarvatra prasftAH Asan
+sp020-000571_1998-SP-pg83_BM_VV	vfkzasya ekasmin pArSve sundaram viSAlam ekam sarovaram AsIt
+sp020-000572_1998-SP-pg83_BM_VV	aparasmin pArSve SmaSAnam AsIt
+sp020-000573_1998-SP-pg83_BM_VV	sarovare taruRAH taruRyaH ca snAnam kurvanti sma
+sp020-000574_1998-SP-pg83_BM_VV	bAlAH tatra viharanti sma
+sp020-000575_1998-SP-pg83_BM_VV	janAnAm AmodapramodAdayaH sarovaratIre pravartante sma
+sp020-000576_1998-SP-pg83_BM_VV	vfkzaH etatsarvam paSyati sma
+sp020-000577_1998-SP-pg83_BM_VV	aparasmin pArSve SmaSAnam AsIt Kalu
+sp020-000578_1998-SP-pg83_BM_VV	tatra Savadahanam bAnDavAnAm rodanam ityAdikam pracalati sma
+sp020-000579_1998-SP-pg83_BM_VV	vfkzaH etat api dfSyam sadA paSyati sma
+sp020-000580_1998-SP-pg83_BM_VV	ekadA kaScana paTikaH viSrAntyarTam tasya vfkzasya aDaH upavizwavAn
+sp020-000581_1998-SP-pg83_BM_VV	sarovaradfSyam SmaSAnadfSyam cApi saH dfzwavAn
+sp020-000582_1998-SP-pg83_BM_VV	uBayam api dfzwavataH tasya manasi vicAraH ArabDaH
+sp020-000583_1998-SP-pg83_BM_VV	ezaH prapaYcaH ramaRIyaH uta GoraH
+sp020-000584_1998-SP-pg83_BM_VV	atra ramaRam ucitam uta palAyanam
+sp020-000585_1998-SP-pg83_BM_VV	atra amftam asti uta vizam
+sp020-000586_1998-SP-pg83_BM_VV	prapaYcaH suKamayaH uta duHKamayaH
+sp020-000587_1998-SP-pg83_BM_VV	evam cintayan saH udvignaH jAtaH
+sp020-000588_1998-SP-pg83_BM_VV	udvegena saH vfkzam paritaH BramaRam kftavAn
+sp020-000589_1998-SP-pg83_BM_VV	sarovaratIre saH santozakarARi dfSyAni dfzwavAn
+sp020-000590_1998-SP-pg83_BM_VV	kintu SmaSAnaBAge sarvARi dfSyAni duHKamayAni eva
+sp020-000591_1998-SP-pg83_BM_VV	evam tarhi ezaH prapaYcaH kIdfSaH yaTArTatA kA
+sp020-000592_1998-SP-pg83_BM_VV	iti punarapi cintanam kftavAn saH
+sp020-000593_1998-SP-pg83_BM_VV	atrAntare kAnicana PalAni vfkzAt patitAni
+sp020-000594_1998-SP-pg83_BM_VV	paTikaH tAni gfhItvA KAditavAn
+sp020-000595_1998-SP-pg83_BM_VV	tasya udaram pUrRam
+sp020-000596_1998-SP-pg83_BM_VV	saH tfptaH jAtaH
+sp020-000597_1998-SP-pg83_BM_VV	kintu tasya sandehaH tu na nivfttaH
+sp020-000598_1998-SP-pg83_BM_VV	mama sandehasya uttaram dAtum kaH asti atra
+sp020-000599_1998-SP-pg83_BM_VV	iti cintayan sarvatra dfzwim prasAritavAn paTikaH
+sp020-000600_1998-SP-pg83_BM_VV	vfdDavawavfkzasya AtmA bahoH kAlataH paTikasya AkulatAm paSyan AsIt
+sp020-000601_1998-SP-pg83_BM_VV	saH sAntvanasvareRa paTikam avadat
+sp020-000602_1998-SP-pg83_BM_VV	BoH paTika sfzwi layayoH nirantaratA Bavati loke
+sp020-000603_1998-SP-pg83_BM_VV	suKaduHKayoH api taTEva
+sp020-000604_1998-SP-pg83_BM_VV	suKaduHKAdikam dfzwvA udvegaprAptyA kim prayojanam
+sp020-000605_1998-SP-pg83_BM_VV	mAm paSyatu suKakaram duHKakaram ca dfSyam pratikzaRam paSyAmi aham
+sp020-000606_1998-SP-pg83_BM_VV	kintu mama kartavyam tu SAntatayA karomi
+sp020-000607_1998-SP-pg83_BM_VV	CAyAdAnam PaladAnam ca mama kartavyam
+sp020-000608_1998-SP-pg83_BM_VV	kartavye AsaktaH aham bAhyadfSyataH udvignaH na BavAmi
+sp020-000609_1998-SP-pg83_BM_VV	kartavyam tu kadApi na tyajAmi iti
+sp020-000610_1998-SP-pg83_BM_VV	idAnIm paTikena yaTArTajYAnam prAptam AsIt
+sp020-000611_1998-SP-pg83_BM_VV	bAhyasuKaduHKe samaBAvena drazwavye
+sp020-000612_1998-SP-pg83_BM_VV	kartavyapAlanam tu kadApi na parityaktavyam
+sp020-000613_1998-SP-pg83_BM_VV	iti avagatavAn saH paTikaH
+sp020-000614_1998-SP-pg83_BM_VV	vawavfkzam SradDayA namaskftya svakIyam mArgam anusftavAn

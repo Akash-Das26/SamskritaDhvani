@@ -1,0 +1,2705 @@
+sp002-000001_KS_04	mUrcCitA ratiH ityuktam
+sp002-000002_KS_04	samprati tadvfttAntamevAha
+sp002-000003_KS_04	aTeti
+sp002-000004_KS_04	aTa anantaram moho mUrcCA param ayanam ASrayo yasyAH sA mohaparAyaRA mohEkaSaraRA satI
+sp002-000005_KS_04	parAyaRam aBiprete tatpare paramASraye iti yAdavaH
+sp002-000006_KS_04	vivaSA mUQatvAt niScezwA kAmavaDUH ratiH
+sp002-000007_KS_04	asahyA duHsahA vedanA yasmin tat taToktam
+sp002-000008_KS_04	viDavAyAH gataBartfkAyAH BAvaH vEDavyam
+sp002-000009_KS_04	navam ca tadvEDavyam ca iti navavEDavyam
+sp002-000010_KS_04	navagrahaRam duHsahatvadyotanArTam
+sp002-000011_KS_04	pratipAdayizyatA anuBAvayizyatA
+sp002-000012_KS_04	kriyArTakriyAyAm lfw
+sp002-000013_KS_04	viDinA dEvena
+sp002-000014_KS_04	viDirviDAne dEve ca ityamaraH
+sp002-000015_KS_04	viboDitA
+sp002-000016_KS_04	vEDavyAnuPaloyam viDiH iti BAvaH
+sp002-000017_KS_04	asmin sarge viyoginIvfttAni
+sp002-000018_KS_04	vizame sasajA guruH same saBarA loऽTa gururviyoginI iti lakzaRAt
+sp002-000019_KS_04	aveti
+sp002-000020_KS_04	sA ratiH pralayAnte mUrcCAvasAne
+sp002-000021_KS_04	pralayo nazwacezwatA ityamaraH
+sp002-000022_KS_04	unmizite unmIlite vilocane
+sp002-000023_KS_04	avaDAnam param praDAnam yayoH te avaDAnapare didfkzayAvahite cakAra
+sp002-000024_KS_04	drazwavyABAvAttu na viveda ityAha
+sp002-000025_KS_04	neti
+sp002-000026_KS_04	priyam kAmam atfptayoH tfptim na gatayoH
+sp002-000027_KS_04	nityadidfkzamARayorityarTaH
+sp002-000028_KS_04	tayorlocanayoH
+sp002-000029_KS_04	darSanakriyApekzayA sambanDe zazWI
+sp002-000030_KS_04	atyantaviluptam darSanam svalocanayoH karaRayoH yasya karmaBUtasya
+sp002-000031_KS_04	tam atyantaviluptadarSanam santam na viveda na jYAtavatI
+sp002-000032_KS_04	priyanASAparijYAnAt didfkzAYcakre iti tAtparyArTaH
+sp002-000033_KS_04	ayIti
+sp002-000034_KS_04	ayIti praSne
+sp002-000035_KS_04	ayi praSna anunayayoH iti viSvaH
+sp002-000036_KS_04	ayi jIvitanATa jIvasi prARizi kaccit iti aBiDAya utTitayA tayA ratyA puraH agre kzitO
+sp002-000037_KS_04	puruzasyAkftiriva Akftiryasya tatpuruzAkfti kevalamekam harakopAnalaBasma dadfSe dfzwam
+sp002-000038_KS_04	na tu puruzaH iti BAvaH
+sp002-000039_KS_04	aTeti
+sp002-000040_KS_04	aTa BasmadarSanAnantaram punareva vihvalA viklavA vasuDAliNganaDUsarastanI
+sp002-000041_KS_04	vasuDAliNganena kzitiluRWanena DUsarO DUsaravarRO stanO kucO yasyAH sA taToktA
+sp002-000042_KS_04	svANgAcca upasarjanAt asaMyogopaDAt iti NIz
+sp002-000043_KS_04	vikIrRamUrDajA vikIrRAH vikziptAH mUrDajAH keSAH
+sp002-000044_KS_04	yasyAH sA taToktA sA ratiH sTalIm vanaBUmim
+sp002-000045_KS_04	tatratyAnprARinaH ityarTaH
+sp002-000046_KS_04	jAnapadakuRqagoRasTala ityAdinA NIz
+sp002-000047_KS_04	samaduHKAm svatulyaSokAm kurvatIva vilalApa paridevitavatI
+sp002-000048_KS_04	vilApaH paridevanam ityamaraH
+sp002-000049_KS_04	upeti
+sp002-000050_KS_04	tava yatkaraRam gAtram
+sp002-000051_KS_04	karaRam sADakatamam kzetragotrendriyezvapi ityamaraH
+sp002-000052_KS_04	kAntimattayA sOndaryeRa hetunA vilAsinAm vilasanaSIlAnAm
+sp002-000053_KS_04	vO kazalasa ityAdinA GinuRpratyayaH
+sp002-000054_KS_04	upamIyate yena upamAnam aBUt
+sp002-000055_KS_04	tatkaraRam idam IdfSIm daSAm avasTAm gatam
+sp002-000056_KS_04	BasmIBUtamityarTaH
+sp002-000057_KS_04	taTApi na vidIrye na vidIrRA BavAmi
+sp002-000058_KS_04	kartari law
+sp002-000059_KS_04	taTAhi
+sp002-000060_KS_04	striyaH kaWinAH Kalu
+sp002-000061_KS_04	kaWinatvAt avidIryamARatvamityarTaH
+sp002-000062_KS_04	kAraRAtkAryasamarTanarUpaH arTAntaranyAsaH
+sp002-000063_KS_04	DIrasaYcAriRI dfzwirgatirgovfzaBAYcitA
+sp002-000064_KS_04	smitapUrvam taTAlApo vilAsa iti kIrtitaH
+sp002-000065_KS_04	iti
+sp002-000066_KS_04	kveti
+sp002-000067_KS_04	he priya kzatasetubanDanaH BagnasetubanDanaH jalasaNGAtaH jalOGaH nalinImiva
+sp002-000068_KS_04	jalEkAyattajIvitAmiti SezaH
+sp002-000069_KS_04	tvadaDInajIvitAm tvadAyattaprARAm mAm kvanu vinikIrya kutra vA nikzipya kzaRaBinnasOhfdaH kzaRatyaktasOhArdaH san
+sp002-000070_KS_04	vidrutaH palAyitoऽsi
+sp002-000071_KS_04	setusOhfdayoH sTitahetutvena sAmyam
+sp002-000072_KS_04	suhfdaH BAvaH sOhfdam
+sp002-000073_KS_04	yuvAditvAt aRpratyayaH
+sp002-000074_KS_04	hfdayasya hft leKayat aRlAsezu iti hfdAdeSaH
+sp002-000075_KS_04	aRi hfdBAvAt na hfdBagasinDvante pUrvapadasya ca iti uBayapadavfdDiH
+sp002-000076_KS_04	hfdBUtasya aRviDAne tu uBayapadavfdDiH syAt
+sp002-000077_KS_04	yaTA suhfdaH BAvaH sOhArdamiti
+sp002-000078_KS_04	tadevAha vAmanaH sOhfdadOrhfdaSabdO anaRi hfdBAvAt iti
+sp002-000079_KS_04	kfteti
+sp002-000080_KS_04	he priya tvam me mama vipriyam apriyam kftavAn na asi
+sp002-000081_KS_04	mayA ca te tava pratikUlam apriyam na kftam
+sp002-000082_KS_04	paraspara jIvitasya parasparADInatvAt kutaH pariBavaSaNkA iti BAvaH
+sp002-000083_KS_04	akAraRam nizkAraRameva
+sp002-000084_KS_04	parasparApakArarUpa kAraRABAve api ityarTaH
+sp002-000085_KS_04	kriyAviSezaRametat
+sp002-000086_KS_04	vilapantyE
+sp002-000087_KS_04	tvaddarSanArTinyE apIti BAvaH
+sp002-000088_KS_04	rataye kim kaTam darSanam na dIyate
+sp002-000089_KS_04	kriyAgrahaRAt caturTI
+sp002-000090_KS_04	smarasIti
+sp002-000091_KS_04	he smara gotrasKalitezu nAmavyatyAsezu
+sp002-000092_KS_04	gotram nAmni acale kule iti viSvaH
+sp002-000093_KS_04	meKalAguREH banDam smarasi uta smarasi vA
+sp002-000094_KS_04	vikalpe kim kimuta ca ityamaraH
+sp002-000095_KS_04	cyutakeSarEH Brazwa kiYjalkEH dUzite IkzaRe yezu tAni
+sp002-000096_KS_04	avataMsotpalatAqanAni
+sp002-000097_KS_04	saDUlikzepatAqanAnItyarTaH
+sp002-000098_KS_04	smarasi vA
+sp002-000099_KS_04	apakArasmaraRAt idam adarSanamiti BAvaH
+sp002-000100_KS_04	hfdaya iti
+sp002-000101_KS_04	hfdaye vasasIti smaravAkyAnuvAdaH
+sp002-000102_KS_04	ityevam rUpam matpriyam yadavocaH uktavAnasi
+sp002-000103_KS_04	braYo luNi vaca um iti umAgamaH
+sp002-000104_KS_04	tatkEtavam avEmi miTyA iti manye
+sp002-000105_KS_04	idam vacanam upacArapadam parasya raYjanArTam yadasatyaBAzaRam sa upacAraH tasya padam sTAnam
+sp002-000106_KS_04	kEtavasTAnamiti yAvat
+sp002-000107_KS_04	na cettvam anaNgaH aSarIraH
+sp002-000108_KS_04	kaTam ratiH akzatA avinazwA
+sp002-000109_KS_04	ASrayanASe api ASritam avinazwamiti viroDAditi BAvaH
+sp002-000110_KS_04	paraloketi
+sp002-000111_KS_04	paralokam prati navapravAsinaH aciraprozitasya
+sp002-000112_KS_04	anena anugamanakAla anatipAtaH sUcyate
+sp002-000113_KS_04	tava padavIm mArgam aham pratipatsye
+sp002-000114_KS_04	tvAm anugamizyAmItyarTaH
+sp002-000115_KS_04	ataH me nAsti vicAraH iti BAvaH
+sp002-000116_KS_04	kintu viDinA dEvena ezaH janaH lokaH vaYcitaH pratAritaH
+sp002-000117_KS_04	dehinAm suKam tvadaDInam tvayi aDInam Kalu
+sp002-000118_KS_04	aDiSabdasya SORqAditvAt saptamI SORqEH iti samAsaH
+sp002-000119_KS_04	aDyuttarapadAt iti KapratyayaH
+sp002-000120_KS_04	evam anyatrApi suKapradABAve kutaH suKamiti BAvaH
+sp002-000121_KS_04	rajanIti
+sp002-000122_KS_04	he priya rajanItimireRa avaguRWite Avfte puramArge GanaSabdaviklavAH
+sp002-000123_KS_04	garjitaBItAH priyAH kAminAm vasatim prApayitum tvadfte tvAm vinA
+sp002-000124_KS_04	anyArAditararte ityAdinA paYcamI
+sp002-000125_KS_04	kaH ISvaraH SaktaH
+sp002-000126_KS_04	na kaScit ityarTaH
+sp002-000127_KS_04	na hi kAmAnDAnAm BItiH asti iti BAvaH
+sp002-000128_KS_04	nayanAnIti
+sp002-000129_KS_04	aruRAni nayanAni GUrRayan BrAmayan
+sp002-000130_KS_04	taTA pade pade pratipadam
+sp002-000131_KS_04	vIpsAyAm dviruktiH
+sp002-000132_KS_04	vacanAni sKalayan viparyAsayan pramadAnAm vAruRImadaH madyamadaH aDunA
+sp002-000133_KS_04	tvayi asati viqambanA anukftimAtram
+sp002-000134_KS_04	madanABAve madasya nizPalatvAditi BAvaH
+sp002-000135_KS_04	avagamyeti
+sp002-000136_KS_04	he anaNga aSarIra priyabanDoH priyasaKasya tava vapuH SarIram kaTIkftam
+sp002-000137_KS_04	akaTA kaTA sampadyamAnam kftam
+sp002-000138_KS_04	SabdamAtra avaSizwam avagamya jYAtvA nizPalodayaH
+sp002-000139_KS_04	uddIpyABAvAt uddIpanavEPalyamiti BAvaH
+sp002-000140_KS_04	niSAkaraH candraH bahule kfzRapakze gate api tanutAm kArSyam duHKam yaTA taTA kfcCrAt mokzyati
+sp002-000141_KS_04	vfTA vfdDiriti duHKAyizyate ityarTaH
+sp002-000142_KS_04	hariteti
+sp002-000143_KS_04	haritam ca aruRam ca
+sp002-000144_KS_04	varRo varRena iti tatpuruzaH
+sp002-000145_KS_04	haritAruRam cAru banDanam vfntam puNKaSca yasya saH taToktaH
+sp002-000146_KS_04	kalena maDureRa puMskokilaSabdena puruzakokilanAdena sUcitaH anumApitaSca
+sp002-000147_KS_04	cUtacarvaRakAryatvAt kalaSabdasya iti BAvaH
+sp002-000148_KS_04	navacUtaprasavaH navacUtakusumam samprati kasya bARatAm Saratvam gamizyati vada
+sp002-000149_KS_04	anyasya puzpabARasya aBAvAt iti BAvaH
+sp002-000150_KS_04	alIti
+sp002-000151_KS_04	tvayA anekaSaH bahuSaH DanuzaH kArmukasya guRakftye mOrvIkArye guRavatkarmaRi ca
+sp002-000152_KS_04	niyojitA aDikftA iyam
+sp002-000153_KS_04	alipaNktiH karuRasvanEH dInasvanEH virutEH kUjitEH
+sp002-000154_KS_04	guruSokAm durBaraduHKAm
+sp002-000155_KS_04	gurustu gIzpatO SrezWe gurO pitari durBare iti SabdArRavaH
+sp002-000156_KS_04	mAm anuroditIva upasargAt sakarmakatvam
+sp002-000157_KS_04	rudAdiByaH sArvaDAtuke iti iqAgamaH
+sp002-000158_KS_04	pratipadyeti
+sp002-000159_KS_04	tAvat punarapi manoharam vapuH SarIram pratipadya prApya utTitaH san
+sp002-000160_KS_04	maDurAlApezu priyoktizu nisargapaRqitAm svaBAvapragalBAm kokilAm ratidUtipadezu
+sp002-000161_KS_04	suratadUtIsTAnezu AdiSA AjYApayA
+sp002-000162_KS_04	pragalBAnAmeva dOtyADikAraH iti BAvaH
+sp002-000163_KS_04	NIbantasyApi dUtISabdasya CandoBaNgaBayAdat hrasvaH
+sp002-000164_KS_04	api mAzam mazam kuryAt CandoBaNge tyajedgiram iti kecit
+sp002-000165_KS_04	uRAdayo bahulam iti bahulagrahaRAt hrasvaH iti vallaBaH
+sp002-000166_KS_04	Siraseti
+sp002-000167_KS_04	he smara SirasA praRipatya yAcitAni savepaTUni sakampAni
+sp002-000168_KS_04	wvito aTuc iti aTucpratyayaH
+sp002-000169_KS_04	sAtvikAntaropalakzaRametat
+sp002-000170_KS_04	stamBapralayaromAYcAH svedo vEvarRyavepaTU
+sp002-000171_KS_04	aSruvESvaryamityazwO sAtvikAH parikIrtitAH iti
+sp002-000172_KS_04	upagUQAni AliNganAni ca
+sp002-000173_KS_04	napuMsake BAve ktaH
+sp002-000174_KS_04	tAni anuBUtaprakArARi te rahaH ekAnte suratAni ca saMsmftya me SAntirnAsti
+sp002-000175_KS_04	atra samAnakartfkatvam durGawam samAnakriyApekzAstIti kecit
+sp002-000176_KS_04	racitamiti
+sp002-000177_KS_04	he ratipaRqita ratikuSala tvayA mama aNgezu avayavezu svayam racitam ftuH asya prAptaH Artavam vAsantam
+sp002-000178_KS_04	ftoraR iti aRpratyayaH
+sp002-000179_KS_04	kusumaprasADanam puzpABaraRamidam Driyate avatizWate
+sp002-000180_KS_04	DfY avasTAne iti DAtoH tOdAdikAtkartari law
+sp002-000181_KS_04	tava tatprasADakam cAru sundaram vapustu na dfSyate
+sp002-000182_KS_04	vibuDEriti
+sp002-000183_KS_04	dAruREH krUrEH
+sp002-000184_KS_04	prARAntike karmaRi niyogAditi BAvaH
+sp002-000185_KS_04	vibuDErdevEH
+sp002-000186_KS_04	anaBijYatvam ca Dvanyate
+sp002-000187_KS_04	yasya maccaraRasya parikarmaRi prasADane
+sp002-000188_KS_04	parikarma prasADanam ityamaraH
+sp002-000189_KS_04	AsamApte sati smftaH asi
+sp002-000190_KS_04	tamimam dakziRetaram vAmam me caraRam
+sp002-000191_KS_04	nirmitarAgam racitalAkzArAgam kuru ehi AgacCa
+sp002-000192_KS_04	ahamiti
+sp002-000193_KS_04	aham pataNgavartmanA SalaBamArgeRa
+sp002-000194_KS_04	agnipraveSena ityarTaH
+sp002-000195_KS_04	pataNgaH SalaBe cAgnO mArjAre arke Sare Kage
+sp002-000196_KS_04	iti vEjayantI
+sp002-000197_KS_04	etya Agatya punaH te aNkASrayaRI utsaNgavartinI BavAmi sampratyeva BavizyAmi
+sp002-000198_KS_04	vartamAnasAmIpye vartamAnavadvA iti law
+sp002-000199_KS_04	he priya divi svarge caturEH surakAminIjanEH apsarogaREH yAvat na viloByase viloBayizyase
+sp002-000200_KS_04	yAvatpurAnipAtayorlaw iti law
+sp002-000201_KS_04	madaneneti
+sp002-000202_KS_04	he ramaRa tvAm anuyAmi yadyapi anugamizyAmyeva
+sp002-000203_KS_04	vartamAnasAmIpye vartamAnavadvA iti law
+sp002-000204_KS_04	yadyapi iti avaDAraRe iti keSavaH
+sp002-000205_KS_04	kintu ratiH madanena vinAkftA
+sp002-000206_KS_04	viyojitA satI ityarTaH
+sp002-000207_KS_04	supsupeti samAsaH
+sp002-000208_KS_04	kzaRamAtram jIvitA kila iti idam vacanIyam nindA me mama vyavasTitam sTiramaBUt
+sp002-000209_KS_04	kriyatAmiti
+sp002-000210_KS_04	paraloke antaritasya vyavahitasya
+sp002-000211_KS_04	mftasya ityarTaH
+sp002-000212_KS_04	te tava mayA antyamaRqanam kaTam kena prakAreRa kriyatAm
+sp002-000213_KS_04	kriyatAmityatra kAmacAre low boDyaH
+sp002-000214_KS_04	drutadagDasya te yaTecCamaRqanamapi na samBavatItyarTaH
+sp002-000215_KS_04	kutaH
+sp002-000216_KS_04	aNgena ca jIvitena ca samam sahEva atarkitAm avicAritAm gatim gatoऽsi
+sp002-000217_KS_04	iha mftaSarIramapi nAsti kasya maRqanamiti BAvaH
+sp002-000218_KS_04	fjutAmiti
+sp002-000219_KS_04	Saram fjutAm Arjavam nayataH
+sp002-000220_KS_04	utsaNge nizaRRam aNkagatam Danuryasya tasya
+sp002-000221_KS_04	DanuzaSca iti anaNAdeSaH
+sp002-000222_KS_04	te tava maDunA vasantena saha
+sp002-000223_KS_04	maDurdEtye vasante ca cEtre ca iti viSvaH
+sp002-000224_KS_04	sasmitAm kaTAm AlApam taTA yat nayanopAntavilokitam apANgavIkzaRam
+sp002-000225_KS_04	te iti anuzaNgaH
+sp002-000226_KS_04	tacca smarAmi
+sp002-000227_KS_04	kveti
+sp002-000228_KS_04	hfdayam gacCatIti hfdayaNgamo hfdyaH
+sp002-000229_KS_04	KacprakaraRe gameH supi upasaNKyAnam iti KacpratyayaH
+sp002-000230_KS_04	arurdvizat ajantasya mum iti mumAgamaH
+sp002-000231_KS_04	te tava saKA kusumEH Ayojitam Aracitam kArmukam yena saH
+sp002-000232_KS_04	kArmukanirmAtA maDurvasantaH kva nu kva vA
+sp002-000233_KS_04	gata iti SezaH
+sp002-000234_KS_04	aTavA saH api ugraruzA tIvrakopena pinAkinA ISvareRa suhfdA madanena gatAm prAptAm gatim
+sp002-000235_KS_04	BasmatAm ityarTaH
+sp002-000236_KS_04	na gamitaH Kalu na prApitaH kim
+sp002-000237_KS_04	jijYAsAnunaye Kalu ityamaraH
+sp002-000238_KS_04	aTeti
+sp002-000239_KS_04	aTa tEH paridevitAkzarEH vilApavacanEH hfdaye digDaSarEH
+sp002-000240_KS_04	vizaliptamuKEH SarEH iva AhataH san
+sp002-000241_KS_04	vizAkte digDaliptakO ityamaraH
+sp002-000242_KS_04	maDurvasantaH AturAm ApannAm ratim aByupapattum anugrahItum
+sp002-000243_KS_04	ASvAsayitum ityarTaH
+sp002-000244_KS_04	aByupapattiH anugrahaH iti amaraH
+sp002-000245_KS_04	AtmAnam puraH adarSayat
+sp002-000246_KS_04	AviraBUt ityarTaH
+sp002-000247_KS_04	tamiti
+sp002-000248_KS_04	sA ratiH tam maDum avekzya dfzwvA BfSam ruroda
+sp002-000249_KS_04	stanO sambADya stanasambADam
+sp002-000250_KS_04	parikliSyamAne ca iti Ramul
+sp002-000251_KS_04	uraH jaGAna tAqitavatI ca
+sp002-000252_KS_04	taTAhi
+sp002-000253_KS_04	svajanasya agrataH duHKam vivftam apasAritam dvAram kapAwam yasya tadiva
+sp002-000254_KS_04	upajAyate AvirBavati
+sp002-000255_KS_04	ucCfNKalam pravartate iti utprekzABiprAyaH
+sp002-000256_KS_04	itIti
+sp002-000257_KS_04	duHKamasyAH saYjAtam duHKitA
+sp002-000258_KS_04	saYjAtaduHKA ityarTaH
+sp002-000259_KS_04	tArakAditvAt itac
+sp002-000260_KS_04	sA ratiH enam vasantam ityuvAca ca
+sp002-000261_KS_04	cakAraH pUrvoktasamuccayArTaH
+sp002-000262_KS_04	he vasanta paSya suhfdaH
+sp002-000263_KS_04	tvatsaKasya kim sTitam kim upasTitam tadidam kapotakarburam pArAvataSabalam
+sp002-000264_KS_04	kaRaSaH cUrRIBUtam
+sp002-000265_KS_04	alpArTAt CaspratyayaH
+sp002-000266_KS_04	Basma pavanErvikIryate vikzipyate
+sp002-000267_KS_04	paSya BasmIBUtaste suhft ityarTaH
+sp002-000268_KS_04	ayIti
+sp002-000269_KS_04	ayi smara samprati darSanam dehi
+sp002-000270_KS_04	ezaH mADavaH vasantaH paryutsuKaH tvaddarSanotkaRWitaH
+sp002-000271_KS_04	tvAm api anAdftavataH asya kaH mADavaH iti ASaNkya Aha
+sp002-000272_KS_04	nfRAm puruzARAm dayitAsu prema anavasTitam asTiram
+sp002-000273_KS_04	calamityarTaH
+sp002-000274_KS_04	suhfjjane prema tu na calam Kalu
+sp002-000275_KS_04	amuneti
+sp002-000276_KS_04	nanu madana pArSvavartinA sahacareRa amunA vasantena
+sp002-000277_KS_04	sasurAsuram surAsurasahitam jagat visatanduguRasya mfRAlasUtramOrvIkasya
+sp002-000278_KS_04	pelavAni komalAni puzpARyeva patriRaH bARAH yasya tasya tava DanuzaH AjYAm kAritam
+sp002-000279_KS_04	jagadAjYA kAritA ityarTaH
+sp002-000280_KS_04	hfkroranyatarasyAmiti jagataH karmatvam
+sp002-000281_KS_04	gata iti
+sp002-000282_KS_04	saH te saKA anilAhataH vAyutAqitaH dIpaH iva gataH eva na nivartate
+sp002-000283_KS_04	aham asya dIpAyamAnasya daSA vartiriva
+sp002-000284_KS_04	tizWAmIti SezaH
+sp002-000285_KS_04	daSA vartAvavasTAyAm vastrAnte syuH daSA api
+sp002-000286_KS_04	iti viSvaH
+sp002-000287_KS_04	kutaH
+sp002-000288_KS_04	soQum aSakyaduHKaprakarzeRa DUmitAm saYjAtaDUmAm mAm paSya
+sp002-000289_KS_04	DUmavattvAt nazwadIpadaSAsAmyam DUmaSca vyasanameva ityarTaH
+sp002-000290_KS_04	vartirapi dIpe nazwe DUmitA Bavati
+sp002-000291_KS_04	viDineti
+sp002-000292_KS_04	nanu vasanta kAmavaDe madanavaDe mAm vimuYcatA varjayatA
+sp002-000293_KS_04	amArayatA ityarTaH
+sp002-000294_KS_04	viDinA dEvena
+sp002-000295_KS_04	viSasati hinastIti viSaso GAtukaH
+sp002-000296_KS_04	viSasasya karma vESasam
+sp002-000297_KS_04	yuvAditvAt aRpratyayaH
+sp002-000298_KS_04	arDavESasam arDavaDaH kftam
+sp002-000299_KS_04	arDo vA eza Atmano yatpatnI iti SruteH
+sp002-000300_KS_04	patyuH svasya ca ASrayASrayiBUtayoH
+sp002-000301_KS_04	ekapadArTatvABiprAyeRa arDoktiH
+sp002-000302_KS_04	taTA ca ekadeSavaDe deSAntarasyApi vaDaniyamanAt mAmapi viDiH aGnanneva hatavAn iti tAtparyam
+sp002-000303_KS_04	etadeva upapAdayati
+sp002-000304_KS_04	anapAyinI anapAyitvena viSvaste saMSrayadrume ASrayavfkze gajaBagne sati vallarI latA patanAya BavatIti SezaH
+sp002-000305_KS_04	patitumeva sA alamityarTaH
+sp002-000306_KS_04	tumarTAcca BAvavacanAt iti caturTI
+sp002-000307_KS_04	taditi
+sp002-000308_KS_04	tattasmAtkAraRAt uktaprakAreRa
+sp002-000309_KS_04	anyaTApi maraRasya avaSyamBAvAt ityarTaH
+sp002-000310_KS_04	anantaram BavatA idam vakzyamARam banDujanaprayojanam banDukftyam kriyatAm
+sp002-000311_KS_04	prArTanAyAm low
+sp002-000312_KS_04	tadeva upadiSati
+sp002-000313_KS_04	nanu vasanta viDurAm vivaSAm mAm jvalanAtisarjanAt agnidAnAt patyurantikam prApaya
+sp002-000314_KS_04	agnipraveSanam kArayA ityarTaH
+sp002-000315_KS_04	SaSineti
+sp002-000316_KS_04	kOmudI candrikA SaSinA saha yAti
+sp002-000317_KS_04	SaSini astamite svayam naSyati ityarTaH
+sp002-000318_KS_04	taqitsOdAminI meGena saha pralIyate praRaSyati
+sp002-000319_KS_04	kartari law
+sp002-000320_KS_04	pramadAH striyaH pativartmagacCantIti pativartmagAH
+sp002-000321_KS_04	patimArgAnugAminyaH ityetat vicetanEH
+sp002-000322_KS_04	avivekiBiH api ityarTaH
+sp002-000323_KS_04	nATastu pfTagjanEH iti papAWa
+sp002-000324_KS_04	pratipannam jYAtam
+sp002-000325_KS_04	alavaRA yavAgUH anudarAkanyA iti vat alpatvABiprAyeRa vicetanErapi iti nirdeSaH
+sp002-000326_KS_04	pativartmagAH ityatra smftiH
+sp002-000327_KS_04	ArtA Arte mudite hfzwA prozite malinA kfSA
+sp002-000328_KS_04	mfte mriyeta yA patyO sA strI jYeyA pativratA iti
+sp002-000329_KS_04	amuneti
+sp002-000330_KS_04	amunA purovartinA suBagena SoBanena priyagAtraBasmanEva
+sp002-000331_KS_04	evakAro maRqanAntaranivfttyarTaH
+sp002-000332_KS_04	kazAyitastanI raYjitastanI
+sp002-000333_KS_04	rAge kvATe kazAyaH astrI niryAse sOraBe rase iti vEjayantI
+sp002-000334_KS_04	navapallavasaMstare yaTA navapallavatalpe iva viBAvasO vahnO tanum SarIram racayizyAmi
+sp002-000335_KS_04	niDAsyAmi ityarTaH
+sp002-000336_KS_04	kusumeti
+sp002-000337_KS_04	he sOmya sADo tvam AvayoH ratipaYcabARayoH bahuSaH bahuvAram kusumAstaraRe puzpaSayane sahAyatAm gataH
+sp002-000338_KS_04	samprati praRipAtAYjalinA yAcitaH
+sp002-000339_KS_04	aYjalipUrvakam prArTitaH san ityarTaH
+sp002-000340_KS_04	ASu me citAm kAzWacayam kuru kuruzva
+sp002-000341_KS_04	yaTA iha taTA amutra upakartavyam mitreRa ityarTaH
+sp002-000342_KS_04	tadanviti
+sp002-000343_KS_04	taccitAkaraRAm anu anantaram
+sp002-000344_KS_04	mayyarpitam madarpitam jvalanam agnim dakziRavAtavIjanEH malayamAruta saYcAraREH
+sp002-000345_KS_04	tvarayeH
+sp002-000346_KS_04	tvaritam jvalaya ityarTaH
+sp002-000347_KS_04	tvarAhetumAha te tava viditam Kalu matibudDipUjArTeByaSca iti vartamAne ktaH
+sp002-000348_KS_04	tadyogAt kartari zazWI
+sp002-000349_KS_04	yaTA yena prakAreRa smaraH mAm vinA kzaRamapi notsahate na hfzyati
+sp002-000350_KS_04	taTA tvayA jYAtameva ityarTaH
+sp002-000351_KS_04	itIti
+sp002-000352_KS_04	api ca ityevam viDAya kftvA nO AvAByAm eka eva salilasya aYjalirdIyatAm
+sp002-000353_KS_04	tamaYjalim saH te bAnDavaH saKA smaraH paratra paraloke mayA sahitaH aviBajya pAsyati
+sp002-000354_KS_04	paraloketi
+sp002-000355_KS_04	kiYca he mADava vasanta paralokaviDO
+sp002-000356_KS_04	piRqodakAdikarmaRi smaramuddiSya vilolAH pallavAH yAsu tAH sahakAramaYjarIH cUtavallarIH
+sp002-000357_KS_04	hi yasmAtkAraRAt te saKA smaraH priyAH cUtaprasavAH yasya saH taToktaH
+sp002-000358_KS_04	itIti
+sp002-000359_KS_04	iti dehasya vimuktaye SarIrasya visargAya sTitAm
+sp002-000360_KS_04	kftaniScayAm iti yAvat
+sp002-000361_KS_04	ratim AkASaBavA sarasvatI aSarIrA vAk
+sp002-000362_KS_04	hradaSozaviklavAm hradasya jalADArasya SozeRa viklavAm SaParIm prozWIm prozWI tu SaParI dvayoH ityamaraH
+sp002-000363_KS_04	praTamA vfzwiH varzam iva anvakampayat anukampitavatI
+sp002-000364_KS_04	sadayam uvAca ityarTaH
+sp002-000365_KS_04	kfpA dayAnukampA syAt ityamaraH
+sp002-000366_KS_04	kusumeti
+sp002-000367_KS_04	he kusumAyuDapatni rate tava BartA cirAt ciram durlaBo na Bavizyati
+sp002-000368_KS_04	kintu acirameva sulaBo Bavizyati ityarTaH
+sp002-000369_KS_04	kiYca SrfRu
+sp002-000370_KS_04	tatkarma iti SezaH
+sp002-000371_KS_04	yena karmaRA saH te BartA haralocanasyA arcirjvAlA
+sp002-000372_KS_04	jvAlA BAso na puMsi arciH ityamaraH
+sp002-000373_KS_04	tasmin SalaBatvam pataNgatvam gataH
+sp002-000374_KS_04	samO pataNgaSalaBO ityamaraH
+sp002-000375_KS_04	aBilAzeti
+sp002-000376_KS_04	udIritendriyaH preritendriyaH smareRa iti SezaH
+sp002-000377_KS_04	prajApatiH brahmA svasutAyAm sarasvatyAm aBilAzam anurAgam akarot
+sp002-000378_KS_04	aTa tena prajApatinA vikriyAm indriyavikAram nigfhya nirudya aBiSaptaH san
+sp002-000379_KS_04	etat Palam dAhAtmakam svakarmaPalam anvaBUt
+sp002-000380_KS_04	pariRezyatIti
+sp002-000381_KS_04	itIti ca
+sp002-000382_KS_04	DarmeRa DarmAKyaprajApatinA yAcitaH prArTitaH saH BagavAnbrahmA
+sp002-000383_KS_04	tapasA kAraRena tasyAm pArvatyAm pravaRIkftaH
+sp002-000384_KS_04	aBimuKIkftaH haraH SivaH yadA pArvatIm
+sp002-000385_KS_04	pariRezyati udvakzyati tadA upalabDasuKaH prAptAnandaH san
+sp002-000386_KS_04	smaram kAmam svena vapuzA niyojayizyati saNgamayizyati
+sp002-000387_KS_04	ityevam smaraSApasya avaDidAm avasAnadAyinIm sarasvatIm vAcam ca Aha
+sp002-000388_KS_04	evam SApAvaDim api uktavAn ityarTaH
+sp002-000389_KS_04	nanu taTA krudDasya kaTamIdfSI SAntiH ata Aha
+sp002-000390_KS_04	vaSinaH jitendriyASca ambuDarASca aSaneH amftasya ca iti
+sp002-000391_KS_04	uBayoH yonayaH praBavAH
+sp002-000392_KS_04	vaSipakze aSani amftaSabdO kopaprasAdaparO
+sp002-000393_KS_04	anyatra
+sp002-000394_KS_04	vEdyutAgni udakaparO
+sp002-000395_KS_04	yugmakam
+sp002-000396_KS_04	taditi
+sp002-000397_KS_04	heSoBane tattasmAtkAraRAt BavitavyaH BavizyanpriyasaNgamaH yasya yasya tat taToktamidam vapuH parirakza
+sp002-000398_KS_04	taTAhi
+sp002-000399_KS_04	ravipItajalA nadI tapAtyaye prAvfzi
+sp002-000400_KS_04	prAvfw tapAtyaye iti halAyuDaH
+sp002-000401_KS_04	punaroGeRa pravAheRa yujyate saNgacCate hi
+sp002-000402_KS_04	itTamiti
+sp002-000403_KS_04	itTam anena prakAreRa adfSyarUpam kimapi BUtam kaScitprARI
+sp002-000404_KS_04	yuktekzmAdAvfte BUtam prARyatIte same trizu ityamaraH
+sp002-000405_KS_04	rateH madanadArARAm maraRavyavasAyabudDim maraRodyogabudDim mandIcakAra
+sp002-000406_KS_04	nivArayAmAsa ityarTaH
+sp002-000407_KS_04	mUQAlpApawunirBAgyA mandAH ityamaraH
+sp002-000408_KS_04	aTa kusumAyuDabanDuH vasantaSca tatpratyayAt tasminBUte viSvAsAt
+sp002-000409_KS_04	pratyayaH aDInaSapaTajYAnaviSvAsahetuzu ityamaraH
+sp002-000410_KS_04	enAm ratim suzWu caritArTAni padAni yezAm tEH vacoBiH vAkyEH ASvAsayat
+sp002-000411_KS_04	sarvaTA te devatAprasAdAt priyasaNgamaH Bavizyati ityAdivacanEH asyAH duHKam apAcakAra ityarTaH
+sp002-000412_KS_04	aTeti
+sp002-000413_KS_04	aTa anantaram vyasanena duHKena kfSA madanavaDUH ratiH upaplavAntam vipadavaDim
+sp002-000414_KS_04	kiraRaparikzayeRa DUsarA malinA divAtanasya dinaBavasya
+sp002-000415_KS_04	sAyaYciram ityAdinA wyupratyayaH
+sp002-000416_KS_04	SaSinaH candrasya leKA pradozam rAtrimiva paripAlayAmbaBUva pratIkzAYcakre
+sp002-000417_KS_04	puzpitAgrAvfttam
+sp002-000418_KS_04	ayuji nayugarePato yakAro yuji ca najO jaragASca puzpitAgrA iti lakzaRAt
+sp002-000419_KS_04	iti SrImanmahAmahopADyAyakolAcalamallinATasUriviracitayA saYjIvinIsamAKyayA vyAKyayA sametaH
+sp002-000420_KS_04	SrIkAlidAsakftO kumArasamBave mahAkAvye rativilApo nAma caturTaH sargaH
+sp002-000421_KS_06_1-15	aTeti
+sp002-000422_KS_06_1-15	aTa devadevAnugrahAnantaram gOrI pArvatI viSvam AtmA svarUpam yasya iti
+sp002-000423_KS_06_1-15	viSvasya AtmA iti vA
+sp002-000424_KS_06_1-15	viSvAtmane SivAya miTaH rahasi
+sp002-000425_KS_06_1-15	miToऽnyoऽnyam rahasyapi ityamaraH
+sp002-000426_KS_06_1-15	saKIm sandideSa atisasarja
+sp002-000427_KS_06_1-15	kriyAmAtrayogeऽpi sampradAnatvAt caturTI
+sp002-000428_KS_06_1-15	kimiti
+sp002-000429_KS_06_1-15	BUBftAm nATaH himavAn me mama dAtA saH
+sp002-000430_KS_06_1-15	pramARIkriyatAmiti
+sp002-000431_KS_06_1-15	dAtftvena pramARIkriyatAm ityarTaH
+sp002-000432_KS_06_1-15	prArTanAyAm low
+sp002-000433_KS_06_1-15	pitrA dIyamAnAyAH parigrahaH mama mahAn anugrahaH iti BAvaH
+sp002-000434_KS_06_1-15	tayeti
+sp002-000435_KS_06_1-15	tayA saKyA
+sp002-000436_KS_06_1-15	saKImuKena ityarTaH
+sp002-000437_KS_06_1-15	vyAhftasandeSa uktavAcikA priye haravizaye niBftA niScalA
+sp002-000438_KS_06_1-15	paramAsaktA ityarTaH
+sp002-000439_KS_06_1-15	sA gOrI
+sp002-000440_KS_06_1-15	maDO vasante niBftA sTirA paraBftayA kokilayA unmuKI muKarA paraBftonmuKI
+sp002-000441_KS_06_1-15	muKaSabdena aBiBAzaRavyApAro lakzyate
+sp002-000442_KS_06_1-15	taTA ca paraBftAmuKena vyAharantI ityarTaH
+sp002-000443_KS_06_1-15	paraBftA iti kriyASabdavivakzAyAm jAterastrI iti NIzpratyayo naBavati
+sp002-000444_KS_06_1-15	tayA iti upameyasya vyastatvAt upamAnavAci paraBftASabdasya samAsaH soQavyaH
+sp002-000445_KS_06_1-15	aTavA BfdBaraRam
+sp002-000446_KS_06_1-15	sampadAditvAt kvip
+sp002-000447_KS_06_1-15	parEH Bft yasyAH tayA paraBftA iti vyAsena vyAKyeyam
+sp002-000448_KS_06_1-15	padamaYjarIkArastu parErBriyate iti karmaRi kvipamAha
+sp002-000449_KS_06_1-15	cUtayazwiH cUtaSAKA iva aByASe antike baBO
+sp002-000450_KS_06_1-15	sadeSAByASa saviDa samaryAda saveSavat
+sp002-000451_KS_06_1-15	upakaRWAntikAByarRAByagrA api aBitaH avyayam
+sp002-000452_KS_06_1-15	ityamaraH
+sp002-000453_KS_06_1-15	sa iti
+sp002-000454_KS_06_1-15	saH prakftaH
+sp002-000455_KS_06_1-15	SAstIti SAsanaH bahulagrahaRAtkartari lyuw
+sp002-000456_KS_06_1-15	smarasya SAsanaH ISvaraH taTA iti pratijYAya
+sp002-000457_KS_06_1-15	taTA karizyAmi iti uktvA ityarTaH
+sp002-000458_KS_06_1-15	umAm kaTamapi kfcCreRa visfjya
+sp002-000459_KS_06_1-15	tatra gAQAnurAgatvAditi BAvaH
+sp002-000460_KS_06_1-15	jyotirmayAn tejorUpAn saptarzIn aNgiraHpraBftIn sasmAra smftavAn
+sp002-000461_KS_06_1-15	ta iti
+sp002-000462_KS_06_1-15	te tapa eva Danam yezAm te tapoDanAH saptarzayaH praBAmaRqalEH
+sp002-000463_KS_06_1-15	tejaHpuYjEH vyoma AkASam dyotayantaH prakASayantaH
+sp002-000464_KS_06_1-15	arunDatyA saha vartante iti sArunDatIkAH santaH
+sp002-000465_KS_06_1-15	nadyutaSca iti kap
+sp002-000466_KS_06_1-15	sapadi praBoH ISvarasya puraH puroBAge prAdurAsan pratyakzAH baBUvuH
+sp002-000467_KS_06_1-15	itaH param zaqBiH SlokEH tAneva munIn varRayati
+sp002-000468_KS_06_1-15	AplutA iti
+sp002-000469_KS_06_1-15	utkiranti vikzipantI iti utkirAH
+sp002-000470_KS_06_1-15	igupaDa ityAdinA kapratyayaH
+sp002-000471_KS_06_1-15	tIre ye mandArAH kalpavfkzAH tezAm kusumAnAm utkirAH vIcayaH taraNgAH yezAm tezu
+sp002-000472_KS_06_1-15	diNnAgAnAm diggajAnAm madaganDaH yezu iti taToktezu
+sp002-000473_KS_06_1-15	vyomagaNgApravAhezu AkASagaNgAsrotassu AplutAH snAtAH
+sp002-000474_KS_06_1-15	mukteti
+sp002-000475_KS_06_1-15	muktAnAm mOktikAnAm yajYopavItAni muktAmayAni ityarTaH
+sp002-000476_KS_06_1-15	biBrataH daDAnAH
+sp002-000477_KS_06_1-15	hemamayAni valkalAni yezAm te hEmavalkalAH
+sp002-000478_KS_06_1-15	ratnamayAni akzasUtrARi yezAm te ratnAkzasUtrAH
+sp002-000479_KS_06_1-15	pravrajyAm pravrajanam
+sp002-000480_KS_06_1-15	vrajayajorBAve kyap iti kyap
+sp002-000481_KS_06_1-15	ASritAH kalpavfkzAH iva sTitAH
+sp002-000482_KS_06_1-15	atra caturTASramavAcinA pravrajyASabdena vAnaprasTASramo lakzyate
+sp002-000483_KS_06_1-15	jahuH parigrahavrIqAm prAjApatyAH tapasvinaH
+sp002-000484_KS_06_1-15	iti sapatnIkatvA aBiDAnAt sutavinyastapatnIkaH tayA vA anugataH api san
+sp002-000485_KS_06_1-15	iti vAnaprasTasya uBayaTA smaraRAt
+sp002-000486_KS_06_1-15	aDa iti
+sp002-000487_KS_06_1-15	aDaH prasTApitASvena
+sp002-000488_KS_06_1-15	sUryamaRqaloparivartitvAt saptarzimaRqalasya iti BAvaH
+sp002-000489_KS_06_1-15	samAvarjitaketunA tanmaRqalAGAtaSaNkayA nAmitaDvajena sahasraraSminA sUryeRa
+sp002-000490_KS_06_1-15	sAkzAt svayameva sAkzAt svayameva sapraRAmam udIkzitAH
+sp002-000491_KS_06_1-15	gamanAByanujYAdAnaparyantam ityarTaH
+sp002-000492_KS_06_1-15	BagavataH sUryasyApi upAsyAH iti BAvaH
+sp002-000493_KS_06_1-15	Asakteti
+sp002-000494_KS_06_1-15	punaH kiMviDAH
+sp002-000495_KS_06_1-15	pralayApadi kalpAntasaNkawe AsaktabAhulatayA
+sp002-000496_KS_06_1-15	daMzwrAyAmiti SezaH
+sp002-000497_KS_06_1-15	udDftayA
+sp002-000498_KS_06_1-15	daMzwrayA iti SezaH
+sp002-000499_KS_06_1-15	BuvA sArDam DaraRyA saha mahAvarAhadaMzwrAyAm viSrAntAH
+sp002-000500_KS_06_1-15	mahApralaye api avinASinaH ityarTaH
+sp002-000501_KS_06_1-15	sargeti
+sp002-000502_KS_06_1-15	viSvayoneH brahmaRaH anantaram sargaSezasya praRayanAt
+sp002-000503_KS_06_1-15	brahmasfzWAvaSizwasfzweH karaRAdDetorityarTaH
+sp002-000504_KS_06_1-15	purAvidBiH purARavediBiH vyAsAdiBiH purAtanAH DAtAraH iti kIrtitAH
+sp002-000505_KS_06_1-15	viSvayoneriti sambanDamAtre zazWI
+sp002-000506_KS_06_1-15	tasyAnantaramiti BAzye darSanAt
+sp002-000507_KS_06_1-15	apAdAnatvavivakzAyAm tu paYcamI
+sp002-000508_KS_06_1-15	ayam adaH SabdaH yaTASabdAvfttAt anantarasya iti SAbaraBAzye darSanAt
+sp002-000509_KS_06_1-15	taTA aTAto DarmajijYAsA vedADyAyAdanantaram iti AcAryAH
+sp002-000510_KS_06_1-15	kaviSca purARapattrApagamAdanantaram iti
+sp002-000511_KS_06_1-15	evamanyatrApi drazwavyam
+sp002-000512_KS_06_1-15	prAktanAnAmiti
+sp002-000513_KS_06_1-15	prAktanAnAm janmAntaraBavAnAm viSudDAnAm nirmalAnAm paripAkam PaladAnonmuKatvam upeyuzAm gatAnAm
+sp002-000514_KS_06_1-15	tapasAm PalAni upaBuYjAnAH api tapasvinaH taponizWAH
+sp002-000515_KS_06_1-15	prArabDaBoginaH niHspfhASca iti BAvaH
+sp002-000516_KS_06_1-15	kulakam
+sp002-000517_KS_06_1-15	tezAmiti
+sp002-000518_KS_06_1-15	tezAm fzIRAm maDyagatA sADvI pativratA
+sp002-000519_KS_06_1-15	ata eva patyuH vasizWasya pAdayoH arpitekzaRA nivizwadfzwiH
+sp002-000520_KS_06_1-15	arunDatI sAkzAtpratyakzA tapaHsidDiriva tezAm eva iti SezaH
+sp002-000521_KS_06_1-15	tezAm maDyagate maDyagatA iti liNgavacanAdi sAmyAt iyam upamA
+sp002-000522_KS_06_1-15	bahu BUyizWam baBAse BAti sma
+sp002-000523_KS_06_1-15	tAmiti
+sp002-000524_KS_06_1-15	ISvaraH BagavAn tAm arunDatIm munIMSca agOravaBedena samAnapratipattyA apaSyat dfzwavAn
+sp002-000525_KS_06_1-15	na ca ayam avivekaH ityAha
+sp002-000526_KS_06_1-15	hi yasmAt strI pumAMSca iti ezA anAsTA strIpuMsaBedaH na vivakzitaH
+sp002-000527_KS_06_1-15	kintu satAm sADUnAm vfttam caritrameva mahitam pUjyam
+sp002-000528_KS_06_1-15	guRAH pujAsTAnam guRizu na ca liNgam na ca vayaH iti BAvaH
+sp002-000529_KS_06_1-15	taditi
+sp002-000530_KS_06_1-15	taddarSanAt arunDatIdarSanAt SamBoH dArArTam dArArTam dAraparigrahArTam AdaraH BUyAn bahutaraH aBUt
+sp002-000531_KS_06_1-15	nanu dArAH kutra upayujyante ityatra Aha
+sp002-000532_KS_06_1-15	GarmyARAm DarmAt anapetAnAm
+sp002-000533_KS_06_1-15	DarmapaTyarTanyAyAdanapete iti yatpratyayaH
+sp002-000534_KS_06_1-15	kriyARAm ijyAdInAm satyaH pativratAH patnyaH satpatnyaH
+sp002-000535_KS_06_1-15	patyurno yajYasaMyoge iti NIp
+sp002-000536_KS_06_1-15	nakAraSca
+sp002-000537_KS_06_1-15	mUlakAraRam Kalu
+sp002-000538_KS_06_1-15	DarmeReti
+sp002-000539_KS_06_1-15	DarmeRa dArasaYjiGfkzAlakzaRenApi kartrA
+sp002-000540_KS_06_1-15	Sarve ISvare pArvatIm prati padam karote padam kArite sati
+sp002-000541_KS_06_1-15	hfkroranyatarasyAmiti Sarvasya aRikartuH karmatvam
+sp002-000542_KS_06_1-15	pUrvAparADaBItasya kAmasya mana ucCvasitam
+sp002-000543_KS_06_1-15	punarujjIvanAvakASaH BavatIti sapratyASam aBUt ityarTaH
+sp002-000544_KS_06_1-15	aTeti
+sp002-000545_KS_06_1-15	aTa anUcAnAH
+sp002-000546_KS_06_1-15	sANgavedapravaktAraH
+sp002-000547_KS_06_1-15	anUcAnaH pravacane sANge aDItI gurostu yaH ityamaraH
+sp002-000548_KS_06_1-15	upeyivAn anASvAn anUcAnaSca iti nipAtaH
+sp002-000549_KS_06_1-15	prItyA kaRwakitAH pulakitAH tvacaH yezAm te taToktAH
+sp002-000550_KS_06_1-15	te sarve munayaH jagadgurum haram mAnayitvA pUjayitvA idam vakzyamARam UcuH
+sp002-000551_RV_02	aTeti
+sp002-000552_RV_02	aTa niSApanayanAnantaram yaSa eva Danam yasya sa yaSoDanaH
+sp002-000553_RV_02	kIrti sampannaH prajAnAm aDipo dilIpaH
+sp002-000554_RV_02	praBAte prAtaHkAle jAyayA sudakziRayA
+sp002-000555_RV_02	pratigrAhite svIkArite ganDamAlye yayA sA jAyApratigrAhitaganDamAlyA
+sp002-000556_RV_02	tAm pItam pAnamasyAstIti pItaH
+sp002-000557_RV_02	pItavAn ityarTaH
+sp002-000558_RV_02	arSa AditvAd acpratyayaH
+sp002-000559_RV_02	pItA gAvo BuktA brAhmaRAH iti mahABAzya prayoga darSanAt
+sp002-000560_RV_02	pItaH pratibadDaH vatso yasyAstAm fzerDenum vanAya vanam gantum
+sp002-000561_RV_02	mumoca kriyArTopapade ityAdinA caturTI
+sp002-000562_RV_02	jAyApadasAmarTyAt sudakziRAyAH putrajananayogyatvamastIti sUcitam
+sp002-000563_RV_02	taTA ca SrutiH patirjAyAm praviSati garBo BUtvA sa mAtaram
+sp002-000564_RV_02	tasyAm punarnavo BUtvA daSame mAsi jAyate
+sp002-000565_RV_02	tajjAyA jAyA Bavati yadasyAm jAyate punaH
+sp002-000566_RV_02	iti
+sp002-000567_RV_02	yaSoDana ityanena putravattAkIrtiloBAt rAjAnarhepi gorakzaRe pravftta iti gamyate
+sp002-000568_RV_02	asmin sarge vfttamupajAtiH
+sp002-000569_RV_02	syAdindravajrA yadi tO jagO gaH
+sp002-000570_RV_02	upendravajrA jatajAstato gOH
+sp002-000571_RV_02	ityatroktam kedAreRa
+sp002-000572_RV_02	anantarodIritalakzmaBAjaH pAdA yadIyA upajAtayastAH iti
+sp002-000573_RV_02	tasyA iti
+sp002-000574_RV_02	pAMsavo dozA AsAm santIti pAMsulAH svEriRyaH
+sp002-000575_RV_02	svEriRI pAMsuletyamaraH
+sp002-000576_RV_02	siDmAdiByaSca iti lacpratyayaH
+sp002-000577_RV_02	tA na BavantIti apAMsulAH tAsAm Duri agre kIrtanIyA parigaRanIyA manuzyeSvaraDarmapatnI
+sp002-000578_RV_02	dilIpaDarmapatnI sudakziRA KuranyAsEH pavitrapAMsum
+sp002-000579_RV_02	tasyAm DenoH mArgam smftiH manvAdivAkyam SrutervedavAkyasya arTamaBiDeyamiva
+sp002-000580_RV_02	anvagacCat anusftavatI
+sp002-000581_RV_02	yaTA smftiH SrutikzuRRameva arTamanusarati taTA sApi goKurakzuRRameva mArgamanusasAra ityarTaH
+sp002-000582_RV_02	DarmapatnIti atra aSvaGAsAdivat tAdarTye zazWIsamAsaH
+sp002-000583_RV_02	prakftivikArABAvABAvAt
+sp002-000584_RV_02	nivartyeti
+sp002-000585_RV_02	dayAluH kAruRikaH
+sp002-000586_RV_02	syAddayAluH kAruRikaH ityamaraH
+sp002-000587_RV_02	spfhigfhi ityAdinA AlucpratyayaH
+sp002-000588_RV_02	yaSoBiH suraBiH manojYaH
+sp002-000589_RV_02	suraBiH syAnmanojYeऽpi iti viSvaH
+sp002-000590_RV_02	rAjA dayitAm nivartya sOraBeyIm kAmaDenusutAm tAm nandinIm
+sp002-000591_RV_02	DarantIti DarAH
+sp002-000592_RV_02	pacAdyac
+sp002-000593_RV_02	payasAm DarAH payoDarAH stanAH
+sp002-000594_RV_02	strIstanAbdO payoDarA ityamaraH
+sp002-000595_RV_02	apayoDarAH payoDarAH sampadyamAnA BUtAH payoDarI BUtAH
+sp002-000596_RV_02	aBUtatadBAve cviH
+sp002-000597_RV_02	kugatiprAdayaH iti samAsaH
+sp002-000598_RV_02	payoDarIBUtAScatvAraH samudrAH yasyAstAm
+sp002-000599_RV_02	anekamanyapadArTe iti anekapadagrahaRasAmarTyA tripado bahuvrIhiH
+sp002-000600_RV_02	gorUpasya DarAm urvIm vasuDAmiva vasuDorvI vasunDarA ityamaraH
+sp002-000601_RV_02	jugopa rarakza
+sp002-000602_RV_02	BUrakzaRaprayatneneva rarakza iti BAvaH
+sp002-000603_RV_02	upU rakzaRa iti DAtoH kartari liw
+sp002-000604_RV_02	Denupakze payasA dugDena aDarIBUtAScatvAraH samudrAH yasyAH sA taToktAm
+sp002-000605_RV_02	dugDatiraskftasAgarAmityarTaH
+sp002-000606_RV_02	vratAyeti
+sp002-000607_RV_02	vratAya DenoH anucareRa
+sp002-000608_RV_02	na tu jIvanAya iti BAvaH
+sp002-000609_RV_02	tena dilIpena Sezopi avaSizwoऽpi anuyAyivargaH anucarasaNGaH nyazeDi nivartitaH
+sp002-000610_RV_02	Sezatvam sudakziRApekzayA
+sp002-000611_RV_02	kaTam tarhi AtmarakzaRam ityata Aha na ceti
+sp002-000612_RV_02	tasya dilIpasya SarIrarakzA ca anyataH puruzAntarAt na ca
+sp002-000613_RV_02	hi yasmAt manoH prasUyata iti prasUtiH santatiH svavIryaguptA svaparAkrameRa rakzitA
+sp002-000614_RV_02	na hi svaparAkrama nirvAhakasya parApekzeti BAvaH
+sp002-000615_RV_02	AsvAdavadBiriti
+sp002-000616_RV_02	samrAw maRqaleSvaraH
+sp002-000617_RV_02	yenezwam rAjasUyena maRqalasyeSvaraSca yaH
+sp002-000618_RV_02	SAsti yaScAjYayA rAjYaH sa samrAw ityamaraH
+sp002-000619_RV_02	sa rAjA
+sp002-000620_RV_02	AsvAdavadBiH rasavadBiH
+sp002-000621_RV_02	tfRAnAm kavalEH grAsEH
+sp002-000622_RV_02	kaRqUyanEH daMSAnAm vanamakzikARAm nivAraRESca
+sp002-000623_RV_02	daMSastu vanamakziketyamaraH
+sp002-000624_RV_02	avyAhatEH apratihatEH svEragatEH svacCandagamanESca tasyAH
+sp002-000625_RV_02	DenvAH samArADanatatparaH SuSrUzAsaktaH aBUt
+sp002-000626_RV_02	tadeva param praDAnam yasya sa tatparaH
+sp002-000627_RV_02	tatpare prasitAsaktO ityamaraH
+sp002-000628_RV_02	sTita iti
+sp002-000629_RV_02	BUpatiH dilIpaH tAm gAm sTitAm satIm sTitaH san
+sp002-000630_RV_02	sTitiH UrDvAvasTAnam
+sp002-000631_RV_02	prayAtAm prasTitAm satIm uccalitaH prasTitaH san
+sp002-000632_RV_02	nizeduzIm nizaRRAm satIm upavizwAmityarTaH
+sp002-000633_RV_02	BAzAyAm sadavasaSruva iti kvasupratyayaH
+sp002-000634_RV_02	ugitaSca iti NIp
+sp002-000635_RV_02	Asanasya banDe upaveSane DIraH sTiraH upavizwaH san ityarTaH
+sp002-000636_RV_02	jalam AdadAnAm pibantIm satIm
+sp002-000637_RV_02	jalABilAzI san piban ityarTaH
+sp002-000638_RV_02	itTam CAyeva anvagacCat anusftavAn
+sp002-000639_RV_02	sa iti
+sp002-000640_RV_02	nyastAni parihftAni cihnAni CatracAmarAdIni yasyAH tAm taTABUtAmApi
+sp002-000641_RV_02	tejoviSezeRa pratiBAtiSayena anumitAm
+sp002-000642_RV_02	sarvaTA rAjEvAyam Bavet iti aByUhitAm rAjyalakzmIm daDAnaH
+sp002-000643_RV_02	sa rAjA anAvizkftadAnarAjiH bahiraprakawita madareKaH
+sp002-000644_RV_02	antar madAvasTA yasya sa taTABUtaH dvipendra iva AsIt
+sp002-000645_RV_02	lateti
+sp002-000646_RV_02	latAnAm vallInAm vallI tu vratatirlatetyamaraH
+sp002-000647_RV_02	tAsAm pratAnEH kuwilatantuBiH ut unnamayya graTitAH badDAH ye keSAH tErupalakzitaH
+sp002-000648_RV_02	itTamBUtalakzaRe iti tftIyA
+sp002-000649_RV_02	sa rAjA
+sp002-000650_RV_02	aDijYyam AropitamOrvIkam Danuryasya saH aDijYyaDanvA san
+sp002-000651_RV_02	DanuzaSca iti anaNAdeSaH
+sp002-000652_RV_02	munihomaDenoH rakzApadeSAt saMrakzaRavyAjAt
+sp002-000653_RV_02	vanyAn vane BavAn duzwasattvAn duzwajantUn
+sp002-000654_RV_02	dravyAsuvyavasAyezu sattvamastrI tu jantuzu ityamaraH
+sp002-000655_RV_02	vinezyan Sikzayanniva
+sp002-000656_RV_02	dAvam vanam
+sp002-000657_RV_02	vicacAra vane ca vanavahnO ca davo dAva ihezyate iti yAdavaH
+sp002-000658_RV_02	vane saYcacAra ityarTaH
+sp002-000659_RV_02	deSakAlADvagantavyAH karmasaYjYA hi akarmaRAm iti dAvasya karmatvam
+sp002-000660_RV_02	visfzwetyAdiBiH zaqBiH SlokEH tasya mahAmahimatayA drumAdayoऽpi rAjopacAram cakrurityAha
+sp002-000661_RV_02	visfzweti
+sp002-000662_RV_02	visfzwAH pArSvAnucarAH pArSvavartino janAH yena tasya
+sp002-000663_RV_02	pASaBftA varuRena samasya tulyasya
+sp002-000664_RV_02	anena anuBAvaH sUcitaH
+sp002-000665_RV_02	tasya rAjYaH pArSvadrumAH
+sp002-000666_RV_02	unmadAnAm utkawamadAnAm vayasAm KagAnAm
+sp002-000667_RV_02	KagabAlyAdinorvayaH ityamaraH
+sp002-000668_RV_02	virAvEH Aloka Sabdam Alokasya vAcakam AlokayA iti SabdamityarTaH
+sp002-000669_RV_02	udIrayAmAsuriva avadan iva
+sp002-000670_RV_02	iti utprekzA
+sp002-000671_RV_02	maruditi
+sp002-000672_RV_02	marutprayuktAH vAyunA preritAH bAlalatAH ArAtsamIpe aBivartamAnam
+sp002-000673_RV_02	ArAddUrasamIpayorityamaraH
+sp002-000674_RV_02	marutaH vAyoH saKA marutsaKaH agniH
+sp002-000675_RV_02	sa iva ABAtIti marutsaKABam
+sp002-000676_RV_02	AtaScopasarga iti kapratyayaH
+sp002-000677_RV_02	tam arcyam pUjyam tam dilIpam prasUnEH puzpEH
+sp002-000678_RV_02	pOrakanyAH pOrASca tAH kanyASca pOrakanyAH AcArArTErlAjEH AcAralAjEriva
+sp002-000679_RV_02	avAkiran
+sp002-000680_RV_02	tasyopari vikziptavatyaH ityarTaH
+sp002-000681_RV_02	saKA hi saKAyamAgatam upacaratIti BAvaH
+sp002-000682_RV_02	DanurBfta iti
+sp002-000683_RV_02	DanurBftoऽpyasya rAjYaH
+sp002-000684_RV_02	etena BayasamBAvanA darSitA
+sp002-000685_RV_02	taTApi viSaNkEH nirBIkEH antaHkaraREH kartfBiH
+sp002-000686_RV_02	dayayA kfpArasena ArdraH siktaH BAvaH aBiprAyaH yasya tat dayArdraBAvam tat AKyAtam
+sp002-000687_RV_02	dayArdraBAvametat iti AKyAtamityarTaH
+sp002-000688_RV_02	BAvaH sattA svaBAvABiprAyacezwAtmajanmasu iti amaraH
+sp002-000689_RV_02	taTAviDam vapuH vilokayantyaH hariRyaH akzRAm prakAmavistArasya atyantaviSalatAyAH Palam ApuH
+sp002-000690_RV_02	vimalam kaluzIBavacca cetaH kaTayatyeva hitEziRam ripum ca iti nyAyena
+sp002-000691_RV_02	svAntaHkaraRavfttiprAmARyAdeva viSrabDam dadfSuH ityarTaH
+sp002-000692_RV_02	sa iti
+sp002-000693_RV_02	sa dilIpaH mArutena vAyunA pUrRAni pUritAni ranDrARi yezAm tEstaToktEH
+sp002-000694_RV_02	ata eva kUjadBiH svanadBiH kIcakEH veRuviSezEH
+sp002-000695_RV_02	veRavaH kIcakAste syuH ye svananti anilodDatAH ityamaraH
+sp002-000696_RV_02	uccEH ApAditam sampAditam vaMSaH suziravAdyaviSezaH
+sp002-000697_RV_02	vaMSAdikam tu suziram ityamaraH
+sp002-000698_RV_02	vaMSasya kftyam kAryam yasminkarmaRi tadyaTA Bavati taTA
+sp002-000699_RV_02	kuYjezu latAgfhezu
+sp002-000700_RV_02	nikuYjakuYjO vA klIbe latAdipihitodare ityamaraH
+sp002-000701_RV_02	vanadevatABiH udgIyamAnam uccErgIyamAnam svam svakIyam yaSaH kIrtim SuSrAva SrutavAn
+sp002-000702_RV_02	pfkta iti
+sp002-000703_RV_02	girizu nirJarARAm SElanadIpravAhARAm
+sp002-000704_RV_02	pravAho nirJaro JaraH ityamaraH
+sp002-000705_RV_02	tuzArEH sIkareH
+sp002-000706_RV_02	tuzArO himasIkarO iti SASvataH
+sp002-000707_RV_02	pfktaH sampfktaH anokahAnAm vfkzARAm AkampitAni IzatkampitAni yAni puzpARi
+sp002-000708_RV_02	tezAm yo ganDaH soऽsyAstIti taToktaH
+sp002-000709_RV_02	IzatkampitapuzpaganDavAn
+sp002-000710_RV_02	evaMSIta mandaH suraBiH pavanaH vAyuH anAtapatram vratArTam parihftacCatram
+sp002-000711_RV_02	ata eva AtapaklAntam Atapena sUryatejasA klAntam Kinnam AcArapUtam AcAraSudDam tam dilIpam sizeve
+sp002-000712_RV_02	AcArapUtatvAt sa rAjA jagatpAvanasyApi pavanasya sevyaH AsIt iti BAvaH
+sp002-000713_RV_02	SaSAmeti
+sp002-000714_RV_02	goptari rakzake tasminrAjYi vanam gAhamAne praviSati sati vfzwyA vinApi
+sp002-000715_RV_02	davAgniH SaSAma
+sp002-000716_RV_02	SAntim prApa
+sp002-000717_RV_02	PalAnAm puzpARAm ca vfdDiH
+sp002-000718_RV_02	viSizyata iti viSezA
+sp002-000719_RV_02	atiSayitA AsIt
+sp002-000720_RV_02	karmArTe GaYpratyayaH
+sp002-000721_RV_02	sattvezu jantuzu maDye
+sp002-000722_RV_02	yataSca nirDAraRamiti saptamI
+sp002-000723_RV_02	aDikaH prabalo vyAGrAdiH Unam durbalam hariRAdikam na babADe
+sp002-000724_RV_02	na hinastismA
+sp002-000725_RV_02	saYcAreti
+sp002-000726_RV_02	pallavasya rAgo varRaH pallavarAgaH
+sp002-000727_RV_02	rAgoऽnurAge mAtsarye kleSAdO lohitAdizu iti SASvataH
+sp002-000728_RV_02	sa iva tAmrA pallavarAgatAmrA pataNgasya sUryasya praBA kAntiH
+sp002-000729_RV_02	pataNgaH pakzisUyaryoH iti SASvataH
+sp002-000730_RV_02	muneH DenuSca
+sp002-000731_RV_02	digantarARi diSAm avakASAn
+sp002-000732_RV_02	antaramavakASAvaDi pariDAnAntarTiBedatAdarTye ityamaraH
+sp002-000733_RV_02	saYcAreRa pUtAni SudDAni kftvA dinAnte sAyaNkAle nilayAya AstamayAya
+sp002-000734_RV_02	Denupakze AlayAya ca
+sp002-000735_RV_02	gantum pracakrame
+sp002-000736_RV_02	tAmiti
+sp002-000737_RV_02	maDyamalokapAlaH BUpAlo dilIpaH
+sp002-000738_RV_02	devatApitratiTInAm kriyA yAgaSrAdDadAnAni tA eva arTaH prayojanam yasyAstAm Denum anvak anupadam yayO
+sp002-000739_RV_02	anvaganvakzamanugeऽnupadam klIbamavyayam ityamaraH
+sp002-000740_RV_02	satAm matena sadBiH sammAnyamAnena
+sp002-000741_RV_02	matibudDi ityAdinA vartamAne taH
+sp002-000742_RV_02	tasya ca vartamAne iti zazWI
+sp002-000743_RV_02	tena rAjYA upapannA yuktA sA DenuH
+sp002-000744_RV_02	satAm matena anuzWAnena upapannA SradDA AstikyabudDiriva baBO
+sp002-000745_RV_02	sa iti
+sp002-000746_RV_02	sa rAjA palvaleByaH alpajalASayeByaH uttIrRAni nirgatAni
+sp002-000747_RV_02	bavarAhARAm yUTAni kulAni yezu tAni
+sp002-000748_RV_02	barhARyezAm santIti barhiRaH mayUrAH
+sp002-000749_RV_02	mayUro barhiRo barhI ityamaraH
+sp002-000750_RV_02	PalabarhAByAm inacpratyayo vaktavyaH
+sp002-000751_RV_02	iti matvarTIya inacpratyayaH
+sp002-000752_RV_02	AvAsavfkzonmuKAH barhiRAH yezu tAni SyAmAyamAnAni
+sp002-000753_RV_02	varAhabarhiRAdimalinimnA aSyAmAni SyAmAni BavantIti SyAmAyamAnAni
+sp002-000754_RV_02	lohitAdiqAjByaH kyaz iti kyazpratyayaH
+sp002-000755_RV_02	vA kyazaH iti Atmanepade SAnac
+sp002-000756_RV_02	mfgEraDyAsitA aDizWitAH SAdvalA yezu tAni
+sp002-000757_RV_02	SAdAH SazpARyezu deSezu santIti SAdvalAH SazpaSyAmadeSAH
+sp002-000758_RV_02	SAdvalaH SAdaharite ityamaraH
+sp002-000759_RV_02	SAdaH kardamaSazpayoH iti viSvaH
+sp002-000760_RV_02	naqaSAdAdqvalac iti qvalacpratyayaH
+sp002-000761_RV_02	vanAni paSyanyayO
+sp002-000762_RV_02	ApIneti
+sp002-000763_RV_02	gfzwiH sakftprasUtA gOH
+sp002-000764_RV_02	sakftprasUtA gOH gfzwiH iti halAyuDaH
+sp002-000765_RV_02	narendraSca
+sp002-000766_RV_02	uBO yaTAkramam
+sp002-000767_RV_02	ApInamUDaH
+sp002-000768_RV_02	UDastu klIbamApInam ityamaraH
+sp002-000769_RV_02	ApInasya BArodvahane prayatnAtprayAsAt vapuzo gurutvAt ADikyAcca
+sp002-000770_RV_02	aYcitAByAm cAruByAm gatAByAm gamanAByAm tapovanAdAvftteH panTAstam tapovanAvfttipaTam
+sp002-000771_RV_02	fkpUrabDU ityAdinA samAsAnto apratyayaH
+sp002-000772_RV_02	alaYcakratuH BUzitavantO
+sp002-000773_RV_02	vasizWeti
+sp002-000774_RV_02	vasizWaDenoH nandinyAH anuyAyinam anucaram vanAntAt AvartamAnam pratyAgacCantam tam dilIpam
+sp002-000775_RV_02	vanitA janitAtyantAnurAgA sudakziRA vanitAjanitAtyantAnurAgAyAYca yoziti ityamaraH
+sp002-000776_RV_02	nimezezu alasA mandA pakzmaRAm paNkiryasyAH sA
+sp002-000777_RV_02	nimezarahitA satI ityarTaH
+sp002-000778_RV_02	locanAByAm upozitAByAmiva upavAso BojananivfttiH
+sp002-000779_RV_02	tam kftavadByAmiva vasateH kartari ktaH
+sp002-000780_RV_02	papO
+sp002-000781_RV_02	yaTA upozito atitfzRayA jalamaDikam pibati tadvat atitfzRayA sA sudakziRA dilIpamaDikam vyalokayad ityarTaH
+sp002-000782_RV_02	puraskfteti
+sp002-000783_RV_02	vartmani mArge pArTivena pfTivyA ISvareRa dilIpena
+sp002-000784_RV_02	tasyeSvara iti aYpratyayaH
+sp002-000785_RV_02	puraskftA agrataH kftA
+sp002-000786_RV_02	Darmasya patnI DarmapatnI DarmArTapatnItyarTaH
+sp002-000787_RV_02	aSvaGAsAdivattadarTye zazWIsamAsaH
+sp002-000788_RV_02	tayA pArTivasya DarmapatnyA pratyudgatA aBimuKIkftA sA DenuH tadantare tayordampatyormaDye
+sp002-000789_RV_02	dinakzapayordinarAtryoH maDyagatA sanDyeva
+sp002-000790_RV_02	virarAja
+sp002-000791_RV_02	pUrvArDenEva tadantaravartitvesidDe punaH tadantara iti grahaRam
+sp002-000792_RV_02	atra upameyopamAnayoH kramAvasTAnamAtrasAdfSyavivakzArTam iti mantavyam
+sp002-000793_RV_02	pradakziRIkftyeti
+sp002-000794_RV_02	akzatAnAm pAtreRa saha vartete iti sAkzatapAtrO tAdfSO hastO yasyAH sA
+sp002-000795_RV_02	sudakziRA payasvinIm praBUtakzIrAm tAm Denum pradakziRIkftya praRamya ca
+sp002-000796_RV_02	asyAH DenoH viSAlam SfNgAntaram SfNgamaDyam
+sp002-000797_RV_02	arTasidDeH kAryasidDeH dvAram praveSamArgamiva AnarcA arcayAmAsa
+sp002-000798_RV_02	arca pUjAyAm
+sp002-000799_RV_02	arcateH BOvAdikAlliw
+sp002-000800_RV_02	liwi DAtorityAdinA dvitvam
+sp002-000801_RV_02	tasmAt nuq ityAdinA nuqAgamaH
+sp002-000802_RV_02	vatseti
+sp002-000803_RV_02	DenuH
+sp002-000804_RV_02	vatsotsukApi vatse utkaRWitA api stimitA niScalA satI
+sp002-000805_RV_02	saparyAm pUjAm pUjA namasyApatiTiH saparyArcArhaRAH samA ityamaraH
+sp002-000806_RV_02	pratyagrahIt iti hetoH tO dampatI nanandatuH
+sp002-000807_RV_02	pUjAsvIkarasya Anandahetutvam Aha BaktyA iti
+sp002-000808_RV_02	pUjyezu anurAgo BaktiH
+sp002-000809_RV_02	tayA upapannezu yuktezu vizaye tadviDAnAm
+sp002-000810_RV_02	tasyAH DenoH viDeva viDA prakAro yezAm tezAm
+sp002-000811_RV_02	mahatAmityarTaH
+sp002-000812_RV_02	prasAdasya cihnAni liNgAni pUjAsvIkArAdIni puraHPalAni
+sp002-000813_RV_02	purogatAni pratyAsannAni PalAni yezAm tAni hi
+sp002-000814_RV_02	avilambitaPalasUcakaliNgadarSanAt Anando yujyate iti BAvaH
+sp002-000815_RV_02	guroriti
+sp002-000816_RV_02	BujocCinnaripuH BujAByAm nAnyena sahAyena ucCinnAH utkarzeRa CinnAH
+sp002-000817_RV_02	niHSezitAH ripavaH SatravaH yena sa taToktaH
+sp002-000818_RV_02	dilIpaH sadArasya dArErarunDatyA saha vartamAnasya guroH
+sp002-000819_RV_02	uBayorapItyarTaH
+sp002-000820_RV_02	pAdO nipIqya aBivAdya
+sp002-000821_RV_02	sAnDyam sanDyAyAm vihitam viDim anuzWAnam ca samApya
+sp002-000822_RV_02	dohAvasAne nizaRRAm AsInAm dogDrImeva dohanaSIlAm Denumeva
+sp002-000823_RV_02	tfn iti tfnpratyayaH
+sp002-000824_RV_02	punaH Beje sevitavAn
+sp002-000825_RV_02	Baja sevAyAmiti asmAt liw
+sp002-000826_RV_02	BujocCinnaripurityanena asya nirBIkatvam sUcitam
+sp002-000827_RV_02	dogDrIti nirupapadaprayogAt asyAH kAmaDuktvam gamyate
+sp002-000828_RV_02	avaDAraRArTakaH ayamevakAraH asya kAryAntarapravfttyaBAvam boDayati
+sp002-000829_RV_02	tAmiti
+sp002-000830_RV_02	goptA rakzakaH saH gfhiRIsahAyaH patnIdvitIyassan
+sp002-000831_RV_02	uBAvapItyarTaH
+sp002-000832_RV_02	antike nyastAH balayaH pradIpASca yasyAstAm taToktAm karopahArayoH puMsi baliH prARyaNgajestriyAmityamaraH
+sp002-000833_RV_02	tAm pUrvoktAm nizaRRAm Denum anvAsya anUpaviSya krameRa suptAm anu anantaram saMviveSa suzvApa
+sp002-000834_RV_02	prAtaH suptotTitAm suptA ca sA uttiTA ca tAm anu udatizWit utTitavAn
+sp002-000835_RV_02	atra anuSabdena DenurAjavyApArayoH pOrvAparyamucyate
+sp002-000836_RV_02	kramaSabdena tu DenuvyApArARAmiti na pOnaruktyam
+sp002-000837_RV_02	karmapravacanIyayukte iti dvitIyA
+sp002-000838_RV_02	itTamiti
+sp002-000839_RV_02	itTamanena prakAreRa prajArTam santAnAya mahizyA samam aBiziktapatnyA saha
+sp002-000840_RV_02	kftABizekA mahizI ityamaraH
+sp002-000841_RV_02	vratam DArayataH
+sp002-000842_RV_02	mahanIyA pUjyA kIrtiryasya tasya
+sp002-000843_RV_02	dInAnAm udDaraRe dEnyavimocane ucitasya paricitasya tasya nfpasya
+sp002-000844_RV_02	trayo guRAH Avfttayo yezAm tAni triguRAni trirAvfttAni triguRitAni
+sp002-000845_RV_02	sapta dinAni ekaviMSatidinAni ityarTaH vyatIyuH
+sp002-000846_RV_02	anyedyuriti
+sp002-000847_RV_02	anyedyuranyasmindine dvAviMSa dine ityarTaH
+sp002-000848_RV_02	sadyaHparutparerityAdinA nipAtanAt avyayatvam
+sp002-000849_RV_02	adyAtrAhnayaDa pUrveऽhnItyAdO pUrvottarAparAt
+sp002-000850_RV_02	taTADarAnyAnyataretarAtpUrvedyurAdayaH ityamaraH
+sp002-000851_RV_02	munihomaDenuH
+sp002-000852_RV_02	AtmAnucarasya nfpasya BAvamaBiprAyam dfQaBaktitvam AkftirmatamAkUtam BAvoऽBiprAya ASayaH iti yAdavaH
+sp002-000853_RV_02	jijYAsamAnA jYAtumicCanti
+sp002-000854_RV_02	jYASrusmfdfSAm sanaH ityAtmanepadam tasmAcCAnac pratyayaH
+sp002-000855_RV_02	prapatati asmin iti prapAtaH patanapradeSaH gaNgAyAH prapAtaH tasya ante samIpe
+sp002-000856_RV_02	nirUQAni jAtAni SazpARi bAlatfRAni yasmin tat
+sp002-000857_RV_02	Sazpam bAlatfRam GAsa ityamaraH
+sp002-000858_RV_02	gOrIguroH pArvatIpituH himavataH gahvaram guhAm AviveSa
+sp002-000859_RV_02	seti
+sp002-000860_RV_02	sA DenuH hiMsrEH vyAGrAdiBiH GAtukajantuBiH manasApi duzpraDarzA durDarzeti hetoH
+sp002-000861_RV_02	adriSoBAyAm prahitekzaRena dattadfzwinA nfpeRa alakzitam aByutpatanam ABimuKena
+sp002-000862_RV_02	utplutsya patanam yasya saH siMhaH tAm Denum prasahya haWAt
+sp002-000863_RV_02	prasahya tu haWArTakam ityamaraH
+sp002-000864_RV_02	cakarza kila
+sp002-000865_RV_02	kiletyalIke
+sp002-000866_RV_02	tadIyamiti
+sp002-000867_RV_02	guhAnibadDena pratiSabdena pratiDvaninA dIrGam
+sp002-000868_RV_02	tasyAH idam tadIyam
+sp002-000869_RV_02	Akranditam ArtaGozaH ArtezvApannezu sADorhitakAriRaH nfpasya dilIpasya nagendrasaktAm dfzwim
+sp002-000870_RV_02	raSmizu pragrahezu
+sp002-000871_RV_02	kiraRapragrahO raSmI ityamaraH
+sp002-000872_RV_02	AdAyeva gfhyItveva
+sp002-000873_RV_02	nivartayAmAsa
+sp002-000874_RV_02	sa iti
+sp002-000875_RV_02	DanurDaraH DanvI sa nfpaH pAwalAyAm raktavarRAyAm gavi DenvAm tasTivAMsam saMsTitam
+sp002-000876_RV_02	kvasuSceti kvasupratyayaH
+sp002-000877_RV_02	kesarA asya santIti kesarI tam siMham sAnumataH adreH
+sp002-000878_RV_02	DAtavaH gErikAdayaH tezAm vikAroDAtumayI
+sp002-000879_RV_02	tasyAm aDityakAyAm UrDvaBUmO
+sp002-000880_RV_02	upatyakAdrerAsannA BUmirUrDvamaDityakA ityamaraH
+sp002-000881_RV_02	upADiByAm tyakannAsannArUQayoriti tyakanpratyayaH
+sp002-000882_RV_02	tasTivAMsam praPullam vikasitam
+sp002-000883_RV_02	Pulla vikasana iti DAtoH pacAdyac
+sp002-000884_RV_02	loDrAKyam drumamiva
+sp002-000885_RV_02	dadarSa
+sp002-000886_RV_02	praPultamiti takArAntapAWe YiPalA viSaraRa iti DAtoH kartari ktaH
+sp002-000887_RV_02	ticeti akArasya ukArAdeSaH
+sp002-000888_RV_02	DavalakesaratvAt siMhaloDradrumayoH sAdfSyam
+sp002-000889_RV_02	tata iti
+sp002-000890_RV_02	tataH siMhadarSanAnantaram mfgendragAmI siMhagAmI
+sp002-000891_RV_02	SaraRam rakzaRam
+sp002-000892_RV_02	SaraRam gfharakzitrorityamaraH
+sp002-000893_RV_02	SaraRam rakzaRe gfhe iti yAdavaSca
+sp002-000894_RV_02	SaraRe sADuH SaraRyaH tatra sADuriti yatpratyayaH
+sp002-000895_RV_02	prasaBena balAtkAreRa udDftAH hatAH arayo vEriRo yena saH nfpatiH dilIpaH
+sp002-000896_RV_02	jAtABizaNgaH jAtaparABavaH san
+sp002-000897_RV_02	aBizaNgaH parABave ityamaraH
+sp002-000898_RV_02	vaDyasya vaDArhasya
+sp002-000899_RV_02	daRqAdiByo yaditi yatpratyayaH
+sp002-000900_RV_02	mfgendrasya siMhasya vaDAya hananAya nizaNgAt tURIrAt tURopAsaNgatuRIranizaNgA izuDirdvayorityamaraH
+sp002-000901_RV_02	SaramudDartumEcCat
+sp002-000902_RV_02	ieza
+sp002-000903_RV_02	vAmeti
+sp002-000904_RV_02	prahartuH praharaRaSIlasya tasya vAmetaraH dakziRaH karaH
+sp002-000905_RV_02	naKapraBABiH BUzitAni vicCuritAni kaNkasya pakziviSezasya patrARi yasya tasmin
+sp002-000906_RV_02	kaNkastu karkawaskanDaH prakawaH kamalacCadaH kaNkaH pakziviSeze syAt guptAkAre yuDizWire iti yAdava viSvO
+sp002-000907_RV_02	sAyakasya puNKa eva kartaryAKye mUlapradeSe
+sp002-000908_RV_02	kartarI puNKa iti yAdavaH
+sp002-000909_RV_02	saktANgulissan
+sp002-000910_RV_02	citrArpitAramBa iva citraliKitaSarodDaraRodyoga iva
+sp002-000911_RV_02	avatasTe sTitaH
+sp002-000912_RV_02	bAhviti
+sp002-000913_RV_02	bAhvoH pratizwamBena pratibanDena
+sp002-000914_RV_02	pratibanDaH pratizwamBaH ityamaraH
+sp002-000915_RV_02	vivfdDamanyuH pravfdDakopaH rAjA
+sp002-000916_RV_02	mantrOzaDAByAm rudDavIryaH pratibadDaSaktiH BogIva sarpa iva
+sp002-000917_RV_02	BogI rAjaBujaNgayoriti SASvataH
+sp002-000918_RV_02	aByarRam Asannam
+sp002-000919_RV_02	Agaskftam aparADakAriRam aspfSadBiH svatejoBiH antaH adahyata
+sp002-000920_RV_02	aDikzepAdyasahanam tejaH prARAtyayezvapIti yAdavaH
+sp002-000921_RV_02	tamiti
+sp002-000922_RV_02	nigfhItA pIqitA Denuryena saH siMhaH
+sp002-000923_RV_02	AryARAm satAm gfhyam pakzyam
+sp002-000924_RV_02	padAsvEribAhyApakzyezu ca iti kyap
+sp002-000925_RV_02	manuvaMSasya ketum cihnam ketuvadvyAvartakam
+sp002-000926_RV_02	siMha iva urusattvaH mahAbalaH tam
+sp002-000927_RV_02	Atmano vfttO bAhustamBanarUpa vyApAre aBUtapUrvatvAt vismitam
+sp002-000928_RV_02	kartari ktaH
+sp002-000929_RV_02	tam dilIpam manuzyavAcA karaRena
+sp002-000930_RV_02	punarvismAyayan vismayamAScaryam prApayan nijagAda
+sp002-000931_RV_02	smiNa IzadDasana iti DAtoH Rici vfdDO AyAdeSe Satfpratyaye sati vismAyayan iti rUpam sidDam
+sp002-000932_RV_02	vismApayan iti pAWe tu pugAgamamAtram vaktavyam
+sp002-000933_RV_02	tacca nityam smayateriti hetusmayavivakzAyAmeveti BIsmyorhetuBaya ityAtmanepade vismApayamAna iti syAt
+sp002-000934_RV_02	yadvA manuzyavAkprayojyakartrI vismApayateH tayA siMho vismApayan iti nyantAdvA rUpamatra iti vyAKyeyam
+sp002-000935_RV_02	alamiti
+sp002-000936_RV_02	he mahIpAla tava SrameRa alam
+sp002-000937_RV_02	sADyABAvAcCramo na kartavya ityarTaH
+sp002-000938_RV_02	alam BUzaRaparyAptiSaktivAraRavAcakamityamaraH
+sp002-000939_RV_02	atra gamyamAnasADanakriyApekzayA Sramasya karaRatvAt tftIyA
+sp002-000940_RV_02	itoऽsminmayi
+sp002-000941_RV_02	sArvaviBaktikastasiH
+sp002-000942_RV_02	prayuktamapi astram vfTA syAt
+sp002-000943_RV_02	taTAhi pAdaponmUlane Saktiryasya tat taToktam mArutasya
+sp002-000944_RV_02	raMhaH vegaH Siloccaye parvate na mUrcCati na prasarati
+sp002-000945_RV_02	kElAseti
+sp002-000946_RV_02	kElAsa iva gOram SuBram vfzam ArurukzoH AroQumicCoH
+sp002-000947_RV_02	cAmIkaram ca SuBram ca gOramAhurmanIziRaH iti SASvataH
+sp002-000948_RV_02	azwO mUrtayo yasya tasya azwamUrteH Sivasya pAdArpaRam
+sp002-000949_RV_02	pAdanyAsaH tadeva anugrahaH prasAdaH tena pUtam pfzWam yasya tam taToktam
+sp002-000950_RV_02	SivaH svasyopari pAdam nikzipya vfzam ArohatIti BAvaH
+sp002-000951_RV_02	nikumBamitram nikumBasadfSam kumBodaram nAma kiNkaram mAm avehi vidDi
+sp002-000952_RV_02	pfTivI salilam tejo vAyurAkASameva ca
+sp002-000953_RV_02	sUryAcandramasO somayAjI ca ityazwamUrtayaH
+sp002-000954_RV_02	iti yAdavaH
+sp002-000955_RV_02	amumiti
+sp002-000956_RV_02	puraH agrataH sTitam amum devadArum paSyasIti kAkuH
+sp002-000957_RV_02	asO devadAruH
+sp002-000958_RV_02	vfzaBaH Dvaje yasya tena Sivena putrIkftaH putratvena svIkftaH
+sp002-000959_RV_02	aBUtatadBAve cviH
+sp002-000960_RV_02	yo devadAruH skandasya mAtuH gOryAH hemnaH kumBa eva stanaH
+sp002-000961_RV_02	tasmAt niHsftAnAm payasAm ambUnAm rasajYaH svAdajYaH
+sp002-000962_RV_02	skandapakze hemakumBa iva stana iti vigrahaH
+sp002-000963_RV_02	payasAm kzIrARAm
+sp002-000964_RV_02	payaH kzIram payoऽmbu ca ityamaraH
+sp002-000965_RV_02	skandasamAnapremAspadamiti BAvaH
+sp002-000966_RV_02	kaRqUyamAneneti
+sp002-000967_RV_02	kadAcit kawam kapolam kaRqUyamAnena karzatA
+sp002-000968_RV_02	kaRqavAdiByo yaka iti yak
+sp002-000969_RV_02	tataH SAnac
+sp002-000970_RV_02	vanyadvipena asya devadAroH tvak unmaTitA
+sp002-000971_RV_02	aTa adreH tanayA gOrI
+sp002-000972_RV_02	asurAstrEH AlIQam kzatam
+sp002-000973_RV_02	senAm nayatIti senAnIH skandaH
+sp002-000974_RV_02	pArvatInandanaskandassenAnIragniBUrguhaH ityamaraH
+sp002-000975_RV_02	satsUdvize ityAdinA kvip
+sp002-000976_RV_02	tamiva
+sp002-000977_RV_02	enam devadArum SuSoca
+sp002-000978_RV_02	tadeti
+sp002-000979_RV_02	tatkAlaH praBftiH AdiH yasmin karmaRi tadyaTA Bavati taTA tadApraBftyeva
+sp002-000980_RV_02	vanadvipAnAm trAsArTam BayArTam SUlaBftA Sivena
+sp002-000981_RV_02	aNkam samIpam AgatAH prAptAH sattvAH prARinaH vfttiH AhAraH yasmin tat
+sp002-000982_RV_02	aNkaH samIpa utsaNge cihne sTAnAparADayoriti keSavaH
+sp002-000983_RV_02	siMhatvam viDAya
+sp002-000984_RV_02	asmin adrikukzO guhAyAm aham vyApArito niyuktaH
+sp002-000985_RV_02	tasyeti
+sp002-000986_RV_02	parameSvareRa pradizwo nirdizwaH kAlo BojanavelA yasyAH sA upasTitA prAptA
+sp002-000987_RV_02	ezA gorUpA SoRitapAraRA ruDirasya vratAntaBojanam
+sp002-000988_RV_02	suradvizaH rAhoH candramasa iyam cAndramasI suDeva kzuDitasya
+sp002-000989_RV_02	buBukzitasya tasya aNkAgatasattvavftteH me tfptyE alam paryAptA
+sp002-000990_RV_02	namaHsvasti ityAdinA caturTI
+sp002-000991_RV_02	sa iti
+sp002-000992_RV_02	saH evamupAyaSUnyaH tvam lajjAm vihAya nivartasva
+sp002-000993_RV_02	BavAn guroH darSitA prakASitA Sizyasya kartavyA BaktiH yena sa taToktaH
+sp002-000994_RV_02	nanu guruDanam vinASya kaTam tatsamIpam gacCeyam ityata Aha SastreReti
+sp002-000995_RV_02	yadrakzyam Danam SastreRa AyuDena
+sp002-000996_RV_02	SastramAyuDalohayoriti amaraH
+sp002-000997_RV_02	aSakyA rakzA yasya tadaSakyarakzam
+sp002-000998_RV_02	rakzitumaSakyamityarTaH
+sp002-000999_RV_02	tadrakzyam nazwamapi SastraBftAm yaSaH na kziRoti na hinasti
+sp002-001000_RV_02	aSakyArTezu aprativiDAnam na dozAya iti BAvaH
+sp002-001001_RV_02	itIti
+sp002-001002_RV_02	puruzADirAjaH puruzARAm aDirAjo nfpaH iti itTam pragalBam prOQam mfgADirAjasya mfganAyakasya siMhasya
+sp002-001003_RV_02	vacaH niSamya SrutvA giriSasya ISvarasya praBAvAt pratyAhatAstraH
+sp002-001004_RV_02	kuRWitAstraH san Atmani vizaye avajYAm avamAnam rIQAvamAnanAvajYAvahelanam asUrkzaRam ityamaraH
+sp002-001005_RV_02	SiTilIcakAra
+sp002-001006_RV_02	tatyAja ityarTaH
+sp002-001007_RV_02	avajYAtoऽhamiti nirvedam na prApa ityarTaH
+sp002-001008_RV_02	samAnezu hi kzatriyARAmaBimAnaH na sarveSvaram prati iti BAvaH
+sp002-001009_RV_02	pratyabravIditi
+sp002-001010_RV_02	sa eva pUrvaH praTamaH BaNgaH pratibanDaH yasya sa tatpUrvaBaNgaH tasmin izuprayoge
+sp002-001011_RV_02	bARaprayoge patrI ropa izurdvayorityamaraH vitaTa prayatnaH vyarTaprayAsaH
+sp002-001012_RV_02	ata eva vajram mumukzan moktumicCan
+sp002-001013_RV_02	tryambakavIkzaRena trIRi ambakAni locanAni yasya sa tryambako haraH
+sp002-001014_RV_02	dfgdfzwinetralocanacakzuH nayanAmbakekzaRAkzIRIti halAyuDaH
+sp002-001015_RV_02	tasya vIkzaRena jaqIkftaH nizpandIkftaH stamBita iti yAvat vajrapARirindraH
+sp002-001016_RV_02	vajram pARO yasyeti vigrahaH
+sp002-001017_RV_02	praharaRArTeByaH pare nizWAsaptamyO BavataH iti vaktavyamiti pARi Sabdasya uttaranipAtaH
+sp002-001018_RV_02	sa iva sTitaH nfpaH enam siMham pratyabravIt
+sp002-001019_RV_02	bAhum savajram Sakrasya kudDasya astamBayatpraBuH iti mahABArate
+sp002-001020_RV_02	saMrudDeti
+sp002-001021_RV_02	he mfgendra saMrudDacezwasya pratibadDavyApArasya mama tadvacaH kAmam hAsyam parihasanIyam
+sp002-001022_RV_02	yadvacaH sa tvam madIyena SarIravfttim ityAdikam aham vivakzuH vaktumicCuH asmi
+sp002-001023_RV_02	tarhi tUzRIm sTIyatAmityASaNkya ISvarakiNkaratvAt sarvajYam tvAm prati na hAsyamityAha antIrati
+sp002-001024_RV_02	hi yasmAt kAraRAt BavAnprARaBftAm antargatam hfdgatam vAgvfttyA bahiraprakASitameva sarvam BAvam veda vetti
+sp002-001025_RV_02	vido lawo veti RalAdeSaH
+sp002-001026_RV_02	BavAn yogena praTamapuruza prayogaH ataH aBiDAsye vakzyAmi
+sp002-001027_RV_02	vaca iti prakftam karma sambaDyate
+sp002-001028_RV_02	anye tu IdfgvacanamAkarRya asamBAvitArTametat iti apahasanti
+sp002-001029_RV_02	atastatra mOnameva BUzaRam
+sp002-001030_RV_02	tvam tu vANmanasayorapyekaviDa eva ayamiti jAnAsi
+sp002-001031_RV_02	ato aBiDAsye yadvacoऽham vivakzuH asmi tat ityarTaH
+sp002-001032_RV_02	mAnya iti
+sp002-001033_RV_02	sTAvarARAm taruSElAdInAm jaNgamAnAm manuzyAdInAm ca sargasTitipratyavahAra hetuH
+sp002-001034_RV_02	sargaH sfzwiH sTitiH pAlanam pratyavahAraH pralayaH tezAm hetuH sa ISvaraH me mAnyaH pUjyaH
+sp002-001035_RV_02	alaNGyaSAsana ityarTaH
+sp002-001036_RV_02	SAsanam ca siMhatvamaNNkAgatasattvavftti ityAdi uktarUpam
+sp002-001037_RV_02	tarhi visfjya gamyatAmityata Aha
+sp002-001038_RV_02	guroriti
+sp002-001039_RV_02	purastAt agre naSyadidam AhitAgneH guroH Danam gorUpam anupekzaRIyam
+sp002-001040_RV_02	AhitAgneriti viSezaRena anupekzAkAraRam haviH sADanatvam ca sUcayati
+sp002-001041_RV_02	sa iti
+sp002-001042_RV_02	saH aNkAgatasattvavfttiH tvam madIyena dehena SarIra vfttim jIvanam nirvartayitum prasIda
+sp002-001043_RV_02	dinAvasAne sAMyakAle utsuko mama mAtA AgamizyatIti utkaRWitaH
+sp002-001044_RV_02	vabAlavatso yasyAH sA maharzeriyam Denu visfjyatAm
+sp002-001045_RV_02	aTeti
+sp002-001046_RV_02	aTa BUteSvarapArSvavartI anucaraH sa siMhaH gireH gahvarARAm guhAnAm
+sp002-001047_RV_02	devaKAtabile guhA gahvaramityamaraH
+sp002-001048_RV_02	anDakAram DvAntam daMzwrayoH mayUKEH kAntiBiH SakalAni KaRqAni kurvan nirasyannityarTaH
+sp002-001049_RV_02	kiYcit vihasya arTapatim nfpam BUyaH baBAze
+sp002-001050_RV_02	hAsakAraRam alpasya hetorbahuhAtumicCan ityAdikam vakzyamARam drazwavyam
+sp002-001051_RV_02	ekAtapatramiti
+sp002-001052_RV_02	ekAtapatram ekAcCatram jagataH praButvam svAmitvam navam vayaH yOvanam
+sp002-001053_RV_02	idam kAntam ramaRIyam vapuSca
+sp002-001054_RV_02	iti evam bahu
+sp002-001055_RV_02	alpasya hetoH alpakAraRena alpaPalAya ityarTaH
+sp002-001056_RV_02	zazWI hetuprayoge iti zazWI
+sp002-001057_RV_02	hAtum tyaktum icCan tvam me vicAre kAryAkAryaparAmarSe mUQaH mandaH pratiBAsi
+sp002-001058_RV_02	BUteti
+sp002-001059_RV_02	tava BUtezu anukampA kfpA cet
+sp002-001060_RV_02	kfpA dayAnukampA syAdityamaraH
+sp002-001061_RV_02	kfpEva vartate cet ityarTaH
+sp002-001062_RV_02	tvadante tava nASe satI iyamekA gOH
+sp002-001063_RV_02	svasti kzemamasyAH astiti svastimatI Bavet
+sp002-001064_RV_02	jIvet ityarTaH
+sp002-001065_RV_02	svastyASIHkzemapuRyAdO ityamaraH
+sp002-001066_RV_02	he prajAnATa jIvanpunaH piteva prajAH upaplaveByo vipaByaH SaSvatsadA
+sp002-001067_RV_02	punaHsadArTayoH SaSvadityamaraH
+sp002-001068_RV_02	pAsi rakzasi
+sp002-001069_RV_02	svaprARavyayena ekaDenurakzaRAdvaram jIvitenEva SaSvat aKilajagatrARamityarTaH
+sp002-001070_RV_02	aTeti
+sp002-001071_RV_02	aTa pakzAntare
+sp002-001072_RV_02	aTavA ekA Denuryasya tasmAt
+sp002-001073_RV_02	ayam kopakAraRopanyAsa iti vijYeyam
+sp002-001074_RV_02	ata eva aparADe gavopekzAlakzaRe sati caRqAt atikopanAt
+sp002-001075_RV_02	caRqastu atyantakopanaH ityamaraH
+sp002-001076_RV_02	ata eva kfSAnuH pratimA upamA yasya tasmAt agnikalpAt guroH biBezi iti kAkuH
+sp002-001077_RV_02	BItrArTAnAm BayaheturityapAdAnAtpaYcamI
+sp002-001078_RV_02	alpavittasya DanahAniH atiduHsahA iti BAvaH
+sp002-001079_RV_02	asya guroH manyuH kroDaH
+sp002-001080_RV_02	manyurdEnye kratO kruDItyamaraH
+sp002-001081_RV_02	GawA iva UDAMsi yAsAm tAH GawoDnIH
+sp002-001082_RV_02	UDaso anaN iti anaNAdeSaH
+sp002-001083_RV_02	bahuvrIherUDaso NIz iti NIz
+sp002-001084_RV_02	UDastu klIbamApInamityamaraH
+sp002-001085_RV_02	kowiSaH gAH sparSayatA pratipAdayatA viSrARanam vitaraRam sparSanam pratipAdanamityamaraH
+sp002-001086_RV_02	BavatA vinetum parihartum SakyaH
+sp002-001087_RV_02	taditi
+sp002-001088_RV_02	tattasmAtkAraRAt kalyARaparamparARAm BoktAram
+sp002-001089_RV_02	karmaRi pazWI
+sp002-001090_RV_02	Urjo balamasyAstIti Urjasvalam
+sp002-001091_RV_02	jyotsnAtamisre tyAdinA valacpratyayAnto nipAtaH
+sp002-001092_RV_02	AtmadehaMrakza
+sp002-001093_RV_02	nanu gAmupekzya AtmadeharakzaRe svargahAniH syAdityata Aha mahItaleti
+sp002-001094_RV_02	fdDam samfdDam rAjyam mahItalasparSanamAtreRa BUtalasambanDamAtreRa
+sp002-001095_RV_02	Binnam Endram indrasambanDi padam sTAnam AhuH
+sp002-001096_RV_02	svargAt na Bidyate ityarTaH
+sp002-001097_RV_02	etAvaditi
+sp002-001098_RV_02	mfgendre siMhe etAvaduktvA virate guhAgatena asya siMhasya pratisvanena SiloccayaH
+sp002-001099_RV_02	SEloऽpi prItyA kzitipAlam tameva arDamuccEH aBAzateva iti utprekzA
+sp002-001100_RV_02	BAzirityayam brUY DAtoH samAnArTakatvAt dvikarmakaH
+sp002-001101_RV_02	brUYDAtustu dvikarmakezu paWitaH
+sp002-001102_RV_02	taduktam duhyAcpacdaRqruDipracCicibrUSAsujimaTmuzAm karmayuk syAdakaTitam taTA syAt nIhfkfzvahAm
+sp002-001103_RV_02	niSamyeti
+sp002-001104_RV_02	devAnucarasya ISvarakiNkarasya siMhasya vAcam niSamya manuzyadevo rAjA punarapyuvAca
+sp002-001105_RV_02	kimBUtaH san
+sp002-001106_RV_02	tena siMhena yadaDyAsitam AkramaRam
+sp002-001107_RV_02	napuMsake BAve ktaH
+sp002-001108_RV_02	tena kAtare akziRI yasyAstayA
+sp002-001109_RV_02	bahuvrIhO sakTyakzRoH svANgAtzac iti zac
+sp002-001110_RV_02	zidgOrAdiByaSca iti NIz
+sp002-001111_RV_02	kiMvA vakzatIti BItyA evam sTitayA ityarTaH
+sp002-001112_RV_02	DenvA nirIkzyamARaH
+sp002-001113_RV_02	ata eva sutarAm dayAluH san
+sp002-001114_RV_02	sutarAmityatra dvivacanaviBajye tyAdinA suSabdAttarap
+sp002-001115_RV_02	kimettiNavyaye tyAdinA AmpratyayaH
+sp002-001116_RV_02	tadDitaScAsarvaviBaktiriti avyayasaYjYA
+sp002-001117_RV_02	kzaRu hiMsAyAmiti DAtoH sampadAditvAtkvipi
+sp002-001118_RV_02	gamAdInAmiti vaktavyAdanunAsikalope tugAgame sati kzaditi rUpam sidDam
+sp002-001119_RV_02	kzato nASAt trAyata iti kzatraH
+sp002-001120_RV_02	subIti yogaviBAgAt kapratyayaH
+sp002-001121_RV_02	tAmetAm vyutpattim kavirarTato anukrAmati kzatAdityAdinA
+sp002-001122_RV_02	udagraH unnataH kzatrasya kzatravarRasya Sabdo vAcakaH kzatraSabda ityarTaH
+sp002-001123_RV_02	soऽyam kzatAttrAyata iti vyutpattyA Buvanezu rUQaH kila prasidDaH Kalu
+sp002-001124_RV_02	nASvakarRAdivatkevalarUQaH kintu paNkajAdivat yogarUQa ityarTaH
+sp002-001125_RV_02	ataH kim ityata Aha tasya kzatra Sabdasya viparItavftteH
+sp002-001126_RV_02	virudDavyApArasya kzatAttrARamakurvataH puMsaH rAjyena kim
+sp002-001127_RV_02	upakroSamalImasEH nindAmalinEH
+sp002-001128_RV_02	upakroSo jugupsA ca kutsA nindA ca garhaRe ityamaraH
+sp002-001129_RV_02	jyotsnAtamisre tyAdinA malImasaSabdo nipAtitaH
+sp002-001130_RV_02	malImasam tu malinam kaccaram maladUzitamityamaraH
+sp002-001131_RV_02	tEH prARErvA kim
+sp002-001132_RV_02	ninditasya sarvam vyarTamityarTaH
+sp002-001133_RV_02	etena ekAtapatramityAdi Slokadvayoktam dattottaramiti veditavyam
+sp002-001134_RV_02	kaTamiti
+sp002-001135_RV_02	anunayaH kroDApanayaH
+sp002-001136_RV_02	cakAro vAkArArTaH
+sp002-001137_RV_02	maharzeranunayo vA anyAsAm payasvinInAm dogDrIRAm gavAm viSrARanAt dAnAt
+sp002-001138_RV_02	viSrARanam vitaraRam sparSanam pratipAdanamityamaraH
+sp002-001139_RV_02	kaTam SakyaH
+sp002-001140_RV_02	na Sakya ityarTaH
+sp002-001141_RV_02	atra hetumAha imAm gAm suraBeH kAmaDenoH
+sp002-001142_RV_02	paYcamI viBakta iti paYcamI
+sp002-001143_RV_02	anUnAm anyUnAm avehi
+sp002-001144_RV_02	tarhi kaTam pariBavo asyAH ityatrAha rudreti
+sp002-001145_RV_02	asyAm gavi tvayA kartrA prahftam tu prahArastu
+sp002-001146_RV_02	napuMsake BAve ktaH
+sp002-001147_RV_02	rudrOjasA ISvarasAmarTyena
+sp002-001148_RV_02	na tu tava ityarTaH
+sp002-001149_RV_02	saptamyaDikaraRe ca iti saptamI
+sp002-001150_RV_02	seyamiti
+sp002-001151_RV_02	seyam gOH
+sp002-001152_RV_02	mayA nizkrIyate pratyAhriyate anena parigfhItamiti nizkrayaH
+sp002-001153_RV_02	pratiSIrzakam
+sp002-001154_RV_02	erac iti acpratyayaH
+sp002-001155_RV_02	svadehArpaRameva nizkrayaH tena BavattaH tvattaH
+sp002-001156_RV_02	paYcamyAstasil
+sp002-001157_RV_02	mocayitum nyAyAdanapetA yuktA ityarTaH
+sp002-001158_RV_02	DarmapaTyarTe tyAdinA yatpratyayaH
+sp002-001159_RV_02	evam sati tava pAraRA Bojanam vihatA na syAt
+sp002-001160_RV_02	muneH kriyA homAdiH sa evArTaH prayojanam
+sp002-001161_RV_02	sa ca alupto Bavet
+sp002-001162_RV_02	svaprARAtyenApi svAmiguruDanam saMrakzyamiti BAvaH
+sp002-001163_RV_02	BavAniti
+sp002-001164_RV_02	paravAn svAmiparatantraH BavAnapi
+sp002-001165_RV_02	idam vakzyamARam avEti vetti
+sp002-001166_RV_02	Seze praTama iti praTamapuruzaH
+sp002-001167_RV_02	BavatA anuBUyate eva ityarTaH
+sp002-001168_RV_02	kaTamityatrAha hi yasmAt kAraRAt hi hetAvavaDAraRe ityamaraH
+sp002-001169_RV_02	tava devadArO vizaye mahAn aDikaH yatnaH
+sp002-001170_RV_02	mahatA prayatnena rakzyate ityarTaH
+sp002-001171_RV_02	idam Sabdoktam arTam darSayati sTAtumiti
+sp002-001172_RV_02	rakzyam vastu vinASya nASam gamayitvA svayam akzatena avraRena niyuktena iti SezaH
+sp002-001173_RV_02	niyoktuH svAminaH agre sTAtum na Sakyam
+sp002-001174_RV_02	sarvaTA rakzyam vastu DenurUpam avinASyameva
+sp002-001175_RV_02	kimiti
+sp002-001176_RV_02	kimapi kim vA aham tavA ahiMsyaH avaDyo mataScet tarhi me yaSa eva SarIram tasmin dayAlurBava
+sp002-001177_RV_02	nanu muKyamupekzya amuKyaSarIre koऽBiniveSa ityatrAha ekAnteti
+sp002-001178_RV_02	madviDAnAm mAdfSanAm vivekinAm ekAntaviDvaMsizu avaSyavinASizu BOtikezu
+sp002-001179_RV_02	pfTivyAdiBUtavikArezu piRqezu SarIrezu anAsTA anapekzA Kalu
+sp002-001180_RV_02	AsTA tu AlambanAsTAnayatnApekzAsu kaTyate iti viSvaH
+sp002-001181_RV_02	sambanDamiti
+sp002-001182_RV_02	sambanDam saKyam
+sp002-001183_RV_02	ABAzaRam AlApaH pUrvam kAraRam yasya tam AhuH
+sp002-001184_RV_02	syAt ABAzaRamAlApaH ityamaraH
+sp002-001185_RV_02	saH tAdfksambanDaH vanAnte saNgatayoH nO AvayoH vfttaH jAtaH
+sp002-001186_RV_02	tat tataH he BUtanATAnuga SivAnucara
+sp002-001187_RV_02	etena tasya mahattvam sUcayati
+sp002-001188_RV_02	ata eva sambanDinaH mitrasya me praRayam yAcYAm praRayasyAt paricaye yAcYAyAm sOhfdepi ca iti yAdavaH
+sp002-001189_RV_02	praRayAstvami viSramBayAcYApremARaH ityamaraSca
+sp002-001190_RV_02	vihantum nArhasi
+sp002-001191_RV_02	taTeti
+sp002-001192_RV_02	taTeti gAm muktavate tyaktavate haraye siMhAya
+sp002-001193_RV_02	kapO siMhe suvarRe ca varRe vizRO harim viduH iti SASvataH
+sp002-001194_RV_02	sadyaH tatkzaRe pratizwamBAt nirbanDAt vimukta bAhuH muktahastaH dilIpaH sanyastaSastraH tyaktAyuDaH san
+sp002-001195_RV_02	svadeham Amizasya mAMsasya
+sp002-001196_RV_02	palalam kravyamAmizam ityamaraH
+sp002-001197_RV_02	piRqam kabalamiva upAnayat samarpitavAn
+sp002-001198_RV_02	etena nirmamatvamuktam
+sp002-001199_RV_02	tasminniti
+sp002-001200_RV_02	tasminkzaRe ugram siMhanipAtam utpaSyataH utprekzamARasya tarkayata ityarTaH
+sp002-001201_RV_02	avANmuKasya aDomuKasya syAdavANapyaDomuKaH ityamaraH
+sp002-001202_RV_02	prajAnAm pAlayituH rAjYaH upari uparizwAt
+sp002-001203_RV_02	uparyuparizwAt iti nipAtaH
+sp002-001204_RV_02	vidyADarARAm devatAviSezARAm hastEH muktA puzpavfzwiH papAta
+sp002-001205_RV_02	uttizWeti
+sp002-001206_RV_02	rAjA dilIpaH amftavadacaratIti amftAyamAnam tat
+sp002-001207_RV_02	upamAnAdAcAre iti kyac
+sp002-001208_RV_02	tataH SAnac
+sp002-001209_RV_02	utTitam utpannam he vatsa uttizWa iti vaco niSamya SrutvA utTitaH san
+sp002-001210_RV_02	agrataH agre prasravaH kzIrasrAvo asyAstIti prasraviRI tAm gAm svAm jananImiva dadarSa
+sp002-001211_RV_02	siMham tu na dadarSa
+sp002-001212_RV_02	tamiti
+sp002-001213_RV_02	vismitam AScarya gatam
+sp002-001214_RV_02	kartari ktaH
+sp002-001215_RV_02	tam dilIpam DenuruvAca
+sp002-001216_RV_02	kimityatrAha he sADo mayA mAyAm udBAvya kalpayitvA parIkzitoऽsi
+sp002-001217_RV_02	fzipraBAvA antakopi mayi prahartum na praBuH na samarTaH
+sp002-001218_RV_02	anye hiMsrAH GAtukAH
+sp002-001219_RV_02	SarArurGAtuko hiMsraH ityamaraH
+sp002-001220_RV_02	namikampi ityAdinA rapratyayaH
+sp002-001221_RV_02	kimuta suzWu na praBava iti yojyam
+sp002-001222_RV_02	balavatsuzWu kimuta svatyatIva ca nirBare ityamaraH
+sp002-001223_RV_02	Baktyeti
+sp002-001224_RV_02	he putra gurO BaktyA mayi anukampayA ca
+sp002-001225_RV_02	te tuByam prItAsmi
+sp002-001226_RV_02	kriyAgrahaRamapi kartavyam iti caturTI
+sp002-001227_RV_02	varam deveByo varaRIyamarTam
+sp002-001228_RV_02	devAdvfte varaH SrezWe trizu klIbam manAkpriye ityamaraH
+sp002-001229_RV_02	vfRIzva svIkuru
+sp002-001230_RV_02	taTAhi
+sp002-001231_RV_02	mAm kevalAnAm payasAm prasUtim kAraRam nAvehi na vidDi
+sp002-001232_RV_02	kintu prasannAm mAm
+sp002-001233_RV_02	kAmAndogDIti kAmaduGA
+sp002-001234_RV_02	duhaH kabGaSca iti kappratyayaH
+sp002-001235_RV_02	tAm avehi vidDi
+sp002-001236_RV_02	tata iti
+sp002-001237_RV_02	mAnitArTI svahastArjito vIra iti Sabdo yena saH
+sp002-001238_RV_02	etena dAtftvam dEnyarAhityam ca uktam
+sp002-001239_RV_02	sa rAjA hastO samAnIya sanDAya
+sp002-001240_RV_02	aYjalim vadDvA ityarTaH
+sp002-001241_RV_02	vaMSasya kartAram pravartayitAram
+sp002-001242_RV_02	ata eva raGukulamiti prasidDam
+sp002-001243_RV_02	ananta kIrtim sTirayaSasam tanayam sudakziRAyAm yayAce
+sp002-001244_RV_02	santAneti
+sp002-001245_RV_02	sA payasvinI gOH
+sp002-001246_RV_02	santAnam kAmayate iti santAnakAmaH
+sp002-001247_RV_02	karmaRyaR
+sp002-001248_RV_02	tasmE rAjYe taTeti
+sp002-001249_RV_02	kAmyate iti kAmo varaH
+sp002-001250_RV_02	karmArTe GaYpratyayaH
+sp002-001251_RV_02	tam pratiSrutya pratijYAya he putra madIyam payaH patrapuwe patranirmita pAtre
+sp002-001252_RV_02	dugDvA upaBuNkzva piba iti tam nfpam AdideSa AjYApitavatI
+sp002-001253_RV_02	vatsasyeti
+sp002-001254_RV_02	he mAtaH vatsasya vatsapItasya Sezam
+sp002-001255_RV_02	vatsapItAvaSizwamityarTaH
+sp002-001256_RV_02	homa evArDastasya viDiranuzWAnam
+sp002-001257_RV_02	tasya ca Sezam
+sp002-001258_RV_02	hutAvaSizwamityarTaH
+sp002-001259_RV_02	tava UDasi Bavam UDasyam kzIram
+sp002-001260_RV_02	SarIrAvayavAcca iti yatpratyayaH
+sp002-001261_RV_02	rakzitAyAH urvyAH vasuDAyAH vasuDorvI vasunDarA ityamaraH
+sp002-001262_RV_02	zazWAMSam zazWaBAgamiva fzeranujYAm aDigamya upagamya upaBoktumicCAmi
+sp002-001263_RV_02	itTamiti
+sp002-001264_RV_02	itTam kzitISena dilIpena vijYApitA vasizWasya DenurnandinI prItatarA
+sp002-001265_RV_02	pUrvam SuSrUzayA prItA sampratyanayA vijYApanayA prItatarA atisantuzwA baBUva
+sp002-001266_RV_02	tadanvitA tena dilIpena yuktA hEmavatAt himavatsambanDinaH kukzeH guhAyAH sakASAt
+sp002-001267_RV_02	aSrameRa anAyAsena ASramam pratyAyayO AgatA ca
+sp002-001268_RV_02	tasyA iti
+sp002-001269_RV_02	prasannenduriva muKam yasya saH nfpARAm guruH dilIpaH praharzacihnEH muKarAgAdiBiH anumitamaByUhitam tasyAH DenoH prasAdam anugraham
+sp002-001270_RV_02	praharzacihnEreva jYAtatvAt punaruktayeva vAcA gurave nivedya vijYApya paScAtpriyAyE SaSaMsa
+sp002-001271_RV_02	kaTitavAn
+sp002-001272_RV_02	kaTitasyEva kaTanam punaruktiH
+sp002-001273_RV_02	na ceha tadasti
+sp002-001274_RV_02	kintu cihnEH kaTitaprAyatvAt punaruktayA iva sTitayA ityutprekzA
+sp002-001275_RV_02	sa iti
+sp002-001276_RV_02	aninditAtmA agarhitasvaBAvaH
+sp002-001277_RV_02	satsu vatsalaH premavAn sadvatsalaH
+sp002-001278_RV_02	vatsAMsAByAm kAmabala iti lacpratyayaH
+sp002-001279_RV_02	sa dilIpaH
+sp002-001280_RV_02	vasizWena kftAByanujYaH kftAnumatisan vatsasya hutasya ca avaSezam pItahutAvaSizwam nandinyAH stanyam kzIram
+sp002-001281_RV_02	SuBram mUrtam paricCinnam yaSa iva
+sp002-001282_RV_02	atitfzRaH san papO
+sp002-001283_RV_02	prAtariti
+sp002-001284_RV_02	vaSI jitendriyaH
+sp002-001285_RV_02	vasizWaH prAtaH yaToktasya pUrvoktasya vratasya gosevArUpasya aNgaBUtA
+sp002-001286_RV_02	yA pAraRA tasyA ante prAsTAnikam prasTAnakAle Bavam
+sp002-001287_RV_02	tatkAlocitamityarTaH
+sp002-001288_RV_02	kAlAdWaYa iti WaYpratyayaH
+sp002-001289_RV_02	yaTAkaTaYcit guRavfttyA kAle vartamAnatvAt pratyaya izyate iti vfttikAroktiH
+sp002-001290_RV_02	Iyate prApyate anena iti ayanam svastyayanam SuBAvahamASIrvAdam prayujya
+sp002-001291_RV_02	tO dampatI sudakziRA dilIpO svAm rAjaDAnIm prati prasTApayAmAsa
+sp002-001292_RV_02	pradakziRIkftyeti
+sp002-001293_RV_02	nfpaH hutam havizA prajvalitam
+sp002-001294_RV_02	hutamaSnAtIti hutASaH agniH
+sp002-001295_RV_02	tam karmaRyaR
+sp002-001296_RV_02	BartuH muneH anantaram
+sp002-001297_RV_02	pradakziRAnantaram ityarTaH
+sp002-001298_RV_02	arunDatIm ca savatsAm Denum ca pradakziRIkftya pragato dakziRam pradakziRam
+sp002-001299_RV_02	tizWadgupraBftIni ca iti avyayIBAvaH
+sp002-001300_RV_02	tataH cvipratyayaH
+sp002-001301_RV_02	apradakziRam pradakziRam sampadyamAnam kftvA pradakziRIkftya sadBiH maNgalEH
+sp002-001302_RV_02	pradakziRAdiBiH maNgalAcaraREH udagratarapraBAvaH san pratasTe
+sp002-001303_RV_02	SrotrABirAmeti
+sp002-001304_RV_02	DarmapatnIsahitaH sahizRuH vratAdiduHKasahanaSIlaH sa nfpaH
+sp002-001305_RV_02	SrotrABirAmaDvaninA SravaRotsavasvanena anudGAtena pAzARAdyapratihatena
+sp002-001306_RV_02	suKaH suKakaraH tena raTena svena pUrRena saPalena manoraTeneva mArgamaDvAnam yayO
+sp002-001307_RV_02	manoraTapakze DvaniH SrutiH
+sp002-001308_RV_02	anudGAtaH pratibanDanivfttiH
+sp002-001309_RV_02	tamiti
+sp002-001310_RV_02	adarSanena pravAsanimittena AhitOtsukyam janitadarSanotkaRWam
+sp002-001311_RV_02	prajArTena santAnArTena vratena niyamena karSitam aNgam yasya tam navodayam navAByudayam
+sp002-001312_RV_02	tam dilIpam prajAH tfptim anApnuvadBiH atigfDruBiH netrEH ozaDInAm nATam candramiva papuH
+sp002-001313_RV_02	atyASayA dadfSuH ityarTaH
+sp002-001314_RV_02	candrapakze adarSanam kalAkzayanimittam
+sp002-001315_RV_02	prajArTam lokahitArTam
+sp002-001316_RV_02	vratam devatAByaH kalAdAnaniyamaH tam ca somam papurdevAH paryAyeRAnupUrvaSaH iti vyAsaH
+sp002-001317_RV_02	udayam avirBAvaH
+sp002-001318_RV_02	anyatsamAnam
+sp002-001319_RV_02	purandareti
+sp002-001320_RV_02	puram purIm asurARAm dArayatIti purandaraH SakraH
+sp002-001321_RV_02	puruhUtaH purandaraH ityamaraH
+sp002-001322_RV_02	pUsarvayordArisahoriti Kac
+sp002-001323_RV_02	vAcam yamapurandarO ca iti mumAgamo nipAtitaH
+sp002-001324_RV_02	tasya SrIriva SrIryasya sa nfpaH pOrEH aBinandyamAnaH
+sp002-001325_RV_02	utpatAkamucCritaDvajam
+sp002-001326_RV_02	patAkA vEjayantI syAt ketanam DvajamastriyAm ityamaraH
+sp002-001327_RV_02	puram praviSya BujaNgendreRa samAnasAre tulyabale sAro bale sTirAMSe ca nyAyye klIbam vare trizu ityamaraH
+sp002-001328_RV_02	Buje BUyaH BUmeH Duram AsaMsaYja sTApitavAn
+sp002-001329_RV_02	aTeti
+sp002-001330_RV_02	aTa dyOH suravartma
+sp002-001331_RV_02	dyOH svargasuravartmanoH iti viSvaH
+sp002-001332_RV_02	atrermaharzarnayanAByAm samutTam utpannam AtaScopasarge iti kapratyayaH
+sp002-001333_RV_02	tadjyotiriva candramiva fkzeSaH syAt atrinetraprasUtaH iti halAyuDaH
+sp002-001334_RV_02	candrasya atrinetrodBUtatvam uktam harivaMSe
+sp002-001335_RV_02	netrAByAm vAri susrAva daSaDA dyotayaddiSaH
+sp002-001336_RV_02	tam garBam daSaDA hfzwA diSo devyo daDustataH
+sp002-001337_RV_02	ityAdikam tatra drazwavyam
+sp002-001338_RV_02	surasarit gaNgA vahninA nizWyUtam kziptam
+sp002-001339_RV_02	nuttanunnAstanizWyUta vidDakzipteritAH samAH ityamaraH
+sp002-001340_RV_02	ESam tejaH skandamiva
+sp002-001341_RV_02	atra rAmAyaRam te gatvA parvatam rAma kElAsam DAtumaRqitam agnim niyojayAmAsuH putrArTam sarvadevatAH
+sp002-001342_RV_02	devakAryamidam deva samADatsva hutASana SElaputryAm mahAtejo gaNgAyAm teja utsfja
+sp002-001343_RV_02	devatAnAm pratijYAya gaNgAmaByetya pAvakaH garBam DAraya vE devi devatAnAmidam priyam
+sp002-001344_RV_02	ityetadvacanam SrutvA divyam rUpamaDArayat sa tasyA mahimAm dfzwvA samantAdavaSIryata
+sp002-001345_RV_02	samantatastu tAm devIm aByaziYcata pAvakaH sarvasrotAMsi pUrRAni gaNgAyA raGunandana
+sp002-001346_RV_02	ityAdi
+sp002-001347_RV_02	rAjYI sudakziRA narapaterdilIpasya kulaBUtyE santatilakzaRAyE guruBiH mahadBiH
+sp002-001348_RV_02	lokapAlAnAm anuBAvEH tejoBiH aBinivizwam anupravizwam garBam ADatta
+sp002-001349_RV_02	daDO ityarTaH
+sp002-001350_RV_02	atra manuH azwAnAMlokapAlAnAm vapurDArayate nfpaH iti
+sp002-001351_RV_02	atra ADatta ityanena strIkartfkaDAraRamAtramucyate
+sp002-001352_RV_02	mAlinI vfttametat
+sp002-001353_RV_02	nanamayayayuteyam mAlinI BogilokEH iti lakzaRAt
+sp002-001354_RV_02	iti mahAmahopADyAyakolAcalamallinATasUrIviracitayA saYjIvinIsamAKyayA vyAKyayA sameto
+sp002-001355_RV_02	mahAkaviSrIkAlidAsakftO raGuvaMSe mahAkAvye nandinIvarapradAno nAma dvitIyaH sargaH
+sp002-001356_RV_05	tamiti
+sp002-001357_RV_05	viSvajiti viSvajinnAmake aDvare yajYe
+sp002-001358_RV_05	yajYaH savoऽDvaro yAgaH ityamaraH
+sp002-001359_RV_05	niHSezam yaTA taTA viSrARitam dattam
+sp002-001360_RV_05	SraRu dAne curAdiH
+sp002-001361_RV_05	koSAnAm arTarASInAm jAtam samUho yena tam taToktam
+sp002-001362_RV_05	koSoऽstrI kuqmale KaqgapiDAne arTOGadivyayorityamaraH
+sp002-001363_RV_05	jAtam janisamUhayoriti SASvataH
+sp002-001364_RV_05	etena kOtsasya anavasaraprAptattvam sUcayati
+sp002-001365_RV_05	tam kzitISam raGum upAttavidyaH labDavidyaH varatantoH SizyaH kOtsaH
+sp002-001366_RV_05	fziH fzyanDaka ityAdinA aR iYoऽpavAdaH
+sp002-001367_RV_05	gurudakziRArTI san
+sp002-001368_RV_05	puzkarAdiByo deSe ityatra arTAcca asannihite tadantAcca iti iniH
+sp002-001369_RV_05	apratyAKyeya iti BAvaH
+sp002-001370_RV_05	prapede prApa
+sp002-001371_RV_05	asminsarge vfttamupajAtiH
+sp002-001372_RV_05	lakzaRam tu syAdindravajrA yadi tO jagO gaH
+sp002-001373_RV_05	upendravajrA jatajAstato gO
+sp002-001374_RV_05	anantarodIritalakzmaBAjO pAdO yadIyA upajAtayastAH iti lakzaRAt
+sp002-001375_RV_05	sa iti
+sp002-001376_RV_05	anarGaSIlaH amUlyasvaBAvaH
+sp002-001377_RV_05	asADAraRasvaBAva ityarTaH
+sp002-001378_RV_05	mUlye pUjAviDAvargaH
+sp002-001379_RV_05	SIlam svaBAve sadvftte iti ca amaraH
+sp002-001380_RV_05	yaSasA kIrtyA
+sp002-001381_RV_05	prakASata iti prakASaH
+sp002-001382_RV_05	pacAdyac
+sp002-001383_RV_05	atiTizu sADuH AtiTeyaH
+sp002-001384_RV_05	paTyatiTivasatIti QaYpratyayaH
+sp002-001385_RV_05	sa raGuH
+sp002-001386_RV_05	hiraRyasya vikAro hiraRmayam
+sp002-001387_RV_05	dARqinAyane ityAdinA nipAtaH
+sp002-001388_RV_05	vItahiraRmayatvAt apagatasuvarRapAtratvAt
+sp002-001389_RV_05	yajYasya sarvasvadakziRAkatvAditi BAvaH
+sp002-001390_RV_05	mfRmaye mfdvikAre pAtre
+sp002-001391_RV_05	arGArTamidam arGyam
+sp002-001392_RV_05	pAdArGAByAm ceti yatpratyayaH
+sp002-001393_RV_05	pUjArTam dravyam niDAya Srutena SAstreRa prakASam prasidDam
+sp002-001394_RV_05	Srutam SAstrAvaDftayorityamaraH
+sp002-001395_RV_05	prakASoti prasidDepi ityamaraH
+sp002-001396_RV_05	atiTim aByAgatam kOtsam
+sp002-001397_RV_05	atiTirnA gfhAgate ityamaraH
+sp002-001398_RV_05	pratyujjagAma
+sp002-001399_RV_05	tamiti
+sp002-001400_RV_05	viDijYaH SAstrajYaH
+sp002-001401_RV_05	akaraRe pratyavAyaBIrurityarTaH
+sp002-001402_RV_05	mAnaDanAgrayAyi mAna eva Danam yezAm tezAm mAnaDanAnAm agrayAyi
+sp002-001403_RV_05	agresaraH raGuH
+sp002-001404_RV_05	kftyavit kAryajYaH
+sp002-001405_RV_05	AgamanaprayojanamavaSyam prazwavyamiti kftyavit
+sp002-001406_RV_05	viSAmpatiH manujeSvaraH
+sp002-001407_RV_05	dvO viSO vESyamanujO ityamaraH
+sp002-001408_RV_05	vizwaraBAjam Asanagatam
+sp002-001409_RV_05	upavizwamityarTaH
+sp002-001410_RV_05	vizwaro viwapI darBamuzwiH pIWAdyamAsanam ityamaraH
+sp002-001411_RV_05	vfkzAsanayorvizwara iti nipAtaH
+sp002-001412_RV_05	tam tapoDanam kOtsam viDivat viDyarham yaTASAstramityarTaH
+sp002-001413_RV_05	tadarhamiti vatipratyayaH
+sp002-001414_RV_05	arcayitvA ArAtsamIpe
+sp002-001415_RV_05	ArAddUrasamIpayorityamaraH
+sp002-001416_RV_05	kftAYjaliH san iti vakzyamARaprakAreRa uvAca
+sp002-001417_RV_05	apyagraRIriti
+sp002-001418_RV_05	he kuSAgrabudDe sUkzmabudDe
+sp002-001419_RV_05	kuSAgrIyamatiH proktaH sUkzmadarSI ca yaH pumAn iti halAyuDaH
+sp002-001420_RV_05	mantrakftAm mantrasrazwfRAm
+sp002-001421_RV_05	sukarmapApamantretyAdinA kvip
+sp002-001422_RV_05	fzIRAm agraRIH SrezWaH te tava guruH kuSalyapi kzemavAnkim apiH praSne
+sp002-001423_RV_05	garhAsamuccayapraSnaSaNkAsamBAvanAsvapi ityamaraH
+sp002-001424_RV_05	yataH yasmAdguroH tvayA aSezam jYAnam lokena uzRaraSmeH sUryAt cEtanyam praboDaH iva
+sp002-001425_RV_05	Aptam svIkftam
+sp002-001426_RV_05	kAyeneti
+sp002-001427_RV_05	kAyena upavAsAdikfcCracAndrAyaRAdinA vAcA vedapAWena manasA gAyatrIjapAdinApi karaRena
+sp002-001428_RV_05	vAsavasya indrasya DEryam lumpati BinattIti vAsavaDEryalopi
+sp002-001429_RV_05	svapadApahAraSaNkAjanakamityarTaH
+sp002-001430_RV_05	yattapaH SaSvat asakft
+sp002-001431_RV_05	muhuH punaHpunaH SaSvat aBIkzRamasakftsamAH ityamaraH
+sp002-001432_RV_05	samBftam saYcitam maharzeH varatantoH triviDam vANmanaHkAyajam tattapaH
+sp002-001433_RV_05	antarAyEH viGnEH indraprezitApsaraHSApAdiBiH vyayam nASam nApAdyate kaccit
+sp002-001434_RV_05	na nIyate kim
+sp002-001435_RV_05	kaccit kAmapravedane viGnontarAyaH pratyUha iti cAmaraH
+sp002-001436_RV_05	ADAreti
+sp002-001437_RV_05	ADArabanDapramuKEH AlavAlanirmARAdiBiH prayatnErupAyEH
+sp002-001438_RV_05	ADAra AlavAleऽmbubanDeऽDikaraReऽpi ca iti viSvaH
+sp002-001439_RV_05	suteByo nirgato viSezoऽtiSayo yasminkarmaRi tattaTA sutanirviSezam avEzamyam yaTA taTA ityarTataH
+sp002-001440_RV_05	saMvarDitAnAm SramacCidAm SramApanodakAnAm vaH yuzmAkam ASramapAdapAnAm ASramasTa vfkzARAm vAyvAdiH
+sp002-001441_RV_05	AdigrahaRAt davAnala mattagajAdiH upaplavaH bADakaH na kaccit nAsti kim
+sp002-001442_RV_05	kriyeti
+sp002-001443_RV_05	kriyAnimittezu anuzWAnasADanezvapi kuSezu muniBiH vatsalatvAt mfgasnehAt aBagnakAmA apratihatecCA
+sp002-001444_RV_05	tezAm munInAm aNkA eva SayyAH tAsu cyutAni nABinAlAni yasyAH sA taToktA
+sp002-001445_RV_05	nAlo nAlamaTAstriyAm ityamaraH mfgIRAm prasUtiH santatiH anaGA avyasanA kaccit
+sp002-001446_RV_05	anapAyinI kim ityarTaH
+sp002-001447_RV_05	duHKEnovyasanezu aGamiti yAdavaH
+sp002-001448_RV_05	te hi vyAlaBayAt daSarAtramaNka eva DArayanti
+sp002-001449_RV_05	nirvartyata iti
+sp002-001450_RV_05	yEH tIrTajalEH niyamABizekaH nityasnAnam nirvartyate nizpAdyate
+sp002-001451_RV_05	yeByaH jaleByaH
+sp002-001452_RV_05	udDftyeti SezaH
+sp002-001453_RV_05	pitFRAm agnizvAttAdInAm nivApAYjalayaH tarpaRAYjalayaH
+sp002-001454_RV_05	pitfdAnam nivApaH syAt ityamaraH
+sp002-001455_RV_05	nirvartyante
+sp002-001456_RV_05	uYCezu prakIrRodDftaDAnyezu uYCo nAma prakIrRAnAm DAnyAnAm ekEkaSaH udDaraRam
+sp002-001457_RV_05	zazWEH zazWaBAgEH pAlakatvAt rAjagrAhyEH aNkitAni sEkatAni pulinAni yezAm tAni taToktAni
+sp002-001458_RV_05	vaH yuzmAkam tAni tIrTajalAni SivAni BadrARi kaccit
+sp002-001459_RV_05	anupaplavAni kim ityarTaH
+sp002-001460_RV_05	uYCo DAnyAMSakAdAnam kaRiSAdyarjanam Silamiti yAdavaH
+sp002-001461_RV_05	zazWAzwamAByAm Ya ca iti zazWaSabdAt BAgArTe anpratyayaH
+sp002-001462_RV_05	ataeva apUraRArTatvAt pUrRaguRetyAdinA na zazWIsamAsapratizeDaH
+sp002-001463_RV_05	sikatA yezu santi iti sEkatAni
+sp002-001464_RV_05	sikatASarkarAByAm ca iti aR
+sp002-001465_RV_05	nIvAreti
+sp002-001466_RV_05	kAlezu yogyakAlezu upapannAnAm AgatAnAm atiTInAm kalpyAH BAgA yasya tattaToktam
+sp002-001467_RV_05	vane Bavam vanyam
+sp002-001468_RV_05	SarIrasTiteH jIvanasya sADanam vaH yuzmAkam
+sp002-001469_RV_05	pacyata iti pAkaH Palam
+sp002-001470_RV_05	DAnyamiti yAvat
+sp002-001471_RV_05	nIvArasya pAkaH
+sp002-001472_RV_05	tfRaDAnyam tadAdi nIvArapAkAdi AdiSabdAt SAmAkAdiDAnyasaNgrahaH
+sp002-001473_RV_05	janapadeBya AgatEH jAnapadEH
+sp002-001474_RV_05	tata AgataH iti aR pratyayaH
+sp002-001475_RV_05	kaqaNgaram busam arhantIti kaqaNgarIyAH
+sp002-001476_RV_05	kaqaNgaradakziRAt Ca ca iti CapratyayaH
+sp002-001477_RV_05	kaqaNgaro busam klIbe DAnyatvaci tuzaH pumAn ityamaraH
+sp002-001478_RV_05	tEH gomahizAdiBiH nAmfSyate kaccit
+sp002-001479_RV_05	na Bakzyate kim ityarTaH
+sp002-001480_RV_05	apIti
+sp002-001481_RV_05	kiYca tvam prasannena maharziRA varatantunA samyak vinIya SikzayitvA
+sp002-001482_RV_05	vidyAmupadiSyetyarTaH
+sp002-001483_RV_05	gfhAya gfhasTASramam pravezwum
+sp002-001484_RV_05	kriyArTopapadetyAdinA caturTI
+sp002-001485_RV_05	anumatopi anujYAtaH kim
+sp002-001486_RV_05	hi yasmAtkAraRAt te tava sarvezAm ASramARAm brahmacaryavAnaprasTayatInAm upakAre kzamam Saktam
+sp002-001487_RV_05	kzamam Sakte hite trizu ityamaraH
+sp002-001488_RV_05	dvitIyam ASramam gArhasTyam saNkramitum prAptum ayam kAlo hi
+sp002-001489_RV_05	vidyAgrahaRAnantaryAt tasya iti BAvaH
+sp002-001490_RV_05	kAlasamayavelAsu tuman iti tuman pratyayaH
+sp002-001491_RV_05	sarvopakArakzamam ityatra manuH yaTA mAtaramASritya sarve jIvanti jantavaH
+sp002-001492_RV_05	vartante gfhiRam tadvat ASrityetara ASramAH iti
+sp002-001493_RV_05	taveti
+sp002-001494_RV_05	arhataH pUjyasya praSastasya
+sp002-001495_RV_05	arhaH praSaMsAyAm iti SatfpratyayaH
+sp002-001496_RV_05	tava aBigamena AgamanamAtreRa me mama manaH na tfptam na tuzwam
+sp002-001497_RV_05	kintu niyogakriyayA AjYAkaraRena utsukam utkaRWam
+sp002-001498_RV_05	tatpare prasitAsaktAvizwArTodyukta utsuka ityamaraH
+sp002-001499_RV_05	prasitotsukAByAm tftIyA ca iti saptamyarTe tftIyA
+sp002-001500_RV_05	SAsiturguroH AjYayApi AjYayAvA AtmanA svato vA
+sp002-001501_RV_05	prakftyAdiBya upasaNKyAnamiti tftIyA
+sp002-001502_RV_05	mAm samBAvayitum bahUkartum vanAtprAptoऽsi
+sp002-001503_RV_05	gurvarTam vA svArTam vA tvAdAgamanamityarTaH
+sp002-001504_RV_05	itIti
+sp002-001505_RV_05	arGyapAtreRa mfRmayapAtreRa anumitaH vyayaH sarvasvatyAgaH yasya tasya raGoH
+sp002-001506_RV_05	iti uktaprakArAm udArAm OdAryayuktAmapi gAm vAcam
+sp002-001507_RV_05	mano niyogakriyayA utsukam me ityevam rUpAm
+sp002-001508_RV_05	svargezu paSuvAgvajradiNganetraGfRiBUjale
+sp002-001509_RV_05	lakzyadfzwyA striyAm puMsi gOH ityamaraH
+sp002-001510_RV_05	niSamya SrutvA varatantuSizyaH kOtsaH svArTopapattim svakAryasidDim prati durbalASaH san
+sp002-001511_RV_05	mfRmayapAtradarSanAt SiTilamanoraTaH san tam raGum iti vakzyamARaprakAreRa avocat
+sp002-001512_RV_05	uktavAn
+sp002-001513_RV_05	sarvatreti
+sp002-001514_RV_05	he rAjan tvam sarvatra naH asmAkam vArtam svAsTyam avehi jAnIhi
+sp002-001515_RV_05	vArtam Palgunyaroge ca ityamaraH
+sp002-001516_RV_05	vArtam pAwavamArogyam Bavyam svAsTyamanAmayam iti yAdavaH
+sp002-001517_RV_05	na cEtadAScaryamityAha nATa iti
+sp002-001518_RV_05	tvayi nATe ISvare sati prajAnAm aSuBam duHKam kutaH
+sp002-001519_RV_05	taTAhi
+sp002-001520_RV_05	arTAntaram nyasyati sUrya ityAdinA
+sp002-001521_RV_05	sUrye tapati prakASamAne sati tamisrA tamastatiH
+sp002-001522_RV_05	tamisram timiram roge tamisrA tu tamastatO
+sp002-001523_RV_05	kfzRapakzaniSAyAm ca iti viSvaH
+sp002-001524_RV_05	tamisramiti pAWe tu tamisram timiram
+sp002-001525_RV_05	tamisram timiram tamaH ityamaraH
+sp002-001526_RV_05	lokasya janasya
+sp002-001527_RV_05	lokastu Buvane jana ityamaraH
+sp002-001528_RV_05	dfzweH AvaraRAya AvaraRam kartum kaTam kalpeta
+sp002-001529_RV_05	sampadyeta na kalpeta ityarTaH
+sp002-001530_RV_05	dfzwimAvarItum nAlamityarTaH
+sp002-001531_RV_05	kfpeH alamarTatvAt tadyoge namaH svasti ityAdinA caturTI
+sp002-001532_RV_05	alamiti paryAptyarTagrahaRamiti BagavAnBAzyakAraH
+sp002-001533_RV_05	tfpica sampedyamAne caturTIti vaktavyAt
+sp002-001534_RV_05	tavArhata ityAdinA yaduktam tan na citramityAha
+sp002-001535_RV_05	Baktiriti
+sp002-001536_RV_05	pratIkzyezu pUjyezu
+sp002-001537_RV_05	pUjyaH pratIkzyaH ityamaraH
+sp002-001538_RV_05	BaktiranurAgaviSezaH te tava kulocitA kulAByastA
+sp002-001539_RV_05	aByasteऽpyucitam nyAyyam iti yAdavaH
+sp002-001540_RV_05	he mahABAga sArvaBOma tayA BaktyA pUrvAn atiSeze ativartase
+sp002-001541_RV_05	kintu sarvatra vArtam cet tarhi kaTam Kinna iva dfSyase ata Aha
+sp002-001542_RV_05	vyatIteti
+sp002-001543_RV_05	aham vyatItakAlaH atikrAntakAlaH san arTiBAvAt yAcakatvAt tvAm aByupetaH prAptavAnasmi iti me vizAdaH kleSaH
+sp002-001544_RV_05	SarIreti
+sp002-001545_RV_05	he narendra tIrTe satpAtre pratipAditA datta fdDiH samfdDiH yena taToktaH san
+sp002-001546_RV_05	yonO jalAvatAre ca mantryAdyazwAdaSasvapi
+sp002-001547_RV_05	puRyakzetre taTA pAtre tIrTam syAt darSanezvapi
+sp002-001548_RV_05	iti halAyuDaH
+sp002-001549_RV_05	SarIramAtreRa tizWan
+sp002-001550_RV_05	AraRyakAH araRye BavAH manuzyAH munipramuKAH
+sp002-001551_RV_05	araRyAnmanuzya iti uYpratyayaH
+sp002-001552_RV_05	tErupAttA Palameva prasUtiryasya saH stambena kARqena avaSizwaH
+sp002-001553_RV_05	prakftyAditvAt tftIyA
+sp002-001554_RV_05	nIvAra iva
+sp002-001555_RV_05	ABAsi SoBase prakASase ityarTaH
+sp002-001556_RV_05	sTAna iti
+sp002-001557_RV_05	BavAn ekanarADipaH san sArvaBOmaH san
+sp002-001558_RV_05	maKajam yajYajanyam
+sp002-001559_RV_05	na vidyate kiYcana yasya sokiYcanaH daridraH
+sp002-001560_RV_05	mayUravyaMsakAditvAt tatpuruzaH
+sp002-001561_RV_05	tasya BAvastattvam akiYcanatvam nirDanatvam vyanakti prakawayati
+sp002-001562_RV_05	sTAne yuktam
+sp002-001563_RV_05	yukte dve sAmpratam sTAne ityamaraH
+sp002-001564_RV_05	taTAhi surEH devEH paryAyeRa praTamAm pibatevahnir dvitIyAm pibate raviH
+sp002-001565_RV_05	iti somotpattivihitakrameRa ityarTaH
+sp002-001566_RV_05	pItasya himAMSoScandramasaH himAMSuScandramAScandraH ityamaraH
+sp002-001567_RV_05	kalAkzayaH vfdDeH upacayAt SlAGyataro hi varaH Kalu
+sp002-001568_RV_05	maRiH SAlo SARollIQaH samayavijayI hetinihato madakzIRo nAgaH Saradi saritaH SyAnapulinAH
+sp002-001569_RV_05	kalASezaScandraH suratamfditA bAlavanitA tanimnA SoBante galitaviBavAScArTizu nfpAH
+sp002-001570_RV_05	iti nyAyAditiBAvaH
+sp002-001571_RV_05	atra kAmandakaH DarmArTam kzIRakoSasya kzIRatvamapi SoBate
+sp002-001572_RV_05	surEH pItAvaSezasya kfzRapakze viDoriva iti
+sp002-001573_RV_05	taditi
+sp002-001574_RV_05	tattasmAt kAraRAt anyakAryaH
+sp002-001575_RV_05	prayojanAntararahitaH aham anyatastAvat padAnyAntarAdeva yAvattAvacca sAkalyeऽvaDO mAneऽvaDAraRe ityamaraH
+sp002-001576_RV_05	urvarDam uruDanam Ahartum Arjitum yatizye udyokzye
+sp002-001577_RV_05	te tuByam svasti SuBamastu
+sp002-001578_RV_05	namaHsvasti ityAdinA caturTI
+sp002-001579_RV_05	taTAhi
+sp002-001580_RV_05	cAtakoऽpi
+sp002-001581_RV_05	DaraRIpatitam toyam cAtakAnAm rujAkaram iti hetoH ananyagatikoऽpItyarTaH
+sp002-001582_RV_05	nirgalitaH ambu eva garBo yasya tam SaradDanam SaranmeGam nArdati na yAcate
+sp002-001583_RV_05	arda gatO yAcane ca iti DAtuH
+sp002-001584_RV_05	yAcanArTe raReऽrdanamiti yAdavaH
+sp002-001585_RV_05	etAvaditi
+sp002-001586_RV_05	etAvat etAvanmAtram vAkyam uktvA pratiyAtum kAmo yasya tam pratiyAtukAmam tum kAmamanasorapIti makAralopaH
+sp002-001587_RV_05	maharzeH varatantoH Sizyam kOtsam nfpatiH raGuH niziDya nivArya
+sp002-001588_RV_05	he vidvan tvayA gurave pradeyam vastu kim kimAtmakam kiyat kim parimARakam vA
+sp002-001589_RV_05	iti evam tam kOtsam anyayuNktA apfcCat
+sp002-001590_RV_05	praSnoऽnuyogaH pfcCA ca ityamaraH
+sp002-001591_RV_05	tata iti
+sp002-001592_RV_05	tataH anantaram yaTAvat yaTArham
+sp002-001593_RV_05	arhArTe vatipratyayaH
+sp002-001594_RV_05	vihitADvarAya viDivadanuzWitayajYAya
+sp002-001595_RV_05	sadAcArAya ityarTaH
+sp002-001596_RV_05	smayAveSavivarjitAya garvABiniveSaSUnyAya
+sp002-001597_RV_05	anudDatAya ityarTaH
+sp002-001598_RV_05	varRAnAm brAhmaRAdInAm ASramARAm brahmacaryAdInAm ca gurave niyAmakAya
+sp002-001599_RV_05	varRAH syuH brAhmaRAdayaH ityamaraH
+sp002-001600_RV_05	brahmacArI gfhI vAnaprasTo BikzuScatuzwaye ASramoऽstrI ityamaraH
+sp002-001601_RV_05	varRASramARAm sarvakAryanirvAhakAya ityarTaH
+sp002-001602_RV_05	tasmE raGave vicakzaRaH vidvAn varRI brahmacArI
+sp002-001603_RV_05	varRino brahmacAriRa ityamaraH
+sp002-001604_RV_05	varRAt brahmacAriRIti inipratyayaH
+sp002-001605_RV_05	saH kOtsaH prastutam prakftam Acacakze
+sp002-001606_RV_05	kaTayAmAsa
+sp002-001607_RV_05	samApteti
+sp002-001608_RV_05	samAptavidyena mayA maharziH gurudakziRAyE gurudakziRAsvIkArArTam vijYApitoऽBUt
+sp002-001609_RV_05	sa ca guruH cirAya cirAt asKalitopacArAm tAm duzkarAm me Baktimeva purastAtpraTamam agaRayat saNKyAtavAn
+sp002-001610_RV_05	BaktyEva santuzwaH kim dakziRaya ityuktavAn ityarTaH
+sp002-001611_RV_05	aTavA Baktimeva tAm dakziRAm agaRayat iti yojyam
+sp002-001612_RV_05	nirbanDeti
+sp002-001613_RV_05	nirbanDena prArTanAtiSayena saYjAtaruzA saYjAtakroDena guruRA
+sp002-001614_RV_05	varatantunA arTakArSyam arTadAridryam acintayitvA avicArya aham
+sp002-001615_RV_05	vittasya Danasya catasraH daSa ca kowIH caturdaSakowIH me mahyam
+sp002-001616_RV_05	Ahara Anaya iti vidyAparisaNKyayA vidyAsaNKyAnusAreRa iva uktaH
+sp002-001617_RV_05	atra manuH aNgAni vedAScatvAro mImAMsA nyAyavistaraH
+sp002-001618_RV_05	purARam DarmaSAstram ca vidyA hyetAScaturdaSa
+sp002-001619_RV_05	iti
+sp002-001620_RV_05	soऽhamiti
+sp002-001621_RV_05	soऽham saparyAviDiBAjanena arGyapAtreRa Bavantam praBuSabda eva Sezo yasya tam matvA niHsvam niScitya ityarTaH
+sp002-001622_RV_05	Srutanizkrayasya vidyAmUlyasya alpetaratvAt atimahattvAt samprati uparodDum nirbanDum nAByutsahe
+sp002-001623_RV_05	na soQavAnasmi
+sp002-001624_RV_05	itTamiti
+sp002-001625_RV_05	dvijarAjakAntiH candrakAntiH
+sp002-001626_RV_05	dvijarAjaH SaSaDaro nakzatreSaH kzapAkaraH ityamaraH
+sp002-001627_RV_05	tasmAtsomo rAjA no brAhmaRAnAm iti SruteH
+sp002-001628_RV_05	dvijarAjakAntitvena arTAvAptivErAgyam vArayati
+sp002-001629_RV_05	enasaH pApAt nivfttA indriyavfttiH yasya saH
+sp002-001630_RV_05	jagadekanATaH raGuH vedavidAm vareRa SrezWena dvijena kOtsena itTamAveditaH niveditaH san
+sp002-001631_RV_05	enam kOtsam BUyaH punaH jagAda
+sp002-001632_RV_05	gurvarTamiti
+sp002-001633_RV_05	Srutasya SAstrasya pAram antam dfzwavAn SrutapAradfSvA
+sp002-001634_RV_05	dfSeH kvanip iti kvanip pratyayaH
+sp002-001635_RV_05	gurvarTam gurudakziRArTam yaTA taTA arTI yAcakaH
+sp002-001636_RV_05	viSezaRadvayenApi asya apratyAKyeyatvamAha
+sp002-001637_RV_05	raGoH sakASAt kAmam manoraTam anavApya aprApya vadAnyAntaram dAtrantaram gataH
+sp002-001638_RV_05	syuH vadAnyasTUlalakza dAnaSORqA bahuprade ityamaraH
+sp002-001639_RV_05	ityevam rUpasya parIvAdasya apavAdasya navo nUtanaH avatAraH AvirBAvaH me mA BUt mAstu
+sp002-001640_RV_05	raGoriti svanAmagrahaRam samBAvitatva dyotanArTam
+sp002-001641_RV_05	taTA ca samBAvitasya cAkIrtiH maraRAdatiricyate iti BAvaH
+sp002-001642_RV_05	sa iti
+sp002-001643_RV_05	saH tvam mahite pUjite praSaste prasidDe madIye matsambanDini agnyagAre tretAgniSAlAyAm
+sp002-001644_RV_05	caturToऽgniriva vasan dvitrARi dve trIRi vA ahAni dinAni
+sp002-001645_RV_05	saNKyayAvyetyAdinA bahuvrIhiH
+sp002-001646_RV_05	bahuvrIhO saNKyeye qajabahugaRAditi qacpratyayaH samAsAntaH
+sp002-001647_RV_05	soQumarhasi
+sp002-001648_RV_05	he arhan mAnya tvadarTam tava prayojanam sADayitum yAvadyate yatizye
+sp002-001649_RV_05	yAvatpurAnipAtayorlaw iti BavizyadarTe law
+sp002-001650_RV_05	taTeti
+sp002-001651_RV_05	agrajanmA brAhmaRaH pratItaH prItaH san KyAte hfzwe pratIta ityamaraH
+sp002-001652_RV_05	tasya raGoH avitaTam amoGam saNgaram pratijYAm
+sp002-001653_RV_05	aTa pratijYAji saMvidApatsu saNgaraH ityamaraH
+sp002-001654_RV_05	taTeti pratyagrahIt
+sp002-001655_RV_05	aNgIcakAra tAm giram iti kecitpaWanti
+sp002-001656_RV_05	raGurapi gAm BUmim AttasArAm gfhItaDanAm avekzya kuberAt arTam Danam nizkrazwum Ahartum cakame iyeza
+sp002-001657_RV_05	vasizWeti
+sp002-001658_RV_05	vasizWasya yanmantreRa ukzaRam aBimantrya prokzaRam tajjAt praBAvAt sAmarTyAdDetoH
+sp002-001659_RV_05	udanvadAkASamahIDarezu samudrAkASaparvatezu marutsaKasya
+sp002-001660_RV_05	marutaH saKeti zazWItatpuruzaH bahuvrIhO samAsAntAsamBAvAt
+sp002-001661_RV_05	tato vAyusahAyasya iti laByate
+sp002-001662_RV_05	vArIRAm vAhako valAhakaH
+sp002-001663_RV_05	pfzodarAditvAtsADuH
+sp002-001664_RV_05	vabayoraBedAt balAhakaH
+sp002-001665_RV_05	tasyeva meGasyeva tadraTasya gatiH saYcAraH na vijaGne na vihatA hi
+sp002-001666_RV_05	aTeti
+sp002-001667_RV_05	aTa pradoze rajanImuKe
+sp002-001668_RV_05	tatkAle yAnArohaRaviDAnAt
+sp002-001669_RV_05	pradozo rajanImuKam ityamaraH
+sp002-001670_RV_05	DIraH prayataH raGuH
+sp002-001671_RV_05	samantAdBavaH sAmantaH rAjamAtramiti samBAvanayEva manIzayEva kElAsanATam kuberam
+sp002-001672_RV_05	tarasA balena jigIzuH jetumicCuH san
+sp002-001673_RV_05	kalpitam sajjitam Sastram garBe yasya tam raTamaDiSiSye
+sp002-001674_RV_05	raTe SayitavAn ityarTaH
+sp002-001675_RV_05	aDiSINsTAsAm karmeti karmatvam
+sp002-001676_RV_05	prAtariti
+sp002-001677_RV_05	prAtaH prayARABimuKAya tasmE raGave kozagfhe niyuktAH aDikftAH BARqAgArikAH
+sp002-001678_RV_05	savismayAH santaH kozagfhasya BARqAgArasya maDye naBastaH AkASAt paYcamyAstasilpratyayaH
+sp002-001679_RV_05	patitAm hiraRmayIm survaRamayI
+sp002-001680_RV_05	dARqinAyanetyAdinA nipAtanAt sADuH
+sp002-001681_RV_05	vfzwim SaSaMsuH kaTayAmAsuH
+sp002-001682_RV_05	tamiti
+sp002-001683_RV_05	BUpatiH raGuH
+sp002-001684_RV_05	aBiyAsyamAnAt aBigamizyamARAt kuberAt labDam
+sp002-001685_RV_05	vajreRa kuliSena Binnam lUnam sumeroH pAdamiva pratyantaparvatamiva sTitam
+sp002-001686_RV_05	SfNgamiti kvacitpAWaH
+sp002-001687_RV_05	pAdAH pratyantaparvatAH ityamaraH
+sp002-001688_RV_05	tam BAsuram BAsvaram
+sp002-001689_RV_05	BaYjaBAsamido Gurac
+sp002-001690_RV_05	iti GuracpratyayaH
+sp002-001691_RV_05	hemarASim samastameva kftsnameva kOtsAya dideSa dadO
+sp002-001692_RV_05	na tu caturdaSakowimAtramiti evakArArTaH
+sp002-001693_RV_05	janasyeti
+sp002-001694_RV_05	tO arTidAtArO dvAvapi sAketanivAsinaH ayoDyAvAsinaH
+sp002-001695_RV_05	sAketaH syAdayoDyAyAm kosalA nandinI ca sA iti yAdavaH
+sp002-001696_RV_05	janasya aBinandyasattvO stutyavyavasAyO aBUtAm
+sp002-001697_RV_05	dravyAsuvyavasAyezu sattvamastrI tu jantuzu ityamaraH
+sp002-001698_RV_05	kO dvO
+sp002-001699_RV_05	gurupradeyAt aDike atiriktadravye niHspfhoऽrTI
+sp002-001700_RV_05	arTikAmAt arTimanoraTAt aDikam pradadAtIti taToktaH
+sp002-001701_RV_05	pre dAjYaH iti kapratyayaH
+sp002-001702_RV_05	nfpaSca
+sp002-001703_RV_05	aTeti
+sp002-001704_RV_05	aTa DanapradAnAntaram prItamanAH hfzwamAnasaH maharziH kOtsaH samprasTitaH san
+sp002-001705_RV_05	prasTAsyamAnaH san ASaMsAyAm BUtavacca iti BavizyadarTe ktaH
+sp002-001706_RV_05	uzwrARAm kramelakAnAm vAmInAm baqabAnAm ca SatErvAhitArTam prApitaDanam AnatapUrvakAyam
+sp002-001707_RV_05	vinayenanamramityarTaH
+sp002-001708_RV_05	prajeSvaram raGum kareRa spfSan vAcamuvAca
+sp002-001709_RV_05	kimiti
+sp002-001710_RV_05	vftte rAjavftte nyAyenArjanamarTasya varDanam pAlanam taTA
+sp002-001711_RV_05	satpAtre pratipattiSca rAjavfttam caturviDam
+sp002-001712_RV_05	iti kAmandakaH
+sp002-001713_RV_05	tasminvftte sTitasya prajAnAm aDipateH nfpasya BUH BUmiH kAmAnsUte iti kAmasUryadi
+sp002-001714_RV_05	satsUdvizadruha ityAdinA kvip
+sp002-001715_RV_05	atra kAmaprasavane kim citram
+sp002-001716_RV_05	na citramityarTaH
+sp002-001717_RV_05	kintu tava praBAvaH mahimAtu acintanIyaH
+sp002-001718_RV_05	cintitumaSakyaH
+sp002-001719_RV_05	yena tvayA dyOrapi manIzitam aBilazitam dugDA
+sp002-001720_RV_05	duherdvikarmakatvAt apraDAnekarmaRi ktaH
+sp002-001721_RV_05	praDAnakarmaRyAKyeye lAdInAhurdvikarmaRAm
+sp002-001722_RV_05	apraDAne duhAdInAm Ryante kartuSca karmaRaH
+sp002-001723_RV_05	iti smaraRAt
+sp002-001724_RV_05	ASAsyamiti
+sp002-001725_RV_05	sarvARi karituragarAjyAdIni SreyAMsi kalyARAni aDijagmuzaH
+sp002-001726_RV_05	prAptavataH te tava anyat putrAtiriktam ASAsyam ASIHsADyam punaruktaBUtam
+sp002-001727_RV_05	sarvam sidDamityarTaH
+sp002-001728_RV_05	kintu Iqyam stutyam Bavantam BavataH piteva dilIpa iva AtmaguRAnurUpam
+sp002-001729_RV_05	tva tulyaguRamityarTaH
+sp002-001730_RV_05	putram laBasva prApnuhi
+sp002-001731_RV_05	itTamiti
+sp002-001732_RV_05	agrajanmA brAhmaRaH
+sp002-001733_RV_05	agrajanmA dvije SrezWe BrAtari brahmaRi smftaH iti viSvaH
+sp002-001734_RV_05	itTam anena prakAreRa rAjYe raGave ASizam ASIrvAdam prayujya dattvA
+sp002-001735_RV_05	gurorvaratantoH sakASam samIpam pratIyAya prApa
+sp002-001736_RV_05	rAjApi
+sp002-001737_RV_05	jIvalokaH praRisamUhaH
+sp002-001738_RV_05	jIvaH prARini gIzpatO iti viSvaH
+sp002-001739_RV_05	arkAt sUryAt Alokam prakASamiva
+sp002-001740_RV_05	cEtanyamiti pAWe jYAnam
+sp002-001741_RV_05	AlokO darSanodyotO ityamaraH
+sp002-001742_RV_05	tasmAt fzeH ASu SIGram sutam putram leBe prApa
+sp002-001743_RV_05	brAhma iti
+sp002-001744_RV_05	tasya raGoH devI mahizI devI kftABizekAyAm ityamaraH
+sp002-001745_RV_05	brAhme tasyedamityaR brahmadevatAke aBijinnAmake muhUrte kila IzadasamAptam kumAram kumArakalpam skandasadfSam
+sp002-001746_RV_05	IzadasamAptO ityAdinA kalpappratyayaH
+sp002-001747_RV_05	kumAram putram suzuve
+sp002-001748_RV_05	kileti samBAvanAyAm
+sp002-001749_RV_05	vArtAsamBAvyayoH kila ityamaraH
+sp002-001750_RV_05	kumAro bAlake skande iti viSvaH
+sp002-001751_RV_05	ataH brAhmamuhUrtotpannatvAt pitA raGuH brahmaRaH viDereva nAmnA tam AtmajanmAnam putram ajam ajanAmakam cakAra
+sp002-001752_RV_05	ajo harO hare kAme viDO CAge raGoH sute iti viSvaH
+sp002-001753_RV_05	rUpamiti
+sp002-001754_RV_05	ojasvi tejasvi balizWam vA
+sp002-001755_RV_05	ojastejasi DAtUnAm avazwamBaprakASayoH
+sp002-001756_RV_05	ojo bale ca dIptO ca iti viSvaH
+sp002-001757_RV_05	rUpam vapuH
+sp002-001758_RV_05	aTa rUpam napuMsakam
+sp002-001759_RV_05	svaBAvAkftisOndaryavapuzi SlokaSabdayoriti viSvaH
+sp002-001760_RV_05	tadeva pEtfkameva
+sp002-001761_RV_05	vIryam SOryam tadeva
+sp002-001762_RV_05	nEsargikam svABAvikam unnatatvam tadeva
+sp002-001763_RV_05	tAdfgeva ityarTaH
+sp002-001764_RV_05	kumAro bAlakaH
+sp002-001765_RV_05	pravartitaH utpAdito dIpaH pradIpAt svotpAdakadIpAdiva
+sp002-001766_RV_05	svAt svakIyAt pUrvAdiByo navaByo vA iti smAdBAvA BAvo vEkalpikatvAt
+sp002-001767_RV_05	kAraRAt janakAt na biBide Binno nABUt
+sp002-001768_RV_05	sarvAtmanA tAdfSa eva aBUt ityarTaH
+sp002-001769_RV_05	upAtteti
+sp002-001770_RV_05	guruByaH viDivat yaTASAstram upAttavidyam labDavidyam
+sp002-001771_RV_05	yOvanasya udBedAt AvirBAvAdDetoH viSezeRa atiSayeRa kAntam sOmyam tam ajam prati sABilAzA api SrIH
+sp002-001772_RV_05	DIrA sTironnatacittA sTirA cittonnatiryA tu tadDEryamiti saYjYitam iti BUpAlaH
+sp002-001773_RV_05	kanyA pituriva
+sp002-001774_RV_05	guroH raGoH anujYAm AjYAm AcakANkze iyeza
+sp002-001775_RV_05	yOvarAjyArho aBUt ityarTaH
+sp002-001776_RV_05	anujYASabdAt pitfpAratatryam upamAsAmarTyAt pARigrahaRayogyatA ca Dvanyate
+sp002-001777_RV_05	aTeti
+sp002-001778_RV_05	aTa svasurBaginyAH indumatyAH svayaMvarArTam kumArasya ajasya Anayane utsukena
+sp002-001779_RV_05	kraTakESikAnAm vidarBadeSAnAm ISvareRa svAminA Bojena rAjYA AptaH hitaH dUtaH raGave visfzwaH prezitaH
+sp002-001780_RV_05	kriyAmAtrayogeऽpi caturTI
+sp002-001781_RV_05	tamiti
+sp002-001782_RV_05	asO raGuH tam Bojam SlAGyasambanDam anUcAnatvAdiguRayogAt spfhaRIyasambanDam vicintya vicArya putram ca dArakriyAyogyadaSam
+sp002-001783_RV_05	vivAhayogyavayasam vicintya sasEnyamenam putram ayam fdDAm samfdDAm vidarBADipasya Bojasya rAjaDAnIm purIm prati prasTApayAmAsa
+sp002-001784_RV_05	DIyate asyAmiti DAnI
+sp002-001785_RV_05	karaRADikaraRayoSca iti aDikaraRe lyuwpratyayaH
+sp002-001786_RV_05	rAjYAm DAnIti vigrahaH
+sp002-001787_RV_05	praDAnanagarI rAjYAm rAjaDAnIti kaTyate
+sp002-001788_RV_05	iti SabdArRave
+sp002-001789_RV_05	tasyeti
+sp002-001790_RV_05	upakAryAsu rAjayogyezu pawaBavanAdizu
+sp002-001791_RV_05	sODoऽstrI rAjasadanamupakAryopakArikA ityamaravacanavyAKyAne
+sp002-001792_RV_05	upakriyate upakaroti ca pawamaRqapAdi rAjasadanamiti kzIrasvAmI
+sp002-001793_RV_05	racitAH upacArAH SayanAdayaH yezu te taToktAH
+sp002-001794_RV_05	jAnapadAnAm janapadeByaH AgatAnAm upadABiH upAyanEH
+sp002-001795_RV_05	upAyanam upagAham upahArastaTopadA ityamaraH
+sp002-001796_RV_05	vanyAH vane BavAH itare yezAm te vanyetarAH avanyAH ityarTaH
+sp002-001797_RV_05	na bahuvrIhO iti sarvanAmasaYjYAnizeDaH
+sp002-001798_RV_05	tatpuruze sarvanAmasaYjYA durvArEva
+sp002-001799_RV_05	tasya manujendrasUnoH ajasya mArge nivAsAH vasatayaH tatpuruze kftibahulamiti saptamyA aluk
+sp002-001800_RV_05	udyAnAni AkrIqAH pumAna AkrIqa udyAnamityamaraH
+sp002-001801_RV_05	tAnyeva vihArAH vihArasTAnAni tatkalpAH
+sp002-001802_RV_05	tatsadfSA ityarTaH
+sp002-001803_RV_05	IzadasamAptO iti kalpappratyayaH
+sp002-001804_RV_05	baBUvuH
+sp002-001805_RV_05	sa iti
+sp002-001806_RV_05	vilaNGitADvA atikrAntamArgaH saH ajaH sIkarArdrEH
+sp002-001807_RV_05	SItalErityarTaH
+sp002-001808_RV_05	marudBiH vAtEH AnartitAH kampitAH naktamAlAH cirabilvAKyavfkzaBedAH
+sp002-001809_RV_05	yasmin tat
+sp002-001810_RV_05	niveSArha ityarTaH
+sp002-001811_RV_05	cirabilvo nakta mAlaH karajaSca karaYjake ityamaraH
+sp002-001812_RV_05	narmadA roDasi revAtIre klAntam SrAntam rajoBiH DUsarAH ketavo yasya tat sEnyam niveSayAmAsa
+sp002-001813_RV_05	aTeti
+sp002-001814_RV_05	aTa senAnivezanAntaram uparizwAt UrDvam
+sp002-001815_RV_05	uparyuparizwAditi nipAtaH
+sp002-001816_RV_05	BramadBiH
+sp002-001817_RV_05	madaloBAditi BAvaH
+sp002-001818_RV_05	BramarEH prAk unmajjanAt pUrvam sUcitaH jYApitaH antaHsalile praveSo yasya saH taToktaH
+sp002-001819_RV_05	nirDOtadAne kzAlitamade ata eva amale gaRqaBittI yasya sa taToktaH
+sp002-001820_RV_05	dAnam gajamade tyAge iti SASvataH
+sp002-001821_RV_05	praSastO gaRqO gaRqaBittI
+sp002-001822_RV_05	praSaMsAvacanESca iti samAsaH
+sp002-001823_RV_05	BittiSabdaH praSastArTaH
+sp002-001824_RV_05	taTA ca gaRaratnamahodaDO matallikodDamiSrAH syuH prakARqasTalaBittayaH iti
+sp002-001825_RV_05	BittiH pradeSo vA
+sp002-001826_RV_05	BittiH pradeSe kuqyeऽpi iti viSvaH
+sp002-001827_RV_05	nirDOtadAnena amalA gaRqaBittiH yasya iti vA
+sp002-001828_RV_05	vanyo gajaH sarittaH narmadAyAH sakASAt
+sp002-001829_RV_05	paYcamyAstasilpratyayaH
+sp002-001830_RV_05	unmamajja utTitaH
+sp002-001831_RV_05	niHSezeti
+sp002-001832_RV_05	kaTamBUto gajaH
+sp002-001833_RV_05	niHSezam yaTA taTA
+sp002-001834_RV_05	vikzAlitaDAtunApi DOtagErikAdiDAtunApi
+sp002-001835_RV_05	nIlABi UrDvABI UrDvareKABiH tawAGAtajanitABiH Sabalena karbureRa
+sp002-001836_RV_05	citram kirmIrakalmAzaSabalEtASca karbure ityamaraH
+sp002-001837_RV_05	aSmaBiH pAzAREH vikuRWitena kuRWIkftena dantadvayena
+sp002-001838_RV_05	fkzavAnnAma kaScittatratyaH parvataH tasya tawezu vaprakriyAm vaprakrIqAm utKAtakelim ityarTaH
+sp002-001839_RV_05	utKAtakeliH SfNgAdyErvaprakrIqA nigadyate iti SabdArRave
+sp002-001840_RV_05	SaMsan kaTayan sUcayan ityarTaH
+sp002-001841_RV_05	yugmam
+sp002-001842_RV_05	saMhAreti
+sp002-001843_RV_05	saMhAravikzepayoH saNkocanaprasAraRayoH laGukriyeRa SIGravyApAreRa
+sp002-001844_RV_05	javoTa SIGram tvaritam laGu kzipramaram drutam ityamaraH
+sp002-001845_RV_05	hastena SuRqAdaRqena
+sp002-001846_RV_05	hasto nakzatraBede syAt kareBakarayorapi iti viSvaH
+sp002-001847_RV_05	saSabdam saGozam yaTA taTA bfhataH taraNgAn Bindan vidArayan tIrABimuKaH sa gajaH vArI gajabanDanasTAnam
+sp002-001848_RV_05	vArI tu gajabanDanI iti yAdavaH
+sp002-001849_RV_05	vAryAH argalAyAH vizkamBasya BaNge BaYjane pravftta iva baBO
+sp002-001850_RV_05	SEleti
+sp002-001851_RV_05	SElopamaH sa gajaH SEvalamaYjarIRAm jAlAni bfndAni jalanIlItu SEvAlam SEvalaH ityamaraH
+sp002-001852_RV_05	urasA karzan paScAt tawam utsasarpa
+sp002-001853_RV_05	pUrvam tena gajena utpIqitaH nunnaH vArirASiryasya saH saritpravAhaH tawam utsasarpa
+sp002-001854_RV_05	ujjagAma
+sp002-001855_RV_05	tasyeti
+sp002-001856_RV_05	tasya ekanAgasya ekAkino gajasya kapolaBittyoH gaRqasTalayoH jalAvagAhena kzaRamAtram
+sp002-001857_RV_05	SAntA nivfttA madadurdinaSrIH madavarzalakzmIH vanyetarezAm grAmyARAm anekapAnAm dvipAnAm darSanena dvirado anekapo dvipaH ityamaraH
+sp002-001858_RV_05	punardilIpe vavfDe
+sp002-001859_RV_05	saptacCadeti
+sp002-001860_RV_05	saptacCadasya vfkzaviSezasya kzIravat kawuH suraBiH pravAhaH prasAro yasya tam
+sp002-001861_RV_05	kawutiktakazAyAstu sOraByeऽpi prakIrtitAH iti yAdavaH
+sp002-001862_RV_05	asahyam tadIyam gajasambanDinam madamAGrAya senAgajendrAH
+sp002-001863_RV_05	vilaNGritaH tiraskftaH ADoraRAnAm hastipakAnAm tIvraH mahAn yatno yEste taToktAH santaH
+sp002-001864_RV_05	ADoraRA hastipakA hastyArohA nizAdinaH ityamaraH
+sp002-001865_RV_05	vimuKAH parANmuKAH baBUvuH
+sp002-001866_RV_05	sa iti
+sp002-001867_RV_05	saH gajaH
+sp002-001868_RV_05	CinnAH banDAH yEste CinnabanDAH drutAH palAyitAH yugam vahantIti yugyAH
+sp002-001869_RV_05	aSvAH tadvahati raTayuga prAsaNgamiti yatpratyayaH
+sp002-001870_RV_05	yasminsaH
+sp002-001871_RV_05	sa cAsO SUnyaSca tam
+sp002-001872_RV_05	akzAH raTAvayavadAruviSezAH
+sp002-001873_RV_05	akzo raTasyAvayave pASakeऽpyakzamidriyam iti SASvataH
+sp002-001874_RV_05	BagnAH akzAH yezAm te BagnAkzAH ata eva paryastAH patitAH raTAH yasmin tam
+sp002-001875_RV_05	rAmARAm strIRAm paritrARe saMrakzaRe vihastAH vyAkulAH
+sp002-001876_RV_05	yoDA yasmin tam rAmA paritrARa vihastayoDam vihastavyAkulO samO ityamaraH
+sp002-001877_RV_05	senAniveSam Siviram kzaRena tumulam saNkulam cakAra
+sp002-001878_RV_05	tamiti
+sp002-001879_RV_05	nfpateH rAjYaH vane BavaH vanyaH karI avaDyaH hantumayogya iti SrutavAn SAstrAt aBijYAtavAn
+sp002-001880_RV_05	kumAra ajaH Apatantam aDiDAvantam tam gajam nivartayizyan na tu praharizyan
+sp002-001881_RV_05	ata eva nAtyAyatam anatidIrGam yaTA syAt
+sp002-001882_RV_05	naYarTasya naSabdasya supsupA iti samAsaH
+sp002-001883_RV_05	kfzRaSArNgaH IzadAkfzwacApaH san viSiKena bARena kumBe jaGAna
+sp002-001884_RV_05	atra cAkzuzaH lakzmIkAmo yudDAdanyatra kIravaDam na kuryAt
+sp002-001885_RV_05	iyam hi SrIrye kariRa iti
+sp002-001886_RV_05	ata eva yudDAdanyatra iti dyotanArTameva vanyagrahaRam kftam
+sp002-001887_RV_05	sa iti
+sp002-001888_RV_05	sa gajaH vidDamAtraH tAqitamAtraH kila na tu prahftaH taTApi nAgarUpam gajaSarIram utsfjya tena vfttAntena vismitEH sEnyEH rdfzwaH san
+sp002-001889_RV_05	sPurataH praBAmaRqalasya maDyavarti kAntam manoharam vyomacaram vapuH divyam SarIram prapede prApa
+sp002-001890_RV_05	aTeti
+sp002-001891_RV_05	aTa praBAvena upanatEH prAptEH kalpadrumotTEH kalpavfkzotpannEH puzpEH kumAram ajam
+sp002-001892_RV_05	avakIrya aBivfzya puzpavfzwim prakIrya ityarTaH
+sp002-001893_RV_05	daSanapraBABiH dantakAntiBiH saMvarDitAH uraHsTale ye tArahArAH sTUlamuktAhArAH te yena sa taToktaH
+sp002-001894_RV_05	vAcoऽsya santIti vAgmI vaktA
+sp002-001895_RV_05	vAco gminiH iti gminipratyayaH
+sp002-001896_RV_05	sa puruzaH uvAca
+sp002-001897_RV_05	mataNgeti
+sp002-001898_RV_05	avalepamUlAt garvahetukAt
+sp002-001899_RV_05	avalepastu garve syAt lepane dvezaReऽpi ca iti viSvaH
+sp002-001900_RV_05	mataNgasya muneH SApAt mataNgajatvam mataNgajo gajo nAga ityamaraH
+sp002-001901_RV_05	avAptavAn prAptavAnasmi
+sp002-001902_RV_05	mAm priyadarSanasya priyadarSanAKyasya ganDarvapateH ganDarvarAjasya tanUjam putram
+sp002-001903_RV_05	striyAm mUrtistanustanUH ityamaraH
+sp002-001904_RV_05	tanvAdervA ityUN iti kecit
+sp002-001905_RV_05	priyaMvadam priyaMvadAKyam avehi jAnIhi
+sp002-001906_RV_05	priyam vadatIti priyaMvadaH
+sp002-001907_RV_05	priyavaSe vadaH Kac iti KacpratyayaH
+sp002-001908_RV_05	sa iti
+sp002-001909_RV_05	saH maharzirmataNgaSca praRatena namreRa mayA anunItaH san paScAt mfdutAm SAntimagacCat
+sp002-001910_RV_05	dayArdroBUdityarTaH
+sp002-001911_RV_05	taTAhi jalasya uzRatvam agnerAtapasya vA samprayogAt samparkAt
+sp002-001912_RV_05	na tu prakftyA uzRatvam
+sp002-001913_RV_05	yat SEtyam SItalatvam sA SItalatA prakftiH svaBAvaH
+sp002-001914_RV_05	viDeyaprADAnyAt sA iti strIliNganirdeSaH
+sp002-001915_RV_05	maharzIRAmapi SAntireva svaBAvaH na kroDa iti BAvaH
+sp002-001916_RV_05	ikzvAkviti
+sp002-001917_RV_05	ikzvAkuvaMSaH praBavo yasya saH ajaH yadA te tava kumBam ayomuKena lohAgreRa SareRa
+sp002-001918_RV_05	Betsyati vidArayizyati tadA svena vapuzo mahimnA punaH saMyokzyase saNgaMsyase
+sp002-001919_RV_05	iti anena prakAreRa saH taponiDiH tapasAm sTAnaBUtaH mataNgaH mAmavocat
+sp002-001920_RV_05	sammocita iti
+sp002-001921_RV_05	ciram prArTitam cirakAlam kANkzitam darSanam yasya tena sattvavatA balavatA tvayA aham SApAt samocitaH mokzam prApitaH
+sp002-001922_RV_05	BavataH pratipriyam pratyupakAram na kuryAm cet me svapadopalAbDiH svasTAnaprAptiH
+sp002-001923_RV_05	padam vyavasitatrARasTAnalakzmANGrivastuzu ityamaraH
+sp002-001924_RV_05	vfTA syAdDi
+sp002-001925_RV_05	vyarTaketu vfTA muDA ityamaraH
+sp002-001926_RV_05	taduktam pratikartumaSaktasya jIvitAnmaraRam varamiti
+sp002-001927_RV_05	sammohanamiti
+sp002-001928_RV_05	he saKe saKiSabdena samaprARatoktA
+sp002-001929_RV_05	yaToktam atyAgasahano banDuH sadEvAnugataH suhft
+sp002-001930_RV_05	ekakriyam Bavenmitram samaprARaH saKA mataH
+sp002-001931_RV_05	iti
+sp002-001932_RV_05	prayogasaMhArayoH viBaktaH mantraH yasya tat taToktam viniyuktamantramityarTaH
+sp002-001933_RV_05	gAnDarvam ganDarvadevatAkam
+sp002-001934_RV_05	sammohyate anena iti sammohanam nAma mama astram Adatsva gfhARa
+sp002-001935_RV_05	yataH yasmAt prayoktuH astraprayogiRaH arihiMsA ca
+sp002-001936_RV_05	na vijayaSca haste hastagataH
+sp002-001937_RV_05	vijayo BavatItyarTaH
+sp002-001938_RV_05	vaDalajjitaH kaTamasragrahaRaparaH syAm iti cet tatrAha
+sp002-001939_RV_05	alamiti
+sp002-001940_RV_05	kim ca
+sp002-001941_RV_05	mAm prati hriyA prahAranimittayA lajjayA alam
+sp002-001942_RV_05	alam BUzaRaparyAptiSaktivAraRavAcakam ityamaraH
+sp002-001943_RV_05	kutaH
+sp002-001944_RV_05	yadyato hetoH tvam mAm praharannapi muhUrtam dayAparaH kfpAluH aBUH
+sp002-001945_RV_05	tattasmAt kAraRAt upacCandayati prArTayamAne mayi tvayA
+sp002-001946_RV_05	pratizeDaH parihAraH
+sp002-001947_RV_05	sa eva rOkzyam pAruzyam na prayojyam na kartavyam
+sp002-001948_RV_05	taTeti
+sp002-001949_RV_05	nA somaScandra iva nfsomaH
+sp002-001950_RV_05	soma ozaDicandrayoH iti SASvataH
+sp002-001951_RV_05	puruzaSrezWa ityarTaH
+sp002-001952_RV_05	upamitasamAsaH
+sp002-001953_RV_05	astravit astrajYaH saH ajaH taTeti somAt udBavaH yasyAH tasyAH somodBavAyAH saritaH narmadAyAH
+sp002-001954_RV_05	revA tu narmadA somodBavA meKalakanyakA ityamaraH
+sp002-001955_RV_05	pavitram payaH upaspfSya pItvA Acamya ityarTaH
+sp002-001956_RV_05	udaNmuKa san nigfhItaSApAt nivartitaSApAt upakftAt ityarTaH
+sp002-001957_RV_05	tasmAt priyaMvadAt astramantram jagrAha
+sp002-001958_RV_05	evamiti
+sp002-001959_RV_05	evam aDvani mArge dEvayogAt dEvavaSAt acintyahetu anirDAryahetukam saKyam saKitvam
+sp002-001960_RV_05	saKyuryaH iti yapratyayaH
+sp002-001961_RV_05	AseduzoH prAptavatoH tayormaDye eko ganDarvaH cEtraraTasya kuberodyAnasya pradeSAn
+sp002-001962_RV_05	asyodyAnam cetraraTam ityamaraH
+sp002-001963_RV_05	aparaH ajaH sOrAjyena rAjanvattayA ramyAn vidarBAn vidarBadeSAn yayO
+sp002-001964_RV_05	tamiti
+sp002-001965_RV_05	nagarasya upakaRWe samIpe tasTivAMsam sTitam tam ajam tasya ajasya Agamena ArUQaH
+sp002-001966_RV_05	utpannaH guruH praharzaH yasya saH kraTakESikendraH vidarBarAjaH
+sp002-001967_RV_05	pravfdDormiH UrmimAlI samudraH candramiva pratyujjagAma
+sp002-001968_RV_05	praveSyeti
+sp002-001969_RV_05	saH BojaH enam ajam agrayAyI sevADarmeRa puro gacCannityarTaH
+sp002-001970_RV_05	nIcEH namraH puram praveSya praveSam kArayitvA prItyA arpitA SrIryena sa taToktaH san taTA tena prakAreRa upAcarat upacaritavAn
+sp002-001971_RV_05	yaTA yena prakAreRa tatra pure sametaH militaH janaH vEdarBam Bojam Agantum atiTimityarTaH
+sp002-001972_RV_05	syAt AveSika AganturatiTirnA gfhAgataH ityamaraH
+sp002-001973_RV_05	mene ajam gfheSam gfhapatim mene
+sp002-001974_RV_05	tasyeti
+sp002-001975_RV_05	raGupratiniDiH raGukalpaH
+sp002-001976_RV_05	raGutulya ityarTaH
+sp002-001977_RV_05	uktam ca daRqinA sAdfSyavAcakaprastAve kalpadeSIyadeSyAdi praKyapratiniDI api iti
+sp002-001978_RV_05	saH ajaH praRatEH namaskftavadBiH kartari ktaH
+sp002-001979_RV_05	tasya Bojasya aDikAraH niyogaH tasya puruzEH
+sp002-001980_RV_05	aDikftErityarTaH
+sp002-001981_RV_05	pradizwAm nirdizwAm prAgdvArasya vedyAm viniveSitaH pratizWApitaH pUrRakumBo yasyAstAm
+sp002-001982_RV_05	sTApitamaNgalakalaSAmityarTaH
+sp002-001983_RV_05	ramyAm ramaRIyAm navopakAryAm nUtana Bavanam
+sp002-001984_RV_05	upakAryA rAjasadmani upacAraciteऽnyavat iti viSvaH
+sp002-001985_RV_05	madanaH manmaTaH bAlyAtparAm SESavAnantarAm daSAm yOvanamiva ityarTaH
+sp002-001986_RV_05	aDyuvAsa aDizWitavAn
+sp002-001987_RV_05	upAnvaDyANvasaH iti karmatvam
+sp002-001988_RV_05	tatreti
+sp002-001989_RV_05	tatra upakAryAyAm
+sp002-001990_RV_05	svayaMvaranimittam samAhftaH sammelitaH rAjaloko yena tat kamanIyam spfhaRIyam kanyAlalAma kanyAsu SrezWam
+sp002-001991_RV_05	lalAmoऽsrI lalAmApi praBAve puruze Dvaje
+sp002-001992_RV_05	SrezWaBUzASuRqaSfNgapucCacihnASvaliNgizu iti yAdavaH
+sp002-001993_RV_05	lipsoH labDumicCoH
+sp002-001994_RV_05	laBeH sannantAdupratyayaH
+sp002-001995_RV_05	ajasya BAvAvaboDe puruzasya aBiprAyaparijYAne kaluzA asamarTA dayiteva
+sp002-001996_RV_05	priyatameva rAtrO nidrA cireRa bahukAlena nayanABimuKI baBUva
+sp002-001997_RV_05	rAjAnam kAminam cOram praviSanti prajAgarAH iti BAvaH
+sp002-001998_RV_05	aBimuKISabdaH NIzantaH cvyanto vA
+sp002-001999_RV_05	tamiti
+sp002-002000_RV_05	karRaBUzaRAByAm nipIqitO pIvarO pInO aMsO yasya tam
+sp002-002001_RV_05	SayyAyAH uttaracCadasya uparyAstaraRasya vastrasya vimardena GarzaRena kfSaH viralaH aNgarAgaH yasya tam
+sp002-002002_RV_05	na tvaNganAsaNgAditi BAvaH
+sp002-002003_RV_05	praTitapraboDam prakfzwajYAnam tamenam ajam savayasaH samAnavayaskAH udAravAcaH pragalBagiraH sUtAtmajAH vandiputrAH
+sp002-002004_RV_05	vEtAlikA iti vA pAWaH
+sp002-002005_RV_05	vEtAlikA boDakarAH ityamaraH
+sp002-002006_RV_05	vAgBiH stutipAWEH uzasi prAtaHkAle prAboDayan praboDayAmAsuH
+sp002-002007_RV_05	rAtririti
+sp002-002008_RV_05	he matimatAm vara
+sp002-002009_RV_05	budDimatAm SrezWa nirDAraRe zazWI
+sp002-002010_RV_05	rAtriH gatA
+sp002-002011_RV_05	SayyAm muYca
+sp002-002012_RV_05	vinidro Bava ityarTaH
+sp002-002013_RV_05	vinidratvasya PalamAha DAtreti
+sp002-002014_RV_05	DAtrA brahmaRA jagataH DUH BAraH DUH syAd yAnamuKe BAre iti yAdavaH
+sp002-002015_RV_05	dviDEva
+sp002-002016_RV_05	dvayoreva ityarTaH
+sp002-002017_RV_05	evakAraH tftIyanizeDArTaH
+sp002-002018_RV_05	viBaktA nanu viBajya sTApitA Kalu
+sp002-002019_RV_05	tatkimata Aha tAm Duram ekataH ekatra kowO tava guruH pitA vinidraH san biBarti
+sp002-002020_RV_05	tasyAH DuraH BavAn
+sp002-002021_RV_05	Duram vahatIti DuryaH BAravAhI
+sp002-002022_RV_05	tasya padam vahanasTAnam
+sp002-002023_RV_05	aparam yadDuryapadam tat avalambata iti
+sp002-002024_RV_05	apara Durya padAvalambI ato vinidro Bava ityarTaH
+sp002-002025_RV_05	na hi uBayavAhyameko vahatIti BAvaH
+sp002-002026_RV_05	nidreti
+sp002-002027_RV_05	candrAravindarAjavadanAdayaH lakzmInivAsasTAnAni iti prasidDimASritya ucyate
+sp002-002028_RV_05	nidrAvaSena nidrADInena
+sp002-002029_RV_05	stryantarAsaNgoऽtra Dvanyate
+sp002-002030_RV_05	BavatA tvayA paryutsukatvamapi
+sp002-002031_RV_05	tvay anuraktatvamapi ityarTaH
+sp002-002032_RV_05	prasitotsukAByAm tftIyA ca iti saptamyarTe tftIyA
+sp002-002033_RV_05	apiSabdaH tadvizayAnurAgasya anapekzyatva dyotanArTaH
+sp002-002034_RV_05	niSi KaRqitA BarturanyAsaNgajYAnakaluzita abaleva nAyikeva
+sp002-002035_RV_05	jYAteऽnyAsaNgavikfte KaRqita IrzyA kazAyitA iti daSarUpake
+sp002-002036_RV_05	anavekzamARA avicArayantI satI
+sp002-002037_RV_05	upekzamARA ityarTaH
+sp002-002038_RV_05	hyanavekzyamARA iti pAWe nidrAvaSena BavatA anavekzyamARA anirIkzyamARA
+sp002-002039_RV_05	karmaRi SAnac
+sp002-002040_RV_05	lakzmIH prayojakakartrI
+sp002-002041_RV_05	yena
+sp002-002042_RV_05	candreRa prayojyena
+sp002-002043_RV_05	paryutsukatvam tadvirahavedanAm
+sp002-002044_RV_05	BartfjanyavirahavedanAm ca kAlAkzamatvamOtsukyam manastApajvarAdikft iti alaNkAre
+sp002-002045_RV_05	vinodayati nirAsayatIti yojanA
+sp002-002046_RV_05	Sezam pUrvavat
+sp002-002047_RV_05	nATastu nijarTopapattimapaSyan imam pakzamupEkzizwa
+sp002-002048_RV_05	lakzmIH yena candreRa saha
+sp002-002049_RV_05	tvadAnanasadfSatvAditi BAvaH
+sp002-002050_RV_05	vinodayati vinodam karoti
+sp002-002051_RV_05	vinodaSabdAt tatkaroti tadAcazwe iti Ric
+sp002-002052_RV_05	sAdfSyadarSanAdayo hi virahiRAm vinodasTAnAni iti BAvaH
+sp002-002053_RV_05	saH candroऽpi digantalambI paScimASAntagataH san
+sp002-002054_RV_05	astam gacCannityarTaH
+sp002-002055_RV_05	ata eva tvadAnanarucim tava muKakAntim vijahAti
+sp002-002056_RV_05	tvanmuKasAdfSyam tyajati ityarTaH
+sp002-002057_RV_05	ataH nidrAm vihAya tAm lakzmIm ananyaSaraRAm pIragfhARA ityarTaH
+sp002-002058_RV_05	taditi
+sp002-002059_RV_05	tat tasmAt lakzmIparigrahAt kAraRAt valgunA manojYena
+sp002-002060_RV_05	valgu sTAne manojYe ca valgu BAzitamanyavat iti viSvaH
+sp002-002061_RV_05	yugapattAvat unmizitena yugapadeva unmIlitena sadyaH dve api parasparatulAm anyonyasAdfSyam aDirohatAm prApnutAm
+sp002-002062_RV_05	prArTanAyAm low
+sp002-002063_RV_05	te dve
+sp002-002064_RV_05	antaH praspandamAnA calantI paruzetarA snigDA tArA kanInikA yasya tattaToktam
+sp002-002065_RV_05	tArakAkzRaH kanInikA ityamaraH
+sp002-002066_RV_05	tava cakzuH
+sp002-002067_RV_05	antaH pracalitaBramaram caladBfNgam padmam ca
+sp002-002068_RV_05	yugapad unmeze sati sampUrRasAdfSyalABaH iti BAvaH
+sp002-002069_RV_05	vfntAditi
+sp002-002070_RV_05	viBAtavAyuH praBAtavAyuH svABAvikam nEsargikam te tava muKamArutasya niSvAsapavanasya sOraByam
+sp002-002071_RV_05	tAdfksOganDyamityarTaH
+sp002-002072_RV_05	paraguRena anyadIyaguRena
+sp002-002073_RV_05	sANkrAmikaganDena ityarTaH
+sp002-002074_RV_05	IpsuH AptumicCuH iva
+sp002-002075_RV_05	Ap jYap vfDAmIditi IkArAdeSaH
+sp002-002076_RV_05	anokahAnAm vfkzARAm SlaTam SiTilam puzpam vfntAt prasavabanDanAt
+sp002-002077_RV_05	vfntam prasavabanDanam ityamaraH
+sp002-002078_RV_05	harati Adatte
+sp002-002079_RV_05	aruRAMSuBinnEH taraRikiraRodboDitEH sarasiyEH kamalEH saha
+sp002-002080_RV_05	tatpuruze kfti bahulamiti saptamyA aluk
+sp002-002081_RV_05	saMsfjyate saNgacCate
+sp002-002082_RV_05	sfjeH dEvAdikAt kartari law
+sp002-002083_RV_05	tAmreti
+sp002-002084_RV_05	tAmrodarezu aruRAByantarezu tarupallavezu drumapallavezu pallavostrI kisalayam ityamaraH
+sp002-002085_RV_05	patitam nirDOtAH yAH hAragulikAH muktAmaRayaH tadvat viSadam svacCam himAmBaH labDaparaBAgatayA labDotkarzatayA
+sp002-002086_RV_05	paraBAgo guRotkarze iti yAdavaH
+sp002-002087_RV_05	aDarozWe tvadIyam tvatsambanDi sadaSanArciH dantakAntisahitam lIlAsmitamiva ABAti
+sp002-002088_RV_05	yAvaditi
+sp002-002089_RV_05	pratApaniDiH tejoniDiH BAnuH sUryaH yAvat nA kramate nodgacCati
+sp002-002090_RV_05	ANa udgamane iti Atmanepadam
+sp002-002091_RV_05	tAvat
+sp002-002092_RV_05	BAnO anudite eva ityarTaH
+sp002-002093_RV_05	ahnAya Jawiti
+sp002-002094_RV_05	drAgJawityaYjasAhnAya ityamaraH
+sp002-002095_RV_05	aruRena anUruRA
+sp002-002096_RV_05	sUryasUtoऽruRoऽnUruH ityamaraH
+sp002-002097_RV_05	tamaH nirastam
+sp002-002098_RV_05	taTAhi
+sp002-002099_RV_05	he vIra tvay AyoDanezu yudDezu
+sp002-002100_RV_05	agrasaratAm puraHsaratAm yAte sati tava guruH pitA ripUn svayam ucCinatti kim vA
+sp002-002101_RV_05	nocCinattyeva ityarTaH
+sp002-002102_RV_05	na Kalu yogyaputra nyastaBArARAm svAminAm svayam vyApAraKedaH iti BAvaH
+sp002-002103_RV_05	SayyAmiti
+sp002-002104_RV_05	uBAByAm pakzAByAm vinItA vyapanItA nidrA yEH hi te uBayapakzavinItanidrAH
+sp002-002105_RV_05	tatra samAsavizaye uBaSabdasTAne uBayaSabdaprayoga eva sADuH iti anusanDeyam
+sp002-002106_RV_05	yaTAha kEyawaH uBAdudAtto nityamiti nityagrahaRasya idam prayojanam vfttivizaye uBaSabda prayogo mA BUt
+sp002-002107_RV_05	uBayaSabdasyEva yaTA syAt
+sp002-002108_RV_05	uBayaputra ityAdi BavatIti
+sp002-002109_RV_05	muKarARi utTAnacalanAt SabdAyamAnAni SfNKalAni nigalAni karzantIti
+sp002-002110_RV_05	taToktAH te tava stambe ramanta iti stamberamAH hastinaH
+sp002-002111_RV_05	stambakarRayo ramijapoH iti acpratyayaH
+sp002-002112_RV_05	hastisUcakayoH iti vaktavyAm
+sp002-002113_RV_05	iBaH stamberamaH padmI ityamaraH
+sp002-002114_RV_05	tatpuruze kfti bahulamiti saptamyA aluk
+sp002-002115_RV_05	SayyAm jahati tyajanti yezAm stamberamARAm
+sp002-002116_RV_05	dantAH koSAH iva dantakoSAH
+sp002-002117_RV_05	dantakuqmalAH taruRAruRarAgayogAt bAlArka kiraRasamparkAt hetoH BinnAdrigErikatawA iva viBAnti
+sp002-002118_RV_05	DAturaktA iva BAntItyarTaH
+sp002-002119_RV_05	dIrGezviti
+sp002-002120_RV_05	he vanajAkza nIrajAkza
+sp002-002121_RV_05	vane salila kAnane ityamaraH
+sp002-002122_RV_05	dIrGezu pawamaRqapezu niyamitAH badDAH vanAyudeSyAH vanAyudeSodBavAH
+sp002-002123_RV_05	pArasIkA vanAyujAH iti halAyuDaH
+sp002-002124_RV_05	amI vAhAH aSvAH nidrAm vihAya purogatAni lehyAni AsvAdyAni sEnDavaSilASakalAni
+sp002-002125_RV_05	sEnDavo lavaRa viSezaH sEnDavoऽstrI SItaSivam mARimanTam ca sinDuje ityamaraH
+sp002-002126_RV_05	tasya SakalAni KaRqAni vaktrozmaRA malinayanti malinAni kurvanti
+sp002-002127_RV_05	uktam ca sidDayogasaNgrahe pUrvAhRakAle cASvAnAm prAyaSo lavaRam hitam
+sp002-002128_RV_05	aruciglAniSUlaGnam lavaRam sEnDavam varam
+sp002-002129_RV_05	iti
+sp002-002130_RV_05	BavatIti
+sp002-002131_RV_05	mlAnaH puzpopahAraH puzpapUjA mlAnatvAdeva viralaBaktiH viralaracano Bavati
+sp002-002132_RV_05	pradIpASca svakiraRAnAm parivezasya maRqalasya udBedena sPuraRena SUnyA Bavanti
+sp002-002133_RV_05	nistejaskA BavantItyarTaH
+sp002-002134_RV_05	api ca ayam maYjuvAk maDuravacanaH paYjarasTaH te tava SukaH tvatpraboDanimittena prayuktAm uccAritAm naH asmAkam giram vARIm anuvadati
+sp002-002135_RV_05	anukftya vadatItyarTaH
+sp002-002136_RV_05	itTam praBAtaliNgAni vartante
+sp002-002137_RV_05	ataH prabodDavyamiti BAvaH
+sp002-002138_RV_05	itIti
+sp002-002139_RV_05	iti itTam viracitavAgBiH vandiputrEH vEtAlikEH
+sp002-002140_RV_05	putragrahaRam samAnavayaskatvadyotanArTam
+sp002-002141_RV_05	sapadi vigatanidraH kumAraH
+sp002-002142_RV_05	ajaH talpam SayyAm
+sp002-002143_RV_05	talpam SayyAwwadArezu ityamaraH
+sp002-002144_RV_05	ujJAYcakAra visasarja
+sp002-002145_RV_05	ijAdeSca gurumatoऽnfcCaH iti AmpratyayaH
+sp002-002146_RV_05	kaTamiva
+sp002-002147_RV_05	madena pawu maDuram ninadadBiH rAjahaMsEH boDitaH supratIkAKyaH suragajaH ISAnadiggajaH
+sp002-002148_RV_05	gaNgAyAH idam gANgam
+sp002-002149_RV_05	sEkatam pulinamiva
+sp002-002150_RV_05	toyotTitam tatpulinam sEkatam sikatAmayam ityamaraH
+sp002-002151_RV_05	sikatASarkarAByAm ca iti aRpratyayaH
+sp002-002152_RV_05	supratIkagrahaRam prAyaSaH tasya kElAsavAsitvAt nitya gaNgAtawavihArasamBavArTam iti anusanDeyam
+sp002-002153_RV_05	aTeti
+sp002-002154_RV_05	aTa utTAnAnantaram aYcitAni cArURi akzipakzmARi yasya saH ajaH SAstre dfzwamavagatam
+sp002-002155_RV_05	divasamuKocitam divasamuKe prAtaHkAle ucitam karaRIyam viDim anuzWAnam avasAyya samApya
+sp002-002156_RV_05	syateH RyayantAt lyap
+sp002-002157_RV_05	kuSalEH prasADanadakzEH viracitaH anukUlaH svayaMvarocitaH vezaH
+sp002-002158_RV_05	nepaTyam yasya sa taToktaH san svayaMvarasTam kzitipasamAjam rAjasamUham agAt
+sp002-002159_RV_05	iRo gA luNIti gAdeSaH
+sp002-002160_RV_05	puzpitAgrAvfttametat
+sp002-002161_RV_05	taduktam ayuji nayugarePato yakAro yuji ca najO jaragASca puzpitAgrA iti lakzaRAt
+sp002-002162_RV_05	iti mahAmahopADyAya kolAcalamallinATasUriviracitayA saYjIvinIsamAKyayA
+sp002-002163_RV_05	vyAKyayA sametaH mahAkaviSrIkAlidAsakftO raGuvaMSe mahAkAvye
+sp002-002164_RV_05	ajasvayaMvarABigamano nAma paYcamaH sargaH
+sp002-002165_RV_07	aTeti
+sp002-002166_RV_07	aTa vidarBanATo BojaH sadfSena upayantrA vareRa yuktAm
+sp002-002167_RV_07	ata eva sAkzAtpratyakzam
+sp002-002168_RV_07	sAkzAtpratyakzatulyayoH ityamaraH
+sp002-002169_RV_07	skandena yuktAm devasenAmiva
+sp002-002170_RV_07	devasenA nAma devaputrI skandapatnI tAmiva sTitAm svasAram
+sp002-002171_RV_07	BaginIm indumatImAdAya gfhItvA purapraveSABimuKo baBUva
+sp002-002172_RV_07	upajAtivfttam sargeऽsmin
+sp002-002173_RV_07	seneti
+sp002-002174_RV_07	Bojasya rAjYaH gotrApatyam strI BojyA tAm indumatIm prati vyarTamanoraTatvAt
+sp002-002175_RV_07	rUpezu Akftizu veSezu nepaTyezu ca sAByasUyA vfTeti nindantaH
+sp002-002176_RV_07	kiYca
+sp002-002177_RV_07	viBAte prAtaHkAle ye grahAH candrAdayaH te iva mandaBAsaH
+sp002-002178_RV_07	kzIRakAntayaH pfTivIkzito nfpAH api senAniveSAn SibirARi jagmuH
+sp002-002179_RV_07	nanu krudDASacet yuDyantAm tatrAha
+sp002-002180_RV_07	sAnniDyayogAditi
+sp002-002181_RV_07	tatra svayaMvarakzetre SacyAH indrARyAH
+sp002-002182_RV_07	sanniDireva sAnniDyam
+sp002-002183_RV_07	tasya yogAtsadBAvAt hetoH svayaMvarasya kzoBakftAm viGnakAriRAm aBAvaH
+sp002-002184_RV_07	kila kileti svayaMvaraviGAtakAH SacyA vinASyante iti AgamasUcanArTam
+sp002-002185_RV_07	tena hetunA kAkutsTam ajam uddiSya samatsaroऽpi savEroऽpi kzitipAlalokaH SaSAma nAkzuByat
+sp002-002186_RV_07	tAvaditi
+sp002-002187_RV_07	yAvattAvacca sAkalye ityamaraH
+sp002-002188_RV_07	tAvatprakIrRAH sAkalyena prasAritAH aBinavA nUtanA upacArAH puzpaprakarAdayo yasya tam taToktam
+sp002-002189_RV_07	indrAyuDAnIva dyotitAni prakASitAni toraRAni aNkAH cihnAni yasya tam
+sp002-002190_RV_07	DvajAnAm CAyA DvajacCAyam CAyA bAhulye iti napuMsakatvam
+sp002-002191_RV_07	tena nivAritaH uzRaH AtapaH yatra tam taTA rAjamArgam sa varo voQA vaDvA saha prApa viveSa
+sp002-002192_RV_07	tataH iti
+sp002-002193_RV_07	tatastadanantaram cAmIkarajAlavatsu sOvarRagavAkzayuktezu sODezu tasya ajasya Alokane tatparARAm AsaktAnAm
+sp002-002194_RV_07	purasundarIRAm itTam vakzyamARaprakArARi tyaktAni anyakAryARi keSabanDanAdIni yezu tAni vicozwitAni vyApArAH
+sp002-002195_RV_07	napuMsake BAve ktaH
+sp002-002196_RV_07	baBUvuH
+sp002-002197_RV_07	tAnyevAha paYcaBiH SlokEH
+sp002-002198_RV_07	AlokamArgamiti
+sp002-002199_RV_07	sahasA AlokamArgam gavAkzapaTam vrajantyA kayAcit kAminyA udvezwana vAntamAlyaH
+sp002-002200_RV_07	udvezwano drutagativaSAt unmuktabanDanaH
+sp002-002201_RV_07	ata eva vAntamAlyo banDaviSlezeRa udgIrRamAlyaH
+sp002-002202_RV_07	kareRa rudDo gfhItoऽpi ca keSapASaH keSakalApaH
+sp002-002203_RV_07	pASaH pakzaSca hastaSca kalApArTAH kacAtpare ityamaraH
+sp002-002204_RV_07	tAvat AlokamArgaprAptiparyantam banDum banDanArTam na samBAvito na cintita eva
+sp002-002205_RV_07	prasADikAlambitamiti
+sp002-002206_RV_07	kAcit
+sp002-002207_RV_07	prasADikayA alaNkartryA Alambitam raYjanArTa Dftam dravarAgam eva ArdrA laktakameva
+sp002-002208_RV_07	agraSca asO pAdaSca iti agrapAda iti karmaDArayasamAsaH
+sp002-002209_RV_07	hastAgrAgrahastAdayo guRaguRinoH BedABedAByAm iti vAmanaH
+sp002-002210_RV_07	tamAkzipya Akfzya
+sp002-002211_RV_07	utsfzwalilAgatiH tyaktamandagamanA satI
+sp002-002212_RV_07	A gavAkzAt gavAkzaparyantam padavIm panTAnam alaktakANkAm lAkzArAgacihnAm tatAna vistArayAmAsa
+sp002-002213_RV_07	vilocanamiti
+sp002-002214_RV_07	aparA strI dakziRam vilocanam aYjanena samBAvya alaNkftya
+sp002-002215_RV_07	samBramAditi BAvaH
+sp002-002216_RV_07	tadvaYcitam tena aYjanena varjitam vAmanetram yasyAH sA satI taTEva SalAkAm
+sp002-002217_RV_07	aYjanatUlikAm vahantI satI vAtAyanasannikarzam gavAkzasamIpam yayO
+sp002-002218_RV_07	dakziRagrahaRam samBramAt vyutkramakaraRadyotanArTam
+sp002-002219_RV_07	savyam hi pUrvam manuzyA aYjate iti SruteH
+sp002-002220_RV_07	jAlantareti
+sp002-002221_RV_07	anyA strI jAlAntaraprezitadfzwiH gavAkzamaDyapreritadfzwiH satI
+sp002-002222_RV_07	prasTAnena gamanena BinnAm truwitAm nIvIm vasanagnanTim
+sp002-002223_RV_07	nIvI paripaRe granTO strIRAm jaGanavAsasi iti viSvaH
+sp002-002224_RV_07	na babanDa
+sp002-002225_RV_07	kintu nABipravizwA ABaraRAnAm kaNkaRAdInAm praBA yasya tena
+sp002-002226_RV_07	praBEva nABeH ABaraRam aBUt iti BAvaH
+sp002-002227_RV_07	hastena vAsaH avalambya gfhItvA tasTO
+sp002-002228_RV_07	arDAYciteti
+sp002-002229_RV_07	satvaramutTitAyAH kasyAScit arDAYcitA maRiBiH arDagumPitA durnimite samBramAt utkzipte
+sp002-002230_RV_07	qumiYprakzepaRe iti DAtoH karmaRi ktaH
+sp002-002231_RV_07	pade pade pratipadam
+sp002-002232_RV_07	vIpsAyAm dvirBAvaH
+sp002-002233_RV_07	galantI galadratnA satI raSanA meKalA tadAnIm gamanasamaye aNguzWa mUle arpitam sUtrameva Sezo yasyAH sA AsIt
+sp002-002234_RV_07	tAsAmiti
+sp002-002235_RV_07	tadAnIm sAndrakutUhalAnAm tAsAm strIRAm AsavaganDo garBe yezAm tEH
+sp002-002236_RV_07	vilolAni netrARyeva BramarAH yezAm tEH
+sp002-002237_RV_07	muKEH vyAptAntarAH CannAvakASAH gavAkzAH sahasrapatrABaraRA iva kamalAlaNkftA iva
+sp002-002238_RV_07	sahasrapatram kamalam ityamaraH
+sp002-002239_RV_07	Asan
+sp002-002240_RV_07	tA iti
+sp002-002241_RV_07	tA nAryaH raGorapatyam rAGavam ajam
+sp002-002242_RV_07	tasyApatyamiti aRpratyayaH
+sp002-002243_RV_07	dfzwiBiH ApibantyaH atitfzRayA paSyantyaH vizayAntarARi anyAnvizayAn na jagmuH
+sp002-002244_RV_07	na vividuH ityarTaH
+sp002-002245_RV_07	taTAhi
+sp002-002246_RV_07	AsAm nArIRAm SezendriyavfttiH cakzurvyatirikta SrotrAdIndriyavyApAraH sarvAtmanA svarUpakArtsnyena cakzuH pravizweva
+sp002-002247_RV_07	SrotrAdIni indriyARi svAtantryeRa grahaRASakteH cakzureva praviSya kOtukAt svayam api enam upalaBante kimu
+sp002-002248_RV_07	anyaTA svasvavizayADigamaH kim na syAditi BAvaH
+sp002-002249_RV_07	SfRvankaTAH SrotrasuKAH kumAraH iti vakzyati
+sp002-002250_RV_07	tAH kaTayati sTAne ityAdiBiH triBiH sTAna iti
+sp002-002251_RV_07	BojyA indumatI parokzEH adfzwEH BUpatiBiH vftA mamEva iyamiti
+sp002-002252_RV_07	prArTitApi svayaMvarameva sADum hitam amaMsta mene
+sp002-002253_RV_07	na tu parokzameva kaYcitprArTakam vavre
+sp002-002254_RV_07	sTAne yuktametat
+sp002-002255_RV_07	yukte dve sAmpratam sTAne ityamaraH
+sp002-002256_RV_07	kutaH
+sp002-002257_RV_07	anyaTA svayaMvarABAve asO indumatI
+sp002-002258_RV_07	padmamasyAH astIti padmA lakzmIH
+sp002-002259_RV_07	arSa AdiByoऽc iti acpratyayaH
+sp002-002260_RV_07	nArAyaRamiva
+sp002-002261_RV_07	Atmatulyam svAnurUpam kAntam patim kaTam laBeta
+sp002-002262_RV_07	na laBeta iva
+sp002-002263_RV_07	sadasat viveka asOkaryAditi BAvaH
+sp002-002264_RV_07	paraspareReti
+sp002-002265_RV_07	spfhaRIyaSoBam sarvASAsyasOndaryamidam dvandvam miTunam
+sp002-002266_RV_07	dvandvam rahasya ityAdinA nipAtaH
+sp002-002267_RV_07	paraspareRa nAyojayizyaccet na yojayet yadi tarhi prajAnAm patyuH
+sp002-002268_RV_07	viDAtuH asmindvaye dvandve rUpaviDAnayatnaH sOndaryanirmARaprayAsaH vitaTaH viPalaH aBavizyat
+sp002-002269_RV_07	etAdfSa anurUpastrIpuMsAntarABAvAt iti BAvaH
+sp002-002270_RV_07	liNnimitte laNkriyAtipattO iti lfN
+sp002-002271_RV_07	kutaScitkAraRavEguRyAt kriyAyAH anaBinizpattiH kriyAtipattiH iti vfttikAraH
+sp002-002272_RV_07	ratismarAviti
+sp002-002273_RV_07	ratismarO yO nityasahacarO iti aBiprAyaH
+sp002-002274_RV_07	nUnam tO eva iyam ca ayam ca imO dampatI aBUtAm
+sp002-002275_RV_07	etadrUpeRa utpannO
+sp002-002276_RV_07	kutaH
+sp002-002277_RV_07	taTAhi
+sp002-002278_RV_07	iyam bAlA rAjYAm sahasrezu rAjasahasramaDye
+sp002-002279_RV_07	satyapi vyatyAsakAraRe iti BAvaH
+sp002-002280_RV_07	AtmapratirUpam svatulyameva
+sp002-002281_RV_07	tulyasaNkASanIkASaprakASapratirUpakAH iti daRqI
+sp002-002282_RV_07	gatA prAptA
+sp002-002283_RV_07	tadapi kaTam jAtam ata Aha hi yasmAt manaH janmAntarasaNgatijYam Bavati
+sp002-002284_RV_07	tadeva idamiti pratyaBijYABAveऽpi vAsanAviSezavaSAt anuBUtArTezu manaHpravfttiH asti ityuktam
+sp002-002285_RV_07	janmAntarasAhacaryameva atra pravartakamiti BAvaH
+sp002-002286_RV_07	itIti
+sp002-002287_RV_07	iti sTAne vftA ityAdyuktaprakAreRa pOravaDUmuKeByaH udgatAH utpannAH SrotrayoH suKA maDurAH
+sp002-002288_RV_07	suKaSabdo viSezyaniGnaH
+sp002-002289_RV_07	pApapuRyasuKAdi ca ityamaraH
+sp002-002290_RV_07	kaTAH giraH SfRvan kumAraH ajaH maNgalasaMviDABiH maNgalaracanABiH
+sp002-002291_RV_07	udBAsitam SoBitam sambanDinaH kanyAdAyinaH sadma gfham samAsasAda prApa
+sp002-002292_RV_07	tata iti
+sp002-002293_RV_07	tataH anantaram kareRukAyAH hastinyAH sakASAt ASu SIGram avatIrya
+sp002-002294_RV_07	kAmarUpeSvare datto hasto yena saH ajaH
+sp002-002295_RV_07	aTa anantaram vEdarBeRa nirdizwam pradarSitam antaScatuzkam catvaram
+sp002-002296_RV_07	nArIRAm manAMsIva viveSa
+sp002-002297_RV_07	mahArheti
+sp002-002298_RV_07	mahArhasiMhAsane saMsTitaH asO ajaH
+sp002-002299_RV_07	Bojena upanItam
+sp002-002300_RV_07	ratnEH sahitam saratnam
+sp002-002301_RV_07	maDuparkamiSram arGyam pUjAsADanadravyam dukUlayoH kzOmayoH yugmam ca vanitAkawAkzEH anyastrIRAm apANgadarSanEH sArDam
+sp002-002302_RV_07	jagrAha gfhItavAn
+sp002-002303_RV_07	dukUlavAsA iti
+sp002-002304_RV_07	dukUlavAsAH saH ajaH vinItEH namrEH avaroDarakzEH antaHpurADikftEH vaDUsamIpam ninye
+sp002-002305_RV_07	tatra dfzwAntaH sPuwaPenarAjiH udanvAnsamudro navEH nUtanEH candrapAdEH candrakiraREH velAyAH sakASam samIpamiva
+sp002-002306_RV_07	pUrRadfzwAntoऽyam
+sp002-002307_RV_07	tatreti
+sp002-002308_RV_07	tatra sadmani arcitaH pUjitaH agnikalpaH agnitulyaH BojapateH BojadeSADISvarasya puroDAH purohitaH
+sp002-002309_RV_07	puroDAstu purohitaH ityamaraH
+sp002-002310_RV_07	AjyAdiBiH dravyEH agniMhutvA tameva ca agnim vivAhasAkzya ADAya
+sp002-002311_RV_07	sAkziRam ca kftvA ityarTaH
+sp002-002312_RV_07	vaDUvarO saNgamayAYcakAra yojayAmAsa
+sp002-002313_RV_07	hasteneti
+sp002-002314_RV_07	sa rAjasUnuH hastena svakIyena vaDvAH hastam parigfhya
+sp002-002315_RV_07	anantarAyAH sannihitAyAH aSokalatAyAH pravAlam pallavam pratipallavena svakIyena prApya cUtaH AmraH iva
+sp002-002316_RV_07	sutarAm cakAse
+sp002-002317_RV_07	AsIditi
+sp002-002318_RV_07	varaH kaRwakitaH pulakitaH prakozWo yasya sa AsIt
+sp002-002319_RV_07	sUcyagre kzudraSatrO ca romaharze ca kaRwakaH ityamaraH
+sp002-002320_RV_07	kumArI KinnANguliH saMvavfte baBUva
+sp002-002321_RV_07	atra utprekzate tasmindvaye miTune tatkzaRam AtmavfttiH sAttvikodayarUpA vfttiH
+sp002-002322_RV_07	manoBavena kAmena samam viBakteva pfTakkfteva
+sp002-002323_RV_07	prAksidDasyApi anurAgasAmyasya samprati tatkAryadarSanAt pARisparSakftatvam utprekzate
+sp002-002324_RV_07	atra vAtsyAyanaH kanyA tu praTamasamAgame KinnANguliH KinnamuKI ca Bavati
+sp002-002325_RV_07	puruzastu romAYcito Bavati
+sp002-002326_RV_07	eBiH anayorBAvam parIkzeta
+sp002-002327_RV_07	iti
+sp002-002328_RV_07	strIpuruzayoH svedaromAYcABiDAnam sAttvikamAtropalakzaRam
+sp002-002329_RV_07	na tu pratiniyamo vivakzitaH
+sp002-002330_RV_07	eBiriti bahuvacanasAmarTyAt
+sp002-002331_RV_07	evam sati kumArasamBave romodgamaH prAduraBUt umAyAH svinnANguliH puNgavaketurAsIt iti vyutkramavacanam na dozAyeti
+sp002-002332_RV_07	vfttistayoH pARisamAgamena samam viBakteva manoBavasya iti aparArDasya pAWAntare vyAKyAnAntaram
+sp002-002333_RV_07	pARisamAgamena pARyoH saMsparSena kartrA tayoH vaDUvarayoH manoBavasya vfttiH sTitiH samam viBakteva
+sp002-002334_RV_07	samIkfteva ityarTaH
+sp002-002335_RV_07	tayoriti
+sp002-002336_RV_07	apANgezu netraprAntezu pratisAritAni pravartitAni kriyayoH nirIkzaRalakzaRayoH samApattyA
+sp002-002337_RV_07	yadfcCAsaNgatyA nivartitAni pratyAkfzwAni anyonyasmin lolAni satfzRAni
+sp002-002338_RV_07	lolaScalasatfRayoH ityamaraH
+sp002-002339_RV_07	tayoH dampatyoH vilocanAni dfzwayaH manojYAm ramyAm hriyA nimittena yantraRAm saNkocam AnaSire prApuH
+sp002-002340_RV_07	pradakziReti
+sp002-002341_RV_07	tanmiTunam udarcizaH unnatajvAlasya kfSAnoH vahneH pradakziRaprakramaRAt pradakziRIkaraRAt
+sp002-002342_RV_07	merorupAntezu samIpezu vartamAnam AvartamAnam
+sp002-002343_RV_07	merum pradakziRIkurvat ityarTaH
+sp002-002344_RV_07	anyonyasaMsaktam parasparasaNgatam
+sp002-002345_RV_07	miTunasApi etat viSezaRam
+sp002-002346_RV_07	ahaSca triyAmA ca ahastriyAmam rAtrindivamiva
+sp002-002347_RV_07	samAhAre dvandvEkavadBAvaH
+sp002-002348_RV_07	cakAse didIpe
+sp002-002349_RV_07	nitambagurvIti
+sp002-002350_RV_07	nitambena gurvI alaGvI
+sp002-002351_RV_07	durDarAlaGunorgurvI iti SASvataH
+sp002-002352_RV_07	viDAtfpratimena brahmatulyena tena guruRA yAcakena prayuktA juhuDIti niyuktA
+sp002-002353_RV_07	mattacakorasyeva netre yasyAH sA lajjAvatI sA vaDUH agnO lAjavisargam cakAra
+sp002-002354_RV_07	aviriti
+sp002-002355_RV_07	havizaH AjyAdeH SamIpallavAnAm lAjAnAm ca ganDaH asyAstIti haviHSamIpallavalAjaganDI
+sp002-002356_RV_07	SamIpallavamiSrAMllAjAn aYjalinA vapati iti kAtyAyanaH
+sp002-002357_RV_07	puRyo DUmaH kfSAnoH pAvakAdudiyAya udBUtaH
+sp002-002358_RV_07	kapolayoH saMsarpiRI prasaraRaSIlA SiKA yasya sa taToktaH sa DUmaH
+sp002-002359_RV_07	tasyAH vaDvAH muhUrtam karRotpalatAm karRABaraRatAm prapede
+sp002-002360_RV_07	taditi
+sp002-002361_RV_07	tadvaDUmuKamAcAreRa prAptAt DUmagrahaRAt
+sp002-002362_RV_07	aYjanasya kledaH aYjanakledaH
+sp002-002363_RV_07	aYjanamiSra bAzpodakam ityarTaH
+sp002-002364_RV_07	tena samAkulAkzam
+sp002-002365_RV_07	pramlAnaH bIjANkuraH yavANkura eva karRapUraH avataMsaH
+sp002-002366_RV_07	yasya tatpAwalagaRqaleKam aruRagaRqasTalam ca baBUva
+sp002-002367_RV_07	tAviti
+sp002-002368_RV_07	kanakAsanasTO tO kanyAkumArO snAtakEH gfhasTaviSezEH
+sp002-002369_RV_07	snAtakastu Apluto vratI ityamaraH
+sp002-002370_RV_07	banDumatA
+sp002-002371_RV_07	banDupuraHsareRa ityarTaH
+sp002-002372_RV_07	rAjYA ca puranDriBiH patiputravatIBiH nArIBiSca kramaSaH prayuktam
+sp002-002373_RV_07	snAtakAdInAm pUrvapUrvavESizwyAt krameRa kftam ArdrakzatAnAm AropaRam anvaBUtAm anuBUtavantO
+sp002-002374_RV_07	itIti
+sp002-002375_RV_07	aDiSrIH aDikasampannaH BojakulapradIpaH sa rAjA
+sp002-002376_RV_07	iti svasuH indumatyAH pARigrahaRam vivAham sampAdya kArayitvA
+sp002-002377_RV_07	mahIpatInAm rAjYAm pfTak ekEkaSaH arhaRArTam pUjArTam aDikftAn aDikAriRaH samAdideSA AjYApayAmAsa
+sp002-002378_RV_07	liNgEriti
+sp002-002379_RV_07	mudaH santozasya liNgEScihnEH kapawahAsAdiBiH saMvftavikriyAH nigUhitamatsarAH
+sp002-002380_RV_07	ataeva prasannA bahiH nirmalA gUQanakrAH antarlInagrAhAH hradAH iva sTitAste nfpAH vEdarBam
+sp002-002381_RV_07	Bojam Amantrya ApfcCya tadIyAm vEdarBIyAm pUjAm upadAcCalena upAyanamizeRa pratyarpya yayuH gatavantaH
+sp002-002382_RV_07	sa iti
+sp002-002383_RV_07	AramBasidDO kAryasidDO vizaye
+sp002-002384_RV_07	pUrvam kftA kftapUrvA
+sp002-002385_RV_07	supsupeti samAsaH
+sp002-002386_RV_07	kftapUrvA saMvitsaNketo mArgAvaroDarUpaH upAyo yena sa taToktaH
+sp002-002387_RV_07	saMvidyudDe pratijYAyAm saNketAcAranAmasu iti keSavaH
+sp002-002388_RV_07	sa rAjalokaH samayopalaByam ajaprasTAnakAle laByam
+sp002-002389_RV_07	tadA tasya ekAkitvAt iti BAvaH
+sp002-002390_RV_07	samaropalaByam iti pAWe yudDasADyam ityarTaH
+sp002-002391_RV_07	tatpramadEva Amizam Bogyavastu
+sp002-002392_RV_07	Amizam tvastriyAm mAMse taTA syAt Bogya vastuni iti keSavaH
+sp002-002393_RV_07	AdAsyamAno grahIzyamARaH san ajasya panTAnam Avftya avaruDya tasTO
+sp002-002394_RV_07	BartA iti
+sp002-002395_RV_07	anuzWitaH sampAditaH anantarajAyA anujAyA vivAho yena sa taToktaH
+sp002-002396_RV_07	kraTakESikAnAm deSAnAm BartA svAmI Bojoऽpi tAvat tadA sattvAnurUpam utsAhAnurUpam yaTA taTA
+sp002-002397_RV_07	A samantAt
+sp002-002398_RV_07	anena aniyatavastudAnam ityarTaH
+sp002-002399_RV_07	haraRam kanyAyE deyam Danam
+sp002-002400_RV_07	yOtakAdi tu yaddeyam sudAyo haraRam ca tat ityamaraH
+sp002-002401_RV_07	AharaRIkftA SrIH yena taToktaH san rAGavam ajam prAsTApayat prasTApitavAn
+sp002-002402_RV_07	svayam anvagAt anujagAma ca
+sp002-002403_RV_07	tisra iti
+sp002-002404_RV_07	kuRqinam vidarBanagaram tasyeSaH BojaH trizu lokezu praTitena ajena sArDam mArge paTi tisraH vasatIH rAtrIH izitvA sTitvA
+sp002-002405_RV_07	vasatI rAtriveSmanoH ityamaraH
+sp002-002406_RV_07	kAlADvanoratyantasaMyoge iti dvitIyA
+sp002-002407_RV_07	parvAtyaye darSAnte uzRaraSmeH sUryAt somaH candraH iva
+sp002-002408_RV_07	tasmAt ajAt apAvartata
+sp002-002409_RV_07	tam visfjya nivfttaH ityarTaH
+sp002-002410_RV_07	pramanyava iti
+sp002-002411_RV_07	nfpAH rAjAnaH prAgapi pratyekam AttasvatayA digvijaye gfhItaDanatvena kosalendre raGO pramanyavo rUQavErAH baBUvuH
+sp002-002412_RV_07	ato hetoH sametAH saNgatAH santaH tadAtmajasya raGusUnoH strIratnalABam na cakzamire na sehire
+sp002-002413_RV_07	tamiti
+sp002-002414_RV_07	dfptaH udDataH saH rAjanyagaRaH rAjasaNGAtaH
+sp002-002415_RV_07	BojakanyAm udvahantam nayantam tamajam
+sp002-002416_RV_07	balinA vErocaninA pradizwAm dattAm Sriyam AdadAnam svIkurvARam
+sp002-002417_RV_07	trivikramasya imam trEvikramam
+sp002-002418_RV_07	pAdam indraSatruH prahlAdaH iva
+sp002-002419_RV_07	paTi ruroDa
+sp002-002420_RV_07	taTA ca brahmARqapurARe virocanaviroDeऽpi prahlAdaH prAktanam smaran
+sp002-002421_RV_07	vizRostu kramamARasya pAdAmBojam ruroDa ha
+sp002-002422_RV_07	iti
+sp002-002423_RV_07	tasyA iti
+sp002-002424_RV_07	sa kumAraH ajaH tasyAH indumatyAH rakzArTam analpayoDam bahuBawam
+sp002-002425_RV_07	piturAgatam pitryam
+sp002-002426_RV_07	AptamityarTaH
+sp002-002427_RV_07	sacivamAdiSya AjYApya tAm pArTivavAhinIm rAjasenAm
+sp002-002428_RV_07	DvajinI vAhinI senA ityamaraH
+sp002-002429_RV_07	BAgIraTIm uttaraNgaH SoRaH SoRAKyo nada iva
+sp002-002430_RV_07	pratyagrahIt aBiyuktavAn
+sp002-002431_RV_07	pattiriti
+sp002-002432_RV_07	pattiH pAdacAro yodDA padAtim pAdacAram aByapatat
+sp002-002433_RV_07	padA pAdAByAm atatIti padAtiH
+sp002-002434_RV_07	pAdasyapad ityAdinA padAdeSaH
+sp002-002435_RV_07	padAtipatti padaga pAdAtika padAjayaH ityamaraH
+sp002-002436_RV_07	raTeSaH raTikaH raTinam raTAroham aByapatat
+sp002-002437_RV_07	turaNgasAdi aSvArohaH turagADirUQam aSvAroham aByapatat
+sp002-002438_RV_07	raTinaH syandanArohAH aSvArohAstu sAdinaH ityamaraH
+sp002-002439_RV_07	gajasya yantA hastyArohaH gajasTam puruzam aByapatat
+sp002-002440_RV_07	itTamanena prakAreRa tulyapratidvandvi ekajAtIyapratiBawam yudDam baBUva
+sp002-002441_RV_07	anyonyam dvandvam kalahaH asti yezAmiti pratidvandvino yoDAH
+sp002-002442_RV_07	dvandvam kalahayugmayoH ityamaraH
+sp002-002443_RV_07	nadatsu iti
+sp002-002444_RV_07	tUryezu nadatsu satsu aviBAvyavAcaH anavaDAryagiraH cApaBftaH DAnuzkAH kulamupadiSyate
+sp002-002445_RV_07	praKyApyate yEH te kulopadeSAH tAn kulanAmAni nodIrayanti sma noccArayAmAsuH
+sp002-002446_RV_07	Srotum aSakyatvAt vAcaH nAbruvan ityarTaH
+sp002-002447_RV_07	kintu bARAkzarEH bARezu liKitAkzarEreva parasparasya anyonyasya Urjitam praKyAtam nAma SaSaMsuH UcuH
+sp002-002448_RV_07	utTApita iti
+sp002-002449_RV_07	saMyati saNgrAme aSvErutTApitaH
+sp002-002450_RV_07	syandanavaMSAnAm raTasamUhAnAm cakrEH raTANgEH sAndrIkftaH GanIkftaH
+sp002-002451_RV_07	vaMSaH pfzWAsTni gehorDvakAzWe veRO gaRe kule iti keSavaH
+sp002-002452_RV_07	kuYjarakarRAnAm tAlEH tAqanEH vistAritaH prasAritaH reRuH netrakrameRa aMSukaparipAwyA
+sp002-002453_RV_07	aMSukamiva ityarTaH
+sp002-002454_RV_07	syAt jawAMSukayornetram iti kramoNGrO paripAwyAm ca iti ca keSavaH
+sp002-002455_RV_07	sUryam uparuroDa AcCAdayAmAsa
+sp002-002456_RV_07	matsyaDvajA iti
+sp002-002457_RV_07	vAyuvaSAt vidIrREH vivftErmuKEH pravfdDAni DvajinIrajAMsi sEnyareRUn pibantaH gfhRantaH
+sp002-002458_RV_07	matsyaDvajA matsyAkArA DvajAH paryAvilAni paritaH kaluzARi navodakAni pibantaH paramArTamatsyAH satyamatsyA iva
+sp002-002459_RV_07	baBuH BAnti sma
+sp002-002460_RV_07	raTa iti
+sp002-002461_RV_07	sAndre pravfdDe rajasi raTaH raTANgaDvaninA cakrasvanena vijajYe jYAtaH
+sp002-002462_RV_07	nAgo hastI vilolAnAm GaRwAnAm kvaRitena nAdena vijajYe
+sp002-002463_RV_07	AtmaparAvaboDaH svaparavivekaH
+sp002-002464_RV_07	yoDAnAmiti SezaH
+sp002-002465_RV_07	svaBartfRAm svasvAminAm nAmagrahaRAt nAmoccAraRAt baBUva
+sp002-002466_RV_07	rajoऽnDatayA sarve svam param ca SabdAdeva anumAya prajaGnuH ityarTaH
+sp002-002467_RV_07	AvfRvata iti
+sp002-002468_RV_07	locanamArgam AvfRvataH dfzwipaTam uparunDataH
+sp002-002469_RV_07	AjO yudDe vijfmBitasya vyAptasya
+sp002-002470_RV_07	raja eva anDakAram tasya
+sp002-002471_RV_07	SastrakzatepyaH aSvadvipavIreByaH janma yasya saH taToktaH ruDirapravAhaH bAlAruRaH bAlArkaH aBUt
+sp002-002472_RV_07	aruRo BAskareऽpi syAt ityamaraH
+sp002-002473_RV_07	bAlaviSezaRam ruDirasAvarRyArTam
+sp002-002474_RV_07	sa iti
+sp002-002475_RV_07	kzatajena ruDireRa CinnamUlaH
+sp002-002476_RV_07	tyAjitaBUtalasambanDaH ityarTaH
+sp002-002477_RV_07	tasya kzatajasya uparizwAt pavanAvaDUto vAtAhataH sa reRuH
+sp002-002478_RV_07	aNgAraSezasya hutASanasya agneH pUrvotTito DUma iva
+sp002-002479_RV_07	AbaBAse didIpe
+sp002-002480_RV_07	prahAreti
+sp002-002481_RV_07	raTasTAH raTinaH prahAreRa yA mUrcCA tasyAH apagame sati
+sp002-002482_RV_07	mUrCitAnAm anyatra nItvA saMrakzaRam sAraTiDarma iti kftvA
+sp002-002483_RV_07	nivartitASvAn yantFn sAraTIn upAlaBya asADu kftam iti aDikzipya
+sp002-002484_RV_07	pUrvam yEH svayam sAditA hatAH
+sp002-002485_RV_07	lakzitapUrvaketUn
+sp002-002486_RV_07	pUrvadfzwEH ketuBiH pratyaBijYAtAn ityarTaH
+sp002-002487_RV_07	tAneva sAmarzatayA sakopatvena hetunA nijaGnuH prajahruH
+sp002-002488_RV_07	api iti
+sp002-002489_RV_07	arDaSca asO mArgaSca tasmin arDamArge parezAm bAREH lUnAH CinnAH api hastavatAm
+sp002-002490_RV_07	kftahastAnAm DanurBftAm pfzatkAH SarAH AtmajavAnuvfttyA svavegAnubanDena hetunA PaliBiH lohAgravadBiH
+sp002-002491_RV_07	sasyabARAgrayoH Palam iti viSvaH
+sp002-002492_RV_07	pUrvArDaBAgEH
+sp002-002493_RV_07	SfRAtIti SaruH
+sp002-002494_RV_07	tasmE hitam Saravyam lakzyam
+sp002-002495_RV_07	ugavAdiByo yat iti yatpratyayaH
+sp002-002496_RV_07	lakzam lakzyam Saravyam ca ityamaraH
+sp002-002497_RV_07	samprApureva
+sp002-002498_RV_07	na tu maDye patitA ityarTaH
+sp002-002499_RV_07	ADoraRAnAmiti
+sp002-002500_RV_07	gajasannipAte gajayudDe niSitEH ata eva kzurAgrEH kzurasya agramiva agram yezAm tEH cakrEH AyuDaviSezEH hftAni CinnAnyapi
+sp002-002501_RV_07	SyenAnAm pakziviSezARAm
+sp002-002502_RV_07	pakzI SyenaH ityamaraH
+sp002-002503_RV_07	naKAgrakowizu vyAsaktAH keSAH yezAm tAni
+sp002-002504_RV_07	ADoraRAnAm hastyArohARAm
+sp002-002505_RV_07	ADoraRA hastipakA hastyArohA nizAdinaH ityamaraH
+sp002-002506_RV_07	SirAMsi cireRa petuH patitAni
+sp002-002507_RV_07	SiraHpAtAt prAgeva Aruhya paScAt utpatatAm pakziRAm naKezu keSaprasaNgaH cirapAtaheturiti BAvaH
+sp002-002508_RV_07	pUrvamiti
+sp002-002509_RV_07	pUrvam praTamam prahartA aSvasAdI tOraNgikaH pratiprahAre akzamam aSaktam turaNgamaskanDe nizaRRadeham
+sp002-002510_RV_07	mUrcCitam ityarTaH
+sp002-002511_RV_07	ripum BUyo na jaGAna punarna prajahAra
+sp002-002512_RV_07	kintu pratyASvasantam punarujjIvantam AcakANkza
+sp002-002513_RV_07	nAyuDavyasanam prAptam nArtam nAtiparikzatam iti nizeDAditi BAvaH
+sp002-002514_RV_07	tanutyajAmiti
+sp002-002515_RV_07	tanutyajAm
+sp002-002516_RV_07	tanuzu niHspfhARAmityarTaH
+sp002-002517_RV_07	varmaBftAm kavacinAm sambanDiBiH bfhatsu dantezu patadBiH ata eva vikoSEH piDAnAt udDftEH
+sp002-002518_RV_07	koSoऽstrI kuqmale KaqgapiDAne ityamaraH
+sp002-002519_RV_07	asiBiH KaqgEH udyantam utTitam agnim vivignA BItA gajAH
+sp002-002520_RV_07	karasIkareRa SuRqAdaRqajalakaRena SamayAmbaBUvuH SAntam cakruH
+sp002-002521_RV_07	SilImuKa iti
+sp002-002522_RV_07	SilImuKEH bAREH utkfttAni SirAMsyeva PalAni tEH AQyA sampannA
+sp002-002523_RV_07	cyutEH BrazwEH SirAMsi trAyante iti SirastrARi SIrzaRyAni
+sp002-002524_RV_07	SIrzaRyam ca Sirastre aTa ityamaraH
+sp002-002525_RV_07	tEH cazakottarA cazakaH pAnapAtramuttaram yasyAm sA iva
+sp002-002526_RV_07	cazakoऽstrI pAnapAtram ityamaraH
+sp002-002527_RV_07	SoRitAnyeva madyam tasya kulyAH pravAhAH yasyAm sA
+sp002-002528_RV_07	kulyAlpA kftrimA sarit ityamaraH
+sp002-002529_RV_07	raRakzitiH yudDaBUmiH mftyoH pAnaBUmiriva rarAja
+sp002-002530_RV_07	upAntayoriti
+sp002-002531_RV_07	upAntayoH prAntayoH vihaNgEH pakziBiH nizkuzitam KaRqitam
+sp002-002532_RV_07	iRnizWAyAm iti iqAgamaH
+sp002-002533_RV_07	BujacCedam BujaKaRqam teByaH vihaNgeByaH Akzipya AcCidya
+sp002-002534_RV_07	piSitapriyA mAMsapriyApi SivA krozwrI
+sp002-002535_RV_07	SivaH kIlaH SivA krozwrI iti viSvaH
+sp002-002536_RV_07	keyUrakowyA aNgadAgreRa kzataH tAludeSo yasyAH sA satI
+sp002-002537_RV_07	apAcakArA apasArayAmAsa
+sp002-002538_RV_07	kirateH karotervA liw
+sp002-002539_RV_07	kaSciditi
+sp002-002540_RV_07	dvizataH Kaqgena hftottamANgaH CinnaSirAH kaScidvIraH sadyaH vimAnapraButAm vimAnADipatyam
+sp002-002541_RV_07	devatvamityarTaH
+sp002-002542_RV_07	upetya prApya vAmANgasaMsaktAm savyotsaNgasaNginI surANganA yasya
+sp002-002543_RV_07	sa taToktaH san samare nftyat svayam svam nijam kabanDam viSiraskam kalevaram dadarSa
+sp002-002544_RV_07	kabanDoऽstrI kriyAyuktam apamUrDakalevaram ityamaraH
+sp002-002545_RV_07	anyonyeti
+sp002-002546_RV_07	kOcit vIrO anyonyasya sUtayoH sAraTyoH unmaTanAt niDanAt tO vaeva sUtO raTinO yodDArO ca aBUtAm
+sp002-002547_RV_07	tO eva vyaSvO nazwASvO santO gadAByAm vyAyataH dIrGaH samprahAraH yudDam yayoH tO aBUtAm
+sp002-002548_RV_07	tatO BagnAyuDO BagnagadO santO bAhuvimarde nizWA nASaH yayoH tO bAhuyudDasaktO aBUtAm
+sp002-002549_RV_07	nizWA nizpattinASAntAH ityamaraH
+sp002-002550_RV_07	paraspareReti
+sp002-002551_RV_07	paraspareRa anyonyam kzatayoH kzatatanvoH samakAlam ekakAlam yaTA taTA utkrAntavAyvoH yugapad udgataprARayoH
+sp002-002552_RV_07	ekEva apsarAH prArTitA yAByAm tayoH ekApsaraHprArTitayoH
+sp002-002553_RV_07	prArTitEkApsarasoH ityarTaH
+sp002-002554_RV_07	vA AhitAgnyAdizu iti paranipAtaH
+sp002-002555_RV_07	aTavA ekasyAm apsarasi prArTitam prArTanA yayoH iti vigrahaH
+sp002-002556_RV_07	striyAm bahuzu apsarasaH iti bahutvABiDAnam prAyikam
+sp002-002557_RV_07	kayoScit prahartroH yoDayoH amartyaBAve api devatve api vivAdaH kalaha AsIt
+sp002-002558_RV_07	ekAmizABilAzo hi mahadvErabIjamiti BAvaH
+sp002-002559_RV_07	vyUhAviti
+sp002-002560_RV_07	tO uBO vyUhO senAsaNGAtO
+sp002-002561_RV_07	vyUhastu balavinyAsaH ityamaraH
+sp002-002562_RV_07	paScAtpuraSca yO mArutO tayoH paryAyavfttyA kramavfttyA pravfdDO mahArRavormI iva
+sp002-002563_RV_07	itaretarasmAt anyonyasmAt avyavasTam vyavasTArahitam aniyatam jayam BaNgam parAjayam ca ApatuH prAptavantO
+sp002-002564_RV_07	pareReti
+sp002-002565_RV_07	bale svasEnye pareRa parabalena Bagne api mahOjAH mahAbalaH ajaH arisEnyam pratyeva yayO
+sp002-002566_RV_07	taTAhi
+sp002-002567_RV_07	samIraRena vAyunA DUmo nivartyeta kakzAt apasAryeta vartateH RyantAtkarmaRi samBAvanAyAm liN
+sp002-002568_RV_07	vahnistu yataH yatra kakzastfRam
+sp002-002569_RV_07	kakzO tu tfRavIruDO ityamaraH
+sp002-002570_RV_07	tata eva tatra iva
+sp002-002571_RV_07	pravartate iti SezaH
+sp002-002572_RV_07	sArvaviBaktikaH tasiH
+sp002-002573_RV_07	raTIti
+sp002-002574_RV_07	raTI raTArUQo nizaNgI tURIravAn
+sp002-002575_RV_07	tURopasaNgA tURIranizaNgA izuDiH dvayoH ityamaraH
+sp002-002576_RV_07	kavacI varmaDaraH DanuzmAn DanurDaraH dfptaH raRadfptaH ekavIraH
+sp002-002577_RV_07	asahAyaSUraH saH ajaH rAjanyakam rAjasamUham
+sp002-002578_RV_07	gotrokza ityAdinA vuYpratyayaH
+sp002-002579_RV_07	mahAvarAhaH varAhAvatAro vizRuH kalpakzaye kalpAntakAle udvfttam udvelam arRavAmBa iva
+sp002-002580_RV_07	nivArayAmAsa
+sp002-002581_RV_07	sa iti
+sp002-002582_RV_07	saH ajaH
+sp002-002583_RV_07	AjO saNgrAme dakziRam hastam tURamuKena nizaNgavivareRa vAmam atisundaram
+sp002-002584_RV_07	vAmam savye pratIpe ca draviRe ca atisundare iti viSvaH
+sp002-002585_RV_07	vyApArayan alakzyatA
+sp002-002586_RV_07	SarasanDAnAdayastu durlakzyA ityarTaH
+sp002-002587_RV_07	sakft AkarRakfzwA
+sp002-002588_RV_07	yodDuH asya ajasya mOrvI jyA ripUnGnantIti ripuGnAH
+sp002-002589_RV_07	tAn
+sp002-002590_RV_07	amanuzyakartfke ca iti WakpratyayaH
+sp002-002591_RV_07	bARAnsuzuva iva suzuve kimu
+sp002-002592_RV_07	ityutprekzA
+sp002-002593_RV_07	sa iti
+sp002-002594_RV_07	saH ajaH rozeRa dazwA ata eva aDikalohitA ozWAH yezAm tAni tEH
+sp002-002595_RV_07	vyaktA UrDvA reKA yAsAm tA BrukuwIH BrUBaNgAnvahadBiH
+sp002-002596_RV_07	BallanikfttA bARaviSezacCinnAH kaRWA yezAm tEH
+sp002-002597_RV_07	hUNkAragarBEH sahUNkArEH
+sp002-002598_RV_07	hUNkurvadBiH ityarTaH
+sp002-002599_RV_07	dvizatAm SiroBiH gAm BUmim tastAra CAdayAmAsa
+sp002-002600_RV_07	sarvEriti
+sp002-002601_RV_07	dviradapraDAnEH gajamuKyEH sarvErbalANgEH senANgEH
+sp002-002602_RV_07	hastyaSvaraTapAdAtam senANgam syAt catuzwayam ityamaraH
+sp002-002603_RV_07	kaNkawaBediBiH kavacaBediBiH
+sp002-002604_RV_07	uraSCadaH kaNkawako ajagaraH kavacostriyAm ityamaraH
+sp002-002605_RV_07	sarvAyuDESca
+sp002-002606_RV_07	bAhyabalamuktvA AntaramAha sarvaprayatnena ca sarve eva BUmipAlAH yuDi tasmin aje prajahruH
+sp002-002607_RV_07	tam prajahruH ityarTaH
+sp002-002608_RV_07	sarvatra sarvakArakaSaktisamBavAt karmaRaH api aDikaraRavivakzAyAm saptamI
+sp002-002609_RV_07	taduktam anekaSaktiyuktasya viSvasyAnekakarmaRaH
+sp002-002610_RV_07	sarvadA sarvaTABAvAt kvacit kiYcit vivakzyate
+sp002-002611_RV_07	iti
+sp002-002612_RV_07	sa iti
+sp002-002613_RV_07	parezAm dvizAm astravrajEH CannaraTaH saH ajaH
+sp002-002614_RV_07	nIhArEH himEH magnaH dinapUrvaBAgaH prAtaHkAlaH kiYcitprakASena Izat lakzyeRa vivasvatA iva
+sp002-002615_RV_07	DvajAgramAtreRa lakzyo baBUva
+sp002-002616_RV_07	DvajAgrAdanyat na kiYcit lakzyate sma ityarTaH
+sp002-002617_RV_07	priyaMvadAditi
+sp002-002618_RV_07	kusumAstrakAntaH madanasundaraH svapnanivfttalOlyaH svapnavitfzRaH
+sp002-002619_RV_07	jAgarUkaH ityarTaH
+sp002-002620_RV_07	asO kumAraH ajaH priyaMvadAt pUrvoktAt ganDarvAtprAptam gAnDarvam ganDarvadevatAkam
+sp002-002621_RV_07	sAsya devatA ityaR
+sp002-002622_RV_07	prasvApayatIti prasvApanam nidrAjanakamastram rAjasu prAyuNkta prayuktavAn
+sp002-002623_RV_07	tata iti
+sp002-002624_RV_07	tataH DanuzkarzaRe cApakarzaRe mUQahastam avyApftahastam
+sp002-002625_RV_07	ekasminnaMse paryastam srastam SirastrARAm SIrzaRyAnAm jAlam samUho yasya tat
+sp002-002626_RV_07	DvajastamBezu nizaRRAH avazwabDAH dehAH yasya tat
+sp002-002627_RV_07	naradevAnAm rAjYAm senA eva sEnyam
+sp002-002628_RV_07	cAturvarRyAditvAtsvArTe zyaYpratyayaH
+sp002-002629_RV_07	nidrAviDeyam nidrAparatantram tasTO
+sp002-002630_RV_07	tata iti
+sp002-002631_RV_07	tataH kumAraH ajaH priyayA indumatyA upAttarase AsvAditamADurye
+sp002-002632_RV_07	atiSlAGye iti BAvaH
+sp002-002633_RV_07	aDarozWe jalajam SaNKam niveSya
+sp002-002634_RV_07	jalajam SaNKapadmayoH iti viSvaH
+sp002-002635_RV_07	daDmO muKamArutena pUrayAmAsa
+sp002-002636_RV_07	tena ozWanivizwena SaNKena ekavIraH saH svahastArjitam mUrtam mUrtimadyaSaH pibanniva AbaBAse
+sp002-002637_RV_07	yaSasaH SuBratvAditi BAvaH
+sp002-002638_RV_07	SaNKeti
+sp002-002639_RV_07	SaNKasvanasya ajaSaNKaDvaneH aBijYatayA pratyaBijYAtatvAt nivfttAH prAkpalAyya
+sp002-002640_RV_07	samprati pratyAgatAH svayoDAH san aSatrum nidrARaSatrum tamajam
+sp002-002641_RV_07	nimIlitAnAm mukulitAnAm paNkajAnAm maDye sPurantam pratimA ca asO SaSANkaSca tam pratimASaSANkam pratibimbacandramiva
+sp002-002642_RV_07	dadfSuH
+sp002-002643_RV_07	saSoRitEriti
+sp002-002644_RV_07	samprati rAGaveRa raGuputreRa
+sp002-002645_RV_07	pUrvam raGuRA iti BAvaH
+sp002-002646_RV_07	he rAjAnaH vo yuzmAkam yaSo hftam jIvitam tu kfpayA na hftam
+sp002-002647_RV_07	na tu aSaktyA iti BAvaH
+sp002-002648_RV_07	ityevaMrUpA varRAH
+sp002-002649_RV_07	etadarTapratipAdakam vAkyamityarTaH
+sp002-002650_RV_07	saSoRitEH SoRitadigDEH SilImuKAgrEH bARAgrEH sADanEH tena ajena prayojakakartrA
+sp002-002651_RV_07	pArTivAnAm rAjYAm ketuzu DvajastamBezu nikzepitAH prayojyEH anyEH niveSitAH
+sp002-002652_RV_07	leKitA ityarTaH
+sp002-002653_RV_07	kzipaterRyantAtkarmaRi ktaH
+sp002-002654_RV_07	sa iti
+sp002-002655_RV_07	cApakowyAm nihitaH ekabAhuH yena saH
+sp002-002656_RV_07	Sirastrasya nikarzaRena apanayanena BinnamOliH SlaTakeSabanDaH
+sp002-002657_RV_07	cUqAkirIwam keSASca saMyatA mOlayastrayaH ityamaraH
+sp002-002658_RV_07	lalAwe badDAH SramavAribindavaH yasya saH
+sp002-002659_RV_07	saH ajaH BItAm priyAm indumatIm etya AsAdya vaco baBAze
+sp002-002660_RV_07	ita iti
+sp002-002661_RV_07	he vEdarBi indumati itaH idAnIm arBakahAryaSastrAn bAlakApahArya AyuDAn parAn SatrUn paSya
+sp002-002662_RV_07	mayA anumatAsi
+sp002-002663_RV_07	drazwumiti SezaH
+sp002-002664_RV_07	eBirnfpEH eva evam viDena nidrArUpeRa Ahavacezwitena raRakarmaRA mama hastagatA
+sp002-002665_RV_07	hastagatavat durgrahA ityarTaH
+sp002-002666_RV_07	tvam prArTyase
+sp002-002667_RV_07	apajihIrzyase ityarTaH
+sp002-002668_RV_07	evaMviDena ityatra svahastanirdeSena sopahAsam uvAca iti drazwavyam
+sp002-002669_RV_07	tasyA iti
+sp002-002670_RV_07	pratidvandviBavAt ripUtTAt vizAdAt dEnyAt sadyaH vimuktam tasyAH muKam
+sp002-002671_RV_07	niSvAsasya yaH vAzpaH UzmA
+sp002-002672_RV_07	vAzpo netrajalozmaRoH iti viSvaH
+sp002-002673_RV_07	tasya apagamAdDetoH AtmIyam prasAdam nErmalyam prapannaH prAptaH
+sp002-002674_RV_07	AtmA svarUpam dfSyate anena iti AtmadarSaH
+sp002-002675_RV_07	darpaRa iva
+sp002-002676_RV_07	AbaBAse
+sp002-002677_RV_07	hfzweti
+sp002-002678_RV_07	sA indumatI hfzwApi patyuH pOruzeRa pramuditApi hriyA vijitA yataH ataH
+sp002-002679_RV_07	priyam ajam sAkzAt svayam nAByanandat na praSaSaMsa
+sp002-002680_RV_07	kintu navEH amBaHpfzatEH payobinduBiH aBivfzwA aBiziktA sTalI akftrimA BUmiH
+sp002-002681_RV_07	jAnapadakuRqagoRasTala ityAdinA akftrimArTe NIz
+sp002-002682_RV_07	aBravfndam meGasaNGam mayUrakekABiH iva
+sp002-002683_RV_07	saKInAm vAgBiH aByanandat
+sp002-002684_RV_07	itIti
+sp002-002685_RV_07	nodyate nocyate iti avadyam garhyam
+sp002-002686_RV_07	avadyapaRya ityAdinA nipAtaH
+sp002-002687_RV_07	kupUyakutsitA avadyaKewagarhyARakAH samAH ityamaraH
+sp002-002688_RV_07	tasmAd apetaH
+sp002-002689_RV_07	rahitaH nirdozaH ityarTaH
+sp002-002690_RV_07	saH ajaH iti rAjYAm Sirasi vAmam pAdamADAya anavadyAm adozAm tAm indumatI udavahat upAnayat
+sp002-002691_RV_07	AtmasAt cakAra ityarTaH
+sp002-002692_RV_07	ayamarTaH tam udvahantam paTi BojakanyAm ityatra na SlizwaH
+sp002-002693_RV_07	tasya ajasya raTaturagARAm rajoBiH rUkzARi paruzARi
+sp002-002694_RV_07	alakAgrARi yasyAH sA indumatI eva mUrtA mUrtimatI samaravijayalakzmIrbaBUva
+sp002-002695_RV_07	etat lABAt anyaH kaH vijayalakzmIlABaH ityarTaH
+sp002-002696_RV_07	praTameti
+sp002-002697_RV_07	praTamam ajAgamanAtprAgeva parigataH jYAtaH arTaH vivAhavijayarUpo yena saH praTamaparigatArTaH
+sp002-002698_RV_07	raGuH vijayinam vijayayuktam SlAGyajAyAsametam sannivfttam pratyAgatam tam ajam aBinandya
+sp002-002699_RV_07	tasmin aje upahitakuwumbaH san
+sp002-002700_RV_07	sutavinyastapatnIkaH iti yAjYavalkyasmaraRAditi BAvaH
+sp002-002701_RV_07	SAntimArge mokzamArga utsukaH aBUt
+sp002-002702_RV_07	taTAhi
+sp002-002703_RV_07	kulaDurye kulaDuranDare sati sUryavaMSyAH gfhAya gfhasTASramAya na Bavanti
+sp002-002704_RV_07	iti mahAmahopADyAya kolAcalamallinATasUriviracitayA saYjIvinIsamAKyayA vyAKyayA sametaH
+sp002-002705_RV_07	mahAkaviSrIkAlidAsakftO raGuvaMSe mahAkAvye ajena indumatIpARigrahaRo nAma saptamaH sargaH

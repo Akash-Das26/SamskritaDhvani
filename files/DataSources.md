@@ -53,6 +53,20 @@ result.
   multi-text; you must confirm which sentences are actually Gita verses
   (by transcript match) rather than assuming from the "Bhagvadgita" tag
   alone — spot-check per `DataIntegrity.md` §4 step 1.
+- **RESOLVED 2026-09-22 (post-download transcript check):** the
+  corpus's Gita-tagged material (`GB_*` utterance IDs, 2,161 lines, all
+  in speaker sp006) is the **Śaṅkara Bhāṣya prose commentary**, not
+  canonical verse text; a retold narrative (sp022, text-ID `_008`)
+  renders BG 1.1 as story prose. Canonical verse markers return zero
+  transcript hits (`धृतराष्ट्र उवाच`, `कर्मण्येवाधिकारस्ते`,
+  `यदा यदा हि धर्मस्य`, `चञ्चलं`). **Conclusion: Vāksañcayaḥ cannot
+  supply the GVR verse registry**; it remains valuable as the general
+  Sanskrit speech pool (§2.3).
+- **License resolution 2026-09-22:** the corpus archive's own README
+  states **CC BY-NC 4.0** (matching the corpus site). The AIKosh
+  listing's "CC0" label is contradicted by the corpus itself — treat
+  the corpus README as authoritative: CC BY-NC 4.0, attribution
+  required, non-commercial use only.
 
 ### 1.2 Gita Supersite (IIT Kanpur) — verse-by-verse text + audio
 
@@ -76,6 +90,17 @@ result.
   found in this session. Budget this as a scripted-but-polite retrieval
   task (respect the site's servers — this is a small academic site, not
   a CDN), not a one-command bulk pull.
+- **Checked directly 2026-09-22:** `www.gitasupersite.in/srimad/texts`
+  is a JS SPA behind **Cloudflare Turnstile** — plain HTTP fetches are
+  dropped (curl exit before response) and a headless-Chrome render
+  returns only the challenge shell. The legacy server-rendered host
+  `old.gitasupersite.in` is live and its `/srimad?field_chapter_value=N`
+  pages respond, but verse content loads via AJAX POST and the served
+  HTML contains **no audio URLs**. The SPA app bundle exposes only a
+  generic `/api` base (no usable static endpoints). **Scripted bulk
+  retrieval is blocked both technically and by the still-unstated
+  license** — maintainer contact is required before any verse audio
+  pull (see PROVENANCE.md GVR-02).
 - **Use for:** The canonical, highest-quality single-reciter reference
   recording per verse — ideal for GVR's "one clean reference per class"
   need, and for validating the Vāksañcayaḥ-derived Gita subset (§1.1)
@@ -93,10 +118,22 @@ result.
   independently confirmed in this session — check the org's repo list
   at `https://github.com/mahabharata-audio-2018` before relying on a
   specific parva number).
-- **License:** Not independently confirmed in this session — check each
-  repo's own README/LICENSE before use; log whatever is found in
-  `PROVENANCE.md`.
-- **Use for:** A second, independently-sourced reciter for GVR (useful
+- **License — RESOLVED 2026-09-23:** the project's own page
+  (`sanskrit.github.io/groups/dyuganga/projects/audio/mbh-audio/`)
+  declares **CC BY-SA 4.0** for the whole effort, publishes per-file
+  named reciters, and hosts the audio at
+  `archive.org/details/mahAbhArata-mUla-paThanam-GP` (per-file creator
+  metadata verified). Note: the archive item itself carries **no
+  `licenseurl` field** — the license basis is the project page's
+  declaration. Still **no Bhīṣma Parva content** (3 parvas only), so
+  this does not change the GVR verdict.
+- **Checked 2026-09-22:** the org's public repositories are exactly
+  `parva01-001-100`, `parva01-101-233`, `parva02`, `parva03`,
+  `parva04`, `parva12-001-100` — **no Bhishma Parva repo exists**, so
+  this source contains no Bhagavad Gita audio. Dead end for GVR; the
+  zips downloaded earlier (parva01/02/03/04/12) cover only non-Gita
+  parvas and are held unextracted pending a use decision.
+- **Use for:** ~~A second, independently-sourced reciter for GVR~~ (useful
   for the "multiple recitations per verse, multiple reciters" goal in
   `Implementation.md` §5.1, which reduces single-reciter overfitting in
   the per-verse HMMs) — treat as supplementary, not primary, since it
@@ -129,8 +166,34 @@ not contain Gita content; it's Rig/Atharva Veda).
 - **Use for:** Front-end cross-validation on real chanted Sanskrit;
   optionally, a stretch-goal ablation showing the SPD/GVR pipeline
   generalizes beyond Gita-only material.
+- **ACQUIRED + SWEPT 2026-09-23 (full HF clone present at repo root
+  `Vedavani-Dataset/`, 6.4 GB):** index integrity verified first —
+  30,779 CSV rows across train/val/test ↔ 30,779 on-disk files, 0
+  missing, 0 duplicates, total 54.38 h (matches the paper's stats).
+  DataIntegrity §4 sweep of all 30,799 on-disk files (MANIFEST.csv):
+  30,799/30,799 decode cleanly, 0 silent; all WAV/PCM_16 mono;
+  29,355 @ 16 kHz but **1,442 @ 44.1 kHz + 2 @ 48 kHz** (contradicts
+  the card's 16 kHz claim — 1,436 of them in the `Rigvedha*` family,
+  i.e. one recorder batch; D1 front-end resamples, so non-blocking);
+  **299 files peak ≥ 0.99** (0.97%, mostly Atharvaveda) + 87
+  borderline 0.985–0.99 — flagged, not excluded (mild peak scaling at
+  the front-end; not reference material); duration vs CSV label:
+  median |Δ| = 0.000 s, max 0.000 s, 0 files > 0.25 s. 20 on-disk
+  extras are `(1)`-suffixed browser re-download artifacts, sha-identical
+  to their originals → excluded via `EXCLUDED_FILES.csv`. Label
+  listen-through (§4 step 1) **COMPLETE 2026-09-23**: automated
+  515-file sample pass (incl. all 299 clipped files) + owner review of
+  the 12 evidence-pack renders — see PROVENANCE.md GVR-03.
 
 ### 2.2 ASR-Sanskrit (HuggingFace)
+
+- **RESOLVED 2026-09-23 (repo cloned at root `ASR-Sanskrit/`, 6.9 GB,
+  `komalsai234/ASR-Sanskrit`):** the parquet shards contain **no raw
+  audio** — schema is `input_features` (precomputed Whisper mel
+  features) + `labels` (token IDs). It cannot feed the D1 MFCC
+  front-end, which needs waveforms. **Excluded for this project**
+  (usable only as a Whisper fine-tune artifact, which is not our
+  pipeline).
 
 - **URL:** `https://huggingface.co/datasets/komalsai234/ASR-Sanskrit`
 - **Format:** Parquet, 10K–100K rows.
@@ -169,8 +232,11 @@ requirement (`SRS.md` FR-12):
   (paid tiers exist) or download individual clips manually for your
   ~20–30 word list, and log each clip's speaker attribution (Forvo
   gives a username, country) in `PROVENANCE.md`. Speaker fluency is
-  crowdsourced and unverified — cross-check against §3.2/§3.3 or your
+  crowdsourced and unverified — cross-check against §3.3/§3.4 or your
   own instructor before treating a Forvo clip as "the" reference.
+  **Plan set 2026-09-22:** manual per-clip downloads only, after the
+  SPD word list is finalized from Hall/Loyola material (see
+  PROVENANCE.md excluded/plan table).
 
 ### 3.2 Madhav Deshpande's *Saṃskṛta-Subodhini* audio set (University of Michigan)
 
@@ -181,13 +247,14 @@ requirement (`SRS.md` FR-12):
   §2 asks for.
 - **URL (as last referenced):**
   `http://www.umich.edu/~iinet/csas/publications/sanskrit/audio.html`
-  — **verify this URL is still live before relying on it**; it was
-  found via an archived mailing-list reference, not a direct fetch in
-  this session, so treat it as "reported to exist, not independently
-  confirmed live" until you check it yourself and log the check date in
-  `PROVENANCE.md`.
-- **Use for:** A strong, named-scholar reference recitation source for
-  isolated words/declension forms.
+  — **RESOLVED 2026-09-22: unrecoverable.** The URL is DNS-dead, and a
+  Wayback CDX check across the whole `umich.edu` domain found **zero
+  successful audio captures** for any Sanskrit audio path (only 404
+  captures of attempted URLs from 2012–2013). The set cannot be
+  acquired from any channel; Hall (§3.3) and Loyola (§3.4) are the
+  named-scholar sources this project will actually have.
+- **Use for:** ~~A strong, named-scholar reference recitation source~~
+  — unavailable; role covered by SPD-01 (Hall) and SPD-02 (Loyola).
 
 ### 3.3 Bruce Cameron Hall's *Sanskrit Pronunciation: Booklet and Audio* (Theosophical University Press)
 
@@ -207,13 +274,24 @@ requirement (`SRS.md` FR-12):
 
 ### 3.4 Loyola University New Orleans — Sanskrit sound files (backup)
 
-- **URL:** `http://www.loyno.edu/~tccahill/skt_sound_files.html`
-- **What it is:** ~50 nouns and ~20 verbs in MP3, recorded by Tim
-  Cahill c. 1981–82.
-- **Caveat:** Older recording quality (per the source's own mailing-list
-  description) — use as a backup/ablation source, not a primary
-  reference, and note the recording-condition limitation in
-  `DataIntegrity.md`'s sweep table if used.
+- **URL:** `http://www.loyno.edu/~tccahill/skt_sound_files.html` —
+  **live site dead** (302 → `people.loyno.edu`, which does not
+  respond; HTTPS fails). **RECOVERED 2026-09-22 via the Internet
+  Archive Wayback Machine:** all 63 archived MP3s (captures of
+  2011-06-06) enumerated via the CDX index and downloaded — nominal
+  declensions by gender, pronouns, verb conjugations by class, and
+  verse/exercise readings; 74.9 min total. See PROVENANCE.md SPD-02
+  and `data/spd/loyola_cahill_sound_files/MANIFEST.csv`.
+- **What it is:** Traditional recitations of grammatical paradigms in
+  MP3, recorded by Tim Cahill c. 1981–82 (63 files, more than the
+  originally described ~50 nouns + ~20 verbs: pronouns and verse
+  readings are included).
+- **Caveat:** Older recording quality — sweep found low levels overall
+  (rms −35.7 to −52.0 dB), with the `noun1–noun9` set quietest (peak
+  0.047 on `noun1_deva.mp3`); those files are quarantined as reference
+  material pending a listen-through. Use as a backup/ablation source,
+  not a primary reference, and note the recording-condition limitation
+  in `DataIntegrity.md`'s sweep table if used.
 
 ---
 
@@ -224,10 +302,12 @@ requirement (`SRS.md` FR-12):
    and a general-Sanskrit validation pool (§2.3) from one source.
 2. **Gita Supersite (§1.2)** — acquire verse-by-verse in parallel; this
    is your clean, single-reciter GVR reference registry and the
-   ground truth you'll match Vāksañcayaḥ's Gita subset against.
-3. **SPD reference words (§3.2, §3.3, §3.1 in that order)** — Deshpande
-   and Hall first (named scholars, better provenance), Forvo as a
-   supplementary/cross-check source, respecting its ToS.
+   ground truth you'll match Vāksañcayaḥ's Gita subset against.3. **SPD reference words (§3.3, §3.4, then §3.1)** — ~~Deshpande and
+   Hall first~~ **(updated 2026-09-22:** Deshpande §3.2 is
+   unrecoverable — dead URL, zero Wayback captures; Hall §3.3 is
+   acquired and swept; Loyola §3.4 recovered from the Wayback Machine
+   and swept**)**; Forvo as a supplementary/cross-check source,
+   respecting its ToS.
 4. **Vedavani (§2.1)** — pull once the Gita-specific pipeline is working,
    for front-end validation and any "generalizes beyond Gita" claim in
    the report.
@@ -249,17 +329,24 @@ five sources into one un-swept pile before checking any of them.
 These were not fully confirmed in this session and must be verified
 before being relied on (log the verification in `Review.md` when done):
 
-- Exact license terms for the specific `mahabharata-audio-2018` repo
-  covering Bhishma Parva (repo number and license unconfirmed).
-- Whether `umich.edu/~iinet/csas/...` (§3.2) is still live.
-- Gita Supersite's actual reuse terms for bulk/programmatic audio
-  retrieval — the site itself should be checked directly, and if
-  ambiguous, the maintainers contacted, before scripting a full
-  700-verse pull.
-- The exact file layout and transcript format inside the Vāksañcayaḥ
-  archive once downloaded from `cse.iitb.ac.in/~asr/` (the GitHub repo
-  only hosts code, not the corpus itself, so this needs direct
-  inspection after download).
+- ~~Exact license terms for the specific `mahabharata-audio-2018` repo
+  covering Bhishma Parva~~ **RESOLVED 2026-09-22:** no Bhishma Parva
+  repo exists in the org (6 public repos, parvas 1–4 and 12 only); the
+  source cannot supply Gita audio at all.
+- ~~Whether `umich.edu/~iinet/csas/...` (§3.2) is still live.~~
+  **RESOLVED 2026-09-22:** DNS timeout — dead link; cannot acquire
+  (see PROVENANCE.md excluded-sources table).
+- ~~Gita Supersite's actual reuse terms for bulk/programmatic audio
+  retrieval~~ **RESOLVED 2026-09-22:** no license statement found; site
+  is additionally Cloudflare-gated and exposes no static audio/API
+  endpoints (see §1.2 note). Bulk retrieval remains **blocked pending
+  maintainer contact**.
+- ~~The exact file layout and transcript format inside the
+  Vāksañcayaḥ archive~~ **RESOLVED 2026-09-22:** layout is
+  `spNNN/spNNN-NNNNNN_TEXTID.mp3` (45,953 MP3s, 54 speaker dirs) plus
+  per-speaker transcripts `Transcript/Devanagari/spNNN.txt` and
+  `Transcript/SLP1/spNNN.txt`, TSV format `<uttID>\t<text>`; official
+  train/val/test/OOD speaker split listed in the corpus README.
 
 ---
 
