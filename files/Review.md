@@ -27,7 +27,7 @@ column unless it was actually run in this session
 
 **Verdict:** go / no-go / needs more information
 
-### Phase 2 (Resource Gathering) — shared feature-extraction module
+### Phase 2 (Resource Gathering) — shared feature-extraction module [prior session]
 
 **What was done (every claim verified in this session by an actual
 command run, code inspection, or live API/page fetch — none recalled):**
