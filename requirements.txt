@@ -1,0 +1,34 @@
+# SamskritaDhvani — pinned requirements
+# Verified by install + import + smoke-run on 2026-09-22 (Phase 2, see Review.md).
+# Python: 3.14.4 (venv)
+#
+# NOTE: parselmouth on PyPI is a broken/unrelated package (its install pulls
+# `googleads` and fails). The Praat binding is published as `praat-parselmouth`.
+
+# Core DSP / audio I/O
+numpy==2.5.3
+scipy==1.18.1
+soundfile==0.14.0
+librosa==1.0.0          # pulls numba 0.67.0 (transitive; Python 3.14-compatible)
+
+# HMM (GVR back-end)
+hmmlearn==0.3.3
+
+# Formants / pitch (SPD vowel & spectral axes)
+praat-parselmouth==0.4.7
+
+# Cross-check feature extractors (FR-03)
+python_speech_features==0.6
+
+# Devanagari <-> IAST deterministic transliteration (FR-13)
+indic_transliteration==2.3.82
+
+# DTW (SPD) — primary alignment is librosa.sequence.dtw; these are backups
+dtaidistance==2.5.1
+fastdtw==0.3.4
+
+# VAD / silence trimming
+webrtcvad==2.0.10
+
+# Testing
+pytest==9.1.1
