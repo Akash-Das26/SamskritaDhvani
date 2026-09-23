@@ -13,14 +13,27 @@ venv/
 # --- Large corpus holdings (kept on disk, not in version control) ---
 # Vāksañcayaḥ ASR corpus: 46,010 MP3s (2.1 GB), CC BY-NC 4.0 — local-only copy (untracked 2026-09-23)
 corpus/vaksancayah/
-# ASR-Sanskrit HF clone: parquet-only Whisper features, excluded per PROVENANCE.md GVR-04
-ASR-Sanskrit/
 # Vedavani: embedded git-lfs clone (HF). The parent repo cannot track its
 # contents (incl. MANIFEST.csv / split CSVs referenced by PROVENANCE.md) —
 # kept local-only; re-clone from huggingface.co/datasets/sanganaka/Vedavani-Dataset
 corpus/vedavani/
 # Mahabharata parva audio (2.5 GB) — per-repo READMEs stay tracked
 corpus/mahabharata_audio/**/mp3/
+
+# --- HuggingFace dataset clones ---
+ASR-Sanskrit/
+Vedavani-Dataset/
+Vedavani-main/
+
+# --- Raw data & corpora (local-only) ---
+# Vāksañcayaḥ ASR corpus root (alternate location)
+Vāksañcayaḥ- Sanskrit_ASR_Corpus/
+Vaksanca-master
+Vaksanca-master.zip
+# Parva audio (Mahabharata) — directories at root
+parva*/
+# Parquet data files (ASR-Sanskrit Whisper features)
+**/*.parquet
 
 # --- Misc ---
 *.log
