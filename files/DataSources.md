@@ -132,7 +132,9 @@ result.
   `parva04`, `parva12-001-100` — **no Bhishma Parva repo exists**, so
   this source contains no Bhagavad Gita audio. Dead end for GVR; the
   zips downloaded earlier (parva01/02/03/04/12) cover only non-Gita
-  parvas and are held unextracted pending a use decision.
+  parvas. **RESOLVED 2026-09-23 (Phase 6):** found **extracted on disk**
+  (not zips); decision logged — kept as a low-priority depth/backup
+  source, untracked, at `corpus/mahabharata_audio/`.
 - **Use for:** ~~A second, independently-sourced reciter for GVR~~ (useful
   for the "multiple recitations per verse, multiple reciters" goal in
   `Implementation.md` §5.1, which reduces single-reciter overfitting in
@@ -167,7 +169,8 @@ not contain Gita content; it's Rig/Atharva Veda).
   optionally, a stretch-goal ablation showing the SPD/GVR pipeline
   generalizes beyond Gita-only material.
 - **ACQUIRED + SWEPT 2026-09-23 (full HF clone present at repo root
-  `Vedavani-Dataset/`, 6.4 GB):** index integrity verified first —
+  `corpus/vedavani/` (moved from repo root `Vedavani-Dataset/` during the
+  Phase 6 cleanup, 2026-09-23), 6.4 GB):** index integrity verified first —
   30,779 CSV rows across train/val/test ↔ 30,779 on-disk files, 0
   missing, 0 duplicates, total 54.38 h (matches the paper's stats).
   DataIntegrity §4 sweep of all 30,799 on-disk files (MANIFEST.csv):
@@ -184,6 +187,12 @@ not contain Gita content; it's Rig/Atharva Veda).
   listen-through (§4 step 1) **COMPLETE 2026-09-23**: automated
   515-file sample pass (incl. all 299 clipped files) + owner review of
   the 12 evidence-pack renders — see PROVENANCE.md GVR-03.
+
+  *Note 2026-09-23:* a user-supplied Google Drive folder re-sharing
+  5,499 Atharvaveda WAVs (Kanda 1–13) + the three split CSVs was
+  verified as a **byte-identical subset of this dataset** (filenames,
+  CSVs, and 20/20 sampled sha256 all match) — recorded as a
+  corroborating mirror under PROVENANCE.md GVR-03; nothing to install.
 
 ### 2.2 ASR-Sanskrit (HuggingFace)
 

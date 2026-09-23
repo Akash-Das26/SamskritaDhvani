@@ -126,13 +126,13 @@ pipeline-ineligible until the owner's verdict is logged.
 | **AIKosh mirror (verified live 2026-09-22)** | `https://aikosh.indiaai.gov.in/home/datasets/details/v_ksa_caya_sanskrit_asr_corpus.html` |
 | **License (corpus's own page, CC badge, verified 2026-09-22)** | **CC BY-NC 4.0** — Creative Commons Attribution–NonCommercial 4.0 International. Usable for this academic (non-commercial) project with attribution. |
 | **License (AIKosh listing metadata API, verified 2026-09-22)** | ~~CC0 1.0 Public Domain~~ **RESOLVED 2026-09-22:** the corpus archive's own README states **CC BY-NC 4.0**; the corpus site's CC badge agrees. The AIKosh "CC0" label is wrong — corpus README is authoritative. **CC BY-NC 4.0 governs.** |
-| **Acquisition status** | **ACQUIRED 2026-09-22** — full archive `vaksancayah_sanskrit_asr_corpus_v1.zip` (2.0 GB, 45,953 MP3s, 54 speaker dirs) downloaded, held at repo root (unextracted); Kaldi recipe zip `Vaksanca-master.zip` also present. Verified layout: `spNNN/spNNN-NNNNNN_TEXTID.mp3`; transcripts `Transcript/Devanagari/spNNN.txt` + `Transcript/SLP1/spNNN.txt`, TSV `<uttID>\t<text>`. Official README split: train sp001/002/003/004/006/008/009/012/016/019/020/021, val sp005/013/014/017, test sp007/010/011/015/018/022, OOD sp023–027. |
+| **Acquisition status** | **ACQUIRED 2026-09-22** — full archive `vaksancayah_sanskrit_asr_corpus_v1.zip` (2.0 GB, 45,953 MP3s, 54 speaker dirs) downloaded, held at repo root (unextracted); Kaldi recipe zip `Vaksanca-master.zip` also present. **Amended 2026-09-23 (Phase 6 cleanup):** the archive has been extracted and now sits at `corpus/vaksancayah/` (46,010 MP3s verified on disk). The master zip itself is **not present at the repo root** any more; its location is an open item — re-download from the corpus site if a provenance-anchored archive copy is needed. Verified layout: `spNNN/spNNN-NNNNNN_TEXTID.mp3`; transcripts `Transcript/Devanagari/spNNN.txt` + `Transcript/SLP1/spNNN.txt`, TSV `<uttID>\t<text>`. Official README split: train sp001/002/003/004/006/008/009/012/016/019/020/021, val sp005/013/014/017, test sp007/010/011/015/018/022, OOD sp023–027. |
 | **Content** | 78+ hours, 45,953 sentence recordings, 22 kHz, multi-speaker, multi-text: Śāstras, contemporary stories, radio programs, extempore discourse. AIKosh tags include "Bhagvadgita" — Gita subset must be filtered by transcript matching (DataSources.md §1.1 caveat). File size: ~1.97 GB (per AIKosh stats: 2,059,272,842 bytes). |
 | **Audio format** | MP3 (convert to WAV for feature extraction per Implementation.md §3) |
 | **Corpus paper** | Adiga et al., ACL Findings 2021. arXiv: https://arxiv.org/abs/2106.05852 |
 | **Recitation tradition** | Multi-speaker; per-recording tradition not documented in metadata — must spot-check transcripts (DataIntegrity.md §4 step 1). |
 | **Use for** | Primary GVR training/eval after Gita subset is filtered; non-Gita portions for general front-end validation (DataSources.md §2.3). |
-| **Local directory** | `data/gvr/vaksancayah/` (to be created at download time) |
+| **Local directory** | `corpus/vaksancayah/` (amended 2026-09-23, Phase 6: moved from repo root `Vāksañcayaḥ- Sanskrit_ASR_Corpus/` and untracked in git — kept local-only, ignored by `.gitignore`) |
 
 **Gita-subset check (DataSources.md §5 item, resolved 2026-09-22):**
 transcripts were grepped for canonical Gita verse markers after
@@ -179,7 +179,7 @@ used; keep zip as the provenance-anchored master copy.
 | **Content** | 30,779 verse-unit recordings from the **Rig Veda (20,782) + Atharva Veda (9,997)**, ~54 h, Devanagari transcripts incl. prosodic markers, 80/10/10 official split |
 | **Audio format** | WAV PCM_16 mono — 29,355 @ 16 kHz; 1,442 @ 44.1 kHz + 2 @ 48 kHz (see sweep flags) |
 | **Acquisition date** | 2026-09-23 |
-| **Acquired by** | Full HF clone (git LFS) by the project owner; local dir `Vedavani-Dataset/` (6.4 GB) |
+| **Acquired by** | Full HF clone (git LFS) by the project owner; local dir `corpus/vedavani/` (6.4 GB; moved from repo root `Vedavani-Dataset/` during the Phase 6 cleanup, 2026-09-23) |
 | **Use for** | **Not Gita content** — general front-end validation pool (DataSources.md §2.1) and optional "generalizes beyond Gita" ablation. Not a GVR training corpus under the current scope. |
 | **Local directory** | `Vedavani-Dataset/` (batches 1–4; CSVs train/validation/test) |
 
@@ -217,6 +217,16 @@ restriction unchanged: the 299 peak-flagged files remain barred from
 reference-material duty, and any verse-level classification use
 requires a text-based re-split (leak rule in Review.md).
 
+**Corroborating mirror (verified 2026-09-23):** a public Google Drive
+folder (user-supplied, ID `1bDE8Vlm9Be-Lf2Tab12SWQ5vrwfvTf0S`) re-shares
+a subset of this corpus — 5,499 WAVs, exclusively Atharvaveda Kanda
+1–13 — under identical filenames. Verified: all 5,499 names already in
+the local index (0 new); the three split CSVs byte-identical to the
+local ones; 20/20 sampled files sha256-identical to `MANIFEST.csv`.
+**No files were taken from it** (would duplicate the corpus); logged
+as an independent availability mirror. Its content inherits this
+entry's license and provenance (Apache-2.0, sanganaka).
+
 ---
 
 ### GVR-04 · ASR-Sanskrit (komalsai234, Hugging Face) — EXCLUDED
@@ -238,7 +248,7 @@ requires a text-based re-split (leak rule in Review.md).
 | Deshpande *Saṃskṛta-Subodhini* (UMich) | **DEAD LINK — unrecoverable** | DNS timeout on `www.umich.edu/~iinet/csas/publications/sanskrit/audio.html`; Wayback CDX check 2026-09-22 shows **zero successful audio captures** for any `umich.edu` Sanskrit audio path (only 404 captures of attempted URLs). Cannot acquire from any channel. | 2026-09-22 |
 | Forvo.com (Sanskrit crowdsourced) | **PLAN SET — manual only** | ToS prohibits bulk/automated scraping. Plan (2026-09-22): after the SPD word list is finalized from Hall/Loyola material, download the ~20–30 word clips **manually, one at a time**, logging each clip's speaker username/country in this file; fluency is unverified, so Forvo clips serve as cross-check material only, never sole references. | 2026-09-22 |
 | archive.org Gita audio (Ranganathan, Paudwal) | **Excluded** | No `licenseurl` metadata — cannot enter corpus per DataIntegrity.md Rule 2 without explicit permission. Confirmed excluded. | 2026-09-22 |
-| mahabharata-audio-2018 (GitHub) | **Checked — DEAD END for Gita** | Org has exactly 6 public repos (parva01-001-100, parva01-101-233, parva02, parva03, parva04, parva12-001-100) — **no Bhishma Parva repo; no Gita audio**. **License resolved 2026-09-23:** project page declares **CC BY-SA 4.0** (per-file named reciters; archive item `mahAbhArata-mUla-paThanam-GP` carries per-file creator metadata but **no `licenseurl` field** — license basis is the project page's declaration). Zips held unextracted pending a use decision. | 2026-09-23 |
+| mahabharata-audio-2018 (GitHub) | **Checked — DEAD END for Gita** | Org has exactly 6 public repos (parva01-001-100, parva01-101-233, parva02, parva03, parva04, parva12-001-100) — **no Bhishma Parva repo; no Gita audio**. **License resolved 2026-09-23:** project page declares **CC BY-SA 4.0** (per-file named reciters; archive item `mahAbhArata-mUla-paThanam-GP` carries per-file creator metadata but **no `licenseurl` field** — license basis is the project page's declaration). **RESOLVED 2026-09-23 (Phase 6):** the sources were found **extracted on disk** (not zips); decision logged — kept as a low-priority depth/backup source, untracked, at `corpus/mahabharata_audio/` (audio ignored, READMEs tracked). | 2026-09-23 |
 
 ---
 

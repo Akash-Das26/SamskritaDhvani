@@ -397,6 +397,22 @@ total), and the Vāksañcayaḥ dataset-metadata PDF.
    license basis is the project page's declaration. Status unchanged
    for GVR: 3 parvas only, no Bhīṣma Parva, no Gita audio. §1.3 and
    the PROVENANCE excluded table updated accordingly.
+5. **User-supplied Google Drive folder — verified DUPLICATE of GVR-03
+   (Vedavani); nothing to install.** Folder
+   `1bDE8Vlm9Be-Lf2Tab12SWQ5vrwfvTf0S` (public, checked 2026-09-23)
+   holds `Audio_files/` + `train/validation/test.csv`. Inspection via
+   the public folder listing: **5,499 unique WAVs, exclusively
+   `Atharvaveda_Kanda_1..13`** (Vedavani naming). Identity checks: all
+   5,499 filenames already exist in the local Vedavani index (**0 new
+   files**); the three CSVs are **byte-identical row-for-row** to the
+   local `Vedavani-Dataset/{train,validation,test}.csv`
+   (24,623/3,078/3,078 data rows, same file→split assignment); 20
+   files sampled across all 12 kandas → **20/20 sha256 match** against
+   `MANIFEST.csv`. Disposition: **no download into the corpus** —
+   installing would only create sha-duplicates, which DataIntegrity
+   §4 excludes. Logged in PROVENANCE.md GVR-03 as a corroborating
+   availability mirror; content inherits GVR-03 license/provenance
+   (Apache-2.0, sanganaka). Nothing further pending on this source.
 
 ### Phase 4 (Coding) —
 
@@ -537,10 +553,85 @@ built and tested.**
 - _(fill in: command run, pass/fail, actual accuracy/correlation
   numbers with the exact script used to produce them)_
 
-### Phase 6 (Maintenance) — Data Integrity Sweep
+### Phase 6 (Maintenance) — repo cleanup, hygiene, and structure pass
 
-_(fill in using the table format from `DataIntegrity.md` §4 once a
-sweep has actually been run)_
+**Date:** 2026-09-23 · **Phase:** 6 · **Scope:** cleanup-and-organize
+only — no feature work, no audio-sweep-triggering corpus change
+(no new audio entered the pipeline; the §4 table below stays unfilled
+until the first lazy-extraction sweep, Open Item 6).
+
+**Inventory findings (local ↔ GitHub):**
+
+- 0 tracked files missing locally; branch in sync with `origin/main`
+  at `955c9f95` before this pass.
+- 11,300 untracked + 5 modified files locally. Breakdown: 10,097 WAVs
+  in `Audio_files/` (2.2 GB); 1,104 MP3s + metadata across 6 untracked
+  `parva*-master/` dirs (2.5 GB); 67 untracked but **should-be-tracked**
+  `data/spd/` files (63 Loyola MP3s + `MANIFEST.csv`, 3 valid Hall
+  MP3s); 12 `Vedavani-main/` code files; 14 GB `ASR-Sanskrit/` clone;
+  13 GB `Vedavani-Dataset/` WAVs (HF clone); 5 modified tracked files
+  (valid skpro_00/02 MP3s vs git's 0-byte stubs + 3 doc updates).
+- Hygiene: **96 tracked `.pyc`** (90 in `Vaksanca-master/`, 6 project),
+  **7 tracked `.DS_Store`**, **no `.gitignore` at all**.
+- Provenance doc discrepancies: PROVENANCE GVR-01 claimed the master
+  zip "held at repo root" — absent; mahabharata "zips held unextracted"
+  — actually found extracted on disk.
+- **Bucket (b) verification:** all 10,097 `Audio_files/` names match
+  the Vedavani `MANIFEST.csv` index; sha256-16 spot-checks 11/11 match;
+  sampled files byte-identical (`cmp`) to `Vedavani-Dataset/AudioFiles/`
+  copies; 6 are `(1)`-suffixed re-download duplicates of files in the
+  same dir. No multi-reciter material involved (Vedavani dup check
+  against DataIntegrity §1.4/§3.3: identical sha = same recording,
+  not cross-reciter variation).
+
+**Removed / untracked (owner-approved, with reasoning):**
+
+| Action | Count | Bucket / reason |
+|---|---:|---|
+| Deleted `Audio_files/` WAVs | 10,097 (2.2 GB) | (b) byte-verified duplicates of `corpus/vedavani/` content |
+| Untracked + deleted `.pyc` | 96 | (a) build artifacts (90 upstream-committed in Vaksanca, 6 local) |
+| Untracked + deleted `.DS_Store` | 7 | (a) macOS junk |
+| Deleted local `__pycache__/`, `.pytest_cache/` | 6 dirs + 1 | (a) caches |
+| Deleted `.venv/` | — | (a) recreatable from pinned `requirements.txt` |
+| Deleted `.kilo/` (+ `git worktree remove capable-bird`) | — | (a) tool state, deregistered properly |
+| Deleted `SVP/Ques` | 1 | owner decision (course revision notes) |
+| Deleted `files/TEST QUESTION_31_07_2026.md` | 1 | owner decision (coursework file in project docs) |
+| Untracked Vāksañcayaḥ corpus (kept local) | 46,010 | owner decision — local-only copy, `.gitignore`d |
+| Untracked mahabharata audio, kept READMEs | 1,104 MP3s | owner decision — keep + reorganize |
+| Untracked Vedavani WAVs/HF clone (kept local) | 30,799 WAVs | embedded git-lfs clone; parent repo cannot track it |
+
+**Structure adopted (owner-approved; Implementation.md §3 split):**
+
+- `corpus/vaksancayah/` (local-only), `corpus/vedavani/` (local-only
+  HF clone), `corpus/vedavani-code/` (12 files tracked),
+  `corpus/mahabharata_audio/parva*` (18 metadata files tracked),
+  `corpus/vaksancayah-dataset-metadata.pdf`.
+- `third_party/vaksanca/` + `third_party/Vaksanca-master.zip` —
+  1,133 tracked files moved (git recorded 1,132 R100 renames + the
+  separately-modified zip blob).
+- `.gitignore` created (caches, tool state, corpus audio holdings).
+- PROVENANCE.md (GVR-01 zip status + local dir; GVR-03 path;
+  mahabharata disposition) and DataSources.md (§1.3 parva status;
+  §2.1 path) amended in the same commit (Ground Rule 5).
+
+**Actual result (commands run, real output):**
+
+- `.venv/bin/python -m pytest tests/ -q` → **49 passed** before the
+  pass (baseline) and **49 passed** after the moves/renames (code
+  sources untouched by this pass; venv removed after the verified run).
+- `git diff --cached --stat` → 47,350 files changed, 1,171
+  insertions(+), 92,268 deletions(-). Post-commit tracked tree:
+  **1,299 files** (from 47,316).
+
+**Open after this pass:** master Vāksañcayaḥ zip missing (re-download
+if a provenance-anchored archive copy is needed); `corpus/vedavani-code/`
+license unverified (tracked, flagged); `.git` still ~2.1 GB from the
+committed corpus — history purge would be a separate explicit unit of
+work (Ground Rules 2/8), not done here.
+
+_(The Data Integrity Sweep table below is left unfilled — no new audio
+sweep was required by this pass; next sweep runs at first lazy
+extraction per Open Item 6.)_
 
 | Item (word/verse) | Samples | Corrupted found/excluded | Duplicates | Cross-split leaks (GVR only) | Provenance on file? | Label spot-checked? |
 |---|---|---|---|---|---|---|
@@ -585,8 +676,11 @@ sweep has actually been run)_
    self-recording path.
 6. Extract from the Vāksañcayaḥ archive only the subsets actually used
    (lazy extraction), running the §4 per-file sweep at that point.
-7. Decide keep/delete for the mahabharata-audio parva zips (no Gita
-   content; candidate for deletion at next cleanup).
+7. ~~Decide keep/delete for the mahabharata-audio parva zips (no Gita
+   content; candidate for deletion at next cleanup).~~ **RESOLVED
+   2026-09-23 (Phase 6):** kept as a low-priority depth/backup source,
+   untracked, at `corpus/mahabharata_audio/` (owner decision); audio
+   ignored, per-repo READMEs tracked.
 8. Cross-check SPD's automated similarity score against human/
    instructor ratings (NFR-10 in `SRS.md`).
 9. Report GVR accuracy on a real held-out split with a confusion matrix
@@ -603,7 +697,9 @@ sweep has actually been run)_
 - **0-byte Hall downloads** (skpro_00, skpro_02 from the prior
   acquisition attempt): detected by the §4 sweep, re-downloaded with a
   referer header, re-swept clean. Root cause: no referer/UA on the
-  first attempt plus a transient DNS failure on the retry.
+  first attempt plus a transient DNS failure on the retry. Valid files
+  committed to git 2026-09-23 (Phase 6) — the repo previously held the
+  0-byte versions.
 
 ## Changes Made This Session
 
