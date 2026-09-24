@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif:wght@500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#56423d", "on-background": "#1c1b1a", "on-surface": "#1c1b1a", "surface-container-highest": "#e6e2de", "on-tertiary": "#ffffff", "tertiary-container": "#7b5503", "secondary-container": "#ff866b", "surface-container-low": "#f7f3ef", "on-tertiary-fixed": "#281900", "secondary": "#a13f2a", "inverse-surface": "#31302e", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#812815", "on-primary-fixed": "#3c0800", "surface-bright": "#fdf8f5", "surface-variant": "#e6e2de", "primary": "#7e260f", "background": "#fdf8f5", "inverse-primary": "#ffb4a2", "tertiary": "#5d3f00", "on-tertiary-container": "#ffcd7d", "surface": "#fdf8f5", "surface-dim": "#ddd9d6", "secondary-fixed-dim": "#ffb4a4", "surface-tint": "#a13f26", "outline-variant": "#ddc0b9", "on-error-container": "#93000a", "on-primary": "#ffffff", "primary-fixed": "#ffdbd2", "on-primary-container": "#ffc9bc", "error": "#ba1a1a", "on-primary-fixed-variant": "#812811", "outline": "#8a726c", "inverse-on-surface": "#f4f0ec", "on-secondary-fixed": "#3e0500", "tertiary-fixed": "#ffdead", "primary-container": "#9e3d24", "on-tertiary-fixed-variant": "#604100", "tertiary-fixed-dim": "#f2be68", "surface-container-lowest": "#ffffff", "surface-container-high": "#ece7e4", "on-secondary-container": "#741f0d", "primary-fixed-dim": "#ffb4a2", "on-error": "#ffffff", "surface-container": "#f1ede9", "error-container": "#ffdad6", "secondary-fixed": "#ffdad3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "2rem", "space-md": "1rem", "margin-sm": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "gutter-sm": "1rem", "gutter": "1.5rem" }, "fontFamily": { "label-sm": ["JetBrains Mono"], "label-lg": ["Inter"], "headline-sm": ["Noto Serif"], "headline-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"], "label-md": ["JetBrains Mono"], "body-lg": ["Inter"], "code": ["JetBrains Mono"], "display": ["Noto Serif"], "headline-md": ["Noto Serif"], "body-sm": ["Inter"], "body-md": ["Inter"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "code": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }] } } } };</script>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md text-body-md">
+    <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="w-full bg-surface-container-low px-gutter py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>Computational Linguistics &amp; Acoustic Phonetics
+                    Lab</span><span class="opacity-40">·</span><span>v0.4.2-alpha</span></div>
+            <div class="flex items-center gap-space-sm font-code text-code text-on-surface-variant"><span
+                    class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span><span>Acoustic Model: Active
+                    [Kaldi/PyTorch]</span><span class="opacity-40">·</span><span>Local Audio Engine Ready</span></div>
+        </div>
+        <div class="h-16 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+            <div class="flex items-center gap-space-md"><img alt="SamskritaDhvani Emblem"
+                    class="h-8 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VHRkD0hXzNZT5RSyKGP-59Nz882SZZ0vJcZuoCFnWEHTX-XfjVd47pESeRrP924p7c6chfN0qOJLBOjbDkrAv9-NviCgIiXm9Q53OMu9OiMTbwpkROvxewqHjoAS6KO8euE8v1PY9qISjAIvnWTtFe5zgiVB8yhKSurBDnBtBqaxxkV_vpCSYRVV4-9lBekfkzOELV2VoomYjp4VYgE4lDyAIpDq8-5TVHGxdH5ShC-qlKS5P1X0TC02k" />
+                <div class="flex flex-col"><span
+                        class="font-headline-sm text-headline-sm text-primary tracking-tight">SamskritaDhvani</span><span
+                        class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">संस्कृतध्वनि ·
+                        Phonetic Architecture</span></div>
+            </div>
+            <nav class="hidden md:flex items-center gap-space-sm font-label-lg text-label-lg"
+                data-active-classes="bg-primary-container text-on-primary font-medium rounded"><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="corpus-reader" href="#">Corpus Reader</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="spectrogram-workbench" href="#">Spectrogram Workbench</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="prosodic-matrix" href="#">Prosodic Matrix</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="acoustic-models" href="#">Acoustic Models</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="research-documentation" href="#">Documentation</a></nav>
+            <div class="flex items-center gap-space-md">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-22 bg-surface min-h-screen">
+        <div class="flex flex-col w-full">
+            <div class="max-w-4xl w-full mx-auto px-gutter py-space-xl flex flex-col gap-space-xl">
+                <!-- Top Breadcrumb & Archival Context -->
+                <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-space-xs">
+                    <div
+                        class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">
+                        <span class="inline-block w-2 h-2 rounded-full bg-primary"></span>
+                        <span>उच्चारण-परिशीलनम् · Pronunciation Laboratory</span>
+                        <span class="opacity-40">/</span>
+                        <span class="text-primary font-medium">Diagnostic Module 01</span>
+                    </div>
+                    <div class="font-code text-code text-on-surface-variant">
+                        <span>SD-PhonSpec-Alignment</span>
+                        <span class="mx-1.5 opacity-30">·</span>
+                        <span>Acoustic Tolerances: Strict (±30Hz)</span>
+                    </div>
+                </div>
+                <!-- SECTION 1: Word Selection & Canonical Acoustic Reference -->
+                <section class="flex flex-col gap-space-md">
+                    <!-- Search & Classification Filter Pills -->
+                    <div
+                        class="bg-surface-container-low rounded-xl p-space-md flex flex-col sm:flex-row gap-space-md items-stretch sm:items-center justify-between shadow-sm">
+                        <div class="relative flex-1">
+                            <span
+                                class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span>
+                            <input
+                                class="w-full pl-9 pr-4 py-space-xs bg-surface-container-lowest rounded text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary shadow-sm"
+                                id="phoneticSearchInput"
+                                placeholder="Search lexeme, śloka index, or IAST transliteration..." type="text"
+                                value="कृष्ण (kṛṣṇa) — Śrīmad-Bhagavad-Gītā 1.28" />
+                        </div>
+                        <div class="flex items-center gap-space-xs overflow-x-auto pb-1 sm:pb-0">
+                            <button
+                                class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-primary text-on-primary whitespace-nowrap transition-colors">
+                                Saṃyuktākṣara
+                            </button>
+                            <button
+                                class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors">
+                                Svara &amp; Vyañjana
+                            </button>
+                            <button
+                                class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors">
+                                Vedic Svara
+                            </button>
+                            <button
+                                class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors">
+                                Anusvāra-Sandhi
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Target Display Card -->
+                    <div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+                        <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase mb-space-xs">Canonical
+                                    Target Lexeme</span>
+                                <div class="flex items-baseline gap-space-md">
+                                    <span
+                                        class="font-headline-lg text-display text-primary tracking-tight font-headline-lg">कृष्ण</span>
+                                    <span
+                                        class="font-headline-md text-headline-md text-on-surface-variant italic font-headline-md">kṛṣṇa</span>
+                                </div>
+                                <span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Noun (m.), vocative
+                                    / nominative singular · Rigvedic root √kṛṣ</span>
+                            </div>
+                            <!-- Epigraphic / Acoustic Target Micro-Readout -->
+                            <div
+                                class="bg-surface-container-lowest rounded-lg p-space-sm flex items-center gap-space-md shadow-sm">
+                                <div class="flex flex-col pr-space-sm">
+                                    <span class="font-label-sm text-label-sm text-on-surface-variant">F1 TARGET</span>
+                                    <span class="font-code text-label-md text-on-surface font-medium">420 Hz</span>
+                                </div>
+                                <div class="flex flex-col pr-space-sm">
+                                    <span class="font-label-sm text-label-sm text-on-surface-variant">F2 TARGET</span>
+                                    <span class="font-code text-label-md text-on-surface font-medium">1980 Hz</span>
+                                </div>
+                                <div class="flex flex-col pr-space-sm">
+                                    <span class="font-label-sm text-label-sm text-on-surface-variant">VOT LOCUS</span>
+                                    <span class="font-code text-label-md text-on-surface font-medium">14 ms</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-label-sm text-label-sm text-on-surface-variant">MĀTRĀ</span>
+                                    <span class="font-code text-label-md text-primary font-medium">2.0 (गुरु)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Technical Difficulty Axis Tags -->
+                        <div class="flex flex-wrap gap-space-xs items-center">
+                            <span
+                                class="px-space-sm py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[13px] text-primary">category</span>
+                                Consonant cluster: [k-ṣ-ṇ]
+                            </span>
+                            <span
+                                class="px-space-sm py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[13px] text-primary">tune</span>
+                                Ṣ-ṇ Retroflex Sandhi (मूर्धन्य-प्रचय)
+                            </span>
+                            <span
+                                class="px-space-sm py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-on-surface-variant">
+                                Uccāraṇa Sthāna: Kaṇṭhya → Mūrdhanya
+                            </span>
+                            <span
+                                class="px-space-sm py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-on-surface-variant">
+                                Prayatna: Ābhyantara (Spṛṣṭa / Īṣat-spṛṣṭa)
+                            </span>
+                        </div>
+                        <!-- Reference Playback Bar & Synthesizer Visual -->
+                        <div
+                            class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+                            <div class="flex items-center gap-space-md w-full sm:w-auto">
+                                <button
+                                    class="flex items-center justify-center w-10 h-10 rounded-full bg-primary hover:bg-secondary text-on-primary transition-all shadow-sm"
+                                    id="playRefBtn" title="Play canonical master recitation">
+                                    <span class="material-symbols-outlined text-[20px]"
+                                        id="playRefIcon">volume_up</span>
+                                </button>
+                                <div class="flex flex-col">
+                                    <div class="flex items-center gap-space-xs">
+                                        <span class="font-body-md text-body-md font-medium text-on-surface">Archival
+                                            Recitation</span>
+                                        <span
+                                            class="px-1.5 py-0.5 bg-surface-container rounded font-code text-[10px] text-on-surface-variant">48kHz
+                                            PCM</span>
+                                    </div>
+                                    <span class="font-body-sm text-body-sm text-on-surface-variant">0.84s · Master
+                                        Recitation [Pandit K. Sharma, Vedic Heritage Archive]</span>
+                                </div>
+                            </div>
+                            <!-- Synthetic Mini-Spectrogram / Energy Envelope Visual -->
+                            <div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+                                <div class="flex flex-col items-end">
+                                    <span
+                                        class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Canonical
+                                        Envelope</span>
+                                    <span class="font-code text-label-sm text-on-surface-variant">t₀: 0.00s — t₁:
+                                        0.84s</span>
+                                </div>
+                                <div
+                                    class="w-36 h-9 bg-surface-container-low rounded flex items-center px-2 gap-0.5 overflow-hidden">
+                                    <span class="w-1 h-2 bg-primary/40 rounded-full"></span>
+                                    <span class="w-1 h-3 bg-primary/50 rounded-full"></span>
+                                    <span class="w-1 h-5 bg-primary/70 rounded-full"></span>
+                                    <span class="w-1 h-7 bg-primary rounded-full"></span>
+                                    <span class="w-1 h-8 bg-primary rounded-full"></span>
+                                    <span class="w-1 h-6 bg-primary/80 rounded-full"></span>
+                                    <span class="w-1 h-4 bg-primary/60 rounded-full"></span>
+                                    <span class="w-1 h-3 bg-primary/40 rounded-full"></span>
+                                    <span class="w-1 h-6 bg-primary/70 rounded-full"></span>
+                                    <span class="w-1 h-8 bg-primary rounded-full"></span>
+                                    <span class="w-1 h-7 bg-primary rounded-full"></span>
+                                    <span class="w-1 h-5 bg-primary/80 rounded-full"></span>
+                                    <span class="w-1 h-3 bg-primary/50 rounded-full"></span>
+                                    <span class="w-1 h-2 bg-primary/30 rounded-full"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- SECTION 2: Recording Workbench & Acoustic Stream Acquisition -->
+                <section class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+                    <div class="flex items-center justify-between pb-space-xs">
+                        <div class="flex items-center gap-space-sm">
+                            <span
+                                class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-semibold">Acoustic
+                                Stream Acquisition</span>
+                            <span
+                                class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-code text-code">48.0
+                                kHz · 24-bit PCM</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 font-code text-label-sm text-on-surface-variant">
+                            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse" id="micStatusDot"></span>
+                            <span id="micStatusText">Hardware Stream Active</span>
+                        </div>
+                    </div>
+                    <!-- Workbench Main Capture Surface -->
+                    <div class="bg-surface-container-lowest rounded-lg p-space-lg flex flex-col gap-space-md shadow-sm">
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-space-lg">
+                            <!-- Large Record Button with Pulse Motif -->
+                            <div class="flex items-center gap-space-md">
+                                <button
+                                    class="relative w-16 h-16 rounded-full bg-primary hover:bg-secondary text-on-primary flex items-center justify-center transition-transform active:scale-95 shadow-md group"
+                                    id="recordBtn" title="Click to capture speech sample">
+                                    <div
+                                        class="absolute inset-0 rounded-full bg-primary/20 scale-125 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                                    </div>
+                                    <span class="material-symbols-outlined text-[30px]" id="recordBtnIcon">mic</span>
+                                    <span
+                                        class="absolute top-1 right-1 w-3 h-3 bg-surface-container-lowest rounded-full flex items-center justify-center">
+                                        <span class="w-2 h-2 bg-error rounded-full"></span>
+                                    </span>
+                                </button>
+                                <div class="flex flex-col">
+                                    <span class="font-body-md text-body-md font-medium text-on-surface"
+                                        id="recordingTitle">User Acoustic Sample</span>
+                                    <div class="flex items-center gap-space-xs font-code text-label-md text-primary font-medium"
+                                        id="timerDisplay">
+                                        <span class="material-symbols-outlined text-[14px]">timer</span>
+                                        <span>00:01.42 / 00:03.00 max</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Live Oscilloscope / Waveform Track View -->
+                            <div class="flex-1 w-full flex flex-col gap-1.5">
+                                <div class="w-full h-14 bg-surface-container-low rounded flex items-center justify-between px-3 gap-1 overflow-hidden relative"
+                                    id="waveformContainer">
+                                    <!-- Draggable / Visual Boundary Tics -->
+                                    <div
+                                        class="absolute top-0 bottom-0 left-[24%] w-px bg-primary/40 pointer-events-none">
+                                        <span
+                                            class="font-code text-[9px] text-primary/80 absolute top-1 left-1">/k/</span>
+                                    </div>
+                                    <div
+                                        class="absolute top-0 bottom-0 left-[54%] w-px bg-primary/40 pointer-events-none">
+                                        <span
+                                            class="font-code text-[9px] text-primary/80 absolute top-1 left-1">/ṣ/</span>
+                                    </div>
+                                    <div
+                                        class="absolute top-0 bottom-0 left-[82%] w-px bg-primary/40 pointer-events-none">
+                                        <span
+                                            class="font-code text-[9px] text-primary/80 absolute top-1 left-1">/ṇa/</span>
+                                    </div>
+                                    <!-- Interactive Waveform bars -->
+                                    <div class="h-3 w-1 bg-on-surface-variant/20 rounded-full"></div>
+                                    <div class="h-4 w-1 bg-on-surface-variant/30 rounded-full"></div>
+                                    <div class="h-7 w-1 bg-primary/60 rounded-full"></div>
+                                    <div class="h-10 w-1 bg-primary rounded-full"></div>
+                                    <div class="h-12 w-1 bg-primary rounded-full"></div>
+                                    <div class="h-8 w-1 bg-primary/80 rounded-full"></div>
+                                    <div class="h-5 w-1 bg-primary/50 rounded-full"></div>
+                                    <div class="h-4 w-1 bg-on-surface-variant/30 rounded-full"></div>
+                                    <div class="h-8 w-1 bg-primary/70 rounded-full"></div>
+                                    <div class="h-11 w-1 bg-primary rounded-full"></div>
+                                    <div class="h-12 w-1 bg-primary rounded-full"></div>
+                                    <div class="h-9 w-1 bg-primary/90 rounded-full"></div>
+                                    <div class="h-6 w-1 bg-primary/60 rounded-full"></div>
+                                    <div class="h-5 w-1 bg-primary/40 rounded-full"></div>
+                                    <div class="h-7 w-1 bg-primary/70 rounded-full"></div>
+                                    <div class="h-10 w-1 bg-primary rounded-full"></div>
+                                    <div class="h-12 w-1 bg-primary rounded-full"></div>
+                                    <div class="h-8 w-1 bg-primary/80 rounded-full"></div>
+                                    <div class="h-4 w-1 bg-on-surface-variant/40 rounded-full"></div>
+                                    <div class="h-2 w-1 bg-on-surface-variant/20 rounded-full"></div>
+                                </div>
+                                <!-- Alignment scale marker -->
+                                <div
+                                    class="flex items-center justify-between font-code text-[10px] text-on-surface-variant/70 px-1">
+                                    <span>0.00s</span>
+                                    <span>0.34s [k]</span>
+                                    <span>0.76s [ṣ]</span>
+                                    <span>1.15s [ṇ]</span>
+                                    <span>1.42s [end]</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Workbench Controls & Auxiliary Ingest Actions -->
+                        <div
+                            class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pt-space-xs">
+                            <div class="flex items-center gap-space-md font-body-sm text-body-sm">
+                                <button
+                                    class="flex items-center gap-1 text-primary hover:text-secondary font-medium transition-colors"
+                                    id="reRecordBtn">
+                                    <span class="material-symbols-outlined text-[16px]">replay</span>
+                                    <span>Re-record</span>
+                                </button>
+                                <span class="text-on-surface-variant/40">|</span>
+                                <button
+                                    class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors"
+                                    id="uploadAudioBtn">
+                                    <span class="material-symbols-outlined text-[16px]">upload_file</span>
+                                    <span>Upload audio file instead (.wav / .flac)</span>
+                                </button>
+                            </div>
+                            <div class="font-code text-label-sm text-on-surface-variant">
+                                Input: Default Mic (CoreAudio) · SNR: 32 dB · Clipping: <span
+                                    class="text-primary font-medium">None</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- SECTION 3: Phonetic Assessment & Spectral Similarity Result -->
+                <section class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+                    <!-- Diagnostic Run Header Bar -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+                        <div class="flex items-center gap-space-sm">
+                            <span
+                                class="px-2 py-0.5 bg-surface-container rounded font-label-sm text-label-sm text-on-surface font-medium">
+                                Diagnostic Output
+                            </span>
+                            <span class="font-code text-label-sm text-on-surface-variant">
+                                Generated at t+1.42s · Inference Model: <strong
+                                    class="font-normal text-on-surface">SD-PhonoNet-v1.4b</strong>
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm">
+                            <span class="material-symbols-outlined text-[15px]">verified</span>
+                            <span>Phonetic Alignment Verified</span>
+                        </div>
+                    </div>
+                    <!-- Headline Alignment Score & Analytical Conclusion -->
+                    <div
+                        class="bg-surface-container-lowest rounded-lg p-space-lg flex flex-col md:flex-row items-start md:items-center gap-space-lg shadow-sm">
+                        <!-- Percentage Hero Badge -->
+                        <div
+                            class="flex flex-row md:flex-col items-baseline md:items-center justify-center p-space-md bg-surface-container-low rounded-lg md:min-w-[140px] gap-space-xs">
+                            <div
+                                class="font-headline-lg text-[44px] leading-none text-primary font-semibold tracking-tight">
+                                78%</div>
+                            <div
+                                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider text-center mt-1">
+                                Overall Alignment
+                            </div>
+                        </div>
+                        <!-- Scholarly Diagnostic Sentence -->
+                        <div class="flex flex-col gap-space-xs flex-1">
+                            <span class="font-headline-sm text-headline-sm text-on-surface font-headline-sm">
+                                Mūrdhanya Locus Deviation Detected in Sibilant Cluster
+                            </span>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Target consonant cluster <span
+                                    class="font-code text-on-surface font-medium">[k-ṣ-ṇ]</span> manifests acceptable
+                                palatal onset, yet exhibits slight formant divergence in the retroflex locus (F2
+                                transition at 1980 Hz deviates by -120 Hz). Vowel mātrā temporal allocation adheres
+                                precisely to canonical 2.0 moraic duration.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Detailed 4-Metric Acoustic Alignment Matrix -->
+                    <div class="flex flex-col gap-space-md">
+                        <span
+                            class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant font-semibold">
+                            Component Accuracy Breakdown
+                        </span>
+                        <div class="grid grid-cols-1 gap-space-md">
+                            <!-- Bar 1: Vowel Accuracy -->
+                            <div
+                                class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-1.5 shadow-sm">
+                                <div class="flex items-baseline justify-between">
+                                    <div class="flex items-center gap-space-sm">
+                                        <span class="font-body-md text-body-md font-medium text-on-surface">Vowel
+                                            Accuracy (Svara-Śuddhi)</span>
+                                        <span
+                                            class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[F1/F2
+                                            Formant trajectory within ±35 Hz]</span>
+                                    </div>
+                                    <span class="font-code text-label-md font-semibold text-primary">84%</span>
+                                </div>
+                                <div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden relative">
+                                    <div class="bg-primary h-full rounded-full" style="width: 84%;"></div>
+                                </div>
+                                <div
+                                    class="flex justify-between font-code text-[10px] text-on-surface-variant/60 pt-0.5">
+                                    <span>0%</span>
+                                    <span>25%</span>
+                                    <span>50%</span>
+                                    <span>75%</span>
+                                    <span>100% (Exact Formant Overlap)</span>
+                                </div>
+                            </div>
+                            <!-- Bar 2: Consonant Accuracy -->
+                            <div
+                                class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-1.5 shadow-sm">
+                                <div class="flex items-baseline justify-between">
+                                    <div class="flex items-center gap-space-sm">
+                                        <span class="font-body-md text-body-md font-medium text-on-surface">Consonant
+                                            Accuracy (Vyañjana-Pāka)</span>
+                                        <span
+                                            class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[Retroflex
+                                            sibilant [ṣ] contact pressure &amp; aspiration]</span>
+                                    </div>
+                                    <span class="font-code text-label-md font-semibold text-primary">71%</span>
+                                </div>
+                                <div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden relative">
+                                    <div class="bg-primary h-full rounded-full" style="width: 71%;"></div>
+                                </div>
+                                <div
+                                    class="flex justify-between font-code text-[10px] text-on-surface-variant/60 pt-0.5">
+                                    <span>0%</span>
+                                    <span>25%</span>
+                                    <span>50%</span>
+                                    <span>75%</span>
+                                    <span>100% (Rigvedic Canonical Contact)</span>
+                                </div>
+                            </div>
+                            <!-- Bar 3: Duration Match -->
+                            <div
+                                class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-1.5 shadow-sm">
+                                <div class="flex items-baseline justify-between">
+                                    <div class="flex items-center gap-space-sm">
+                                        <span class="font-body-md text-body-md font-medium text-on-surface">Duration
+                                            Match (Kāla-Pramāṇa)</span>
+                                        <span
+                                            class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[Mātrā
+                                            temporal ratio: 1.04 vs 1.00 canonical]</span>
+                                    </div>
+                                    <span class="font-code text-label-md font-semibold text-primary">91%</span>
+                                </div>
+                                <div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden relative">
+                                    <div class="bg-primary h-full rounded-full" style="width: 91%;"></div>
+                                </div>
+                                <div
+                                    class="flex justify-between font-code text-[10px] text-on-surface-variant/60 pt-0.5">
+                                    <span>0%</span>
+                                    <span>25%</span>
+                                    <span>50%</span>
+                                    <span>75%</span>
+                                    <span>100% (Strict Moraic Synchronization)</span>
+                                </div>
+                            </div>
+                            <!-- Bar 4: Overall Spectral Match -->
+                            <div
+                                class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-1.5 shadow-sm">
+                                <div class="flex items-baseline justify-between">
+                                    <div class="flex items-center gap-space-sm">
+                                        <span class="font-body-md text-body-md font-medium text-on-surface">Overall
+                                            Spectral Match (Sāmyatā)</span>
+                                        <span
+                                            class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[Dynamic
+                                            Time Warping (DTW) distance: 0.182]</span>
+                                    </div>
+                                    <span class="font-code text-label-md font-semibold text-primary">78%</span>
+                                </div>
+                                <div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden relative">
+                                    <div class="bg-primary h-full rounded-full" style="width: 78%;"></div>
+                                </div>
+                                <div
+                                    class="flex justify-between font-code text-[10px] text-on-surface-variant/60 pt-0.5">
+                                    <span>0%</span>
+                                    <span>25%</span>
+                                    <span>50%</span>
+                                    <span>75%</span>
+                                    <span>100% (Zero Divergence Envelope)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Action Footer & Scientific Data Exports -->
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+                        <div class="flex items-center gap-space-md w-full sm:w-auto">
+                            <button
+                                class="px-space-md py-2.5 rounded bg-primary hover:bg-secondary text-on-primary font-body-sm text-body-sm font-medium flex items-center gap-2 transition-colors shadow-sm"
+                                id="tryAgainBtn">
+                                <span class="material-symbols-outlined text-[18px]">replay</span>
+                                <span>Try Again</span>
+                            </button>
+                            <a class="px-space-md py-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-[18px] text-primary">analytics</span>
+                                <span>Inspect Spectrogram in Workbench</span>
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-space-md">
+                            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary flex items-center gap-1 transition-colors"
+                                href="#" title="Download Praat compatible TextGrid annotation tier">
+                                <span class="material-symbols-outlined text-[16px]">file_download</span>
+                                <span>Export Phonetic TextGrid</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Privacy & Edge Verification Notice -->
+                    <div class="pt-space-xs text-center">
+                        <p class="font-body-sm text-body-sm text-on-surface-variant/70 italic">
+                            Scores are computed locally via WebAssembly acoustic feature extractors; no unencrypted
+                            voice streams are transmitted to external networks.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script>
+            // Micro-interaction behaviors for the acoustic diagnosis workbench
+            (function () {
+                const recordBtn = document.getElementById('recordBtn');
+                const recordIcon = document.getElementById('recordBtnIcon');
+                const timerDisplay = document.getElementById('timerDisplay');
+                const micStatusDot = document.getElementById('micStatusDot');
+                const micStatusText = document.getElementById('micStatusText');
+                const playRefBtn = document.getElementById('playRefBtn');
+                const playRefIcon = document.getElementById('playRefIcon');
+                const tryAgainBtn = document.getElementById('tryAgainBtn');
+                const reRecordBtn = document.getElementById('reRecordBtn');
+
+                let isRecording = false;
+                let timerInterval = null;
+                let seconds = 1.42;
+
+                function toggleRecording() {
+                    isRecording = !isRecording;
+                    if (isRecording) {
+                        recordBtn.classList.add('bg-error');
+                        recordBtn.classList.remove('bg-primary');
+                        recordIcon.textContent = 'stop';
+                        micStatusDot.classList.add('bg-error');
+                        micStatusText.textContent = 'Capturing Stream (Active)';
+
+                        let cur = 0;
+                        timerInterval = setInterval(() => {
+                            cur += 0.05;
+                            if (cur >= 3.00) {
+                                toggleRecording();
+                                return;
+                            }
+                            timerDisplay.innerHTML = `<span class="material-symbols-outlined text-[14px]">timer</span><span>00:0${cur.toFixed(2)} / 00:03.00 max</span>`;
+                        }, 50);
+                    } else {
+                        recordBtn.classList.remove('bg-error');
+                        recordBtn.classList.add('bg-primary');
+                        recordIcon.textContent = 'mic';
+                        micStatusDot.classList.remove('bg-error');
+                        micStatusText.textContent = 'Hardware Stream Active';
+                        clearInterval(timerInterval);
+                        timerDisplay.innerHTML = `<span class="material-symbols-outlined text-[14px]">timer</span><span>00:01.42 / 00:03.00 max</span>`;
+                    }
+                }
+
+                if (recordBtn) recordBtn.addEventListener('click', toggleRecording);
+                if (reRecordBtn) reRecordBtn.addEventListener('click', () => {
+                    if (!isRecording) toggleRecording();
+                });
+                if (tryAgainBtn) tryAgainBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+
+                // Reference audio playback simulation
+                let isPlayingRef = false;
+                if (playRefBtn) {
+                    playRefBtn.addEventListener('click', () => {
+                        isPlayingRef = !isPlayingRef;
+                        if (isPlayingRef) {
+                            playRefIcon.textContent = 'pause';
+                            setTimeout(() => {
+                                playRefIcon.textContent = 'volume_up';
+                                isPlayingRef = false;
+                            }, 840);
+                        } else {
+                            playRefIcon.textContent = 'volume_up';
+                        }
+                    });
+                }
+            })();
+        </script>
+    </main>
+    <footer class="w-full bg-surface-container-low py-space-lg">
+        <div
+            class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>© 2025 SamskritaDhvani Research Collective</span><span
+                    class="opacity-40">·</span><span>Open Philological License</span></div>
+            <div class="flex items-center gap-space-lg font-code text-code"><span>Svara-Vyanjana Real-time Alignment
+                    Engine</span><span>Kaldi/PyTorch Backend</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

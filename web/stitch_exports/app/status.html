@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+        name="viewport" />
+    <meta content="mobile_stack" name="shell-type" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif:ital,wght@0,400;0,600;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            .pb-safe {
+                padding-bottom: env(safe-area-inset-bottom, 0px);
+            }
+
+            .pt-safe {
+                padding-top: env(safe-area-inset-top, 0px);
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#57423c", "tertiary-fixed-dim": "#d3c4b6", "surface-bright": "#fef8f4", "on-secondary-fixed": "#1e1b18", "surface-variant": "#e7e1de", "on-surface": "#1d1b19", "tertiary-fixed": "#f0e0d1", "secondary-fixed-dim": "#ccc5c0", "primary": "#7d1e02", "on-background": "#1d1b19", "surface-container-highest": "#e7e1de", "inverse-surface": "#32302e", "on-secondary-container": "#68645f", "primary-fixed": "#ffdbd1", "on-primary-fixed-variant": "#852307", "tertiary": "#4a4035", "tertiary-container": "#62574c", "primary-container": "#9e3518", "surface-dim": "#dfd9d5", "surface-container-low": "#f9f2ef", "inverse-primary": "#ffb5a1", "on-tertiary-fixed-variant": "#4f453a", "surface-container-lowest": "#ffffff", "on-primary-container": "#ffc1b1", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "primary-fixed-dim": "#ffb5a1", "error-container": "#ffdad6", "on-tertiary-fixed": "#221a11", "background": "#fef8f4", "surface-tint": "#a63b1d", "secondary-fixed": "#e9e1db", "on-secondary-fixed-variant": "#4a4642", "surface-container-high": "#ede7e3", "on-tertiary-container": "#ddcdbf", "outline": "#8b716b", "surface": "#fef8f4", "on-secondary": "#ffffff", "on-error": "#ffffff", "on-primary-fixed": "#3c0800", "on-primary": "#ffffff", "outline-variant": "#dfc0b8", "error": "#ba1a1a", "secondary-container": "#e9e1db", "inverse-on-surface": "#f6f0ec", "secondary": "#625e59", "surface-container": "#f3ede9" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xs": "0.25rem", "space-md": "1rem", "margin": "1.5rem", "space-xl": "2.5rem", "margin-lg": "3rem", "gutter-lg": "2rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1.25rem" }, fontFamily: { "label-lg": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "label-md": ["JetBrains Mono"], "headline-sm": ["Noto Serif"], "body-lg": ["Noto Serif"], "headline-md": ["Noto Serif"], "label-sm": ["JetBrains Mono"], "headline-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"] }, fontSize: { "label-lg": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "22px", letterSpacing: "-0.005em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "19px", letterSpacing: "0em", fontWeight: "400" }], "label-md": ["11px", { lineHeight: "15px", letterSpacing: "0.04em", fontWeight: "500" }], "headline-sm": ["18px", { lineHeight: "28px", letterSpacing: "0.01em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "32px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "600" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "400" }], "headline-lg-mobile": ["24px", { lineHeight: "34px", letterSpacing: "0em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen">
+    <header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+        <div class="h-16 px-margin flex items-center justify-between gap-space-sm">
+            <div class="flex items-center gap-space-xs"><button
+                    class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors -ml-space-xs"
+                    onclick="history.back()"><span
+                        class="material-symbols-outlined text-[22px]">arrow_back_ios_new</span></button>
+                <div class="flex flex-col min-w-0"><span
+                        class="font-label-sm text-label-sm text-secondary truncate">Analysis Inspector</span>
+                    <h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Verse Scansion Inspector</h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-space-sm flex-shrink-0">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="flex flex-col relative w-full px-margin pt-16 pb-space-xl bg-surface">
+        <div class="flex flex-col w-full pb-space-lg space-y-space-md">
+            <!-- Archival Context Bar -->
+            <div class="flex flex-col space-y-space-xs pt-space-xs">
+                <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">REGISTRY
+                        INTROSPECTION · v0.4.2</span>
+                    <span class="font-label-sm text-label-sm text-primary font-medium tracking-normal">संविधान &amp;
+                        प्रतिरूप स्थितिः</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface">Corpus &amp; Model Status</h2>
+                <p class="font-body-sm text-body-sm text-secondary">What the tool actually knows, read live from project
+                    registries.</p>
+            </div>
+            <!-- Visual Archival Anchor (Palm-leaf manuscript & laboratory audio spectrogram) -->
+            <div class="w-full relative rounded-xl overflow-hidden shadow-sm bg-surface-container-high h-28">
+                <img class="w-full h-full object-cover mix-blend-multiply opacity-80"
+                    data-alt="Close-up archival photograph of a Sanskrit palm-leaf manuscript preserved with vermilion ink annotations resting beside a modern computer monitor showing acoustic spectrograms and waveform curves in deep saffron and warm neutral tones, soft laboratory daylight, scholarly quietude."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQc0dGgrUVNd54GKcRSsypqOQJKNVGjCt0MjrQZslaGsqX1pks1XHAZuRJVrQU8_A0hCur16t6p-a4HQZ8zr8ZORrOymRBhcRWiKNlFV7Rr2imn_GSnFLG-tH2ii22uGfmxKp4rLSegbA6NoR0bB3jdT1wvAlBRQ6OfPsa6dwk17bll9PFzU-dDuHkHLhHyEcPNAoaghM-XlLEuQRHI7rLGJxvoJI8MjIk-SBL7C6FkqDJMk8zDzm9" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent flex items-end p-space-sm">
+                    <div class="flex items-center gap-space-xs">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        <span class="font-label-sm text-label-sm text-on-surface font-medium">LIVE PARSER: ACTIVE MEMORY
+                            MOUNT</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Registry State Cards Stack -->
+            <div class="flex flex-col space-y-space-sm">
+                <!-- Card 1: Pronunciation Word List -->
+                <div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <span
+                                class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Lexical
+                                Index · उच्चारणपदसूची</span>
+                            <span class="font-headline-sm text-headline-sm text-on-surface mt-0.5 block">Pronunciation
+                                Word List</span>
+                        </div>
+                        <span
+                            class="inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">
+                            UNVERIFIED
+                        </span>
+                    </div>
+                    <div class="mt-space-md flex items-baseline gap-space-xs">
+                        <span class="font-label-md text-[36px] leading-none font-semibold text-primary">29</span>
+                        <span class="font-label-md text-label-md text-secondary">tokens indexed</span>
+                    </div>
+                    <div class="mt-space-sm pt-space-xs border-t-0 flex flex-col space-y-space-xs">
+                        <div class="flex items-center gap-1.5 text-secondary">
+                            <span class="material-symbols-outlined text-[15px] text-primary">info</span>
+                            <span class="font-body-sm text-body-sm text-secondary">Reference audio: not yet verified
+                                against Vedic recitation norms</span>
+                        </div>
+                        <p
+                            class="font-label-sm text-label-sm text-secondary/90 bg-surface-container/60 p-space-xs rounded">
+                            Lexicon: Pāṇinian phonology corpus (v1.0.4) · 142 target phones
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 2: Verse Recognition Coverage -->
+                <div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <span
+                                class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Metrical
+                                Ingest · श्लोककवचम्</span>
+                            <span class="font-headline-sm text-headline-sm text-on-surface mt-0.5 block">Verse
+                                Recognition Coverage</span>
+                        </div>
+                        <span
+                            class="inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm">
+                            NO ENTRIES
+                        </span>
+                    </div>
+                    <div class="mt-space-md flex items-baseline gap-space-xs">
+                        <span class="font-label-md text-[36px] leading-none font-semibold text-secondary">0</span>
+                        <span class="font-label-md text-label-md text-secondary">ślokas aligned</span>
+                    </div>
+                    <div class="mt-space-sm flex flex-col space-y-space-xs">
+                        <p class="font-body-sm text-body-sm text-on-surface">
+                            Gīta audio sources blocked; self-recording laboratory pipeline pending ethics sign-off.
+                        </p>
+                        <div
+                            class="bg-surface-container/60 p-space-xs rounded font-label-sm text-label-sm text-secondary flex items-start gap-1">
+                            <span
+                                class="material-symbols-outlined text-[13px] text-secondary mt-0.5 flex-shrink-0">hourglass_top</span>
+                            <span>Target: Bhagavad Gītā (700 ślokas) · Awaiting clean Vedic/Classical recitation
+                                ingest</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Data Integrity Sweep -->
+                <div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <span
+                                class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Checksum
+                                Audit · दत्तसामग्र्यन्वीक्षा</span>
+                            <span class="font-headline-sm text-headline-sm text-on-surface mt-0.5 block">Data-Integrity
+                                Sweep</span>
+                        </div>
+                        <span
+                            class="inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-medium">
+                            PASS
+                        </span>
+                    </div>
+                    <div class="mt-space-md grid grid-cols-2 gap-space-sm">
+                        <div class="bg-surface-container/50 p-space-xs rounded">
+                            <span class="font-label-sm text-label-sm text-secondary block">Indexed Audio</span>
+                            <span class="font-label-md text-label-md font-semibold text-on-surface">142 files</span>
+                        </div>
+                        <div class="bg-surface-container/50 p-space-xs rounded">
+                            <span class="font-label-sm text-label-sm text-secondary block">Accumulated Span</span>
+                            <span class="font-label-md text-label-md font-semibold text-primary">02.48 hrs</span>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm text-secondary pt-space-xs">
+                        <span>Sweep: 2025-02-24 09:14 UTC</span>
+                        <span class="text-on-surface font-medium">MD5 Verified</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Dataset & Registry Integrity Log Section -->
+            <div class="pt-space-xs flex flex-col space-y-space-sm">
+                <div class="flex items-center justify-between">
+                    <span
+                        class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-medium">DATASET
+                        &amp; REGISTRY INTEGRITY LOG</span>
+                    <span class="font-label-sm text-label-sm text-secondary">SHA-256 TREE</span>
+                </div>
+                <!-- Mobile Monospace Audit Table -->
+                <div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+                    <div
+                        class="grid grid-cols-12 bg-surface-container px-space-sm py-space-xs text-secondary font-label-sm text-label-sm">
+                        <span class="col-span-3">DATE</span>
+                        <span class="col-span-6">CHECK</span>
+                        <span class="col-span-3 text-right">OUTCOME</span>
+                    </div>
+                    <!-- Row 1 -->
+                    <div
+                        class="grid grid-cols-12 px-space-sm py-space-sm items-center text-on-surface font-label-sm text-label-sm bg-surface-container-lowest">
+                        <span class="col-span-3 text-secondary font-label-sm text-label-sm">2025-02-24</span>
+                        <span class="col-span-6 font-body-sm text-body-sm text-on-surface truncate pr-1">Sha256 hash
+                            match on reference phonemes</span>
+                        <div class="col-span-3 text-right">
+                            <span
+                                class="inline-block px-1 py-0.5 bg-surface-container text-primary font-label-sm text-label-sm font-medium rounded">
+                                PASS (0)
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div
+                        class="grid grid-cols-12 px-space-sm py-space-sm items-center text-on-surface font-label-sm text-label-sm bg-surface-container-low">
+                        <span class="col-span-3 text-secondary font-label-sm text-label-sm">2025-02-21</span>
+                        <span class="col-span-6 font-body-sm text-body-sm text-on-surface truncate pr-1">Acoustic rate
+                            normalization (16 kHz)</span>
+                        <div class="col-span-3 text-right">
+                            <span
+                                class="inline-block px-1 py-0.5 bg-surface-container text-primary font-label-sm text-label-sm font-medium rounded">
+                                142/142
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Row 3 -->
+                    <div
+                        class="grid grid-cols-12 px-space-sm py-space-sm items-center text-on-surface font-label-sm text-label-sm bg-surface-container-lowest">
+                        <span class="col-span-3 text-secondary font-label-sm text-label-sm">2025-02-18</span>
+                        <span class="col-span-6 font-body-sm text-body-sm text-on-surface truncate pr-1">Gītā recitation
+                            clearance</span>
+                        <div class="col-span-3 text-right">
+                            <span
+                                class="inline-block px-1 py-0.5 bg-surface-container-high text-tertiary font-label-sm text-label-sm rounded">
+                                BLOCKED
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Academic Footnote & Artifact Provenance Notice -->
+            <div class="bg-surface-container-high/60 rounded-xl p-space-sm flex items-start gap-space-xs">
+                <span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0 mt-0.5">terminal</span>
+                <p class="font-label-sm text-label-sm text-on-secondary-container">
+                    All numbers on this page are read directly from local git trees and raw HDF5 metadata headers at
+                    request time. No client-side extrapolation applied.
+                </p>
+            </div>
+            <!-- Interactive Action Buttons -->
+            <div class="flex flex-col space-y-space-xs pt-space-xs">
+                <button
+                    class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-space-sm px-space-md rounded-lg flex items-center justify-center gap-space-xs shadow-sm transition-colors active:scale-[0.99]"
+                    id="export-btn" onclick="downloadManifestMock()">
+                    <span class="material-symbols-outlined text-[18px]">data_object</span>
+                    <span>Export Registry Manifest (JSON)</span>
+                </button>
+                <button
+                    class="w-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg py-space-sm px-space-md rounded-lg flex items-center justify-center gap-space-xs transition-colors"
+                    onclick="history.back()">
+                    <span class="material-symbols-outlined text-[18px] text-secondary">arrow_back</span>
+                    <span>Return to Lab Workspace</span>
+                </button>
+            </div>
+        </div>
+        <script>
+            function downloadManifestMock() {
+                const btn = document.getElementById('export-btn');
+                if (!btn) return;
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Serializing Artifacts...</span>';
+                setTimeout(() => {
+                    btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Manifest Dispatched (24.1 KB)</span>';
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                    }, 2400);
+                }, 600);
+            }
+        </script>
+    </main>
+</body>
+
+</html>

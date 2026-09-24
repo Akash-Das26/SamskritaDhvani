@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+        name="viewport" />
+    <meta content="mobile_stack" name="shell-type" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif:ital,wght@0,400;0,600;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            .pb-safe {
+                padding-bottom: env(safe-area-inset-bottom, 0px);
+            }
+
+            .pt-safe {
+                padding-top: env(safe-area-inset-top, 0px);
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#57423c", "tertiary-fixed-dim": "#d3c4b6", "surface-bright": "#fef8f4", "on-secondary-fixed": "#1e1b18", "surface-variant": "#e7e1de", "on-surface": "#1d1b19", "tertiary-fixed": "#f0e0d1", "secondary-fixed-dim": "#ccc5c0", "primary": "#7d1e02", "on-background": "#1d1b19", "surface-container-highest": "#e7e1de", "inverse-surface": "#32302e", "on-secondary-container": "#68645f", "primary-fixed": "#ffdbd1", "on-primary-fixed-variant": "#852307", "tertiary": "#4a4035", "tertiary-container": "#62574c", "primary-container": "#9e3518", "surface-dim": "#dfd9d5", "surface-container-low": "#f9f2ef", "inverse-primary": "#ffb5a1", "on-tertiary-fixed-variant": "#4f453a", "surface-container-lowest": "#ffffff", "on-primary-container": "#ffc1b1", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "primary-fixed-dim": "#ffb5a1", "error-container": "#ffdad6", "on-tertiary-fixed": "#221a11", "background": "#fef8f4", "surface-tint": "#a63b1d", "secondary-fixed": "#e9e1db", "on-secondary-fixed-variant": "#4a4642", "surface-container-high": "#ede7e3", "on-tertiary-container": "#ddcdbf", "outline": "#8b716b", "surface": "#fef8f4", "on-secondary": "#ffffff", "on-error": "#ffffff", "on-primary-fixed": "#3c0800", "on-primary": "#ffffff", "outline-variant": "#dfc0b8", "error": "#ba1a1a", "secondary-container": "#e9e1db", "inverse-on-surface": "#f6f0ec", "secondary": "#625e59", "surface-container": "#f3ede9" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xs": "0.25rem", "space-md": "1rem", "margin": "1.5rem", "space-xl": "2.5rem", "margin-lg": "3rem", "gutter-lg": "2rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1.25rem" }, fontFamily: { "label-lg": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "label-md": ["JetBrains Mono"], "headline-sm": ["Noto Serif"], "body-lg": ["Noto Serif"], "headline-md": ["Noto Serif"], "label-sm": ["JetBrains Mono"], "headline-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"] }, fontSize: { "label-lg": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "22px", letterSpacing: "-0.005em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "19px", letterSpacing: "0em", fontWeight: "400" }], "label-md": ["11px", { lineHeight: "15px", letterSpacing: "0.04em", fontWeight: "500" }], "headline-sm": ["18px", { lineHeight: "28px", letterSpacing: "0.01em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "32px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "600" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "400" }], "headline-lg-mobile": ["24px", { lineHeight: "34px", letterSpacing: "0em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen">
+    <header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+        <div class="h-16 px-margin flex items-center justify-between gap-space-sm">
+            <div class="flex items-center gap-space-xs"><button
+                    class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors -ml-space-xs"
+                    onclick="history.back()"><span
+                        class="material-symbols-outlined text-[22px]">arrow_back_ios_new</span></button>
+                <div class="flex flex-col min-w-0"><span
+                        class="font-label-sm text-label-sm text-secondary truncate">Analysis Inspector</span>
+                    <h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Verse Scansion Inspector</h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-space-sm flex-shrink-0">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="flex flex-col relative w-full px-margin pt-16 pb-space-xl bg-surface">
+        <div class="flex flex-col w-full">
+            <!-- Archival Research Header -->
+            <section class="flex flex-col gap-space-sm pt-space-xs pb-space-lg">
+                <div class="flex items-center gap-space-xs">
+                    <span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">
+                        COMPUTATIONAL LINGUISTICS &amp; PHONETICS LAB · DHVANI v0.4.2
+                    </span>
+                </div>
+                <!-- Title & Devanagari Inscription -->
+                <div class="flex flex-col gap-1 mt-space-xs">
+                    <div class="flex items-baseline gap-space-sm">
+                        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">
+                            संस्कृतध्वनि
+                        </h2>
+                        <span class="font-label-sm text-label-sm text-on-secondary-container">
+                            [saṁskṛta-dhvani]
+                        </span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-x-2 text-on-surface">
+                        <span class="font-headline-sm text-headline-sm tracking-normal">SamskritaDhvani</span>
+                        <span class="font-label-md text-label-md text-secondary">/sɐ̃skr̩t̪ɐ.d̪ʱvɐni/</span>
+                    </div>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-prose leading-relaxed mt-1">
+                    Sanskrit pronunciation assessment and Bhagavad Gita verse recognition.
+                </p>
+                <!-- Lab Specimen Visual Artifact -->
+                <div class="w-full mt-space-xs rounded-xl bg-surface-container overflow-hidden p-space-sm shadow-sm">
+                    <div
+                        class="relative w-full h-28 rounded-lg overflow-hidden flex items-center justify-center bg-surface-container-high">
+                        <img class="w-full h-full object-cover opacity-85"
+                            data-alt="Close up photograph of an ancient Sanskrit birch bark and palm leaf manuscript with sharp classical Devanagari epigraphy, resting on a clean archival research desk beside modern computational spectrogram printouts, warm ambient museum lighting, muted parchment tones with deep madder vermilion ink accents"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvQ5Ec2CdHoU8cO-cgvOuBCwUcXVhwZzTpR6lKtJWTQ2W1YNdCSaZXY8epSDQJlqbBJn-PvwiFedQBL0FDxAC9nhLAnFyQrX5kccsI0Zr7Z7Qt0L1B9XpfcUAlD6krCXHfHQwvZtzyVcmR6DhUUG9i6WU5D1tlQm3uSJTa4XiVTHahJSsWuUVY8BT917X4XWDO-bzclNJJocD1kKOJlIUtL8yfla2wOlou5HsoxkfwxsazgKWj4ihZ" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent">
+                        </div>
+                        <div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-on-surface">
+                            <span
+                                class="font-label-sm text-label-sm bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-primary">
+                                SPECIMEN: CHANDAS-SPECTRA-A1
+                            </span>
+                            <span class="font-label-sm text-label-sm text-secondary">700 SLOKAS INDEXED</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Interactive Analytical Workspace Entrypoints -->
+            <section class="flex flex-col gap-space-md mt-space-xs">
+                <!-- Card 1: Practice Pronunciation -->
+                <div
+                    class="group relative rounded-xl bg-surface-container-low p-space-md shadow-sm transition-all duration-200 hover:shadow-md">
+                    <div class="flex items-start justify-between gap-space-sm mb-space-xs">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+                            <!-- Minimalist Geometric Acoustic Waveform / Spectrogram Icon -->
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24">
+                                <path d="M2 12h2"></path>
+                                <path d="M6 8v8"></path>
+                                <path d="M10 4v16"></path>
+                                <path d="M14 7v10"></path>
+                                <path d="M18 10v4"></path>
+                                <path d="M22 12h-2"></path>
+                            </svg>
+                        </div>
+                        <span
+                            class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">
+                            उच्चारणानुशीलनम् · Uccāraṇa
+                        </span>
+                    </div>
+                    <div class="flex flex-col gap-space-xs">
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                            Practice Pronunciation
+                        </h3>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                            Record a word, compare it to a reference recitation, and see a per-axis similarity breakdown
+                        </p>
+                    </div>
+                    <!-- Technical Metadata Badge -->
+                    <div class="mt-space-md pt-space-xs flex flex-wrap items-center gap-1.5">
+                        <span
+                            class="inline-flex items-center font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container text-tertiary">
+                            <span class="material-symbols-outlined text-[13px] mr-1 text-primary">graphic_eq</span>
+                            Acoustic DTW &amp; Formant Alignment · 16kHz WAV
+                        </span>
+                    </div>
+                    <!-- Action Trigger -->
+                    <div class="mt-space-md pt-space-xs">
+                        <a class="inline-flex items-center justify-between w-full px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg transition-colors hover:bg-primary-container active:scale-[0.99]"
+                            href="#pronunciation-workspace">
+                            <span>Open Pronunciation Workspace</span>
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 2: Recognize a Verse -->
+                <div
+                    class="group relative rounded-xl bg-surface-container-low p-space-md shadow-sm transition-all duration-200 hover:shadow-md">
+                    <div class="flex items-start justify-between gap-space-sm mb-space-xs">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+                            <!-- Minimalist Palm-Leaf Pothi Scroll Icon -->
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24">
+                                <path d="M4 6h16"></path>
+                                <path d="M4 12h16"></path>
+                                <path d="M4 18h16"></path>
+                                <rect height="16" rx="2" stroke-dasharray="1 3" width="20" x="2" y="4"></rect>
+                                <circle cx="12" cy="12" fill="currentColor" r="1.5"></circle>
+                            </svg>
+                        </div>
+                        <span
+                            class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">
+                            श्लोकाभिज्ञानम् · Śloka-Abhijñāna
+                        </span>
+                    </div>
+                    <div class="flex flex-col gap-space-xs">
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                            Recognize a Verse
+                        </h3>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                            Recite a Gita verse and see the recognized verse ID with confidence and runner-up
+                            candidates.
+                        </p>
+                    </div>
+                    <!-- Technical Metadata Badge -->
+                    <div class="mt-space-md pt-space-xs flex flex-wrap items-center gap-1.5">
+                        <span
+                            class="inline-flex items-center font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container text-tertiary">
+                            <span class="material-symbols-outlined text-[13px] mr-1 text-primary">auto_stories</span>
+                            Closed-set CTC Acoustic Model · Bhagavad Gītā (Ch. 1–18)
+                        </span>
+                    </div>
+                    <!-- Action Trigger -->
+                    <div class="mt-space-md pt-space-xs">
+                        <a class="inline-flex items-center justify-between w-full px-space-md py-space-sm rounded-lg bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors hover:bg-secondary-container active:scale-[0.99]"
+                            href="#verse-recognizer">
+                            <span>Open Verse Recognizer</span>
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Precise Academic Scope Note -->
+            <section class="mt-space-md px-1">
+                <div
+                    class="flex items-start gap-space-xs bg-surface-container-lowest/80 p-space-sm rounded-lg shadow-sm">
+                    <span class="material-symbols-outlined text-[16px] text-outline flex-shrink-0 mt-0.5">info</span>
+                    <p class="font-body-sm text-body-sm italic text-on-surface-variant leading-relaxed">
+                        Scope: closed-set verse recognition over a fixed verse list; pronunciation scores are
+                        diagnostic, not certifying.
+                    </p>
+                </div>
+            </section>
+            <!-- Live Diagnostic / Research Telemetry Preview -->
+            <section class="mt-space-lg">
+                <div class="rounded-xl bg-surface-container p-space-md flex flex-col gap-space-sm shadow-sm">
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="font-label-md text-label-md text-primary flex items-center gap-1.5 uppercase tracking-wider">
+                            <span class="material-symbols-outlined text-[15px]">terminal</span>
+                            Acoustic Diagnostic Telemetry
+                        </span>
+                        <span class="font-label-sm text-label-sm text-secondary">NODE-ONLINE</span>
+                    </div>
+                    <div class="rounded-lg bg-surface-container-lowest p-space-sm flex flex-col gap-1.5">
+                        <div class="flex items-center justify-between text-on-surface">
+                            <span class="font-label-sm text-label-sm text-secondary">Active Model Checksum:</span>
+                            <span class="font-label-sm text-label-sm text-primary font-medium">GITA-700-V2</span>
+                        </div>
+                        <div class="flex items-center justify-between text-on-surface">
+                            <span class="font-label-sm text-label-sm text-secondary">Latency Benchmark:</span>
+                            <span class="font-label-sm text-label-sm text-on-surface">~340ms</span>
+                        </div>
+                        <div class="flex items-center justify-between text-on-surface">
+                            <span class="font-label-sm text-label-sm text-secondary">Audio Input Layer:</span>
+                            <span class="font-label-sm text-label-sm text-tertiary">WebAudio API (PCM Float32)</span>
+                        </div>
+                    </div>
+                    <!-- Monospace Telemetry Strip -->
+                    <div class="flex items-center justify-between px-1">
+                        <span class="font-label-sm text-label-sm text-on-secondary-container">VAD Sensitivity: 0.82
+                            τ</span>
+                        <span class="font-label-sm text-label-sm text-on-secondary-container">Spectral Hop: 128
+                            spl</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Specimen Manuscript Archive Card -->
+            <section class="mt-space-md">
+                <div class="rounded-xl bg-surface-container-low p-space-md flex items-center gap-space-md shadow-sm">
+                    <div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Macro archival scan of a copper plate inscription with classical Devanagari Sanskrit verses, fine patinated metal surface, warm golden-brown lighting with crisp photographic definition"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAktCNGmlWxgC0CHNNUUxmC8LsZe-Jo9p7Uj_Z1JFdsyTDEhTnUy3KbeF7P5bCHt1vMxO0stdU2-R9_R-vWeoiRuDVp0AxImfkQzFqK8edswKY_p2iDdEVYZNWFsxE-JxLrtfzkPR0QCPCPP6A8KIIf7ASw_Ky8jzS2T4tIBc-38legu1Y2-QM_lTwzIuZCUn7tBgqnLQROIR_dRCXSaY_OLockiAbIEE4ve0zRW-0F8YJwQcrVq_wy" />
+                    </div>
+                    <div class="flex flex-col min-w-0">
+                        <span class="font-label-sm text-label-sm text-secondary">REFERENCE CORPUS</span>
+                        <h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Gitā-Śloka Index</h4>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant truncate">Standard Śaṅkara recension
+                            with metric scansion</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Lab Notice & Local Session Indicator -->
+            <section class="mt-space-md mb-space-sm px-1">
+                <div class="rounded-lg bg-surface-container-high/60 p-space-sm flex items-center gap-space-sm">
+                    <span class="material-symbols-outlined text-[18px] text-tertiary">lock_open</span>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant">
+                        Local academic evaluation build · No login or authentication required
+                    </p>
+                </div>
+            </section>
+        </div>
+        <script>
+            // Subtle tactile feedback on workspace entry click
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = this.getAttribute('href');
+                    // Visual tap confirmation
+                    this.classList.add('opacity-80');
+                    setTimeout(() => {
+                        this.classList.remove('opacity-80');
+                    }, 150);
+                });
+            });
+        </script>
+        <footer class="mt-space-xl mb-space-xl pt-space-md flex flex-col gap-space-xs">
+            <div class="flex items-center justify-between text-on-surface-variant"><a
+                    class="font-label-md text-label-md text-primary underline underline-offset-4 hover:text-primary-container min-h-[44px] inline-flex items-center"
+                    data-path="methodology-modal" href="#">About / Methodology</a><span
+                    class="font-label-sm text-label-sm text-on-secondary-container">v2.4-beta</span></div>
+            <p class="font-label-sm text-label-sm text-secondary leading-normal">Best viewed in desktop Chrome or
+                Firefox · microphone required for acoustic scansion</p>
+        </footer>
+    </main>
+</body>
+
+</html>
