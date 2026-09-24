@@ -639,6 +639,45 @@ extraction per Open Item 6.)_
 
 ---
 
+**SVP/ course-material cleanup (2026-09-24):** extract, then prune —
+per the Phase 6 discipline (no bulk-delete first).
+
+- **Inventory (before):** `SVP/` = **22 files, 31.0 MB**, all
+  git-tracked (7 chapter PDFs, 9 lecture PDFs, 4 UNIT II PDFs, lesson
+  plan, midsem paper, question bank).
+- **Extraction → `docs/theory/` (12 source files + citation map =
+  **13 files, ~16.0 MB**):** the 10
+  PDFs cited by `Implementation.md` §2 (Ch-2–Ch-7,
+  `UNIT II_MFCC/_Cepstrum analysis/_LPCC`, `Speech Processing L3`) —
+  every copy verified **byte-identical via `cmp` (10/10)** — plus
+  **`Ques`, recovered from git history** (deleted in the prior
+  cleanup commit `ce2dbbcb`; sha256 `e47ba3b7…` matches
+  `ce2dbbcb^:SVP/Ques`; the file is absent from the synced working
+  tree and exists only in history). The recovered `Ques` is the file §2
+  actually cites: **Q6** = "Why overlapping windows are used instead
+  of clear cut windows?" and **Q1** = the MFCC-perception
+  True/False — numbering belongs to *this* file, **not** to
+  `SVP_question_bank 2026.pdf` (whose Module II Q13/Q14 cover the
+  same topics under different numbers; verified by extraction). Also
+  kept per owner decision: `UNIT II_Feature Extraction.pdf` (umbrella
+  TOC of the cited UNIT II set). `docs/theory/README.md` added — a
+  citation map (file → §2 use → code traceability) so the reference
+  set is self-describing. `docs/theory/` = **13 files, ~16.0 MB**
+  (11 PDFs + `Ques` + `README.md`).
+- **Ambiguity resolution (flag-then-decide, owner confirmed
+  "proceed as recommended"):** `UNIT II_Feature Extraction.pdf` kept;
+  L2/L4/L10 (theory-adjacent but uncited; covered by cited
+  chapters), L1/L12, L6-L7-L8, L9, Ch-1, lesson plan, midsem, and
+  the question bank deleted. No code or doc depends on `SVP/` paths
+  (grep-verified; `docs/theory/README.md`'s historical mention is
+  prose only).
+- **Removal (after):** `SVP/` = **0 files** — 10 files removed from
+  the working tree (all recoverable from git history), 12 source
+  files + README preserved in `docs/theory/` (13 on disk). Committed locally as a standalone cleanup
+  commit (not pushed; push awaits owner instruction).
+- **Ground Rule 1 check:** every count above from actual `find`/
+  `git ls-files`/`cmp`/`sha256sum` runs, not estimates.
+
 ## Open Items (carry forward until resolved or explicitly deferred)
 
 1. Finalize SPD word list (20–30 words, difficulty pairs) and GVR verse
@@ -691,6 +730,75 @@ extraction per Open Item 6.)_
     20/20 tests green; FR-03 max-abs-diff 2.2e-7 on real audio
     (see Phase 4 unit 1 entry). Next: unit 2 (`registry.py`),
     SPD/GVR branches per the Phase 3 module sequence.
+11. Frontend Phase 3 (Design) sign-off — `Frontend.md` §6 items 1–4,
+    **all resolved 2026-09-23** (owner decisions, one per item):
+    1. §3.2 waveform/spectrogram comparison — **DEFERRED** for v1
+       (per-axis bars carry the diagnostic content; comparison strip
+       documented as a future enhancement; v1 no longer blocked on the
+       SPD reference-audio ear check).
+    2. §3.4 Corpus/Model status page — **IN SCOPE for v1** (four
+       screens: Home, SPD, GVR, Status; status numbers pulled live
+       from the registry/manifest, never hardcoded).
+    3. Backend framework/endpoint paths — **CONFIRMED: FastAPI** with
+       `GET /api/words`, `POST /api/spd/score`,
+       `POST /api/gvr/recognize`, `GET /api/status` (as tabled in
+       Frontend.md §4; pydantic-validated schemas; FastAPI/uvicorn
+       pinned via Phase 2 verify-then-pin before any code).
+    4. Browser target — **desktop Chrome/Firefox minimum**, stated in
+       the UI footer; file-upload fallback for other browsers; mobile
+       explicitly out of scope for v1.
+    Also recorded in the sign-off context: the SPD scorer (D2) and GVR
+    HMM (D3) units are not yet built, so v1 endpoints return explicit
+    "model not available" states rather than scores until those units
+    land (Ground Rule 1 in the UI); SPD reference playback shows an
+    honest disabled state until the Hall/Loyola ear check passes;
+    GVR stays honest-empty until the permission path or D4
+    self-recordings populate the registry. Stitch division of labor
+    confirmed: Stitch generates visual design only (user runs
+    stitch.withgoogle.com per screen using the Frontend.md §2 + §3.x
+    prompts, exports Tailwind HTML to `web/stitch_exports/`); all
+    wiring, recording, state, and E2E testing is Phase 4/5 agent work.
+
+**Frontend Phase 4 (2026-09-23): demo API backend — built and tested
+(`samskrita_dhvani/api.py`).**
+
+- **Environment note:** the session restart lost `.venv` (fresh clone
+  state; no `pyvenv.cfg` anywhere). Rebuilt from `requirements.txt`
+  pins — all 59 tests re-ran green afterwards. New pins added under
+  Phase 2 verify-then-pin: fastapi 0.141.1, uvicorn[standard] 0.53.0,
+  python-multipart 0.0.32, httpx 0.28.1, and `setuptools<81`
+  (uncovered that a fresh venv no longer bundles `pkg_resources`,
+  which `webrtcvad` imports at module load — the rebuild made the
+  latent requirement explicit; it is now pinned).
+- **Contract implemented exactly as signed off** (Frontend.md §4):
+  `GET /api/words` (FR-12 list from the real seed registry; FR-13
+  round-trip holds by construction; `reference_audio_url` is None per
+  word until clips exist — honest empty state), `POST /api/spd/score`
+  (validates word ID → 404, decodes upload via the real D1
+  `load_audio_16k` → 422 on garbage/too-short, then **503
+  `model_unavailable`** at the marked `# SCORER SEAM` until design D2
+  lands — never a fabricated score), `POST /api/gvr/recognize` (same
+  validation + 503 pattern; registry < 20 entries also reports the
+  data gap), `GET /api/status` (§3.4 transparency data read live at
+  request time: real word count, honest verse-coverage gap citing the
+  permission blocker, Vedavani sweep numbers from `MANIFEST.csv` when
+  the corpus is on the machine, explicit "not found on this machine"
+  detail when it is not).
+- **Design for the seams:** both POST endpoints validate everything
+  that can be validated today and mark the single call site (`#
+  SCORER SEAM`) where Phase 4 units 3/4 (D2 DTW scorer, D3 HMM) drop
+  in — wiring the models later touches exactly one block per endpoint.
+- **Tests:** 10 new (synthetic WAV fixtures only, NFR-02) — contract
+  shape, transliteration consistency of served rows, honest 503 on
+  valid-but-unscorable requests, 404/422 validation paths, and a
+  conditional static-mount test. `pytest tests/` → **59 passed,
+  1 skipped** (skip = `web/` mount, pending Stitch exports).
+- **Stitch hand-off:** `files/StitchPromptPack.md` prepared —
+  ready-to-paste prompts for the four screens (Home, SPD, GVR,
+  Status), each with the §2 design direction embedded, iterate-until
+  criteria, and the required honest-state variants. Owner action:
+  generate + iterate the four screens, export Tailwind HTML into
+  `web/stitch_exports/`, then the wiring pass starts.
 
 ## Bugs Fixed This Session
 
