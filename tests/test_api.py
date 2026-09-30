@@ -271,23 +271,113 @@ def test_spd_score_200_full_contract_when_reference_and_calibration_exist(
 
 # ----------------------------------------------------- /api/gvr/recognize
 
-def test_gvr_recognize_garbage_audio_is_422():
-    r = client.post(
-        "/api/gvr/recognize",
-        files={"audio": ("a.wav", NOT_AUDIO, "audio/wav")},
+def _make_synthetic_gvr_registry(tmp_path):
+    """Small synthetic GVR registry (2 train rows per verse) for the
+    200-path test; verses are temporally structured so they survive
+    D1's CMVN (see tests/test_gvr_classifier.py for the reasoning)."""
+    from tests.test_gvr_classifier import (
+        VERSE_IDS,
+        render_verse,
+        _wav_bytes as _verse_wav_bytes,
     )
-    assert r.status_code == 422
-    assert r.json()["detail"]["error"] == "invalid_audio"
+    from samskrita_dhvani.registry import VerseEntry, GvrRegistry
+    import zlib
+
+    entries = []
+    for vid in VERSE_IDS:
+        for r in range(2):
+            y = render_verse(vid, seed=zlib.crc32(f"api:{vid}:{r}".encode()))
+            p = tmp_path / f"gvr_{vid.replace('.', '_')}_{r}.wav"
+            p.write_bytes(_verse_wav_bytes(y))
+            entries.append(
+                VerseEntry(
+                    verse_id=vid,
+                    audio_file=str(p),
+                    reciter=f"reciter-{r}",
+                    split="train",
+                    devanagari_text=f"॥ {vid} ॥" if r == 0 else None,
+                    provenance={"source_id": "SYNTHETIC",
+                                "acquired_on": "2026-10-01"},
+                )
+            )
+    return GvrRegistry(entries)
 
 
-def test_gvr_recognize_valid_request_honest_503_until_model_lands():
+def _train_synthetic_gvr(registry):
+    from tests.test_gvr_classifier import _load_wav
+    from samskrita_dhvani.gvr_classifier import GvrRecognizer
+
+    return GvrRecognizer.train(registry, _load_wav)
+
+
+def test_gvr_recognize_tone_fixture_is_near_silence_422():
+    """Same DataIntegrity §1.1 gate as SPD, now first in the chain: the
+    220 Hz sine is not speech (VAD ≈ 9%), so invalid input — not a
+    model error — is the honest response."""
     r = client.post(
         "/api/gvr/recognize",
         files={"audio": ("a.wav", GOOD_WAV, "audio/wav")},
     )
+    assert r.status_code == 422
+    body = r.json()["detail"]
+    assert body["error"] == "near_silence"
+
+
+def test_gvr_recognize_speech_honest_503_while_model_missing():
+    """D3 is implemented; with no trained artifact on disk the endpoint
+    names exactly that (plus the registry state), never a guess."""
+    from tests.test_api import _speech_wav_bytes
+
+    r = client.post(
+        "/api/gvr/recognize",
+        files={"audio": ("a.wav", _speech_wav_bytes(), "audio/wav")},
+    )
     assert r.status_code == 503
     body = r.json()["detail"]
     assert body["error"] == "model_unavailable"
+    assert "data/gvr/model.pkl" in body["detail"]
+    assert "FR-22" in body["detail"]
+
+
+def test_gvr_recognize_200_full_contract_with_trained_model(
+    tmp_path, monkeypatch
+):
+    """The FR-21 200 path end-to-end: train the real D3 recognizer on
+    synthetic verses, point GVR_MODEL_PATH at it, submit a held-out
+    recitation, and verify the exact response contract."""
+    from samskrita_dhvani import api as api_mod
+    from tests.test_gvr_classifier import render_verse, _wav_bytes
+
+    reg = _make_synthetic_gvr_registry(tmp_path)
+    rec = _train_synthetic_gvr(reg)
+    model_path = tmp_path / "model.pkl"
+    rec.save(model_path)
+    monkeypatch.setattr(api_mod, "GVR_MODEL_PATH", model_path)
+
+    y = render_verse("2.13", f0_jitter=0.03,
+                     seed=12345)  # held-out rendition
+    r = client.post(
+        "/api/gvr/recognize",
+        files={"audio": ("a.wav", _wav_bytes(y), "audio/wav")},
+    )
+    assert r.status_code == 200, r.json()
+    body = r.json()
+    assert set(body) == {"top_match", "candidates"}
+    tm = body["top_match"]
+    assert set(tm) == {"verse_id", "devanagari", "gloss", "confidence"}
+    assert tm["verse_id"] == "2.13"
+    assert 0 < tm["confidence"] <= 1.0
+    assert tm["devanagari"] == "॥ 2.13 ॥"  # recorded at training time
+    assert {c["verse_id"] for c in body["candidates"]} == {
+        "4.07", "9.26", "18.66"
+    }
+    for c in body["candidates"]:
+        assert set(c) == {"verse_id", "confidence"}
+        # Runner-up shares may underflow to exact 0.0 in float64 when a
+        # verse is thousands of nats behind the top match — exp(-2000)
+        # IS 0.0 to the machine. Zero here means 'vanishingly unlikely',
+        # which is the honest value, so the bound is inclusive.
+        assert 0.0 <= c["confidence"] < tm["confidence"]
 
 
 # ------------------------------------------------------------ static UI

@@ -16,8 +16,10 @@ its two data prerequisites exist: an ear-verified reference clip per
 word (503 ``reference_unavailable``) and a measured per-word D₀ from
 known-correct recitations (503 ``calibration_unavailable``). The D2
 formula forbids guessing the scale, so no score is fabricated in the
-meantime. The GVR HMM (design D3) is not yet implemented; that
-endpoint returns 503 ``model_unavailable``.
+meantime. The GVR recognizer (design D3, Phase 4 unit 4) is likewise
+implemented (``samskrita_dhvani.gvr_classifier``) but returns 503
+``model_unavailable`` until a trained model artifact exists — and a
+model can only be trained once the FR-22 registry has real data.
 
 Run::
 
@@ -41,6 +43,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from samskrita_dhvani.frontend import load_audio_16k, vad_speech_fraction
+from samskrita_dhvani.gvr_classifier import GvrRecognizer
 from samskrita_dhvani.registry import (
     SpdWordlist,
     VerseEntry,
@@ -58,6 +61,8 @@ WORDLIST_PROVENANCE = {
 # Registry of record for FR-22 (populated by D4 self-recordings or a
 # future permissioned source). Absent file = honest empty registry.
 GVR_REGISTRY_PATH = PROJECT_ROOT / "data" / "gvr_registry.json"
+# Trained D3 recognizer artifact (written by GvrRecognizer.save).
+GVR_MODEL_PATH = PROJECT_ROOT / "data" / "gvr" / "model.pkl"
 # Reference-audio root for SPD (populated only after the Hall/Loyola
 # ear check passes and per-word clips are cut).
 SPD_REFERENCE_ROOT = PROJECT_ROOT / "data" / "spd" / "reference_words"
@@ -370,40 +375,69 @@ async def spd_score(
 
 @app.post("/api/gvr/recognize")
 async def gvr_recognize(audio: UploadFile = File(...)) -> dict:
-    """Recognize a verse (FR-21). Returns 503 model_unavailable until
-    the D3 HMM exists AND the FR-22 registry has training data."""
-    data = await audio.read()
-    path, _y, duration = _require_decodable_audio(data)
-    reg = _load_gvr_registry()
-    registry_ready = reg is not None and len(reg) >= 20
+    """Recognize a verse (FR-21) with the D3 recognizer.
 
-    # SCORER SEAM: Phase 4 unit 4 (design D3 HMM) replaces the block
-    # below with a real call and the FR-21 response shape:
-    #   {top_match: {verse_id, devanagari, gloss, confidence},
-    #    candidates: [{verse_id, confidence}, ...]}
-    path.unlink(missing_ok=True)
-    if not registry_ready:
-        raise HTTPException(
-            status_code=503,
-            detail={
-                "error": "model_unavailable",
-                "detail": (
-                    "GVR registry has no training data "
-                    f"({'data/gvr_registry.json missing' if reg is None else f'{len(reg)} entries; need >= 20'}); "
-                    "the HMM (design D3) cannot be trained or queried."
-                ),
+    Honesty chain: 422 undecodable audio → 422 near-silence
+    (DataIntegrity §1.1) → 503 model_unavailable when no trained
+    recognizer artifact exists → 200 with the FR-21 shape. The
+    recognizer only ever answers over the verses it was trained on;
+    there is no out-of-set inference to fake.
+    """
+    data = await audio.read()
+    path, y, duration = _require_decodable_audio(data)
+    try:
+        speech_frac = vad_speech_fraction(y)
+        if speech_frac <= 0.10:
+            raise HTTPException(
+                status_code=422,
+                detail={
+                    "error": "near_silence",
+                    "detail": (
+                        f"Only {speech_frac:.0%} of frames contain speech "
+                        "(DataIntegrity §1.1 excludes clips at or below 10%); "
+                        "recite closer to the microphone and try again."
+                    ),
+                },
+            )
+
+        recognizer = GvrRecognizer.load(GVR_MODEL_PATH)
+        if recognizer is None:
+            reg = _load_gvr_registry()
+            reg_state = (
+                "data/gvr_registry.json is missing"
+                if reg is None
+                else f"the registry has {len(reg)} entries"
+            )
+            raise HTTPException(
+                status_code=503,
+                detail={
+                    "error": "model_unavailable",
+                    "detail": (
+                        "No trained GVR recognizer at data/gvr/model.pkl "
+                        f"({reg_state}). The D3 recognizer is implemented, "
+                        "but it can only be trained once the FR-22 registry "
+                        "holds real recitations. Audio validated OK "
+                        f"({duration:.2f}s)."
+                    ),
+                },
+            )
+
+        pred = recognizer.predict(y)
+        text = recognizer.text_for(pred.verse_id)
+        return {
+            "top_match": {
+                "verse_id": pred.verse_id,
+                "devanagari": text.get("devanagari"),
+                "gloss": text.get("gloss"),
+                "confidence": pred.confidence,
             },
-        )
-    raise HTTPException(
-        status_code=503,
-        detail={
-            "error": "model_unavailable",
-            "detail": (
-                "GVR HMM (design D3, Phase 4 unit 4) is not implemented yet; "
-                f"no recognition can be reported. Audio validated OK ({duration:.2f}s)."
-            ),
-        },
-    )
+            "candidates": [
+                {"verse_id": c["verse_id"], "confidence": c["confidence"]}
+                for c in pred.candidates
+            ],
+        }
+    finally:
+        path.unlink(missing_ok=True)
 
 
 @app.get("/api/status", response_model=StatusOut)
@@ -415,7 +449,7 @@ def status() -> StatusOut:
         spd_reference_audio_available=_reference_url_for(
             _wordlist().words[0].word_id
         ) is not None,
-        gvr_scorer_available=False,  # flips when unit 4 lands; see SCORER SEAM
+        gvr_scorer_available=GvrRecognizer.load(GVR_MODEL_PATH) is not None,
         verse_coverage=_verse_coverage(),
         last_sweep=_sweep_summary(),
         generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),

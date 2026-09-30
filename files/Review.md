@@ -610,6 +610,80 @@ this completes the backend half of.)
   doubles; everything upstream of them (features, DTW, mapping,
   response shape) is the real production code.
 
+**Unit 4 (2026-10-01): D3 GVR recognizer — built, tested, and wired
+to the seam.**
+
+- **`samskrita_dhvani/gvr_classifier.py` implements the approved D3
+  topology verbatim** (Phase 3 sign-off text is the binding spec):
+  one GaussianHMM per verse, **6 states, left-to-right no-skip**
+  (self + advance-by-one only), **diagonal Gaussians**,
+  **hand-initialized startprob/transmat** before `fit()` (one-hot
+  start; 0.5/0.5 self/advance rows; `init_params=""` so nothing
+  auto-initializes the topology), Viterbi `decode()` across all
+  verse HMMs → verse ID + log-likelihood **gap as confidence**
+  (softmax over the closed set — a monotone map of the pairwise
+  gaps: a verse that beats every other by a wide margin scores near
+  1, a near-tie near 1/n). Features are the D1 (T, 39) matrix — one
+  feature definition for both branches (Ground Rule 4).
+- **Two bugs the synthetic-fixture tests caught before this shipped**
+  (kept in the log as evidence the NFR-02 discipline works):
+  (1) **Split leak in `train()`** — the first draft consumed ALL
+  registry rows; the test asserting `n_training_clips == 2` (2 train
+  + 1 test per verse) caught `== 3`. Training now skips every
+  non-`train` split; held-out data stays held out.
+  (2) **State collapse with k-means emission init** — hmmlearn's
+  k-means start on near-stationary speech features parked several
+  states on the same region; the L-R topology then never visited
+  them ("Some rows of transmat_ have zero sum" → NaN startprob →
+  `ValueError` at decode). Fix: HTK-style **equal-segmentation
+  emission init** (each state's Gaussian starts at its equal slice
+  of the concatenated training sequence, variance floored at 1e-3),
+  plus a post-fit degeneracy check (`_assert_fitted_lrhmm`) that
+  refuses to store a model with NaN parameters or dead states — a
+  verse needing more/better audio must say so, not silently repair.
+- **Fixture lesson (second of the project):** the first synthetic
+  verses were stationary vowels — and D1's per-utterance CMVN
+  *correctly* strips stationary spectral signatures, making every
+  "verse" identical to the classifier. The fixtures now render each
+  verse as a fixed **sequence of four formant-target phones** (with
+  per-recitation F0/timing jitter + noise), i.e. temporal structure
+  that survives CMVN. A classifier can only recognize what the
+  features keep.
+- **API seam (`api.py`):** `/api/gvr/recognize` now walks: 422
+  `invalid_audio` → 422 `near_silence` (§1.1) → 503
+  `model_unavailable` (no trained artifact at `data/gvr/model.pkl`,
+  with the registry state named) → 200 with the exact FR-21 shape
+  `{top_match: {verse_id, devanagari, gloss, confidence},
+  candidates: [{verse_id, confidence}, ...]}`. Verse text is what
+  the training registry rows carried (`text_for`). Confidence
+  values are transmitted unrounded: runner-up softmax shares can
+  legitimately **underflow to exact 0.0** in float64 (exp(−2000)
+  IS 0.0 to the machine) — an honest "vanishingly unlikely", not a
+  bug, and `round(·, 4)` would have hidden it. `/api/status`
+  `gvr_scorer_available` now flips to true when a trained model
+  artifact actually exists (it reads the file; no flag is hardcoded).
+- **Measured this session (actual runs):** training 4 synthetic
+  verses (2 train recitations each) + decoding 4 held-out renditions
+  → **4/4 correct top-1** in the unit tests, rank-monotone softmax
+  shares summing to 1; persistence round-trip reproduces identical
+  predictions. Live-server smoke: speech-like clip → 503 with the
+  new message; `gvr_scorer_available` false until a model exists.
+- **Tests:** 11 recognizer tests (topology invariants before/after
+  fit, train-split-only accounting, too-short-clip rejection,
+  held-out recognition, candidate ranking/normalization, text
+  capture, schema-versioned save/load incl. wrong-schema rejection)
+  + 3 new API contract tests (tone→422, speech→503 naming the
+  artifact path, and the 200 path with a model trained on synthetic
+  verses). `pytest tests/` → **96 passed** (was 84).
+- **Honest limits:** the recognizer cannot be trained for real until
+  the FR-22 registry holds actual recitations (Gita sources blocked,
+  D4 self-recordings pending — Open Item 5). The 200 path is
+  verified with a model trained on synthetic verses; everything in
+  the production path (features, topology, EM training, Viterbi,
+  response shape) is the real code. Accuracy-vs-data-per-verse
+  curves and the confusion matrix (NFR-20) remain Phase 5 work on
+  real data.
+
 **Unit 5 (2026-09-30 → 10-01): Stitch exports wired to the live API —
 all four screens functional.**
 
@@ -1105,6 +1179,17 @@ per the Phase 6 discipline (no bulk-delete first).
 - `web/index.html`, `web/spd.html` — honesty lines updated to the
   D2-built state ("built, data pending"; backend names exactly what
   is missing). [2026-10-01]
+- `samskrita_dhvani/gvr_classifier.py` + `tests/test_gvr_classifier.py`
+  — Phase 4 unit 4: design D3 implemented (6-state L-R no-skip
+  diagonal-Gaussian HMM per verse, hand-init topology,
+  equal-segmentation emission init + degeneracy guard, Viterbi
+  decode with softmax-gap confidence, schema-v1 model envelope),
+  11 synthetic-fixture tests. `api.py` `/api/gvr/recognize` seam
+  wired (422 near_silence → 503 model_unavailable naming the
+  artifact → 200 FR-21 shape); `/api/status` `gvr_scorer_available`
+  now reads the model artifact. [2026-10-01]
+- `web/index.html`, `web/gvr.html` — honesty chips updated to the
+  D3-built state ("built, training data pending"). [2026-10-01]
 - `tools/e2e_render_check.py`, `tools/e2e_flow.py`,
   `tools/e2e_flow_negative.py` — reusable headless-Chrome E2E
   harnesses (CDP-driven; render assertions, fake-mic flow, and
