@@ -133,9 +133,11 @@ def test_spd_score_too_short_audio_is_422():
     assert "short" in r.json()["detail"]["detail"].lower()
 
 
-def test_spd_score_valid_request_honest_503_until_scorer_lands():
-    """Ground Rule 1 in the UI: a valid attempt must NOT get a fake
-    score — it gets an explicit model_unavailable until D2 exists."""
+def test_spd_score_tone_fixture_is_near_silence_422():
+    """DataIntegrity §1.1 at the API boundary: a pure sine is not
+    speech — WebRTC VAD measures ~9% speech frames on the 220 Hz tone
+    fixture, below the 10% gate, so the honest answer is invalid input,
+    not a score or a model error."""
     from samskrita_dhvani.registry import harvard_kyoto_slug, iast_to_devanagari
 
     word_id = harvard_kyoto_slug(iast_to_devanagari("kṛṣṇa"))
@@ -144,10 +146,127 @@ def test_spd_score_valid_request_honest_503_until_scorer_lands():
         files={"audio": ("a.wav", GOOD_WAV, "audio/wav")},
         data={"word_id": word_id},
     )
+    assert r.status_code == 422
+    body = r.json()["detail"]
+    assert body["error"] == "near_silence"
+    assert "DataIntegrity" in body["detail"]
+
+
+def _speech_wav_bytes(seconds=1.0, seed=0):
+    """Harmonic-stack speech-like WAV (voiced, VAD-detectable)."""
+    sr = 16000
+    t = np.arange(int(sr * seconds)) / sr
+    y = np.zeros_like(t)
+    for k in (1, 2, 3, 4, 5):
+        y += np.sin(2 * np.pi * 130 * k * t) / k
+    env = 0.5 * (1 - np.cos(np.pi * np.minimum(1.0, t / seconds)))
+    y = 0.35 * y * env
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes(b"".join(
+            struct.pack("<h", int(np.clip(s, -1, 1) * 32767)) for s in y
+        ))
+    return buf.getvalue()
+
+
+def test_spd_score_speech_audio_honest_503_reference_unavailable():
+    """D2 is implemented, but its first data prerequisite is missing:
+    no ear-verified reference clip exists yet (Hall/Loyola ear check
+    pending), so the endpoint says exactly that — never a guess."""
+    from samskrita_dhvani.registry import harvard_kyoto_slug, iast_to_devanagari
+
+    word_id = harvard_kyoto_slug(iast_to_devanagari("kṛṣṇa"))
+    r = client.post(
+        "/api/spd/score",
+        files={"audio": ("a.wav", _speech_wav_bytes(), "audio/wav")},
+        data={"word_id": word_id},
+    )
     assert r.status_code == 503
     body = r.json()["detail"]
-    assert body["error"] == "model_unavailable"
-    assert "D2" in body["detail"]
+    assert body["error"] == "reference_unavailable"
+    assert "ear check" in body["detail"]
+
+
+def test_spd_score_503_calibration_unavailable_when_reference_exists(
+    tmp_path, monkeypatch
+):
+    """With a reference clip on disk but no measured D0, the seam must
+    still refuse to invent the scale (D2 forbids guessed D0)."""
+    from samskrita_dhvani import api as api_mod
+    from samskrita_dhvani.registry import harvard_kyoto_slug, iast_to_devanagari
+
+    ref_root = tmp_path / "refs"
+    ref_root.mkdir()
+    (ref_root / "kRSNa.wav").write_bytes(_speech_wav_bytes())
+    monkeypatch.setattr(api_mod, "SPD_REFERENCE_ROOT", ref_root)
+
+    word_id = harvard_kyoto_slug(iast_to_devanagari("kṛṣṇa"))
+    r = client.post(
+        "/api/spd/score",
+        files={"audio": ("a.wav", _speech_wav_bytes(seed=1), "audio/wav")},
+        data={"word_id": word_id},
+    )
+    assert r.status_code == 503
+    body = r.json()["detail"]
+    assert body["error"] == "calibration_unavailable"
+    assert "D0" in body["detail"]
+
+
+def test_spd_score_200_full_contract_when_reference_and_calibration_exist(
+    tmp_path, monkeypatch
+):
+    """The FR-11 200 path end-to-end: real D1 features, real D2 DTW
+    scoring; only the data prerequisites (reference file + measured
+    scale) are provided as test doubles."""
+    from samskrita_dhvani import api as api_mod
+    from samskrita_dhvani.registry import harvard_kyoto_slug, iast_to_devanagari
+    from samskrita_dhvani.spd_scorer import Calibration
+
+    # Reference clip on disk: a fixed-formant synthetic vowel.
+    sr = 16000
+    t = np.arange(sr) / sr
+    ref = sum(np.sin(2 * np.pi * 140 * k * t) / k for k in (1, 2, 3, 4, 5))
+    ref = (0.3 * ref / np.max(np.abs(ref))).astype(np.float32)
+    ref_root = tmp_path / "refs"
+    ref_root.mkdir()
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes(b"".join(
+            struct.pack("<h", int(np.clip(s, -1, 1) * 32767)) for s in ref
+        ))
+    (ref_root / "kRSNa.wav").write_bytes(buf.getvalue())
+    monkeypatch.setattr(api_mod, "SPD_REFERENCE_ROOT", ref_root)
+
+    cal = Calibration(
+        word_id="kRSNa", d0=3.0, d0_formant=0.08, d0_duration=0.15,
+        n_references=3, schema_version=1,
+    )
+    monkeypatch.setattr(api_mod, "load_calibration", lambda wid: cal)
+
+    word_id = harvard_kyoto_slug(iast_to_devanagari("kṛṣṇa"))
+    r = client.post(
+        "/api/spd/score",
+        files={"audio": ("a.wav", _speech_wav_bytes(), "audio/wav")},
+        data={"word_id": word_id},
+    )
+    assert r.status_code == 200, r.json()
+    body = r.json()
+    assert set(body) == {
+        "similarity_pct", "vowel_score", "consonant_score",
+        "duration_score", "mfcc_dtw_score", "reference_word",
+    }
+    for key in ("similarity_pct", "vowel_score", "consonant_score",
+                "duration_score", "mfcc_dtw_score"):
+        assert 0.0 < body[key] <= 100.0, (key, body[key])
+    assert body["reference_word"] == {
+        "word_id": word_id, "devanagari": "कृष्ण", "iast": "kṛṣṇa",
+    }
 
 
 # ----------------------------------------------------- /api/gvr/recognize

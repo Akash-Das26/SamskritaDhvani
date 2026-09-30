@@ -547,6 +547,69 @@ built and tested.**
   produce audio. The scaffolding is built so that both populate by
   dropping data in, with every gate already enforced.
 
+**Unit 3 (2026-10-01): D2 SPD scorer — built, tested, and wired to
+the seam.** (Numbered per the Implementation.md Phase 3 module
+layout; the "Unit 5" entry above is the frontend wiring pass, which
+this completes the backend half of.)
+
+- **`samskrita_dhvani/spd_scorer.py` implements the approved D2
+  formula verbatim** (the Phase 3 sign-off text is the binding
+  spec): with CMVN-normalized static MFCCs (first 13 columns of the
+  D1 (T, 39) output) and DTW alignment,
+  `D = mean over aligned frame pairs of ‖Δmfcc_13‖₂` and
+  `sim = 100·exp(−D/D₀)`. There is **no arbitrary constant**: D₀ is
+  the per-word mean DTW distance of known-correct recitations to the
+  canonical reference, stored in `data/spd/calibration.json`
+  (schema version 1, provenance-carrying) and rebuilt via
+  `CalibrationBuilder` on corpus change. By construction a
+  recitation at the calibration population's mean distance scores
+  100·e⁻¹ ≈ 36.8, and the D = 0 boundary maps to exactly 100.
+- **Per-axis breakdown (FR-11), same mapping style with measured
+  per-word scales (D₀ᶠᵒʳᵐ, D₀ᵈᵘʳ):** vowel/formant axis = mean
+  relative formant mismatch (Praat Burg formants on the D1 frame
+  grid, averaged over frames voiced in both clips); consonant/
+  spectral axis = MFCC-DTW restricted to likely-consonant frames of
+  the attempt (low-pitch-flatness + low-energy mask, guaranteed
+  non-empty); duration axis = |log(vad-trimmed duration ratio)|,
+  symmetric in r ↔ 1/r.
+- **API seam (`api.py`) — the honesty chain got more precise, not
+  more permissive.** `/api/spd/score` now walks: 404 `unknown_word`
+  → 422 `invalid_audio` → 422 `near_silence` (DataIntegrity §1.1:
+  ≤ 10% speech frames; measured via the real D1 VAD) → 503
+  `reference_unavailable` (no ear-verified clip for the word) → 503
+  `calibration_unavailable` (no measured D₀; the D2 formula forbids
+  guessing the scale) → 200 with the exact FR-11 shape
+  `{similarity_pct, vowel_score, consonant_score, duration_score,
+  mfcc_dtw_score, reference_word}`.
+- **Measured this session (actual runs):** WebRTC VAD speech
+  fraction on the 220 Hz sine fixture = **0.091** — below the gate,
+  so the tone now gets an honest *invalid input* ("Only 9% of frames
+  contain speech…") instead of any 5xx; the harmonic-stack fixture
+  measures **0.909** and proceeds to the 503 chain. Live-server
+  smoke: tone → `422 near_silence`; speech-like clip → `503
+  reference_unavailable` naming the expected file path and the
+  pending Hall/Loyola ear check. UI honesty lines updated
+  ("Design D2 — built, data pending").
+- **Tests:** 21 scorer unit tests (synthetic vowel fixtures per
+  NFR-02): static-MFCC block identity + CMVN zero-mean; DTW D = 0
+  on identical inputs, distance grows with formant distortion, path
+  monotonicity + spanning (starts (0,0), ends (Tₐ−1, Tᵣ−1)); sim
+  mapping boundary/monotonicity/D₀-scale properties; formant axis
+  ≈ 0 on identical clips, grows with formant shift, raises on
+  silence; duration symmetry; consonant mask never covers the
+  loud voiced nucleus; end-to-end good-over-bad ranking; the 200
+  contract through the API with test doubles for exactly the two
+  data prerequisites. API contract tests updated for the new chain
+  (the old "503 until D2 lands" stub is replaced by the three
+  new-mode tests + one 200-path test). `pytest tests/` → **84
+  passed** (was 60).
+- **Honest limits:** no real-word 200 can occur yet — that requires
+  the ear check to pass, reference clips to be cut (FR-12), and the
+  D5 calibration recordings to be made. The 200 path is verified
+  with the reference file and measured D₀ supplied as explicit test
+  doubles; everything upstream of them (features, DTW, mapping,
+  response shape) is the real production code.
+
 **Unit 5 (2026-09-30 → 10-01): Stitch exports wired to the live API —
 all four screens functional.**
 
@@ -1032,6 +1095,16 @@ per the Phase 6 discipline (no bulk-delete first).
   registry/status bindings, explicit error/empty states for every
   failure mode, and zero fabricated numbers (`web/stitch_exports/`
   left pristine). [2026-09-30 → 10-01]
+- `samskrita_dhvani/spd_scorer.py` + `tests/test_spd_scorer.py` —
+  Phase 4 unit 3: design D2 implemented (sim = 100·exp(−D/D₀),
+  measured D₀ per word, per-axis FR-11 breakdown, calibration.json
+  schema v1 + CalibrationBuilder), 21 synthetic-fixture tests.
+  `api.py` `/api/spd/score` seam now walks the full honesty chain
+  (422 near_silence → 503 reference_unavailable → 503
+  calibration_unavailable → 200 FR-11 shape). [2026-10-01]
+- `web/index.html`, `web/spd.html` — honesty lines updated to the
+  D2-built state ("built, data pending"; backend names exactly what
+  is missing). [2026-10-01]
 - `tools/e2e_render_check.py`, `tools/e2e_flow.py`,
   `tools/e2e_flow_negative.py` — reusable headless-Chrome E2E
   harnesses (CDP-driven; render assertions, fake-mic flow, and

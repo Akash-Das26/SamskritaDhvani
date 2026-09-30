@@ -8,13 +8,16 @@ Phase 3 sign-off (2026-09-23) fixed the contract:
 - ``GET  /api/status``       — corpus/model transparency page (Frontend.md §3.4)
 
 Ground Rule 1 in the UI: every unavailability is an explicit error
-state (HTTP 503 with a structured body) — never a placeholder score.
-The SPD scorer (design D2) and GVR HMM (design D3) are not yet
-implemented; the two POST endpoints validate what can be validated
-today (word ID, decodable audio) and then return 503
-``model_unavailable``. The scoring/recognition call sites are marked
-with ``# SCORER SEAM`` so Phase 4 units 3/4 drop in at exactly one
-place each.
+state with a structured body — never a placeholder score.
+
+SPD scoring (design D2, Phase 4 unit 3) is implemented
+(``samskrita_dhvani.spd_scorer``) but stays honestly unavailable until
+its two data prerequisites exist: an ear-verified reference clip per
+word (503 ``reference_unavailable``) and a measured per-word D₀ from
+known-correct recitations (503 ``calibration_unavailable``). The D2
+formula forbids guessing the scale, so no score is fabricated in the
+meantime. The GVR HMM (design D3) is not yet implemented; that
+endpoint returns 503 ``model_unavailable``.
 
 Run::
 
@@ -37,7 +40,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from samskrita_dhvani.frontend import load_audio_16k
+from samskrita_dhvani.frontend import load_audio_16k, vad_speech_fraction
 from samskrita_dhvani.registry import (
     SpdWordlist,
     VerseEntry,
@@ -45,6 +48,7 @@ from samskrita_dhvani.registry import (
     build_seed_wordlist,
     iast_to_devanagari,
 )
+from samskrita_dhvani.spd_scorer import load_calibration, score_attempt
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 WORDLIST_PROVENANCE = {
@@ -197,8 +201,14 @@ def _save_upload_to_temp(data: bytes, suffix: str = ".wav") -> Path:
     return Path(tmp.name)
 
 
-def _require_decodable_audio(data: bytes, min_duration_s: float = 0.2) -> tuple[Path, float]:
-    """Decode the upload with the real D1 loader; 422 if not audio."""
+def _require_decodable_audio(
+    data: bytes, min_duration_s: float = 0.2
+) -> tuple[Path, "np.ndarray", float]:
+    """Decode the upload with the real D1 loader; 422 if not audio.
+
+    Returns ``(temp_path, waveform, duration_s)`` so callers can run
+    DSP checks (e.g. the VAD speech fraction) without re-decoding.
+    """
     if len(data) < 512:
         raise HTTPException(
             status_code=422,
@@ -224,7 +234,7 @@ def _require_decodable_audio(data: bytes, min_duration_s: float = 0.2) -> tuple[
                 "detail": f"Audio too short ({duration:.2f}s; minimum {min_duration_s:.2f}s).",
             },
         )
-    return path, duration
+    return path, y, duration
 
 
 # ------------------------------------------------------------- endpoints
@@ -257,34 +267,105 @@ async def spd_score(
     audio: UploadFile = File(...),
     word_id: str = Form(...),
 ) -> dict:
-    """Score a pronunciation attempt (FR-11). Validates word + audio
-    now; returns 503 model_unavailable until the D2 scorer lands."""
+    """Score a pronunciation attempt (FR-10/FR-11) with design D2.
+
+    Full honesty chain, in order: 404 unknown word → 422 undecodable
+    audio → 422 near-silence (DataIntegrity §1.1) → 503 missing
+    ear-verified reference clip → 503 missing measured D₀ → 200 with
+    the FR-11 shape. No path can return a fabricated number.
+    """
     wl = _wordlist()
-    known = {w.word_id for w in wl.words}
+    known = {w.word_id: w for w in wl.words}
     if word_id not in known:
         raise HTTPException(
             status_code=404,
             detail={"error": "unknown_word", "detail": f"word_id '{word_id}' is not in the FR-12 word list."},
         )
     data = await audio.read()
-    path, duration = _require_decodable_audio(data)
+    path, y, duration = _require_decodable_audio(data)
+    try:
+        # DataIntegrity §1.1: clips that are mostly silence are invalid
+        # input, not scorable attempts.
+        speech_frac = vad_speech_fraction(y)
+        if speech_frac <= 0.10:
+            raise HTTPException(
+                status_code=422,
+                detail={
+                    "error": "near_silence",
+                    "detail": (
+                        f"Only {speech_frac:.0%} of frames contain speech "
+                        "(DataIntegrity §1.1 excludes clips at or below 10%); "
+                        "record closer to the microphone and try again."
+                    ),
+                },
+            )
 
-    # SCORER SEAM: Phase 4 unit 3 (design D2 DTW scorer) replaces the
-    # block below with a real call and the FR-11 response shape:
-    #   {similarity_pct, vowel_score, consonant_score, duration_score,
-    #    mfcc_dtw_score, reference_word: {...}}
-    path.unlink(missing_ok=True)
-    raise HTTPException(
-        status_code=503,
-        detail={
-            "error": "model_unavailable",
-            "detail": (
-                "SPD scorer (design D2, Phase 4 unit 3) is not implemented yet; "
-                "no score can be reported. Audio validated OK "
-                f"({duration:.2f}s, word '{word_id}')."
-            ),
-        },
-    )
+        # D2 prerequisite 1: an ear-verified reference clip on disk.
+        ref_path = None
+        for ext in (".wav", ".flac", ".mp3"):
+            p = SPD_REFERENCE_ROOT / f"{word_id}{ext}"
+            if p.is_file() and p.stat().st_size > 0:
+                ref_path = p
+                break
+        if ref_path is None:
+            raise HTTPException(
+                status_code=503,
+                detail={
+                    "error": "reference_unavailable",
+                    "detail": (
+                        f"No verified reference clip for '{word_id}' "
+                        f"(expected data/spd/reference_words/{word_id}.wav). "
+                        "The Hall/Loyola ear check (PROVENANCE SPD-01/02) is "
+                        "still pending, so no reference has been cut; D2 "
+                        "cannot score without one."
+                    ),
+                },
+            )
+
+        # D2 prerequisite 2: a measured per-word D₀ (never a guess).
+        calibration = load_calibration(word_id)
+        if calibration is None:
+            raise HTTPException(
+                status_code=503,
+                detail={
+                    "error": "calibration_unavailable",
+                    "detail": (
+                        f"Word '{word_id}' has no measured D0 in "
+                        "data/spd/calibration.json. The approved D2 mapping "
+                        "sim = 100·exp(−D/D0) requires D0 from known-correct "
+                        "recitations (CalibrationBuilder); no scale, no score."
+                    ),
+                },
+            )
+
+        ref_audio = load_audio_16k(str(ref_path))
+        w = known[word_id]
+        try:
+            score = score_attempt(
+                y,
+                ref_audio,
+                calibration,
+                {"word_id": word_id, "devanagari": w.devanagari, "iast": w.iast},
+            )
+        except ValueError as exc:
+            raise HTTPException(
+                status_code=422,
+                detail={
+                    "error": "axis_unmeasurable",
+                    "detail": f"The attempt could not be scored on every axis: {exc}",
+                },
+            )
+
+        return {
+            "similarity_pct": round(score.similarity_pct, 1),
+            "vowel_score": round(score.vowel_score, 1),
+            "consonant_score": round(score.consonant_score, 1),
+            "duration_score": round(score.duration_score, 1),
+            "mfcc_dtw_score": round(score.mfcc_dtw_score, 1),
+            "reference_word": score.reference_word,
+        }
+    finally:
+        path.unlink(missing_ok=True)
 
 
 @app.post("/api/gvr/recognize")
@@ -292,7 +373,7 @@ async def gvr_recognize(audio: UploadFile = File(...)) -> dict:
     """Recognize a verse (FR-21). Returns 503 model_unavailable until
     the D3 HMM exists AND the FR-22 registry has training data."""
     data = await audio.read()
-    path, duration = _require_decodable_audio(data)
+    path, _y, duration = _require_decodable_audio(data)
     reg = _load_gvr_registry()
     registry_ready = reg is not None and len(reg) >= 20
 

@@ -505,8 +505,9 @@
                     <div class="pt-space-xs text-center">
                         <p class="font-body-sm text-body-sm text-on-surface-variant/70 italic">
                             Audio is resampled to 16 kHz in the browser and sent only to the local API for scoring.
-                            No scoring model runs in the browser; until the D2 scorer exists, the backend returns an
-                            explicit "model unavailable" response instead of a score.
+                            No scoring model runs in the browser; when a word's verified reference clip or measured
+                            D0 calibration is missing, the backend names exactly what is missing instead of
+                            returning a score.
                         </p>
                     </div>
                 </section>
