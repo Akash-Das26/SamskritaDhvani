@@ -547,11 +547,152 @@ built and tested.**
   produce audio. The scaffolding is built so that both populate by
   dropping data in, with every gate already enforced.
 
+**Unit 5 (2026-09-30 → 10-01): Stitch exports wired to the live API —
+all four screens functional.**
+
+- **Export inventory (step 1 of the wiring order).** Two complete
+  Stitch sets existed under `web/stitch_exports/` (`app/` and `web/`).
+  The `web/` set is canonical (matches Frontend.md §3.1–3.4: GVR
+  candidates + inconclusive state, status 3-card layout, the
+  Chrome/Firefox footer); the `app/` set drifted off-spec ("Verse
+  Scansion Inspector") and is left untouched as an alternate. Working
+  copies were moved from `web/live/` to `web/` root — `api.py` serves
+  `PROJECT_ROOT/web` with `html=True`, so the pages must sit at
+  `web/index.html`, `/spd.html`, `/gvr.html`, `/status.html`. The
+  exports remain byte-pristine.
+- **`web/app.js` (new, shared).** Typed `fetchJSON` (network / 4xx /
+  5xx become explicit Error objects with `.kind`; the UI renders
+  them, it never falls back to placeholder data), `Recorder`
+  (getUserMedia + MediaRecorder with a live level meter), and
+  `toWav16k` (decodeAudioData → OfflineAudioContext at 16 kHz mono →
+  16-bit PCM WAV). The transcode step is required, not cosmetic:
+  MediaRecorder emits webm/opus, which the backend's soundfile
+  decoder cannot read; the browser resamples to the D1 analysis rate
+  client-side. `wireNav()` replaces Stitch's placeholder nav
+  (corpus-reader, spectrogram-workbench, …) with the four real
+  routes and marks the active page.
+- **Per-screen wiring (surgical edits only; Stitch layout kept):**
+  - **Home** — static routing only; fabricated telemetry neutralized:
+    "Acoustic Model: Active [Kaldi/PyTorch]", the 48.0 kHz/24-bit +
+    "Kaldi-HMM / SD-1.4" pipeline card, the p=0.942/0.038 hypothesis
+    bars, "SD-PhonoNet-v1.4b", the ±4.2 ms / 48-scholars claims, the
+    "WebAssembly local inference" privacy line, and the © 2025
+    footer. Each is replaced with an honest statement of what exists
+    today (D2/D3 pending, D1 front-end built, audio never leaves the
+    machine) or removed.
+  - **SPD Practice** — the word picker renders the live FR-12 list
+    from `GET /api/words` (27 words; the filter pills map the five
+    real difficulty axes, not Stitch's invented categories);
+    recording via `Recorder` with a real timer; upload fallback
+    (hidden file input) accepts .wav/.flac/.mp3/.webm/.m4a/.ogg;
+    Submit posts `{word_id, audio}` to `POST /api/spd/score` and
+    renders FR-11 per-axis bars **only** from a 200 response; 503 /
+    422 / 404 / network each get their own explicit message.
+    Fabricated content removed: the pre-filled कृष्ण search value,
+    the F1/F2/VOT/MĀTRĀ readouts (420/1980 Hz, 14 ms, 2.0), fake
+    "48 kHz · 24-bit / SNR 32 dB", the simulated 00:01.42 timer, the
+    static waveform bars + /k/ /ṣ/ /ṇa/ tics, the 78% result with
+    84/71/91/78% bars and the "Mūrdhanya Locus Deviation…"
+    paragraph, the fake "Pandit K. Sharma" reference bar, and the
+    WebAssembly privacy line. Reference playback is honestly
+    disabled (ear check pending): the button renders hidden with the
+    reason stated in the UI.
+  - **GVR Recognition** — same recorder/upload/submit pattern against
+    `POST /api/gvr/recognize`. The export's two result states now
+    carry real meaning: the match card renders only from a 200
+    `{top_match, candidates}` response, and the "Inconclusive Match"
+    card renders the API's explicit 503 `model_unavailable` /
+    not-confidently-recognized / network states (title, flag chip,
+    and body all driven by the response). Fabricated content
+    removed: the 00:18.4 timer, static SVG waveform, F0/LUFS/SNR/
+    noise-gate readouts, "Viterbi 1,420", the 94.2% + verse 9.26
+    text/gloss + three candidates, the Log-P/KLD values, and the
+    TextGrid/attention-matrix buttons. Pre-result state: both cards
+    hidden, status line "no submission yet".
+  - **Status** — all three cards, the audit table, and the manifest
+    download button are bound live to `GET /api/status` (plus `GET
+    /api/words` for the per-axis word breakdown): word count,
+    reference-audio availability, verse coverage (honest "no
+    entries" quoting the registry detail), and the sweep card
+    (honest "not found on this machine" where the manifest is
+    absent). Removed: fake "29 / 12 stems / 48kHz TextGrid", the
+    142-file / 4.82-hr / 2025-05-18 sweep, "SHA-COMMIT
+    rev-2025.04-a12", "PyTorch 2.3 · Kaldi v5.5", the fabricated
+    checksum drawer, and the hardcoded JSON the download button used
+    to emit (it now downloads the live response).
+- **Ground Rule 1 verification:** a grep sweep for fabricated tokens
+  (SD-PhonoNet, Kaldi, PyTorch, 48 kHz, SNR, 78%, 94.2%, rev-2025,
+  …) finds 0 remaining on all four pages, and the 31-assertion
+  headless render check below asserts specific fabricated strings
+  stay absent from the **rendered** DOM, not just the source.
+- **Bug found and fixed during verification:** the first wiring pass
+  loaded `app.js` with `defer` while the page scripts are inline —
+  the inline IIFEs ran first, dereferenced the not-yet-defined `SD`
+  global, and silently died (pages looked fine, nothing was wired).
+  Caught by the headless render check (bindings never rendered, zero
+  console errors — the throw happened before any listener attached);
+  fixed by loading `app.js` synchronously (its top level touches no
+  DOM). Lesson: a beautiful static page can be completely unwired
+  and look identical.
+
 ### Phase 5 (Testing) —
 
-**Test run result (actual, not estimated):**
-- _(fill in: command run, pass/fail, actual accuracy/correlation
-  numbers with the exact script used to produce them)_
+**Frontend E2E (2026-10-01): record → submit → result flows driven in
+a real browser against the live server.** All four screens exercised
+through headless Chrome (CDP-driven), real server
+(`uvicorn samskrita_dhvani.api:app --port 8000`), no mocked HTTP.
+
+1. **API contract smoke (curl + urllib multipart):** `GET /api/words`
+   → 27 words, `reference_audio_available: false`; `GET /api/status`
+   → honest degradations on this machine (Vedavani manifest absent,
+   GVR registry empty); `POST /api/spd/score` with word_id=nope →
+   **404 unknown_word**; valid word + synthetic 1.0 s WAV → **503
+   model_unavailable** with detail "Audio validated OK (1.00s, word
+   'kRSNa')" — the validation layer genuinely decoded the upload;
+   garbage bytes → **422 invalid_audio** (soundfile: "Format not
+   recognised"); `POST /api/gvr/recognize` + WAV → **503** (registry-
+   missing variant). All shapes match Frontend.md §4.
+2. **Render check** (`tools/e2e_render_check.py`): **31/31 assertions
+   PASS, 0 JS console errors** across /, /spd.html, /gvr.html,
+   /status.html — live bindings verified in the rendered DOM (27 word
+   buttons on SPD; both GVR result cards hidden at load; status word
+   count equal to the API value) plus the fabricated-content absence
+   checks. Harness lesson: `--virtual-time-budget --dump-dom` does
+   not run pending fetches; CDP evaluate-after-settle does.
+3. **Flow E2E** (`tools/e2e_flow.py`): **13/13 PASS.** Chrome launched
+   with `--use-fake-device-for-media-stream`, so getUserMedia /
+   MediaRecorder ran the real capture path (the fake mic produces a
+   real tone WAV):
+   - SPD upload fallback: attempt.wav decoded in-page → submit →
+     explicit `model_unavailable` card; headline score stays "—".
+   - SPD mic: recorded 1.6 s (timer advanced live: "00:01.8 /
+     00:10.0 max"), stop → client transcode → submit → same honest
+     503 card.
+   - GVR mic: recorded 2.0 s → submit → fallback panel titled "Not
+     Recognized — Model Unavailable"; the match card stays hidden;
+     no verse text exists anywhere in the DOM.
+   - GVR garbage upload: explicit in-page decode-failure message;
+     submit stays disabled.
+   Screenshots: `files/e2e-screens/*.png` (4, committed as evidence).
+4. **Negative E2E** (`tools/e2e_flow_negative.py`): **7/7 PASS.**
+   With the API process killed, SPD submit renders the explicit
+   `network` card including the recovery hint ("start the backend:
+   uvicorn …"), score stays "—"; with `/api/*` blocked via CDP, the
+   status page renders "Status unavailable: …" in the card, the word
+   meta, and the audit table (the failure, not stale rows), word
+   count "—".
+5. **Test suite:** `.venv/bin/python -m pytest tests/` → **60 passed**
+   (the previously-skipped web-mount test now runs and passes since
+   `web/` exists).
+
+**Honest limits of this E2E pass:** no human-voice recording was made
+(the automated runs use the fake-mic tone and in-page-built WAVs; a
+short owner smoke test with a real microphone is the remaining
+action). The SPD 200-response and GVR match paths cannot be exercised
+until D2/D3 exist — by design, this pass proves the *honest
+unavailable* states at the model seam instead. Screen status: Home
+wired + routed; SPD wired (scorer pending); GVR wired (recognizer
+pending); Status fully live.
 
 ### Phase 6 (Maintenance) — repo cleanup, hygiene, and structure pass
 
@@ -884,3 +1025,17 @@ per the Phase 6 discipline (no bulk-delete first).
   validation for any verse-level classification experiment, it must be
   **re-split by text**, not by the official ASR split, to avoid label
   leakage (§4 step 3 analog).
+- `web/index.html`, `web/spd.html`, `web/gvr.html`, `web/status.html`,
+  `web/app.js` — Phase 4 wiring pass: the four canonical Stitch
+  screens wired to the live FastAPI backend with real recording
+  (MediaRecorder → client-side 16 kHz WAV), an upload fallback, live
+  registry/status bindings, explicit error/empty states for every
+  failure mode, and zero fabricated numbers (`web/stitch_exports/`
+  left pristine). [2026-09-30 → 10-01]
+- `tools/e2e_render_check.py`, `tools/e2e_flow.py`,
+  `tools/e2e_flow_negative.py` — reusable headless-Chrome E2E
+  harnesses (CDP-driven; render assertions, fake-mic flow, and
+  negative/offline cases). [2026-10-01]
+- `files/e2e-screens/` — 4 evidence screenshots from the flow E2E
+  (SPD upload/mic 503 cards, GVR fallback panel, GVR decode
+  failure). [2026-10-01]

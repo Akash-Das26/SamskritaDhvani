@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif:wght@500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#7b5503", "on-error-container": "#93000a", "tertiary-fixed": "#ffdead", "on-tertiary-fixed-variant": "#604100", "outline": "#8a726c", "on-error": "#ffffff", "surface-bright": "#fdf8f5", "on-tertiary-container": "#ffcd7d", "on-secondary-fixed-variant": "#812815", "surface-container": "#f1ede9", "secondary-fixed": "#ffdad3", "surface-container-lowest": "#ffffff", "on-surface-variant": "#56423d", "surface-container-high": "#ece7e4", "on-secondary": "#ffffff", "on-secondary-fixed": "#3e0500", "surface-dim": "#ddd9d6", "inverse-surface": "#31302e", "primary-fixed-dim": "#ffb4a2", "primary-container": "#9e3d24", "on-tertiary": "#ffffff", "surface-tint": "#a13f26", "background": "#fdf8f5", "inverse-on-surface": "#f4f0ec", "on-surface": "#1c1b1a", "on-primary": "#ffffff", "tertiary-fixed-dim": "#f2be68", "secondary-fixed-dim": "#ffb4a4", "surface-container-low": "#f7f3ef", "surface": "#fdf8f5", "outline-variant": "#ddc0b9", "on-primary-container": "#ffc9bc", "primary": "#7e260f", "error-container": "#ffdad6", "tertiary": "#5d3f00", "inverse-primary": "#ffb4a2", "secondary": "#a13f2a", "secondary-container": "#ff866b", "surface-container-highest": "#e6e2de", "on-background": "#1c1b1a", "primary-fixed": "#ffdbd2", "on-primary-fixed-variant": "#812811", "on-secondary-container": "#741f0d", "on-primary-fixed": "#3c0800", "error": "#ba1a1a", "on-tertiary-fixed": "#281900", "surface-variant": "#e6e2de" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.5rem", "margin-sm": "1rem", "gutter-sm": "1rem", "space-md": "1rem", "margin": "2rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "gutter": "1.5rem" }, "fontFamily": { "label-sm": ["JetBrains Mono"], "code": ["JetBrains Mono"], "headline-lg": ["Noto Serif"], "body-lg": ["Inter"], "display": ["Noto Serif"], "body-md": ["Inter"], "headline-md": ["Noto Serif"], "label-lg": ["Inter"], "headline-sm": ["Noto Serif"], "label-md": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-lg-mobile": ["Noto Serif"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "400" }], "code": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }] } } } };</script>
+    <script src="/app.js"></script>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md text-body-md">
+    <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="w-full bg-surface-container-low px-gutter py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>Computational Linguistics &amp; Acoustic Phonetics
+                    Lab</span><span class="opacity-40">·</span><span>v0.4.2-alpha</span></div>
+            <div class="flex items-center gap-space-sm font-code text-code text-on-surface-variant"><span
+                    class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span><span>SPD + GVR demo backend</span><span
+                    class="opacity-40">·</span><span>Local API :8000</span></div>
+        </div>
+        <div class="h-16 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+            <div class="flex items-center gap-space-md"><img alt="SamskritaDhvani Emblem"
+                    class="h-8 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VHRkD0hXzNZT5RSyKGP-59Nz882SZZ0vJcZuoCFnWEHTX-XfjVd47pESeRrP924p7c6chfN0qOJLBOjbDkrAv9-NviCgIiXm9Q53OMu9OiMTbwpkROvxewqHjoAS6KO8euE8v1PY9qISjAIvnWTtFe5zgiVB8yhKSurBDnBtBqaxxkV_vpCSYRVV4-9lBekfkzOELV2VoomYjp4VYgE4lDyAIpDq8-5TVHGxdH5ShC-qlKS5P1X0TC02k" />
+                <div class="flex flex-col"><span
+                        class="font-headline-sm text-headline-sm text-primary tracking-tight">SamskritaDhvani</span><span
+                        class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">संस्कृतध्वनि ·
+                        Phonetic Architecture</span></div>
+            </div>
+            <nav class="hidden md:flex items-center gap-space-sm font-label-lg text-label-lg"
+                data-active-classes="bg-primary-container text-on-primary font-medium rounded" data-sd-nav><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="corpus-reader" href="#">Corpus Reader</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="spectrogram-workbench" href="#">Spectrogram Workbench</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="prosodic-matrix" href="#">Prosodic Matrix</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="acoustic-models" href="#">Acoustic Models</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="corpus-and-model-status" href="#">Corpus &amp; Model Status</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="research-documentation" href="#">Documentation</a></nav>
+            <div class="flex items-center gap-space-md">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-22 bg-surface min-h-screen">
+        <div class="flex flex-col w-full">
+            <div class="max-w-7xl mx-auto w-full px-gutter py-space-xl space-y-space-xl">
+                <!-- Header Section -->
+                <header
+                    class="flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-outline-variant pb-space-lg">
+                    <div class="space-y-space-xs max-w-3xl">
+                        <div
+                            class="flex items-center gap-space-sm font-label-sm text-label-sm text-secondary tracking-wider uppercase">
+                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span>
+                            <span>Project Registries &amp; Audit Log</span>
+                            <span class="text-outline">/</span>
+                            <span class="font-serif">कोष-प्रतिरूप-स्थितिः</span>
+                        </div>
+                        <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Corpus &amp; Model
+                            Status</h1>
+                        <p class="font-body-md text-body-md text-on-surface-variant">
+                            What the tool actually knows, read live from the project registries. Direct readouts from
+                            persistent storage and verification manifests.
+                        </p>
+                    </div>
+                    <!-- Live Indicator Pill -->
+                    <div class="flex flex-col items-start md:items-end gap-1">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-on-surface border border-outline-variant">
+                            <span class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            <span class="font-medium tracking-wide">REGISTRY READOUT: LIVE (READ-ONLY)</span>
+                        </div>
+                        <div
+                            class="font-code text-code text-on-surface-variant text-[11px] flex items-center gap-1.5 mt-0.5">
+                            <span id="statusGenAt">reading live from /api/status…</span>
+                        </div>
+                    </div>
+                </header>
+                <!-- Visual Artifact Feature: Archival Registry Scope (Subtle Data Card Banner) -->
+                <div
+                    class="bg-surface-container-low rounded-lg p-space-md border border-outline-variant flex flex-col md:flex-row items-center justify-between gap-space-md">
+                    <div class="flex items-center gap-space-md">
+                        <div
+                            class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[20px]">science</span>
+                        </div>
+                        <div class="space-y-0.5">
+                            <div class="font-label-lg text-label-lg text-on-surface font-medium">Epigraphic &amp;
+                                Acoustic Manifest Synchronizer</div>
+                            <div class="font-body-sm text-body-sm text-on-surface-variant">
+                                Live readout of the project's registries and manifests. Every number on this page is
+                                fetched at request time — none is stored in the page.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-space-lg font-code text-code shrink-0">
+                        <div class="text-right">
+                            <span class="text-on-surface-variant block text-[10px] tracking-wider uppercase">Backend</span>
+                            <span class="text-on-surface font-medium">FastAPI (local)</span>
+                        </div>
+                        <div class="w-px h-8 bg-outline-variant"></div>
+                        <div class="text-right">
+                            <span class="text-on-surface-variant block text-[10px] tracking-wider uppercase">Data
+                                policy</span>
+                            <span class="text-on-surface font-medium">Provenance-gated</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Three Academic Registry Cards -->
+                <section class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+                    <!-- Card 1: Pronunciation word list -->
+                    <article
+                        class="bg-surface-container-low border border-outline-variant rounded-lg p-space-lg flex flex-col justify-between hover:bg-surface-container transition-colors">
+                        <div class="space-y-space-md">
+                            <div class="flex items-center justify-between border-b border-outline-variant pb-space-sm">
+                                <span class="font-code text-code text-primary font-medium tracking-wider">01 ·
+                                    PRONUNCIATION WORD LIST</span>
+                                <span
+                                    class="material-symbols-outlined text-outline text-[18px]">record_voice_over</span>
+                            </div>
+                            <div class="pt-space-sm space-y-1">
+                                <div class="font-code text-display text-primary leading-none tracking-tight"
+                                    id="statWordCount">—</div>
+                                <div
+                                    class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 pt-1">
+                                    <span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+                                    <span>reference audio: <span class="italic font-serif" id="statRefAudio">checking…</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-space-lg pt-space-md border-t border-outline-variant/60 space-y-2">
+                            <div class="font-code text-code text-[11px] text-on-surface-variant leading-relaxed"
+                                id="statWordMeta">
+                                Loading the live word list…
+                            </div>
+                            <div class="pt-2 flex items-center gap-1 flex-wrap" id="statTierPills"></div>
+                        </div>
+                    </article>
+                    <!-- Card 2: Verse recognition coverage -->
+                    <article
+                        class="bg-surface-container-low border border-outline-variant rounded-lg p-space-lg flex flex-col justify-between hover:bg-surface-container transition-colors">
+                        <div class="space-y-space-md">
+                            <div class="flex items-center justify-between border-b border-outline-variant pb-space-sm">
+                                <span class="font-code text-code text-on-surface-variant font-medium tracking-wider">02
+                                    · VERSE RECOGNITION COVERAGE</span>
+                                <span class="material-symbols-outlined text-outline text-[18px]">menu_book</span>
+                            </div>
+                            <div class="pt-space-sm space-y-1">
+                                <div class="font-code text-headline-lg text-outline leading-tight"
+                                    id="statVerseHead">—</div>
+                                <div class="font-code text-code text-[12px] text-on-surface-variant"
+                                    id="statVerseSub">—</div>
+                            </div>
+                            <div
+                                class="p-2.5 rounded bg-surface-container-high/60 border border-outline-variant/60 font-body-sm text-body-sm text-secondary leading-snug"
+                                id="statVerseNote">
+                                Loading the registry state…
+                            </div>
+                        </div>
+                        <div class="mt-space-lg pt-space-md border-t border-outline-variant/60">
+                            <p id="statVerseDetail"
+                                class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed text-[12px]">
+                                Loading the verse-registry state…
+                            </p>
+                        </div>
+                    </article>
+                    <!-- Card 3: Latest data-integrity sweep -->
+                    <article
+                        class="bg-surface-container-low border border-outline-variant rounded-lg p-space-lg flex flex-col justify-between hover:bg-surface-container transition-colors">
+                        <div class="space-y-space-md">
+                            <div class="flex items-center justify-between border-b border-outline-variant pb-space-sm">
+                                <span class="font-code text-code text-primary font-medium tracking-wider">03 · LATEST
+                                    DATA-INTEGRITY SWEEP</span>
+                                <span class="material-symbols-outlined text-outline text-[18px]">verified</span>
+                            </div>
+                            <div class="pt-space-sm grid grid-cols-2 gap-y-3 gap-x-2 font-code">
+                                <div>
+                                    <span
+                                        class="text-[11px] text-on-surface-variant uppercase tracking-wider block">Files
+                                        swept</span>
+                                    <span class="text-headline-md text-on-surface font-medium" id="sweepFiles">—</span>
+                                </div>
+                                <div>
+                                    <span
+                                        class="text-[11px] text-on-surface-variant uppercase tracking-wider block">Total
+                                        duration</span>
+                                    <span class="text-headline-md text-on-surface font-medium" id="sweepHours">—</span>
+                                </div>
+                                <div class="col-span-2 pt-1 border-t border-outline-variant/40">
+                                    <span
+                                        class="text-[11px] text-on-surface-variant uppercase tracking-wider block">Sweep
+                                        date</span>
+                                    <span class="text-code text-on-surface font-medium" id="sweepDate">—</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-space-lg pt-space-md border-t border-outline-variant/60">
+                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed text-[12px]"
+                                id="sweepNote">
+                                Loading the sweep summary from the API…
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <!-- Audit Log / Changelog Section -->
+                <section class="space-y-space-md">
+                    <div
+                        class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs border-b border-outline-variant pb-space-sm">
+                        <div>
+                            <h2 class="font-headline-sm text-headline-sm text-on-surface">Data Integrity &amp; Manifest
+                                Audit Log</h2>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Recent validation sweeps and
+                                registry synchronizations.</p>
+                        </div>
+                        <span class="font-code text-code text-[11px] text-on-surface-variant">rows built live from
+                                /api/status</span>
+                    </div>
+                    <!-- Table Container -->
+                    <div
+                        class="w-full bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr
+                                        class="bg-surface-container border-b border-outline-variant font-code text-code text-on-surface">
+                                        <th class="py-space-sm px-space-md font-medium w-36">DATE (UTC)</th>
+                                        <th class="py-space-sm px-space-md font-medium">CHECK / SPECIFICATION</th>
+                                        <th class="py-space-sm px-space-md font-medium w-72 md:w-80">OUTCOME</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-outline-variant text-body-sm font-body-sm" id="auditBody">
+                                    <tr>
+                                        <td
+                                            class="py-space-md px-space-md font-code text-code text-on-surface-variant"
+                                            colspan="3">
+                                            Reading /api/status…
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <!-- Footer Metadata & Utility Bar -->
+                <div
+                    class="pt-space-md pb-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md border-t border-outline-variant text-on-surface-variant font-body-sm text-body-sm">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px] text-outline">info</span>
+                        <span>All numbers on this page are read from project artifacts at request time.</span>
+                    </div>
+                    <div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+                        <button
+                            class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant font-code text-code transition-colors flex items-center gap-1.5"
+                            id="inspect-checksums-btn" type="button">
+                            <span class="material-symbols-outlined text-[16px]">fingerprint</span>
+                            <span>Inspect SHA-256 Checksums</span>
+                        </button>
+                        <button
+                            class="px-space-md py-space-xs rounded bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg transition-colors flex items-center gap-1.5"
+                            id="download-manifest-btn" type="button">
+                            <span class="material-symbols-outlined text-[16px]">download</span>
+                            <span>Download Raw Registry Manifest (.json)</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Collapsible SHA-256 Inspector Drawer (Micro-interaction) -->
+                <div class="hidden bg-surface-container-high rounded-lg p-space-md border border-outline-variant font-code text-[11px] space-y-2"
+                    id="checksum-panel">
+                    <div
+                        class="flex items-center justify-between text-on-surface font-medium border-b border-outline-variant pb-1">
+                        <span>ARCHIVAL MANIFEST FINGERPRINTS (SHA-256)</span>
+                        <button class="text-on-surface-variant hover:text-on-surface" id="close-checksum-btn">✕
+                            close</button>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-on-surface-variant pt-1"
+                        id="checksum-panel-rows">
+                        <div>
+                            No artifact checksums are published by the API yet. When the integrity pipeline emits
+                            them, they will be listed here — fetched live, never embedded in this page.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Status page — every number comes from /api/status (+ /api/words
+                // for the axis breakdown). Failed/empty calls render explicitly.
+                (function () {
+                    var $ = SD.el;
+
+                    function renderStatus(s) {
+                        $('statWordCount').textContent = String(s.word_count);
+                        $('statRefAudio').textContent = s.spd_reference_audio_available
+                            ? 'verified clips served'
+                            : 'not yet verified';
+                        var vc = s.verse_coverage;
+                        $('statVerseHead').textContent = vc.available
+                            ? (vc.verse_count + ' verses')
+                            : 'no entries';
+                        $('statVerseSub').textContent = vc.available
+                            ? (vc.recitation_count + ' recitations · chapters: ' + (vc.chapters || []).join(', '))
+                            : '0 verses with recordings';
+                        $('statVerseNote').textContent = vc.available ? vc.detail : '“' + vc.detail + '”';
+                        $('statVerseDetail').textContent = vc.available
+                            ? 'Registry of record: read live from data/gvr_registry.json at request time.'
+                            : 'Audio acquisition is pending (permission path or D4 self-recordings). The recognizer cannot be trained until a real registry exists — see files/DataIntegrity.md.';
+                        var sw = s.last_sweep;
+                        $('sweepFiles').textContent = sw.available ? String(sw.files_swept) : '—';
+                        $('sweepHours').textContent = sw.available ? (sw.total_hours + ' hrs') : '—';
+                        $('sweepDate').textContent = sw.available
+                            ? (sw.last_sweep_date + ' (manifest mtime, UTC)')
+                            : 'not available';
+                        $('sweepNote').textContent = sw.available
+                            ? sw.detail + ' Recomputed from Vedavani-Dataset/MANIFEST.csv on each request.'
+                            : sw.detail + ' Nothing is shown here until a real manifest exists on this machine.';
+                        $('statusGenAt').textContent = 'read live at ' + s.generated_at;
+                    }
+
+                    function renderAudit(s) {
+                        var rows = [];
+                        rows.push([
+                            s.generated_at.slice(0, 10),
+                            'GVR verse registry (data/gvr_registry.json)',
+                            s.verse_coverage.available
+                                ? 'AVAILABLE — ' + s.verse_coverage.verse_count + ' verses / ' + s.verse_coverage.recitation_count + ' recitations'
+                                : 'EMPTY — ' + s.verse_coverage.detail,
+                        ]);
+                        rows.push([
+                            s.last_sweep.available ? s.last_sweep.last_sweep_date : s.generated_at.slice(0, 10),
+                            'Vedavani §4 front-end validation sweep (MANIFEST.csv)',
+                            s.last_sweep.available
+                                ? 'PASS — ' + s.last_sweep.files_swept + ' files · ' + s.last_sweep.total_hours + ' hrs'
+                                : 'NOT ON THIS MACHINE — ' + s.last_sweep.detail,
+                        ]);
+                        rows.push([
+                            s.generated_at.slice(0, 10),
+                            'SPD reference audio (data/spd/reference_words/)',
+                            s.spd_reference_audio_available
+                                ? 'AVAILABLE'
+                                : 'PENDING — Hall/Loyola ear check not yet passed (PROVENANCE SPD-01/02)',
+                        ]);
+                        $('auditBody').innerHTML = rows.map(function (r) {
+                            var ok = r[2].indexOf('PASS') === 0 || r[2].indexOf('AVAILABLE') === 0;
+                            var dot = ok
+                                ? '<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span>'
+                                : '<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary"></span>';
+                            return '<tr class="hover:bg-surface-container transition-colors">' +
+                                '<td class="py-space-md px-space-md font-code text-code text-on-surface align-top whitespace-nowrap">' + SD.esc(r[0]) + '</td>' +
+                                '<td class="py-space-md px-space-md text-on-surface align-top leading-relaxed"><div class="font-medium">' + SD.esc(r[1]) + '</div></td>' +
+                                '<td class="py-space-md px-space-md align-top"><div class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-surface text-primary border border-outline-variant font-code text-code text-[11px] leading-none">' + dot + '<span>' + SD.esc(r[2]) + '</span></div></td>' +
+                                '</tr>';
+                        }).join('');
+                    }
+
+                    async function load() {
+                        try {
+                            var wl = await SD.getWords();
+                            var axes = {};
+                            wl.words.forEach(function (w) {
+                                axes[w.difficulty_axis] = (axes[w.difficulty_axis] || 0) + 1;
+                            });
+                            var keys = Object.keys(axes).sort();
+                            $('statWordMeta').innerHTML =
+                                '<span class="text-on-surface font-medium">Lexemes:</span> ' + wl.words.length + ' in the FR-12 list<br />' +
+                                keys.map(function (a) {
+                                    return '<span class="text-on-surface font-medium">' + SD.esc(a) + ':</span> ' + axes[a];
+                                }).join('<br />') +
+                                '<br /><span class="text-on-surface font-medium">Reference audio:</span> ' +
+                                (wl.reference_audio_available ? 'served per word' : 'none ear-verified yet');
+                            $('statTierPills').innerHTML = keys.map(function (a) {
+                                return '<span class="inline-block px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code text-[10px]">' + SD.esc(a) + '</span>';
+                            }).join('');
+                        } catch (err) {
+                            $('statWordMeta').textContent = 'Word list unavailable: ' + err.message;
+                        }
+                        try {
+                            var s = await SD.getStatus();
+                            renderStatus(s);
+                            renderAudit(s);
+                        } catch (err) {
+                            $('statWordCount').textContent = '—';
+                            $('statWordMeta').textContent = 'Status unavailable: ' + err.message +
+                                (err.kind === 'network' ? ' — start the API server and reload.' : '');
+                            $('auditBody').innerHTML = '<tr><td class="py-space-md px-space-md font-code text-code text-on-surface-variant" colspan="3">Status unavailable: ' + SD.esc(err.message) + '</td></tr>';
+                        }
+                    }
+
+                    function wire() {
+                        var panel = $('checksum-panel');
+                        var ib = $('inspect-checksums-btn');
+                        var cb = $('close-checksum-btn');
+                        if (ib && panel) ib.addEventListener('click', function () {
+                            panel.classList.toggle('hidden');
+                            if (!panel.classList.contains('hidden')) panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        });
+                        if (cb && panel) cb.addEventListener('click', function () { panel.classList.add('hidden'); });
+                        $('download-manifest-btn').addEventListener('click', async function () {
+                            try {
+                                var s = await SD.getStatus();
+                                var blob = new Blob([JSON.stringify(s, null, 2)], { type: 'application/json' });
+                                var a = document.createElement('a');
+                                a.href = URL.createObjectURL(blob);
+                                a.download = 'samskritadhvani-status.json';
+                                a.click();
+                                URL.revokeObjectURL(a.href);
+                            } catch (err) {
+                                window.alert('Could not fetch live status: ' + err.message);
+                            }
+                        });
+                    }
+
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', function () { wire(); load(); });
+                    } else {
+                        wire(); load();
+                    }
+                })();
+            </script>
+        </div>
+    <script>window.addEventListener('DOMContentLoaded', function () { SD.wireNav(); });</script>
+    </main>
+    <footer class="w-full bg-surface-container-low py-space-lg">
+        <div
+            class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>SamskritaDhvani — local research demo</span><span
+                    class="opacity-40">·</span><span>Desktop Chrome / Firefox recommended</span></div>
+            <div class="flex items-center gap-space-lg font-code text-code"><span>FastAPI backend</span><span>registry
+                    readout v1</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>
