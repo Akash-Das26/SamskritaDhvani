@@ -7,6 +7,7 @@ uvicorn[standard]). Usage: .venv/bin/python /tmp/e2e_render_check.py
 import asyncio
 import base64
 import json
+import re
 import subprocess
 import time
 import urllib.request
@@ -122,8 +123,24 @@ def check(name, dom, errors, assertions):
     return ok and not hard
 
 
-async def main():
-    checks = [
+def _eval_state(dom):
+    """(absent_hidden, content_hidden) for the status page's unit-9
+    Held-out Evaluation section, read from each panel's class
+    attribute (exact — no char-window slicing)."""
+    def hidden(marker):
+        m = re.search(r'id="' + marker + r'" class="([^"]*)"', dom)
+        return bool(m and "hidden" in m.group(1))
+
+    return hidden("evalAbsent"), hidden("evalContent")
+
+
+def build_checks():
+    """The four-screen assertion set. The status.html eval assertions
+    are state-aware: they hold both while the eval artifacts are
+    absent (honest ladder, no numbers) and once a real report is
+    published (fraction + per-verse rows rendered) — so the same
+    harness stays green across the project's whole lifecycle."""
+    return [
         ("", [
             ("nav rewired to /spd.html", lambda d: 'href="/spd.html"' in d),
             ("nav rewired to /gvr.html", lambda d: 'href="/gvr.html"' in d),
@@ -174,8 +191,46 @@ async def main():
             ("no fabricated SHA commit", lambda d: "rev-2025.04" not in d),
             ("no fabricated checksums",
              lambda d: "e3b0c44298fc1c149afbf4c8996fb924" not in d),
+            # --- unit-9 Held-out Evaluation section (state-aware: the
+            # assertions hold whether the eval artifacts are absent —
+            # the honest ladder with a named reason and NO numbers —
+            # or present, in which case the published report's
+            # fraction + per-verse rows must be rendered).
+            ("eval section scaffolding present",
+             lambda d: 'id="evalAbsent"' in d and 'id="evalContent"' in d
+             and 'id="evalVerseRows"' in d),
+            ("eval panels: exactly one state visible",
+             lambda d: _eval_state(d)[0] != _eval_state(d)[1]),
+            ("eval absent state carries a named ladder reason",
+             lambda d: (lambda absent_hidden:
+                True if absent_hidden else
+                any(k in d.split('id="evalAbsent"')[1].split('</div>')[0]
+                    for k in ("FR-23", "step 4",
+                              "samskrita_dhvani.evaluate", "unreadable")))
+                (_eval_state(d)[0])),
+            ("eval populated state shows fraction + per-verse rows",
+             lambda d: (lambda content_hidden:
+                True if content_hidden else
+                ("/" in d.split('id="evalHeadline"')[1][:160]
+                 and "=" in d.split('id="evalHeadline"')[1][:160]
+                 and d.split('id="evalVerseRows"')[1]
+                 .split("</tbody>")[0].count("<tr") >= 1))
+                (_eval_state(d)[1])),
+            ("eval headline shows only the placeholder while absent",
+             lambda d: (lambda absent_hidden:
+                True if absent_hidden else
+                "—" in d.split('id="evalHeadline"')[1][:80])
+                (_eval_state(d)[0])),
+            ("eval audit row rendered (REPORTED or NOT YET, never both)",
+             lambda d: (lambda body:
+                ("REPORTED — " in body) != ("NOT YET — " in body))
+                (d.split('id="auditBody"')[1].split("</tbody>")[0])),
         ]),
     ]
+
+
+async def main():
+    checks = build_checks()
 
     all_ok = True
     for name, assertions in checks:

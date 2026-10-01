@@ -1377,6 +1377,25 @@ untouched. The harness's status.html assertions predate unit 9's
 eval section — that section's own 17 checks passed in the unit-9
 two-instance E2E recorded above.
 
+**Phase 6 addendum 4 (2026-10-01): unit-9 eval assertions folded into
+the four-screen render harness.** `tools/e2e_render_check.py`'s
+status.html set gains six state-aware checks for the Held-out
+Evaluation section: scaffolding ids present; exactly-one-panel
+visible (exact `class="…"` extraction via a new `_eval_state`
+helper — no char-window slicing); while ABSENT, a named ladder
+reason (FR-23 / train step / evaluate command / unreadable) and a
+placeholder-only headline and NO accuracy anywhere; while POPULATED,
+the headline fraction plus ≥1 per-verse row; and the audit row
+xor (`REPORTED —` / `NOT YET —`, never both). The assertions were
+verified against BOTH states (minimal absent + populated DOMs) before
+the live run, so the same harness stays green through the whole
+project lifecycle — today's absent state and the post-`d4_chain`
+populated state. The checks list moved into `build_checks()` (the
+module now imports cleanly for exactly this kind of predicate
+test). Four-screen re-run: **ALL SCREENS PASS — 37/37, 0 JS
+errors** (hermetic Chrome relaunch per addendum 3; servers by PID;
+booth untouched). Repo eval gates still absent; pytest 162.
+
 **Phase 5 — Unit 10 (2026-10-01): D4 session chain
 (`python -m samskrita_dhvani.d4_chain`) — built and tested.**
 
