@@ -239,6 +239,19 @@ entry's license and provenance (Apache-2.0, sanganaka).
 | **Content** | 72 parquet shards (~6.9 GB), 30,000 train + 7,215 test examples |
 | **Disposition — EXCLUDED 2026-09-23** | Schema verified locally: `input_features` = precomputed Whisper mel features, `labels` = token IDs. **No raw audio.** Cannot feed the D1 MFCC front-end (needs waveforms). No pipeline use; kept at repo root only as the owner's downloaded artifact. |
 
+### GVR-TXT-01 · Bhagavad Gītā mūla text (sanskritdocuments.org) — TEXT SOURCE (no audio)
+
+| Field | Value |
+|---|---|
+| **Source name** | *shrImadbhagavadgItA* (mūla), Sanskrit Documents Collection |
+| **File / URL (fetched 2026-10-01)** | `https://sanskritdocuments.org/doc_giitaa/bhagvadnew.itx` (ITRANS, proofread; file header: latest update 2021-05-15, proofread by SH, Suryansu Ray, Sowmya Krishnapur) |
+| **sha256 of parsed bytes** | `084f037a49609f1e50c0976c0ea50e767afc097298c1a0cf09ea848ab52f13aa` |
+| **License / permission basis** | Site statement in the file header: volunteer-prepared text "to be used for personal study and research"; not to be reposted for promotion or commercial purpose without permission. Use here: internal label text (verse mūla shown in the recording booth, stored in sidecars/registry rows) for an academic, non-commercial research tool — consistent with that statement. **Not redistributed as a corpus.** |
+| **Content extracted** | Chapter 2, all 72 verses (Devanagari mūla, ITRANS→Devanagari via the FR-13 deterministic path) |
+| **Extraction gates** | `tools/build_gvr_itemlist.py`: exactly-72 parse check, verse-number sequence check, spot-check lines (2.13, 2.47) verified before write, per-verse Devanagari→IAST→Devanagari round trip |
+| **Use for** | D4 recording-booth item list (verse labels/captions, checklist sidecar text, future `devanagari_text` registry rows — FR-22). **This is label TEXT only; no audio comes from this source.** |
+| **Local artifact** | `data/gvr/ch2_itemlist.json` (schema v1; includes source URL + sha256) |
+
 ---
 
 ## Sources Checked — Excluded or Not Yet Acquired

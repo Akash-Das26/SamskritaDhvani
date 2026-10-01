@@ -934,6 +934,98 @@ program + FR-22 GVR data plan — approved by direct owner request
   deleted from `data/_incoming/` after the run — synthetic audio
   never lingers where real captures land (DataIntegrity §1.5).
 
+**Phase 3 design note (2026-10-01, second note): GVR (D4) verse-item
+mode for the recording booth — approved by direct owner request.**
+
+- **Goal:** the FR-22 plan's §2.3 fallback ("D4 self-recording via
+  the booth") currently has no booth support — the booth's item list
+  is the SPD seed words only. This unit adds a program switch (D5
+  SPD words / D4 Gita verses) to the same capture flow: same
+  session discipline, same upload gating, per-program items,
+  filenames, and promotion mapping.
+- **Text source (no fabricated mūla):** verses come from
+  sanskritdocuments.org's `bhagvadnew.itx` (proofread 2021-05-15,
+  volunteer-prepared, personal study/research use statement in the
+  file header) — fetched, parsed by a checked tool
+  (`tools/build_gvr_itemlist.py`), and emitted as
+  `data/gvr/ch2_itemlist.json` (schema v1: verse_id, devanagari,
+  fname_key; all 72 verses parsed, booth serves the FR-22 20-verse
+  subset). Parse gates: exactly 72 verses for chapter 2;
+  spot-verified known lines (2.13 dehino'smin, 2.47
+  karmannyadhikāras…) before the file is trusted; source URL +
+  sha256 recorded in a new PROVENANCE.md entry (GVR-TXT-01).
+- **Interfaces changed:** `GET /api/record/items?program=D4|D5`
+  (new; D4 serves the verse list, honestly unavailable if the item
+  file is absent); `/api/record/session` gains `program` +
+  `tradition` (protocol §3.6: tradition stated per session, carried
+  into every checklist row); session ids become `SPD-REC-…` /
+  `GVR-REC-…`; D4 uploads use verse ids (`2.13`) validated against
+  the item list, filenames `gvr_c<ch>v<v>_recitation_t<N>.wav`
+  (protocol §3 key), role restricted to `recitation` (D4 has no
+  single canonical reference — all takes are corpus takes per the
+  FR-22 plan); D4 promotion maps to protocol-compliant names
+  (`gvr_c2v13_<reciter>_<sid>_t<take>.wav` under
+  `data/gvr_recordings/`) and names the future registry-build step.
+- **Not designed (Ground Rule 2):** zero changes to the demo API,
+  scorer, recognizer, calibrate CLI, or the D5 flow's behavior —
+  D5 responses/filenames are byte-identical to unit 5's.
+- **Test plan:** extend `tests/test_record_api.py` (D4 item list,
+  GVR session ids + tradition, D4 upload naming/role/verse
+  validation, per-verse take numbering, D4 promotion content);
+  extend `tools/e2e_booth.py` with a D4 capture flow; full suite
+  green.
+- **Report impact:** none — no reported number changes.
+
+**Phase 5 — Unit 6 (2026-10-01): GVR (D4) verse-item mode for the
+recording booth — built and tested.**
+
+- **What was built:** the booth now takes a program switch — D5 (SPD
+  words, byte-identical behavior to unit 5) or D4 (Gita verses).
+  D4 sessions mint `GVR-REC-…` ids, require the recitation tradition
+  at session start (protocol §3.6; carried into every checklist row
+  as `recitation_tradition`), serve the FR-22 20-verse subset (Ch. 2,
+  vv. 1–20) with real mūla text in the capture modal, restrict the
+  role to `recitation` (D4 has no single canonical reference — all
+  takes are corpus takes per the FR-22 plan), name takes
+  `gvr_c<ch>v<v>_recitation_t<N>.wav` (protocol §3 key; the dot in
+  verse ids stays out of filenames), and promote to the
+  protocol-compliant registry-prep names
+  `gvr_c<ch>v<vv>_<reciter>_<sid>_t<take>.wav` under
+  `data/gvr_recordings/` with the registry-build step named. The
+  corpus-tree boundary is unchanged: capture never writes into
+  `data/spd/` or `data/gvr_recordings/`.
+- **Text source (no fabricated mūla — Ground Rule 1):** verse text is
+  parsed from sanskritdocuments.org's proofread `bhagvadnew.itx`
+  (sha256 `084f037a…f13aa`, recorded with the URL in the item file
+  and in a new PROVENANCE.md entry **GVR-TXT-01** — label TEXT only,
+  no audio from this source; the site's personal study/research
+  statement covers this internal academic use). The checked builder
+  (`tools/build_gvr_itemlist.py`) enforces: exactly 72 verses for
+  chapter 2, verse-number sequence, spot-check lines (2.13, 2.47)
+  before write, and a per-verse Devanagari→IAST→Devanagari round
+  trip. Three builder bugs were caught by its own gates during the
+  build: my spot-check constants were written in a mixed translit
+  convention (fixed to the source's `.n` orthography), the chapter
+  `\section` header and speaker lines leaked into verse 2.1 (filtered),
+  and the round-trip check compared IAST against ITRANS (always
+  false — replaced with the FR-13-style Deva→IAST→Deva identity).
+  Output: `data/gvr/ch2_itemlist.json` (schema v1, 72 verses; the
+  booth serves vv. 1–20). The booth's `/api/record/items?program=D4`
+  is honestly 503 `itemlist_unavailable` if that file is absent or
+  fails its schema gate.
+- **Verification:** 5 new D4 tests (items endpoint + honest 503,
+  tradition-required session with `GVR-REC-` id, upload role/verse
+  validation + sidecar content incl. tradition, per-verse take
+  numbering, promotion mapping with protocol §3 names + explicit
+  corpus-untouched assertion). Full suite: **123 passed**. Browser
+  E2E (`tools/e2e_booth.sh`) extended with a D4 flow: **15/15** —
+  20-verse grid, real 2.13 mūla displayed (देहिनोऽस्मिन्यथा देहे
+  कौमारं यौवनं जरा), fake-mic take saved as
+  `gvr_c2v13_recitation_t0.wav` (2.04 s, VAD 40%), sidecar carries
+  tradition, `GVR-REC-` session verified on disk, corpus tree never
+  created; screenshot `files/e2e-screens/booth-d4-verse-take.png`.
+  E2E fixture sessions deleted from `data/_incoming/` after the run.
+
 **Unit 3b (2026-10-01): calibration CLI — built and tested.**
 
 - `python -m samskrita_dhvani.calibrate` turns the D5 recording
@@ -1365,3 +1457,17 @@ per the Phase 6 discipline (no bulk-delete first).
 - `.gitignore` — `Audio_files/` added (Atharvaveda kanda WAV batch,
   10,097 files / 2.2 GB local-only clip download), following the
   large-corpus-holdings convention. [2026-10-01]
+- `tools/build_gvr_itemlist.py` + `data/gvr/ch2_itemlist.json` +
+  `files/PROVENANCE.md` GVR-TXT-01 — checked chapter-2 mūla item
+  list for the D4 booth mode from the named public-domain text
+  source (parse/sequence/spot-check/round-trip gates; label text
+  only). [2026-10-01]
+- `samskrita_dhvani/record.py` + `web/record.html` +
+  `tests/test_record_api.py` — Phase 4 unit 6: D4 verse mode for the
+  recording booth (program switch, `GVR-REC-` sessions, tradition
+  capture, verse item list + modal text, per-verse take numbering,
+  protocol-named promotion mapping; D5 flow unchanged). 5 new tests;
+  pytest 123. [2026-10-01]
+- `tools/e2e_booth.py` + `files/e2e-screens/booth-d4-verse-take.png`
+  — D4 E2E flow added (verse capture with real mūla display;
+  server-side sidecar/tradition assertions). [2026-10-01]

@@ -39,16 +39,19 @@ requirements), `Implementation.md` §5.1.
 2. **Named public/open recitation archives.** Only with an explicit
    license statement captured per file batch in PROVENANCE.md
    (DataIntegrity §2). No "found it on YouTube" rows, ever.
-3. **D4 self-recording program (always-available fallback).** Via the
-   recording booth (`python -m samskrita_dhvani.record`): named
-   reciter + consent in the session sheet, tradition stated
-   (RecordingProtocol §4: "no Vedic accent tradition — classical
-   paṭha"), ≥3 takes per verse. The booth's capture/§1.1 gating and
-   `data/_incoming/` discipline apply unchanged; verse takes get the
-   RecordingProtocol §3 `gvr_c<chapter>v<verse>_<reciter>_<sid>_t<take>`
-   naming. **Known small extension, its own unit:** the booth's word
-   list is currently the SPD seed list — a GVR item list plugs into the
-   same session/upload endpoints, nothing else changes.
+3. **D4 self-recording program (available fallback — booth support
+   built 2026-10-01).** Via the recording booth
+   (`python -m samskrita_dhvani.record`), program D4: session ids
+   `GVR-REC-…`, the 20-verse FR-22 subset served from
+   `data/gvr/ch2_itemlist.json` (real mūla text — PROVENANCE.md
+   GVR-TXT-01), tradition stated at session start and carried into
+   every checklist row, `recitation`-role takes named
+   `gvr_c<ch>v<v>_recitation_t<N>.wav`, and promotion mapping to the
+   protocol §3 registry-prep names
+   (`gvr_c<ch>v<vv>_<reciter>_<sid>_t<take>.wav` under
+   `data/gvr_recordings/`). Named reciter + consent in the session
+   sheet; ≥3 takes per verse. The capture/§1.1 gating and
+   `data/_incoming/` discipline are identical to the D5 flow.
 - **Never mix sources silently:** every registry row carries the
   `source_id` of the PROVENANCE.md entry it came from.
 
@@ -123,7 +126,7 @@ in Review.md **before** any accuracy number is reported.
 
 1. Send the Gita Supersite email (owner action; the draft is ready).
 2. While waiting: run a D4 booth session on the 20-verse subset (the
-   owner-as-reciter fallback), ~1–2 s per verse × 3 takes × 20 verses
-   ≈ 20–30 min of recording.
+   owner-as-reciter fallback — booth mode shipped 2026-10-01),
+   ~10–15 s per verse × 3 takes × 20 verses ≈ 20–30 min of recording.
 3. Registry-build tool unit + first sweep.
 4. Train + evaluate with the full NFR-20 reporting set.

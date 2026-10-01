@@ -85,6 +85,13 @@
                 (RecordingProtocol.md §1) — they are recorded per session, per DataIntegrity §2 (named reciter, room,
                 device, consent). <code class="font-code">source-id</code> is the PROVENANCE.md entry these files will be
                 registered under at promotion time.</p>
+            <div class="flex items-center gap-space-lg mb-space-md font-label-lg text-label-lg">
+                <span class="text-on-surface-variant">Program:</span>
+                <label class="flex items-center gap-2"><input type="radio" name="prog" value="D5" checked
+                    class="w-4 h-4" /> D5 · SPD words (27)</label>
+                <label class="flex items-center gap-2"><input type="radio" name="prog" value="D4"
+                    class="w-4 h-4" /> D4 · Gita verses (Ch. 2, vv. 1–20)</label>
+            </div>
             <div class="grid grid-cols-2 gap-space-md mb-space-md">
                 <label class="flex flex-col gap-1 font-label-lg text-label-lg">Reciter (you — named per Rule 2)
                     <input id="fReciter" class="bg-surface rounded px-space-sm py-space-sm outline outline-outline-variant"
@@ -98,6 +105,9 @@
                 <label class="flex flex-col gap-1 font-label-lg text-label-lg">Provenance source-id
                     <input id="fSourceId" class="bg-surface rounded px-space-sm py-space-sm outline outline-outline-variant"
                         value="SPD-D5-SELF" /></label>
+                <label class="flex flex-col gap-1 font-label-lg text-label-lg">Recitation tradition
+                    <input id="fTradition" class="bg-surface rounded px-space-sm py-space-sm outline outline-outline-variant"
+                        placeholder="e.g. classical paaTha — required for D4 (protocol §3.6)" /></label>
             </div>
             <label class="flex items-center gap-space-sm font-body-sm text-body-sm mb-space-md">
                 <input id="fConsent" type="checkbox" class="w-4 h-4" />
@@ -154,6 +164,8 @@
                     class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant"></span>
             </div>
             <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md" id="modalGuidance"></p>
+            <p id="modalVerse"
+                class="hidden font-headline-md text-headline-md text-on-surface bg-surface-container-low rounded p-space-md mb-space-md"></p>
             <div class="flex items-center justify-center mb-space-md">
                 <button id="recBtn"
                     class="w-16 h-16 rounded-full bg-error text-on-error flex items-center justify-center hover:opacity-90 transition-opacity"><span
@@ -173,8 +185,9 @@
         'use strict';
         var $ = SD.el;
         var session = null;   // {session_id, meta}
-        var words = [];
-        var takes = {};       // word_id -> {canonical: n, recitation: n}
+        var program = 'D5';
+        var items = [];
+        var takes = {};       // item key -> {canonical: n, recitation: n}
         var rec = null;
         var cur = null;       // {word, role}
         var recordingNow = false;
@@ -182,8 +195,13 @@
 
         var ROLE_GUIDE = {
             canonical: 'One clear reference take — this is the ear-check candidate for <word_id>.wav. Steady pace, crisp articulation.',
-            recitation: 'A known-correct recitation take for the D0 corpus. Record 3+ takes; natural variation between takes is wanted.'
+            recitation: 'A known-correct take. Record 3+; natural variation between takes is wanted.'
         };
+
+        function selProgram() {
+            var r = document.querySelector('input[name="prog"]:checked');
+            return r ? r.value : 'D5';
+        }
 
         function refreshStats() {
             var nC = 0, nR = 0;
@@ -194,26 +212,39 @@
             $('sessionStats').textContent = nC + ' canonical · ' + nR + ' recitation takes';
         }
 
+        function itemKey(it) { return program === 'D4' ? it.verse_id : it.word_id; }
+
         function renderGrid() {
-            $('wordGrid').innerHTML = words.map(function (w) {
-                var t = takes[w.word_id] || {};
-                return '<div class="bg-surface-container-low rounded-lg p-space-md">' +
-                    '<div class="flex items-center justify-between mb-space-xs">' +
+            $('wordGrid').innerHTML = items.map(function (w) {
+                var key = itemKey(w);
+                var t = takes[key] || {};
+                var head = '<div class="flex items-center justify-between mb-space-xs">' +
                     '<span class="font-headline-sm text-headline-sm">' + SD.esc(w.devanagari) + '</span>' +
-                    '<span class="font-label-sm text-label-sm text-on-surface-variant">' + SD.esc(w.iast) + '</span></div>' +
-                    '<div class="font-label-sm text-label-sm text-on-surface-variant mb-space-sm">' +
-                    SD.esc(w.difficulty_axis) + (w.pair_id ? ' · pair ' + SD.esc(w.pair_id) : '') +
-                    ' · <span class="font-code">' + SD.esc(w.word_id) + '</span></div>' +
-                    '<div class="flex items-center gap-space-sm">' +
-                    '<button data-wid="' + SD.esc(w.word_id) + '" data-role="canonical" ' +
-                    'class="capBtn flex-1 px-space-sm py-space-sm rounded font-label-sm text-label-sm ' +
-                    ((t.canonical || 0) > 0 ? 'bg-primary-container text-on-primary' : 'bg-primary text-on-primary') +
-                    ' hover:opacity-90 transition-opacity">● canonical' +
-                    ((t.canonical || 0) > 0 ? ' ✓' : '') + '</button>' +
-                    '<button data-wid="' + SD.esc(w.word_id) + '" data-role="recitation" ' +
-                    'class="capBtn flex-1 px-space-sm py-space-sm rounded font-label-sm text-label-sm bg-secondary text-on-secondary hover:opacity-90 transition-opacity">● recitation' +
-                    ((t.recitation || 0) > 0 ? ' (' + t.recitation + ')' : '') + '</button>' +
-                    '</div></div>';
+                    '<span class="font-label-sm text-label-sm text-on-surface-variant">' +
+                    SD.esc(program === 'D4' ? key : w.iast) + '</span></div>';
+                var sub = program === 'D4'
+                    ? '<div class="font-label-sm text-label-sm text-on-surface-variant mb-space-sm">' +
+                      'verse ' + SD.esc(key) + ' · <span class="font-code">' + SD.esc(w.fname_key) + '</span></div>'
+                    : '<div class="font-label-sm text-label-sm text-on-surface-variant mb-space-sm">' +
+                      SD.esc(w.difficulty_axis) + (w.pair_id ? ' · pair ' + SD.esc(w.pair_id) : '') +
+                      ' · <span class="font-code">' + SD.esc(w.word_id) + '</span></div>';
+                var btns;
+                if (program === 'D4') {
+                    btns = '<button data-wid="' + SD.esc(key) + '" data-role="recitation" ' +
+                        'class="capBtn w-full px-space-sm py-space-sm rounded font-label-sm text-label-sm bg-secondary text-on-secondary hover:opacity-90 transition-opacity">● recitation' +
+                        ((t.recitation || 0) > 0 ? ' (' + t.recitation + ')' : '') + '</button>';
+                } else {
+                    btns = '<div class="flex items-center gap-space-sm">' +
+                        '<button data-wid="' + SD.esc(key) + '" data-role="canonical" ' +
+                        'class="capBtn flex-1 px-space-sm py-space-sm rounded font-label-sm text-label-sm ' +
+                        ((t.canonical || 0) > 0 ? 'bg-primary-container text-on-primary' : 'bg-primary text-on-primary') +
+                        ' hover:opacity-90 transition-opacity">● canonical' +
+                        ((t.canonical || 0) > 0 ? ' ✓' : '') + '</button>' +
+                        '<button data-wid="' + SD.esc(key) + '" data-role="recitation" ' +
+                        'class="capBtn flex-1 px-space-sm py-space-sm rounded font-label-sm text-label-sm bg-secondary text-on-secondary hover:opacity-90 transition-opacity">● recitation' +
+                        ((t.recitation || 0) > 0 ? ' (' + t.recitation + ')' : '') + '</button></div>';
+                }
+                return '<div class="bg-surface-container-low rounded-lg p-space-md">' + head + sub + btns + '</div>';
             }).join('');
         }
 
@@ -223,13 +254,20 @@
             openModal(b.getAttribute('data-wid'), b.getAttribute('data-role'));
         });
 
-        function openModal(wordId, role) {
-            cur = { word: wordId, role: role };
-            var w = words.filter(function (x) { return x.word_id === wordId; })[0];
-            $('modalTitle').textContent = w.devanagari + ' · ' + w.iast;
+        function openModal(key, role) {
+            cur = { word: key, role: role };
+            var w = items.filter(function (x) { return itemKey(x) === key; })[0];
+            $('modalTitle').textContent = w.devanagari + ' · ' + (program === 'D4' ? key : w.iast);
             $('modalRole').textContent = role;
             $('modalGuidance').textContent = ROLE_GUIDE[role] || '';
-            $('recHint').textContent = 'Press to record (auto-stops after 20 s)';
+            var vp = $('modalVerse');
+            if (program === 'D4') {
+                vp.textContent = w.devanagari;
+                vp.classList.remove('hidden');
+            } else {
+                vp.classList.add('hidden');
+            }
+            $('recHint').textContent = 'Press to record, press again to stop (auto-stops at 20 s)';
             $('recModal').classList.remove('hidden');
         }
 
@@ -292,27 +330,47 @@
             }, 250);
         });
 
-        $('startBtn').addEventListener('click', async function () {
+        $('startBtn').addEventListener('click', function () { startSession(); });
+
+        async function startSession() {
             $('sessionErr').textContent = '';
+            program = selProgram();
             var fd = new FormData();
             fd.append('reciter', $('fReciter').value.trim());
             fd.append('location', $('fLocation').value.trim());
             fd.append('device', $('fDevice').value.trim());
             fd.append('consent', $('fConsent').checked ? 'true' : 'false');
-            fd.append('source_id', $('fSourceId').value.trim() || 'SPD-D5-SELF');
+            fd.append('source_id', $('fSourceId').value.trim() ||
+                (program === 'D4' ? 'GVR-D4-SELF' : 'SPD-D5-SELF'));
+            fd.append('program', program);
+            fd.append('tradition', $('fTradition').value.trim());
             try {
                 session = await SD.fetchJSON('/api/record/session', { method: 'POST', body: fd });
             } catch (e) {
                 $('sessionErr').textContent = (e.kind || 'error') + ': ' + e.message;
                 return;
             }
+            // Load the item list for the chosen program; abort the
+            // session loudly if the list is unavailable.
+            try {
+                var d = await SD.fetchJSON('/api/record/items?program=' + program);
+                items = d.items;
+            } catch (e2) {
+                $('sessionErr').textContent = (e2.kind || 'error') + ': ' + e2.message;
+                session = null;
+                return;
+            }
+            takes = {};
             $('sessionForm').classList.add('hidden');
             $('booth').classList.remove('hidden');
             $('sessionId').textContent = session.session_id;
             var m = session.meta;
             $('sessionMetaLine').textContent = m.reciter + ' · ' + m.location + ' · ' + m.device +
-                ' · source-id ' + m.source_id;
-        });
+                ' · source-id ' + m.source_id +
+                (m.recitation_tradition ? ' · ' + m.recitation_tradition : '');
+            renderGrid();
+            refreshStats();
+        }
 
         $('promoteBtn').addEventListener('click', async function () {
             if (!session) return;
@@ -334,9 +392,11 @@
         });
 
         (async function init() {
+            // D5 preview; startSession() re-loads the list for the
+            // chosen program before the booth opens.
             try {
-                var d = await SD.fetchJSON('/api/record/words');
-                words = d.words;
+                var d = await SD.fetchJSON('/api/record/items?program=D5');
+                items = d.items;
                 renderGrid();
                 refreshStats();
             } catch (e) {

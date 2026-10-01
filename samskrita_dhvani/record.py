@@ -64,6 +64,11 @@ INCOMING_ROOT = PROJECT_ROOT / "data" / "_incoming"
 WORDLIST_VERSION = "spd-seed-27@2026-09-23"
 VAD_MIN_SPEECH_FRACTION = 0.10  # DataIntegrity §1.1 near-silence rule
 MIN_DURATION_S = 0.2
+# D4 (Gita verses) booth items: built by tools/build_gvr_itemlist.py
+# from a named public-domain source (see PROVENANCE.md GVR-TXT-01).
+# The booth serves the FR-22 plan's first target: chapter 2, vv. 1–20.
+GVR_ITEMLIST_PATH = PROJECT_ROOT / "data" / "gvr" / "ch2_itemlist.json"
+GVR_BOOTHSUBSET = 20
 
 app = FastAPI(
     title="SamskritaDhvani recording booth",
@@ -88,16 +93,21 @@ def _slug_ok(s: str) -> bool:
 
 
 def _session_id_ok(s: str) -> bool:
-    """Server-minted session ids: ``SPD-REC-YYYYMMDD-xxxxxx``. Charset
-    excludes ``/`` and ``.`` so the value is a single safe path
-    component (no traversal)."""
-    return bool(re.fullmatch(r"SPD-REC-[0-9]{8}-[0-9a-f]{6}", s))
+    """Server-minted session ids: ``SPD-REC-YYYYMMDD-xxxxxx`` (D5) or
+    ``GVR-REC-YYYYMMDD-xxxxxx`` (D4). Charset excludes ``/`` so the
+    value is a single safe path component (no traversal)."""
+    return bool(re.fullmatch(r"(?:SPD|GVR)-REC-[0-9]{8}-[0-9a-f]{6}", s))
 
 
 def _word_id_ok(s: str) -> bool:
     """Registry word ids are Harvard-Kyoto slugs — ASCII letters and
     digits, uppercase significant (``kRSNa`` != ``krsna``)."""
     return bool(re.fullmatch(r"[A-Za-z0-9_]{1,40}", s))
+
+
+def _verse_id_ok(s: str) -> bool:
+    """GVR item ids are canonical ``chapter.verse`` (``2.13``)."""
+    return bool(re.fullmatch(r"\d{1,3}\.\d{1,3}", s))
 
 
 def _wordlist_dict() -> list[dict]:
@@ -142,18 +152,26 @@ def _peak(data: bytes) -> float:
 
 def _checklist_entry(
     session_id: str,
-    word_id: str,
-    iast: str,
+    fname_id: str,
+    item_id: str,
+    item_label: str,
     take: int,
     role: str,
     duration: float,
     peak: float,
+    program: str = "D5",
+    devanagari: str = "",
+    tradition: str | None = None,
 ) -> dict:
+    prefix = "spd" if program == "D5" else "gvr"
     return {
-        "file": f"spd_{word_id}_{role}_t{take}.wav",
+        "file": f"{prefix}_{fname_id}_{role}_t{take}.wav",
         "session_id": session_id,
-        "item": word_id,
-        "item_iast": iast,
+        "program": program,
+        "item": item_id,
+        "item_label": item_label,
+        "item_devanagari": devanagari,
+        "recitation_tradition": tradition,
         "take": take,
         "role": role,
         "duration_s": round(duration, 3),
@@ -247,11 +265,78 @@ def app_js() -> FileResponse:
     return FileResponse(WEB_DIR / "app.js")
 
 
+@app.get("/api/record/items")
+def items(program: str = "D5") -> dict:
+    """The item list for a program. ``D5`` = the 27 SPD seed words;
+    ``D4`` = the Bhagavad Gita chapter-2 verses (FR-22 first target:
+    vv. 1–20) from ``data/gvr/ch2_itemlist.json``, honestly unavailable
+    if the checked item file has not been built yet."""
+    if program == "D5":
+        return {
+            "program": "D5",
+            "list_version": WORDLIST_VERSION,
+            "items": _wordlist_dict(),
+        }
+    if program == "D4":
+        if not GVR_ITEMLIST_PATH.is_file():
+            raise HTTPException(
+                status_code=503,
+                detail={
+                    "error": "itemlist_unavailable",
+                    "detail": (
+                        "No GVR item list at data/gvr/ch2_itemlist.json — "
+                        "build it with tools/build_gvr_itemlist.py from "
+                        "the named public-domain source (PROVENANCE.md "
+                        "GVR-TXT-01)."
+                    ),
+                },
+            )
+        try:
+            data = json.loads(GVR_ITEMLIST_PATH.read_text(encoding="utf-8"))
+        except Exception as exc:  # noqa: BLE001 — corrupt list is loud
+            raise HTTPException(
+                status_code=503,
+                detail={
+                    "error": "itemlist_unavailable",
+                    "detail": f"GVR item list unreadable: {exc}",
+                },
+            ) from exc
+        if data.get("kind") != "gvr_itemlist" or data.get("schema_version") != 1:
+            raise HTTPException(
+                status_code=503,
+                detail={
+                    "error": "itemlist_unavailable",
+                    "detail": "GVR item list fails its schema gate.",
+                },
+            )
+        verses = [it for it in data["items"]
+                  if int(it["verse"]) <= GVR_BOOTHSUBSET]
+        return {
+            "program": "D4",
+            "list_version": (
+                f"ch2@{data['text_source']['file_sha256'][:12]}"
+            ),
+            "text_source": data["text_source"]["url"],
+            "items": [
+                {
+                    "verse_id": it["verse_id"],
+                    "devanagari": it["devanagari"],
+                    "fname_key": it["fname_key"],
+                }
+                for it in verses
+            ],
+        }
+    raise HTTPException(
+        status_code=400,
+        detail={"error": "bad_program", "detail": "program must be 'D4' or 'D5'."},
+    )
+
+
 @app.get("/api/record/words")
 def words() -> dict:
-    """The seed word list to capture (FR-12 list; provenance is asserted
-    at promotion time, not capture time)."""
-    return {"wordlist_version": WORDLIST_VERSION, "words": _wordlist_dict()}
+    """Backward-compatible alias for the D5 item list."""
+    d = items("D5")
+    return {"wordlist_version": d["list_version"], "words": d["items"]}
 
 
 @app.post("/api/record/session")
@@ -261,6 +346,8 @@ def start_session(
     device: str = Form(""),
     consent: bool = Form(...),
     source_id: str = Form("SPD-D5-SELF"),
+    program: str = Form("D5"),
+    tradition: str = Form(""),
 ) -> dict:
     """Create a recording session under ``data/_incoming/``.
 
@@ -269,7 +356,16 @@ def start_session(
     self-recording entry to be registered in PROVENANCE.md at
     promotion time. Nothing is claimed as verified here — the session
     sheet records intent, the ear check decides eligibility.
+
+    ``program`` selects D5 (SPD words) or D4 (Gita verses); ``tradition``
+    states the recitation tradition for the session (protocol §3.6 —
+    required for D4, optional but recorded for D5).
     """
+    if program not in ("D5", "D4"):
+        raise HTTPException(
+            status_code=400,
+            detail={"error": "bad_program", "detail": "program must be 'D4' or 'D5'."},
+        )
     if not consent:
         raise HTTPException(
             status_code=400,
@@ -295,21 +391,34 @@ def start_session(
                 "detail": "source_id must be a PROVENANCE.md entry id like SPD-D5-SELF.",
             },
         )
+    if program == "D4" and not tradition.strip():
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": "tradition_required",
+                "detail": (
+                    "D4 sessions must state the recitation tradition "
+                    "(RecordingProtocol §4 / DataIntegrity §3.6)."
+                ),
+            },
+        )
+    prefix = "SPD" if program == "D5" else "GVR"
     session_id = (
-        f"SPD-REC-{datetime.now(timezone.utc).strftime('%Y%m%d')}-"
+        f"{prefix}-REC-{datetime.now(timezone.utc).strftime('%Y%m%d')}-"
         f"{uuid.uuid4().hex[:6]}"
     )
     d = _session_dir(session_id)
     d.mkdir(parents=True, exist_ok=False)
     meta = {
         "session_id": session_id,
-        "program": "D5",
+        "program": program,
         "reciter": reciter.strip(),
         "reciter_slug": reciter_slug,
         "location": location.strip(),
         "device": device.strip(),
         "consent_confirmed": True,
         "source_id": source_id.strip(),
+        "recitation_tradition": tradition.strip() or None,
         "wordlist_version": WORDLIST_VERSION,
         "started_utc": _iso_now(),
         "protocol": "files/RecordingProtocol.md",
@@ -325,14 +434,20 @@ def get_session(session_id: str) -> dict:
     meta = _load_meta(session_id)
     takes = []
     d = _session_dir(session_id)
+    pattern = (r"spd_([A-Za-z0-9_]+?)_(canonical|recitation)_t(\d+)"
+               if meta.get("program", "D5") == "D5"
+               else r"gvr_([a-z0-9]+)_recitation_t(\d+)")
     for p in sorted(d.glob("*.wav")):
-        stem = p.stem  # spd_<word_id>_<role>_t<take>
-        m = re.fullmatch(r"spd_([A-Za-z0-9_]+?)_(canonical|recitation)_t(\d+)", stem)
+        m = re.fullmatch(pattern, p.stem)
         if not m:
             continue
-        takes.append(
-            {"word_id": m.group(1), "role": m.group(2), "take": int(m.group(3))}
-        )
+        if meta.get("program", "D5") == "D5":
+            takes.append(
+                {"item": m.group(1), "role": m.group(2), "take": int(m.group(3))}
+            )
+        else:
+            takes.append({"item": m.group(1), "role": "recitation",
+                          "take": int(m.group(2))})
     return {"meta": meta, "takes": takes}
 
 
@@ -350,29 +465,58 @@ def upload(
     ``<word_id>.wav``) or ``recitation`` (a known-correct recitation
     take for the D₀ measurement corpus).
     """
-    if role not in ("canonical", "recitation"):
-        raise HTTPException(
-            status_code=400,
-            detail={"error": "bad_role", "detail": "role must be 'canonical' or 'recitation'."},
-        )
-    if not _word_id_ok(word_id) or not _session_id_ok(session_id):
-        raise HTTPException(
-            status_code=400,
-            detail={"error": "bad_word_id", "detail": "unknown word_id or session_id."},
-        )
     d = _session_dir(session_id)
     meta_path = d / "session_meta.json"
     if not meta_path.is_file():
         raise HTTPException(status_code=404, detail="unknown session")
-
-    wordlist = _wordlist_dict()
-    words_by_id = {w["word_id"]: w for w in wordlist}
-    if word_id not in words_by_id:
-        raise HTTPException(
-            status_code=400,
-            detail={"error": "unknown_word", "detail": f"'{word_id}' is not in the word list."},
-        )
     meta = _load_meta(session_id)
+    program = meta.get("program", "D5")
+
+    if program == "D5":
+        if role not in ("canonical", "recitation"):
+            raise HTTPException(
+                status_code=400,
+                detail={"error": "bad_role", "detail": "role must be 'canonical' or 'recitation'."},
+            )
+        if not _word_id_ok(word_id) or not _session_id_ok(session_id):
+            raise HTTPException(
+                status_code=400,
+                detail={"error": "bad_word_id", "detail": "unknown word_id or session_id."},
+            )
+        wordlist = _wordlist_dict()
+        words_by_id = {w["word_id"]: w for w in wordlist}
+        if word_id not in words_by_id:
+            raise HTTPException(
+                status_code=400,
+                detail={"error": "unknown_word", "detail": f"'{word_id}' is not in the word list."},
+            )
+        item_label = words_by_id[word_id]["iast"]
+        item_devanagari = words_by_id[word_id]["devanagari"]
+        fname_id = word_id
+    else:
+        if role != "recitation":
+            raise HTTPException(
+                status_code=400,
+                detail={
+                    "error": "bad_role",
+                    "detail": "D4 takes are corpus takes: role must be 'recitation'.",
+                },
+            )
+        if not _verse_id_ok(word_id) or not _session_id_ok(session_id):
+            raise HTTPException(
+                status_code=400,
+                detail={"error": "bad_word_id", "detail": "unknown verse_id or session_id."},
+            )
+        d4 = items("D4")
+        by_verse = {it["verse_id"]: it for it in d4["items"]}
+        if word_id not in by_verse:
+            raise HTTPException(
+                status_code=400,
+                detail={"error": "unknown_word", "detail": f"'{word_id}' is not in the D4 booth subset (chapter 2, vv. 1-{GVR_BOOTHSUBSET})."},
+            )
+        item_label = by_verse[word_id]["fname_key"]
+        item_devanagari = by_verse[word_id]["devanagari"]
+        fname_id = by_verse[word_id]["fname_key"]
 
     data = audio.file.read()
     try:
@@ -395,21 +539,25 @@ def upload(
     # example ('krsna'); the protocol's rule assumed romanized keys,
     # not case-significant HK slugs. Logged in Review.md.
     with _UPLOAD_LOCK:
+        prefix = "spd" if program == "D5" else "gvr"
         stem_re = re.compile(
-            rf"^spd_{re.escape(word_id)}_{role}_t(\d+)\.wav$"
+            rf"^{prefix}_{re.escape(fname_id)}_{role}_t(\d+)\.wav$"
         )
         prior = [
             int(m.group(1)) for p in d.glob("*.wav") if (m := stem_re.match(p.name))
         ]
         take = (max(prior) + 1) if prior else 0
 
-        stem = f"spd_{word_id}_{role}_t{take}"
+        stem = f"{prefix}_{fname_id}_{role}_t{take}"
         wav_path = d / f"{stem}.wav"
         _write_wav(wav_path, y)
 
         checklist = _checklist_entry(
-            session_id, word_id, words_by_id[word_id]["iast"], take, role,
+            session_id, fname_id, word_id, item_label, take, role,
             duration, peak,
+            program=program,
+            devanagari=item_devanagari,
+            tradition=meta.get("recitation_tradition"),
         )
         checklist["vad_speech_fraction"] = round(speech_frac, 3)
         (d / f"{stem}.checklist.json").write_text(
@@ -463,28 +611,64 @@ def promote(session_id: str = Form(...), force: bool = Form(False)) -> dict:
     ref_lines = ["# Promotion mapping (ear-check gate)", ""]
     ref_lines.append(f"Session: `{session_id}` — reciter {meta['reciter']}, "
                      f"source_id `{meta['source_id']}` (register in PROVENANCE.md).")
-    ref_lines.append("")
-    ref_lines.append("Canonical candidates → `data/spd/reference_words/<word_id>.wav`")
-    ref_lines.append("Recitation takes → `data/spd/recitations/<word_id>__t<take>.wav`")
+    if meta.get("recitation_tradition"):
+        ref_lines.append(
+            f"Recitation tradition: {meta['recitation_tradition']} "
+            "(protocol §3.6 — carried into every checklist row)."
+        )
     ref_lines.append("")
     n_c, n_r = 0, 0
-    for word_id, roles in sorted(takes.items()):
-        if roles.get("canonical"):
-            f = roles["canonical"][-1]["file"]
-            ref_lines.append(f"- [ ] `{f}` → `reference_words/{word_id}.wav`")
-            n_c += 1
-        for entry in roles.get("recitation", []):
-            ref_lines.append(
-                f"- [ ] `{entry['file']}` → `recitations/{word_id}__t{entry['take']}.wav`"
-            )
-            n_r += 1
-    ref_lines.append("")
-    ref_lines.append(
-        "After copying, run: `python -m samskrita_dhvani.calibrate "
-        "--references data/spd/reference_words "
-        "--recitations data/spd/recitations "
-        f"--source-id {meta['source_id']} --acquired-on <date>`"
-    )
+    if meta.get("program", "D5") == "D5":
+        ref_lines.append("Canonical candidates → `data/spd/reference_words/<word_id>.wav`")
+        ref_lines.append("Recitation takes → `data/spd/recitations/<word_id>__t<take>.wav`")
+        ref_lines.append("")
+        for word_id, roles in sorted(takes.items()):
+            if roles.get("canonical"):
+                f = roles["canonical"][-1]["file"]
+                ref_lines.append(f"- [ ] `{f}` → `reference_words/{word_id}.wav`")
+                n_c += 1
+            for entry in roles.get("recitation", []):
+                ref_lines.append(
+                    f"- [ ] `{entry['file']}` → `recitations/{word_id}__t{entry['take']}.wav`"
+                )
+                n_r += 1
+        ref_lines.append("")
+        ref_lines.append(
+            "After copying, run: `python -m samskrita_dhvani.calibrate "
+            "--references data/spd/reference_words "
+            "--recitations data/spd/recitations "
+            f"--source-id {meta['source_id']} --acquired-on <date>`"
+        )
+    else:
+        reciter = meta["reciter_slug"]
+        ref_lines.append("All takes → `data/gvr_recordings/` with protocol §3 "
+                         "registry-prep names:")
+        ref_lines.append("")
+        for verse_key, roles in sorted(takes.items()):
+            for entry in roles.get("recitation", []):
+                # entry file: gvr_<fname_key>_recitation_t<take>.wav
+                m2 = re.fullmatch(
+                    r"gvr_([a-z0-9]+)_recitation_t(\d+)\.wav", entry["file"]
+                )
+                if not m2:
+                    continue
+                fname_key, take_no = m2.group(1), m2.group(2)
+                m3 = re.fullmatch(r"c(\d+)v(\d+)", fname_key)
+                ch, v = (m3.group(1), m3.group(2)) if m3 else ("?", "?")
+                verse_id = f"{ch}.{int(v):02d}" if m3 else verse_key
+                ref_lines.append(
+                    f"- [ ] `{entry['file']}` → "
+                    f"`data/gvr_recordings/"
+                    f"gvr_c{ch}v{int(v):02d}_{reciter}_{session_id}_t{take_no}.wav`"
+                    f"  (verse_id {verse_id})"
+                )
+                n_r += 1
+        ref_lines.append("")
+        ref_lines.append(
+            "After copying + label ear-check, build data/gvr_registry.json "
+            "(FR-22 plan §5): per-row gates, per-reciter split assignment, "
+            "then GvrRecognizer.train on the train split."
+        )
     promotion_text = "\n".join(ref_lines) + "\n"
     (d / "PROMOTION.md").write_text(promotion_text, encoding="utf-8")
 

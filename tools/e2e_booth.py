@@ -94,29 +94,55 @@ def ok(label, cond, detail=""):
 
 def main_sync_server_checks(session_hint):
     from pathlib import Path
+    import json as _json
     import wave
     root = Path("data/_incoming")
-    sess = None
-    for s in sorted(root.iterdir(), key=lambda p: p.stat().st_mtime, reverse=True):
-        if s.name.startswith("SPD-REC-"):
-            sess = s
-            break
-    if sess is None:
-        return ["no session dir found on disk"]
+
+    def latest(prefix):
+        for s in sorted(root.iterdir(), key=lambda p: p.stat().st_mtime, reverse=True):
+            if s.name.startswith(prefix):
+                return s
+        return None
+
     problems = []
-    wavs = sorted(sess.glob("spd_*.wav"))
-    if len(wavs) < 2:
-        problems.append(f"expected >=2 takes on disk, found {len(wavs)}")
-    for w in wavs:
-        with wave.open(str(w), "rb") as f:
-            if f.getframerate() != 16000 or f.getnframes() < 8000:
-                problems.append(f"{w.name}: not a 16 kHz / >=0.5 s WAV")
-        side = w.with_name(w.stem + ".checklist.json")
-        if not side.is_file():
-            problems.append(f"{w.name}: missing checklist sidecar")
-    if (sess.parent.parent / "spd" / "reference_words").exists():
-        problems.append("corpus tree data/spd/reference_words was created by capture!")
-    return problems, sess.name
+    sess = latest("SPD-REC-")
+    if sess is None:
+        problems.append("no SPD session dir found on disk")
+    else:
+        wavs = sorted(sess.glob("spd_*.wav"))
+        if len(wavs) < 2:
+            problems.append(f"expected >=2 takes on disk, found {len(wavs)}")
+        for w in wavs:
+            with wave.open(str(w), "rb") as f:
+                if f.getframerate() != 16000 or f.getnframes() < 8000:
+                    problems.append(f"{w.name}: not a 16 kHz / >=0.5 s WAV")
+            side = w.with_name(w.stem + ".checklist.json")
+            if not side.is_file():
+                problems.append(f"{w.name}: missing checklist sidecar")
+        if (sess.parent.parent / "spd" / "reference_words").exists():
+            problems.append("corpus tree data/spd/reference_words was created by capture!")
+
+    gvr_problems = []
+    gsess = latest("GVR-REC-")
+    if gsess is None:
+        gvr_problems.append("no GVR session dir found on disk")
+    else:
+        gwav = sorted(gsess.glob("gvr_*.wav"))
+        if len(gwav) != 1:
+            gvr_problems.append(f"expected 1 verse take, found {len(gwav)}")
+        for w in gwav:
+            side = w.with_name(w.stem + ".checklist.json")
+            if not side.is_file():
+                gvr_problems.append(f"{w.name}: missing checklist sidecar")
+                continue
+            cl = _json.loads(side.read_text(encoding="utf-8"))
+            if cl.get("item") != "2.13" or cl.get("program") != "D4":
+                gvr_problems.append(f"{w.name}: wrong checklist item/program")
+            if not cl.get("recitation_tradition"):
+                gvr_problems.append(f"{w.name}: tradition missing from checklist")
+        if (gsess.parent.parent / "gvr_recordings").exists():
+            gvr_problems.append("corpus tree data/gvr_recordings was created by capture!")
+    return problems, (sess.name if sess else ""), gvr_problems, (gsess.name if gsess else "")
 
 
 async def main():
@@ -205,12 +231,51 @@ async def main():
                           str(promo)[:120]))
         await d.shot(f"{SHOTS}/booth-promotion.png")
 
-    print("\n[5] Server-side disk truth")
-    problems, sess_name = main_sync_server_checks(None)
-    results.append(ok("session dir contains only WAVs + sidecars + sheet, all valid",
+        # ---------------- Test 5: D4 (Gita verses) program flow
+        print("\n[5] Booth — D4 verse mode end-to-end")
+        await d.goto("/", "document.querySelectorAll('#wordGrid .capBtn').length > 0")
+        await d.ev("document.querySelector('input[name=\"prog\"][value=\"D4\"]').click()")
+        await d.ev("document.getElementById('fReciter').value = 'e2e_bot'")
+        await d.ev("document.getElementById('fLocation').value = 'headless chrome, fake mic'")
+        await d.ev("document.getElementById('fDevice').value = 'fake device'")
+        await d.ev("document.getElementById('fTradition').value = 'classical paatha, no Vedic accents'")
+        await d.ev("document.getElementById('fSourceId').value = 'GVR-D4-SELF'")
+        await d.ev("document.getElementById('fConsent').checked = true")
+        await d.ev("document.getElementById('startBtn').click()")
+        await d.wait("/^GVR-REC-/.test(document.getElementById('sessionId').textContent)",
+                     desc="GVR-REC session minted")
+        n_verses = await d.ev("document.querySelectorAll('#wordGrid .capBtn').length")
+        results.append(ok("D4 grid shows the 20-verse FR-22 subset",
+                          n_verses == 20, f"{n_verses} verse cards"))
+        await d.ev("document.querySelector('button[data-wid=\"2.13\"][data-role=\"recitation\"]').click()")
+        await d.wait("document.getElementById('recModal').classList.contains('hidden') === false",
+                     desc="verse modal open")
+        verse_shown = await d.ev("document.getElementById('modalVerse').textContent")
+        results.append(ok("modal displays the real 2.13 mūla from the parsed source",
+                          "देहिनो" in str(verse_shown) and "कौमारं" in str(verse_shown),
+                          str(verse_shown)[:40]))
+        await d.ev("document.getElementById('recBtn').click()")
+        await d.wait("document.getElementById('recHint').textContent.indexOf('recording') !== -1",
+                     desc="recording")
+        await asyncio.sleep(1.8)
+        await d.ev("document.getElementById('recBtn').click()")
+        await d.wait("document.getElementById('recHint').textContent.indexOf('saved') !== -1",
+                     desc="D4 take saved")
+        hint5 = await d.ev("document.getElementById('recHint').textContent")
+        results.append(ok("verse take saved under the protocol fname_key",
+                          "gvr_c2v13_recitation_t0.wav" in str(hint5), str(hint5)))
+        await d.shot(f"{SHOTS}/booth-d4-verse-take.png")
+
+    print("\n[6] Server-side disk truth")
+    problems, sess_name, gvr_problems, gvr_name = main_sync_server_checks(None)
+    results.append(ok("D5 session dir valid (WAVs + sidecars + sheet)",
                       not problems, "; ".join(map(str, problems))))
-    results.append(ok("capture stayed inside data/_incoming",
+    results.append(ok("D5 capture stayed inside data/_incoming",
                       sess_name.startswith("SPD-REC-"), sess_name))
+    results.append(ok("D4 session dir valid (verse take + tradition carried)",
+                      not gvr_problems, "; ".join(map(str, gvr_problems))))
+    results.append(ok("D4 capture stayed inside data/_incoming",
+                      gvr_name.startswith("GVR-REC-"), gvr_name))
 
     print("\n===== E2E RESULT:", "ALL PASS" if all(results) else "FAILURES", "=====")
     return 0 if all(results) else 1

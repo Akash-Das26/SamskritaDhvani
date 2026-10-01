@@ -305,7 +305,168 @@ def test_get_session_reports_takes(client, session_id):
     assert r.status_code == 200
     body = r.json()
     assert body["meta"]["source_id"] == "SPD-D5-SELF"
-    assert {"word_id": "tAla", "role": "recitation", "take": 0} in body["takes"]
+    assert {"item": "tAla", "role": "recitation", "take": 0} in body["takes"]
+
+
+# --------------------------------------------------------- D4 (GVR)
+
+@pytest.fixture()
+def d4_items_file(tmp_path, monkeypatch):
+    """A minimal valid chapter-2 item list (schema v1) so tests don't
+    depend on the fetched text being on disk. Content lines are NOT
+    asserted to be real verses here — the builder tool owns that."""
+    import hashlib
+    payload = {
+        "schema_version": 1,
+        "kind": "gvr_itemlist",
+        "program": "D4",
+        "chapter": 2,
+        "text_source": {
+            "url": "https://sanskritdocuments.org/doc_giitaa/bhagvadnew.itx",
+            "file_sha256": "0" * 64,
+            "edition_note": "test fixture",
+        },
+        "items": [
+            {
+                "verse_id": f"2.{v}",
+                "chapter": 2,
+                "verse": v,
+                "devanagari": f"परीक्षा-{v}",
+                "fname_key": f"c2v{v}",
+            }
+            for v in range(1, 21)
+        ],
+    }
+    p = tmp_path / "ch2_itemlist.json"
+    p.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    monkeypatch.setattr(record_mod, "GVR_ITEMLIST_PATH", p)
+    return p
+
+
+@pytest.fixture()
+def gvr_session(client, d4_items_file):
+    r = client.post(
+        "/api/record/session",
+        data={
+            "reciter": "gita_reciter",
+            "location": "quiet room",
+            "device": "test mic",
+            "consent": "true",
+            "source_id": "GVR-D4-SELF",
+            "program": "D4",
+            "tradition": "classical pAAtha, no Vedic accents",
+        },
+    )
+    assert r.status_code == 200, r.text
+    return r.json()["session_id"]
+
+
+def test_d4_items_endpoint_serves_ch2_subset(client, d4_items_file):
+    r = client.get("/api/record/items", params={"program": "D4"})
+    assert r.status_code == 200
+    body = r.json()
+    assert body["program"] == "D4"
+    assert len(body["items"]) == 20  # FR-22 booth subset: ch. 2, vv. 1–20
+    first = body["items"][0]
+    assert first["verse_id"] == "2.1" and first["fname_key"] == "c2v1"
+
+
+def test_d4_items_endpoint_honest_503_without_list(client, tmp_path, monkeypatch):
+    monkeypatch.setattr(
+        record_mod, "GVR_ITEMLIST_PATH", tmp_path / "absent.json"
+    )
+    r = client.get("/api/record/items", params={"program": "D4"})
+    assert r.status_code == 503
+    assert r.json()["detail"]["error"] == "itemlist_unavailable"
+    assert "build_gvr_itemlist" in r.json()["detail"]["detail"]
+
+
+def test_d4_session_requires_tradition_and_mints_gvr_id(client, d4_items_file):
+    r = client.post(
+        "/api/record/session",
+        data={"reciter": "x", "location": "y", "device": "z",
+              "consent": "true", "program": "D4", "tradition": ""},
+    )
+    assert r.status_code == 400
+    assert r.json()["detail"]["error"] == "tradition_required"
+
+    r = client.post(
+        "/api/record/session",
+        data={"reciter": "x", "location": "y", "device": "z",
+              "consent": "true", "program": "D4",
+              "tradition": "classical pAAtha"},
+    )
+    assert r.status_code == 200
+    sid = r.json()["session_id"]
+    assert sid.startswith("GVR-REC-")
+    assert r.json()["meta"]["recitation_tradition"] == "classical pAAtha"
+
+
+def test_d4_upload_uses_c2vN_names_and_recitation_only(client, gvr_session):
+    r = client.post(
+        "/api/record/upload",
+        data={"session_id": gvr_session, "word_id": "2.13", "role": "canonical"},
+        files={"audio": ("t.wav", _speech_wav_bytes(), "audio/wav")},
+    )
+    assert r.status_code == 400
+    assert r.json()["detail"]["error"] == "bad_role"  # D4 has no canonical
+
+    r = client.post(
+        "/api/record/upload",
+        data={"session_id": gvr_session, "word_id": "2.99", "role": "recitation"},
+        files={"audio": ("t.wav", _speech_wav_bytes(), "audio/wav")},
+    )
+    assert r.status_code == 400
+    assert r.json()["detail"]["error"] == "unknown_word"
+
+    r = client.post(
+        "/api/record/upload",
+        data={"session_id": gvr_session, "word_id": "2.13", "role": "recitation"},
+        files={"audio": ("t.wav", _speech_wav_bytes(1.0), "audio/wav")},
+    )
+    assert r.status_code == 200, r.text
+    body = r.json()
+    assert body["file"] == "gvr_c2v13_recitation_t0.wav"
+
+    sess = record_mod.INCOMING_ROOT / gvr_session
+    cl = json.loads((sess / "gvr_c2v13_recitation_t0.checklist.json").read_text())
+    assert cl["item"] == "2.13"              # canonical verse id
+    assert cl["program"] == "D4"
+    assert cl["recitation_tradition"] == "classical pAAtha, no Vedic accents"
+    assert cl["item_devanagari"].startswith("परीक्षा-13")
+
+
+def test_d4_per_verse_take_numbering_and_promote(client, gvr_session):
+    for verse in ("2.1", "2.1", "2.13"):
+        r = client.post(
+            "/api/record/upload",
+            data={"session_id": gvr_session, "word_id": verse,
+                  "role": "recitation"},
+            files={"audio": ("t.wav", _speech_wav_bytes(0.8), "audio/wav")},
+        )
+        assert r.status_code == 200
+    sess = record_mod.INCOMING_ROOT / gvr_session
+    names = {p.name for p in sess.glob("*.wav")}
+    assert names == {
+        "gvr_c2v1_recitation_t0.wav",
+        "gvr_c2v1_recitation_t1.wav",
+        "gvr_c2v13_recitation_t0.wav",
+    }
+
+    r = client.post("/api/record/promote", data={"session_id": gvr_session})
+    assert r.status_code == 200
+    body = r.json()
+    assert body["recitation_takes"] == 3 and body["canonical_candidates"] == 0
+    text = (sess / "PROMOTION.md").read_text()
+    # Protocol §3 registry-prep names: gvr_c<ch>v<vv>_<reciter>_<sid>_t<take>
+    assert ("`gvr_c2v1_recitation_t0.wav` → `data/gvr_recordings/"
+            f"gvr_c2v01_gita_reciter_{gvr_session}_t0.wav`  (verse_id 2.01)") in text
+    assert ("`gvr_c2v13_recitation_t0.wav` → `data/gvr_recordings/"
+            f"gvr_c2v13_gita_reciter_{gvr_session}_t0.wav`  (verse_id 2.13)") in text
+    assert "gvr_registry.json" in text
+
+    # The boundary again: capture never wrote into the corpus tree.
+    assert not (record_mod.PROJECT_ROOT / "data" / "gvr_recordings").exists()
 
 
 def test_booth_page_served_with_shared_app_js(client):
