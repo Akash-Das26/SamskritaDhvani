@@ -294,19 +294,37 @@ class VerseEntry:
 
 
 class GvrRegistry:
-    """The GVR verse registry (FR-22) with split enforcement (FR-23)."""
+    """The GVR verse registry (FR-22) with split enforcement (FR-23).
 
-    def __init__(self, entries: list[VerseEntry]):
+    ``split_policy`` records how the file's splits were assigned
+    (NFR-04: the policy is documented and never changes silently):
+
+    - ``"per-reciter"`` — a reciter's recordings of a verse all sit in
+      one split (the default; ``assert_no_split_leak`` fully applies).
+    - ``"per-recording"`` — used only for single-reciter corpora, where
+      reciter-disjoint splits are impossible; reporting must then state
+      that accuracy is not speaker-independent.
+    """
+
+    KNOWN_SPLITS = {"train", "validation", "test"}
+    KNOWN_POLICIES = {"per-reciter", "per-recording"}
+
+    def __init__(self, entries: list[VerseEntry], split_policy: str = "per-reciter"):
         # verse_id is NOT unique (multiple recitations per verse are
         # wanted, Implementation.md §5.1) — audio_file is.
         files = [e.audio_file for e in entries]
         if len(files) != len(set(files)):
             raise ValueError("duplicate audio_file in registry")
-        known = {"train", "validation", "test"}
         for e in entries:
-            if e.split not in known:
+            if e.split not in self.KNOWN_SPLITS:
                 raise ValueError(f"verse '{e.verse_id}': bad split '{e.split}'")
+        if split_policy not in self.KNOWN_POLICIES:
+            raise ValueError(
+                f"bad split_policy '{split_policy}' "
+                f"(known: {sorted(self.KNOWN_POLICIES)})"
+            )
         self.entries = entries
+        self.split_policy = split_policy
 
     def __len__(self) -> int:
         return len(self.entries)
@@ -336,7 +354,7 @@ class GvrRegistry:
         data = {
             "schema_version": SCHEMA_VERSION,
             "kind": "gvr_registry",
-            "split_policy": "per-reciter",
+            "split_policy": self.split_policy,
             "entries": [
                 {
                     "verse_id": e.verse_id,
@@ -371,7 +389,7 @@ class GvrRegistry:
             )
             for d in data["entries"]
         ]
-        reg = cls(entries)
+        reg = cls(entries, split_policy=data.get("split_policy", "per-reciter"))
         for d in data["entries"]:
             _check_provenance(d, "verse")
         reg.assert_no_split_leak()

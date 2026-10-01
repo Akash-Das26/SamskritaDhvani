@@ -99,7 +99,10 @@ def parse_chapter2(raw: str) -> dict[str, str]:
         joined = re.sub(r"\\\-", "-", joined)          # escaped hyphen
         joined = re.sub(r"[|]{2}.*$", "", joined)       # safety
         joined = re.sub(r"\s+", " ", joined).strip()
-        out[f"{CHAPTER}.{n}"] = joined
+        # Zero-padded canonical form ('2.07'), matching the registry
+        # convention the D3 fixtures and the registry-build tool use
+        # ('4.07'), so one id form runs through booth → registry → model.
+        out[f"{CHAPTER}.{n:02d}"] = joined
 
     numbers = sorted(int(k.split(".")[1]) for k in out)
     if numbers != list(range(1, EXPECTED_VERSES + 1)):
@@ -140,7 +143,7 @@ def main(argv: list[str] | None = None) -> int:
             return 2
 
     items = []
-    for vid in sorted(verses, key=lambda v: int(v.split(".")[1])):
+    for vid in sorted(verses, key=lambda v: int(v.split(".")[1])):  # noqa: E501 — padded keys sort numerically here
         deva = _itrans_to_devanagari(verses[vid])
         # Round-trip gate per row (FR-13 discipline): Devanagari -> IAST
         # -> Devanagari must be the identity (the same check

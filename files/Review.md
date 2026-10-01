@@ -1026,6 +1026,102 @@ recording booth — built and tested.**
   created; screenshot `files/e2e-screens/booth-d4-verse-take.png`.
   E2E fixture sessions deleted from `data/_incoming/` after the run.
 
+**Phase 3 design note (2026-10-01, third note): registry-build tool
+(`python -m samskrita_dhvani.build_registry`) — approved by direct
+owner request.**
+
+- **Goal:** FR-22 plan §5 step 3 — turn a promoted D4 recording
+  batch (protocol §3 names under `data/gvr_recordings/`, exactly as
+  the booth's PROMOTION.md emits:
+  `gvr_c<ch>v<vv>_<reciter>_<sid>_t<take>.wav`) into
+  `data/gvr_registry.json` with every per-row acceptance gate applied
+  (plan §4). No registry is written if zero rows survive (rc=2).
+- **Split policy — correction to the FR-22 plan (Ground Rule 7
+  honesty):** plan §3's "validation carved by take parity" and
+  "single-reciter per-recording split" assignments would VIOLATE
+  `GvrRegistry.assert_no_split_leak` — a (verse, reciter) pair may
+  never span two splits. The tool implements what the registry
+  actually enforces: **auto** mode → ≥2 reciters: per-reciter with
+  explicit `--reciter-splits R=train,R=test` assignment (unassigned
+  reciter = error); exactly 1 reciter: all rows train with
+  `split_policy: per-recording` recorded in the file, and every
+  reported number must carry the FR-23 single-reciter sentence
+  (plan §3 gets the same correction in this unit). `GvrRegistry`
+  gains an explicit optional `split_policy` field (default
+  `per-reciter`, value-validated, written by `to_json`, read by
+  `from_json` — small, declared change so the file never lies about
+  its policy per NFR-04).
+- **Per-row gates (each failure = loud skip line + counted, never
+  fixed):** filename grammar parse; verse ∈ itemlist (mūla text from
+  the checked GVR-TXT-01 item file — the tool never types verse
+  text); D1 decode + duration ≥ 0.2 s + VAD speech fraction > 10%
+  (DataIntegrity §1.1); unique `audio_file`; mandatory
+  `--recitation-tradition` (protocol §3.6) and `--source-id` /
+  `--acquired-on` provenance; per-reciter split policy as above.
+  Verses whose rows all land outside train are listed in a warning
+  (they cannot be learned by `GvrRecognizer.train`).
+- **Self-check:** the tool loads its own output through
+  `GvrRegistry.from_json` (which runs the leak + provenance gates)
+  before reporting success, and prints the split summary + verse
+  coverage as-run.
+- **Not designed (Ground Rule 2):** no changes to the booth, scorer,
+  recognizer, or demo API; the registry format change is limited to
+  the explicit `split_policy` field.
+- **Test plan:** new `tests/test_build_registry_cli.py` — happy path
+  (2 reciters, per-reciter splits, from_json self-check, mūla text
+  attached), single-reciter auto per-recording policy, leak-avoidance
+  (reciter-splits validation), every gate's skip behavior, unknown
+  verse, duplicate target names, empty-result rc=2, --force. Full
+  suite green.
+- **Report impact:** none — no reported number changes.
+
+**Phase 5 — Unit 7 (2026-10-01): registry-build tool
+(`python -m samskrita_dhvani.build_registry`) — built and tested.**
+
+- **What was built:** the FR-22 plan §5 step 3. Turns a promoted D4
+  batch (protocol §3 names under `data/gvr_recordings/`, exactly as
+  the booth's PROMOTION.md emits) into `data/gvr_registry.json`:
+  filename grammar parsed right-to-left (reciter slugs and session
+  ids containing underscores survive), verse resolved against the
+  GVR-TXT-01 item list for the canonical id + mūla
+  `devanagari_text` (the tool never types verse text), D1 decode +
+  duration + VAD gates applied per row, mandatory
+  tradition/provenance attached, splits assigned per the corrected
+  §3 policy, and the output self-checked through
+  `GvrRegistry.from_json` (the same load-time gates training will
+  apply) before success is reported. Per-row failures are loud
+  counted skips (Rule 1); zero survivors → nothing written, rc=2.
+  Split summary and a no-train-rows warning (verses that cannot be
+  learned) print as-run.
+- **Split-policy correction (the important find):** plan §3's draft
+  assignments (validation by take parity; single-reciter
+  per-recording split) violate `assert_no_split_leak` — a
+  (reciter, verse) pair must sit in exactly one split. The plan is
+  corrected in this unit; the tool implements only what the registry
+  can honestly hold: explicit complete `--reciter-splits` when ≥2
+  reciters (an explicit single-reciter assignment is honored with a
+  warning about untrainable verses), and single-reciter-no-spec →
+  all-train with `split_policy: "per-recording"` recorded in the
+  file (NFR-04). `GvrRegistry` gained an explicit, value-validated
+  `split_policy` field (default `per-reciter`) so the file never
+  lies about its policy; `to_json`/`from_json` round-trip it.
+- **Convention unification (caught by the tool's own tests):**
+  verse-id forms had drifted — the D3 fixture canon is zero-padded
+  (`4.07`) but the item-list builder emitted unpadded ids (`2.1`).
+  `build_gvr_itemlist.py` now emits padded ids (`2.01`…`2.72`) and
+  the committed `data/gvr/ch2_itemlist.json` was regenerated (same
+  source sha256; one id form runs booth → registry → model).
+- **Verification:** 10 new tests (right-to-left name parse, two-
+  reciter happy path with load-time self-check + mūla + provenance,
+  single-reciter auto policy, incomplete `--reciter-splits` rc=2,
+  every gate's loud skip, unknown verse → rc=2, overwrite protection
+  + deterministic `--force` rebuild, empty dir rc=2, explicit
+  single-reciter test-split assignment warns). Full suite: **133
+  passed**. As-run check on a synthetic 5-clip batch against the REAL
+  item list: 5 rows, per-reciter policy, train/test summary printed,
+  real 2.01 mūla (तं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् ।) attached
+  from the parsed source; scratch dirs removed after the run.
+
 **Unit 3b (2026-10-01): calibration CLI — built and tested.**
 
 - `python -m samskrita_dhvani.calibrate` turns the D5 recording
@@ -1471,3 +1567,10 @@ per the Phase 6 discipline (no bulk-delete first).
 - `tools/e2e_booth.py` + `files/e2e-screens/booth-d4-verse-take.png`
   — D4 E2E flow added (verse capture with real mūla display;
   server-side sidecar/tradition assertions). [2026-10-01]
+- `samskrita_dhvani/build_registry.py` + `tests/test_build_registry_cli.py`
+  — Phase 4 unit 7: the FR-22 registry-build CLI (gated conversion of
+  a promoted D4 batch into `data/gvr_registry.json`; split policy per
+  the corrected plan §3; from_json self-check). `registry.py` gained
+  the explicit `split_policy` field; `build_gvr_itemlist.py`/`data/gvr/ch2_itemlist.json`
+  unified on zero-padded verse ids. 10 new tests; pytest 133.
+  [2026-10-01]

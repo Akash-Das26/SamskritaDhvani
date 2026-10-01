@@ -57,19 +57,30 @@ requirements), `Implementation.md` §5.1.
 
 ## 3. Split policy (FR-23 / NFR-04) — fixed in advance
 
-- **Per-reciter** (registry format already enforces
-  `assert_no_split_leak` at load): a reciter's recordings of a verse
-  all sit in the SAME split — no exceptions.
-- **Initial assignment for the expected shapes:**
-  - 2+ self-reciters and no external source → reciter A all-train,
-    reciter B all-test; validation carved from A by take parity
-    (odd takes) and recorded in the registry, not recomputed.
-  - External permissioned source + 1 self-reciter → source rows =
-    validation, self-reciter A = train, and test comes from a second
-    self-reciter (record one before evaluating).
-  - Only ONE reciter achievable → per-recording split, and every
-    reported number carries the sentence "single-reciter corpus;
-    accuracy is not speaker-independent" (DataIntegrity §1.4).
+**Corrected 2026-10-01 (registry-build unit):** the original draft of
+this section assigned splits in ways that violate the leak gate the
+registry actually enforces — `assert_no_split_leak` requires a
+(reciter, verse) pair to sit in exactly ONE split, so carving
+validation from the same reciter's takes (take parity) or splitting
+one reciter's rows per-recording is a leak, not a policy. The tool
+implements only what the registry can honestly hold:
+
+- **Per-reciter** (`assert_no_split_leak` enforces it at load): a
+  reciter's recordings of a verse all sit in the SAME split — no
+  exceptions. With ≥2 reciters, `build_registry` requires an explicit,
+  complete `--reciter-splits R=train,R=test` assignment (no guessed
+  splits; an explicit single-reciter assignment is honored and the
+  resulting untrainable verses are warned about).
+- **Single-reciter corpora:** reciter-disjoint splits are impossible;
+  all rows train and the file records `split_policy:
+  "per-recording"` (explicit field on `GvrRegistry`, default
+  `per-reciter`), and every reported number carries the sentence
+  "single-reciter corpus; accuracy is not speaker-independent"
+  (DataIntegrity §1.4).
+- **Reciter-level train/validation/test hygiene:** validation and
+  test each need their own reciter(s). If only two reciters exist,
+  use train + test and tune nothing — do not manufacture a
+  validation split out of train-reciter takes.
 - The policy does not change between experiments (NFR-04); a change is
   a new Review.md entry with a reason.
 
@@ -98,10 +109,15 @@ in Review.md **before** any accuracy number is reported.
 2. Promote: copy per the session's `PROMOTION.md`-style mapping into
    `data/gvr_recordings/` with protocol §3 names; register the
    PROVENANCE.md entry; ear-check the labels.
-3. Build registry: a small tool (to be written as its own unit when
-   the first real batch exists — not before) that emits
-   `data/gvr_registry.json` with `schema_version: 1` and loads it back
-   through `GvrRegistry.from_json` (which runs every load-time gate).
+3. Build registry: `python -m samskrita_dhvani.build_registry
+   --recordings data/gvr_recordings --source-id … --acquired-on …
+   --recitation-tradition … [--reciter-splits R=train,R=test]` —
+   built 2026-10-01: parses the protocol §3 names, applies every §4
+   gate per row (loud skips, counted), attaches mūla text from the
+   GVR-TXT-01 item list, assigns splits per §3 (corrected),
+   self-checks through `GvrRegistry.from_json`, and writes
+   `data/gvr_registry.json` (schema v1). Zero survivors → nothing
+   written, rc=2.
 4. Train: `GvrRecognizer.train(registry)` on the train-split rows
    (non-train rows are skipped — behavior pinned by unit-4 tests),
    `save()` to `data/gvr/model.pkl`. `/api/status` flips
