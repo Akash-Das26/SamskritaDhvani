@@ -37,6 +37,12 @@ Vaksanca-master.zip
 parva*/
 # Parquet data files (ASR-Sanskrit Whisper features)
 **/*.parquet
+# Raw source audio under data/ (167 MB) — local-only; these are upstream
+# source recordings, not repo content. Purged from history by
+# `git filter-repo --path-glob '*.mp3' --path-glob '*.wav' --invert-paths`.
+data/provenance/*/boosted_audio/
+data/spd/hall_sanskrit_pronunciation/
+data/spd/loyola_cahill_sound_files/
 
 # --- Misc ---
 *.log
