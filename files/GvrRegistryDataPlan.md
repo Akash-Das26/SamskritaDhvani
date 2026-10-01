@@ -127,7 +127,13 @@ in Review.md **before** any accuracy number is reported.
    and accuracy-vs-training-examples-per-verse curve (NFR-20), with the
    exact command recorded in Review.md per Ground Rule 1. The eval
    script is a Phase 5 unit written against the real registry, not
-   against fixtures.
+   against fixtures. — built 2026-10-01: `python -m
+   samskrita_dhvani.evaluate --registry data/gvr_registry.json
+   [--model data/gvr/model.pkl] [--json OUT] [--curve-png OUT]`
+   scores only `test` rows (FR-23 is structural; no training mode by
+   design), refuses loudly (rc=2) on missing registry/model, zero
+   test rows, or all-unmodelled test rows, and carries the split
+   policy sentence in every report and refusal.
 
 ## 6. Honesty constraints (standing)
 

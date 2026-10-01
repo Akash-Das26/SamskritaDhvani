@@ -1122,6 +1122,148 @@ owner request.**
   real 2.01 mūla (तं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् ।) attached
   from the parsed source; scratch dirs removed after the run.
 
+**Phase 5 — Unit 8 (2026-10-01): held-out evaluation CLI
+(`python -m samskrita_dhvani.evaluate`) — built and tested.**
+
+- **What was built:** the FR-22 plan §5 step 5 — the NFR-20/FR-23
+  reporting infrastructure. Reads the registry through
+  `GvrRegistry.from_json` (leak + provenance gates run at load) and
+  the model through `GvrRecognizer.load`, scores ONLY the test-split
+  rows (train/validation rows are counted for transparency and never
+  reach `predict` — pinned by a call-counting test), and reports: the
+  headline as the exact fraction `n_correct/n_test` with percent for
+  reading only; the confusion matrix (rows = true verse, cols =
+  predicted verse, sorted labels, unmodelled verses visible); per-
+  verse recall + support with `*` on single-recitation support (the
+  data-starved marker); and the accuracy-vs-training-examples curve,
+  one point per modelled test verse at x = `n_training_clips` from
+  the model envelope (ground truth for what actually trained), y =
+  held-out recall, annotated with the verse id. `--json` writes the
+  full deterministic report (schema v1, `gvr_eval_report`, no
+  timestamps); `--curve-png` renders the NFR-20 scatter (matplotlib,
+  already pinned). Every report carries the split-policy sentence,
+  and a computed speaker-overlap note names test reciters who also
+  hold train rows (their recall is not fully speaker-independent).
+- **No training mode by design:** an evaluator that can also train
+  can silently evaluate its own training — FR-23's failure mode.
+  Training stays plan §5 step 4's boundary; the evaluator is
+  read-only over existing artifacts (Ground Rule 2: no changes to
+  recognizer, scorer, booth, registry, or API).
+- **The per-recording finding (design-level, caught by the CLI's own
+  tests):** with the registry's per-(verse, reciter) leak rule, a
+  single-reciter corpus can never yield a scoreable held-out split —
+  all-train → 0 test rows; a per-verse split → the test verses have
+  no train rows and no model. Every reachable path for the unit-7
+  auto policy is therefore a refusal, so the mandatory FR-23
+  single-reciter sentence is surfaced ON the refusal path (both the
+  0-test-rows and the no-modelled-test-rows errors carry it, with
+  the fix: record a second reciter). An operator-declared
+  per-recording policy over ≥2 reciters still produces a full report
+  carrying the sentence verbatim.
+- **Honest absence (Ground Rule 1):** missing registry, missing
+  model, zero test rows, and undecodable test audio each stop loudly
+  (rc=2) naming the exact artifact path — the 503 honesty pattern on
+  disk. A test verse with no trained model is counted INCORRECT
+  (never skipped), listed, marked `modelled: false`, and excluded
+  from the curve; if no test row has a trained model, the run
+  refuses to report any number (registry and model would not
+  describe the same experiment).
+- **Verification:** 15 new tests (perfect synthetic run → diagonal
+  confusion; exact metric math on forced wrong predictions — 1/4 =
+  0.25; FR-23 statements incl. the per-recording refusal sentence;
+  zero-test-rows rc=2; absent registry/model rc=2 naming the path;
+  corrupt test-row audio rc=2; all-unmodelled rc=2; unmodelled verse
+  counted incorrect + off-curve; single-clip curve honesty note;
+  single-recitation `*` marker; speaker-overlap note; train rows
+  never scored; JSON deterministic and matching the printed
+  headline; PNG magic verified). Fixtures reuse the D3 synthetic
+  verse canon directly (`from test_gvr_classifier import …`) — no
+  new synthetic recipe (Ground Rule 4). Full suite: **148 passed**.
+  As-run demo (command recorded; SYNTHETIC canon registry + model in
+  /tmp — Rule 4, pipeline test ONLY, never citable as GVR
+  accuracy): `python -m samskrita_dhvani.evaluate --registry …
+  --model … --json report.json --curve-png curve.png` → rc=0, full
+  table + matrix + curve + both artifacts; the 4/4 headline is the
+  synthetic fixture arithmetic (distinct formant plans, 2 clips per
+  verse — the curve note correctly says no data-quantity trend is
+  displayable). The default real-path run (`python -m
+  samskrita_dhvani.evaluate`, no args) refuses rc=2: `error:
+  registry not found: data/gvr_registry.json (…FR-23: no registry,
+  no number)`. Demo dir deleted; `data/gvr_registry.json` and
+  `data/gvr/model.pkl` verified still ABSENT — the real-data gates
+  stand.
+- **What remains for real numbers:** the owner's D4 takes (booth on
+  :8030, recite sheet staged) → promote → `build_registry` (≥2
+  reciters for a per-reciter held-out split) → train (step 4) → this
+  step 5 with the exact command + output recorded here per Ground
+  Rule 1.
+
+**Phase 3 design note (2026-10-01, fourth note): held-out evaluation
+CLI (`python -m samskrita_dhvani.evaluate`) — NFR-20/FR-23 reporting
+infrastructure.**
+
+- **Goal:** FR-22 plan §5 step 5 — the reporting infrastructure that
+  turns a trained recognizer + registry into the honest evaluation
+  set: headline held-out accuracy, the confusion matrix, per-verse
+  recall/support, and the accuracy-vs-training-examples-per-verse
+  curve (NFR-20). FR-23 is structural, not optional: the script
+  evaluates ONLY rows whose registry split is `test` — train and
+  validation rows are counted for transparency and never scored.
+- **Interface:** `python -m samskrita_dhvani.evaluate --registry
+  data/gvr_registry.json [--model data/gvr/model.pkl] [--json OUT]
+  [--curve-png OUT]`. Registry loads through `GvrRegistry.from_json`
+  (leak + provenance gates run at load); model through
+  `GvrRecognizer.load`. Optional `--json` writes the full report
+  (schema v1, kind `gvr_eval_report`, deterministic — no timestamps);
+  optional `--curve-png` renders the NFR-20 scatter (matplotlib,
+  already pinned). **No retraining mode by design:** an evaluator
+  that can also train can silently evaluate its own training
+  (FR-23's failure mode) — training is plan §5 step 4's boundary.
+- **Honest absence (loud, rc=2, nothing fabricated):** missing or
+  ungated registry, missing model file, zero test rows, and a test
+  row whose audio no longer decodes each stop with the exact reason
+  and artifact path — the 503 honesty pattern, on disk. A test row
+  whose verse has no trained model is counted incorrect, named in a
+  loud `counted incorrect` line, excluded from the curve, and marked
+  `modelled: false` in the JSON (untrainable-test-verse case from the
+  unit-7 policy). If NO test row has a trained model, the registry
+  and model do not describe the same experiment → rc=2, no number.
+- **FR-23 statements (computed, printed, carried verbatim in JSON):**
+  the split policy sentence — per-reciter: each (verse, reciter) pair
+  sits in exactly one split; per-recording: the mandatory
+  single-reciter "NOT speaker-independent" sentence. Plus a computed
+  fact either policy can produce: test reciters who also hold train
+  rows are named (their test verses' recall is not fully
+  speaker-independent).
+- **NFR-20 outputs:** headline as an exact fraction `n_correct/n_test`
+  (percent only for reading, never alone); confusion matrix
+  (rows = true verse, cols = predicted verse, sorted); per-verse
+  recall + support with `*` marking single-row support (the
+  data-starved marker); the curve — one point per modelled test verse
+  at x = its `n_training_clips` (from the model envelope: ground
+  truth for what actually trained), y = that verse's held-out recall,
+  annotated with the verse id; when every verse has exactly one
+  training clip the report says plainly that no data-quantity trend
+  is displayable.
+- **Ground Rule 2 scope:** no changes to the recognizer, scorer,
+  booth, registry, or API — a read-only evaluator over their
+  existing artifacts. Ground Rule 1: only numbers a real run
+  produced may be recorded anywhere; until the real registry/model
+  exist, the script's loud failures ARE its honest output.
+- **Test plan:** new `tests/test_evaluate_gvr.py` reusing the D3
+  synthetic fixture canon (`tests/test_gvr_classifier.py`:
+  `verse_plan`/`render_verse`/`_wav_bytes`) — no new synthetic
+  recipe (Ground Rule 4). Coverage: exact metric math on forced
+  predictions (mixed correct/wrong), full wiring on synthetic
+  verses (perfect run → diagonal confusion), per-recording sentence
+  present, zero-test-rows rc=2, absent registry/model rc=2 naming
+  the path, unmodelled test verses counted incorrect + excluded
+  from the curve, no-modelled-test-row rc=2, JSON round-trip of the
+  printed numbers, `--curve-png` writes a PNG, single-reciter
+  overlap note, corrupt test-row audio rc=2. Full suite green.
+- **Report impact:** none — no reported number changes; the script
+  cannot produce one until real data lands.
+
 **Unit 3b (2026-10-01): calibration CLI — built and tested.**
 
 - `python -m samskrita_dhvani.calibrate` turns the D5 recording
@@ -1688,3 +1830,17 @@ quarantined) — chain validated, zero numbers reported.**
   against the real server and real item list; registry-of-record and
   model path confirmed untouched. No numbers reported (FR-23).
   [2026-10-01]
+- `samskrita_dhvani/evaluate.py` + `tests/test_evaluate_gvr.py` —
+  Phase 5 unit 8: the NFR-20/FR-23 held-out evaluation CLI (`python
+  -m samskrita_dhvani.evaluate`): test-split-only accuracy (exact
+  fraction headline), confusion matrix, per-verse recall/support
+  with data-starved `*` marker, accuracy-vs-training-examples curve
+  from the model envelope's `n_training_clips`, split-policy
+  sentence + computed speaker-overlap note in every report,
+  honest-absence rc=2 paths (incl. the FR-23 single-reciter sentence
+  on the per-recording refusal), unmodelled test verses counted
+  incorrect, deterministic `--json` report + optional `--curve-png`.
+  No training mode by design (FR-23). 15 tests reusing the D3
+  fixture canon; pytest 148. Synthetic /tmp demo run recorded in the
+  unit entry (Rule 4: pipeline test only); real registry/model
+  verified still absent. [2026-10-01]
