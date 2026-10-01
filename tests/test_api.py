@@ -6,16 +6,33 @@ error states (never placeholder scores), Ground Rule 1 in the UI.
 """
 
 import io
+import json
 import struct
 import wave
+from pathlib import Path
+from unittest import mock
 
 import numpy as np
 import pytest
 from fastapi.testclient import TestClient
 
+import samskrita_dhvani.api as api_mod
 from samskrita_dhvani.api import app
+from samskrita_dhvani.evaluate import evaluate
+from samskrita_dhvani.registry import GvrRegistry
+
+# D3 synthetic verse canon helpers (tests/test_evaluate_gvr.py — same
+# fixture recipe as the unit-8 tests; no new synthetic recipe).
+from test_evaluate_gvr import build_registry, train_model
 
 client = TestClient(app)
+
+
+@pytest.fixture(scope="module")
+def _tmp(tmp_path_factory):
+    """Shared scratch dir for the gvr_eval status tests (synthetic
+    canon registry/model/report artifacts; pytest cleans it up)."""
+    return tmp_path_factory.mktemp("api_gvr_eval")
 
 
 def _wav_bytes(freq_hz: int = 220, seconds: float = 1.0, sr: int = 16000) -> bytes:
@@ -378,6 +395,127 @@ def test_gvr_recognize_200_full_contract_with_trained_model(
         # IS 0.0 to the machine. Zero here means 'vanishingly unlikely',
         # which is the honest value, so the bound is inclusive.
         assert 0.0 <= c["confidence"] < tm["confidence"]
+
+
+# ------------------------------------------- /api/status · gvr_eval
+
+def test_status_gvr_eval_absent_registry_is_honest(_tmp):
+    """Default repo state: no registry at all → named FR-23 refusal,
+    never a placeholder number."""
+    with mock.patch.object(api_mod, "GVR_REGISTRY_PATH",
+                           _tmp / "nope_registry.json"):
+        body = client.get("/api/status").json()["gvr_eval"]
+    assert body["available"] is False
+    assert "FR-23" in body["detail"]
+    assert body["n_test"] is None and body["per_verse"] is None
+
+
+def test_status_gvr_eval_ladder_names_each_missing_artifact(_tmp):
+    """Registry-only → names the train step; registry + model → names
+    the exact publish command."""
+    reg_path = _tmp / "ladder_registry.json"
+    ghost_model = _tmp / "ladder_no_model.pkl"
+    report_path = _tmp / "ladder_report.json"
+    build_registry(_tmp).to_json(reg_path)
+
+    patches = [
+        mock.patch.object(api_mod, "GVR_REGISTRY_PATH", reg_path),
+        mock.patch.object(api_mod, "GVR_EVAL_REPORT_PATH", report_path),
+    ]
+    with mock.patch.object(api_mod, "GVR_MODEL_PATH", ghost_model):
+        for p in patches:
+            p.start()
+        try:
+            body = client.get("/api/status").json()["gvr_eval"]
+        finally:
+            for p in patches:
+                p.stop()
+    assert body["available"] is False
+    assert "train" in body["detail"] and "step 4" in body["detail"]
+
+    model_path = _tmp / "ladder_model.pkl"
+    train_model(build_registry(_tmp)).save(model_path)
+    with mock.patch.object(api_mod, "GVR_REGISTRY_PATH", reg_path), \
+            mock.patch.object(api_mod, "GVR_MODEL_PATH", model_path), \
+            mock.patch.object(api_mod, "GVR_EVAL_REPORT_PATH", report_path):
+        body = client.get("/api/status").json()["gvr_eval"]
+    assert body["available"] is False
+    assert "python -m samskrita_dhvani.evaluate" in body["detail"]
+
+
+def test_status_gvr_eval_mirrors_the_published_report_exactly(_tmp):
+    """Full chain through the REAL evaluator: every number the API
+    returns must equal the report on disk (Ground Rule 1: one source
+    for any displayed number)."""
+    reg_path = _tmp / "eval_registry.json"
+    model_path = _tmp / "eval_model.pkl"
+    report_path = _tmp / "eval_report.json"
+    reg = build_registry(_tmp)
+    rec = train_model(reg)
+    reg.to_json(reg_path)
+    rec.save(model_path)
+    report_path.write_text(
+        json.dumps(evaluate(rec, reg)), encoding="utf-8"
+    )
+    source = json.loads(report_path.read_text(encoding="utf-8"))
+
+    with mock.patch.object(api_mod, "GVR_REGISTRY_PATH", reg_path), \
+            mock.patch.object(api_mod, "GVR_MODEL_PATH", model_path), \
+            mock.patch.object(api_mod, "GVR_EVAL_REPORT_PATH", report_path):
+        body = client.get("/api/status").json()["gvr_eval"]
+    assert body["available"] is True
+    assert body["schema_version"] == 1
+    assert body["split_policy"] == source["split_policy"]
+    assert body["fr23_statement"] == source["fr23_statement"]
+    assert body["n_test"] == source["overall"]["n_test"] == 4
+    assert body["n_correct"] == source["overall"]["n_correct"]
+    assert body["accuracy_fraction"] == source["overall"][
+        "accuracy_fraction"
+    ]
+    assert body["accuracy_percent"] == source["overall"][
+        "accuracy_percent"
+    ]
+    assert body["curve_note"] == source["curve"]["note"]
+    got = {v["verse_id"]: v for v in body["per_verse"]}
+    for vid, v in source["verses"].items():
+        row = got[vid]
+        assert row["recall"] == v["recall"]
+        assert row["n_correct"] == v["n_correct"]
+        assert row["support"] == v["support"]
+        assert row["n_training_clips"] == v["n_training_clips"]
+        assert row["modelled"] == v["modelled"]
+        assert row["single_row_support"] == v["single_row_support"]
+    assert body["unmodelled_test_verses"] == []
+
+
+def test_status_gvr_eval_rejects_wrong_kind_or_schema(_tmp):
+    """A corrupted/mismatched report disables the section loudly — no
+    half-rendered numbers."""
+    reg_path = _tmp / "bad_registry.json"
+    model_path = _tmp / "bad_model.pkl"
+    report_path = _tmp / "bad_report.json"
+    reg = build_registry(_tmp)
+    reg.to_json(reg_path)
+    train_model(reg).save(model_path)
+
+    report_path.write_text(
+        json.dumps({"kind": "something_else", "schema_version": 1}),
+        encoding="utf-8",
+    )
+    with mock.patch.object(api_mod, "GVR_REGISTRY_PATH", reg_path), \
+            mock.patch.object(api_mod, "GVR_MODEL_PATH", model_path), \
+            mock.patch.object(api_mod, "GVR_EVAL_REPORT_PATH", report_path):
+        body = client.get("/api/status").json()["gvr_eval"]
+    assert body["available"] is False
+    assert "kind" in body["detail"] or "schema" in body["detail"]
+
+    report_path.write_text("{not json at all", encoding="utf-8")
+    with mock.patch.object(api_mod, "GVR_REGISTRY_PATH", reg_path), \
+            mock.patch.object(api_mod, "GVR_MODEL_PATH", model_path), \
+            mock.patch.object(api_mod, "GVR_EVAL_REPORT_PATH", report_path):
+        body = client.get("/api/status").json()["gvr_eval"]
+    assert body["available"] is False
+    assert "unreadable" in body["detail"]
 
 
 # ------------------------------------------------------------ static UI

@@ -252,6 +252,62 @@
                         </div>
                     </article>
                 </section>
+                <!-- Held-out Evaluation (NFR-20/FR-23) -->
+                <section class="bg-surface-container-low border border-outline-variant rounded-lg p-space-lg space-y-space-md">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs border-b border-outline-variant pb-space-sm">
+                        <div>
+                            <h2 class="font-headline-sm text-headline-sm text-on-surface">Held-out Evaluation
+                                (FR-23/NFR-20)</h2>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Test-split accuracy, per-verse
+                                recall, and data-starved verses — mirrored live from the published evaluation report.</p>
+                        </div>
+                        <span class="font-code text-code text-[11px] text-on-surface-variant">read live from
+                            data/gvr/eval_report.json</span>
+                    </div>
+                    <div id="evalAbsent" class="hidden p-space-md rounded bg-surface-container-high/60 border border-outline-variant/60 font-body-sm text-body-sm text-secondary leading-relaxed">
+                        Loading the evaluation state…
+                </div>
+                    <div id="evalContent" class="hidden space-y-space-md">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-3 gap-x-2 font-code">
+                        <div>
+                                <span class="text-[11px] text-on-surface-variant uppercase tracking-wider block">Held-out
+                                    accuracy</span>
+                                <span class="text-headline-md text-on-surface font-medium" id="evalHeadline">—</span>
+                            </div>
+                            <div>
+                                <span class="text-[11px] text-on-surface-variant uppercase tracking-wider block">Test
+                                    rows</span>
+                                <span class="text-headline-md text-on-surface font-medium" id="evalTestRows">—</span>
+                            </div>
+                            <div>
+                                <span class="text-[11px] text-on-surface-variant uppercase tracking-wider block">Split
+                                    policy</span>
+                                <span class="text-code text-on-surface font-medium" id="evalSplitPolicy">—</span>
+                            </div>
+                            <div>
+                                <span class="text-[11px] text-on-surface-variant uppercase tracking-wider block">FR-23
+                                    statement</span>
+                                <span class="text-code text-on-surface font-medium text-[12px] leading-snug"
+                                    id="evalFr23">—</span>
+                            <span class="hidden" id="evalOverlap"></span>
+                            </div>
+                    </div>
+                        <div class="overflow-x-auto border border-outline-variant/60 rounded">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-surface-container border-b border-outline-variant font-code text-code text-on-surface text-[11px] uppercase tracking-wider">
+                                        <th class="py-space-sm px-space-md font-medium">VERSE</th>
+                                        <th class="py-space-sm px-space-md font-medium">HELD-OUT RECALL</th>
+                                        <th class="py-space-sm px-space-md font-medium">CORRECT / SUPPORT</th>
+                        <th class="py-space-sm px-space-md font-medium">TRAIN CLIPS</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="evalVerseRows"></tbody>
+                            </table>
+                        </div>
+                        <p id="evalNote" class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed text-[12px]"></p>
+                    </div>
+                </section>
                 <!-- Audit Log / Changelog Section -->
                 <section class="space-y-space-md">
                     <div
@@ -353,6 +409,42 @@
                         $('statVerseDetail').textContent = vc.available
                             ? 'Registry of record: read live from data/gvr_registry.json at request time.'
                             : 'Audio acquisition is pending (permission path or D4 self-recordings). The recognizer cannot be trained until a real registry exists — see files/DataIntegrity.md.';
+                        var ev = s.gvr_eval || { available: false, detail: 'gvr_eval missing from the status payload' };
+                        var evHead = document.getElementById('evalHeadline');
+                        if (evHead) {
+                            var $absent = $('evalAbsent'), $content = $('evalContent');
+                            if (!ev.available) {
+                                $absent.textContent = ev.detail;
+                                $absent.classList.remove('hidden');
+                                $content.classList.add('hidden');
+                            } else {
+                                $absent.classList.add('hidden');
+                                $content.classList.remove('hidden');
+                                $('evalHeadline').textContent = ev.n_correct + '/' + ev.n_test + ' = ' + ev.accuracy_percent + '%';
+                                $('evalTestRows').textContent = String(ev.n_test);
+                                $('evalSplitPolicy').textContent = ev.split_policy;
+                                $('evalFr23').textContent = ev.fr23_statement + (ev.speaker_overlap_note ? ' ' + ev.speaker_overlap_note : '');
+                                $('evalVerseRows').innerHTML = (ev.per_verse || []).map(function (v) {
+                                    var recall = v.recall === null ? (v.modelled ? 'n/a' : '—') : (Math.round(v.recall * 100) + '%');
+                                    var clips = v.n_training_clips === null ? '—' : String(v.n_training_clips);
+                                    var star = v.single_row_support ? '*' : '';
+                                    var unmodelled = !v.modelled ? ' (unmodelled)' : '';
+                                    return '<tr class="border-b border-outline-variant/40 hover:bg-surface-container transition-colors">' +
+                                        '<td class="py-space-sm px-space-md font-code text-code text-on-surface">' + SD.esc(v.verse_id + unmodelled) + '</td>' +
+                                        '<td class="py-space-sm px-space-md font-code text-code text-on-surface">' + SD.esc(recall + star) + '</td>' +
+                                        '<td class="py-space-md px-space-md font-code text-code text-on-surface">' + SD.esc(v.n_correct + '/' + v.support) + '</td>' +
+                                        '<td class="py-space-sm px-space-md font-code text-code text-on-surface">' + SD.esc(clips) + '</td>' +
+                                        '</tr>';
+                                }).join('');
+                                var notes = [];
+                                if (ev.curve_note) notes.push(ev.curve_note);
+                                if ((ev.unmodelled_test_verses || []).length) {
+                                    notes.push(ev.unmodelled_test_verses.length + ' test verse(s) had no trained model and are counted incorrect (FR-23 honesty).');
+                                }
+                                $('evalNote').textContent = notes.join(' ');
+                                $('evalNote').classList.toggle('hidden', !notes.length);
+                            }
+                        }
                         var sw = s.last_sweep;
                         $('sweepFiles').textContent = sw.available ? String(sw.files_swept) : '—';
                         $('sweepHours').textContent = sw.available ? (sw.total_hours + ' hrs') : '—';
@@ -387,6 +479,14 @@
                             s.spd_reference_audio_available
                                 ? 'AVAILABLE'
                                 : 'PENDING — Hall/Loyola ear check not yet passed (PROVENANCE SPD-01/02)',
+                        ]);
+                        var ev = s.gvr_eval || { available: false, detail: 'gvr_eval missing from the status payload' };
+                        rows.push([
+                            s.generated_at.slice(0, 10),
+                            'GVR held-out evaluation (data/gvr/eval_report.json)',
+                            ev.available
+                                ? 'REPORTED — ' + ev.n_correct + '/' + ev.n_test + ' held-out accuracy (' + ev.split_policy + ' split)'
+                                : 'NOT YET — ' + ev.detail,
                         ]);
                         $('auditBody').innerHTML = rows.map(function (r) {
                             var ok = r[2].indexOf('PASS') === 0 || r[2].indexOf('AVAILABLE') === 0;

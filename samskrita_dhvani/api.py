@@ -32,6 +32,7 @@ UI), so one process serves both the API and the demo.
 from __future__ import annotations
 
 import csv
+import json
 import os
 import tempfile
 from datetime import datetime, timezone
@@ -42,6 +43,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+from samskrita_dhvani.evaluate import (
+    EVAL_REPORT_KIND,
+    EVAL_REPORT_SCHEMA_VERSION,
+)
 from samskrita_dhvani.frontend import load_audio_16k, vad_speech_fraction
 from samskrita_dhvani.gvr_classifier import GvrRecognizer
 from samskrita_dhvani.registry import (
@@ -63,6 +68,13 @@ WORDLIST_PROVENANCE = {
 GVR_REGISTRY_PATH = PROJECT_ROOT / "data" / "gvr_registry.json"
 # Trained D3 recognizer artifact (written by GvrRecognizer.save).
 GVR_MODEL_PATH = PROJECT_ROOT / "data" / "gvr" / "model.pkl"
+# Published NFR-20/FR-23 evaluation report (written by the unit-8 CLI:
+#   python -m samskrita_dhvani.evaluate --registry data/gvr_registry.json
+#                                     --json data/gvr/eval_report.json
+# ). The status endpoint READS this file — it never re-scores audio or
+# runs predict: evaluation is the CLI's job and the report is the single
+# source for any displayed number (Ground Rule 1).
+GVR_EVAL_REPORT_PATH = PROJECT_ROOT / "data" / "gvr" / "eval_report.json"
 # Reference-audio root for SPD (populated only after the Hall/Loyola
 # ear check passes and per-word clips are cut).
 SPD_REFERENCE_ROOT = PROJECT_ROOT / "data" / "spd" / "reference_words"
@@ -115,10 +127,43 @@ class VerseCoverageOut(BaseModel):
     chapters: list[str] | None = None
 
 
+class VerseEvalOut(BaseModel):
+    """One verse's NFR-20 row (mirrors the evaluate CLI's report)."""
+
+    verse_id: str
+    recall: float | None
+    n_correct: int
+    support: int
+    n_training_clips: int | None
+    modelled: bool
+    single_row_support: bool
+
+
+class GvrEvalOut(BaseModel):
+    """Held-out evaluation summary (FR-23/NFR-20), or the honest
+    reason it does not exist yet. Numbers are only ever mirrored from
+    the published ``gvr_eval_report`` — never recomputed here."""
+
+    available: bool
+    detail: str
+    schema_version: int | None = None
+    split_policy: str | None = None
+    fr23_statement: str | None = None
+    speaker_overlap_note: str | None = None
+    curve_note: str | None = None
+    n_test: int | None = None
+    n_correct: int | None = None
+    accuracy_fraction: float | None = None
+    accuracy_percent: float | None = None
+    per_verse: list[VerseEvalOut] | None = None
+    unmodelled_test_verses: list[dict] | None = None
+
+
 class StatusOut(BaseModel):
     word_count: int
     spd_reference_audio_available: bool
     gvr_scorer_available: bool
+    gvr_eval: GvrEvalOut
     verse_coverage: VerseCoverageOut
     last_sweep: SweepSummaryOut
     generated_at: str
@@ -148,6 +193,96 @@ def _load_gvr_registry() -> GvrRegistry | None:
     if not GVR_REGISTRY_PATH.is_file():
         return None
     return GvrRegistry.from_json(GVR_REGISTRY_PATH)
+
+
+def _gvr_eval() -> GvrEvalOut:
+    """Mirror the published held-out evaluation (FR-23/NFR-20), or name
+    exactly which artifact is missing — same honesty ladder as
+    ``_verse_coverage``/``_sweep_summary``. Never computes a number."""
+    if not GVR_REGISTRY_PATH.is_file():
+        return GvrEvalOut(
+            available=False,
+            detail=(
+                "No GVR registry (data/gvr_registry.json): FR-23 requires "
+                "a held-out test split before any accuracy can exist."
+            ),
+        )
+    if GvrRecognizer.load(GVR_MODEL_PATH) is None:
+        return GvrEvalOut(
+            available=False,
+            detail=(
+                "Registry exists but no trained model at "
+                "data/gvr/model.pkl — train per FR-22 plan §5 step 4, "
+                "then evaluate (step 5)."
+            ),
+        )
+    if not GVR_EVAL_REPORT_PATH.is_file():
+        return GvrEvalOut(
+            available=False,
+            detail=(
+                "Trained model + registry found, but no published "
+                "evaluation report at data/gvr/eval_report.json. Run: "
+                "python -m samskrita_dhvani.evaluate --registry "
+                "data/gvr_registry.json --json data/gvr/eval_report.json"
+            ),
+        )
+    try:
+        data = json.loads(
+            GVR_EVAL_REPORT_PATH.read_text(encoding="utf-8")
+        )
+        if (
+            data.get("kind") != EVAL_REPORT_KIND
+            or data.get("schema_version") != EVAL_REPORT_SCHEMA_VERSION
+        ):
+            raise ValueError(
+                f"kind/schema mismatch (got kind={data.get('kind')!r}, "
+                f"schema_version={data.get('schema_version')!r})"
+            )
+        overall = data["overall"]
+        verses = data["verses"]
+        curve = data.get("curve", {})
+        return GvrEvalOut(
+            available=True,
+            detail=(
+                "Held-out evaluation of record: "
+                f"{GVR_EVAL_REPORT_PATH.name} (written by the evaluate "
+                "CLI; re-run it with --json to refresh)."
+            ),
+            schema_version=data["schema_version"],
+            split_policy=data["split_policy"],
+            fr23_statement=data["fr23_statement"],
+            speaker_overlap_note=data.get("speaker_overlap_note"),
+            curve_note=curve.get("note"),
+            n_test=overall["n_test"],
+            n_correct=overall["n_correct"],
+            accuracy_fraction=overall["accuracy_fraction"],
+            accuracy_percent=overall["accuracy_percent"],
+            per_verse=[
+                VerseEvalOut(
+                    verse_id=vid,
+                    recall=v["recall"],
+                    n_correct=v["n_correct"],
+                    support=v["support"],
+                    n_training_clips=v["n_training_clips"],
+                    modelled=v["modelled"],
+                    single_row_support=v["single_row_support"],
+                )
+                for vid, v in verses.items()
+            ],
+            unmodelled_test_verses=data.get(
+                "unmodelled_test_verses", []
+            ),
+        )
+    except (json.JSONDecodeError, KeyError, TypeError, ValueError) as exc:
+        return GvrEvalOut(
+            available=False,
+            detail=(
+                f"Evaluation report at {GVR_EVAL_REPORT_PATH} is "
+                f"unreadable or not a schema-{EVAL_REPORT_SCHEMA_VERSION} "
+                f"{EVAL_REPORT_KIND} ({exc}) — re-run the evaluate CLI "
+                "to regenerate it. No partial numbers are shown."
+            ),
+        )
 
 
 def _sweep_summary() -> SweepSummaryOut:
@@ -450,6 +585,7 @@ def status() -> StatusOut:
             _wordlist().words[0].word_id
         ) is not None,
         gvr_scorer_available=GvrRecognizer.load(GVR_MODEL_PATH) is not None,
+        gvr_eval=_gvr_eval(),
         verse_coverage=_verse_coverage(),
         last_sweep=_sweep_summary(),
         generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),

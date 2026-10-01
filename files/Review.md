@@ -1264,6 +1264,105 @@ infrastructure.**
 - **Report impact:** none — no reported number changes; the script
   cannot produce one until real data lands.
 
+**Phase 5 — Unit 9 (2026-10-01): NFR-20 eval fields on `/api/status`
++ the status screen's Held-out Evaluation section — built, tested,
+render-verified.**
+
+- **What was built:** the demo transparency surface for the unit-8
+  evaluation (fifth Phase 3 note, this unit). `/api/status` gains a
+  `gvr_eval` block that MIRRORS the published report at
+  `data/gvr/eval_report.json` — the file the evaluate CLI writes
+  with `--json`. The API never re-scores audio or calls `predict`
+  on the status path: evaluation stays the CLI's job and the report
+  is the single source for any displayed number (Ground Rule 1).
+- **Honesty ladder (same pattern as verse_coverage/last_sweep):**
+  no registry → `available: false` naming FR-23; registry but no
+  model → names plan §5 step 4; both but no report → names the
+  exact `python -m samskrita_dhvani.evaluate … --json` command to
+  publish; unreadable/wrong-kind/wrong-schema report → loud disable
+  naming the mismatch, never a half-rendered number. When present:
+  schema version, split policy, the FR-23 statement verbatim,
+  speaker-overlap note, headline `n_correct/n_test` + fraction +
+  percent, per-verse rows (recall, correct/support, train clips,
+  `modelled`, `single_row_support`), curve note, and the
+  unmodelled-test-verses list — data-starved verses stay visible
+  (NFR-20's point).
+- **UI:** `web/status.html` gains a full-width "Held-out Evaluation
+  (FR-23/NFR-20)" section above the audit table (headline stat,
+  test rows, split policy, FR-23 statement, per-verse table with
+  the `*` single-recitation marker and `(unmodelled)` rows, notes
+  line) and a fourth audit-log row (`REPORTED — n/n held-out
+  accuracy` / `NOT YET — <reason>`). The absent state renders the
+  reason text, never a bare em-dash.
+- **Verification:** 4 new API tests (absent-registry shape;
+  ladder names each missing artifact incl. the exact publish
+  command; full mirror-equality of every returned number against
+  the real `evaluate()` report on synthetic-canon verses;
+  wrong-kind/wrong-JSON refusal). Full suite: **152 passed**.
+  Headless-Chrome render E2E across TWO live instances — the repo
+  instance (real paths, artifacts absent → honest absent panel +
+  `NOT YET` audit row, no numbers anywhere) and a quarantined /tmp
+  sandbox instance (synthetic registry + trained model + real
+  report staged → headline `4/4 = 100%`, 4 per-verse rows, policy
+  rendered; 17/17 checks). Scratch dir, sandbox copy, and Chrome
+  profile deleted; `data/gvr_registry.json`, `data/gvr/model.pkl`,
+  and `data/gvr/eval_report.json` verified ABSENT in the repo — no
+  synthetic byte crossed the gate. Inline status-page JS
+  syntax-checked with `node --check` before the render run.
+- **Ground Rule 2 scope:** read-only additions — one helper + two
+  schemas in `api.py`, one section + renderer in `status.html`,
+  tests. No changes to the evaluator, recognizer, scorer, booth,
+  or registry; the live booth on :8030 untouched.
+- **Report impact:** none — no number is computed anywhere new;
+  the surface mirrors the evaluator's output once a real report is
+  published (after the owner's D4 takes → registry → train →
+  evaluate with `--json data/gvr/eval_report.json`).
+
+**Phase 3 design note (2026-10-01, fifth note): NFR-20 eval fields on
+`/api/status` — approved by direct owner request.**
+
+- **Goal:** once a real model + evaluation exist, the demo status
+  screen must surface the honest reporting set (FR-23 held-out
+  accuracy, NFR-20 per-verse recall) instead of only
+  `gvr_scorer_available: true`. Transparency page, not a new score
+  path.
+- **Architecture — read the report, never re-score:** `/api/status`
+  reads `data/gvr/eval_report.json` — the deterministic schema-v1
+  file the unit-8 CLI writes with `--json`. The API never runs the
+  evaluator or touches `predict` on the status path: evaluation is
+  the CLI's job (plan §5 step 5), the report is the single source
+  for any displayed number (Ground Rule 1), and a status probe
+  stays cheap.
+- **Honest ladder (same pattern as verse_coverage/last_sweep):** no
+  registry → `available: false` naming FR-23; registry but no model
+  → names the train step; both but no report → names the exact
+  `evaluate --json` command to publish; unreadable/wrong-kind/wrong-
+  schema report → `available: false` naming the mismatch (never a
+  half-rendered number).
+- **Contract:** `StatusOut.gvr_eval` = `{available, detail, schema_
+  version, split_policy, fr23_statement, n_test, n_correct,
+  accuracy_fraction, accuracy_percent, per_verse[{verse_id, recall,
+  n_correct, support, n_training_clips, modelled,
+  single_row_support}], unmodelled_test_verses[]}`. Unmodelled
+  verses and single-recitation support stay visible (NFR-20's
+  point).
+- **UI:** a full-width "Held-out Evaluation" section on
+  `web/status.html` above the audit table: headline fraction +
+  percent, test-row count, split policy, per-verse table (recall,
+  correct/support, train clips, `*` star), and the same-ladder audit
+  row. Absent state renders the reason, never an em-dash alone.
+- **Ground Rule 2 scope:** no recognizer/scorer/booth/registry
+  changes; `api.py` gains one read-only helper + schema; the booth
+  (still live on :8030) is untouched.
+- **Test plan:** extend `tests/test_api.py` — absent-state shape;
+  full chain via the real evaluator on synthetic-canon verses
+  (registry + trained model + real `evaluate()` report written to
+  the monkeypatched paths) asserting the API returns exactly the
+  report's numbers; registry+model-without-report ladder step;
+  wrong-kind/schema refusal. Full suite green.
+- **Report impact:** none — no new numbers are computed anywhere;
+  the surface only mirrors the evaluator's output once it exists.
+
 **Unit 3b (2026-10-01): calibration CLI — built and tested.**
 
 - `python -m samskrita_dhvani.calibrate` turns the D5 recording
@@ -1844,3 +1943,13 @@ quarantined) — chain validated, zero numbers reported.**
   fixture canon; pytest 148. Synthetic /tmp demo run recorded in the
   unit entry (Rule 4: pipeline test only); real registry/model
   verified still absent. [2026-10-01]
+- `samskrita_dhvani/api.py` + `web/status.html` +
+  `tests/test_api.py` — Phase 5 unit 9: `gvr_eval` on `/api/status`
+  mirrors the published `data/gvr/eval_report.json` (headline
+  accuracy, per-verse recall/support, FR-23 statement, split
+  policy, unmodelled verses) with the honesty ladder for every
+  missing-artifact state; the status screen gains the Held-out
+  Evaluation section + audit row. Read-only mirror — never re-scores
+  (Ground Rule 1). 4 new tests; pytest 152; two-instance headless
+  render E2E 17/17 (repo absent-state + quarantined /tmp full-chain
+  sandbox, deleted after). [2026-10-01]
