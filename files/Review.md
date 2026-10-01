@@ -1477,6 +1477,36 @@ no takes exist yet.**
   the agent. Session creation, consent, and the reciting itself are
   the owner's steps; takes begin existing only under their voice.
 
+**Phase 6 addendum 2 (2026-10-01): full-chain rehearsal (synthetic,
+quarantined) — chain validated, zero numbers reported.**
+
+- To prove the D4 plumbing end-to-end without a human reciter, the
+  LIVE booth server on :8030 was driven exactly as the browser
+  would: session `GVR-REC-20261001-90d68a` (reciter
+  `synthetic_rehearsal`, source-id `SYNTHETIC-REHEARSAL-DRYRUN`,
+  tradition field literally "synthetic rehearsal — not a
+  recitation") → two agent-generated tone takes for verse 2.13
+  (both cleared the real §1.1 gates, VAD 0.935) → `/api/record/
+  promote` mapping parsed → `build_registry` on the promoted pair →
+  `GvrRecognizer.train` → `save` → `load` → `predict`.
+- **Result:** the chain works — registry emitted (2 rows,
+  `split_policy: per-recording` auto for a single reciter, real 2.13
+  mūla attached from the item list), model trained + reloaded, and a
+  rehearsal take decoded to `verse 2.13, confidence 1.000`. That
+  confidence is the arithmetic artifact of a one-verse closed set
+  (softmax over a single class), NOT a recognition result — no
+  accuracy is claimed anywhere (FR-23).
+- **Quarantine held:** everything synthetic lived in /tmp and the
+  session dir; both were deleted in the same run, and the script
+  asserts `data/gvr_registry.json` and `data/gvr/model.pkl` are
+  still absent — no synthetic byte entered the corpus trees, the
+  registry of record, or the model path. `data/_incoming/` verified
+  empty after cleanup.
+- **What remains for real D4:** the owner's recited takes (booth
+  live on :8030, recite sheet staged). The rehearsal changes
+  nothing about that gate — it only removes "untested plumbing"
+  from the list of possible surprises.
+
 ## Changes Made This Session
 
 - `requirements.txt` — created; pins the versions installed and
@@ -1652,3 +1682,9 @@ no takes exist yet.**
   checkboxes + post-session handoff. Booth launched for the owner
   (`setsid`-detached, :8030); no takes captured by the agent —
   session + consent + reciting are the owner's. [2026-10-01]
+- Full-chain rehearsal (synthetic, quarantined to /tmp, deleted
+  after): live booth → promote mapping → `build_registry` →
+  `GvrRecognizer.train/save/load/predict` all verified working
+  against the real server and real item list; registry-of-record and
+  model path confirmed untouched. No numbers reported (FR-23).
+  [2026-10-01]
