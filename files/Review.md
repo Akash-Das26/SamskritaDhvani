@@ -1363,6 +1363,108 @@ render-verified.**
 - **Report impact:** none — no new numbers are computed anywhere;
   the surface only mirrors the evaluator's output once it exists.
 
+**Phase 5 — Unit 10 (2026-10-01): D4 session chain
+(`python -m samskrita_dhvani.d4_chain`) — built and tested.**
+
+- **What was built:** the FR-22 plan §5 runner — one command from a
+  finished, promote-staged D4 session to the published evaluation:
+  consume the booth's `PROMOTION.md` mapping → copy into
+  `data/gvr_recordings/` → `build_registry` → `train` → `evaluate
+  --json` (the report the unit-9 status surface mirrors).
+  `--session` is repeatable: the per-reciter held-out split case is
+  two sessions from two reciters.
+- **Promote is consumed, not re-performed:** the booth's
+  `PROMOTION.md` (written by the promote panel after the label ear
+  check) is the only mapping source; source names resolve against
+  the session dir (where the booth writes the file), every target
+  is re-validated through `build_registry.parse_promoted_name` and
+  must live under `data/gvr_recordings/`, and the recordings
+  directory is DERIVED from the validated targets (the mapping is
+  the protocol — no flag to diverge from it). Validate-then-commit:
+  all sources exist + all targets/artifacts free (or `--force`)
+  before the first byte copies; `--dry-run` prints the full plan
+  and writes nothing.
+- **Delegation, not duplication (Ground Rule 4):** build step calls
+  `build_registry.main()` verbatim (the nine §4 gates, split
+  policy, `from_json` self-check); train is
+  `GvrRecognizer.train(...).save()`; evaluate is the unit-8 CLI
+  with `--json`. Nothing downstream is reimplemented. A Rule-2
+  PROVENANCE.md reminder prints on every completed copy (never
+  auto-written).
+- **Honest ends:** missing PROMOTION.md names the booth step; a
+  single-reciter chain completes promote→build→train and then ends
+  at evaluate with the FR-23 "would NOT be speaker-independent …
+  record a second reciter" refusal as the run's final word (rc=2,
+  no report published) — verified as-run. Two real bugs caught by
+  the CLI's own tests before any commit: source paths resolved
+  against the wrong root (would have failed on a real session), and
+  the targets-vs-recordings-dir divergence.
+- **Verification:** 10 new tests on canon-fixture sessions
+  (monkeypatched `INCOMING_ROOT` + chdir): two-reciter end-to-end
+  (rc=0, per-reciter splits, model + report exist, 8 promoted
+  takes), missing PROMOTION.md, missing source WAV (nothing
+  copied), existing artifacts require `--force`, dry-run writes
+  nothing, single-reciter FR-23 ending, malformed promotion line,
+  target outside `data/gvr_recordings/`, target off-grammar. Full
+  suite: **162 passed**. As-run demo (SYNTHETIC canon sessions in
+  /tmp, Rule 4 only, scratch deleted): dry-run plan printed for 2
+  reciters × 4 verses; single-reciter run printed build+train
+  progress and ended rc=2 with the FR-23 refusal + no report.
+- **Ground Rule 2 scope:** one new module + tests; no changes to
+  the booth, recognizer, evaluator, registry, scorer, or API.
+- **Report impact:** none by itself — the script only runs when
+  real takes exist, and its printed evaluate command is the one
+  recorded per Ground Rule 1.
+
+**Phase 3 design note (2026-10-01, sixth note): D4 session chain
+(`python -m samskrita_dhvani.d4_chain`) — approved by direct owner
+request.**
+
+- **Goal:** one command from a finished, promote-staged D4 session
+  (or two sessions — two reciters) to the published evaluation:
+  consume the booth's `PROMOTION.md` mapping → copy into
+  `data/gvr_recordings/` → `build_registry` → `train` → `evaluate
+  --json`. Built to be the exact runner for the "real numbers on the
+  status page" handoff.
+- **Promote stays the booth's step:** the script requires
+  `data/_incoming/<session>/PROMOTION.md` to exist (the operator
+  staged it via the booth's promote panel after the label ear
+  check) and parses ONLY its ``- [ ] \`src.wav\` →
+  \`data/gvr_recordings/<promoted-name>\` `` lines. The mapping is
+  the booth's own output — one name-mapping implementation, no
+  re-derivation. Every target name is re-validated through
+  `build_registry.parse_promoted_name`; a non-conforming line is a
+  loud error, never a blind copy.
+- **Validate-then-commit:** all source WAVs must exist and all
+  targets must be free (or `--force`) before the FIRST byte is
+  copied; the copy phase is all-or-nothing per run. `--dry-run`
+  prints the full plan and writes nothing.
+- **Delegation, not duplication (Ground Rule 4):** step 2 calls
+  `build_registry.main()` verbatim (all nine §4 gates, split policy,
+  from_json self-check live there); step 3 calls
+  `GvrRecognizer.train(...).save()` on the loaded registry; step 4
+  calls the unit-8 `evaluate.main()` with `--json
+  data/gvr/eval_report.json` (optional `--curve-png`) so the status
+  page's `gvr_eval` section lights up automatically (unit 9).
+  `--session` is repeatable — the per-reciter split case is two
+  sessions.
+- **Honest ends:** missing PROMOTION.md → rc=2 naming the session
+  and the booth step; a single-reciter chain completes through
+  training and then STOPS at evaluate with the FR-23
+  "NOT speaker-independent" refusal as the run's final word (rc=2)
+  — the honest outcome, printed, not hidden. No overwrite of any
+  artifact (registry/model/report/promoted file) without `--force`.
+  PROVENANCE.md registration is reminded, never auto-written.
+- **Test plan:** new `tests/test_d4_chain.py` on canon-fixture
+  sessions (monkeypatched `INCOMING_ROOT` + recordings/report
+  paths): two-reciter happy path (rc=0, correct splits, model +
+  report exist), missing PROMOTION.md, missing source WAV
+  (nothing copied), existing target without --force, dry-run
+  writes nothing, single-reciter chain ends in the FR-23 refusal.
+  Full suite green.
+- **Report impact:** none by itself — the script runs only when
+  real takes exist and records what actually ran.
+
 **Unit 3b (2026-10-01): calibration CLI — built and tested.**
 
 - `python -m samskrita_dhvani.calibrate` turns the D5 recording
@@ -1942,9 +2044,9 @@ quarantined) — chain validated, zero numbers reported.**
   No training mode by design (FR-23). 15 tests reusing the D3
   fixture canon; pytest 148. Synthetic /tmp demo run recorded in the
   unit entry (Rule 4: pipeline test only); real registry/model
-  verified still absent. [2026-10-01]
-- `samskrita_dhvani/api.py` + `web/status.html` +
-  `tests/test_api.py` — Phase 5 unit 9: `gvr_eval` on `/api/status`
+  verified still absent. [2026-10-01]- `samskrita_dhvani/api.py` + `web/status.html` +
+  `tests/test_api.py` —
+  Phase 5 unit 9: `gvr_eval` on `/api/status`
   mirrors the published `data/gvr/eval_report.json` (headline
   accuracy, per-verse recall/support, FR-23 statement, split
   policy, unmodelled verses) with the honesty ladder for every
@@ -1953,3 +2055,14 @@ quarantined) — chain validated, zero numbers reported.**
   (Ground Rule 1). 4 new tests; pytest 152; two-instance headless
   render E2E 17/17 (repo absent-state + quarantined /tmp full-chain
   sandbox, deleted after). [2026-10-01]
+- `samskrita_dhvani/d4_chain.py` + `tests/test_d4_chain.py` —
+  Phase 5 unit 10: the D4 session-chain CLI (`python -m
+  samskrita_dhvani.d4_chain --session GVR-REC-… [--session …]`):
+  consumes the booth's PROMOTION.md mapping (targets re-validated
+  through `parse_promoted_name`; recordings dir derived from them),
+  validate-then-commit copying, then delegates to `build_registry`
+  → `train` → `evaluate --json`. Rule-2 provenance reminder printed;
+  `--dry-run`/`--force`; single-reciter runs end honestly in the
+  FR-23 refusal with no report. 10 tests; pytest 162; synthetic /tmp
+  as-run demo recorded in the unit entry (Rule 4 only).
+  [2026-10-01]
