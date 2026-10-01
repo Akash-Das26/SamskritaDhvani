@@ -1411,6 +1411,49 @@ per the Phase 6 discipline (no bulk-delete first).
   committed to git 2026-09-23 (Phase 6) — the repo previously held the
   0-byte versions.
 
+**Phase 6 maintenance entry (2026-10-01): SPD reference-source audio
+restoration + ear-check staging repair.**
+
+- **Finding (data loss):** the ear-check staging of 2026-09-23
+  (`data/provenance/spd_listen_2026-09-23/`) referenced audio that
+  went missing from local disk — all 63 Loyola MP3s (SPD-02), all 5
+  Hall MP3s (SPD-01), and the 9 gain-boosted noun-set evidence
+  renders. Only the tracked `MANIFEST.csv`, the checklist, the
+  automated-pass CSV, and 5 spectrogram PNGs survived. The owner's
+  ear check (the final FR-12 gate) was impossible in this state.
+- **Restoration (`tools/restore_spd_audio.py`, repeatable):**
+  - Loyola: Wayback recovery per the method recorded in the SPD-02
+    entry (CDX-verified captures, `id_` raw fetches, timestamp
+    fallbacks for stragglers) — **63/63 restored, every file
+    sha256-prefix-verified against MANIFEST.csv** before it was
+    written; nothing that failed verification was kept.
+  - Hall: re-downloaded from the SPD-01 source — **5/5 restored,
+    byte-size-identical to the PROVENANCE sub-table**, duration
+    re-verified with the real decoder (the first attempt used a
+    first-frame MP3 probe that misreads VBR durations — replaced).
+    One transient DNS failure and one filename-guess bug
+    (noun3_kanyaa/dhii/strii/bhaanu have doubled vowels; stems now
+    come from MANIFEST.csv, not guesses) were caught by the tool's
+    own verification gates and fixed.
+  - Boosted evidence renders: 9/9 re-rendered from the restored
+    sources with the documented recipe (peak → 0.60; the recorded
+    ×6.7–13.2 range reproduced).
+- **Sweep validity:** the restored bytes are identical to what the
+  2026-09-22 sweep measured (hash/size anchors), so the recorded
+  sweep values and `listenthrough_auto.csv` remain valid as-run — no
+  re-sweep required.
+- **Ear-check staging:** `WALKTHROUGH.md` added to the staging
+  directory — next-session quickstart with real file paths, ~30 min
+  timeboxed plan (Hall term list → Loyola healthy set → quarantined
+  noun1–9 intelligibility call), and the verdict handoff template.
+  **The verdict itself is still PENDING and belongs to the owner** —
+  Ground Rule 1: nothing is logged as heard until the owner says so.
+- **Tracking note (owner decision):** the restored audio (~91 MB
+  total) is deliberately untracked — the SPD-01/SPD-02 licenses say
+  do-not-redistribute and the repo's GitHub visibility is unknown;
+  the Phase 6 audit's "should-be-tracked" suggestion is superseded
+  by that caution. Recommend a private local backup instead.
+
 ## Changes Made This Session
 
 - `requirements.txt` — created; pins the versions installed and
@@ -1573,4 +1616,11 @@ per the Phase 6 discipline (no bulk-delete first).
   the corrected plan §3; from_json self-check). `registry.py` gained
   the explicit `split_policy` field; `build_gvr_itemlist.py`/`data/gvr/ch2_itemlist.json`
   unified on zero-padded verse ids. 10 new tests; pytest 133.
+  [2026-10-01]
+- `tools/restore_spd_audio.py` +
+  `data/provenance/spd_listen_2026-09-23/WALKTHROUGH.md` — SPD-01/02
+  audio restoration after the local wipe (63/63 Loyola sha16-verified,
+  5/5 Hall byte-verified, 9/9 boosted renders rebuilt) + the owner's
+  ear-check quickstart with the verdict handoff template. Restored
+  audio deliberately untracked (do-not-redistribute licenses).
   [2026-10-01]
