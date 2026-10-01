@@ -1454,6 +1454,29 @@ restoration + ear-check staging repair.**
   the Phase 6 audit's "should-be-tracked" suggestion is superseded
   by that caution. Recommend a private local backup instead.
 
+**Phase 6 addendum (2026-10-01): D4 owner-reciter session STAGED —
+no takes exist yet.**
+
+- The booth was launched for the owner (`python -m
+  samskrita_dhvani.record --port 8030`, real Chrome-targetable URL,
+  `setsid`-detached so it survives between agent commands — the
+  "servers die with the command" trap is escaped by a new session;
+  stop it with `kill <pid>`, never `pkill` by pattern). Verified
+  serving the real D4 list: 20 verses, first `2.01` with the real
+  mūla, text source = the GVR-TXT-01 URL.
+- `data/provenance/d4_recite_sheet_2026-10-01.md` — the owner's
+  recite sheet: all 20 verses from the checked item list with take
+  checkboxes, the text-source citation for the session sheet
+  (protocol §1 materials field), the take plan (3 takes/verse,
+  ~20–30 min), and the post-session handoff steps (promote →
+  build_registry → train).
+- **Integrity boundary stated:** the agent cannot recite and will
+  not feed synthetic takes into a session as if they were real
+  (DataIntegrity §1.5, Rule 4) — the fake-mic captures used in the
+  unit-6 E2E were deleted, and no `GVR-REC-` session was created by
+  the agent. Session creation, consent, and the reciting itself are
+  the owner's steps; takes begin existing only under their voice.
+
 ## Changes Made This Session
 
 - `requirements.txt` — created; pins the versions installed and
@@ -1624,3 +1647,8 @@ restoration + ear-check staging repair.**
   ear-check quickstart with the verdict handoff template. Restored
   audio deliberately untracked (do-not-redistribute licenses).
   [2026-10-01]
+- `data/provenance/d4_recite_sheet_2026-10-01.md` — D4 owner-reciter
+  session aid: 20 verses from the checked item list with take
+  checkboxes + post-session handoff. Booth launched for the owner
+  (`setsid`-detached, :8030); no takes captured by the agent —
+  session + consent + reciting are the owner's. [2026-10-01]
