@@ -831,6 +831,109 @@ unavailable* states at the model seam instead. Screen status: Home
 wired + routed; SPD wired (scorer pending); GVR wired (recognizer
 pending); Status fully live.
 
+**Phase 3 design note (2026-10-01): D5 calibration-recording
+program + FR-22 GVR data plan — approved by direct owner request
+(same session as units 3b/4; Design precedes Coding per Development.md).**
+
+- **Goal:** close the D5 data gap — after the Hall/Loyola ear check,
+  produce the `<word_id>.wav` canonical clips and
+  `<word_id>__take.wav` known-correct recitations that
+  `python -m samskrita_dhvani.calibrate --references
+  data/spd/reference_words --recitations data/spd/recitations`
+  consumes; and draft the FR-22 GVR registry plan so D4 recording
+  can start the moment source permission lands.
+- **Shape:** a capture service (`samskrita_dhvani/record.py`,
+  uvicorn, its own port — entirely separate from the demo API)
+  serving `web/record.html`; the page drives word-by-word capture
+  with the same `SD.Recorder` / `SD.toWav16k` path the demo screens
+  use, uploading 16 kHz mono WAV. No new recording dependency
+  (sounddevice/PortAudio is unusable on this headless box — browser
+  capture is both the convention here and the testable path).
+- **Write discipline (DataIntegrity §2 / Rule 2 / §5):** uploads land
+  ONLY in `data/_incoming/<session-id>/`. Nothing is ever written
+  into `data/spd/reference_words/` or `data/spd/recitations/` —
+  promotion to the calibrate layout is a separate, deliberate,
+  ear-check-gated step. Per-clip checklists and the session sheet
+  (RecordingProtocol.md §1–§2) are emitted alongside the audio.
+- **Naming:** capture files follow RecordingProtocol.md §3
+  (`spd_<item>_<reciter>_<sessionid>_t<take>.wav`, item = romanized
+  key); a promotion mapping step converts to the calibrate CLI's
+  word_id-keyed layout. The capture tool itself never writes inside
+  the corpus tree.
+- **Server-side acceptance:** every upload is decoded with the real
+  D1 loader, VAD speech fraction must clear the DataIntegrity §1.1
+  10% line, duration ≥ 0.2 s; failure is a 422 with the clip
+  discarded server-side and a loud client error — a bad take can
+  never enter the incoming tree silently. Take numbers are computed
+  by the server from the session directory, not trusted from the
+  client. Clipping/level acceptance stays a §4-sweep decision, not a
+  client-side gate (the page's meter is a level *guide* only).
+- **Provenance not invented:** session start requires reciter,
+  location/room, device, and consent confirmation; `source_id` is
+  required (pre-filled, editable) and the PROVENANCE.md registration
+  happens at promotion time, not capture time.
+- **Not designed (Ground Rule 2):** zero changes to the demo API,
+  the D2 scorer, or the calibrate CLI — the CLI already defines the
+  target layout; this tool only produces its inputs.
+- **Test plan:** new `tests/test_record_api.py` (200 happy path with
+  session/take/provenance assertions, 422 invalid audio, 422
+  near-silence, 409 take collision, 400 unknown word, manifest
+  integrity); full suite stays green; browser E2E via the fake-mic
+  CDP harness. FR-22 plan lands as `files/GvrRegistryDataPlan.md`.
+- **Report impact:** none — no reported number changes.
+
+**Phase 5 — Unit 5 (2026-10-01): D5 calibration-recording program
+(the recording booth) — built and tested.**
+
+- **What was built:** `python -m samskrita_dhvani.record --port
+  8030` serves `web/record.html` — a session-sheet form (reciter,
+  location/room, device, consent confirmation, provenance source-id;
+  RecordingProtocol §1 fields) → a 27-word capture grid → a per-word
+  recorder modal using the same `SD.Recorder` / `SD.toWav16k` path
+  as the demo screens (16 kHz mono WAV uploads). Separate uvicorn
+  app on its own port; shares nothing with the demo API.
+- **Integrity machinery (the point of the tool):** uploads land only
+  in `data/_incoming/<session-id>/`; each take is decoded with the
+  real D1 loader and VAD-gated (DataIntegrity §1.1 10% line) before
+  anything touches disk — rejected takes (undecodable, <0.2 s,
+  near-silence) are a loud 422 and never stored. Take numbers are
+  server-computed (max+1, append-only; the client cannot claim a
+  number and nothing on disk is ever overwritten). Every take gets
+  a checklist sidecar (protocol §2 row as JSON: duration, peak
+  dBFS, clipping flag, VAD fraction, with transcript-verified /
+  sweep-date / provenance fields left open for the §4 sweep);
+  `session_meta.json` doubles as the session sheet.
+  `/api/record/promote` writes a `PROMOTION.md` mapping (canonical
+  → `reference_words/<word_id>.wav`, recitations →
+  `recitations/<word_id>__t<take>.wav`, plus the exact calibrate-CLI
+  command) — it never copies into the corpus tree itself; promotion
+  stays the deliberate, ear-check-gated operator step.
+- **Two real bugs caught by the tests during the build:** (1)
+  lowercase-folding capture filenames collide the vowel-length
+  minimal pair — `tala` and `tAla` are distinct words on the SPD
+  list, so filenames now keep the Harvard-Kyoto word_id verbatim
+  (deliberate deviation from RecordingProtocol §3's lowercase
+  example, which assumed romanized keys, not case-significant HK
+  slugs); (2) FastAPI's empty-string Form validation silently turned
+  the session-form 400 contract into a 422 — fields are now
+  validated in the handler for the exact error bodies.
+- **Verification:** 14 new tests (`tests/test_record_api.py`) —
+  happy path with D1 re-decode of the stored WAV + sidecar content,
+  loud invalid-audio / near-silence rejections (nothing stored),
+  server-computed append-only take numbering across roles,
+  tala/tAla non-collision, unknown word / bad role / unknown
+  session errors, promote mapping content + explicit
+  corpus-tree-untouched assertion, empty-session 409, booth page
+  served with the shared app.js. Full suite: **118 passed**.
+  Browser E2E (`tools/e2e_booth.sh` → `tools/e2e_booth.py`, fake
+  mic): **10/10** — real capture of `spd_kRSNa_canonical_t0.wav`
+  (2.22 s, VAD 45% speech) plus two recitation takes through the
+  page, sidecars verified on disk, promotion mapping rendered, and
+  the corpus tree never created; screenshots
+  `files/e2e-screens/booth-*.png`. E2E fixture sessions were
+  deleted from `data/_incoming/` after the run — synthetic audio
+  never lingers where real captures land (DataIntegrity §1.5).
+
 **Unit 3b (2026-10-01): calibration CLI — built and tested.**
 
 - `python -m samskrita_dhvani.calibrate` turns the D5 recording
@@ -1242,3 +1345,23 @@ per the Phase 6 discipline (no bulk-delete first).
 - `files/e2e-screens/` — 4 evidence screenshots from the flow E2E
   (SPD upload/mic 503 cards, GVR fallback panel, GVR decode
   failure). [2026-10-01]
+- `samskrita_dhvani/record.py` + `web/record.html` +
+  `tests/test_record_api.py` — Phase 4 unit 5: the D5 recording
+  booth (session sheets, per-clip checklists, D1+VAD gating,
+  server-computed take numbers, `data/_incoming/` capture
+  discipline, ear-check-gated promotion mapping; see the Unit 5
+  entry above). 14 tests; pytest 118. [2026-10-01]
+- `tools/e2e_booth.py`, `tools/e2e_booth.sh`,
+  `files/e2e-screens/booth-*.png` — booth E2E harness + 4 evidence
+  screenshots (fake-mic capture flows + server-side disk truth).
+  [2026-10-01]
+- `files/GvrRegistryDataPlan.md` — FR-22 GVR training-data plan:
+  one-chapter target (Ch. 2, vv. 1–20, ≥3 recitations across ≥2
+  reciters), source priority (Gita Supersite permission → licensed
+  archives → D4 booth fallback), per-reciter split assignments
+  fixed in advance, the 9 per-row acceptance gates, and the exact
+  machine steps from audio to trained model to NFR-20 evaluation.
+  Plan only — no audio acquired under it yet. [2026-10-01]
+- `.gitignore` — `Audio_files/` added (Atharvaveda kanda WAV batch,
+  10,097 files / 2.2 GB local-only clip download), following the
+  large-corpus-holdings convention. [2026-10-01]

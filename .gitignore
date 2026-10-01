@@ -26,6 +26,9 @@ Vedavani-Dataset/
 Vedavani-main/
 
 # --- Raw data & corpora (local-only) ---
+# Atharvaveda kanda WAV batch (10,097 files, 2.2 GB) — local-only clip
+# download, inventoried untracked in the Review.md Phase 6 pass
+Audio_files/
 # Vāksañcayaḥ ASR corpus root (alternate location)
 Vāksañcayaḥ- Sanskrit_ASR_Corpus/
 Vaksanca-master
