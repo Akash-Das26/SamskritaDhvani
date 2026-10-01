@@ -1363,6 +1363,20 @@ render-verified.**
 - **Report impact:** none — no new numbers are computed anywhere;
   the surface only mirrors the evaluator's output once it exists.
 
+**Phase 6 addendum 3 (2026-10-01): four-screen render E2E re-run
+after unit 9 — ALL SCREENS PASS** (index + spd + gvr + status, 31/31
+assertions, 0 JS errors against the repo API). Environmental note
+for future runs: `cdn.tailwindcss.com` now blackholes connections
+instead of failing fast, which pins `document.readyState` at
+`loading` and stalls the CDP harness's navigation-commit wait — the
+passing run launched Chrome with
+`--host-resolver-rules="MAP cdn.tailwindcss.com 127.0.0.1:1"` (the
+CDN fails fast; styling is irrelevant to the DOM assertions). No
+repo change. Servers launched/killed by PID; the live booth on :8030
+untouched. The harness's status.html assertions predate unit 9's
+eval section — that section's own 17 checks passed in the unit-9
+two-instance E2E recorded above.
+
 **Phase 5 — Unit 10 (2026-10-01): D4 session chain
 (`python -m samskrita_dhvani.d4_chain`) — built and tested.**
 
