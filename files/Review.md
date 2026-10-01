@@ -831,6 +831,39 @@ unavailable* states at the model seam instead. Screen status: Home
 wired + routed; SPD wired (scorer pending); GVR wired (recognizer
 pending); Status fully live.
 
+**Unit 3b (2026-10-01): calibration CLI — built and tested.**
+
+- `python -m samskrita_dhvani.calibrate` turns the D5 recording
+  program into a calibration file directly: point it at the
+  ear-verified canonical clips (`--references`, named
+  `<word_id>.wav`) and the known-correct recitations
+  (`--recitations`, `<word_id>__take.wav` siblings or `<word_id>/`
+  subdirs), pass mandatory provenance (`--source-id`,
+  `--acquired-on`), and it writes `data/spd/calibration.json`
+  (schema v1) with the measured per-word D₀, D₀_formant, D₀_duration
+  and prints them. Provenance and the Rule-2 discipline apply to the
+  calibration file itself.
+- **Failure handling is loud and per-item:** a word missing one side
+  is skipped with a printed notice; a corrupt take is skipped while
+  the surviving takes still calibrate the word; a word whose
+  recitations all fail is dropped with a reason. Overwriting an
+  existing calibration file requires `--force` (regeneration must be
+  deliberate).
+- **Degenerate-calibration guard (found by the CLI's own tests):**
+  fixtures with zero duration variation measured D₀_duration =
+  exactly 0 — `sim = 100·exp(−x/0)` is undefined, so that corpus
+  must be rebuilt with real recitation variation. `Calibration`
+  now validates all three scales positive at construction (and
+  `n_references ≥ 1`), failing loudly instead of dividing by zero
+  later.
+- **Verification:** 8 CLI tests through `main()` on synthetic clips
+  (measured output + printed table, one-side-missing skip, overwrite
+  protection + `--force`, provenance requirement, missing-dir
+  error, corrupt-take resilience, all-fail word drop). A full
+  end-to-end run on a 3-word × 3-take synthetic layout produced the
+  measured table (e.g. kRSNa: D₀ 2.5951, D₀_formant 0.0149,
+  D₀_duration 0.0862, 3 refs). `pytest tests/` → **104 passed**.
+
 ### Phase 6 (Maintenance) — repo cleanup, hygiene, and structure pass
 
 **Date:** 2026-09-23 · **Phase:** 6 · **Scope:** cleanup-and-organize
@@ -1190,6 +1223,18 @@ per the Phase 6 discipline (no bulk-delete first).
   now reads the model artifact. [2026-10-01]
 - `web/index.html`, `web/gvr.html` — honesty chips updated to the
   D3-built state ("built, training data pending"). [2026-10-01]
+- `samskrita_dhvani/calibrate.py` + `tests/test_calibrate_cli.py` —
+  CLI for rebuilding the D2 per-word D₀ calibration from audio on
+  disk (`python -m samskrita_dhvani.calibrate --references …
+  --recitations … --source-id … --acquired-on …`): conventional
+  layout (`<word_id>.wav` canonicals; `<word_id>__take.wav` or
+  `<word_id>/` known-correct groups), mandatory provenance,
+  overwrite protection, loud per-word/per-take skip notices, and a
+  printed measured-values table. Its fixtures exposed and fixed a
+  real degenerate-calibration edge case: a corpus with zero duration
+  variation measures D₀_duration = 0, which would divide by zero at
+  scoring time — `Calibration` now rejects non-positive scales at
+  construction. 8 CLI tests. [2026-10-01]
 - `tools/e2e_render_check.py`, `tools/e2e_flow.py`,
   `tools/e2e_flow_negative.py` — reusable headless-Chrome E2E
   harnesses (CDP-driven; render assertions, fake-mic flow, and

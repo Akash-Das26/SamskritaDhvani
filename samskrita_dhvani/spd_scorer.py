@@ -96,7 +96,13 @@ class SpdScore:
 
 @dataclass(frozen=True)
 class Calibration:
-    """Per-word D₀ scales measured from known-correct recitations."""
+    """Per-word D₀ scales measured from known-correct recitations.
+
+    A zero scale is rejected at construction: sim = 100·exp(−x/0) is
+    undefined, and a corpus whose recitations are all identical to the
+    reference measures exactly that — it must be rebuilt with real
+    variation, never used as-is.
+    """
 
     word_id: str
     d0: float
@@ -104,6 +110,17 @@ class Calibration:
     d0_duration: float
     n_references: int
     schema_version: int
+
+    def __post_init__(self) -> None:
+        for name in ("d0", "d0_formant", "d0_duration"):
+            if not getattr(self, name) > 0:
+                raise ValueError(
+                    f"degenerate calibration for '{self.word_id}': {name} "
+                    "is 0 (recitations identical to the reference?); rebuild "
+                    "with real recitation variation"
+                )
+        if self.n_references < 1:
+            raise ValueError("calibration needs at least one reference")
 
 
 def load_calibration(
@@ -380,6 +397,12 @@ class CalibrationBuilder:
 
     def add_reference(self, word_id: str, audio: np.ndarray) -> None:
         self._refs.setdefault(word_id, []).append(np.asarray(audio, dtype=np.float64))
+
+    def drop(self, word_id: str) -> None:
+        """Forget a word entirely (e.g. the CLI dropping a word whose
+        recitations all failed to load)."""
+        self._canonical.pop(word_id, None)
+        self._refs.pop(word_id, None)
 
     def build_word(self, word_id: str) -> dict:
         if word_id not in self._canonical:
