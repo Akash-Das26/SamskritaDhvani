@@ -1736,6 +1736,53 @@ check, report prep — docs only, no code changes, no audio steps.**
   the three untracked root mp3s and the unstaged
   `third_party/Vaksanca-master.zip` deletion.
 
+**Phase 6 recurring pass (2026-10-15, same day, second pass): bug
+sweep (front-end → SPD → GVR) + dependency review — one dead-work
+fix, zero correctness bugs.**
+
+- **Dependency review (Phase 6 recurring activity):** all
+  `requirements.txt` pins match the installed environment exactly
+  (18 pins checked programmatically via `importlib.metadata`:
+  numpy 2.5.3, scipy 1.18.1, librosa 1.0.0, hmmlearn 0.3.3, fastapi
+  0.141.1, … webrtcvad 2.0.10; uvicorn verified at 0.53.0 — the
+  `[standard]` extra does not alter the dist version). **No stale
+  pins.**
+- **Bug sweep — shared front-end (`frontend.py`) first, per the
+  phase's scan order:** full read of all 15 public/private functions.
+  **Findings: none.** The math is already pinned by unit 1's 20 tests
+  (including the FR-03 measured 2.2e-7 hand-vs-library cross-check and
+  the scipy-equality DCT check), so there was nothing to reproduce and
+  nothing logged as a bug.
+- **SPD (`spd_scorer.py`) — one suspicion REPRODUCED AND CLEARED:**
+  `dtw_mean_distance` divides the accumulated cost by `len(path)`;
+  had librosa returned a `(2, N)` path, that divisor would be the
+  constant 2 and D2's "mean over aligned frame pairs" would silently
+  become "total ÷ 2" — a distortion calibration would NOT mask, since
+  attempt and reference path lengths differ. Empirical run on the
+  pinned librosa 1.0.0: `D.shape == (40, 55)` (unpadded) and
+  `path.shape == (55, 2)` → `len(path)` really is the aligned-pair
+  count; `total/len(path) = 4.3135` vs an independent backtrace's
+  `total/pairs = 4.3934` (tie/boundary convention only). **Not a
+  bug** — logged as checked-and-cleared per the reproduce-before-
+  logging rule.
+- **SPD — one confirmed finding (hygiene, not correctness), fixed:**
+  `score_attempt` called `dtw_mean_distance(…, return_path=True)`
+  and never used the returned path (the consonant window comes from
+  the attempt's own mask) — dead backtrace work on every scored
+  attempt. Removed the two-line unpack; `return_path` itself stays
+  (its path-property tests use it). `pytest tests/test_spd_scorer.py`
+  → **21 passed** (rc=0); full suite → **162 passed** (rc=0,
+  7.44 s). Behavior identical: the returned `d` is unchanged.
+- **GVR (`gvr_classifier.py`):** full read, **findings: none.** Two
+  properties verified by reading rather than assumed: EM cannot
+  introduce backward/skip transitions (their posterior counts are
+  weighted by the current transmat, where those entries are exactly
+  0 — zeros stay zeros), and `_assert_fitted_lrhmm` blocks NaN/dead-
+  state models before anything is saved. API seams were out of scope
+  for this sweep — they were verified live earlier today by the
+  four-screen harness (37/37, addendum 4).
+- **Open items from this pass:** none new.
+
 ## Open Items (carry forward until resolved or explicitly deferred)
 
 1. Finalize SPD word list (20–30 words, difficulty pairs) and GVR verse
@@ -2196,3 +2243,7 @@ quarantined) — chain validated, zero numbers reported.**
   prep: methodology/limitations draft with "not yet measured"
   placeholders naming their producing commands, and the blank NFR-10
   rater template (header, 1–5 rubric, blank table). [2026-10-15]
+- `samskrita_dhvani/spd_scorer.py` — Phase 6 bug sweep: dropped the
+  unused `return_path=True` request in `score_attempt` (dead DTW
+  backtrace per scored attempt); no behavior change — 21 scorer tests
+  and the full 162-test suite green. [2026-10-15]

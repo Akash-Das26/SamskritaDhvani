@@ -348,7 +348,9 @@ def score_attempt(
     a_mfcc = static_mfcc(attempt_audio, config)
     r_mfcc = static_mfcc(reference_audio, config)
 
-    d, path = dtw_mean_distance(a_mfcc, r_mfcc, return_path=True)
+    # Mean local cost along the optimal path (the path itself is not
+    # needed — the consonant window comes from the attempt's own mask).
+    d = dtw_mean_distance(a_mfcc, r_mfcc)
 
     # Consonant-window spectral axis: DTW restricted to likely-
     # consonant frames of the attempt (slice taken from the attempt's
