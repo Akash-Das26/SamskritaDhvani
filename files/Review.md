@@ -1656,6 +1656,86 @@ per the Phase 6 discipline (no bulk-delete first).
 - **Ground Rule 1 check:** every count above from actual `find`/
   `git ls-files`/`cmp`/`sha256sum` runs, not estimates.
 
+**Phase 6 maintenance pass (2026-10-15): doc-drift audit, readiness
+check, report prep — docs only, no code changes, no audio steps.**
+
+- **Doc-drift audit (Ground Rule 5).** Every SRS.md Status cell was
+  compared against what this log proves was built and tested;
+  mismatches were fixed, and anything unprovable end-to-end was
+  labeled with a new legend value, **Built, unverified**:
+  - FR-10, FR-11: were **Open** → **Done** — the D2 scorer (unit 3):
+    sim = 100·exp(−D/D₀) with measured per-word D₀ in
+    `calibration.json` (rebuilt by the unit-3b calibrate CLI), the
+    FR-11 axis response shape pinned by API contract tests (21
+    scorer tests; pytest 84 at unit close).
+  - FR-20, FR-21: were **Open** → **Done** — the D3 recognizer
+    (unit 4): 6-state L-R no-skip diagonal-Gaussian HMMs,
+    hand-initialized topology, Viterbi decode + softmax-gap
+    confidence, `{top_match, candidates}` shape pinned by API tests
+    (11 recognizer tests; pytest 96).
+  - FR-23, NFR-20: were **Open** → **Done** — the unit-8 evaluator:
+    test-split-only scoring (train rows never scored — call-counting
+    test), the split-policy sentence in every report and refusal, the
+    confusion matrix, the `*` single-recitation marker, and the
+    accuracy-vs-examples curve (15 tests; pytest 148). The first
+    real report still awaits FR-22 data — that gate is data, not
+    code, and the SRS cells now say so.
+  - NFR-04: was **Open** → **Built, unverified** — policy fixed in
+    FR-22 plan §3, enforced by `assert_no_split_leak`, recorded
+    in-file via the `split_policy` field (units 2/7); cross-experiment
+    stability cannot be verified before the first real experiment.
+  - Notes refreshed without status changes: FR-12 (stale "Open Item
+    2" reference → Open Items 3–4; **count correction: the seed list
+    is 27 words, not 29** — `build_seed_wordlist()` returns 27 and the
+    live `/api/record/words` serves 27 as `spd-seed-27@2026-09-23`;
+    the unit-2 entry's "29-word" wording is the source of that drift,
+    recorded here rather than rewriting the log; FR-12's ≥20–30
+    requirement holds either way), NFR-10 (rating sheet named),
+    NFR-01/NFR-03 (built enforcement/gates evidence), NFR-05
+    (limitations drafted).
+  - Implementation.md §3/§4: the "Streamlit dashboard" placeholder is
+    superseded in both the architecture diagram and the §4 stack
+    table — Frontend.md supersedes it, and the four-screen FastAPI +
+    static UI is built and E2E-verified (render harness 37/37);
+    Streamlit never shipped.
+  - DataIntegrity.md §5: items 1–2 struck **RESOLVED** (word list and
+    verse subset built — units 2/6; PROVENANCE.md live), items 3–4
+    kept **OPEN** with current staging (owner recordings; source-level
+    §4 sweeps already logged — Hall 5, Loyola 63, Vedavani 30,799 —
+    and the full registry sweep gates on the first real registry per
+    FR-22 plan §4).
+- **Readiness check (as-run 2026-10-15, real outputs):** the live
+  booth (:8030) serves the D4 list — **20 items, 2.01–2.20** — and
+  the SPD list — **27 words** (`spd-seed-27@2026-09-23`);
+  `data/_incoming/` holds **0** sessions; the chain refuses cleanly on
+  zero input — no-args run: argparse rc=2 naming the four required
+  flags, and a nonexistent-session run: rc=2 "PROMOTION.md not found —
+  stage the promotion in the booth first"; `python -m
+  samskrita_dhvani.evaluate` with default paths: rc=2 "registry not
+  found: data/gvr_registry.json (… FR-23: no registry, no number)";
+  gates verified absent (`data/gvr_registry.json`,
+  `data/gvr/model.pkl`, `data/gvr/eval_report.json`). Nothing was
+  re-run that hadn't changed — the four-screen harness and pytest were
+  not repeated this pass (no code touched).
+- **Report prep (new files, zero numbers):** `files/ReportSkeleton.md`
+  — the methodology and limitations sections drafted from
+  Implementation.md §2/§10 and the built architecture; every pending
+  result reads **"not yet measured"** and names its producing command
+  (the NFR-10 correlation including its deliberately-not-yet-built
+  script step, the NFR-20 matrix + curve via `evaluate --registry
+  … --model … --json … --curve-png …`, and the FR-23 split-policy
+  sentence quoted in both printed forms). `files/Nfr10RatingSheet.md`
+  — blank rater template (rater header with tradition + background,
+  fixed 1–5 rubric, blank per-attempt table, footer); collectable
+  only once D5 attempts exist.
+- **Housekeeping (as-run):** `main` == `origin/main` (0 ahead / 0
+  behind — all 24 commits, including the 16 rewritten ones, are
+  pushed); footer grep over `main`: **0** matches; last full suite run
+  this session: **162 passed** (code unchanged since — this pass
+  touched docs only). Owner-side loose ends unchanged and untouched:
+  the three untracked root mp3s and the unstaged
+  `third_party/Vaksanca-master.zip` deletion.
+
 ## Open Items (carry forward until resolved or explicitly deferred)
 
 1. Finalize SPD word list (20–30 words, difficulty pairs) and GVR verse
@@ -2095,7 +2175,24 @@ quarantined) — chain validated, zero numbers reported.**
   through `parse_promoted_name`; recordings dir derived from them),
   validate-then-commit copying, then delegates to `build_registry`
   → `train` → `evaluate --json`. Rule-2 provenance reminder printed;
-  `--dry-run`/`--force`; single-reciter runs end honestly in the
-  FR-23 refusal with no report. 10 tests; pytest 162; synthetic /tmp
-  as-run demo recorded in the unit entry (Rule 4 only).
+  `--dry-run`/`--force`;  single-reciter runs end honestly in the FR-23 refusal with no report.
+  10 tests; pytest 162; synthetic /tmp as-run demo recorded in the
+  unit entry (Rule 4 only).
   [2026-10-01]
+- `files/SRS.md` — Phase 6 doc-drift audit: FR-10/FR-11/FR-20/FR-21/
+  FR-23/NFR-20 → **Done** with Review-unit evidence; NFR-04 →
+  **Built, unverified** (new legend value); FR-12 note corrected
+  (stale Open-Item reference; seed count 29 → 27 against the code and
+  live API); NFR-01/03/05/NFR-10 evidence notes. [2026-10-15]
+- `files/Implementation.md` — §3 architecture diagram + §4 stack
+  table: the Streamlit placeholder is superseded by the built
+  FastAPI + static four-screen UI per Frontend.md (Review.md Frontend
+  Phase 4 + Phase 5 units 5, 9). [2026-10-15]
+- `files/DataIntegrity.md` — §5 open items 1–2 struck RESOLVED with
+  Review refs; items 3–4 kept open with the current staging (owner
+  recordings; sweeps logged; full registry sweep gates on the first
+  real registry). [2026-10-15]
+- `files/ReportSkeleton.md` + `files/Nfr10RatingSheet.md` — report
+  prep: methodology/limitations draft with "not yet measured"
+  placeholders naming their producing commands, and the blank NFR-10
+  rater template (header, 1–5 rubric, blank table). [2026-10-15]

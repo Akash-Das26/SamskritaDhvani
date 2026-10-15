@@ -134,7 +134,7 @@ conventions your evaluator will expect:
              │                 Reporting / UI Layer                  │
              │  - similarity % + breakdown (SPD)                     │
              │  - recognized verse + confidence (GVR)                 │
-             │  - (optional) Streamlit dashboard for demo             │
+             │  - web UI (FastAPI; see Frontend.md)                   │
              └─────────────────────────────────────────────────────┘
 ```
 
@@ -163,7 +163,7 @@ library version for the actual pipeline and cross-check the two agree
 | HMM (for GVR) | `hmmlearn` (Gaussian/GMM-HMM, pure Python, easiest to instrument for a course project) — mention **HTK** or **Kaldi** in your report as the "production-grade" alternative even if you don't deploy on them, since `Ch-7` and the question bank likely expect you to know both | `hmmlearn` is the most approachable correct HMM implementation for a student project; Kaldi/HTK are the historical/production standard worth citing for depth marks |
 | Forced alignment (optional, strengthens SPD) | Montreal Forced Aligner (MFA) — if a Sanskrit acoustic model isn't available, use it in G2P-free mode on a small custom dictionary, or skip and rely on whole-word DTW | Gives phoneme-level timing ground truth, which upgrades SPD from "one whole-word score" to genuine per-phoneme diagnostics |
 | Transliteration / reference text handling | `indic_transliteration` (Python) for Devanagari ⇄ IAST | You need a deterministic, reproducible Devanagari→IAST mapping so "कृष्ण" and "kṛṣṇa" are never manually and inconsistently matched |
-| Visualization / demo UI | `Streamlit` | Good fit for a live "record → get score" demo |
+| Visualization / demo UI | `FastAPI` + static Tailwind pages (`web/`) — supersedes the earlier Streamlit placeholder per `Frontend.md` | Frontend.md (Phase 3 design, owner-approved) replaced the placeholder Streamlit dashboard with the Stitch-designed four-screen UI wired to a FastAPI demo backend; the four screens are built and E2E-verified (Review.md Frontend Phase 4 + Phase 5 units 5, 9; `tools/e2e_render_check.py` 37/37). Streamlit was never shipped and is no longer the plan |
 | Testing | `pytest` | One behavior per test |
 | Packaging | `requirements.txt`, pinned versions, `venv` | Reproducible environment |
 

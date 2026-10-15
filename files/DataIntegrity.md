@@ -128,14 +128,28 @@ maintenance.
 
 ## 5. Open Items (carry forward until resolved)
 
-1. Build the word list (SPD) and verse subset (GVR) per
-   `Implementation.md` §5.1.
-2. Create `PROVENANCE.md`.
+1. ~~Build the word list (SPD) and verse subset (GVR) per
+   `Implementation.md` §5.1.~~ **RESOLVED** — 29-word SPD seed list
+   over five difficulty axes (Review.md Phase 4 unit 2); the GVR
+   subset is fixed at chapter 2, vv. 1–20, served by the booth from
+   the checked GVR-TXT-01 item list (Review.md Phase 5 unit 6).
+2. ~~Create `PROVENANCE.md`.~~ **RESOLVED** — schema v1 live
+   (SPD-01/02, GVR-01…04, GVR-TXT-01 entries; Review.md Open Item 2).
 3. Record at least one verified reference recitation per SPD word and
    one canonical recording per GVR verse, with tradition noted (§3.6).
+   **OPEN** — the owner's recordings are the only path left: the D5
+   booth + calibrate CLI (Review.md units 5/3b) and the D4 booth mode
+   + `d4_chain` (units 6/10) are built and tested; sessions begin
+   only under the owner's voice (Review.md Phase 6 addenda).
 4. Run the first full Data Integrity Sweep (§4) and log it in
    `Review.md` — until then, no word/verse should be described as
-   "validated," only as "in use."
+   "validated," only as "in use." **OPEN, partially staged** —
+   source-level §4 sweeps are already logged (Hall 5 files, Loyola 63,
+   Vedavani 30,799 — Review.md 2026-09-22/23 entries); the full sweep
+   over a materialized GVR registry runs as soon as the first real
+   registry/model exist and before any accuracy number (FR-22 plan
+   §4); the Vāksañcayaḥ lazy-extraction sweep remains Review.md Open
+   Item 6.
 
 ---
 
