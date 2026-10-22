@@ -2247,3 +2247,342 @@ quarantined) — chain validated, zero numbers reported.**
   unused `return_path=True` request in `score_attempt` (dead DTW
   backtrace per scored attempt); no behavior change — 21 scorer tests
   and the full 162-test suite green. [2026-10-15]
+
+---
+
+## Session: 2026-10-22 — Phase 6 (Maintenance): full Data Integrity Sweep
+
+**Scope:** read-only audit of every audio, transcript, registry,
+manifest, model, and archive file in the repo and local working
+directory, including gitignored paths (`Audio_files/`,
+`corpus/vaksancayah/`, `corpus/vedavani/`,
+`corpus/mahabharata_audio/**/mp3/`, `data/spd/*`,
+`data/provenance/*/boosted_audio/`). No data file was moved, deleted,
+downloaded, recorded, or edited; the working tree is unchanged apart
+from this entry.
+
+**Commands actually run (exit status):** inventory
+`find`/`du`/`git check-ignore` loops (0); validity sweep with
+`load_audio_16k` + `vad_speech_fraction`, 14 forked workers (0);
+decoder-stderr scan over 47,128 MP3s (0); SHA-256 sweep over 90,505
+size-collision candidates (0); SPD/item-list loader script (0 after one
+`TypeError` exit 1 — `SpdWordlist` is not iterable; rerun used
+`.words`); naming/`.gitignore` script (0 after one `AttributeError`
+exit 1; rerun with `import fnmatch`); a first multiprocessing attempt
+exited 1 under the forkserver context and was rerun with `fork` (0).
+
+### Inventory
+
+- 98,638 audio files (16,943,056,317 B = 16.94 GB / 15.78 GiB,
+  all `.mp3`/`.wav`):
+  `corpus/vaksancayah/` 45,953; `corpus/vedavani/` 30,799;
+  `Audio_files/` 20,702; `corpus/mahabharata_audio/` 1,104;
+  `data/spd/` 68; `data/provenance/.../boosted_audio/` 9;
+  repo-root Forvo mp3s 3.
+- Registries/manifests: `data/gvr/ch2_itemlist.json` (tracked),
+  `data/spd/loyola_cahill_sound_files/MANIFEST.csv` (tracked),
+  `files/PROVENANCE.md`, Vedavani `MANIFEST.csv`/split CSVs (nested,
+  parent-ignored). **`data/gvr_registry.json` absent;
+  `data/gvr_recordings/` absent.**
+- Models: **0** model artifacts (34 filename matches are upstream
+  Vāksañcayaḥ `.py`/`.sh` source).
+- Archives: `third_party/Vaksanca-master.zip` tracked in HEAD
+  (17,117,105 B) but **deleted from the working tree**; the only copy is
+  the byte-identical `.kilo/worktrees/gem-angle/...` file (ignored,
+  sha256 `a500de23…cab6`).
+- Git: 1,269 tracked files; **0 tracked audio files**; large corpora
+  ignored. Root mp3s are untracked and **not** ignored.
+
+| Path | Files | Size (bytes) | Ext | Git state |
+|---|---:|---:|---|---|
+| root `pronunciation_sa_sanskrit*.mp3` | 3 | 74,142 | mp3 | untracked, not ignored |
+| `data/spd/hall_sanskrit_pronunciation/` | 5 | 7,892,197 | mp3 | ignored |
+| `data/spd/loyola_cahill_sound_files/` | 64 (63 audio + `MANIFEST.csv`) | 85,983,358 | mp3, csv | 63 ignored; MANIFEST tracked |
+| `data/provenance/` | 31 (9 wav, 17 png, 3 md, 2 csv) | 80,345,331 | wav/png/md/csv | 22 tracked; 9 wav ignored |
+| `data/gvr/` | 1 (`ch2_itemlist.json`) | 27,071 | json | tracked |
+| `data/_incoming/` | 0 | 0 | — | empty |
+| `data/gvr_recordings/` | 0 | 0 | — | absent |
+| `Audio_files/` | 20,702 | 4,541,378,164 | wav | ignored |
+| `corpus/vaksancayah/` | 46,010 (45,953 mp3, 54 txt) | 2,125,505,465 | mp3/txt | ignored |
+| `corpus/vedavani/` | 61,617 (30,799 wav, 5 csv, nested `.git`) | 13,620,534,991 | wav/csv | parent-ignored nested repo |
+| `corpus/mahabharata_audio/` | 1,122 (1,104 mp3 + 18 metadata) | 3,315,169,824 | mp3/md | 18 tracked; 1,104 ignored |
+| `ASR-Sanskrit/` | 249 (72 parquet) | 14,685,964,174 | parquet | ignored (GVR-04 excluded) |
+| `files/` | 23 | 1,541,914 | md | tracked |
+| `web/` (incl. `stitch_exports/` 10) | 16 | 492,631 | html/js/md | tracked |
+| `third_party/` | 2,281 | 104,473,930 | code | 1,131 tracked; 1,189 ignored |
+| `third_party/Vaksanca-master.zip` | 1 blob | 17,117,105 | zip | tracked in HEAD; deleted in worktree |
+
+Transcripts: 54 `corpus/vaksancayah/Transcript/*.txt`; Vedavani
+`train.csv`/`validation.csv`/`test.csv`/`MANIFEST.csv` (nested,
+parent-ignored); 6 Mahābhārata READMEs (tracked); Loyola `MANIFEST.csv`
+(tracked). 0 `REC_*.md` session sheets; 0 model artifacts.
+
+### Data Integrity Sweep (`DataIntegrity.md` §4 table)
+
+| Item (word/verse) | Samples | Corrupted found/excluded | Duplicates | Cross-split leaks (GVR only) | Provenance on file? | Label spot-checked? |
+|---|---|---|---|---|---|---|
+| SPD references (Hall) | 5 | 0 / 0 | 0 | n/a | yes (SPD-01) | no |
+| SPD references (Loyola/Cahill) | 63 | 0 / 0 | 0 | n/a | yes (SPD-02) | no |
+| SPD variants (learner takes) | 0 | — | — | n/a | no variants exist | no |
+| SPD derived renders (`boosted_audio`) | 9 | 0 / 0 | 0 | n/a | inherited from SPD-02; no own entry | no |
+| GVR recordings (2.01–2.20) | 0 | — | — | **not run — no registry** | n/a (no audio) | no |
+| General corpora — Vāksañcayaḥ (GVR-01) | 45,953 | 0 / 0 | 9 content pairs (18 files) | **not run — no registry** | yes | no |
+| General corpora — Vedavani (GVR-03) | 30,799 | 0 / 0 | 4 internal `(1)` pairs | **not run — no registry** | yes, but local path stale | no |
+| General corpora — Mahābhārata | 1,104 | **7 / 7** | 0 | n/a (backup source) | partial (Sources-Checked row only) | no |
+| General corpora — `Audio_files/` | 20,702 | 0 / 0 | **20,702 (all byte-identical to Vedavani)** | n/a | **no entry** | no |
+| Root Forvo clips | 3 | 0 / 0 | 0 | n/a | **no entry** (plan row only) | no |
+| Models | 0 | — | — | — | n/a | — |
+| Registries (item list, SPD manifest) | 2 | — | — | n/a | n/a | no |
+
+**Validity (all 98,638 files, `load_audio_16k` + `vad_speech_fraction`):**
+0 zero-byte, 0 load failures, 0 files <0.2 s, 0 files with VAD speech
+fraction ≤0.10. **7 decoder-damaged MP3s** (all Mahābhārata) load but
+emit libmpg123 `dequantization failed`/resync errors — excluded:
+`001-062p1/p2/p3.mp3`, `001-045p1.mp3`, `002-021-p2.mp3`,
+`003-033-p09.mp3`, `003-012-p6.mp3`. **1,348 sustained-clipped files**
+(≥0.1% of samples at |x|≥0.999), all Vāksañcayaḥ (sp001 812, sp004
+265, sp008 173, sp006 40, sp003 22, sp002 15, sp005 14, sp019 7);
+excluded from reference-material duty, not deleted. Peak ≥0.99
+(single-sample excursions included) = 15,423 (Vāksañcayaḥ 14,880,
+Vedavani 291, `Audio_files` 196, Mahābhārata 52, Hall 4). No
+self-recordings exist (0 `REC_*.md`, `data/_incoming/` empty), so the
+self-recording peak/clipping gate has no population.
+
+**Duplicates (SHA-256, exact bytes):** 20,702 duplicate groups /
+20,731 redundant copies / 4,545,846,561 B (4.23 GiB). All 20,702
+`Audio_files/` WAVs are byte-identical to `corpus/vedavani/` copies
+(20,689 mixed groups). 9 Vāksañcayaḥ content duplicates under
+different utterance IDs (sp005-000052↔000250 … 000058↔000256);
+4 Vedavani `(1)` re-download duplicates (`Rigveda_31_0148`,
+`RigVeda_Part_019_0291`, `RigVeda_Part_022_0272`,
+`Atharvaveda_Part_020_20460`). 0 SPD/Mahābhārata/root duplicates.
+**Split-leak check: not run — `data/gvr_registry.json` does not exist
+(not simulated).**
+
+**Provenance (`DataIntegrity.md` §2, Rule 2):** 20,705 audio files have
+no entry — `Audio_files/` 20,702 and 3 root Forvo mp3s (tags identify
+source, but no per-clip speaker/date/license entry; the Forvo row is a
+plan, not an acquisition). Entry paths that do not resolve: GVR-03
+`Vedavani-Dataset/` (files live at `corpus/vedavani/`), GVR-01 master
+zip, GVR-02 `gita_supersite/` (documented as not yet created). Missing
+required keys: SPD-02 recitation tradition, GVR-03 recitation
+tradition, GVR-01 tradition (“not documented”), Mahābhārata row
+tradition. Hall (SPD-01) is complete.
+
+**Registry/word-list consistency:** SPD list loads with **27** words,
+27 unique IDs, 0 duplicate IDs; axes 4/6/5/5/7; 5 difficulty pairs;
+**FR-13 round-trip failures 0/27**. Audio attached: **0/27 words**
+(`reference_audio` is `None` on every entry; 0 missing paths). Item
+list `data/gvr/ch2_itemlist.json` holds all **72** Ch. 2 verses
+(`2.01–2.72`), all mūla non-empty, `fname_key` consistent;
+the booth serves the first **20** (`2.01–2.20`) via
+`GVR_BOOTHSUBSET = 20`, all 20 load with mūla; **FR-13 round-trip
+failures 0/72**. Audio attached: **0/20 verses (0/72 item list)** — no
+GVR audio exists anywhere under `data/gvr/` or `data/gvr_recordings/`.
+
+**Naming/hygiene:** 0 self-recordings, so RecordingProtocol §3 has no
+rows to check (0 files match `spd_*_t*.wav` / `gvr_c*v*_t*.wav`).
+Corpus-name flags (hygiene, not §3 violations): `Audio_files` 20,702
+uppercase + 14 `(1)`; Vāksañcayaḥ 34,217 uppercase; Vedavani 30,799
+uppercase + 20 `(1)`; Mahābhārata 10 uppercase + 2 spaces;
+root Forvo 2 uppercase + 1 space. `.gitignore` covers every large
+audio tree probed (`Audio_files/`, Vāksañcayaḥ, Vedavani, Mahābhārata
+mp3s, `data/spd/*`, `boosted_audio/`) and 0 audio files are tracked;
+root mp3s are the one uncovered gap. The `.gitignore` comment still
+says 10,097 files / 2.2 GB while 20,702 / 4.3 GB exist.
+
+### Ranked violations
+
+1. **20,705 unprovenanced audio files** — `Audio_files/` (20,702) +
+   3 root Forvo clips. Rule 2 breach; the root clips are also not
+   ignored by git.
+2. **7 decoder-damaged Mahābhārata MP3s** — load successfully but
+   emit mpg123 dequantization/resync errors; excluded.
+3. **1,348 sustained-clipped Vāksañcayaḥ files** (15,423 peak-flagged
+   in total) — excluded from reference duty, not deleted.
+4. **Provenance path/key gaps** — GVR-03 stale `Vedavani-Dataset/`
+   path; SPD-02/GVR-03/Mahābhārata tradition fields missing; GVR-01
+   tradition undocumented.
+5. **Duplicates/leakage risk** — 20,702 `Audio_files` copies (4.23 GiB
+   wasted), 9 Vāksañcayaḥ content duplicates, 4 Vedavani `(1)`
+   duplicates; the split-leak check cannot run without a GVR registry.
+6. **Record drift** — this log previously recorded deleting 10,097
+   `Audio_files/` WAVs; 20,702 are present. `.kilo/` (92 MB) also still
+   exists although the 2026-09-23 Phase 6 entry records its deletion.
+7. **No GVR audio, registry, or model** — 0/20 verses and 0/27 SPD
+   words have attached audio; no accuracy/leak claim is possible.
+
+**Not run (explicitly):** GVR split-leak check (`data/gvr_registry.json`
+absent); human label listen-through (no listening this pass —
+`Label spot-checked = no`); GVR validity (no recording files); model
+checks (no models).
+
+**Files changed:** `files/Review.md` only.
+
+## Session: 2026-10-22 — Phase 6 (Maintenance): remediation pass
+
+**Scope:** the seven owner-directed remediation steps from the audit
+entry above. Nothing was deleted or moved without the owner's explicit
+approval in-session (steps 2, 3, 6 each stopped for a yes). Files
+changed: `.gitignore`, `files/PROVENANCE.md`, `files/DataIntegrity.md`,
+`files/Review.md`, new `data/EXCLUDED.csv`; restored
+`third_party/Vaksanca-master.zip`; deleted `Audio_files/` (20,702
+WAVs, owner-approved); moved 3 root Forvo mp3s out of the repo to
+`~/Desktop/forvo_sanskrit_clips/` (owner-chosen destination).
+
+### Step 1 — origin of the recreated `Audio_files/` (analysis only)
+
+A single out-of-band copy run on **2026-10-01 14:58:38–14:58:51 IST**
+created all 20,702 files in one ~13 s burst (≈1,000 files/s),
+preserving source mtimes (Apr 4 2024 — the mtimes inside the Vedavani
+HF clone). Files have distinct inodes, link count 1 → real copies,
+not hardlinks. Every basename (20,702/20,702) matches
+`corpus/vedavani/AudioFiles/`; composition Atharvaveda 6,687 +
+Rigveda-family 14,015 incl. 14 `(1)` names — a broader slice than the
+10,097-file Atharvaveda batch deleted 2026-09-23. Ruled out (all
+checked, all negative): tracked scripts (no `cp`/`rsync`/`copytree`/
+`shutil.copy`/`unzip` targets `Audio_files` or `vedavani` anywhere in
+project code; the only name reference outside Review.md is upstream
+`corpus/vedavani-code/README.md`'s placeholder path argument); any
+extractable archive in the repo; `.kilo/worktrees/gem-angle/` (no
+`Audio_files`/`AudioFiles` at depth ≤6); any shell-history file in the
+repo (deep `find -iname '*history*'`, only unrelated `history.py`
+modules); git reflog (no checkout/reset near 14:58; the 23:35
+`filter-branch` rewrote commits only). **Conclusion:** a manual
+host-side copy (`cp -p`/`rsync -a` class), leaving no in-repo trace,
+during the 2026-10-01 Phase 4 work session; commit `68e7ac7` 1 h 53 m
+later gitignored the directory while quoting the stale 2026-09-23
+count (10,097 / 2.2 GB) — the root cause of ranked violation #6.
+Host-side shell histories were not opened (outside the repo scope).
+
+### Step 2 — `Audio_files/` verification and removal (owner-approved)
+
+sha256 of all 20,702 `Audio_files/` WAVs vs all 30,799
+`corpus/vedavani/AudioFiles/` WAVs, joined by basename: **20,702
+matched, 0 missing counterparts, 0 mismatches** (0 duplicate names in
+either dir). Owner approved deletion; `rm -rf Audio_files/` ran
+(exit 0, directory confirmed gone; 4,541,378,164 B freed). `.gitignore`
+comment corrected (was: "10,097 files, 2.2 GB"; now records the
+20,702-file byte-identical copy, its 2026-10-22 removal after sha256
+verification, and keeps the rule as a guard). `files/PROVENANCE.md`
+GVR-03 gained a removal note (byte-identical copy of GVR-03 content,
+no entry of its own, sha256-verified, deleted with owner approval).
+
+### Step 3 — root Forvo mp3s (owner chose: move out of the repo)
+
+Shown with tags first: all three carry title=Sanskrit, artist=Forvo,
+album=Pronunciation in Sanskrit, comment=`forvo.com/word/sanskrit/#sa`
++ `forvo.com/license/`; durations 0.852/0.669/2.419 s; downloaded
+2026-10-02. No per-clip speaker field, recording date, or licence
+text beyond the URLs. Owner declined to supply details and chose
+removal: the 3 files were moved to `~/Desktop/forvo_sanskrit_clips/`
+(mv exit 0; repo root confirmed clear; files untracked, so git status
+unaffected). PROVENANCE.md's Forvo row updated (RESOLVED 2026-10-22:
+moved out, not acquired; the manual-download plan stands).
+
+### Step 4 — provenance fixes
+
+- **GVR-03 path:** `Local directory` corrected
+  `Vedavani-Dataset/` → `corpus/vedavani/` (WAVs under
+  `AudioFiles/batch_1..batch_4/`); sub-table MANIFEST reference
+  corrected likewise.
+- **GVR-01 master zip:** marked **GONE** with reason — the 2.0 GB
+  `vaksancayah_sanskrit_asr_corpus_v1.zip` is no longer on this
+  machine (repo-wide `find` 2026-10-22 matched only the extracted tree
+  and the metadata PDF); extracted to `corpus/vaksancayah/` (46,010
+  files verified 2026-09-23) and the unextracted zip removed during
+  that cleanup window, unitemised in that session's removal table
+  (record-drift noted); re-acquisition via the corpus site's form gate.
+- **Tradition fields** (§3.6): SPD-02, GVR-01 and the Mahābhārata row
+  set to **"not documented by source"** with evidence (archived page
+  says only "traditional recitations"; corpus metadata states no
+  accent tradition; per-parva READMEs and project page state none).
+  GVR-03 set to "Vedic chanting of Rig/Atharva Veda with prosodic
+  markers; specific accent tradition not documented by source" (the
+  card does state Vedic chanting, so this is partial documentation,
+  not a guess).
+- **Needs owner input (not guessed):** SPD-02 and Hall ear-check
+  verdicts before any tradition claim on SPD reference material;
+  GVR-01 per-recording tradition spot-check before any GVR claim;
+  Mahābhārata reciter/tradition if that backup source is ever used.
+
+### Step 5 — exclusion list: `data/EXCLUDED.csv`
+
+New tracked file, columns `path,reason,date`, **1,369 rows** (7
+decoder-damaged Mahābhārata MP3s with full paths; 1,362
+sustained-clipped Vāksañcayaḥ files). The clipped set was re-swept
+today over all 45,953 Vāksañcayaḥ MP3s with
+`load_audio_16k` + "≥0.1% of samples at |x|≥0.999" (14 forked workers,
+exit 0): **1,362 files** (sp001 821, sp004 267, sp008 175, sp006 43,
+sp003 23, sp005 15, sp002 11, sp019 7) vs the audit's 1,348 — a +14
+delta with per-speaker shifts in both directions. Diagnostic (exit 0):
+429 of the 1,362 sit in the borderline band [0.001, 0.0015), and the
+stricter int16 full-scale criterion (|x| ≥ 32767/32768) yields 1,324 —
+the count is threshold/decoder-path sensitive in a ±40 band, and the
+audit's 1,348 lies inside it. Today's reproducible criterion (stated
+exactly in the CSV's `reason` column) is authoritative for the
+register. **No project code consumes an exclusion CSV** (the only
+prior artefact, `corpus/vedavani/EXCLUDED_FILES.csv`, is referenced by
+docs alone), so the apply-point is policy: `DataIntegrity.md` §4 gained
+the exclusion-register paragraph (listed files barred from reference/
+training/evaluation duty; removal only by a new logged sweep with
+owner approval; exclusion is a status, not an erasure). No audio was
+deleted.
+
+### Step 6 — Vaksanca zip (owner chose: restore)
+
+`git checkout -- third_party/Vaksanca-master.zip` (exit 0); file
+restored at 17,117,105 B; sha256 `a500de234aa7…cab6` verified identical
+to the HEAD blob. `.kilo/` untouched. PROVENANCE.md GVR-01 amended to
+record the restoration.
+
+### Step 7 — re-run of affected checks, before → after
+
+| Check | Before (audit, this date) | After (remediation, this date) |
+|---|---|---|
+| Audio files on disk | 98,638 (16,943,056,317 B) | 77,933 |
+| Unprovenanced audio (Rule 2) | 20,705 (`Audio_files/` 20,702 + 3 Forvo) | **0** |
+| Duplicate groups / redundant copies | 20,702 / 20,731 | **29 / 29** |
+| Redundant bytes | 4,545,846,561 | **4,468,397** |
+| Cross-tree duplicate groups | 20,689 | **0** |
+| GVR-03 entry path | stale `Vedavani-Dataset/` | `corpus/vedavani/` |
+| GVR-01 master zip | open item | GONE, reason recorded |
+| Tradition fields missing | 4 (SPD-02, GVR-03, GVR-01, Mahābhārata) | **0** (1 partial: GVR-03) |
+| Exclusion register | none | `data/EXCLUDED.csv`, 1,369 rows |
+| `.gitignore` Audio_files comment | stale (10,097 / 2.2 GB) | corrected |
+| `Audio_files/` present | 20,702 files / 4,541,378,164 B | removed (owner-approved) |
+
+Remaining duplicates after: 9 Vāksañcayaḥ sp005 content pairs under
+different utterance IDs + 20 Vedavani `(1)` re-download pairs (already
+excluded via the nested `EXCLUDED_FILES.csv`); all intra-tree, 0
+cross-tree.
+
+**Provenance cross-check re-run:** parser over `files/PROVENANCE.md`
+backticked directory paths vs all audio on disk — **77,933 files,
+0 unmatched** (exit 0). The first run of this check exited 0 but
+walked a wrong population (pruned `corpus/vedavani/`, 47,134 files);
+the corrected rerun above is the authoritative one and is what the
+table reports.
+
+**Commands actually run (exit status):** `stat`/`find -printf` origin
+probe (0); repo-wide code search for copy/unzip patterns (0, no
+matches); reflog/history-file sweeps (0); sha256 sweep of
+`Audio_files/` + `corpus/vedavani/AudioFiles/` via `xargs -P16` (0);
+basename join script (0); `rm -rf Audio_files/` (0); `mv` of 3 Forvo
+mp3s (0); ffprobe tag dump (0); Vāksañcayaḥ clipping sweep, 14 workers
+(0 after one ModuleNotFoundError exit 1 under system python — rerun
+with `.venv/bin/python3`); borderline diagnostic (0); EXCLUDED.csv
+writer with count assertions (0); provenance parser (0 after one
+wrong-population run, exit 0 but invalid — rerun); full sha256
+duplicate scan over 77,933 files (0); duplicate grouping script (0);
+`git checkout` of the zip (0).
+
+**Files changed this session:** `.gitignore`, `files/PROVENANCE.md`,
+`files/DataIntegrity.md`, `files/Review.md`, `data/EXCLUDED.csv` (new),
+`third_party/Vaksanca-master.zip` (restored to tracked state),
+`Audio_files/` deleted (20,702 files), 3 Forvo mp3s moved to
+`~/Desktop/forvo_sanskrit_clips/`. `.kilo/` untouched.
+
+**Not run (unchanged from the audit):** GVR split-leak check (no
+registry); human label listen-through; GVR validity (no recordings);
+model checks (no models).

@@ -118,6 +118,16 @@ maintenance.
 6. Record results in `Review.md` using this file's table format — real
    counts only, never estimates.
 
+**Exclusion register:** `data/EXCLUDED.csv` (columns `path,reason,date`)
+is the machine-readable list of files excluded by this policy (created
+2026-10-22 from the Phase 6 sweep: 7 decoder-damaged + 1,362
+sustained-clipped files). Files listed there must not be used as
+reference material, training data, or evaluation data, and no reported
+score may rest on them. A listed file is removed from the register only
+by a new logged sweep that clears it, with owner approval. The audio
+files themselves are never deleted by this rule — exclusion is a
+status, not an erasure.
+
 **Sweep result table format (for Review.md):**
 
 | Item (word/verse) | Samples | Corrupted found/excluded | Duplicates | Cross-split leaks (GVR only) | Provenance on file? | Label spot-checked? |

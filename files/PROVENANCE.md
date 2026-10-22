@@ -80,6 +80,7 @@ owner's verdict is logged.**
 | **Audio format** | MP3, 44.1 kHz stereo, mixed bitrates (yad_fem: 128 kbps JntStereo) — D1 front-end resamples to 16 kHz mono |
 | **Acquisition date** | 2026-09-22 |
 | **Acquired by** | Scripted Wayback retrieval (63/63 HTTP-successful; yad_fem.mp3 re-fetched after first capture returned a Wayback HTML page) |
+| **Recitation tradition** | **Not documented by source** (marked 2026-10-22) — the archived page says only "traditional recitations of grammatical paradigms"; no accent tradition is stated anywhere in the source material. Owner ear-check verdict needed before any tradition claim (`DataIntegrity.md` §3.6). |
 | **Use for** | SPD reference material (FR-12): paradigm recitations for declension/form pronunciation; per-word reference clips to be cut only after the label listen-through. Recording-era quality limitation noted (DataSources.md §3.4). |
 | **Local directory** | `data/spd/loyola_cahill_sound_files/` (per-file sweep data in `MANIFEST.csv`: sha256-16, sr, channels, duration, rms, segments, peak) |
 
@@ -126,11 +127,11 @@ pipeline-ineligible until the owner's verdict is logged.
 | **AIKosh mirror (verified live 2026-09-22)** | `https://aikosh.indiaai.gov.in/home/datasets/details/v_ksa_caya_sanskrit_asr_corpus.html` |
 | **License (corpus's own page, CC badge, verified 2026-09-22)** | **CC BY-NC 4.0** — Creative Commons Attribution–NonCommercial 4.0 International. Usable for this academic (non-commercial) project with attribution. |
 | **License (AIKosh listing metadata API, verified 2026-09-22)** | ~~CC0 1.0 Public Domain~~ **RESOLVED 2026-09-22:** the corpus archive's own README states **CC BY-NC 4.0**; the corpus site's CC badge agrees. The AIKosh "CC0" label is wrong — corpus README is authoritative. **CC BY-NC 4.0 governs.** |
-| **Acquisition status** | **ACQUIRED 2026-09-22** — full archive `vaksancayah_sanskrit_asr_corpus_v1.zip` (2.0 GB, 45,953 MP3s, 54 speaker dirs) downloaded, held at repo root (unextracted); Kaldi recipe zip `Vaksanca-master.zip` also present. **Amended 2026-09-23 (Phase 6 cleanup):** the archive has been extracted and now sits at `corpus/vaksancayah/` (46,010 MP3s verified on disk). The master zip itself is **not present at the repo root** any more; its location is an open item — re-download from the corpus site if a provenance-anchored archive copy is needed. Verified layout: `spNNN/spNNN-NNNNNN_TEXTID.mp3`; transcripts `Transcript/Devanagari/spNNN.txt` + `Transcript/SLP1/spNNN.txt`, TSV `<uttID>\t<text>`. Official README split: train sp001/002/003/004/006/008/009/012/016/019/020/021, val sp005/013/014/017, test sp007/010/011/015/018/022, OOD sp023–027. |
+| **Acquisition status** | **ACQUIRED 2026-09-22** — full archive `vaksancayah_sanskrit_asr_corpus_v1.zip` (2.0 GB, 45,953 MP3s, 54 speaker dirs) downloaded, held at repo root (unextracted); Kaldi recipe zip `Vaksanca-master.zip` also present. **Amended 2026-09-23 (Phase 6 cleanup):** the archive has been extracted and now sits at `corpus/vaksancayah/` (46,010 MP3s verified on disk). The master zip itself is **GONE** (marked 2026-10-22): `vaksancayah_sanskrit_asr_corpus_v1.zip` is no longer on this machine — a repo-wide `find` on 2026-10-22 matched only the extracted tree `corpus/vaksancayah/` and the metadata PDF. Reason: the archive was extracted to `corpus/vaksancayah/` (46,010 files verified on disk 2026-09-23) and the unextracted 2.0 GB zip was removed from the repo root during the 2026-09-23 Phase 6 cleanup window (it is not itemised in that session's removal table — record-drift noted). The extracted tree is the surviving copy; re-acquisition requires the corpus site's form gate (`form.html`) if a provenance-anchored archive is ever needed. The separate Kaldi-recipe zip `third_party/Vaksanca-master.zip` remains tracked in git history (see the trailing note). Verified layout: `spNNN/spNNN-NNNNNN_TEXTID.mp3`; transcripts `Transcript/Devanagari/spNNN.txt` + `Transcript/SLP1/spNNN.txt`, TSV `<uttID>\t<text>`. Official README split: train sp001/002/003/004/006/008/009/012/016/019/020/021, val sp005/013/014/017, test sp007/010/011/015/018/022, OOD sp023–027. |
 | **Content** | 78+ hours, 45,953 sentence recordings, 22 kHz, multi-speaker, multi-text: Śāstras, contemporary stories, radio programs, extempore discourse. AIKosh tags include "Bhagvadgita" — Gita subset must be filtered by transcript matching (DataSources.md §1.1 caveat). File size: ~1.97 GB (per AIKosh stats: 2,059,272,842 bytes). |
 | **Audio format** | MP3 (convert to WAV for feature extraction per Implementation.md §3) |
 | **Corpus paper** | Adiga et al., ACL Findings 2021. arXiv: https://arxiv.org/abs/2106.05852 |
-| **Recitation tradition** | Multi-speaker; per-recording tradition not documented in metadata — must spot-check transcripts (DataIntegrity.md §4 step 1). |
+| **Recitation tradition** | **Not documented by source** (marked 2026-10-22) — multi-speaker corpus; neither the corpus README, the site, nor the paper states an accent tradition per recording. Must spot-check transcripts/listen (`DataIntegrity.md` §4 step 1) before any tradition claim. |
 | **Use for** | Primary GVR training/eval after Gita subset is filtered; non-Gita portions for general front-end validation (DataSources.md §2.3). |
 | **Local directory** | `corpus/vaksancayah/` (amended 2026-09-23, Phase 6: moved from repo root `Vāksañcayaḥ- Sanskrit_ASR_Corpus/` and untracked in git — kept local-only, ignored by `.gitignore`) |
 
@@ -146,8 +147,13 @@ validation pool (§2.3) and SLP1/Devanagari transcript alignment
 reference.
 
 **Action required:** ~~Submit form~~ (resolved — archive obtained).
-Remaining: extraction + per-file sweep only for the subsets actually
-used; keep zip as the provenance-anchored master copy.
+~~keep zip as the provenance-anchored master copy~~ **amended
+2026-10-22:** the corpus master zip is gone (see Acquisition status);
+the extracted `corpus/vaksancayah/` tree is the surviving copy. The
+Kaldi-recipe zip `third_party/Vaksanca-master.zip` remains tracked in
+git and was **restored to the working tree on 2026-10-22** (owner
+decision; sha256 verified identical to the HEAD blob:
+`a500de23…cab6`).
 
 ---
 
@@ -181,9 +187,10 @@ used; keep zip as the provenance-anchored master copy.
 | **Acquisition date** | 2026-09-23 |
 | **Acquired by** | Full HF clone (git LFS) by the project owner; local dir `corpus/vedavani/` (6.4 GB; moved from repo root `Vedavani-Dataset/` during the Phase 6 cleanup, 2026-09-23) |
 | **Use for** | **Not Gita content** — general front-end validation pool (DataSources.md §2.1) and optional "generalizes beyond Gita" ablation. Not a GVR training corpus under the current scope. |
-| **Local directory** | `Vedavani-Dataset/` (batches 1–4; CSVs train/validation/test) |
+| **Local directory** | `corpus/vedavani/` (corrected 2026-10-22; was stale `Vedavani-Dataset/`) — HF clone; WAVs under `AudioFiles/batch_1..batch_4/`, split CSVs + `MANIFEST.csv` at top level |
+| **Recitation tradition** | Vedic chanting of Rig/Atharva Veda verses with prosodic markers in the transcripts; **specific accent tradition not documented by source** (dataset card states no śākhā/accent line) |
 
-**File sub-table (group summary — per-file values in `Vedavani-Dataset/MANIFEST.csv`; swept 2026-09-23):**
+**File sub-table (group summary — per-file values in `corpus/vedavani/MANIFEST.csv`; swept 2026-09-23):**
 
 | Group | Files | Result | Sweep date |
 |---|---|---|---|
@@ -227,6 +234,20 @@ local ones; 20/20 sampled files sha256-identical to `MANIFEST.csv`.
 as an independent availability mirror. Its content inherits this
 entry's license and provenance (Apache-2.0, sanganaka).
 
+**Removed duplicate directory (2026-10-22):** the repo-root
+`Audio_files/` directory (20,702 WAVs, 4,541,378,164 B ≈ 4.3 GB;
+Atharvaveda 6,687 + Rigveda-family 14,015, incl. 14 `(1)` names) was a
+**byte-identical copy of this entry's `corpus/vedavani/AudioFiles/`
+content** and had no PROVENANCE entry of its own (Rule 2). It was
+re-verified file-by-file by sha256 on 2026-10-22 (20,702/20,702
+matched by basename, **0 mismatches, 0 missing counterparts**) and
+deleted the same day with the owner's explicit approval. It was
+originally recreated 2026-10-01 14:58 IST by an out-of-band copy
+(preserving source mtimes) after the 2026-09-23 deletion of the
+earlier 10,097-file batch; full origin analysis in Review.md's
+2026-10-22 Phase 6 entry. The `.gitignore` rule `Audio_files/` is
+kept as a guard against re-copy.
+
 ---
 
 ### GVR-04 · ASR-Sanskrit (komalsai234, Hugging Face) — EXCLUDED
@@ -259,9 +280,9 @@ entry's license and provenance (Apache-2.0, sanganaka).
 | Source | Status | Reason | Checked date |
 |---|---|---|---|
 | Deshpande *Saṃskṛta-Subodhini* (UMich) | **DEAD LINK — unrecoverable** | DNS timeout on `www.umich.edu/~iinet/csas/publications/sanskrit/audio.html`; Wayback CDX check 2026-09-22 shows **zero successful audio captures** for any `umich.edu` Sanskrit audio path (only 404 captures of attempted URLs). Cannot acquire from any channel. | 2026-09-22 |
-| Forvo.com (Sanskrit crowdsourced) | **PLAN SET — manual only** | ToS prohibits bulk/automated scraping. Plan (2026-09-22): after the SPD word list is finalized from Hall/Loyola material, download the ~20–30 word clips **manually, one at a time**, logging each clip's speaker username/country in this file; fluency is unverified, so Forvo clips serve as cross-check material only, never sole references. | 2026-09-22 |
+| Forvo.com (Sanskrit crowdsourced) | **PLAN SET — manual only** | ToS prohibits bulk/automated scraping. Plan (2026-09-22): after the SPD word list is finalized from Hall/Loyola material, download the ~20–30 word clips **manually, one at a time**, logging each clip's speaker username/country in this file; fluency is unverified, so Forvo clips serve as cross-check material only, never sole references. **RESOLVED 2026-10-22:** three trial clips for the word "sanskrit" (Forvo tags: title=Sanskrit, artist=Forvo, comment=`forvo.com/word/sanskrit/#sa` + licence URL; filenames suggesting speakers "IndianAmerican" and "Komal_k`) were found at the repo root with **no per-clip speaker/date/licence entry** (Rule 2 breach). Owner declined to supply the per-clip details; the three files were **moved out of the repo** (to `~/Desktop/forvo_sanskrit_clips/`, untracked) on 2026-10-22. Not acquired into the corpus; the manual-download plan above stands for any future Forvo use. | 2026-10-22 |
 | archive.org Gita audio (Ranganathan, Paudwal) | **Excluded** | No `licenseurl` metadata — cannot enter corpus per DataIntegrity.md Rule 2 without explicit permission. Confirmed excluded. | 2026-09-22 |
-| mahabharata-audio-2018 (GitHub) | **Checked — DEAD END for Gita** | Org has exactly 6 public repos (parva01-001-100, parva01-101-233, parva02, parva03, parva04, parva12-001-100) — **no Bhishma Parva repo; no Gita audio**. **License resolved 2026-09-23:** project page declares **CC BY-SA 4.0** (per-file named reciters; archive item `mahAbhArata-mUla-paThanam-GP` carries per-file creator metadata but **no `licenseurl` field** — license basis is the project page's declaration). **RESOLVED 2026-09-23 (Phase 6):** the sources were found **extracted on disk** (not zips); decision logged — kept as a low-priority depth/backup source, untracked, at `corpus/mahabharata_audio/` (audio ignored, READMEs tracked). | 2026-09-23 |
+| mahabharata-audio-2018 (GitHub) | **Checked — DEAD END for Gita** | Org has exactly 6 public repos (parva01-001-100, parva01-101-233, parva02, parva03, parva04, parva12-001-100) — **no Bhishma Parva repo; no Gita audio**. **License resolved 2026-09-23:** project page declares **CC BY-SA 4.0** (per-file named reciters; archive item `mahAbhArata-mUla-paThanam-GP` carries per-file creator metadata but **no `licenseurl` field** — license basis is the project page's declaration). **RESOLVED 2026-09-23 (Phase 6):** the sources were found **extracted on disk** (not zips); decision logged — kept as a low-priority depth/backup source, untracked, at `corpus/mahabharata_audio/` (audio ignored, READMEs tracked). **Recitation tradition: not documented by source** (checked 2026-10-22 — per-file named reciters exist in the archive metadata, but neither the project page nor the tracked per-parva READMEs state any accent tradition). | 2026-10-22 |
 
 ---
 

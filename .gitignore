@@ -26,8 +26,10 @@ Vedavani-Dataset/
 Vedavani-main/
 
 # --- Raw data & corpora (local-only) ---
-# Atharvaveda kanda WAV batch (10,097 files, 2.2 GB) — local-only clip
-# download, inventoried untracked in the Review.md Phase 6 pass
+# Former local holding dir for a byte-identical copy of corpus/vedavani/
+# audio (20,702 WAVs, 4.3 GB, re-copied 2026-10-01); deleted 2026-10-22
+# after full sha256 re-verification (0 mismatches) — Review.md Phase 6
+# entry 2026-10-22. Rule kept as a guard in case the copy reappears.
 Audio_files/
 # Vāksañcayaḥ ASR corpus root (alternate location)
 Vāksañcayaḥ- Sanskrit_ASR_Corpus/
