@@ -275,15 +275,28 @@ def test_spd_score_200_full_contract_when_reference_and_calibration_exist(
     assert r.status_code == 200, r.json()
     body = r.json()
     assert set(body) == {
-        "similarity_pct", "vowel_score", "consonant_score",
+        "attempt_id", "similarity_pct", "vowel_score", "consonant_score",
         "duration_score", "mfcc_dtw_score", "reference_word",
     }
+    assert body["attempt_id"] is None  # omitted → null, never invented
     for key in ("similarity_pct", "vowel_score", "consonant_score",
                 "duration_score", "mfcc_dtw_score"):
         assert 0.0 < body[key] <= 100.0, (key, body[key])
     assert body["reference_word"] == {
         "word_id": word_id, "devanagari": "कृष्ण", "iast": "kṛṣṇa",
     }
+
+    # NFR-10 join key: a supplied attempt_id is echoed verbatim and does
+    # not touch a single score.
+    r2 = client.post(
+        "/api/spd/score",
+        files={"audio": ("a.wav", _speech_wav_bytes(), "audio/wav")},
+        data={"word_id": word_id, "attempt_id": "SPD-REC-20261023-01_t1"},
+    )
+    assert r2.status_code == 200, r2.json()
+    tagged = r2.json()
+    assert tagged["attempt_id"] == "SPD-REC-20261023-01_t1"
+    assert tagged["similarity_pct"] == body["similarity_pct"]
 
 
 # ----------------------------------------------------- /api/gvr/recognize

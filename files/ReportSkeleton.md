@@ -83,14 +83,29 @@ curl -F word_id=<word_id> -F audio=@<attempt>.wav \
 **NFR-10 validation against human judgment: NOT YET MEASURED.** The
 producing steps are: (a) D5 attempts recorded via the booth
 (`python -m samskrita_dhvani.record --port 8030`); (b) each attempt
-scored via `POST /api/spd/score` (command above); (c) one rater
-completed sheet per instructor/native speaker using
-`files/Nfr10RatingSheet.md`; (d) the correlation (Pearson and
-Spearman, automated similarity vs the 1–5 rating) computed from those
-two artifacts. **The correlation script does not exist yet** — by
-design: it will be specified as its own Phase 3/4 unit once rated
-attempts exist to build it against; until then this section reads
-"not yet measured" and nothing else.
+scored via `POST /api/spd/score` **with an `attempt_id`** — the booth's
+`<session_id>/<take>` identity, echoed by the endpoint in its 200
+response, which is saved as the scores input; (c) one sheet completed
+per rater using `files/Nfr10RatingSheet.md`; (d) the correlation
+computed by the NFR-10 CLI:
+
+```bash
+python -m samskrita_dhvani.nfr10 \
+    --ratings files/Nfr10RatingSheet_rater-A.md rater-B.md \
+    --scores data/spd/scores.jsonl \
+    --min-n 20 --json data/spd/nfr10_report.json
+```
+
+It reports Spearman ρ with n and the p-value, pairwise inter-rater
+agreement **before** the score-versus-rating correlation, and refuses
+(rc=2, one line ending "no ratings, no number") on a missing/blank
+sheet, a rating outside the 1–5 rubric, an unmatched attempt ID, n
+below `--min-n`, or a single rater with no inter-rater check. Every
+output carries the coverage sentence (rated attempts only) and the
+reference-reciter tradition from `PROVENANCE.md` (SPD-01/SPD-02) with
+the ear-check gate state. **No correlation has been measured**: no real
+rated attempts exist, so this section reads "not yet measured" and
+nothing else.
 
 ### 1.3 GVR recognition (design D3 — MEASURED topology; accuracy below)
 

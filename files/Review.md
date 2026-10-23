@@ -2669,3 +2669,101 @@ loader and the two corpus walkers; the one-off `tools/` maintenance
 scripts (e.g. `tools/restore_spd_audio.py`) do not yet consult the
 register. The register itself is unchanged (1,369 rows), and no
 reported score exists that this change could alter.
+
+### Phase 5 (Testing) — NFR-10 correlation CLI (built, unverified)
+
+**Scope (Ground Rule 2, one unit):** the correlation instrument for
+`SRS.md` NFR-10, and the minimum interface change it needed. No
+scoring math, references, calibration, or audio was touched.
+
+**Blocked first, then approved.** The scorer output exposed no
+per-attempt ID — `POST /api/spd/score` returned only the five scores
+plus `reference_word`, and `score_attempt`/`SpdScore` carry no
+identity — so the requested join key did not exist. I stopped and
+reported instead of inventing one; the owner then approved the
+minimal additive change:
+
+- `api.py`: optional `attempt_id: str | None = Form(None)` on
+  `POST /api/spd/score`, echoed verbatim in the 200 body. The server
+  never invents a label: omitted → `"attempt_id": null`, and the
+  echo changes no score. The existing 200-contract test now pins the
+  extra key and asserts the null default plus the verbatim echo of a
+  supplied ID.
+
+**`samskrita_dhvani/nfr10.py` (new).**
+
+```bash
+python -m samskrita_dhvani.nfr10 \
+    --ratings <filled sheet> [<sheet> …] \
+    --scores <SPD scorer output> [--json OUT] [--min-n 20] [--fixtures]
+```
+
+- **Ratings input:** the markdown template's tables — rater header
+  (role, native language(s), script familiarity, recitation tradition,
+  years, date), the 1–5 ratings table, and `N/A` rows (excluded and
+  counted). `--ratings` accepts several sheets or a directory of them
+  so the two-rater path is usable.
+- **Scores input:** JSON list, `{"scores": […]}` object, single
+  response object, or JSONL; each record needs `attempt_id` and a
+  numeric `similarity_pct` in 0–100. Untagged responses are a loud
+  refusal, not a guessed join.
+- **Output:** Spearman ρ with n and the p-value, each rater's role,
+  background, and stated tradition, the coverage sentence (rated
+  attempts only), the reference-reciter tradition read from
+  `PROVENANCE.md` SPD-01/SPD-02, and the ear-check state (SPD Open
+  Item 2) — currently OPEN, 12 unchecked checklist items. With two or
+  more raters, pairwise agreement (ρ, n, p) is printed **before** the
+  score-versus-mean-rating correlation.
+- **Refusals (rc=2, one stderr line, each ending “no ratings, no
+  number”):** missing ratings file; blank sheet / no filled ratings;
+  rating outside 1–5 (also non-integer, duplicate attempt row, missing
+  entry); a rated attempt with no score (count + IDs printed); n below
+  `--min-n` (default 20, value used printed); a single rater with no
+  inter-rater check; no attempt rated by two or more raters; scores
+  without `attempt_id`; undefined ρ on constant input.
+- **Non-shipped-data guard:** sheets marked `SYNTHETIC-FIXTURE` are
+  refused unless `--fixtures` is passed; when it is, the report opens
+  with a synthetic-fixture banner and the JSON sets
+  `"synthetic_fixture": true`. The shipped blank template is also
+  refused (no filled ratings).
+
+**Tests (`tests/test_nfr10.py`, 15 tests, synthetic fixtures only and
+named as such per NFR-02):** perfect ρ = 1 with n = 30; a hand-known
+ρ = 0.9 case cross-checked against `scipy.stats.spearmanr`; a
+ties/average-ranks case compared to scipy on the same pooled ratings;
+two-rater agreement before the machine correlation (ordering asserted
+in the rendered output); the honesty sentences; and every refusal path
+above (missing, blank, out-of-range, unmatched IDs with counts, min-n,
+single rater, disjoint raters, untagged scores, fixture guard, shipped
+template).
+
+**Test counts (as run):** `pytest tests/test_nfr10.py -q` → **15
+passed**, rc 0. Full suite before this unit (previous entry) → **179
+passed**; full suite after → **194 passed, 0 failed**, rc 0 (1,682
+pre-existing library warnings). No test skipped or xfailed.
+
+**Command evidence (exit status):** the CLI against the shipped blank
+template —
+`python -m samskrita_dhvani.nfr10 --ratings files/Nfr10RatingSheet.md
+--scores <tmp scores json>` → **rc=2**, stderr:
+`error: ratings sheet(s) have no filled ratings (blank template?):
+files/Nfr10RatingSheet.md — no ratings, no number`. A synthetic two-
+rater run is exercised only inside the tests (tmp files), never here.
+
+**No correlation has been measured.** There are no D5 attempts, no
+scored attempts on disk, and no real ratings; every number produced in
+this unit came from labelled synthetic fixtures inside pytest. This
+entry deliberately records no ρ, n, or p value.
+
+**Files changed:** `samskrita_dhvani/nfr10.py` (new),
+`samskrita_dhvani/api.py` (attempt_id echo), `tests/test_nfr10.py`
+(new), `tests/test_api.py` (200-contract key set + echo test),
+`files/SRS.md` (NFR-10 → Built, unverified), `files/ReportSkeleton.md`
+(NFR-10 placeholder names the exact command), `files/Review.md`.
+
+**Honest limits:** the single-rater path is refused by design, so a
+NFR-10 number requires at least two raters with overlapping attempts;
+agreement with fewer than 2 common attempts is reported as not
+computable rather than assumed. The CLI reads the human sheet's
+tables as written — it cannot detect a rater misreading the rubric,
+only a rating outside it.

@@ -406,6 +406,7 @@ def list_words() -> WordListOut:
 async def spd_score(
     audio: UploadFile = File(...),
     word_id: str = Form(...),
+    attempt_id: str | None = Form(None),
 ) -> dict:
     """Score a pronunciation attempt (FR-10/FR-11) with design D2.
 
@@ -413,6 +414,11 @@ async def spd_score(
     audio → 422 near-silence (DataIntegrity §1.1) → 503 missing
     ear-verified reference clip → 503 missing measured D₀ → 200 with
     the FR-11 shape. No path can return a fabricated number.
+
+    ``attempt_id`` is an optional caller-supplied label (the booth's
+    ``<session_id>/<take>`` identity) echoed verbatim in the 200 body
+    so a saved response can be joined to human ratings (NFR-10). The
+    server never invents one: omitted → ``"attempt_id": null``.
     """
     wl = _wordlist()
     known = {w.word_id: w for w in wl.words}
@@ -497,6 +503,7 @@ async def spd_score(
             )
 
         return {
+            "attempt_id": attempt_id,
             "similarity_pct": round(score.similarity_pct, 1),
             "vowel_score": round(score.vowel_score, 1),
             "consonant_score": round(score.consonant_score, 1),
