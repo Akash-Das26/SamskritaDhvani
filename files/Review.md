@@ -2951,3 +2951,79 @@ ear-check remains entirely manual, so a promoted D5 canonical clip is
 still not an ear-verified reference and `calibrate`/scoring remain
 gated on that owner step. Promotion is per session; a mixed session
 leaves held clips behind for a later, corrected run by design.
+
+### Phase 5 (Testing) — REC-skeleton emitter (protocol §1–§2)
+
+**Scope (Ground Rule 2, one unit):** producing the §1/§2 sheet the
+gates now demand. No gate logic, promotion target, or booth metadata
+was changed.
+
+```bash
+python -m samskrita_dhvani.rec_skeleton --session <session-id> [--force]
+```
+
+Writes `data/provenance/REC_<session-id>.md` from
+`data/_incoming/<session-id>/session_meta.json` and the `.wav` clips
+present.
+
+**Machine-filled, never invented:**
+
+- **§1:** Session ID, Date / time (`started_utc`), the recording-format
+  target, and the materials version (`wordlist_version`) when the booth
+  recorded it. Program (D4/D5) is printed on a `**Program:**` line above
+  the table because the protocol's §1 field set has no Program row.
+- **§2 per clip:** File, Session ID, Item, Take #, Duration, Peak dBFS,
+  and Clipping? — the last measured with the identical §4 criterion
+  used by promotion (peak ≥ 0.99 or ≥ 0.1% of samples at |x| ≥ 0.999).
+  A filename that does not parse gets blank Item/Take, not a guess; an
+  unreadable clip gets blank measurements and a warning naming it.
+
+**Deliberately blank** (a human must assert these, even where
+`session_meta.json` has a value): room, noise, reciter ID, reciter
+background, recitation tradition, consent reference, device, levels
+notes, procedure, transfer details, and the §2 columns *Silence
+trimmed?*, *Transcript verified?*, *Sweep date*, *Provenance entry*.
+
+**Refusals (rc=2, one loud line):** malformed session id, unknown
+session, missing/unreadable `session_meta.json`, no clips, or an
+existing sheet without `--force`. With `--force` the old sheet is
+copied to `REC_<id>.md.bak-<UTC stamp>` (collision-safe) before the new
+one is written, and the backup path is printed.
+
+**End-to-end proof in tests:** a freshly emitted skeleton is **held by
+`promote --dry-run`** for every blank §1 field and every blank §2
+column; after the same fixture is hand-completed, the same dry run
+reports the session sheet and provenance PASS and promotes both clips.
+
+**Tests (`tests/test_rec_skeleton.py`, 10 tests, synthetic fixtures
+only and marked per NFR-02):** pre-filled §1 values and §2 cells
+(including steady duration/peak shape), measured clipping yes/no, the
+human fields left blank, unparsed-name blanks, fresh skeleton held by
+promote, completed skeleton passing sheet + checklist gates,
+malformed/unknown session, missing metadata, no clips, no-clobber, and
+`--force` backup preserving the old content.
+
+**Test counts (as run):** `pytest tests/test_rec_skeleton.py -q` →
+**10 passed**, rc 0. Full suite before this unit → **229 passed**;
+after → **239 passed, 0 failed**, rc 0 (1,682 pre-existing library
+warnings). No test skipped or xfailed.
+
+**Command evidence (exit status):**
+`python -m samskrita_dhvani.rec_skeleton --session SPD-REC-20990101-01`
+→ **rc=2**, stderr
+`error: unknown session (not under data/_incoming): …/data/_incoming/SPD-REC-20990101-01`.
+
+**No real session exists.** `data/_incoming/` is empty, no REC sheet
+was emitted, and no real audio measurement was taken by this unit; the
+only sheets produced were synthetic fixtures inside pytest.
+
+**Files changed:** `samskrita_dhvani/rec_skeleton.py` (new),
+`tests/test_rec_skeleton.py` (new), `files/RecordingProtocol.md`
+(§5 "Using the skeleton"), `files/Review.md`.
+
+**Honest limits:** the skeleton measures duration, peak, and clipping
+only — it does not run VAD or decide eligibility (promotion does). Its
+row order follows sorted filenames, and its §2 Item is the filename's
+word/verse key, not the Devanagari label. A skeleton is a worksheet,
+not evidence: its measurements describe the incoming file, and every
+human-only field is still required by the gates.

@@ -111,3 +111,27 @@ reciter details are accurate), and the decision to promote at all.
 `POST /api/record/promote` remains a staging helper that writes
 `PROMOTION.md` and never moves a file, so it cannot bypass these
 gates.
+
+### Using the skeleton
+
+```bash
+python -m samskrita_dhvani.rec_skeleton --session <session-id>
+```
+
+This writes `data/provenance/REC_<session-id>.md` from the booth's
+`session_meta.json` and the clips present. Machine-filled: **§1**
+Session ID, Date / time, Program (D4/D5), the recording-format target,
+and the materials version when the booth recorded one; **§2** File,
+Session ID, Item, Take #, Duration, Peak dBFS, and Clipping? (measured
+by the same criterion the §4 sweep uses).
+
+The blanks are deliberate, not omissions: room and noise, reciter ID
+and background, recitation tradition, consent reference, device, levels
+notes, procedure, transfer details, plus the §2 columns *Silence
+trimmed?*, *Transcript verified?*, *Sweep date*, and *Provenance entry*.
+Nothing in `session_meta.json` is copied for those fields — a person
+must confirm them. Until they are filled, the skeleton **fails**
+`promote`'s sheet and checklist gates by design. Re-running without
+`--force` refuses to touch an existing sheet; `--force` copies the old
+one to `REC_<session-id>.md.bak-<UTC stamp>` first and prints the
+backup path.
