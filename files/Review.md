@@ -2767,3 +2767,98 @@ agreement with fewer than 2 common attempts is reported as not
 computable rather than assumed. The CLI reads the human sheet's
 tables as written — it cannot detect a rater misreading the rubric,
 only a rating outside it.
+
+### Phase 5 (Testing) — batch SPD scoring CLI (built)
+
+**Scope (Ground Rule 2, one unit):** the producer half of NFR-10 —
+turning a directory of promoted SPD attempts into the scores file the
+correlation CLI consumes. No reference clip, calibration value, word
+list, or scorer formula was changed.
+
+```bash
+python -m samskrita_dhvani.score_attempts \
+    --attempts <dir of promoted SPD attempt wavs> \
+    --out <scores.jsonl> [--word-from-name] [--force]
+```
+
+- **Word derivation.** Parses the RecordingProtocol §3 name
+  `spd_<item>_<reciter>_<sessionid>_t<take>[_var-*]`; `attempt_id` is
+  the filename stem **verbatim** (variant tag included), which is what
+  the rater sheet must list. The item resolves against the 27-word
+  FR-12 list: exact registry spelling first, then case-folded lookup
+  only when it is unique. The list contains case-only minimal pairs
+  (`pAta`/`pATa`, `tala`/`tAla`, `kAka`/`kAkA`), so a folded item with
+  more than one candidate is skipped as `ambiguous_word`, never
+  resolved by picking one.
+- **`--word-from-name`** additionally accepts the booth's shorter
+  `spd_<item>_<role>_t<take>` names (no reciter/session segment). The
+  word still comes from the name; without the flag the full protocol
+  grammar is required.
+- **Same path as the API:** D1 `load_audio_16k` → DataIntegrity §1.1
+  VAD gate (> 10%) → the word's reference clip (`SPD_REFERENCE_ROOT`,
+  same extension order) → measured per-word D₀ → D2 `score_attempt`,
+  with the API's 1-decimal rounding. No guessed word or fabricated
+  score on any path.
+- **Output:** one JSON object per scored attempt with `attempt_id`,
+  `reference_word`, and the five scores — exactly the shape
+  `nfr10 --scores` accepts (proven by a round-trip test). Written
+  atomically (temp file + `os.replace`), so a partial run cannot
+  masquerade as a complete scores file.
+- **Skips (each printed with its reason and counted by reason):**
+  `unparsed_name`, `unknown_word`, `ambiguous_word`, `excluded`
+  (DataIntegrity §4 register), `decode_failed`, `near_silence`,
+  `reference_missing`, `reference_unreadable`, `calibration_missing`,
+  `axis_unmeasurable`, `duplicate_attempt_id`. Non-audio files are
+  ignored and counted separately.
+- **Refusals (rc=2, one loud stderr line):** attempts directory
+  missing or holding no audio; the word list cannot be built; the
+  calibration artifact is absent (the API's 503
+  `calibration_unavailable` state); the exclusion register is
+  missing/malformed; `--out` exists without `--force`; no attempt
+  survived the gates (nothing is written).
+- **As-run summary:** scored/skipped counts, per-reason breakdown, the
+  output path and line count, and the exact invoked command
+  (`python -m samskrita_dhvani.score_attempts …`).
+
+**Docs updated:** `files/Frontend.md` §4 — the SPD row now shows the
+optional `attempt_id` request field and its echo in the response;
+`files/RecordingProtocol.md` §4 — D5 attempts are scored through this
+CLI and the filename stem is the attempt ID the rating sheet must
+use.
+
+**Tests (`tests/test_score_attempts.py`, 18 tests, synthetic fixtures
+only and named as such per NFR-02):** protocol-name parsing including
+`_var-*` tags and six malformed shapes; booth-style names needing the
+flag; a two-attempt batch asserting the exact JSONL field set; the
+round trip that feeds the CLI's own output into `nfr10` (synthetic
+ratings sheet, `--fixtures`, n = 8); every skip reason in one mixed
+directory with counts; and each refusal — missing dir, empty dir, word
+list unavailable, calibration unavailable, exclusion register missing,
+no-clobber, and overwrite only with `--force`.
+
+**Test counts (as run):** `pytest tests/test_score_attempts.py -q` →
+**18 passed**, rc 0. Full suite before this unit → **194 passed**;
+after → **212 passed, 0 failed**, rc 0 (1,682 pre-existing library
+warnings). No test skipped or xfailed.
+
+**Real-state check (exit status):**
+`python -m samskrita_dhvani.score_attempts --attempts data/_incoming
+--out /tmp/samskrita_scores_probe.jsonl` → **rc=2**, stderr
+`error: attempts directory has no audio files (.wav, .flac, .mp3):
+data/_incoming`; no output file was created. `data/_incoming` is
+empty and `data/spd/calibration.json` still does not exist.
+
+**No real attempt has been scored.** There are no D5 attempts and no
+calibration artifact, so this unit produced no similarity value; every
+number in this entry is a test count, and no correlation or score was
+added to any doc.
+
+**Files changed:** `samskrita_dhvani/score_attempts.py` (new),
+`tests/test_score_attempts.py` (new), `files/Frontend.md`,
+`files/RecordingProtocol.md`, `files/Review.md`.
+
+**Honest limits:** the CLI's per-word reference/calibration misses are
+skips (counted), not rc=2 — only the global artifacts (word list,
+calibration file) stop the run, so a single un-cut reference does not
+hide the rest. Case-only minimal pairs must be spelled with the
+registry's exact case in the filename to be scored.

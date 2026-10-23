@@ -203,7 +203,7 @@ with `Implementation.md`'s Python-first stack):
 | UI action | Needs from backend | Returns to UI |
 |---|---|---|
 | Load word list (§3.2 step 1) | Word registry (`SRS.md` FR-12) | List of `{devanagari, iast, reference_audio_url}` |
-| Submit SPD attempt (§3.2 step 3) | Reference audio + uploaded attempt audio | `{similarity_pct, vowel_score, consonant_score, duration_score, mfcc_dtw_score}` per `SRS.md` FR-11 |
+| Submit SPD attempt (§3.2 step 3) | Reference audio + uploaded attempt audio; optional `attempt_id` form field (the booth's `<session_id>/<take>` identity) | `{attempt_id, similarity_pct, vowel_score, consonant_score, duration_score, mfcc_dtw_score}` per `SRS.md` FR-11 — `attempt_id` is echoed verbatim when supplied and is `null` otherwise; it exists so a saved response can be joined to NFR-10 ratings, and it never changes a score |
 | Submit GVR attempt (§3.3 step 2) | Uploaded recitation audio | `{top_match: {verse_id, devanagari, gloss, confidence}, candidates: [{verse_id, confidence}, ...]}` per `SRS.md` FR-21 |
 | Load status page (§3.4, if built) | Corpus registry + latest `Review.md` sweep entry | `{word_count, verse_coverage, last_sweep_date, sweep_summary}` |
 

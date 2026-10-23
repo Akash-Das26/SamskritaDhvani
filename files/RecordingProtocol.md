@@ -59,6 +59,13 @@ mispronunciation-variant recordings).
   fluent reciter (Hall audio and self-recording are the current
   sources); learner-variant clips are recorded by separate consented
   speakers with the **intended error type labeled at record time**.
+- **SPD attempts (D5) — batch scoring:** promoted attempts are scored
+  through `python -m samskrita_dhvani.score_attempts --attempts <dir>
+  --out <scores.jsonl>`, which reads the word from the §3 filename and
+  applies the same gates as `POST /api/spd/score`. The **filename stem,
+  verbatim** (e.g. `spd_krsna_asha_spd-rec-20261023-01_t2_var-sub`) is
+  the attempt ID the NFR-10 rating sheet must list; do not rename a
+  promoted clip after it has been rated.
 - **Reference-reciter changes:** if the reference reciter changes,
   SPD's per-word `D₀` calibration must be recomputed (design D2) and
   the change logged in `Review.md`.
