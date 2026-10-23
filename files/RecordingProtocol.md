@@ -77,3 +77,37 @@ complete, (b) the session sheet is complete, (c) the file passes the
 `DataIntegrity.md` §4 automated sweep (valid decode, non-silent, no
 clipping), and (d) a PROVENANCE.md entry references the session. Until
 then it stays in `data/_incoming/` (not the corpus tree).
+
+**Enforced in code (2026-10-23):** this rule is applied by
+
+```bash
+python -m samskrita_dhvani.promote --session <session-id> --dry-run
+python -m samskrita_dhvani.promote --session <session-id> --apply
+```
+
+`--dry-run` prints a per-clip pass/hold table and moves nothing;
+`--apply` moves only clips that pass every gate and prints the
+promoted/held counts by reason. A held clip stays in
+`data/_incoming/<session-id>/` and is never repaired or deleted. What
+the code checks:
+
+- **Session sheet (§1):** `data/provenance/REC_<session-id>.md` exists,
+  all fourteen §1 fields are filled, the sheet's Session ID matches,
+  the recitation tradition is stated, and Consent cites a
+  form/reference rather than a bare "yes".
+- **Checklist (§2):** the clip has exactly one row with its filename,
+  all eleven columns filled, and the row's Session ID matches.
+- **Sweep (§4):** the clip re-decodes, clears the VAD speech-fraction
+  line, shows no clipping (peak < 0.99 and < 0.1% of samples at
+  |x| ≥ 0.999), and is not listed in `data/EXCLUDED.csv`.
+- **Provenance:** `files/PROVENANCE.md` references the session ID.
+- **Target safety:** an existing target file is never overwritten; the
+  clip is held and named.
+
+**Still manual:** the §5 label ear-check (nothing in the promote path
+claims a label was listened to), the truthfulness of the filled sheet
+(the gate checks completeness and session match, not whether the
+reciter details are accurate), and the decision to promote at all.
+`POST /api/record/promote` remains a staging helper that writes
+`PROMOTION.md` and never moves a file, so it cannot bypass these
+gates.

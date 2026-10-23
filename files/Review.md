@@ -2862,3 +2862,92 @@ skips (counted), not rc=2 — only the global artifacts (word list,
 calibration file) stop the run, so a single un-cut reference does not
 hide the rest. Case-only minimal pairs must be spelled with the
 registry's exact case in the filename to be scored.
+
+### Phase 5 (Testing) — gated promotion of booth sessions (protocol §5)
+
+**Pre-change finding (read-only audit of `record.py:589–697`):**
+`POST /api/record/promote` writes a `PROMOTION.md` copy mapping and, on
+`force`, marks `session_meta.json` promoted; it never moves a clip. Of
+the four §5 conditions it enforced **none** directly: the §1 sheet was
+never opened, the §2 table was never read (only per-clip
+`.checklist.json` sidecars were written at upload), PROVENANCE.md was
+never checked, and clipping / `data/EXCLUDED.csv` were never gated.
+Decode and near-silence had been checked once at upload time, not at
+promotion. The booth endpoint is therefore staging-only and cannot
+enter a clip into the corpus, so it is left as-is.
+
+**What was built (`samskrita_dhvani/promote.py`, new):**
+
+```bash
+python -m samskrita_dhvani.promote --session <session-id> --dry-run
+python -m samskrita_dhvani.promote --session <session-id> --apply
+```
+
+- **Session sheet gate:** `data/provenance/REC_<session-id>.md` must
+  exist; all fourteen §1 fields must be filled; the sheet's Session ID
+  must match the session; the recitation tradition must be stated; and
+  Consent must cite a form/reference (a bare "yes"/"obtained" is
+  held).
+- **Checklist gate:** exactly one §2 row with the clip's filename, all
+  eleven columns filled, and the row's Session ID matching.
+- **Sweep gate:** the clip re-decodes, clears the VAD line (> 10%), has
+  peak < 0.99 and < 0.1% of samples at |x| ≥ 0.999, and is not listed
+  in `data/EXCLUDED.csv`.
+- **Provenance gate:** `files/PROVENANCE.md` references the session ID.
+- **Target safety:** an existing target is never overwritten — the clip
+  is held as `target_exists`. A filename that cannot produce a protocol
+  target is held as `name`.
+- **Apply:** moves only clips with zero failures, creating target
+  parents, and prints `promoted N · held M` plus per-reason counts.
+  Held clips stay in `data/_incoming/<session-id>/`; nothing is
+  repaired, substituted, or deleted. Dry run prints the same table and
+  moves nothing (it does not even create target directories).
+- **Refusals (rc=2, one loud line):** malformed session id, session
+  not found, missing/corrupt `session_meta.json`, unknown program, no
+  `.wav` clips, or `--apply` with nothing promoted. `--dry-run` and
+  `--apply` are mutually exclusive and one is required (argparse = 2).
+- **Targets:** D5 canonical → `data/spd/reference_words/<word_id>.wav`;
+  D5 recitation → `data/spd/recitations/<word_id>__t<take>.wav`; D4 →
+  `data/gvr_recordings/gvr_c<ch>v<vv>_<reciter>_<session>_t<take>.wav`
+  (the booth's existing mapping). Per-clip `.checklist.json` sidecars
+  stay in `_incoming` with the session record.
+
+**Docs:** `files/RecordingProtocol.md` §5 now states which conditions
+are enforced in code (a–d as above, plus target safety) and which stay
+manual — the label ear-check, the truthfulness of the sheet's contents,
+and the decision to promote — and notes that the booth's mapping
+endpoint cannot bypass the gates.
+
+**Tests (`tests/test_promote.py`, 17 tests, synthetic fixtures only and
+marked as such per NFR-02):** all gates passing with a real move; dry
+run moving nothing; each gate failing alone (missing sheet, empty §1
+field, bare consent, missing row, incomplete row, provenance without
+the session, near-silence, clipping, decode failure, EXCLUDED listing,
+existing target); a mixed session (2 promoted / 2 held, reasons
+counted); D4 protocol naming; mode selection (neither/both → 2); and
+unknown-session / missing-metadata refusals.
+
+**Test counts (as run):** `pytest tests/test_promote.py -q` → **17
+passed**, rc 0. Full suite before this unit → **212 passed**; after →
+**229 passed, 0 failed**, rc 0 (1,682 pre-existing library warnings).
+No test skipped or xfailed.
+
+**Command evidence (exit status):**
+`python -m samskrita_dhvani.promote --session SPD-REC-20990101-01
+--dry-run` → **rc=2**, stderr
+`error: session not found in data/_incoming: …/data/_incoming/SPD-REC-20990101-01`.
+
+**No real session has been promoted.** `data/_incoming/` is empty;
+no clip has been moved by this unit, and no score or correlation
+number was added to any doc.
+
+**Files changed:** `samskrita_dhvani/promote.py` (new),
+`tests/test_promote.py` (new), `files/RecordingProtocol.md`,
+`files/Review.md`.
+
+**Honest limits:** the gates verify *completeness and consistency* of
+the sheet and checklist rows, not their truthfulness; the §5 label
+ear-check remains entirely manual, so a promoted D5 canonical clip is
+still not an ear-verified reference and `calibrate`/scoring remain
+gated on that owner step. Promotion is per session; a mixed session
+leaves held clips behind for a later, corrected run by design.
