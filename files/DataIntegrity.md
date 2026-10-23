@@ -128,6 +128,20 @@ by a new logged sweep that clears it, with owner approval. The audio
 files themselves are never deleted by this rule — exclusion is a
 status, not an erasure.
 
+**The register is now enforced (2026-10-23).** `samskrita_dhvani/
+exclusions.py` parses and validates the CSV, and two enforcement points
+apply it: (a) `frontend.load_audio_16k`, the single corpus-facing
+loader used by training, calibration, sweeps, evaluation, and the API,
+**refuses** a registered path with `ExcludedAudioError`; (b) the corpus
+walkers of `build_registry` and `calibrate` **skip** registered paths
+and print the loud count of how many they skipped. A missing or
+malformed register is never treated as "no exclusions": the loader
+raises `ExclusionRegisterError` and the CLIs exit `rc=2` with the
+register path and the parse problem named. Register paths are
+repository-relative and resolve against the project root, so the same
+register means the same files from any working directory. Enforcement
+is covered by `tests/test_exclusions.py` (synthetic fixtures only).
+
 **Sweep result table format (for Review.md):**
 
 | Item (word/verse) | Samples | Corrupted found/excluded | Duplicates | Cross-split leaks (GVR only) | Provenance on file? | Label spot-checked? |

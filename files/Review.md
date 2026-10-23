@@ -2586,3 +2586,86 @@ duplicate scan over 77,933 files (0); duplicate grouping script (0);
 **Not run (unchanged from the audit):** GVR split-leak check (no
 registry); human label listen-through; GVR validity (no recordings);
 model checks (no models).
+
+## Session: 2026-10-23
+
+### Phase 6 (Maintenance) — exclusion register enforced in code
+
+**Scope (Ground Rule 2, one unit):** `data/EXCLUDED.csv` existed but
+nothing read it — exclusion was policy only. This unit makes the
+register binding. No audio was deleted or edited, the register's rows
+were not changed, and no scoring path was otherwise altered.
+
+**What was built:**
+
+- **`samskrita_dhvani/exclusions.py` (new).** Validates the register
+  (`path,reason,date` header exactly; 3 columns per row; non-empty
+  path **and** reason; `YYYY-MM-DD` date; empty file rejected) and
+  exposes `load_excluded_rows` / `load_excluded_paths` /
+  `assert_allowed` / `filter_excluded`. Register rows are
+  repository-relative and resolve against the project root, so the
+  register means the same files from any cwd. Parsing is cached per
+  (mtime, size), so a hot loader does not re-read the CSV per clip and
+  an edited register invalidates itself.
+- **Loader refusal.** `frontend.load_audio_16k` — the single
+  corpus-facing decode path used by training, calibration, sweeps,
+  evaluation, and the API — calls `assert_allowed` before decoding and
+  raises `ExcludedAudioError` naming the register, reason, and
+  registration date.
+- **Sweep skip + loud count.** The corpus walkers of
+  `build_registry` (`--recordings`) and `calibrate`
+  (`--references`/`--recitations`, including `<word_id>/` subdirs) pass
+  their listings through `filter_excluded`, which drops registered
+  paths and prints
+  `! EXCLUDED register: skipped N file(s) listed in … (label)` to
+  stderr. `build_registry` also carries `N excluded by
+  data/EXCLUDED.csv` in its as-run summary line.
+- **Fail-loud, not fail-open.** A missing, empty, or malformed
+  register raises `ExclusionRegisterError`; both CLIs catch it, name
+  the register/parse problem on stderr, and return **rc=2**. There is
+  no path where an unreadable register silently disables exclusion.
+
+**Tests (`tests/test_exclusions.py`, 17 tests, all synthetic fixtures
+labelled as such per NFR-02):** register parsing/normalisation/
+dedup, repo-relative rows independent of cwd, the five malformed-row
+cases (header, column count, empty path, missing reason, bad date),
+empty and missing register, loader refusal (message carries reason +
+register), loader still loading an unregistered clip, the skip-and-
+count print, silence when nothing is registered, `calibrate` rc=2 for
+missing and for malformed register, `build_registry` rc=2 for a
+missing register, and a gate that the shipped `data/EXCLUDED.csv`
+parses with a reason on every row.
+
+**Test counts (as run):** full suite before the new tests
+(`pytest tests/ --ignore=tests/test_exclusions.py -q`) → **162
+passed**, rc 0. New file alone after the first pass → **16 passed**,
+rc 0; after adding the cwd-independence test → **17 passed**, rc 0.
+Full suite after all edits → **179 passed, 0 failed**, rc 0
+(1,682 warnings, all pre-existing library deprecations/`n_fft`
+warnings). No test was skipped or xfailed.
+
+**Real-data behaviour probe (`.venv/bin/python3`, rc 0):**
+`register rows: 1369`; the first registered path
+(`corpus/mahabharata_audio/parva01-001-100-master/mp3/001-045p1.mp3`)
+was refused by the loader with `ExcludedAudioError`; a walk of
+`corpus/vaksancayah/sp001` found **11,625** MP3s, of which **821** were
+registered and skipped and **10,804** were kept — the loud count line
+printed; the first kept clip still decoded (`84,010` samples @16 kHz
+float32); a nonexistent register path raised `ExclusionRegisterError`.
+
+**Commands actually run (exit status):**
+`pytest tests/test_exclusions.py -q` → 0 (16 passed, then 17 passed);
+`pytest tests/ --ignore=tests/test_exclusions.py -q` → 0 (162
+passed); `pytest tests/ -q` → 0 (179 passed); real-data probe → 0.
+
+**Files changed:** `samskrita_dhvani/exclusions.py` (new),
+`samskrita_dhvani/frontend.py`, `samskrita_dhvani/build_registry.py`,
+`samskrita_dhvani/calibrate.py`, `tests/test_exclusions.py` (new),
+`files/DataIntegrity.md` (§4 register paragraph now says enforced),
+`files/Review.md`.
+
+**Honest limits:** enforcement covers the package's corpus-facing
+loader and the two corpus walkers; the one-off `tools/` maintenance
+scripts (e.g. `tools/restore_spd_audio.py`) do not yet consult the
+register. The register itself is unchanged (1,369 rows), and no
+reported score exists that this change could alter.

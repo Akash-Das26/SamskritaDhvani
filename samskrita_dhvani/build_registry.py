@@ -46,6 +46,10 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+from samskrita_dhvani.exclusions import (
+    ExclusionRegisterError,
+    filter_excluded,
+)
 from samskrita_dhvani.frontend import load_audio_16k, vad_speech_fraction
 from samskrita_dhvani.registry import GvrRegistry, VerseEntry
 
@@ -165,9 +169,19 @@ def main(argv: list[str] | None = None) -> int:
               "tools/build_gvr_itemlist.py first)", file=sys.stderr)
         return 2
 
+    try:
+        candidate_paths, excluded_paths = filter_excluded(
+            _audio_files(args.recordings),
+            label="build_registry corpus sweep",
+        )
+    except ExclusionRegisterError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+
     rows = []
     n_skipped = 0
-    for p in _audio_files(args.recordings):
+    n_excluded = len(excluded_paths)
+    for p in candidate_paths:
         parsed = parse_promoted_name(p)
         if parsed is None:
             print(f"  ! skipping '{p.name}': does not match the "
@@ -296,7 +310,8 @@ def main(argv: list[str] | None = None) -> int:
         verses_by_split[e.split].add(e.verse_id)
 
     print(f"wrote {args.out} (schema_version 1, split_policy {policy}, "
-          f"{len(registry.entries)} rows, {n_skipped} skipped)")
+          f"{len(registry.entries)} rows, {n_skipped} skipped, "
+          f"{n_excluded} excluded by data/EXCLUDED.csv)")
     print(f"provenance: {args.source_id} / {args.acquired_on} · "
           f"tradition: {args.recitation_tradition}")
     for split in ("train", "validation", "test"):

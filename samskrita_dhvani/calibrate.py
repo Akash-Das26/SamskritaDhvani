@@ -30,6 +30,10 @@ import argparse
 import sys
 from pathlib import Path
 
+from samskrita_dhvani.exclusions import (
+    ExclusionRegisterError,
+    filter_excluded,
+)
 from samskrita_dhvani.frontend import load_audio_16k
 from samskrita_dhvani.spd_scorer import CalibrationBuilder
 
@@ -45,7 +49,10 @@ def _audio_files(directory: Path) -> list[Path]:
 def find_canonical(ref_dir: Path) -> dict[str, Path]:
     """word_id → canonical clip, from ``<word_id>.<ext>`` files."""
     found: dict[str, Path] = {}
-    for p in _audio_files(ref_dir):
+    paths, _ = filter_excluded(
+        _audio_files(ref_dir), label=f"calibrate references {ref_dir}"
+    )
+    for p in paths:
         word_id = p.stem
         if word_id in found:
             print(f"  ! duplicate canonical clip for '{word_id}': "
@@ -60,13 +67,19 @@ def find_recitations(rec_dir: Path) -> dict[str, list[Path]]:
     """word_id → known-correct recitations, from ``<word_id>__*.ext``
     siblings and/or ``<word_id>/`` subdirectories."""
     found: dict[str, list[Path]] = {}
-    for p in _audio_files(rec_dir):
+    paths, _ = filter_excluded(
+        _audio_files(rec_dir), label=f"calibrate recitations {rec_dir}"
+    )
+    for p in paths:
         if "__" in p.stem:
             word_id = p.stem.split("__", 1)[0]
             found.setdefault(word_id, []).append(p)
     for sub in sorted(rec_dir.iterdir()):
         if sub.is_dir():
-            clips = _audio_files(sub)
+            clips, _ = filter_excluded(
+                _audio_files(sub),
+                label=f"calibrate recitations {sub}",
+            )
             if clips:
                 found.setdefault(sub.name, []).extend(clips)
     return found
@@ -107,8 +120,12 @@ def main(argv: list[str] | None = None) -> int:
               "deliberately)", file=sys.stderr)
         return 2
 
-    canonical = find_canonical(args.references)
-    recitations = find_recitations(args.recitations)
+    try:
+        canonical = find_canonical(args.references)
+        recitations = find_recitations(args.recitations)
+    except ExclusionRegisterError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
     word_ids = sorted(set(canonical) & set(recitations))
     for w in sorted((set(canonical) | set(recitations))
                     - (set(canonical) & set(recitations))):

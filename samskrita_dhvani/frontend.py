@@ -34,6 +34,8 @@ import webrtcvad
 import parselmouth
 from parselmouth import praat
 
+from samskrita_dhvani.exclusions import assert_allowed
+
 __all__ = [
     "FrontendConfig",
     "DEFAULT_CONFIG",
@@ -122,7 +124,16 @@ def load_audio_16k(path: str, config: FrontendConfig = DEFAULT_CONFIG) -> np.nda
     Accepts any format ``soundfile`` reads (WAV/FLAC/MP3/OGG). Mono is
     produced by averaging channels; resampling uses librosa's polyphase
     resampler. Returns float32 in [-1, 1].
+
+    Every corpus-facing consumer goes through this function, so it is
+    where the DataIntegrity.md §4 exclusion register is enforced: a
+    path listed in ``data/EXCLUDED.csv`` raises
+    :class:`samskrita_dhvani.exclusions.ExcludedAudioError` instead of
+    decoding. A missing or malformed register raises
+    :class:`~samskrita_dhvani.exclusions.ExclusionRegisterError` — the
+    loader never proceeds with exclusion silently disabled.
     """
+    assert_allowed(path)
     audio, sr = sf.read(path, dtype="float32", always_2d=True)
     mono = audio.mean(axis=1)
     if sr != config.sample_rate:
