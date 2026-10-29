@@ -76,26 +76,30 @@
     var section = anchor ? anchor.closest('section') : null;
     if (!section) return;
 
-    var wrap = document.createElement('section');
+    /* Inside the recording card, directly under the capture controls, so
+     * the graph is in view with the microphone. Appending to the card's
+     * inner surface keeps the Stitch layout and only adds the strip. */
+    var host = section.querySelector('.bg-surface-container-lowest') || section;
+
+    var wrap = document.createElement('div');
     wrap.id = 'demoComparison';
     wrap.className =
-      'bg-surface-container-low rounded-xl p-space-lg shadow-sm ' +
-      'flex flex-col gap-space-md';
+      'flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/50';
     wrap.innerHTML =
       '<div class="flex flex-col sm:flex-row sm:items-center justify-between ' +
       'gap-space-xs">' +
         '<div class="flex items-center gap-space-sm">' +
           '<span class="font-label-lg text-label-lg uppercase tracking-wider ' +
-          'text-on-surface font-semibold">Waveform Comparison</span>' +
+          'text-on-surface font-semibold">Reference vs attempt</span>' +
           '<span class="px-2 py-0.5 bg-surface-container rounded font-code ' +
-          'text-code text-on-surface-variant">reference vs attempt</span>' +
+          'text-code text-on-surface-variant">demo graph</span>' +
         '</div>' +
         '<span class="font-code text-[10px] text-on-surface-variant">' +
-          'demo addition · Frontend.md §6.1 strip</span>' +
+          'shaded band = active span (browser estimate)</span>' +
       '</div>' +
-      '<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">' +
-        '<div class="flex items-center justify-between bg-surface-container-lowest ' +
-        'rounded-lg px-space-sm py-space-xs shadow-sm">' +
+      '<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">' +
+        '<div class="flex items-center justify-between bg-surface-container-low ' +
+        'rounded px-space-sm py-space-xs">' +
           '<div class="flex flex-col">' +
             '<span class="font-label-sm text-label-sm uppercase tracking-wider ' +
             'text-on-surface-variant">Reference recitation</span>' +
@@ -108,8 +112,8 @@
             '<span class="material-symbols-outlined text-[16px]">play_arrow</span>' +
             '<span id="demoPlayRefLabel">Play reference</span></button>' +
         '</div>' +
-        '<div class="flex items-center justify-between bg-surface-container-lowest ' +
-        'rounded-lg px-space-sm py-space-xs shadow-sm">' +
+        '<div class="flex items-center justify-between bg-surface-container-low ' +
+        'rounded px-space-sm py-space-xs">' +
           '<div class="flex flex-col">' +
             '<span class="font-label-sm text-label-sm uppercase tracking-wider ' +
             'text-on-surface-variant">Your attempt</span>' +
@@ -123,16 +127,16 @@
             '<span id="demoPlayAttLabel">Play attempt</span></button>' +
         '</div>' +
       '</div>' +
-      '<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm">' +
+      '<div class="bg-surface-container-low rounded p-space-sm">' +
         '<canvas id="demoCompareCanvas" class="w-full block" height="132" ' +
         'aria-label="Reference and attempt waveforms"></canvas>' +
         '<div class="flex justify-between font-code text-[10px] ' +
         'text-on-surface-variant/70 pt-1">' +
-          '<span>reference lane</span><span>attempt lane</span>' +
+          '<span>reference lane · top</span><span>attempt lane · bottom</span>' +
         '</div>' +
       '</div>';
 
-    section.parentNode.insertBefore(wrap, section.nextSibling);
+    host.appendChild(wrap);
 
     canvas = el('demoCompareCanvas');
     ctx = canvas.getContext('2d');
@@ -168,6 +172,37 @@
     return out;
   }
 
+  /* The span of each clip that actually carries sound, found from the
+   * envelope at 8 % of the clip's own peak. This is a browser-side visual
+   * aid only — the server's VAD gate is what decides what is scored. */
+  function activeSpan(buffer) {
+    var ch = buffer.getChannelData(0);
+    var bins = 300;
+    var step = Math.max(1, Math.floor(ch.length / bins));
+    var env = [];
+    var max = 0;
+    for (var i = 0; i < bins; i++) {
+      var peak = 0;
+      for (var j = i * step; j < Math.min(ch.length, (i + 1) * step); j++) {
+        var v = Math.abs(ch[j]);
+        if (v > peak) peak = v;
+      }
+      env.push(peak);
+      if (peak > max) max = peak;
+    }
+    if (!(max > 0)) return null;
+    var threshold = 0.08 * max;
+    var first = -1, last = -1;
+    for (var k = 0; k < env.length; k++) {
+      if (env[k] > threshold) {
+        if (first < 0) first = k;
+        last = k;
+      }
+    }
+    if (first < 0) return null;
+    return [first / bins, (last + 1) / bins];
+  }
+
   function drawLane(buffer, rect, color, emptyLabel) {
     var mid = rect.y + rect.h / 2;
     ctx.strokeStyle = 'rgba(138,114,108,0.35)';
@@ -183,6 +218,15 @@
       ctx.fillText(emptyLabel, rect.x + 6, mid + 4);
       return;
     }
+
+    var span = activeSpan(buffer);
+    if (span) {
+      ctx.fillStyle = 'rgba(93,63,0,0.12)';
+      ctx.fillRect(rect.x + 6 + span[0] * (rect.w - 12), rect.y + 2,
+                   Math.max(1, (span[1] - span[0]) * (rect.w - 12)),
+                   rect.h - 4);
+    }
+
     var n = Math.max(24, Math.floor(rect.w - 12));
     var p = peaks(buffer, n);
     var bw = (rect.w - 12) / p.length;
