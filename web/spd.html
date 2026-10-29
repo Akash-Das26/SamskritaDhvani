@@ -586,7 +586,7 @@
                         <!-- Panel B: Segment-by-segment Error Bar (Canvas) -->
                         <div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between border border-outline-variant/20 shadow-sm">
                             <div class="flex items-center justify-between">
-                                <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph B · Acoustic segment profile</span>
+                                <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph B · Alignment cost by time bin</span>
                                 <span class="font-code text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary">LIVE · this attempt</span>
                             </div>
 
@@ -596,7 +596,7 @@
                             </div>
 
                             <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs border-t border-outline-variant/20">
-                                <span>acoustic segments (voiced / unvoiced) · derived from the sub-scores, not measured per segment</span>
+                                <span>local cost along this attempt's DTW path · 7 equal bins of the reference timeline</span>
                                 <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-error inline-block"></span>&gt; mean</span>
                             </div>
                         </div>
@@ -622,8 +622,8 @@
                         <!-- Panel D: Full Diagnostic Chart Trigger -->
                         <div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between border border-outline-variant/20 shadow-sm">
                             <div class="flex items-center justify-between">
-                                <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph D · Reference-baseline panels</span>
-                                <span class="font-code text-[10px] px-2 py-0.5 rounded bg-secondary/10 text-secondary">IMPORTED · Dhvani-Yantra, synthetic TTS audio</span>
+                                <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph D · Attempt diagnostics</span>
+                                <span class="font-code text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary">LIVE · this attempt</span>
                             </div>
 
                             <div class="my-space-md flex flex-col items-center justify-center gap-space-sm text-center">
@@ -631,8 +631,8 @@
                                     <span class="material-symbols-outlined text-[28px]">multimodal_hand_eye</span>
                                 </div>
                                 <div>
-                                    <h4 class="font-label-lg text-label-lg font-semibold text-on-surface">F1/F2 baseline · DTW path · segment profile</h4>
-                                    <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">F1/F2 baselines and the DTW path come from the Dhvani-Yantra P1 reference-versus-itself run; the student markers are derived from this attempt's vowel sub-score.</p>
+                                    <h4 class="font-label-lg text-label-lg font-semibold text-on-surface">Formants · DTW path · alignment cost</h4>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">All three panels are measured from this attempt and its reference: both clips' F1/F2 tracks, the optimal DTW path, and the local cost in 7 bins of the reference timeline.</p>
                                 </div>
                                 <button id="openDiagBtn" type="button" class="mt-space-xs px-space-md py-2 rounded bg-primary hover:bg-secondary text-on-primary font-body-sm text-body-sm font-medium flex items-center gap-2 transition-colors shadow-sm">
                                     <span class="material-symbols-outlined text-[18px]">zoom_in</span>
@@ -641,7 +641,7 @@
                             </div>
 
                             <div class="font-label-sm text-label-sm text-on-surface-variant pt-space-xs border-t border-outline-variant/20">
-                                Click to open the reference-baseline panels. No waveform or spectrogram is drawn on this page.
+                                Click to open the measured panels. No waveform or spectrogram is drawn on this page.
                             </div>
                         </div>
                     </div>
@@ -662,18 +662,19 @@
                         </div>
                     </div>
                     <div class="p-space-lg bg-surface-container-lowest overflow-y-auto max-h-[70vh]">
-                        <!-- 3-panel canvas: Waveform+F1F2, DTW Path, Segment Error -->
+                        <!-- 3-panel canvas: F1/F2 tracks, DTW path, alignment cost bins -->
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
                             <div class="flex flex-col gap-space-xs">
                                 <span class="font-code text-[10px] text-on-surface-variant uppercase tracking-wider">Formant Trajectory (F1/F2)</span>
                                 <canvas id="diagFormantCanvas" width="280" height="200" class="w-full rounded border border-outline-variant/20"></canvas>
+                                <span class="font-code text-[9px] text-on-surface-variant/70">Praat Burg formants, measured on synthetic audio</span>
                             </div>
                             <div class="flex flex-col gap-space-xs">
                                 <span class="font-code text-[10px] text-on-surface-variant uppercase tracking-wider">DTW Warp Path</span>
                                 <canvas id="diagDtwCanvas" width="280" height="200" class="w-full rounded border border-outline-variant/20"></canvas>
                             </div>
                             <div class="flex flex-col gap-space-xs">
-                                <span class="font-code text-[10px] text-on-surface-variant uppercase tracking-wider">Segment Error Profile</span>
+                                <span class="font-code text-[10px] text-on-surface-variant uppercase tracking-wider">Alignment cost by time bin</span>
                                 <canvas id="diagSegCanvas" width="280" height="200" class="w-full rounded border border-outline-variant/20"></canvas>
                             </div>
                         </div>
@@ -702,7 +703,7 @@
                         </p>
                     </div>
                     <div class="p-space-md bg-surface-container-low border-t border-outline-variant/30 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
-                        <span>3-panel live inspector: F1/F2 trajectories, DTW warp path, per-segment MFCC error — driven by POST /api/spd/score</span>
+                        <span>3-panel live inspector: F1/F2 tracks, DTW warping path, alignment cost by time bin — driven by POST /api/spd/score</span>
                         <a id="diagPngLink" href="/demo/static/P1/P1_krishna.png" target="_blank" class="text-primary hover:underline flex items-center gap-1">
                             <span class="material-symbols-outlined text-[16px]">open_in_new</span> Research PNG
                         </a>
@@ -947,15 +948,17 @@
                         if (liveTag) liveTag.classList.add('hidden');
                         _drawEmptyDiagPanel($('diagFormantCanvas'), 'F1/F2 — submit attempt first');
                         _drawEmptyDiagPanel($('diagDtwCanvas'), 'DTW path — submit attempt first');
-                        _drawEmptyDiagPanel($('diagSegCanvas'), 'Segment errors — submit attempt first');
+                        _drawEmptyDiagPanel($('diagSegCanvas'), 'Cost profile — submit attempt first');
                         return;
                     }
                     if (noScore) noScore.classList.add('hidden');
                     if (scoreRow) scoreRow.classList.remove('hidden');
                     if (liveTag) liveTag.classList.remove('hidden');
                     if ($('diagSim')) $('diagSim').textContent = (scoreData.similarity_pct != null ? scoreData.similarity_pct.toFixed(1) : '—') + '%';
-                    if ($('diagF1')) $('diagF1').textContent = (scoreData.f1_ref != null ? Math.round(scoreData.f1_ref) : '—') + ' → ' + (scoreData.f1_stu != null ? Math.round(scoreData.f1_stu) : '—') + ' Hz';
-                    if ($('diagF2')) $('diagF2').textContent = (scoreData.f2_ref != null ? Math.round(scoreData.f2_ref) : '—') + ' → ' + (scoreData.f2_stu != null ? Math.round(scoreData.f2_stu) : '—') + ' Hz';
+                    var fm = (scoreData.formants && scoreData.formants.attempt && scoreData.formants.attempt.median_hz) || {};
+                    var fr = (scoreData.formants && scoreData.formants.reference && scoreData.formants.reference.median_hz) || {};
+                    if ($('diagF1')) $('diagF1').textContent = (fr.f1 != null ? Math.round(fr.f1) : '—') + ' → ' + (fm.f1 != null ? Math.round(fm.f1) : '—') + ' Hz';
+                    if ($('diagF2')) $('diagF2').textContent = (fr.f2 != null ? Math.round(fr.f2) : '—') + ' → ' + (fm.f2 != null ? Math.round(fm.f2) : '—') + ' Hz';
                     if ($('diagDur')) $('diagDur').textContent = scoreData.duration_ratio != null ? scoreData.duration_ratio.toFixed(3) : '—';
                     _drawFormantPanel($('diagFormantCanvas'), scoreData);
                     _drawDtwPanel($('diagDtwCanvas'), scoreData);
@@ -976,42 +979,56 @@
                     var ctx = cvs.getContext('2d'); var W = cvs.width, H = cvs.height;
                     ctx.clearRect(0, 0, W, H);
                     ctx.fillStyle = '#f7f3ef'; ctx.fillRect(0, 0, W, H);
-                    var padL = 32, padR = 12, padT = 18, padB = 28;
+                    var padL = 34, padR = 10, padT = 22, padB = 26;
                     var cW = W - padL - padR, cH = H - padT - padB;
-                    // Reference F1, F2 and student as horizontal lines
-                    var f1r = d.f1_ref || 400, f2r = d.f2_ref || 1600;
-                    var f1s = d.f1_stu || f1r, f2s = d.f2_stu || f2r;
-                    var maxF = Math.max(f2r, f2s) * 1.1, minF = 0;
-                    var scaleY = function(f) { return padT + cH - ((f - minF) / (maxF - minF)) * cH; };
-                    // Axes
+                    var F = d.formants || null;
+                    if (!F || !F.attempt || !F.attempt.available) {
+                        var why = (F && F.attempt && F.attempt.reason) ? F.attempt.reason : 'not available';
+                        ctx.fillStyle = '#8a726c'; ctx.font = '10px JetBrains Mono'; ctx.textAlign = 'center';
+                        ctx.fillText('Formants not available: ' + why, W / 2, H / 2);
+                        return;
+                    }
+                    var tracks = [
+                        { side: 'reference', name: 'F1 ref', key: 'f1', color: '#a13f2a', dash: [4, 3] },
+                        { side: 'reference', name: 'F2 ref', key: 'f2', color: '#7e260f', dash: [4, 3] },
+                        { side: 'attempt', name: 'F1 att', key: 'f1', color: '#ba1a1a', dash: [] },
+                        { side: 'attempt', name: 'F2 att', key: 'f2', color: '#e07a5f', dash: [] }
+                    ];
+                    var maxHz = 0;
+                    tracks.forEach(function (t) {
+                        var arr = F[t.side] && F[t.side][t.key] ? F[t.side][t.key] : [];
+                        arr.forEach(function (pt) { if (pt.hz != null && pt.hz > maxHz) maxHz = pt.hz; });
+                    });
+                    if (maxHz <= 0) {
+                        ctx.fillStyle = '#8a726c'; ctx.font = '10px JetBrains Mono'; ctx.textAlign = 'center';
+                        ctx.fillText('No finite formant samples', W / 2, H / 2);
+                        return;
+                    }
+                    maxHz *= 1.1;
+                    var yFor = function (hz) { return padT + cH - (hz / maxHz) * cH; };
                     ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
                     ctx.beginPath(); ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
-                    // Reference lines
-                    [[f1r, 'F1 ref', '#a13f2a'], [f2r, 'F2 ref', '#7e260f']].forEach(function(item) {
-                        var y = scaleY(item[0]);
-                        ctx.strokeStyle = item[2]; ctx.lineWidth = 1.5; ctx.setLineDash([4, 3]);
-                        ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(padL + cW, y); ctx.stroke();
-                        ctx.setLineDash([]);
-                        ctx.fillStyle = item[2]; ctx.font = 'bold 9px JetBrains Mono'; ctx.textAlign = 'left';
-                        ctx.fillText(item[1] + ' ' + Math.round(item[0]) + 'Hz', padL + 3, y - 3);
+
+                    tracks.forEach(function (t) {
+                        var arr = F[t.side] && F[t.side][t.key] ? F[t.side][t.key] : [];
+                        if (!arr.length) return;
+                        var tMax = arr[arr.length - 1].t_s || 1;
+                        ctx.strokeStyle = t.color; ctx.lineWidth = 1.4; ctx.setLineDash(t.dash);
+                        ctx.beginPath();
+                        var started = false;
+                        arr.forEach(function (pt) {
+                            if (pt.hz == null) { started = false; return; }
+                            var x = padL + (pt.t_s / tMax) * cW;
+                            var y = yFor(pt.hz);
+                            if (!started) { ctx.moveTo(x, y); started = true; } else ctx.lineTo(x, y);
+                        });
+                        ctx.stroke(); ctx.setLineDash([]);
                     });
-                    // Student markers (dots)
-                    [[f1s, '#ba1a1a', 'F1 stu'], [f2s, '#ba1a1a', 'F2 stu']].forEach(function(item) {
-                        var y = scaleY(item[0]);
-                        ctx.fillStyle = item[1];
-                        ctx.beginPath(); ctx.arc(padL + cW * 0.75, y, 5, 0, 2 * Math.PI); ctx.fill();
-                        ctx.fillStyle = item[1]; ctx.font = '9px JetBrains Mono'; ctx.textAlign = 'left';
-                        ctx.fillText(item[2] + ' ' + Math.round(item[0]) + 'Hz', padL + cW * 0.75 + 8, y + 3);
-                    });
-                    // Connecting arrows
-                    [[f1r, f1s], [f2r, f2s]].forEach(function(pair) {
-                        var y0 = scaleY(pair[0]), y1 = scaleY(pair[1]);
-                        ctx.strokeStyle = '#ba1a1a'; ctx.lineWidth = 1; ctx.globalAlpha = 0.5;
-                        ctx.beginPath(); ctx.moveTo(padL + cW * 0.5, y0); ctx.lineTo(padL + cW * 0.75, y1); ctx.stroke();
-                        ctx.globalAlpha = 1;
-                    });
-                    ctx.fillStyle = '#56423d'; ctx.font = '10px JetBrains Mono'; ctx.textAlign = 'center';
-                    ctx.fillText('Formant (Hz)', W / 2, H - 6);
+
+                    ctx.fillStyle = '#56423d'; ctx.font = '9px JetBrains Mono'; ctx.textAlign = 'left';
+                    ctx.fillText('F1/F2 (Hz), measured', padL, padT - 8);
+                    ctx.textAlign = 'center';
+                    ctx.fillText('time (s)', padL + cW / 2, H - 6);
                 }
 
                 function _drawDtwPanel(cvs, d) {
@@ -1054,9 +1071,9 @@
                     ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
                     ctx.beginPath(); ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
                     ctx.fillStyle = '#8a726c'; ctx.font = '10px JetBrains Mono';
-                    ctx.textAlign = 'center'; ctx.fillText('Student frames', padL + cW / 2, H - 6);
+                    ctx.textAlign = 'center'; ctx.fillText('reference frames', padL + cW / 2, H - 6);
                     ctx.save(); ctx.translate(10, padT + cH / 2); ctx.rotate(-Math.PI / 2);
-                    ctx.fillText('Reference', 0, 0); ctx.restore();
+                    ctx.fillText('attempt frames', 0, 0); ctx.restore();
                 }
 
                 function _drawDiagSegPanel(cvs, d) {
@@ -1064,33 +1081,30 @@
                     var ctx = cvs.getContext('2d'); var W = cvs.width, H = cvs.height;
                     ctx.clearRect(0, 0, W, H);
                     ctx.fillStyle = '#f7f3ef'; ctx.fillRect(0, 0, W, H);
-                    var segs = d.segments || [];
-                    if (!segs.length) { ctx.fillStyle = '#8a726c'; ctx.font = '11px JetBrains Mono'; ctx.textAlign = 'center'; ctx.fillText('No segment data', W/2, H/2); return; }
-                    var padL = 20, padR = 16, padT = 18, padB = 26;
+                    var bins = (d.cost_profile && d.cost_profile.bins) ? d.cost_profile.bins : [];
+                    if (!bins.length) { ctx.fillStyle = '#8a726c'; ctx.font = '11px JetBrains Mono'; ctx.textAlign = 'center'; ctx.fillText('No cost profile', W/2, H/2); return; }
+                    var padL = 24, padR = 12, padT = 20, padB = 26;
                     var cW = W - padL - padR, cH = H - padT - padB;
-                    var maxErr = Math.max(0.1, Math.max.apply(null, segs.map(function(s){ return s.err; }))) * 1.2;
-                    var mean = segs.reduce(function(a, s){ return a + s.err; }, 0) / segs.length;
+                    var vals = bins.map(function(b){ return b.mean_cost; }).filter(function(v){ return v != null; });
+                    var maxCost = Math.max(0.1, Math.max.apply(null, vals) * 1.2);
                     ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
                     ctx.beginPath(); ctx.moveTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
-                    var barW = Math.min(28, Math.floor((cW / segs.length) * 0.6));
-                    var step = cW / segs.length;
-                    segs.forEach(function(s, idx) {
+                    var step = cW / bins.length;
+                    var barW = Math.min(24, Math.floor(step * 0.6));
+                    bins.forEach(function (s, idx) {
+                        var cost = s.mean_cost;
                         var x = padL + idx * step + (step - barW) / 2;
-                        var bH = Math.max(2, Math.round((s.err / maxErr) * cH));
+                        var bH = cost == null ? 2 : Math.max(2, Math.round((cost / maxCost) * cH));
                         var y = padT + cH - bH;
-                        ctx.fillStyle = s.err > mean ? '#ba1a1a' : '#7e260f';
+                        ctx.fillStyle = '#7e260f';
                         ctx.beginPath();
                         if (ctx.roundRect) ctx.roundRect(x, y, barW, bH, [3,3,0,0]); else ctx.rect(x, y, barW, bH);
                         ctx.fill();
                         ctx.fillStyle = '#56423d'; ctx.font = '9px JetBrains Mono'; ctx.textAlign = 'center';
-                        ctx.fillText(s.label || s.type[0].toUpperCase(), x + barW/2, padT + cH + 14);
+                        ctx.fillText('b' + (s.bin || idx + 1), x + barW/2, padT + cH + 14);
                     });
-                    var meanY = padT + cH - Math.round((mean / maxErr) * cH);
-                    ctx.strokeStyle = '#ba1a1a'; ctx.lineWidth = 1; ctx.setLineDash([3,3]);
-                    ctx.beginPath(); ctx.moveTo(padL, meanY); ctx.lineTo(padL + cW, meanY); ctx.stroke();
-                    ctx.setLineDash([]);
-                    ctx.fillStyle = '#ba1a1a'; ctx.font = '9px JetBrains Mono'; ctx.textAlign = 'left';
-                    ctx.fillText('μ=' + mean.toFixed(2), padL + cW + 2, meanY + 3);
+                    ctx.fillStyle = '#8a726c'; ctx.font = '9px JetBrains Mono'; ctx.textAlign = 'center';
+                    ctx.fillText('alignment cost by time bin', W / 2, H - 4);
                 }
 
                 function drawSegErrChart(d) {
@@ -1104,26 +1118,26 @@
                         ctx.fillStyle = '#8a726c';
                         ctx.font = '11px JetBrains Mono';
                         ctx.textAlign = 'center';
-                        ctx.fillText('Awaiting attempt submission to display segment error profile', w / 2, h / 2);
+                        ctx.fillText('Submit an attempt to see the alignment-cost profile', w / 2, h / 2);
                         return;
                     }
 
-                    var segs = (d.segments && d.segments.length) ? d.segments : [];
-                    if (!segs.length) {
+                    var prof = d.cost_profile || null;
+                    var bins = (prof && prof.bins) ? prof.bins : [];
+                    if (!bins.length) {
                         ctx.fillStyle = '#8a726c';
                         ctx.font = '11px JetBrains Mono';
                         ctx.textAlign = 'center';
-                        ctx.fillText('No acoustic segment data in this response', w / 2, h / 2);
+                        ctx.fillText('Cost profile not available in this response', w / 2, h / 2);
                         return;
                     }
 
-                    var totalErr = segs.reduce(function (acc, s) { return acc + s.err; }, 0);
-                    var mean = totalErr / segs.length;
-
+                    var vals = bins.map(function (b) { return b.mean_cost; }).filter(function (v) { return v != null; });
+                    var mean = vals.length ? vals.reduce(function (a, b) { return a + b; }, 0) / vals.length : 0;
                     var padL = 36, padR = 64, padT = 24, padB = 30;
                     var chartW = w - padL - padR;
                     var chartH = h - padT - padB;
-                    var maxErr = Math.max(0.6, Math.max.apply(null, segs.map(function (s) { return s.err; })) * 1.25);
+                    var maxCost = Math.max(0.1, Math.max.apply(null, vals) * 1.2);
 
                     ctx.strokeStyle = '#ddc0b9';
                     ctx.lineWidth = 1;
@@ -1132,34 +1146,33 @@
                     ctx.lineTo(w - padR, h - padB);
                     ctx.stroke();
 
-                    var barW = Math.min(36, Math.floor((chartW / segs.length) * 0.65));
-                    var step = chartW / segs.length;
+                    var barW = Math.min(36, Math.floor((chartW / bins.length) * 0.65));
+                    var step = chartW / bins.length;
 
-                    segs.forEach(function (s, idx) {
+                    bins.forEach(function (b, idx) {
+                        var cost = b.mean_cost;
                         var x = padL + idx * step + (step - barW) / 2;
-                        var barH = Math.min(chartH, Math.max(4, Math.round((s.err / maxErr) * chartH)));
+                        var barH = cost == null ? 2 : Math.min(chartH, Math.max(2, Math.round((cost / maxCost) * chartH)));
                         var y = h - padB - barH;
 
-                        ctx.fillStyle = s.err > mean ? '#ba1a1a' : '#7e260f';
+                        ctx.fillStyle = cost == null ? '#ddc0b9' : (cost > mean ? '#ba1a1a' : '#7e260f');
                         ctx.beginPath();
-                        if (ctx.roundRect) {
-                            ctx.roundRect(x, y, barW, barH, [4, 4, 0, 0]);
-                        } else {
-                            ctx.rect(x, y, barW, barH);
-                        }
+                        if (ctx.roundRect) ctx.roundRect(x, y, barW, barH, [4, 4, 0, 0]); else ctx.rect(x, y, barW, barH);
                         ctx.fill();
 
                         ctx.fillStyle = '#56423d';
-                        ctx.font = '500 11px JetBrains Mono';
+                        ctx.font = '500 10px JetBrains Mono';
                         ctx.textAlign = 'center';
-                        ctx.fillText(s.label || (s.type ? s.type[0].toUpperCase() : 'S'), x + barW / 2, h - padB + 16);
+                        ctx.fillText('bin ' + (b.bin || idx + 1), x + barW / 2, h - padB + 15);
 
-                        ctx.fillStyle = '#8a726c';
-                        ctx.font = '10px JetBrains Mono';
-                        ctx.fillText(s.err.toFixed(2), x + barW / 2, y - 4);
+                        if (cost != null) {
+                            ctx.fillStyle = '#8a726c';
+                            ctx.font = '9px JetBrains Mono';
+                            ctx.fillText(cost.toFixed(2), x + barW / 2, y - 4);
+                        }
                     });
 
-                    var meanY = h - padB - Math.round((mean / maxErr) * chartH);
+                    var meanY = h - padB - Math.round((mean / maxCost) * chartH);
                     ctx.strokeStyle = '#ba1a1a';
                     ctx.setLineDash([4, 4]);
                     ctx.beginPath();
@@ -1167,14 +1180,29 @@
                     ctx.lineTo(w - padR, meanY);
                     ctx.stroke();
                     ctx.setLineDash([]);
-
                     ctx.fillStyle = '#ba1a1a';
                     ctx.font = '10px JetBrains Mono';
                     ctx.textAlign = 'left';
-                    ctx.fillText('mean (' + mean.toFixed(2) + ')', w - padR + 6, meanY + 3);
+                    ctx.fillText('mean ' + mean.toFixed(2), w - padR + 6, meanY + 3);
 
-                    // Save geometry for interactive hover
-                    cvs._geom = { padL: padL, padR: padR, padT: padT, padB: padB, chartW: chartW, chartH: chartH, barW: barW, step: step, maxErr: maxErr, mean: mean, segs: segs };
+                    ctx.fillStyle = '#8a726c';
+                    ctx.font = '9px JetBrains Mono';
+                    ctx.textAlign = 'center';
+                    ctx.fillText('reference timeline (s)', padL + chartW / 2, h - 2);
+
+                    cvs._geom = {
+                        padL: padL, padR: padR, padT: padT, padB: padB, chartW: chartW, chartH: chartH,
+                        barW: barW, step: step, maxCost: maxCost, mean: mean,
+                        segs: bins.map(function (b, i) {
+                            return {
+                                label: 'bin ' + (b.bin || i + 1),
+                                err: b.mean_cost,
+                                t0: b.ref_time_start_s,
+                                t1: b.ref_time_end_s,
+                                frames: b.frames
+                            };
+                        })
+                    };
                 }
 
                 function selectWord(w) {
@@ -1309,7 +1337,30 @@
                     setHint('recording…');
                 }
 
+                // Last attempt for the analysis page. localStorage (not session)
+                // so a new tab can read it; wrapped because storage may throw.
+                var LAST_SPD_KEY = 'sd:lastSpd';
+                function storeLastAttempt(response, err) {
+                    try {
+                        localStorage.setItem(LAST_SPD_KEY, JSON.stringify({
+                            createdAt: new Date().toISOString(),
+                            word: selected ? {
+                                word_id: selected.word_id,
+                                devanagari: selected.devanagari,
+                                iast: selected.iast
+                            } : null,
+                            response: response || null,
+                            error: err ? {
+                                code: err.kind || 'http_error',
+                                detail: err.message || String(err),
+                                status: err.status || null
+                            } : null
+                        }));
+                    } catch (e) { /* storage disabled or full — page still works */ }
+                }
+
                 function renderScore(d) {
+                    storeLastAttempt(d, null);
                     $('resultScore').textContent = SD.fmtPct(d.similarity_pct, 0);
                     [['vowel', d.vowel_score], ['consonant', d.consonant_score],
                      ['duration', d.duration_score], ['overall', d.mfcc_dtw_score]]
@@ -1360,6 +1411,7 @@
                     } else {
                         label = err.message; // incl. model_unavailable: honest state
                     }
+                    storeLastAttempt(null, err);
                     $('resultScore').textContent = '—';
                     clearAxisScores();
                     $('resultNote').textContent = label;
@@ -1552,11 +1604,13 @@
                         var idx = Math.floor((mx - g.padL) / g.step);
                         if (idx >= 0 && idx < g.segs.length && my >= g.padT && my <= cvs.height - g.padB + 20) {
                             var s = g.segs[idx];
+                            if (s.err == null) { tip.classList.add('hidden'); return; }
                             var diff = s.err - g.mean;
                             var isAbove = diff > 0;
-                            tip.innerHTML = '<div class="font-semibold">' + SD.esc(s.label || 'Segment ' + (idx + 1)) +
-                                ' <span class="font-normal opacity-70">(acoustic segment, voiced/unvoiced)</span></div>' +
-                                '<div>derived error: <strong>' + s.err.toFixed(3) + '</strong></div>' +
+                            tip.innerHTML = '<div class="font-semibold">' + SD.esc(s.label) +
+                                ' <span class="font-normal opacity-70">(' + s.t0.toFixed(2) + '–' + s.t1.toFixed(2) + ' s of reference)</span></div>' +
+                                '<div>mean alignment cost: <strong>' + s.err.toFixed(3) + '</strong></div>' +
+                                '<div class="opacity-70">' + s.frames + ' DTW frames in this bin</div>' +
                                 '<div class="' + (isAbove ? 'text-error' : 'text-primary') + '">' +
                                 (isAbove ? '▲ ' + diff.toFixed(3) + ' above mean' : '▼ ' + Math.abs(diff).toFixed(3) + ' below mean') + '</div>';
                             tip.classList.remove('hidden');

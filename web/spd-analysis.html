@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SPD Result Analysis</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif:wght@500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#56423d", "on-background": "#1c1b1a", "on-surface": "#1c1b1a", "surface-container-highest": "#e6e2de", "on-tertiary": "#ffffff", "tertiary-container": "#7b5503", "secondary-container": "#ff866b", "surface-container-low": "#f7f3ef", "on-tertiary-fixed": "#281900", "secondary": "#a13f2a", "inverse-surface": "#31302e", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#812815", "on-primary-fixed": "#3c0800", "surface-bright": "#fdf8f5", "surface-variant": "#e6e2de", "primary": "#7e260f", "background": "#fdf8f5", "inverse-primary": "#ffb4a2", "tertiary": "#5d3f00", "on-tertiary-container": "#ffcd7d", "surface": "#fdf8f5", "surface-dim": "#ddd9d6", "secondary-fixed-dim": "#ffb4a4", "surface-tint": "#a13f26", "outline-variant": "#ddc0b9", "on-error-container": "#93000a", "on-primary": "#ffffff", "primary-fixed": "#ffdbd2", "on-primary-container": "#ffc9bc", "error": "#ba1a1a", "on-primary-fixed-variant": "#812811", "outline": "#8a726c", "inverse-on-surface": "#f4f0ec", "on-secondary-fixed": "#3e0500", "tertiary-fixed": "#ffdead", "primary-container": "#9e3d24", "on-tertiary-fixed-variant": "#604100", "tertiary-fixed-dim": "#f2be68", "surface-container-lowest": "#ffffff", "surface-container-high": "#ece7e4", "on-secondary-container": "#741f0d", "primary-fixed-dim": "#ffb4a2", "on-error": "#ffffff", "surface-container": "#f1ede9", "error-container": "#ffdad6", "secondary-fixed": "#ffdad3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "2rem", "space-md": "1rem", "margin-sm": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "gutter-sm": "1rem", "gutter": "1.5rem" }, "fontFamily": { "label-sm": ["JetBrains Mono"], "label-lg": ["Inter"], "headline-sm": ["Noto Serif"], "headline-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"], "label-md": ["JetBrains Mono"], "body-lg": ["Inter"], "code": ["JetBrains Mono"], "display": ["Noto Serif"], "headline-md": ["Noto Serif"], "body-sm": ["Inter"], "body-md": ["Inter"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "code": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }] } } } };</script>
+    <script src="/app.js"></script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md">
+<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="w-full bg-surface-container-low px-gutter py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>Computational Linguistics &amp; Acoustic Phonetics
+                    Lab</span><span class="opacity-40">·</span><span>demo branch</span></div>
+            <div class="flex items-center gap-space-sm font-code text-code text-on-surface-variant"><span
+                    class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span><span>SPD + GVR demo backend</span><span
+                    class="opacity-40">·</span><span>Local API :8000</span></div>
+        </div>
+        <div class="h-16 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+            <div class="flex items-center gap-space-md">
+                <div class="flex flex-col"><span
+                        class="font-headline-sm text-headline-sm text-primary tracking-tight">SamskritaDhvani</span><span
+                        class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">संस्कृतध्वनि ·
+                        Phonetic Architecture</span></div>
+            </div>
+            <nav class="hidden md:flex items-center gap-space-sm font-label-lg text-label-lg"
+                data-active-classes="bg-primary-container text-on-primary font-medium rounded" data-sd-nav><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="corpus-reader" href="#">Corpus Reader</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="spectrogram-workbench" href="#">Spectrogram Workbench</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="prosodic-matrix" href="#">Prosodic Matrix</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="acoustic-models" href="#">Acoustic Models</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="research-documentation" href="#">Documentation</a></nav>
+            <div class="flex items-center gap-space-md">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+<main class="w-full pt-[104px] bg-surface min-h-screen pb-[140px]">
+  <div class="max-w-7xl mx-auto px-gutter py-space-xl flex flex-col gap-space-lg">
+    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-space-xs">
+      <div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">
+        <span class="inline-block w-2 h-2 rounded-full bg-primary"></span>
+        <span>उच्चारण-परिशीलनम् · Pronunciation Laboratory</span>
+        <span class="opacity-40">/</span>
+        <span class="text-primary font-medium">SPD Result Analysis</span>
+      </div>
+      <div class="font-code text-code text-on-surface-variant" id="lastAt">no attempt in this browser</div>
+    </div>
+
+    <section id="stateEmpty" class="hidden bg-surface-container-low rounded-xl p-space-lg shadow-sm">
+      <h1 class="font-headline-md text-headline-md text-on-surface">No attempt to analyse yet</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-3xl">
+        Open <a class="text-primary hover:underline" href="/spd.html">/spd.html</a>, pick a word, record or load a sample take, and press <strong class="text-on-surface font-medium">Submit Attempt</strong>. The response is stored in this browser (localStorage) and appears here, on this page or in a new tab.
+      </p>
+    </section>
+
+    <section id="stateError" class="hidden bg-error-container text-on-error-container rounded-xl p-space-lg">
+      <h1 class="font-headline-md text-headline-md">Last attempt returned an error</h1>
+      <p class="font-code text-code mt-space-xs" id="errCode"></p>
+      <p class="font-body-md text-body-md mt-space-xs" id="errDetail"></p>
+      <p class="font-code text-code mt-space-xs opacity-80" id="errStatus"></p>
+      <a href="/spd.html" class="inline-flex mt-space-md px-space-md py-2 rounded bg-primary text-on-primary font-body-sm text-body-sm">Score another attempt</a>
+    </section>
+
+    <div id="stateLive" class="hidden flex flex-col gap-space-lg">
+      <section class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+        <div class="flex flex-col gap-space-xs">
+          <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant">Target word from /api/words</span>
+          <div class="flex items-baseline gap-space-md">
+            <span id="wordDeva" class="font-headline-lg text-headline-lg text-primary">—</span>
+            <span id="wordIast" class="font-headline-sm text-headline-sm italic text-on-surface-variant">—</span>
+            <span id="wordId" class="font-code text-code text-on-surface-variant"></span>
+          </div>
+          <span id="wordNote" class="font-body-sm text-body-sm text-on-surface-variant"></span>
+        </div>
+        <div class="flex items-baseline gap-space-xs">
+          <span id="simPct" class="font-code text-[56px] leading-none font-bold text-primary">—</span>
+          <span class="font-headline-sm text-headline-sm text-on-surface-variant">%</span>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-2 lg:grid-cols-4 gap-space-md">
+        <div class="bg-surface-container-lowest rounded-lg p-space-md border border-outline-variant/20">
+          <div class="font-code text-[10px] uppercase text-on-surface-variant">vowel sub-score</div>
+          <div class="font-code text-[22px] font-semibold text-on-surface" data-axis="vowel">—</div>
+        </div>
+        <div class="bg-surface-container-lowest rounded-lg p-space-md border border-outline-variant/20">
+          <div class="font-code text-[10px] uppercase text-on-surface-variant">consonant sub-score</div>
+          <div class="font-code text-[22px] font-semibold text-on-surface" data-axis="consonant">—</div>
+        </div>
+        <div class="bg-surface-container-lowest rounded-lg p-space-md border border-outline-variant/20">
+          <div class="font-code text-[10px] uppercase text-on-surface-variant">duration sub-score</div>
+          <div class="font-code text-[22px] font-semibold text-on-surface" data-axis="duration">—</div>
+        </div>
+        <div class="bg-surface-container-lowest rounded-lg p-space-md border border-outline-variant/20">
+          <div class="font-code text-[10px] uppercase text-on-surface-variant">overall MFCC-DTW</div>
+          <div class="font-code text-[22px] font-semibold text-on-surface" data-axis="overall">—</div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 lg:grid-cols-4 gap-space-md">
+        <div class="bg-surface-container-lowest rounded-lg p-space-md border border-outline-variant/20">
+          <div class="font-code text-[10px] uppercase text-on-surface-variant">d_mfcc (scorer distance)</div>
+          <div class="font-code text-[20px] font-semibold" id="dMfcc">—</div>
+        </div>
+        <div class="bg-surface-container-lowest rounded-lg p-space-md border border-outline-variant/20">
+          <div class="font-code text-[10px] uppercase text-on-surface-variant">duration ratio</div>
+          <div class="font-code text-[20px] font-semibold" id="durRatio">—</div>
+        </div>
+        <div class="bg-surface-container-lowest rounded-lg p-space-md border border-outline-variant/20">
+          <div class="font-code text-[10px] uppercase text-on-surface-variant">trimmed attempt / reference</div>
+          <div class="font-code text-[16px] font-semibold" id="durS">—</div>
+        </div>
+        <div class="bg-surface-container-lowest rounded-lg p-space-md border border-outline-variant/20">
+          <div class="font-code text-[10px] uppercase text-on-surface-variant">distance check vs scorer</div>
+          <div class="font-code text-[16px] font-semibold" id="dCheck">—</div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+        <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-outline-variant/20 shadow-sm flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-code text-[11px] uppercase tracking-wider font-semibold text-on-surface-variant">Graph B · alignment cost by time bin</span>
+            <span class="font-code text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary">LIVE · this attempt</span>
+          </div>
+          <canvas id="costCanvas" width="560" height="210" class="w-full h-[210px]"></canvas>
+          <span class="font-label-sm text-label-sm text-on-surface-variant border-t border-outline-variant/20 pt-space-xs">Local ||ΔMFCC₁₃||₂ along the DTW path, averaged in 7 equal bins of the reference timeline.</span>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-outline-variant/20 shadow-sm flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-code text-[11px] uppercase tracking-wider font-semibold text-on-surface-variant">Graph C · score vs perturbation severity</span>
+            <span class="font-code text-[10px] px-2 py-0.5 rounded bg-secondary/10 text-secondary">IMPORTED · Dhvani-Yantra, synthetic TTS audio</span>
+          </div>
+          <canvas id="monoCanvas" width="560" height="210" class="w-full h-[210px]"></canvas>
+          <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant border-t border-outline-variant/20 pt-space-xs">
+            <span id="monoSource">loading measured points…</span>
+            <span class="font-code text-[10px]">fitted: 100·exp(−α·ε), α = <span id="alpha">—</span>, Dhvani-Yantra scorer</span>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-outline-variant/20 shadow-sm flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-code text-[11px] uppercase tracking-wider font-semibold text-on-surface-variant">Graph D · formant tracks</span>
+            <span class="font-code text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary">LIVE · this attempt</span>
+          </div>
+          <canvas id="formantCanvas" width="560" height="210" class="w-full h-[210px]"></canvas>
+          <span id="formantNote" class="font-label-sm text-label-sm text-on-surface-variant border-t border-outline-variant/20 pt-space-xs">F1/F2 measured on both clips (Burg method).</span>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-outline-variant/20 shadow-sm flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-code text-[11px] uppercase tracking-wider font-semibold text-on-surface-variant">Graph D · DTW warping path</span>
+            <span class="font-code text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary">LIVE · this attempt</span>
+          </div>
+          <canvas id="dtwCanvas" width="560" height="210" class="w-full h-[210px]"></canvas>
+          <span id="dtwNote" class="font-label-sm text-label-sm text-on-surface-variant border-t border-outline-variant/20 pt-space-xs">x: reference frames · y: attempt frames.</span>
+        </div>
+      </section>
+    </div>
+
+    <p class="text-center font-code text-[10px] text-on-surface-variant/60">
+      All values are rendered from the last API response stored by /spd.html in this browser. No example data.
+    </p>
+  </div>
+</main>
+<script>window.addEventListener("DOMContentLoaded", function () { if (window.SD) SD.wireNav(); });</script>
+<script src="/demo/comparison.js"></script>
+<script>
+
+(function () {
+  'use strict';
+  var KEY = 'sd:lastSpd';
+  var $ = function (id) { return document.getElementById(id); };
+
+  function readEntry() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) { return null; }
+  }
+  function show(which) {
+    ['stateEmpty', 'stateError', 'stateLive'].forEach(function (id) {
+      var n = $(id);
+      if (!n) return;
+      n.classList.toggle('hidden', id !== which);
+      if (id === which) n.classList.remove('hidden');
+    });
+  }
+  function hhmm(iso) {
+    try {
+      var d = new Date(iso);
+      return d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
+    } catch (e) { return '—'; }
+  }
+  function fmt(x, n) { return (x == null || isNaN(x)) ? '—' : Number(x).toFixed(n) + '%'; }
+
+  var entry = readEntry();
+  if (!entry) { show('stateEmpty'); return; }
+
+  $('lastAt').textContent = 'last attempt, ' + hhmm(entry.createdAt);
+
+  if (entry.error) {
+    $('errCode').textContent = 'code: ' + (entry.error.code || 'http_error');
+    $('errDetail').textContent = entry.error.detail || '(no detail returned)';
+    $('errStatus').textContent = entry.error.status ? 'HTTP ' + entry.error.status : '';
+    show('stateError');
+    return;
+  }
+
+  var d = entry.response || {};
+  show('stateLive');
+
+  $('simPct').textContent = d.similarity_pct != null ? Number(d.similarity_pct).toFixed(1) : '—';
+  [['vowel', d.vowel_score], ['consonant', d.consonant_score], ['duration', d.duration_score], ['overall', d.mfcc_dtw_score]]
+    .forEach(function (r) {
+      var n = document.querySelector('[data-axis="' + r[0] + '"]');
+      if (n) n.textContent = r[1] == null ? '—' : Number(r[1]).toFixed(1) + '%';
+    });
+
+  $('dMfcc').textContent = d.d_mfcc != null ? Number(d.d_mfcc).toFixed(4) : '—';
+  $('durRatio').textContent = d.duration_ratio != null ? Number(d.duration_ratio).toFixed(3) : '—';
+  if (d.duration_s) {
+    $('durS').textContent = Number(d.duration_s.attempt_trimmed).toFixed(2) + ' s / ' +
+      Number(d.duration_s.reference_trimmed).toFixed(2) + ' s';
+  }
+  if (d.d_mfcc_check) {
+    $('dCheck').textContent = d.d_mfcc_check["within_1e-6"]
+      ? 'matches (gap ' + Number(d.d_mfcc_check.gap).toExponential(1) + ')'
+      : 'gap ' + d.d_mfcc_check.gap;
+    $('dCheck').style.color = d.d_mfcc_check["within_1e-6"] ? '#386a20' : '#ba1a1a';
+  }
+
+  // Target word always from /api/words (fallback only if the API is down).
+  var stored = entry.word || {};
+  fetch('/api/words').then(function (r) { return r.ok ? r.json() : null; }).then(function (data) {
+    var w = (data && data.words || []).filter(function (x) { return x.word_id === stored.word_id; })[0];
+    if (!w) { w = stored; $('wordNote').textContent = 'word list unavailable — showing the stored word id'; }
+    $('wordDeva').textContent = w.devanagari || '—';
+    $('wordIast').textContent = w.iast || '—';
+    $('wordId').textContent = w.word_id || '';
+  }).catch(function () {
+    $('wordDeva').textContent = stored.devanagari || '—';
+    $('wordIast').textContent = stored.iast || '—';
+    $('wordNote').textContent = '/api/words unreachable — showing the stored word';
+  });
+
+  function base(ctx, W, H) {
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = '#fdf8f5'; ctx.fillRect(0, 0, W, H);
+  }
+
+  // Graph B: cost profile
+  (function () {
+    var cvs = $('costCanvas'); if (!cvs) return;
+    var ctx = cvs.getContext('2d'), W = cvs.width, H = cvs.height;
+    base(ctx, W, H);
+    var bins = (d.cost_profile && d.cost_profile.bins) || [];
+    if (!bins.length) {
+      ctx.fillStyle = '#8a726c'; ctx.font = '12px JetBrains Mono'; ctx.textAlign = 'center';
+      ctx.fillText('Cost profile not present in this response', W / 2, H / 2); return;
+    }
+    var vals = bins.map(function (b) { return b.mean_cost; }).filter(function (v) { return v != null; });
+    var maxV = Math.max(0.1, Math.max.apply(null, vals) * 1.2);
+    var padL = 44, padR = 18, padT = 20, padB = 34;
+    var cW = W - padL - padR, cH = H - padT - padB;
+    ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
+    var step = cW / bins.length, barW = Math.min(46, step * 0.62);
+    bins.forEach(function (b, i) {
+      var v = b.mean_cost;
+      var bh = v == null ? 2 : Math.max(3, Math.round((v / maxV) * cH));
+      var x = padL + i * step + (step - barW) / 2;
+      var y = padT + cH - bh;
+      ctx.fillStyle = '#7e260f'; ctx.fillRect(x, y, barW, bh);
+      ctx.fillStyle = '#56423d'; ctx.font = '10px JetBrains Mono'; ctx.textAlign = 'center';
+      ctx.fillText('bin ' + b.bin, x + barW / 2, padT + cH + 15);
+      if (v != null) ctx.fillText(v.toFixed(2), x + barW / 2, y - 5);
+    });
+    ctx.fillStyle = '#8a726c'; ctx.font = '10px JetBrains Mono';
+    ctx.textAlign = 'right'; ctx.fillText(maxV.toFixed(2), padL - 6, padT + 4);
+    ctx.textAlign = 'left'; ctx.fillText('0', padL - 6, padT + cH + 4);
+    ctx.textAlign = 'center'; ctx.fillText('reference timeline', padL + cW / 2, H - 6);
+  })();
+
+  // Graph D: formant tracks
+  (function () {
+    var cvs = $('formantCanvas'); if (!cvs) return;
+    var ctx = cvs.getContext('2d'), W = cvs.width, H = cvs.height;
+    base(ctx, W, H);
+    var F = d.formants || {};
+    if (!F.attempt || !F.attempt.available) {
+      ctx.fillStyle = '#8a726c'; ctx.font = '12px JetBrains Mono'; ctx.textAlign = 'center';
+      ctx.fillText('Formants not available: ' + ((F.attempt && F.attempt.reason) || 'no reason returned'), W / 2, H / 2);
+      $('formantNote').textContent = 'Formant tracks not available for this attempt.';
+      return;
+    }
+    var tracks = [
+      { side: 'reference', key: 'f1', color: '#a13f2a', dash: [4, 3], name: 'F1 ref' },
+      { side: 'reference', key: 'f2', color: '#7e260f', dash: [4, 3], name: 'F2 ref' },
+      { side: 'attempt', key: 'f1', color: '#ba1a1a', dash: [], name: 'F1 att' },
+      { side: 'attempt', key: 'f2', color: '#e07a5f', dash: [], name: 'F2 att' }
+    ];
+    var maxHz = 0;
+    tracks.forEach(function (t) {
+      var arr = (F[t.side] && F[t.side][t.key]) || [];
+      arr.forEach(function (p) { if (p.hz != null && p.hz > maxHz) maxHz = p.hz; });
+    });
+    maxHz = Math.max(1, maxHz * 1.1);
+    var padL = 46, padR = 14, padT = 22, padB = 32;
+    var cW = W - padL - padR, cH = H - padT - padB;
+    var yFor = function (hz) { return padT + cH - (hz / maxHz) * cH; };
+    ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
+    tracks.forEach(function (t) {
+      var arr = (F[t.side] && F[t.side][t.key]) || [];
+      if (!arr.length) return;
+      var tMax = arr[arr.length - 1].t_s || 1;
+      ctx.strokeStyle = t.color; ctx.lineWidth = 1.4; ctx.setLineDash(t.dash);
+      ctx.beginPath();
+      var started = false;
+      arr.forEach(function (p) {
+        if (p.hz == null) { started = false; return; }
+        var x = padL + (p.t_s / tMax) * cW, y = yFor(p.hz);
+        if (!started) { ctx.moveTo(x, y); started = true; } else ctx.lineTo(x, y);
+      });
+      ctx.stroke(); ctx.setLineDash([]);
+    });
+    ctx.font = '9px JetBrains Mono'; ctx.textAlign = 'left';
+    tracks.forEach(function (t, i) {
+      ctx.fillStyle = t.color;
+      ctx.fillText(t.name, padL + 4 + i * 58, padT + 10);
+    });
+    ctx.fillStyle = '#8a726c'; ctx.textAlign = 'right';
+    ctx.fillText(Math.round(maxHz) + ' Hz', padL - 6, padT + 4);
+    ctx.textAlign = 'center'; ctx.fillText('time (s)', padL + cW / 2, H - 6);
+    var med = F.attempt.median_hz || {};
+    $('formantNote').textContent = 'F1/F2 measured on both clips (Burg method). Attempt medians: F1 ' +
+      (med.f1 != null ? Math.round(med.f1) : '—') + ' Hz, F2 ' + (med.f2 != null ? Math.round(med.f2) : '—') + ' Hz.';
+  })();
+
+  // Graph D: DTW path
+  (function () {
+    var cvs = $('dtwCanvas'); if (!cvs) return;
+    var ctx = cvs.getContext('2d'), W = cvs.width, H = cvs.height;
+    base(ctx, W, H);
+    var path = d.dtw_path || [];
+    if (!path.length) {
+      ctx.fillStyle = '#8a726c'; ctx.font = '12px JetBrains Mono'; ctx.textAlign = 'center';
+      ctx.fillText('No DTW path in this response', W / 2, H / 2); return;
+    }
+    var maxI = 0, maxJ = 0;
+    path.forEach(function (p) { maxI = Math.max(maxI, p[0]); maxJ = Math.max(maxJ, p[1]); });
+    maxI = Math.max(1, maxI); maxJ = Math.max(1, maxJ);
+    var padL = 44, padR = 16, padT = 20, padB = 32;
+    var cW = W - padL - padR, cH = H - padT - padB;
+    ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
+    ctx.strokeStyle = '#ddc0b9'; ctx.setLineDash([4, 4]);
+    ctx.beginPath(); ctx.moveTo(padL, padT + cH); ctx.lineTo(padL + cW, padT); ctx.stroke(); ctx.setLineDash([]);
+    ctx.strokeStyle = '#7e260f'; ctx.lineWidth = 2; ctx.beginPath();
+    path.forEach(function (p, i) {
+      var x = padL + (p[1] / maxJ) * cW;
+      var y = padT + cH - (p[0] / maxI) * cH;
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    });
+    ctx.stroke();
+    ctx.fillStyle = '#8a726c'; ctx.font = '10px JetBrains Mono'; ctx.textAlign = 'center';
+    ctx.fillText('reference frames', padL + cW / 2, H - 6);
+    ctx.save(); ctx.translate(12, padT + cH / 2); ctx.rotate(-Math.PI / 2);
+    ctx.fillText('attempt frames', 0, 0); ctx.restore();
+    $('dtwNote').textContent = path.length + ' aligned frame pairs (reference ' + (maxJ + 1) + ' · attempt ' + (maxI + 1) + ' frames).';
+  })();
+
+  // Graph C: measured perturbation points + fitted curve (no slider)
+  (function () {
+    var cvs = $('monoCanvas'); if (!cvs) return;
+    var ctx = cvs.getContext('2d'), W = cvs.width, H = cvs.height;
+    base(ctx, W, H);
+    var wid = stored.word_id;
+    if (!wid) return;
+    fetch('/api/spd/diagnostic/' + encodeURIComponent(wid)).then(function (r) { return r.ok ? r.json() : null; }).then(function (m) {
+      if (!m || !m.available) {
+        $('monoSource').textContent = 'no calibrated point set for this word';
+        ctx.fillStyle = '#8a726c'; ctx.font = '12px JetBrains Mono'; ctx.textAlign = 'center';
+        ctx.fillText('No measured points returned', W / 2, H / 2); return;
+      }
+      var pts = m.curve_points || [];
+      var alpha = Number(m.alpha) || 3.056;
+      $('alpha').textContent = alpha.toFixed(3);
+      $('monoSource').textContent = pts.length + ' measured P1 points · ' + (m.roman || wid);
+      var padL = 48, padR = 20, padT = 20, padB = 34;
+      var cW = W - padL - padR, cH = H - padT - padB;
+      ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
+      var yFor = function (s) { return padT + cH - (Math.max(0, Math.min(100, s)) / 100) * cH; };
+      ctx.strokeStyle = '#7e260f'; ctx.lineWidth = 2; ctx.beginPath();
+      for (var i = 0; i <= 60; i++) {
+        var e = i / 60, s = 100 * Math.exp(-alpha * e);
+        var x = padL + e * cW, y = yFor(s);
+        if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+      pts.forEach(function (p) {
+        var sev = Math.max(0, Math.min(1, p.severity || 0));
+        ctx.fillStyle = p.kind === 'identical' ? '#386a20' : '#56423d';
+        ctx.beginPath(); ctx.arc(padL + sev * cW, yFor(p.score), p.kind === 'identical' ? 5 : 3, 0, 2 * Math.PI); ctx.fill();
+      });
+      ctx.fillStyle = '#8a726c'; ctx.font = '10px JetBrains Mono'; ctx.textAlign = 'center';
+      ctx.fillText('perturbation severity ε', padL + cW / 2, H - 6);
+      ctx.textAlign = 'right'; ctx.fillText('100', padL - 6, padT + 4);
+      ctx.fillText('0', padL - 6, padT + cH + 4);
+    }).catch(function () {
+      $('monoSource').textContent = 'diagnostic endpoint unreachable';
+    });
+  })();
+})();
+
+</script>
+</body>
+</html>

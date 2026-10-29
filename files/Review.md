@@ -3396,3 +3396,72 @@ Dhvani-Yantra's P2 results on 60 synthetic clips and are labelled
 imported. Graph D's formants and DTW path are a reference baseline, not
 this attempt's measurement. All audio is synthetic Edge-TTS. **No
 result was produced.**
+
+### Demo branch pass — measured Graphs B/D and the analysis pages (no results)
+
+**Measured telemetry (backend, `demo/analysis.py`, commit 5d2363a).**
+`/api/spd/score` no longer synthesises Graph B/D values. `dtw_path` is the
+backtracked path of the same DTW the scorer runs (`librosa.sequence.dtw`,
+same cost and step set as `dtw_mean_distance`); `d_mfcc` is
+`spd_scorer.dtw_mean_distance` itself, with `d_mfcc_check` reporting the
+gap against the unrounded scorer value recovered from
+`100·exp(−d/D₀)` (gap 0.0, `within_1e-6: true` on all 15 demo rows);
+`duration_ratio` is VAD-trimmed attempt ÷ VAD-trimmed reference;
+`formants` is Praat Burg F1/F2 measured per clip, or `available:false`
+with a reason; `cost_profile` is the local MFCC cost along the path in 7
+equal bins of the reference timeline. `segments`, `f1_ref/f1_stu` and the
+old derived values are gone. Nothing is derived from the sub-scores and
+the scorer was not changed.
+
+**Main pages.** `web/spd.html` now draws Graph B as "alignment cost by
+time bin" from `cost_profile` and Graph D as "Praat Burg formants,
+measured on synthetic audio" from `formants` (reference vs attempt,
+medians labelled); the diagnostics modal draws `formants`, `dtw_path` and
+`cost_profile`. "No acoustic segment data" is gone (grep count 0). `web/gvr.html` is unchanged in
+behaviour apart from storage.
+
+**Analysis pages (additive).** `web/spd-analysis.html` and
+`web/gvr-analysis.html` are new pages built from
+`web/stitch_exports/web/*_result.html`: one `<main>`, the same header and
+nav as the other pages (links only to pages that exist), the banner fixed
+to the viewport bottom, no `lh3` images. Both read the last attempt from
+`localStorage` (`sd:lastSpd`, `sd:lastGvr`), written by `/spd.html` and
+`/gvr.html` inside `try/catch` (quota or disabled storage cannot break
+scoring) as `{createdAt, word, response, error}`; each page shows
+"last attempt, HH:MM". No entry → empty state; stored API error → error
+card from the real `error.code`/`detail`/HTTP status; otherwise the live
+state. The state switchers, the perturbation slider, Graph C's invented
+points and the fabricated α, the invented verse lists, the confidence
+percentage, posterior and chandas/pada labels are removed. SPD Graph C
+plots exactly the 19 measured points plus the fitted
+`100·exp(−α·ε)` curve with the API's α. GVR ranks the real 10 verses by
+`dtw_distances` ("relative score, not a probability") and labels the
+matrix "HMM confusion matrix, Dhvani-Yantra P2" with the API counts.
+No hardcoded numeric result remains.
+
+**Greps.** `v0.4.2`, `Kaldi`, `Praat`, `WASM`, `Philological`,
+`Mahalanobis`, `Mātrā`, `Rigveda I`, `1,420`, `R²`, `Triphone`, `Sama`,
+`64.2`, `88.7`, `94.2`, `78.4`, `SD-2025`, `Simulation`, `Posterior`,
+`ERR_` → **0** in both analysis pages. `lh3.googleusercontent.com` → 0.
+
+**Verification.** Real API responses were produced first:
+`/api/spd/score` (kRSNa, `stud_krishna.wav`) → similarity 40.2 %,
+`cost_profile` and `formants` present; `/api/gvr/recognize`
+(`verse_2_47_train_+12.wav`) → top match 2.47 with all 10
+`dtw_distances`. Those exact JSON objects were then placed in
+`localStorage` and both analysis pages were rendered in headless Chrome
+(fresh profile): SPD showed `simPct` 40.2, "last attempt, 14:42", live
+state visible; GVR showed "last attempt, 14:43", the P2 matrix caption
+and its "not a probability" label. The write path in `/spd.html` and
+`/gvr.html` is code-inspected (try/catch `localStorage.setItem`) rather
+than clicked in this pass. Playwright is still not installed, so this is
+DOM inspection, not a visual screenshot review.
+
+**Tests.** `.venv/bin/python -m pytest tests -q` → **260 passed, 0
+failed** in 8.7 s (255 + 5 `tests/test_demo_analysis.py` synthetic
+fixtures). All inline scripts of the four pages pass `node --check`.
+
+**Honest limits.** Every figure on these pages comes from this attempt
+and its reference or from the named imported Dhvani-Yantra result; no
+accuracy, validation or pronunciation-quality claim is made. The demo
+audio is synthetic TTS. **No result was produced.**

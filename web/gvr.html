@@ -501,7 +501,27 @@
                     hint('recording…');
                 }
 
+                // Last attempt for the analysis page (localStorage so a new
+                // tab can read it; storage may throw and must not break scoring).
+                var LAST_GVR_KEY = 'sd:lastGvr';
+                function storeLastAttempt(response, err) {
+                    try {
+                        var label = ($('uploadFileName') && $('uploadFileName').textContent) || 'recitation';
+                        localStorage.setItem(LAST_GVR_KEY, JSON.stringify({
+                            createdAt: new Date().toISOString(),
+                            word: label,
+                            response: response || null,
+                            error: err ? {
+                                code: err.kind || 'http_error',
+                                detail: err.message || String(err),
+                                status: err.status || null
+                            } : null
+                        }));
+                    } catch (e) { /* storage disabled or full — page still works */ }
+                }
+
                 function renderRecognized(d, ms) {
+                    storeLastAttempt(d, null);
                     $('gvrFallback').classList.add('hidden');
                     $('gvrResult').classList.remove('hidden');
                     $('matchHeadline').textContent = 'Recognized: Bhagavad Gita ' + d.top_match.verse_id;
@@ -531,6 +551,7 @@
                 }
 
                 function renderUnavailable(err) {
+                    storeLastAttempt(null, err);
                     $('gvrResult').classList.add('hidden');
                     $('gvrFallback').classList.remove('hidden');
                     $('fallbackTitle').textContent = err.kind === 'model_unavailable'
