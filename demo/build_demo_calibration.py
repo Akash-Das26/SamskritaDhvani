@@ -18,6 +18,7 @@ Usage::
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -26,7 +27,18 @@ from samskrita_dhvani.frontend import load_audio_16k
 from samskrita_dhvani.spd_scorer import CalibrationBuilder
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DEMO_DATA = PROJECT_ROOT / "demo" / "data"
+
+
+def demo_data_root() -> Path:
+    """``DEMO_DATA_ROOT`` resolved against the project root, else demo/data."""
+    raw = os.environ.get("DEMO_DATA_ROOT")
+    root = Path(raw).expanduser() if raw else PROJECT_ROOT / "demo" / "data"
+    if not root.is_absolute():
+        root = PROJECT_ROOT / root
+    return root.resolve()
+
+
+DEMO_DATA = demo_data_root()
 REFERENCE_DIR = DEMO_DATA / "reference_words"
 RECITATION_DIR = DEMO_DATA / "recitations"
 OUT_PATH = DEMO_DATA / "calibration.json"
@@ -52,9 +64,11 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     if not REFERENCE_DIR.is_dir() or not RECITATION_DIR.is_dir():
-        print("error: demo data missing — run: python -m demo.prepare_demo_data",
-              file=sys.stderr)
+        print(f"error: demo data missing under {DEMO_DATA} — run: "
+              "python -m demo.prepare_demo_data (TTS) or "
+              "python -m demo.record_own (own takes)", file=sys.stderr)
         return 2
+    print(f"demo data root: {DEMO_DATA}")
     if OUT_PATH.exists() and not args.force:
         print(f"error: {OUT_PATH} already exists (use --force to rebuild)",
               file=sys.stderr)

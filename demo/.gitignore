@@ -1,3 +1,5 @@
 # Demo-only audio copied from Dhvani-Yantra-main (never committed).
 data/
+# The demo owner's own recordings (never committed).
+data_own/
 tmp/

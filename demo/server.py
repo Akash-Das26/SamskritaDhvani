@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 from fastapi import HTTPException
@@ -36,7 +37,24 @@ from samskrita_dhvani import api
 from samskrita_dhvani.spd_scorer import load_calibration as _load_calibration
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DEMO_DATA = PROJECT_ROOT / "demo" / "data"
+
+
+def demo_data_root() -> Path:
+    """The active demo corpus: ``DEMO_DATA_ROOT`` or ``demo/data``.
+
+    The demo keeps two corpora side by side — the copied TTS references
+    in ``demo/data/`` and the owner's own recordings in ``demo/data_own/``.
+    One variable switches between them; nothing here can point at
+    ``data/`` or ``corpus/`` unless the caller asks for it explicitly.
+    """
+    raw = os.environ.get("DEMO_DATA_ROOT")
+    root = Path(raw).expanduser() if raw else PROJECT_ROOT / "demo" / "data"
+    if not root.is_absolute():
+        root = PROJECT_ROOT / root
+    return root.resolve()
+
+
+DEMO_DATA = demo_data_root()
 REFERENCE_ROOT = DEMO_DATA / "reference_words"
 CALIBRATION_PATH = DEMO_DATA / "calibration.json"
 
@@ -105,10 +123,13 @@ def main(argv: list[str] | None = None) -> int:
             json.loads(CALIBRATION_PATH.read_text(encoding="utf-8"))
             .get("words", {})
         )
-    print(f"demo server → http://{args.host}:{args.port}")
-    print(f"  reference words: {', '.join(refs) or '(none — run python -m demo.prepare_demo_data)'}")
-    print(f"  provisional calibration: {', '.join(calib_words) or '(none — run python -m demo.build_demo_calibration)'}")
-    print(f"  {BANNER}")
+    print(f"demo server → http://{args.host}:{args.port}", flush=True)
+    print(f"  data root: {DEMO_DATA}", flush=True)
+    print(f"  reference words: {', '.join(refs) or '(none — run python -m demo.prepare_demo_data)'}",
+          flush=True)
+    print(f"  provisional calibration: {', '.join(calib_words) or '(none — run python -m demo.build_demo_calibration)'}",
+          flush=True)
+    print(f"  {BANNER}", flush=True)
     uvicorn.run(api.app, host=args.host, port=args.port, log_level="info")
     return 0
 
