@@ -575,6 +575,18 @@
                     renderList();
                 }
 
+                // Clear the FR-11 readout. A failed submission must never
+                // leave the previous attempt's percentages on screen next to
+                // an error (Ground Rule 1).
+                function clearAxisScores() {
+                    ['vowel', 'consonant', 'duration', 'overall'].forEach(function (axis) {
+                        var span = document.querySelector('[data-axis-score="' + axis + '"]');
+                        var bar = document.querySelector('[data-bar="' + axis + '"]');
+                        if (span) span.textContent = '—';
+                        if (bar) bar.style.width = '0%';
+                    });
+                }
+
                 function resetAttempt() {
                     attemptBlob = null;
                     $('uploadFileName').textContent = '';
@@ -586,6 +598,7 @@
                     $('submitBtn').disabled = true;
                     $('submitBtn').classList.add('opacity-50');
                     $('resultScore').textContent = '—';
+                    clearAxisScores();
                     $('resultNote').textContent = 'Record or upload an attempt, then submit it for scoring. The breakdown appears only from a real backend response.';
                     $('resultBadge').innerHTML = '<span class="material-symbols-outlined text-[15px]">hourglass_empty</span><span>Awaiting submission</span>';
                 }
@@ -696,6 +709,7 @@
                         label = err.message; // incl. model_unavailable: honest state
                     }
                     $('resultScore').textContent = '—';
+                    clearAxisScores();
                     $('resultNote').textContent = label;
                     $('resultBadge').innerHTML = '<span class="material-symbols-outlined text-[15px] text-error">error</span><span>' +
                         SD.esc(err.kind || 'error') + (err.status ? ' · HTTP ' + err.status : '') + '</span>';
@@ -800,6 +814,8 @@
                     practice v1</span></div>
         </div>
     </footer>
+    <!-- Demo branch only: comparison strip + persistent DEMO banner. -->
+    <script src="/demo/comparison.js"></script>
 </body>
 
 </html>

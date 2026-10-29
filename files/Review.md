@@ -3027,3 +3027,149 @@ row order follows sorted filenames, and its §2 Item is the filename's
 word/verse key, not the Devanagari label. A skeleton is a worksheet,
 not evidence: its measurements describe the incoming file, and every
 human-only field is still required by the gates.
+
+## Session: 2026-10-29
+
+### Demo branch pass — working SPD demo on provisional data (no results)
+
+**This entry records a demo-only pass. It produced no result of any
+kind.** No score below is a measurement of pronunciation, no
+calibration was measured from ear-verified audio, and nothing here may
+be cited in the report. The permanent project state is unchanged: on
+`main`, `data/spd/reference_words/` does not exist and
+`data/spd/calibration.json` does not exist, so the API still refuses
+to score.
+
+**Branch and rollback.** Started on `main` at `837ba83` with a clean
+tree apart from a pre-existing, unrelated `.gitignore` modification
+(not made by this pass and left untouched). Created branch `demo` and
+annotated-free tag `pre-demo` at that commit. `Dhvani-Yantra-main/` was
+neither gitignored nor a repository of its own; it was added to
+`.git/info/exclude` (local only), never staged, and never modified.
+
+**Step 1 — diagnosis before any change.** The four screens were opened
+in Chromium against `uvicorn samskrita_dhvani.api:app`:
+
+- Working: all four routes load; nav rewired; 27-word list live from
+  `GET /api/words`; microphone capture (getUserMedia → MediaRecorder),
+  live level bars, timer, stop, 28-bar attempt envelope; upload
+  fallback (in-browser 16 kHz WAV transcode); GVR record → honest 503
+  `model_unavailable` rendered as a fallback panel; Status page fully
+  live; a denied microphone surfaces an error and leaves Submit
+  disabled.
+- Failing: `POST /api/spd/score` could never return 200 — no reference
+  clip exists, so every attempt was a 503 `reference_unavailable`; no
+  calibration either (next 503); reference playback button hidden
+  because no clips exist **and** `/api/reference-audio/<file>` was
+  referenced by the API but never defined (verified 404); no
+  comparison strip (deferred in Frontend.md §6.1).
+
+**Step 2 — the neighbour project.** `Dhvani-Yantra-main` is a
+Streamlit 1.66 app with no browser JavaScript, HTML or components: its
+microphone is `st.audio_input`, its waveforms are matplotlib PNGs. Two
+things were useful and only one was taken: its reference clips (below)
+and its review-panel *idea* (waveform + playback + level readouts) for
+the strip, re-implemented in canvas. Its scoring (α = 3.0559, weights
+fitted on synthetic pairs; its own README measures same-word /
+different-voice at 32 % versus different-word at 26 %) was **not**
+used, and its HMM verse recognizer was **not** ported — GVR keeps the
+honest unavailable state, per the owner's decision.
+
+**Demo data (provisional, synthetic, gitignored).** 15 Edge-TTS WAVs
+copied from `Dhvani-Yantra-main/data/audio/` into `demo/data/` by
+`python -m demo.prepare_demo_data`, which decodes each file with
+`load_audio_16k` and rejects anything at or below the 10 % VAD speech
+floor. All 15 loaded and passed (VAD 0.26–0.37). Three words:
+`kRSNa`, `yoga`, `zAnti`; one canonical clip plus four recitations
+each. Every file's original path, size, sha256 and the source text as
+Dhvani-Yantra states it is in `demo/DEMO_DATA.md`. `demo/data/` is
+ignored by `demo/.gitignore`, so none of this audio is committed.
+
+**Provisional calibration (never `data/`).** Built with
+`CalibrationBuilder` — the same class `python -m samskrita_dhvani
+.calibrate` drives — via `python -m demo.build_demo_calibration`, out
+to `demo/data/calibration.json`. Measured on the synthetic corpus:
+
+| word_id | D₀ | D₀ formant | D₀ duration | refs |
+|---|---|---|---|---|
+| kRSNa | 2.9079 | 0.3365 | 0.0788 | 4 |
+| yoga | 2.9128 | 0.3330 | 0.0705 | 4 |
+| zAnti | 2.6236 | 0.2633 | 0.0302 | 4 |
+
+These are demo scales, not calibration. They are small because the
+"known-correct" recitations are other synthetic voices of the same
+words, so nearly everything real will score low — visible below.
+
+**What was built (all new under `demo/` and `web/demo/`):**
+
+- `demo/server.py` — runs the real `samskrita_dhvani.api` app with
+  `SPD_REFERENCE_ROOT` and the score route's calibration lookup
+  pointed at `demo/data/`, and **defines the missing
+  `GET /api/reference-audio/<file>` route** (so no edit to
+  `samskrita_dhvani/api.py` was needed). The D2 scorer is imported
+  unchanged; nothing in `spd_scorer` or `frontend` was touched or
+  tuned.
+- `demo/prepare_demo_data.py`, `demo/build_demo_calibration.py`,
+  `demo/DEMO_DATA.md`, `demo/.gitignore`.
+- `web/demo/comparison.js` — the Frontend.md §6.1 comparison strip
+  (one canvas, two waveform lanes, one play button per lane) and the
+  persistent DEMO banner. It reads the reference from
+  `/api/reference-audio/<word>.wav` and takes the attempt from the
+  exact WAV blob the page is about to submit; no placeholder
+  waveform, no invented duration.
+
+**Existing files edited (additive only):**
+
+1. `web/spd.html` — one `<script src="/demo/comparison.js">` tag before
+   `</body>`, plus a `clearAxisScores()` helper called from
+   `resetAttempt()` and `showError()`. The helper fixes a pre-existing
+   honesty bug the demo made reachable: after a 503 the four bars kept
+   the previous attempt's percentages while the headline read "—".
+   Verified after the fix: a refusal now leaves bars at "—" / 0 %.
+2. `files/Review.md` — this entry.
+
+**End-to-end evidence (real output, not adjusted).** Chromium was fed
+`demo/data/reference_words/kRSNa.wav` through its fake capture device
+(`--use-file-for-fake-audio-capture`); there is no physical microphone
+in this environment, so `getUserMedia` → `MediaRecorder` → 16 kHz WAV →
+`POST /api/spd/score` is real but the microphone itself is synthetic.
+Observed: banner `DEMO — references not ear-verified, calibration
+provisional; not a result.` fixed at the bottom on every state;
+reference meta `1.87 s · synthetic TTS (demo)`; strip canvas drawn
+(reference 5,051 non-transparent pixels; both lanes 8,665 after a
+take); reference playback ran (`currentTime` 0.86 s, `duration`
+1.87 s, then reset to "Play reference"); recorded attempt `2.58 s ·
+16 kHz mono` with working playback (0.83 s into a 2.58 s clip); score
+**38 %** overall with vowel **53.1 %**, consonant **30.2 %**, duration
+**0.0 %**, MFCC-DTW **37.8 %**; a second run on `yoga` scored **44 %**
+with **51 % / 31 % / 0 %**. Duration is 0 % because the capture is
+1.38× the reference length and the provisional D₀ duration scale is
+0.0788 — the low numbers are the honest consequence of synthetic
+references and a provisional scale, and were not adjusted. Switching
+to `pAta` (no demo reference) disables reference playback, labels the
+lane "no demo reference", and the submission returns the API's own
+503 `reference_unavailable` with the bars cleared.
+
+**Test counts (as run):** `python -m pytest tests/ -q` → **239 passed,
+0 failed** in 7.29 s (1,682 pre-existing library warnings). No demo
+code is covered by the existing suite and no test was added, changed,
+skipped or xfailed by this pass.
+
+**Commands:**
+
+```
+python -m demo.prepare_demo_data          # copy + loader/VAD gate (15 files)
+python -m demo.build_demo_calibration     # provisional D0 → demo/data/
+python -m demo.server                     # http://127.0.0.1:8000
+python -m pytest tests/ -q                # 239 passed
+```
+
+**Honest limits.** The demo scores three of the 27 words; the other 24
+still answer 503 (and the API's own message names
+`data/spd/reference_words/<word>.wav`, which is correct for the
+project but not for the demo root — left as-is rather than editing
+`api.py`). The strip's two lanes are drawn independently, not
+onset-aligned. The reference clips are synthetic TTS the neighbour
+project never ear-verified, the calibration is provisional, and the
+microphone in the end-to-end run was Chrome's synthetic capture
+device. **No result was produced.**
