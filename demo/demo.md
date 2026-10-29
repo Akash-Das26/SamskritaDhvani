@@ -103,27 +103,26 @@ own timings.”
 | field | where it comes from |
 |---|---|
 | `similarity_pct`, `vowel_score`, `consonant_score`, `duration_score`, `mfcc_dtw_score`, `reference_word` | **This project's D2 scorer**, `samskrita_dhvani/spd_scorer.py:335` (`score_attempt`); the % mapping is `100·exp(−D/D₀)` in `_norm_loglike_to_pct`, line 230, with the per-word D₀ from `demo/data/calibration.json` |
-| `segments` | **Not from Dhvani-Yantra.** Built in `demo/server.py:270` from the vowel/consonant sub-scores (5–7 alternating entries with fixed multipliers). It is demo telemetry, not a per-segment measurement. |
-| `dtw_path` | **Not this attempt's path.** `demo/server.py:284` returns entry 0 of Dhvani-Yantra's P1 `results.json` — the *reference-versus-itself* path, downsampled to ≤30 points. |
-| `f1_ref`, `f2_ref` | Dhvani-Yantra P1 `results.json` baseline for the word's first entry (`demo/server.py:255`, `291`). |
-| `f1_stu`, `f2_stu` | **Derived**, not measured: reference F1/F2 scaled by `(100 − vowel_score)/100` in `demo/server.py:262–263`. |
-| `d_mfcc` | **Derived**, not the scorer's distance: `(100 − similarity_pct)/100 · 0.55` at `demo/server.py:288`. |
-| `duration_ratio` | **Derived**: `duration_score/100` at `demo/server.py:290`. |
+| `dtw_path` | **Measured this attempt**: optimal warping path of the DTW that `dtw_mean_distance` runs on the 13 static CMVN MFCCs (`demo/analysis.py`). |
+| `d_mfcc` | **The scorer's own distance**, recomputed by `demo/analysis.py`; `d_mfcc_check` asserts it against the unrounded scorer value (observed gap 0.0, `within_1e-6: true`). |
+| `duration_ratio` | **Measured**: VAD-trimmed attempt duration ÷ VAD-trimmed reference duration. |
+| `formants` | **Measured** per clip with Praat Burg via `frontend.formants_pitch`: F1/F2 time series and medians, or `available: false` plus a reason. |
+| `cost_profile` | **Measured**: local MFCC cost along the DTW path, averaged in 7 equal bins of the reference frame timeline. No phoneme names, milliseconds or voicing tags. |
 
-Plain statement: the D2 scorer supplies the five percentage fields.
-**None** of `segments`, `dtw_path`, `formants`, `d_mfcc` or
-`duration_ratio` comes from Dhvani-Yantra's scoring code; they are
-constructed in `demo/server.py` from the D2 sub-scores and the P1 JSON
-baselines. The UI labels them accordingly.
+Plain statement: the D2 scorer supplies the five percentage fields;
+`dtw_path`, `d_mfcc`, `duration_ratio`, `formants` and `cost_profile`
+are computed from the attempt and its reference in `demo/analysis.py`.
+Nothing is derived from the sub-scores, and P1 is no longer used for
+per-attempt values.
 
 ### Graphs
 
 | panel | chip | what is plotted | data |
 |---|---|---|---|
 | A · Similarity gauge | LIVE · this attempt | similarity + four sub-scores | `POST /api/spd/score` (D2) |
-| B · Acoustic segment profile | LIVE · this attempt | per-entry bar from `segments[]`, labelled *acoustic segments (voiced/unvoiced)* | derived in `demo/server.py:270` |
+| B · Cost profile | LIVE · this attempt | local MFCC cost in 7 equal bins of the reference timeline | `cost_profile` from `demo/analysis.py` |
 | C · Score vs perturbation severity | IMPORTED · Dhvani-Yantra, synthetic TTS audio | 19 measured P1 perturbation points + fitted curve labelled **`fitted: 100·exp(−α·ε), α = 3.056, Dhvani-Yantra scorer`** | `GET /api/spd/diagnostic/{word}` → P1 `results.json` |
-| D · Reference-baseline panels | IMPORTED · Dhvani-Yantra, synthetic TTS audio | F1/F2 baseline, reference-vs-itself DTW path, segment profile | P1 `results.json` entry 0 + derived student markers |
+| D · Attempt diagnostics | LIVE · this attempt | F1/F2 tracks, this attempt's DTW path, cost profile | `formants`, `dtw_path`, `cost_profile` from `demo/analysis.py` |
 | E · DTW distance per verse | LIVE · this attempt | mean DTW distance to each of 10 templates; **lower is closer** | `POST /api/gvr/recognize` → `dtw_distances` (`demo/server.py:366`) |
 | F · Confusion matrix | IMPORTED · Dhvani-Yantra P2 | 10×10 counts, n=60 | `GET /api/gvr/diagnostic` → `P2/p2_summary.json` |
 | G · Accuracy comparison | IMPORTED · Dhvani-Yantra P2 | HMM 36.7 % vs DTW 100.0 % | same P2 summary |
@@ -159,8 +158,8 @@ shim, not the FR-21 implementation, and no accuracy is claimed from it.
 - No claim that the HMM/DTW numbers (36.7 % / 100.0 %) are ours.
 - No speaker identity, confidence-as-probability, or per-segment
   phoneme claim.
-- No claim that segments, formants, `d_mfcc` or `duration_ratio` are
-  measured from the take.
+- No claim that the numbers are accuracy or pronunciation quality;
+  they are per-attempt acoustic measurements.
 - No claim that the P3 video figures were produced by this demo.
 - The exact sentence to use: “These are demo outputs, not results.”
 

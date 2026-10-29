@@ -26,6 +26,7 @@ Run::
 from __future__ import annotations
 
 import argparse
+import io
 import json
 import math
 import os
@@ -35,7 +36,9 @@ import numpy as np
 from fastapi import HTTPException
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.datastructures import Headers, UploadFile as StarletteUploadFile
 
+from demo.analysis import analyze_attempt
 from demo.video.router import router as video_router
 from samskrita_dhvani import api, spd_scorer
 from samskrita_dhvani.spd_scorer import load_calibration as _load_calibration
@@ -194,107 +197,117 @@ def _get_gvr_templates() -> dict[str, list[np.ndarray]]:
             print(f"[gvr] template pre-load warning: {exc}")
     return _gvr_templates
 
+def _reference_clip(word_id: str) -> Path | None:
+    """The demo reference clip for a word, or None."""
+    for ext in (".wav", ".flac", ".mp3"):
+        p = REFERENCE_ROOT / f"{word_id}{ext}"
+        if p.is_file() and p.stat().st_size > 0:
+            return p
+    return None
+
+
 async def _demo_spd_score(
     audio = api.File(...),
     word_id: str = api.Form(...),
     attempt_id: str | None = api.Form(None),
 ) -> dict:
+    """Score one attempt with the real D2 scorer, then measure this attempt.
+
+    The five percentage fields are the scorer's. The path, distance,
+    duration ratio, formants and cost profile are computed here from the
+    attempt and its reference (``demo/analysis.py``); no value is inferred
+    from the sub-scores.
+    """
     wl = api._wordlist()
     known = {w.word_id: w for w in wl.words}
-    if word_id in known:
-        res = await _orig_spd_score(audio=audio, word_id=word_id, attempt_id=attempt_id)
-    else:
-        # Demo support for words in P1 reference corpus (e.g. dharma, om)
-        data = await audio.read()
-        path, y, duration = api._require_decodable_audio(data)
-        try:
-            speech_frac = api.vad_speech_fraction(y)
-            if speech_frac <= 0.10:
-                raise HTTPException(
-                    status_code=422,
-                    detail={"error": "near_silence", "detail": "Audio is near silence."},
-                )
-            ref_path = None
-            for ext in (".wav", ".flac", ".mp3"):
-                p = REFERENCE_ROOT / f"{word_id}{ext}"
-                if p.is_file() and p.stat().st_size > 0:
-                    ref_path = p
-                    break
-            if ref_path is None:
-                raise HTTPException(
-                    status_code=404,
-                    detail={"error": "unknown_word", "detail": f"word_id '{word_id}' is not in reference set."},
-                )
-            calib = api.load_calibration(word_id) or api.load_calibration("kRSNa")
-            ref_audio = api.load_audio_16k(str(ref_path))
-            deva, iast = {"dharma": ("धर्म", "dharma"), "om": ("ओम्", "om")}.get(word_id, (word_id, word_id))
-            score_out = spd_scorer.score_attempt(
-                y,
-                ref_audio,
-                calib,
-                {"word_id": word_id, "devanagari": deva, "iast": iast},
+    data = await audio.read()
+    path, y, duration = api._require_decodable_audio(data)
+    try:
+        speech_frac = api.vad_speech_fraction(y)
+        if speech_frac <= 0.10:
+            raise HTTPException(
+                status_code=422,
+                detail={
+                    "error": "near_silence",
+                    "detail": (
+                        f"Only {speech_frac:.0%} of frames contain speech "
+                        "(DataIntegrity §1.1 excludes clips at or below 10%); "
+                        "record closer to the microphone and try again."
+                    ),
+                },
             )
+        ref_path = _reference_clip(word_id)
+        if ref_path is None:
+            code = 503 if word_id in known else 404
+            raise HTTPException(
+                status_code=code,
+                detail={
+                    "error": "reference_unavailable" if word_id in known else "unknown_word",
+                    "detail": f"No demo reference clip for '{word_id}'.",
+                },
+            )
+        calib = api.load_calibration(word_id)
+        if calib is None:
+            raise HTTPException(
+                status_code=503,
+                detail={
+                    "error": "calibration_unavailable",
+                    "detail": f"Word '{word_id}' has no measured D0 in the demo calibration.",
+                },
+            )
+        ref_audio = api.load_audio_16k(str(ref_path))
+
+        if word_id in known:
+            # The API's own route keeps its 404/422/503 honesty chain; it
+            # reads the upload itself, so hand it a fresh stream.
+            upload = StarletteUploadFile(
+                file=io.BytesIO(data),
+                filename=audio.filename or "attempt.wav",
+                headers=Headers(raw=[]),
+            )
+            res = await _orig_spd_score(
+                audio=upload, word_id=word_id, attempt_id=attempt_id
+            )
+            w = known[word_id]
+            word_meta = {
+                "word_id": word_id,
+                "devanagari": w.devanagari,
+                "iast": w.iast,
+            }
+        else:
+            deva, iast = {"dharma": ("धर्म", "dharma"), "om": ("ओम्", "om")}.get(
+                word_id, (word_id, word_id)
+            )
+            word_meta = {"word_id": word_id, "devanagari": deva, "iast": iast}
             res = {
                 "attempt_id": attempt_id,
-                "similarity_pct": score_out.similarity_pct,
-                "vowel_score": score_out.vowel_score,
-                "consonant_score": score_out.consonant_score,
-                "duration_score": score_out.duration_score,
-                "mfcc_dtw_score": score_out.mfcc_dtw_score,
                 "reference_word": word_id,
             }
-        finally:
-            path.unlink(missing_ok=True)
 
-    p1 = _load_p1_results()
-    p1_key = WORD_P1_MAP.get(word_id, word_id.lower())
-    p1_entry = p1.get(p1_key, {})
-    entries = p1_entry.get("entries", [])
-    
-    # Extract baseline/representative acoustic segments and formant models
-    base_entry = entries[0] if entries else {}
-    ref_f1 = base_entry.get("F1_ref", 404.7)
-    ref_f2 = base_entry.get("F2_ref", 1771.5)
-    
-    # Calculate student formant drift from vowel_score
-    v_score = res.get("vowel_score") or 85.0
-    drift = (100.0 - v_score) / 100.0
-    stu_f1 = round(ref_f1 * (1.0 + (drift * 0.18)), 1)
-    stu_f2 = round(ref_f2 * (1.0 - (drift * 0.12)), 1)
-    
-    # Calculate segment errors for Graph B
-    c_score = res.get("consonant_score") or 80.0
-    c_err = round(max(0.05, (100.0 - c_score) / 100.0 * 0.45 + 0.08), 3)
-    v_err = round(max(0.04, (100.0 - v_score) / 100.0 * 0.42 + 0.06), 3)
-    
-    segments = [
-        {"type": "consonant", "label": "C₁", "err": round(c_err * 0.95, 3)},
-        {"type": "vowel",     "label": "V₁", "err": round(v_err * 0.90, 3)},
-        {"type": "consonant", "label": "C₂", "err": round(c_err * 1.25, 3)},
-        {"type": "vowel",     "label": "V₂", "err": round(v_err * 0.85, 3)},
-        {"type": "consonant", "label": "C₃", "err": round(c_err * 1.05, 3)},
-    ]
-    if word_id in ("kRSNa", "dharma"):
-        segments.extend([
-            {"type": "vowel",     "label": "V₃", "err": round(v_err * 1.15, 3)},
-            {"type": "consonant", "label": "C₄", "err": round(c_err * 0.80, 3)},
-        ])
-    
-    # Representative DTW warp path from P1 model
-    dtw_path = base_entry.get("dtw_path", [[i, i] for i in range(25)])
-    if len(dtw_path) > 30:
-        dtw_path = dtw_path[::2]
-        
-    res["d_mfcc"] = round(max(0.01, (100.0 - res.get("similarity_pct", 80.0)) / 100.0 * 0.55), 4)
-    dur_val = res.get("duration_score")
-    res["duration_ratio"] = round((dur_val if dur_val is not None else 90.0) / 100.0, 3)
-    res["f1_ref"] = round(ref_f1, 1)
-    res["f2_ref"] = round(ref_f2, 1)
-    res["f1_stu"] = stu_f1
-    res["f2_stu"] = stu_f2
-    res["segments"] = segments
-    res["dtw_path"] = dtw_path
-    return res
+        # Score once more only to obtain the *unrounded* distance the API
+        # route rounds to 0.1 %; the numbers are identical by construction.
+        score = spd_scorer.score_attempt(y, ref_audio, calib, word_meta)
+        if "similarity_pct" not in res:
+            res.update(
+                {
+                    "similarity_pct": round(score.similarity_pct, 1),
+                    "vowel_score": round(score.vowel_score, 1),
+                    "consonant_score": round(score.consonant_score, 1),
+                    "duration_score": round(score.duration_score, 1),
+                    "mfcc_dtw_score": round(score.mfcc_dtw_score, 1),
+                }
+            )
+        res.update(
+            analyze_attempt(
+                y,
+                ref_audio,
+                d0=calib.d0,
+                scorer_similarity_pct=score.similarity_pct,
+            )
+        )
+        return res
+    finally:
+        path.unlink(missing_ok=True)
 
 async def _demo_gvr_recognize(audio = api.File(...)) -> dict:
     data = await audio.read()
