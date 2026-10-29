@@ -274,7 +274,7 @@
 
   /* Stitch's exports carry placeholder nav items (corpus-reader,
    * spectrogram-workbench, ...) that have no corresponding screens.
-   * Replace them with the four real routes and mark the active page. */
+   * Replace them with the real routes and mark the active page. */
   function wireNav() {
     var nav = document.querySelector('header nav');
     if (!nav) return;
@@ -283,6 +283,7 @@
       ['/spd.html', 'SPD Practice'],
       ['/gvr.html', 'Verse Recognition'],
       ['/status.html', 'Corpus & Model Status'],
+      ['/video.html', 'Video Analysis'],
     ];
     var here = location.pathname.replace(/\/+$/, '') || '/';
     nav.innerHTML = pages

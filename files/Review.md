@@ -3173,3 +3173,130 @@ onset-aligned. The reference clips are synthetic TTS the neighbour
 project never ear-verified, the calibration is provisional, and the
 microphone in the end-to-end run was Chrome's synthetic capture
 device. **No result was produced.**
+
+### Demo branch add-on — video analysis screen (outside the SRS; no results)
+
+**Status: demo-only add-on. It implements no SRS requirement and its
+outputs are not results.** The page carries this on every state:
+`DEMO — video analysis is an add-on outside the project's requirements;
+outputs are not results.`
+
+**Why it exists.** The owner asked for the video tab Dhvani-Yantra-main
+shows (important frames, scene boundaries, motion map, tracked objects,
+short summary) as a demo add-on. Dhvani-Yantra-main has no licence, so
+nothing of it was copied: every algorithm here was written from scratch
+against public library APIs (OpenCV, PySceneDetect, ffmpeg). Its
+`movie_30min.mp4` is an unresolved Git LFS pointer (134 bytes), so no
+footage from it was used.
+
+**Dependencies (separate environment only).** `demo/requirements-video.txt`
+installs into `demo/.venv-video`, created for this pass; the project venv
+and `requirements.txt` are untouched (`cv2` is still absent from
+`.venv`). Approved packages, as installed: `opencv-python-headless
+4.14.0.94` (62 MB, Apache-2.0), `scenedetect 0.6.7.1` (BSD-3-Clause),
+`imageio-ffmpeg 0.6.0` (29.5 MB, BSD-2-Clause, bundles an ffmpeg
+binary), plus transitive `numpy 2.5.4`, `click 8.2.1`,
+`platformdirs 4.14.0`, `tqdm 4.70.1`. No ultralytics, torch, torchvision
+or model download; tracking is OpenCV's built-in HOG person detector,
+reported by `/demo/video/config` as `tracking: "hog"`.
+
+**Code (all new, `demo/video/`).** `jobs.py` (job dirs, atomic
+`status.json`, worker launch/liveness), `pipeline.py` (probe → scenes →
+frames → motion → track → summary), `scenes.py` (ContentDetector, cut
+strength from the StatsManager), `frames.py` (4 fps scan, Laplacian ×
+frame-difference scoring, per-scene selection, JPEGs + thumbs),
+`motion.py` (48×27 difference grid, per-second series, TURBO heatmap),
+`track.py` (HOG + centroid association, `tracked.mp4` at 12.5 fps),
+`summary.py` (per-shot ffmpeg trims + concat), `router.py` (HTTP).
+`demo/server.py` gained the import and `include_router` line; the static
+mount still resolves last. Limits: 30 min, 512 MB, extensions
+`.mp4 .m4v .mov .mkv .webm .avi`; outputs only under `demo/tmp/video/`
+(gitignored).
+
+**Measured (real run, 60.0 s / 640×360 / 25 fps / 1500-frame synthetic
+clip with two walking silhouettes and hard cuts at 20 s and 40 s):**
+probe 0.01 s, scenes 1.18 s, frames 0.60 s, motion 0.01 s, track 1.52 s,
+summary 0.43 s — **4.04 s wall (≈4.0 s per minute)**. The same content
+upscaled to 1080p took 9.75 s wall (scenes 3.74, frames 2.62, track
+2.35) — **≈9.8 s per minute**, so a 30-min 1080p job is a background job,
+not a request. Outputs: 9 important frames (14.2 KB full / 3.3 KB thumb),
+3 scenes (0–20 s, 20–40 s with cut strength 66.0, 40–60 s with 86.9),
+3 tracks from 42 HOG detections over 116 detection frames at 1.92 fps,
+motion map PNG 640×360 (137 KB), summary 15.0 s H.264 (78 KB),
+`tracked.mp4` 60.0 s H.264 (256 KB); whole job 808 KB. A 31-minute file
+is rejected at probe in under a second with `too_long`.
+
+**API:** `GET /demo/video/config`, `POST /demo/video/upload` (202),
+`GET /demo/video/jobs/{id}`, `GET /demo/video/jobs/{id}/result`,
+`GET /demo/video/jobs/{id}/files/{name}`. Every failure uses
+`{"status": "failed", "banner": …, "error": {"code", "detail"}}`;
+verified: `job_not_found` 404, `unsupported_type` 400, `empty_upload`
+400, `too_large` 413, `not_ready` 409, `too_long` 422, `worker_exited`
+and `pipeline_error` 500.
+
+**Screen.** `web/video.html` is an additive page ported from the Stitch
+export (the final file saved as `web/stitch_exports/web/video.html`;
+the stated `web/stitch_exports/video.html` does not exist, and the
+nested export was left untouched/untracked). Every number, label and
+image is bound to the API response; the five sections render only from
+`result.json`. The HOG fallback cannot supply identity, body parts,
+confidence or prose, so those elements are gone — the track table shows
+`person`, the ID, the time span and the detection count. The summary
+section shows only the shot list, duration and compression ratio. The
+“Correlate…” and “Re-encode” buttons, the inspect switcher, the stock
+`lh3.googleusercontent.com` images and the fake overlays are removed.
+Structural fixes: single `<main>`, `pt-[104px]` under the 90 px header,
+banner fixed at `bottom: 0` with 104/80 px bottom padding, real
+`<input type="file">` plus drag-and-drop. The nav is now the five real
+pages (Home, SPD Practice, Verse Recognition, Corpus & Model Status,
+Video Analysis), wired through `web/app.js`.
+
+**Observed in Chromium (1440×900, then 390×844).** Empty state on load;
+config chips read `30 MIN / 512 MB / RUNTIME 4.14.0`; uploading the clip
+moved through `PROBE 3% → FRAMES 40% → TRACK 63–85% → DONE 100%` with
+the stage detail and elapsed seconds updating. Results: 9 frame cards,
+3 scene badges and a 3-segment timeline, motion image 640×360 loaded
+with mean 3.14 / peak 7.03 and four hotspots, tables rows
+`1 · person · 00:03.1–00:05.2 · 4`, `2 · person · 00:20.8–00:29.6 · 17`,
+`3 · person · 00:33.8–00:45.8 · 17`; `tracked.mp4` (60 s, 640×360) and
+`summary.mp4` (15 s) both loaded with real durations; summary line
+“15.0 s summary · 3 shots · 25% of the 60.0 s source”. The banner stayed
+pinned at the viewport bottom (top 868, height 32, bottom 900) before
+and after results. Error state reached by uploading a 20-byte fake
+`.mp4`: `not_video — Not a decodable video: OpenCV could not open the
+file`; reset returned to the empty state. No console errors, no page
+errors, no failed requests, no horizontal overflow at 390 px.
+
+**Mockup-string check:** the 24 removed strings (`Inspect:`, `SD-VideoNet`,
+`WEBGPU`, `YOLOv9-PHONO`, `COCO-ARCHIVAL`, `Kalman`, `NLP-SEMANTIC-V3`,
+`Kaldi/PyTorch`, `Open Philological License`, `MOD-VID-702`, `Mudrā`,
+`Speaker`, `Palm Leaf`, `Auditor`, `Correlate`, `Re-encode`, `42%`,
+`lh3.googleusercontent`, `FARNEBACK`, `RIG_VEDA`, `Saliency`, `KF-01`,
+`confidence`, `WebGPU`) → **0 matches** in `web/video.html`.
+
+**Tests (as run):** `.venv/bin/python -m pytest tests -q` → **253 passed,
+0 failed** in 7.16 s; the 13 new tests are `tests/test_demo_video.py`
+(config honestly reports `hog`/`unavailable`, upload refusals and
+queueing, job status and dead-worker reporting, plus page guards that
+assert zero mockup strings, one `<main>`, five sections, the banner and
+the artifact bindings). Plain `pytest` (which also collects
+`Dhvani-Yantra-main/tests/`) still fails its pre-existing
+`test_p2_features_pipeline` on a missing third-party dependency; that
+suite is read-only and untouched.
+
+**Commands:**
+
+```
+python3 -m venv demo/.venv-video
+demo/.venv-video/bin/pip install -r demo/requirements-video.txt
+python -m demo.server                 # http://127.0.0.1:8000/video.html
+python -m pytest tests -q             # 253 passed
+```
+
+**Honest limits.** Tracking is HOG: it found the clean synthetic
+silhouettes, then split one walker into two tracks when its scale
+changed, and it can swap centroids when people cross — indicative
+motion, not identification. Motion is frame differencing, not optical
+flow. The summary drops audio. The clip is synthetic, so no claim is
+made about real footage; the 1080p timing is an upscale of the same
+content. Nothing was calibrated, and **no result was produced.**

@@ -33,6 +33,7 @@ from pathlib import Path
 from fastapi import HTTPException
 from fastapi.responses import FileResponse
 
+from demo.video.router import router as video_router
 from samskrita_dhvani import api
 from samskrita_dhvani.spd_scorer import load_calibration as _load_calibration
 
@@ -95,6 +96,10 @@ def demo_reference_audio(name: str) -> FileResponse:
             },
         )
     return FileResponse(p, media_type="audio/wav")
+
+
+# DEMO add-on, outside the SRS: the video tab's API (demo/video/).
+api.app.include_router(video_router)
 
 
 if _web_mount is not None:

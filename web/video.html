@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Video Analysis — SamskritaDhvani (demo add-on)</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif:wght@500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overscroll-behavior: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#56423d", "on-background": "#1c1b1a", "on-surface": "#1c1b1a", "surface-container-highest": "#e6e2de", "on-tertiary": "#ffffff", "tertiary-container": "#7b5503", "secondary-container": "#ff866b", "surface-container-low": "#f7f3ef", "on-tertiary-fixed": "#281900", "secondary": "#a13f2a", "inverse-surface": "#31302e", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#812815", "on-primary-fixed": "#3c0800", "surface-bright": "#fdf8f5", "surface-variant": "#e6e2de", "primary": "#7e260f", "background": "#fdf8f5", "inverse-primary": "#ffb4a2", "tertiary": "#5d3f00", "on-tertiary-container": "#ffcd7d", "surface": "#fdf8f5", "surface-dim": "#ddd9d6", "secondary-fixed-dim": "#ffb4a4", "surface-tint": "#a13f26", "outline-variant": "#ddc0b9", "on-error-container": "#93000a", "on-primary": "#ffffff", "primary-fixed": "#ffdbd2", "on-primary-container": "#ffc9bc", "error": "#ba1a1a", "on-primary-fixed-variant": "#812811", "outline": "#8a726c", "inverse-on-surface": "#f4f0ec", "on-secondary-fixed": "#3e0500", "tertiary-fixed": "#ffdead", "primary-container": "#9e3d24", "on-tertiary-fixed-variant": "#604100", "tertiary-fixed-dim": "#f2be68", "surface-container-lowest": "#ffffff", "surface-container-high": "#ece7e4", "on-secondary-container": "#741f0d", "primary-fixed-dim": "#ffb4a2", "on-error": "#ffffff", "surface-container": "#f1ede9", "error-container": "#ffdad6", "secondary-fixed-dim": "#ffb4a4", "secondary-fixed": "#ffdad3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "2rem", "space-md": "1rem", "margin-sm": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "gutter-sm": "1rem", "gutter": "1.5rem" }, "fontFamily": { "label-sm": ["JetBrains Mono"], "label-lg": ["Inter"], "headline-sm": ["Noto Serif"], "headline-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"], "label-md": ["JetBrains Mono"], "body-lg": ["Inter"], "code": ["JetBrains Mono"], "display": ["Noto Serif"], "headline-md": ["Noto Serif"], "body-sm": ["Inter"], "body-md": ["Inter"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "code": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }] } } } };</script>
+    <script src="/app.js"></script>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md text-body-md">
+    <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="w-full bg-surface-container-low px-gutter py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>Computational Linguistics &amp; Acoustic Phonetics
+                    Lab</span><span class="opacity-40">·</span><span>v0.4.2-alpha</span></div>
+            <div class="hidden sm:flex items-center gap-space-sm font-code text-code text-on-surface-variant"><span
+                    class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span><span>Demo add-on</span><span
+                    class="opacity-40">·</span><span>Local API :8000</span></div>
+        </div>
+        <div class="h-16 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+            <div class="flex items-center gap-space-md">
+                <div class="w-8 h-8 rounded bg-primary flex items-center justify-center shrink-0"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">graphic_eq</span></div>
+                <div class="flex flex-col"><span
+                        class="font-headline-sm text-headline-sm text-primary tracking-tight">SamskritaDhvani</span><span
+                        class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">संस्कृतध्वनि ·
+                        Phonetic Architecture</span></div>
+            </div>
+            <nav class="hidden md:flex items-center gap-space-sm font-label-lg text-label-lg"
+                data-active-classes="bg-primary-container text-on-primary font-medium rounded"></nav>
+            <div class="flex items-center gap-space-md">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full pt-[104px] pb-[104px] sm:pb-[80px] bg-surface min-h-screen">
+        <!-- Title / breadcrumb -->
+        <section class="w-full bg-surface-container-low px-gutter py-space-lg">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+                <div>
+                    <div
+                        class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant mb-space-xs tracking-wider">
+                        <span class="uppercase">Experimental Extensions</span>
+                        <span class="opacity-40">/</span>
+                        <span class="text-primary font-medium">दृश्य-विश्लेषणम्</span>
+                    </div>
+                    <div class="flex items-baseline gap-space-md flex-wrap">
+                        <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                            Video Analysis
+                        </h1>
+                        <span class="font-headline-sm text-headline-sm text-primary font-medium opacity-85">
+                            दृश्य-विश्लेषणम्
+                        </span>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-3xl">
+                        Upload a video and get key frames, scene boundaries, a motion map, tracked movement and a
+                        short summary — computed locally by the demo pipeline.
+                    </p>
+                </div>
+                <div
+                    class="bg-surface-container px-space-md py-space-xs rounded flex flex-wrap items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant shadow-sm">
+                    <span class="flex items-center gap-space-xs">
+                        <span class="w-2 h-2 rounded-full bg-primary"></span>
+                        <span class="font-code text-code text-on-surface font-medium">HOG + centroid fallback</span>
+                    </span>
+                    <span class="opacity-30">|</span>
+                    <span class="font-code text-code">MAX <span id="cfgLimit">—</span></span>
+                    <span class="opacity-30">|</span>
+                    <span class="font-code text-code">UPLOAD <span id="cfgUpload">—</span></span>
+                    <span class="opacity-30">|</span>
+                    <span class="font-code text-code" id="cfgStatus">checking runtime…</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload / progress -->
+        <section class="max-w-7xl mx-auto w-full px-gutter pt-space-lg">
+            <div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm">
+                <div class="flex flex-col lg:flex-row items-stretch gap-space-lg">
+                    <div id="dropzone"
+                        class="flex-1 bg-surface rounded-lg p-space-lg border-2 border-dashed border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-space-md transition-colors">
+                        <div class="flex items-center gap-space-md">
+                            <div
+                                class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+                                <span class="material-symbols-outlined text-[28px]">video_library</span>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-space-sm flex-wrap">
+                                    <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Drop a
+                                        video here</span>
+                                    <span
+                                        class="bg-surface-container px-space-xs py-0.5 font-label-sm text-label-sm rounded text-on-surface-variant"
+                                        id="cfgExtensions">—</span>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5" id="dropHint">
+                                    or choose a file — loading limits from the server…
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-space-sm shrink-0">
+                            <input id="fileInput" type="file" accept="video/mp4,video/webm,video/x-matroska,video/quicktime,video/x-msvideo,.mp4,.m4v,.mov,.mkv,.webm,.avi"
+                                class="sr-only" />
+                            <button id="chooseFile" type="button"
+                                class="px-space-lg py-space-sm bg-primary text-on-primary hover:bg-on-secondary-container transition-colors rounded font-label-lg text-label-lg flex items-center gap-space-sm disabled:opacity-50 disabled:cursor-not-allowed">
+                                <span class="material-symbols-outlined text-[18px]">upload</span>
+                                <span>Choose file</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="progressCard" class="hidden lg:w-96 bg-surface-container rounded-lg p-space-md flex-col justify-between">
+                        <div class="flex items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+                            <span>ANALYSIS JOB</span>
+                            <span class="font-code text-code text-primary font-medium truncate max-w-[16rem]" id="progName">—</span>
+                        </div>
+                        <div class="my-space-sm">
+                            <div class="flex items-center justify-between font-code text-code mb-1 gap-space-sm">
+                                <span class="text-on-surface font-medium" id="progStage">queued</span>
+                                <span class="text-on-surface-variant" id="progPct">0%</span>
+                            </div>
+                            <div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full transition-all duration-300" id="progBar"
+                                    style="width: 0%"></div>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1" id="progDetail">waiting for the worker</p>
+                        </div>
+                        <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                            <span class="font-code text-code text-[10px]" id="progElapsed">0.0 s elapsed</span>
+                            <span class="font-code text-code text-[10px]" id="progJob">—</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto w-full px-gutter py-space-lg">
+            <!-- EMPTY STATE -->
+            <div id="stateEmpty" class="flex flex-col gap-space-md">
+                <div class="bg-surface-container-low rounded-xl p-space-lg">
+                    <div class="flex items-center gap-space-sm mb-space-sm">
+                        <span class="material-symbols-outlined text-primary">movie</span>
+                        <h2 class="font-headline-sm text-headline-sm text-on-surface">No analysis yet</h2>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+                        Choose a video above or drop one here. When a job finishes, this page fills with five
+                        sections computed from that file: important frames, scene boundaries, a motion map, tracked
+                        objects and a short summary.
+                    </p>
+                    <ul class="mt-space-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+                        <li class="bg-surface rounded p-space-sm border border-outline-variant">01 · Important frames</li>
+                        <li class="bg-surface rounded p-space-sm border border-outline-variant">02 · Scene boundaries</li>
+                        <li class="bg-surface rounded p-space-sm border border-outline-variant">03 · Motion map</li>
+                        <li class="bg-surface rounded p-space-sm border border-outline-variant">04 · Tracked objects</li>
+                        <li class="bg-surface rounded p-space-sm border border-outline-variant">05 · Summary</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ERROR STATE -->
+            <div id="stateError" class="hidden flex-col gap-space-md">
+                <div class="bg-error-container text-on-error-container rounded-xl p-space-lg">
+                    <div class="flex items-center gap-space-sm mb-space-sm">
+                        <span class="material-symbols-outlined">error</span>
+                        <h2 class="font-headline-sm text-headline-sm">Analysis failed</h2>
+                    </div>
+                    <p class="font-code text-code mb-space-xs" id="errorCode">error</p>
+                    <p class="font-body-md text-body-md" id="errorDetail">—</p>
+                    <p class="font-body-sm text-body-sm opacity-80 mt-2" id="errorSource"></p>
+                    <button id="errorReset" type="button"
+                        class="mt-space-md px-space-md py-space-sm bg-surface text-on-surface rounded font-label-lg text-label-lg hover:bg-surface-container-low transition-colors">
+                        Try another file
+                    </button>
+                </div>
+            </div>
+
+            <!-- RESULTS -->
+            <div id="stateResults" class="hidden flex-col gap-space-xl">
+                <!-- 01 -->
+                <section class="flex flex-col gap-space-sm">
+                    <div class="flex flex-wrap items-center justify-between gap-space-sm">
+                        <div class="flex items-center gap-space-sm flex-wrap">
+                            <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">01 ·
+                                IMPORTANT FRAMES</span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">Highest sharpness ×
+                                change samples, spaced per scene</span>
+                        </div>
+                        <span class="font-code text-code text-on-surface-variant" id="framesCount">—</span>
+                    </div>
+                    <div class="w-full overflow-x-auto pb-space-sm">
+                        <div class="flex items-stretch gap-space-md" id="framesList"></div>
+                    </div>
+                </section>
+
+                <!-- 02 -->
+                <section class="flex flex-col gap-space-sm">
+                    <div class="flex flex-wrap items-center justify-between gap-space-sm">
+                        <div class="flex items-center gap-space-sm flex-wrap">
+                            <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">02 ·
+                                SCENE BOUNDARIES</span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">ContentDetector cuts on
+                                HSV frame difference</span>
+                        </div>
+                        <span class="font-code text-code text-on-surface-variant" id="scenesCount">—</span>
+                    </div>
+                    <div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-md">
+                        <div class="w-full h-6 rounded overflow-hidden flex bg-surface-container-highest"
+                            id="scenesTimeline"></div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-xs" id="scenesList"></div>
+                    </div>
+                </section>
+
+                <!-- 03 -->
+                <section class="flex flex-col gap-space-sm">
+                    <div class="flex flex-wrap items-center justify-between gap-space-sm">
+                        <div class="flex items-center gap-space-sm flex-wrap">
+                            <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">03 ·
+                                MOTION MAP</span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">Accumulated frame
+                                differencing, no optical flow</span>
+                        </div>
+                        <span class="font-code text-code text-on-surface-variant" id="motionMeta">—</span>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+                        <div class="lg:col-span-5 bg-surface-container rounded-lg p-space-md flex flex-col gap-space-sm">
+                            <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                                <span>SPATIAL DENSITY (ACCUMULATED)</span>
+                                <span class="font-code text-code text-[11px]" id="motionGrid">—</span>
+                            </div>
+                            <div class="relative w-full rounded bg-surface-container-highest overflow-hidden">
+                                <img id="motionImg" alt="Motion heatmap produced by the pipeline"
+                                    class="w-full h-auto block" />
+                            </div>
+                            <a id="motionLink" class="font-code text-code text-primary underline underline-offset-2"
+                                href="#" target="_blank" rel="noopener">open heatmap PNG</a>
+                        </div>
+                        <div class="lg:col-span-7 bg-surface-container rounded-lg p-space-md flex flex-col gap-space-md">
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm font-label-sm text-label-sm">
+                                <div class="bg-surface rounded p-space-sm flex flex-col">
+                                    <span class="text-on-surface-variant uppercase">Mean difference</span>
+                                    <span class="font-code text-code text-on-surface text-[13px]" id="motionMean">—</span>
+                                </div>
+                                <div class="bg-surface rounded p-space-sm flex flex-col">
+                                    <span class="text-on-surface-variant uppercase">Peak cell</span>
+                                    <span class="font-code text-code text-on-surface text-[13px]" id="motionPeak">—</span>
+                                </div>
+                                <div class="bg-surface rounded p-space-sm flex flex-col">
+                                    <span class="text-on-surface-variant uppercase">Diff pairs</span>
+                                    <span class="font-code text-code text-on-surface text-[13px]" id="motionSamples">—</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+                                    <span>MOTION PER SECOND</span>
+                                    <span class="font-code text-code text-[10px]">0 – 255 luma difference</span>
+                                </div>
+                                <canvas id="motionSeries" height="96" class="w-full block bg-surface rounded"></canvas>
+                            </div>
+                            <div class="font-label-sm text-label-sm text-on-surface-variant">
+                                <span class="uppercase">Hotspots (share of peak)</span>
+                                <ul class="mt-1 flex flex-wrap gap-space-xs font-code text-code" id="motionHotspots"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 04 -->
+                <section class="flex flex-col gap-space-sm">
+                    <div class="flex flex-wrap items-center justify-between gap-space-sm">
+                        <div class="flex items-center gap-space-sm flex-wrap">
+                            <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">04 ·
+                                TRACKED OBJECTS</span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">HOG + centroid
+                                fallback</span>
+                        </div>
+                        <span class="font-code text-code text-on-surface-variant" id="tracksCount">—</span>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+                        <div class="lg:col-span-7 bg-surface-container rounded-lg p-space-md flex flex-col gap-space-sm">
+                            <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                                <span>ANNOTATED VIDEO</span>
+                                <span class="font-code text-code text-[11px]">HOG + centroid fallback</span>
+                            </div>
+                            <video id="trackVideo" class="w-full rounded bg-surface-container-highest" controls
+                                playsinline preload="metadata"></video>
+                        </div>
+                        <div class="lg:col-span-5 bg-surface-container rounded-lg p-space-md flex flex-col gap-space-sm">
+                            <p class="font-body-sm text-body-sm text-on-surface-variant" id="trackSummary">—</p>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left font-body-sm text-body-sm">
+                                    <thead class="font-label-sm text-label-sm text-on-surface-variant uppercase">
+                                        <tr>
+                                            <th class="py-1 pr-2">Track</th>
+                                            <th class="py-1 pr-2">Type</th>
+                                            <th class="py-1 pr-2">From</th>
+                                            <th class="py-1 pr-2">To</th>
+                                            <th class="py-1">Detections</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tracksTable" class="font-code text-code text-on-surface"></tbody>
+                                </table>
+                            </div>
+                            <p class="font-body-sm text-[12px] text-on-surface-variant" id="trackNote"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 05 -->
+                <section class="flex flex-col gap-space-sm">
+                    <div class="flex flex-wrap items-center justify-between gap-space-sm">
+                        <div class="flex items-center gap-space-sm flex-wrap">
+                            <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">05 ·
+                                SUMMARY</span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                            <span class="font-body-sm text-body-sm text-on-surface-variant">One slice per selected
+                                scene, joined without audio</span>
+                        </div>
+                        <span class="font-code text-code text-on-surface-variant" id="summaryMeta">—</span>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+                        <div class="lg:col-span-7 bg-surface-container rounded-lg p-space-md">
+                            <video id="summaryVideo" class="w-full rounded bg-surface-container-highest" controls
+                                playsinline preload="metadata"></video>
+                        </div>
+                        <div class="lg:col-span-5 bg-surface-container rounded-lg p-space-md flex flex-col gap-space-sm">
+                            <p class="font-body-md text-body-md text-on-surface" id="summaryLine">—</p>
+                            <div class="flex flex-wrap gap-space-xs font-code text-code text-on-surface-variant" id="summaryShots"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div class="fixed bottom-0 left-0 right-0 z-[60] bg-tertiary-container text-on-tertiary-container px-gutter py-space-sm font-label-sm text-label-sm flex items-center justify-center gap-space-sm shadow-[0_-1px_8px_rgba(0,0,0,0.12)]">
+        <span class="material-symbols-outlined text-[16px]">info</span>
+        <span>DEMO — video analysis is an add-on outside the project's requirements; outputs are not results.</span>
+    </div>
+
+    <script>
+        (function () {
+            'use strict';
+
+            if (window.SD && SD.wireNav) SD.wireNav();
+
+            var API = '/demo/video';
+            var LIMITS = null;
+            var pollTimer = null;
+            var activeJob = null;
+
+            function $(id) { return document.getElementById(id); }
+            function esc(s) {
+                return String(s).replace(/[&<>"']/g, function (c) {
+                    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+                });
+            }
+            function show(id, visible) {
+                var node = $(id);
+                if (!node) return;
+                node.classList.toggle('hidden', !visible);
+                node.classList.toggle('flex', visible);
+            }
+            function mmss(sec) {
+                sec = Math.max(0, Number(sec) || 0);
+                var m = Math.floor(sec / 60);
+                var s = sec - m * 60;
+                return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s.toFixed(1);
+            }
+            function secs(x) { return (Number(x) || 0).toFixed(1) + ' s'; }
+            function showStates(which) {
+                show('stateEmpty', which === 'empty');
+                show('stateError', which === 'error');
+                show('stateResults', which === 'results');
+            }
+
+            function fail(code, detail, source) {
+                $('errorCode').textContent = code || 'error';
+                $('errorDetail').textContent = detail || 'No detail was reported.';
+                $('errorSource').textContent = source ? ('Source: ' + source) : '';
+                show('progressCard', false);
+                showStates('error');
+            }
+
+            // ------------------------------------------------------ config
+            fetch(API + '/config').then(function (r) { return r.json(); }).then(function (cfg) {
+                LIMITS = cfg.limits;
+                $('cfgLimit').textContent = Math.round(cfg.limits.max_duration_s / 60) + ' MIN';
+                $('cfgUpload').textContent = cfg.limits.max_upload_mb + ' MB';
+                $('cfgExtensions').textContent = cfg.limits.extensions.join(' ');
+                $('cfgStatus').textContent = cfg.available ? ('RUNTIME ' + (cfg.runtime.versions.opencv || 'ready')) : 'UNAVAILABLE';
+                $('dropHint').textContent = 'or choose a file — up to ' +
+                    Math.round(cfg.limits.max_duration_s / 60) + ' min, ' + cfg.limits.max_upload_mb +
+                    ' MB (' + cfg.limits.extensions.join(', ') + ')';
+                $('chooseFile').disabled = !cfg.available;
+                if (!cfg.available) {
+                    fail('video_unavailable',
+                        cfg.runtime.error || 'The video environment is not installed.',
+                        'GET /demo/video/config');
+                }
+            }).catch(function (err) {
+                fail('config_failed', 'Could not read the video configuration: ' + err.message,
+                    'GET /demo/video/config');
+            });
+
+            // ------------------------------------------------------ upload
+            var dropzone = $('dropzone');
+            var input = $('fileInput');
+
+            $('chooseFile').addEventListener('click', function () { input.click(); });
+            dropzone.addEventListener('click', function (event) {
+                if (event.target.closest('button')) return;
+                input.click();
+            });
+            ['dragenter', 'dragover'].forEach(function (name) {
+                dropzone.addEventListener(name, function (event) {
+                    event.preventDefault();
+                    dropzone.classList.add('border-primary', 'bg-surface-container');
+                });
+            });
+            ['dragleave', 'drop'].forEach(function (name) {
+                dropzone.addEventListener(name, function () {
+                    dropzone.classList.remove('border-primary', 'bg-surface-container');
+                });
+            });
+            dropzone.addEventListener('drop', function (event) {
+                event.preventDefault();
+                if (event.dataTransfer.files.length) upload(event.dataTransfer.files[0]);
+            });
+            input.addEventListener('change', function () {
+                if (input.files.length) upload(input.files[0]);
+                input.value = '';
+            });
+            $('errorReset').addEventListener('click', function () {
+                showStates('empty');
+                show('progressCard', false);
+            });
+
+            function upload(file) {
+                if (!LIMITS) {
+                    fail('config_failed', 'Limits are not loaded yet; reload the page.', file.name);
+                    return;
+                }
+                if (file.size > LIMITS.max_upload_bytes) {
+                    fail('too_large', 'File is ' + (file.size / (1024 * 1024)).toFixed(1) +
+                        ' MB; the demo caps at ' + LIMITS.max_upload_mb + ' MB.', file.name);
+                    return;
+                }
+                var form = new FormData();
+                form.append('file', file, file.name);
+                $('progName').textContent = file.name;
+                $('progStage').textContent = 'uploading';
+                $('progPct').textContent = '0%';
+                $('progBar').style.width = '0%';
+                $('progDetail').textContent = 'sending ' + (file.size / (1024 * 1024)).toFixed(1) + ' MB';
+                $('progElapsed').textContent = '0.0 s elapsed';
+                $('progJob').textContent = '—';
+                showStates('none');
+                show('progressCard', true);
+                $('chooseFile').disabled = true;
+
+                fetch(API + '/upload', { method: 'POST', body: form })
+                    .then(function (response) {
+                        return response.json().then(function (body) {
+                            return { ok: response.ok, status: response.status, body: body };
+                        });
+                    })
+                    .then(function (outcome) {
+                        if (!outcome.ok) {
+                            var error = outcome.body.error || {};
+                            fail(error.code || ('http_' + outcome.status),
+                                error.detail || 'Upload rejected.', file.name);
+                            $('chooseFile').disabled = false;
+                            return;
+                        }
+                        activeJob = outcome.body.job_id;
+                        $('progJob').textContent = activeJob;
+                        poll(activeJob);
+                    })
+                    .catch(function (err) {
+                        fail('upload_failed', err.message, file.name);
+                        $('chooseFile').disabled = false;
+                    });
+            }
+
+            // ------------------------------------------------------ progress
+            function stageName(index, stages) {
+                if (index < 0) return 'queued';
+                if (index >= stages.length) return 'done';
+                return stages[index];
+            }
+
+            function poll(jobId) {
+                if (pollTimer) clearInterval(pollTimer);
+                pollTimer = setInterval(function () {
+                    fetch(API + '/jobs/' + jobId).then(function (r) { return r.json(); }).then(function (job) {
+                        var progress = job.progress || {};
+                        $('progStage').textContent = progress.stage === 'queued'
+                            ? 'queued' : stageName(progress.stage_index, progress.stages).toUpperCase();
+                        $('progPct').textContent = (progress.pct || 0) + '%';
+                        $('progBar').style.width = (progress.pct || 0) + '%';
+                        $('progDetail').textContent = progress.detail || '';
+                        $('progElapsed').textContent = (progress.elapsed_s || 0).toFixed(1) + ' s elapsed';
+
+                        if (job.status === 'failed') {
+                            clearInterval(pollTimer);
+                            var error = job.error || {};
+                            fail(error.code || 'pipeline_error', error.detail || 'The worker failed.',
+                                (job.source && job.source.filename) || '');
+                            $('chooseFile').disabled = false;
+                        } else if (job.status === 'done') {
+                            clearInterval(pollTimer);
+                            fetchResult(jobId);
+                        }
+                    }).catch(function (err) {
+                        clearInterval(pollTimer);
+                        fail('status_failed', err.message, 'GET /demo/video/jobs/' + jobId);
+                        $('chooseFile').disabled = false;
+                    });
+                }, 600);
+            }
+
+            // ------------------------------------------------------ results
+            function fetchResult(jobId) {
+                fetch(API + '/jobs/' + jobId + '/result').then(function (r) {
+                    return r.json().then(function (body) {
+                        return { ok: r.ok, status: r.status, body: body };
+                    });
+                }).then(function (outcome) {
+                    if (!outcome.ok) {
+                        var error = outcome.body.error || {};
+                        fail(error.code || ('http_' + outcome.status),
+                            error.detail || 'No result was returned.', '');
+                        $('chooseFile').disabled = false;
+                        return;
+                    }
+                    render(outcome.body);
+                    showStates('results');
+                    show('progressCard', true);
+                    $('chooseFile').disabled = false;
+                }).catch(function (err) {
+                    fail('result_failed', err.message, 'GET /demo/video/jobs/' + jobId + '/result');
+                    $('chooseFile').disabled = false;
+                });
+            }
+
+            function render(result) {
+                var source = result.source || {};
+                var duration = source.duration_s || 0;
+
+                // 01 frames
+                var frames = result.frames || [];
+                $('framesCount').textContent = frames.length + ' FRAME' + (frames.length === 1 ? '' : 'S') +
+                    ' FROM ' + duration.toFixed(1) + ' S';
+                $('framesList').innerHTML = frames.length ? frames.map(function (frame) {
+                    return '<div class="w-64 shrink-0 bg-surface-container rounded-lg overflow-hidden flex flex-col">' +
+                        '<div class="relative aspect-video w-full bg-surface-container-highest overflow-hidden">' +
+                        '<img class="w-full h-full object-cover" loading="lazy" alt="Important frame at ' +
+                        esc(mmss(frame.t_s)) + '" src="' + esc(frame.url) + '">' +
+                        '<div class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm font-code text-label-sm text-primary font-medium">' +
+                        esc(mmss(frame.t_s)) + '</div>' +
+                        '<div class="absolute bottom-2 right-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-code text-[10px]">' +
+                        'scene ' + esc(frame.scene) + '</div>' +
+                        '</div>' +
+                        '<div class="p-space-sm flex items-center justify-between font-code text-label-sm text-on-surface-variant bg-surface-container-low">' +
+                        '<span>selection score</span><span class="text-primary font-semibold">' +
+                        Number(frame.score).toFixed(3) + '</span></div></div>';
+                }).join('') : '<p class="font-body-sm text-body-sm text-on-surface-variant">No frames were extracted.</p>';
+
+                // 02 scenes
+                var scenes = result.scenes || [];
+                $('scenesCount').textContent = scenes.length + ' SCENE' + (scenes.length === 1 ? '' : 'S');
+                $('scenesTimeline').innerHTML = scenes.map(function (scene, index) {
+                    var width = duration > 0 ? (scene.len_s / duration) * 100 : 0;
+                    var shade = ['bg-primary/80', 'bg-primary/60', 'bg-primary/45', 'bg-primary/30'][index % 4];
+                    return '<div class="' + shade + ' h-full border-r border-surface" style="width:' +
+                        width.toFixed(3) + '%" title="scene ' + (scene.index + 1) + ': ' +
+                        esc(mmss(scene.start_s)) + ' – ' + esc(mmss(scene.end_s)) + '"></div>';
+                }).join('');
+                $('scenesList').innerHTML = scenes.map(function (scene) {
+                    var strength = Number(scene.score) > 0
+                        ? 'cut strength ' + Number(scene.score).toFixed(1)
+                        : 'no cut (start of clip)';
+                    return '<div class="bg-surface-container-high p-space-xs rounded flex flex-col gap-0.5">' +
+                        '<div class="flex items-center justify-between font-label-sm text-label-sm">' +
+                        '<span class="font-semibold text-primary">SCENE ' + String(scene.index + 1).padStart(2, '0') + '</span>' +
+                        '<span class="font-code text-code text-[10px] text-on-surface-variant">' + esc(secs(scene.len_s)) + '</span></div>' +
+                        '<span class="font-code text-code text-on-surface font-medium text-[11px]">' +
+                        esc(mmss(scene.start_s)) + ' – ' + esc(mmss(scene.end_s)) + '</span>' +
+                        '<span class="font-code text-code text-[10px] text-on-surface-variant">' + esc(strength) + '</span>' +
+                        '</div>';
+                }).join('');
+
+                // 03 motion
+                var motion = (result.motion || {});
+                $('motionMeta').textContent = 'GRID ' + (motion.grid || []).join(' × ') + ' · ' +
+                    (motion.samples || 0) + ' DIFF PAIRS';
+                $('motionGrid').textContent = 'Grid: ' + (motion.grid || []).join(' × ');
+                $('motionImg').src = motion.map_url;
+                $('motionImg').alt = 'Motion heatmap from ' + (source.filename || 'the uploaded video');
+                $('motionLink').href = motion.map_url;
+                $('motionMean').textContent = Number(motion.mean || 0).toFixed(2);
+                $('motionPeak').textContent = Number(motion.peak || 0).toFixed(2);
+                $('motionSamples').textContent = motion.samples || 0;
+                $('motionHotspots').innerHTML = (motion.hotspots || []).length
+                    ? motion.hotspots.map(function (spot) {
+                        return '<li class="px-space-xs py-0.5 bg-surface rounded">x ' +
+                            (spot.x * 100).toFixed(0) + '% · y ' + (spot.y * 100).toFixed(0) + '% · ' +
+                            Number(spot.weight).toFixed(2) + '</li>';
+                    }).join('')
+                    : '<li class="text-on-surface-variant">none above zero</li>';
+                drawSeries(motion.per_second || []);
+
+                // 04 tracks
+                var tracks = result.tracks || {};
+                var list = tracks.tracks || [];
+                $('tracksCount').textContent = tracks.count + ' TRACK' + (tracks.count === 1 ? '' : 'S') +
+                    ' · ' + tracks.detections + ' DETECTIONS';
+                $('trackSummary').textContent = tracks.count + ' tracked object' +
+                    (tracks.count === 1 ? '' : 's') + ' · ' + tracks.detections + ' HOG detections over ' +
+                    tracks.sampled_frames + ' detection frames at ' + Number(tracks.track_fps).toFixed(2) + ' fps';
+                $('tracksTable').innerHTML = list.length ? list.map(function (track) {
+                    return '<tr class="border-t border-outline-variant/40">' +
+                        '<td class="py-1 pr-2">' + esc(track.id) + '</td>' +
+                        '<td class="py-1 pr-2">person</td>' +
+                        '<td class="py-1 pr-2">' + esc(mmss(track.first_s)) + '</td>' +
+                        '<td class="py-1 pr-2">' + esc(mmss(track.last_s)) + '</td>' +
+                        '<td class="py-1">' + esc(track.frames) + '</td></tr>';
+                }).join('') : '<tr><td colspan="5" class="py-2 text-on-surface-variant">No people were detected by the HOG fallback in this clip.</td></tr>';
+                $('trackNote').textContent = tracks.note || '';
+                $('trackVideo').src = tracks.video_url || '';
+
+                // 05 summary
+                var summary = result.summary || {};
+                $('summaryMeta').textContent = secs(summary.seconds) + ' SUMMARY';
+                $('summaryVideo').src = summary.video_url || '';
+                $('summaryLine').textContent = secs(summary.seconds) + ' summary · ' +
+                    (summary.shots || []).length + ' shot' + ((summary.shots || []).length === 1 ? '' : 's') +
+                    ' · ' + (Number(summary.compression_ratio) * 100).toFixed(0) + '% of the ' +
+                    secs(summary.source_seconds) + ' source';
+                $('summaryShots').innerHTML = (summary.shots || []).map(function (shot) {
+                    return '<span class="px-space-xs py-0.5 bg-surface rounded" title="scene ' + esc(shot.scene) +
+                        '">' + esc(mmss(shot.start_s)) + ' +' + Number(shot.len_s).toFixed(1) + 's</span>';
+                }).join('');
+            }
+
+            function drawSeries(series) {
+                var canvas = $('motionSeries');
+                var ratio = window.devicePixelRatio || 1;
+                var width = canvas.clientWidth || 600;
+                canvas.width = width * ratio;
+                canvas.height = 96 * ratio;
+                var ctx = canvas.getContext('2d');
+                ctx.scale(ratio, ratio);
+                ctx.clearRect(0, 0, width, 96);
+                if (!series.length) return;
+                var max = Math.max.apply(null, series) || 1;
+                var bar = width / series.length;
+                ctx.fillStyle = '#9e3d24';
+                series.forEach(function (value, index) {
+                    var height = (value / max) * 88;
+                    ctx.fillRect(index * bar, 96 - height, Math.max(1, bar - 0.5), height);
+                });
+                ctx.strokeStyle = 'rgba(86,66,61,0.25)';
+                ctx.beginPath();
+                ctx.moveTo(0, 95.5);
+                ctx.lineTo(width, 95.5);
+                ctx.stroke();
+            }
+        })();
+    </script>
+</body>
+
+</html>

@@ -3,3 +3,7 @@ data/
 # The demo owner's own recordings (never committed).
 data_own/
 tmp/
+
+# Demo video add-on: separate environment and temporary outputs.
+# The root .gitignore stays as it is; these two paths belong to the demo.
+.venv-video/

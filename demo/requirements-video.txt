@@ -1,0 +1,21 @@
+# SamskritaDhvani demo — VIDEO ADD-ON ONLY (Part B)
+#
+# This file is NOT part of the project's requirements. The video tab is a
+# demo add-on outside the SRS (files/Review.md, 2026-10-29 entry): its
+# outputs are not results.
+#
+# Install into a separate environment so the project venv and the main
+# requirements.txt stay untouched:
+#
+#   python3 -m venv demo/.venv-video
+#   demo/.venv-video/bin/pip install -r demo/requirements-video.txt
+#
+# Approved on 2026-10-29 (owner): opencv-python-headless, scenedetect,
+# imageio-ffmpeg — nothing else. No ultralytics/torch/model downloads.
+# Object tracking uses OpenCV's built-in HOG person detector, so the
+# runtime reports tracking: "hog".
+
+opencv-python-headless>=4.10,<5
+scenedetect>=0.6.4,<0.7
+imageio-ffmpeg>=0.5,<0.7
+numpy>=2.0
