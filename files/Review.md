@@ -3300,3 +3300,99 @@ motion, not identification. Motion is frame differencing, not optical
 flow. The summary drops audio. The clip is synthetic, so no claim is
 made about real footage; the 1080p timing is an upscale of the same
 content. Nothing was calibrated, and **no result was produced.**
+
+## Session: 2026-10-30
+
+### Demo branch honesty pass — labels, provenance, static assets (no results)
+
+**Scope.** Demo branch only. No scoring code, thresholds, gates or
+`samskrita_dhvani/` modules were changed. Nothing was written to
+`data/` or `corpus/`, nothing was pushed, and `Dhvani-Yantra-main/`
+was not modified (see the symlink note below).
+
+**Static assets / runtime isolation.** Every asset the demo serves was
+copied first into gitignored `demo/data/static/` (101 audio WAVs, 180
+gita WAVs + dataset JSON, P1/P2/P3 figures and JSON) by the new
+`demo/prepare_demo_static.py`, and `/demo/static` now mounts that
+directory with `follow_symlink=False`. `P1_RESULTS_PATH`,
+`P2_SUMMARY_PATH` and `GITA_DATA_DIR` point there, so the server no
+longer reads the neighbouring project at runtime — verified by grep
+(no functional `Dhvani-Yantra-main` path remains in `demo/*.py`) and by
+fetching every static artefact and scoring through the API after the
+copy. Only then was `Dhvani-Yantra-main/results/audio` removed: `ls -l`
+showed `audio -> ../data/audio` (a symlink, no trailing slash used).
+The four `__pycache__` directories this work had created under
+`Dhvani-Yantra-main/` were removed; the source tree is byte-unchanged
+otherwise.
+
+**Model file.** `demo/data/gvr/model.pkl` was renamed to `model.json`
+(it was already a JSON envelope) and `demo/server.py` updated; no other
+reference existed.
+
+**Scorer provenance (stated, not changed).** In `/api/spd/score`, only
+`similarity_pct`, `vowel_score`, `consonant_score`, `duration_score`,
+`mfcc_dtw_score` and `reference_word` come from this project's D2
+scorer (`samskrita_dhvani/spd_scorer.py:335`, formula at line 230).
+`segments` (`demo/server.py:270`), `dtw_path` (line 284, the P1
+reference-vs-itself path), `f1_ref/f2_ref` (line 291, P1 baseline),
+`f1_stu/f2_stu` (line 262), `d_mfcc` (line 288) and `duration_ratio`
+(line 290) are **derived demo telemetry**, not Dhvani-Yantra scoring
+code and not measured from the take. The same statement is in
+`demo/demo.md` §4.
+
+**Labels.** Every graph now carries `LIVE · this attempt` or
+`IMPORTED · Dhvani-Yantra, synthetic TTS audio`; Graph C plots only the
+19 measured P1 points plus the curve labelled `fitted:
+100·exp(−α·ε), α = 3.056, Dhvani-Yantra scorer` (the live slider/cursor
+that drew a synthetic point was removed); Graph B is labelled
+“acoustic segments (voiced/unvoiced)” and its client-side fake fallback
+was deleted; Graph E now plots `dtw_distances` (lower is closer), the
+field the server actually computes, instead of the invented
+`hmm_log_likelihoods` (removed from the API); `confidence` is presented
+as “relative score — not a probability”. Sample takes are renamed
+“different-voice reading of the word” / “variant spelling … read by
+TTS”, with the invented percentages and diagnoses (“dental s”, “dropped
+r”, “metathesis”) removed. The SPD verdict is neutral. “Needs
+practice”, “Canonical alignment”, “Rigvedic articulatory contact” and
+the gloss wording are gone; the field is `iast` end to end. The video
+page credits the P3 figures to Blender Foundation CC-BY films
+(*Tears of Steel*, *Sintel*, *Elephants Dream) analysed with YOLOv8 +
+ByteTrack in Dhvani-Yantra, labels the live tracker “HOG + centroid
+fallback”, and no longer says “ritual footage”.
+
+**Verse texts.** Compared with Dhvani-Yantra's `VERSE_TEXT`
+(`src/speech_b/p2_build_data.py`): 7 verses identical after punctuation
+normalisation; 1.1 adds the speaker tag in the demo; 9.22 differs
+because upstream has the typo `अनायाश्चिन्तयन्तो` (demo keeps the
+correct `अनन्याश्चिन्तयन्तो`); 18.66 had `त्वा` in the demo and was
+corrected to `त्वां`. Recorded in `DEMO_DATA.md`.
+
+**Credit.** Dhvani-Yantra by AtulTejaswi, with the author's permission
+to copy, is credited in `demo/DEMO_DATA.md`, `demo/demo.md` and the demo
+guide page; the upstream licence status (none stated) is recorded.
+
+**Verification.** `/spd.html` and `/gvr.html` were rendered in headless
+Chrome (Google Chrome 1xx, `--dump-dom`, 8 s virtual time). SPD: nav
+rendered, 29 words loaded from `/api/words`, Graph C source line read
+`krishna · n=19 pts`, chips present, the slider absent, no JS errors.
+GVR: Graph E header “DTW distance to each verse (lower is closer)”,
+Graph F tag `IMPORTED · Dhvani-Yantra P2, n=60`, “not a probability”
+label present, no JS errors. A live `/api/spd/score` call returned
+similarity 40.2 % for the synthetic `stud_krishna` take, and
+`/api/gvr/recognize` on the BG 9.26 sample returned `dtw_distances`
+(9.26 = 0.1647, nearest of 10) with no `hmm_log_likelihoods` key. All
+inline scripts pass `node --check`. Playwright is **not installed** and
+was not installed (no new dependency); the render check above is DOM
+inspection, not a visual screenshot review.
+
+**Tests.** `.venv/bin/python -m pytest tests -q` → **255 passed, 0
+failed** in 8.56 s (253 from the video pass + 2 pre-existing
+uncommitted video-page tests). No assertion was weakened; `git diff`
+for `tests/test_demo_video.py` is additions only.
+
+**Honest limits.** No accuracy, validation or pronunciation-quality
+claim is made anywhere. The HMM 36.7 % / DTW 100.0 % figures are
+Dhvani-Yantra's P2 results on 60 synthetic clips and are labelled
+imported. Graph D's formants and DTW path are a reference baseline, not
+this attempt's measurement. All audio is synthetic Edge-TTS. **No
+result was produced.**

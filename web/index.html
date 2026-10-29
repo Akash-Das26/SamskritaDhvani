@@ -66,17 +66,14 @@
                         Phonetic Architecture</span></div>
             </div>
             <nav class="hidden md:flex items-center gap-space-sm font-label-lg text-label-lg"
-                data-active-classes="bg-primary-container text-on-primary font-medium rounded"><a aria-current="page"
-                    class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-medium rounded"
-                    data-path="corpus-reader" href="#">Corpus Reader</a><a
-                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
-                    data-path="spectrogram-workbench" href="#">Spectrogram Workbench</a><a
-                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
-                    data-path="prosodic-matrix" href="#">Prosodic Matrix</a><a
-                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
-                    data-path="acoustic-models" href="#">Acoustic Models</a><a
-                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
-                    data-path="research-documentation" href="#">Documentation</a></nav>
+                data-active-classes="bg-primary-container text-on-primary font-medium rounded">
+                <a class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-medium rounded" aria-current="page" href="/">Home</a>
+                <a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded" href="/spd.html">SPD Practice</a>
+                <a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded" href="/gvr.html">Verse Recognition</a>
+                <a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded" href="/status.html">Corpus &amp; Model Status</a>
+                <a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded" href="/video.html">Video Analysis</a>
+                <a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded" href="/demo-guide.html">Demo Guide</a>
+            </nav>
             <div class="flex items-center gap-space-md">
                 <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
                         class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
@@ -130,16 +127,15 @@
                                 </div>
                                 <div class="grid grid-cols-2 gap-x-space-md gap-y-1 font-label-sm text-label-sm">
                                     <span class="text-on-surface-variant">SPD Scoring</span>
-                                    <span class="text-right text-on-surface font-code text-code">Design D2 —
-                                        built, data pending</span>
+                                    <span class="text-right text-on-surface font-code text-code">D2 — calibrated (5 words)</span>
                                     <span class="text-on-surface-variant">GVR Recognition</span>
-                                    <span class="text-right text-on-surface font-code text-code">Design D3 —
-                                        built, data pending</span>
+                                    <span class="text-right text-on-surface font-code text-code">D3 — 10 Gita verses</span>
+                                    <span class="text-on-surface-variant">Video Pipeline</span>
+                                    <span class="text-right text-on-surface font-code text-code">5-stage CV add-on</span>
                                     <span class="text-on-surface-variant">Shared Front-end</span>
                                     <span class="text-right text-on-surface font-code text-code">MFCC + Δ + ΔΔ</span>
-                                    <span class="text-on-surface-variant">Audio Intake</span>
-                                    <span class="text-right text-on-surface font-code text-code">Browser record /
-                                        upload</span>
+                                    <span class="text-on-surface-variant">Audio / Video Intake</span>
+                                    <span class="text-right text-on-surface font-code text-code">Browser / local API</span>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +143,7 @@
                 </div>
             </div>
             <section class="w-full max-w-7xl mx-auto px-gutter pb-space-xl">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg mb-space-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-lg">
                     <div
                         class="group relative bg-surface-container-low hover:bg-surface-container rounded-lg p-space-lg transition-all duration-200 flex flex-col justify-between shadow-sm">
                         <div class="flex flex-col">
@@ -260,8 +256,8 @@
                             </h2>
                             <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
                                 Recite a verse for closed-set identification. The recognizer will return the best match
-                                with a confidence score plus runner-up candidates; until the D3 model and its training
-                                registry exist, submissions return an explicit "model unavailable" state.
+                                with a relative score (not a probability) plus runner-up candidates; until the D3 model
+                                and its training registry exist, submissions return an explicit "model unavailable" state.
                             </p>
                             <div
                                 class="bg-surface-container-highest/60 rounded p-space-md mb-space-lg flex flex-col gap-2">
@@ -272,7 +268,7 @@
                                 </div>
                                 <div class="flex flex-col gap-1.5">
                                     <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                        Recognition output — verse match, confidence, and runner-up candidates —
+                                        Recognition output — verse match, relative score, and runner-up candidates —
                                         is rendered here only after a real recitation is scored by the API.
                                         No example values are pre-computed or displayed.
                                     </p>
@@ -287,7 +283,7 @@
                                 <span
                                     class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-high text-on-surface px-2.5 py-1 rounded">
                                     <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
-                                    Confidence + runner-up candidates
+                                    Relative score + runner-up candidates
                                 </span>
                                 <span
                                     class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-high text-on-surface px-2.5 py-1 rounded">
@@ -305,17 +301,104 @@
                             </button>
                         </div>
                     </div>
+                    <div
+                        class="group relative bg-surface-container-low hover:bg-surface-container rounded-lg p-space-lg transition-all duration-200 flex flex-col justify-between shadow-sm">
+                        <div class="flex flex-col">
+                            <div class="flex items-start justify-between mb-space-md">
+                                <div class="flex items-center gap-space-sm">
+                                    <div
+                                        class="w-10 h-10 rounded bg-secondary-fixed flex items-center justify-center text-secondary">
+                                        <span class="material-symbols-outlined text-[24px]">movie</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="font-label-sm text-label-sm text-secondary font-medium tracking-wide uppercase">Computer
+                                            Vision</span>
+                                        <span
+                                            class="font-headline-sm text-headline-sm text-primary">दृश्य-विश्लेषणम्</span>
+                                    </div>
+                                </div>
+                                <span
+                                    class="font-code text-code text-on-surface-variant bg-surface-container-highest px-2 py-0.5 rounded">MOD-03</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs font-medium">
+                                Video Analysis
+                            </h2>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+                                Upload recitation video captures (&le;30 min, &le;512 MB). The automated pipeline
+                                extracts salient keyframes, detects shot boundaries, maps spatial motion density, tracks
+                                moving centroids, and renders a 60–90s highlight summary.
+                            </p>
+                            <div class="bg-surface-container-highest/60 rounded p-space-md mb-space-lg">
+                                <div
+                                    class="flex items-center justify-between mb-space-xs font-label-sm text-label-sm text-on-surface-variant">
+                                    <span>5-STAGE CV PIPELINE</span>
+                                    <span class="font-code text-code">opencv + pyscenedetect</span>
+                                </div>
+                                <div class="grid grid-cols-5 gap-1 text-center font-code text-[10px] py-1">
+                                    <div class="bg-surface-container-lowest/80 rounded p-1 flex flex-col items-center">
+                                        <span class="text-primary font-bold">01</span>
+                                        <span class="text-on-surface-variant text-[9px]">Frames</span>
+                                    </div>
+                                    <div class="bg-surface-container-lowest/80 rounded p-1 flex flex-col items-center">
+                                        <span class="text-primary font-bold">02</span>
+                                        <span class="text-on-surface-variant text-[9px]">Scenes</span>
+                                    </div>
+                                    <div class="bg-surface-container-lowest/80 rounded p-1 flex flex-col items-center">
+                                        <span class="text-primary font-bold">03</span>
+                                        <span class="text-on-surface-variant text-[9px]">Motion</span>
+                                    </div>
+                                    <div class="bg-surface-container-lowest/80 rounded p-1 flex flex-col items-center">
+                                        <span class="text-primary font-bold">04</span>
+                                        <span class="text-on-surface-variant text-[9px]">Tracks</span>
+                                    </div>
+                                    <div class="bg-surface-container-lowest/80 rounded p-1 flex flex-col items-center">
+                                        <span class="text-primary font-bold">05</span>
+                                        <span class="text-on-surface-variant text-[9px]">Summary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-space-lg">
+                                <span
+                                    class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-high text-on-surface px-2.5 py-1 rounded">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Keyframes &amp; Sharpness
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-high text-on-surface px-2.5 py-1 rounded">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    HSV Shot Cut Timeline
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-high text-on-surface px-2.5 py-1 rounded">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Centroid Motion Flow
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <button
+                                class="w-full inline-flex items-center justify-between px-space-md py-space-sm bg-primary text-on-primary hover:bg-primary-container rounded transition-colors font-label-lg text-label-lg group-hover:shadow"
+                                onclick="window.location.href='/video.html'" type="button">
+                                <span>Launch Video Analysis</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="flex flex-col items-center justify-center text-center py-space-sm mb-space-xl">
                     <p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-xs max-w-2xl">
                         Scope: closed-set verse recognition over a fixed verse list; pronunciation scores are
-                        diagnostic, not certifying.
+                        diagnostic, not certifying; video analysis provides automated scene &amp; motion telemetry.
                     </p>
                     <div
                         class="inline-flex items-center gap-2 font-code text-code text-on-surface-variant bg-surface-container-high px-space-md py-1 rounded">
                         <span>[Backend: FastAPI demo API</span>
                         <span class="opacity-30">·</span>
-                        <span>Scoring / recognition models pending — D2 / D3]</span>
+                        <span>SPD D2 + GVR D3 + Video CV add-on</span>
+                        <span class="opacity-30">·</span>
+                        <a href="/demo-guide.html" class="text-primary hover:underline font-medium">Open Demo Guide &rarr;</a>
+                        <span>]</span>
                     </div>
                 </div>
                 <div class="bg-surface-container rounded-lg p-space-lg mb-space-xl">

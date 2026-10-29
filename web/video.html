@@ -122,9 +122,14 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-space-sm shrink-0">
+                        <div class="flex items-center gap-space-sm shrink-0 flex-wrap">
                             <input id="fileInput" type="file" accept="video/mp4,video/webm,video/x-matroska,video/quicktime,video/x-msvideo,.mp4,.m4v,.mov,.mkv,.webm,.avi"
                                 class="sr-only" />
+                            <button id="loadSampleBtn" type="button"
+                                class="px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant/50 transition-colors rounded font-label-lg text-label-lg flex items-center gap-space-sm">
+                                <span class="material-symbols-outlined text-[18px] text-primary">play_circle</span>
+                                <span>Load Demo Sample Video</span>
+                            </button>
                             <button id="chooseFile" type="button"
                                 class="px-space-lg py-space-sm bg-primary text-on-primary hover:bg-on-secondary-container transition-colors rounded font-label-lg text-label-lg flex items-center gap-space-sm disabled:opacity-50 disabled:cursor-not-allowed">
                                 <span class="material-symbols-outlined text-[18px]">upload</span>
@@ -167,8 +172,8 @@
                         <h2 class="font-headline-sm text-headline-sm text-on-surface">No analysis yet</h2>
                     </div>
                     <p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
-                        Choose a video above or drop one here. When a job finishes, this page fills with five
-                        sections computed from that file: important frames, scene boundaries, a motion map, tracked
+                        Choose a video above, click <strong class="text-on-surface font-medium">Load Demo Sample Video</strong>, or drop a video file here. When a job finishes, this page fills with five
+                        sections computed live: important frames, scene boundaries, a motion map, tracked
                         objects and a short summary.
                     </p>
                     <ul class="mt-space-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
@@ -178,6 +183,103 @@
                         <li class="bg-surface rounded p-space-sm border border-outline-variant">04 · Tracked objects</li>
                         <li class="bg-surface rounded p-space-sm border border-outline-variant">05 · Summary</li>
                     </ul>
+                </div>
+
+                <!-- RESEARCH BENCHMARK ARTIFACTS (P3 BASELINE) -->
+                <div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md border border-outline-variant/30">
+                    <div class="flex items-center justify-between flex-wrap gap-space-sm border-b border-outline-variant/30 pb-space-sm">
+                        <div class="flex items-center gap-space-sm">
+                            <span class="material-symbols-outlined text-primary">analytics</span>
+                            <div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface">Imported P3 benchmark figures (Dhvani-Yantra)</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                    Pre-computed by Dhvani-Yantra's P3 run over three Blender Foundation CC-BY films
+                                    (<em>Tears of Steel</em>, <em>Sintel</em>, <em>Elephants Dream</em>), analysed there with
+                                    <strong class="text-on-surface font-medium">YOLOv8 + ByteTrack</strong>. Imported for comparison;
+                                    nothing on this page produced them.
+                                </p>
+                            </div>
+                        </div>
+                        <span class="font-code text-code text-secondary bg-surface-container px-2 py-0.5 rounded">P3 · imported · 3 films · 60 keyframes · 640p analysis copy</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                        <!-- Chart 1: Scene Timeline -->
+                        <div class="bg-surface rounded-lg p-space-md border border-outline-variant/30 flex flex-col gap-space-xs">
+                            <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                                <span class="font-medium text-on-surface">1. Scene Boundary Timeline</span>
+                                <span class="font-code text-code text-primary">ContentDetector</span>
+                            </div>
+                            <div class="rounded overflow-hidden bg-surface-container-highest mt-1">
+                                <img src="/demo/static/P3/P3_scene_timeline.png" alt="Scene Timeline" class="w-full h-auto block hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-1">
+                                HSV color difference metric cuts across 30 minutes, showing shot durations and clustering.
+                            </p>
+                        </div>
+
+                        <!-- Chart 2: Motion Energy Profile -->
+                        <div class="bg-surface rounded-lg p-space-md border border-outline-variant/30 flex flex-col gap-space-xs">
+                            <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                                <span class="font-medium text-on-surface">2. Temporal Motion Energy Profile</span>
+                                <span class="font-code text-code text-primary">Frame Differencing</span>
+                            </div>
+                            <div class="rounded overflow-hidden bg-surface-container-highest mt-1">
+                                <img src="/demo/static/P3/P3_motion_energy_curve.png" alt="Motion Energy Curve" class="w-full h-auto block hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-1">
+                                Continuous pixel change energy across frames, capturing active gestures and movement bursts.
+                            </p>
+                        </div>
+
+                        <!-- Chart 3: Motion Heatmap -->
+                        <div class="bg-surface rounded-lg p-space-md border border-outline-variant/30 flex flex-col gap-space-xs">
+                            <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                                <span class="font-medium text-on-surface">3. Spatial Motion Density Heatmap</span>
+                                <span class="font-code text-code text-primary">Spatial Accumulation</span>
+                            </div>
+                            <div class="rounded overflow-hidden bg-surface-container-highest mt-1">
+                                <img src="/demo/static/P3/P3_motion_heatmap.png" alt="Motion Heatmap" class="w-full h-auto block hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-1">
+                                Cumulative motion intensity map across the screen canvas indicating focal spatial zones.
+                            </p>
+                        </div>
+
+                        <!-- Chart 4: Trajectories -->
+                        <div class="bg-surface rounded-lg p-space-md border border-outline-variant/30 flex flex-col gap-space-xs">
+                            <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                                <span class="font-medium text-on-surface">4. Object Movement Trajectories</span>
+                                <span class="font-code text-code text-primary">YOLOv8 + ByteTrack (Dhvani-Yantra)</span>
+                            </div>
+                            <div class="rounded overflow-hidden bg-surface-container-highest mt-1">
+                                <img src="/demo/static/P3/P3_trajectories.png" alt="Track Trajectories" class="w-full h-auto block hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-1">
+                                Persistent-ID bounding boxes and movement trails from Dhvani-Yantra's YOLOv8 + ByteTrack run.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Chart 5: Contact Sheet full width -->
+                    <div class="bg-surface rounded-lg p-space-md border border-outline-variant/30 flex flex-col gap-space-xs">
+                        <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                            <span class="font-medium text-on-surface">5. Keyframe Extraction Contact Sheet</span>
+                            <span class="font-code text-code text-primary">Sharpness &times; Change (60 Frames)</span>
+                        </div>
+                        <div class="rounded overflow-hidden bg-surface-container-highest mt-1 max-h-[420px] overflow-y-auto">
+                            <img src="/demo/static/P3/P3_contact_sheet.png" alt="Keyframe Contact Sheet" class="w-full h-auto block" />
+                        </div>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-1">
+                            Salient keyframe grid selected via Laplace variance sharpness and inter-frame HSV disparity.
+                        </p>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant/70 border-t border-outline-variant/30 pt-space-sm">
+                        Film frames: <em>Tears of Steel</em> © Blender Foundation (CC BY 3.0) ·
+                        <em>Sintel</em> © Blender Foundation (CC BY 3.0) ·
+                        <em>Elephants Dream</em> © Blender Foundation (CC BY 3.0-US).
+                        Figures from <code class="font-code">Dhvani-Yantra-main/results/P3</code>, by AtulTejaswi.
+                    </p>
                 </div>
             </div>
 
@@ -435,6 +537,29 @@
             var input = $('fileInput');
 
             $('chooseFile').addEventListener('click', function () { input.click(); });
+            var sampleBtn = $('loadSampleBtn');
+            if (sampleBtn) {
+                sampleBtn.addEventListener('click', function () {
+                    sampleBtn.disabled = true;
+                    sampleBtn.classList.add('opacity-50');
+                    fetch('/api/sample-video')
+                        .then(function (r) {
+                            if (!r.ok) throw new Error('Sample video clip not found on demo server.');
+                            return r.blob();
+                        })
+                        .then(function (blob) {
+                            var file = new File([blob], 'demo_sample_60s.mp4', { type: 'video/mp4' });
+                            upload(file);
+                        })
+                        .catch(function (err) {
+                            fail('sample_failed', err.message, 'demo_sample_60s.mp4');
+                        })
+                        .finally(function () {
+                            sampleBtn.disabled = false;
+                            sampleBtn.classList.remove('opacity-50');
+                        });
+                });
+            }
             dropzone.addEventListener('click', function (event) {
                 if (event.target.closest('button')) return;
                 input.click();

@@ -187,3 +187,29 @@ def test_page_binds_every_artifact_to_the_api():
     assert "tracks.video_url" in html
     assert "motion.map_url" in html
     assert "summary.video_url" in html
+
+
+def test_index_page_wires_mod03_video():
+    index_html = (PAGE.parent / "index.html").read_text()
+    assert "MOD-03" in index_html
+    assert "/video.html" in index_html
+    assert "Video Analysis" in index_html
+
+
+def test_sample_video_endpoint():
+    import subprocess
+    import sys
+
+    code = (
+        "from demo.server import api\n"
+        "from fastapi.testclient import TestClient\n"
+        "client = TestClient(api.app)\n"
+        "res = client.get('/api/sample-video')\n"
+        "assert res.status_code == 200\n"
+        "assert res.headers['content-type'] == 'video/mp4'\n"
+        "assert len(res.content) > 1000\n"
+    )
+    res = subprocess.run([sys.executable, "-c", code], capture_output=True, text=True)
+    assert res.returncode == 0, res.stderr
+
+

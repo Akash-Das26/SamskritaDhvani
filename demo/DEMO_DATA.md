@@ -1,5 +1,12 @@
 # demo/DEMO_DATA.md — demo-only data copied from Dhvani-Yantra-main
 
+> **Credit.** Dhvani-Yantra was built by **AtulTejaswi**
+> (<https://github.com/AtulTejaswi/Dhvani-Yantra>). The author gave
+> permission to copy it into this demo; these copies are used only for
+> the demo screen and are credited here and in `demo/demo.md`. The
+> upstream repository states no licence of its own, so nothing from it
+> has been re-licensed or presented as this project's work.
+
 **These files are not project data.** They are synthetic machine-generated
 speech (Microsoft Edge Neural TTS) taken from a read-only neighbouring
 project, copied only so the demo screen has a reference clip and a
@@ -21,6 +28,28 @@ any reported number.
 - Regenerate with `python -m demo.prepare_demo_data` (decodes each file
   with `load_audio_16k` and rejects anything whose WebRTC-VAD speech
   fraction is ≤ 0.10).
+
+## Served assets (`demo/data/static/`)
+
+The server no longer reads `Dhvani-Yantra-main/` at runtime. Every asset
+it serves is copied first by `python -m demo.prepare_demo_static` into
+`demo/data/static/`, which is gitignored with the rest of `demo/data/`:
+
+| source | copy | files |
+|---|---|---|
+| `Dhvani-Yantra-main/data/audio/` | `demo/data/static/audio/` | 101 WAV + `p1_dataset.json` |
+| `Dhvani-Yantra-main/data/gita/` | `demo/data/static/gita/` | 180 WAV + `p2_dataset.json` |
+| `Dhvani-Yantra-main/results/P1/` | `demo/data/static/P1/` | 9 PNG + 5 JSON/CSV |
+| `Dhvani-Yantra-main/results/P2/` | `demo/data/static/P2/` | 1 PNG + 3 JSON/CSV |
+| `Dhvani-Yantra-main/results/P3/` | `demo/data/static/P3/` | 5 PNG + 1 MP4 + 4 JSON/CSV |
+
+`/demo/static` mounts `demo/data/static/` with `follow_symlink=False`.
+The P3 figures are Dhvani-Yantra's own run over three Blender Foundation
+CC-BY films (*Tears of Steel*, *Sintel*, *Elephants Dream*), analysed
+there with YOLOv8 + ByteTrack; the live video page uses the OpenCV HOG
++ centroid fallback instead. The symlink `Dhvani-Yantra-main/results/audio`
+(created during earlier demo work) was removed after the copy; nothing
+in the source tree was otherwise changed.
 
 ## Copied files
 
@@ -57,6 +86,29 @@ source bytes).
   nothing upstream claims a listen-through, and this project has none.
 - **A licence beyond "edge-tts output (free Microsoft Neural TTS)"**:
   **source not documented**.
+
+## GVR model
+
+`demo/data/gvr/model.json` is the demo's verse model. It is a JSON
+envelope (`gvr_classifier` persists JSON under a `.pkl` name upstream),
+so the file was renamed from `model.pkl` to `model.json` without changing
+a byte; `demo/server.py` is the only reference. The demo's
+`/api/gvr/recognize` route does not use it — see `demo/demo.md` §5.
+
+## Verse texts
+
+The 10 Devanagari verse texts the demo displays come from
+`Dhvani-Yantra-main/src/speech_b/p2_build_data.py`, `VERSE_TEXT`
+(the same constant used to synthesize the verse audio). They were
+compared with the demo's `GITA_VERSE_TEXTS` after stripping spaces,
+`।`/`॥` and `|`:
+
+| verse | difference |
+|---|---|
+| 1.1 | the demo adds the speaker tag `धृतराष्ट्र उवाच`; the rest matches |
+| 2.14, 2.47, 2.62, 4.7, 4.8, 9.26, 10.20 | identical |
+| 9.22 | Dhvani-Yantra has `अनायाश्चिन्तयन्तो`; the demo has the correct `अनन्याश्चिन्तयन्तो` (`ananyāś cintayanto`). The demo text was kept; the upstream typo is recorded here. |
+| 18.66 | the demo had `त्वा`; Dhvani-Yantra has `त्वां` (`tvāṃ`), which is correct. The demo was corrected on 2026-10-30. |
 
 ## Derived artifact
 

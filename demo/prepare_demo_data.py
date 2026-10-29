@@ -63,6 +63,26 @@ WORDS: dict[str, dict] = {
             "stud_shanti_1_shanti.wav",
         ],
     },
+    # Added: dharma and om complete the 5-word P1 evaluation set.
+    # Both have validated reference + student clips in Dhvani-Yantra-main.
+    "dharma": {
+        "reference": "ref_dharma.wav",
+        "recitations": [
+            "ref_dharma_alt.wav",
+            "stud_dharma.wav",
+            "stud_dharma_0_dhram.wav",
+            "stud_dharma_1_dharm.wav",
+        ],
+    },
+    "om": {
+        "reference": "ref_om.wav",
+        "recitations": [
+            "ref_om_alt.wav",
+            "stud_om.wav",
+            "stud_om_0_aum.wav",
+            "stud_om_1_om.wav",
+        ],
+    },
 }
 
 

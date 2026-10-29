@@ -284,6 +284,7 @@
       ['/gvr.html', 'Verse Recognition'],
       ['/status.html', 'Corpus & Model Status'],
       ['/video.html', 'Video Analysis'],
+      ['/demo-guide.html', 'Demo Guide'],
     ];
     var here = location.pathname.replace(/\/+$/, '') || '/';
     nav.innerHTML = pages

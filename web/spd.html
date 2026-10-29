@@ -104,7 +104,7 @@
                         <span>diagnostic only — not certifying</span>
                     </div>
                 </div>
-                <!-- SECTION 1: Word Selection & Canonical Acoustic Reference -->
+                <!-- SECTION 1: Word Selection & Reference Audio -->
                 <section class="flex flex-col gap-space-md">
                     <!-- Search & Classification Filter Pills -->
                     <div
@@ -163,8 +163,8 @@
                         <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
                             <div class="flex flex-col">
                                 <span
-                                    class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase mb-space-xs">Canonical
-                                    Target Lexeme</span>
+                                    class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase mb-space-xs">Reference
+                                    word</span>
                                 <div class="flex items-baseline gap-space-md">
                                     <span id="wordDeva"
                                         class="font-headline-lg text-display text-primary tracking-tight font-headline-lg">—</span>
@@ -328,6 +328,23 @@
                                 Input: browser default microphone · SNR readout not implemented
                             </div>
                         </div>
+
+                        <!-- Sample Attempt Selector for Rapid Diagnostic Testing -->
+                        <div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container px-space-md py-space-xs rounded-lg border border-outline-variant/30 mt-space-xs">
+                            <div class="flex items-center gap-space-sm flex-wrap">
+                                <span class="material-symbols-outlined text-primary text-[18px]">science</span>
+                                <span class="font-label-sm text-label-sm font-semibold text-on-surface">Test Sample Take:</span>
+                                <select id="sampleAttemptSelect" class="bg-surface-container-lowest text-on-surface text-label-sm font-code px-2 py-1 rounded border border-outline-variant/40 text-[11px] outline-none focus:ring-1 focus:ring-primary max-w-[320px]">
+                                    <option value="">— Select student sample / perturbation —</option>
+                                </select>
+                                <button id="loadSampleAttemptBtn" type="button" class="px-space-sm py-1 bg-primary hover:bg-secondary text-on-primary text-[11px] font-code rounded transition-colors shadow-sm disabled:opacity-50" disabled>
+                                    Load Take
+                                </button>
+                            </div>
+                            <span class="font-code text-[11px] text-on-surface-variant/70" id="sampleAttemptHint">
+                                Select word above to load student takes &amp; perturbations
+                            </span>
+                        </div>
                     </div>
                 </section>
                 <!-- SECTION 3: Phonetic Assessment & Spectral Similarity Result -->
@@ -362,7 +379,7 @@
                                 —</div>
                             <div
                                 class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider text-center mt-1">
-                                Overall Alignment
+                                Similarity to reference
                             </div>
                         </div>
                         <!-- Scholarly Diagnostic Sentence -->
@@ -370,7 +387,8 @@
                             <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
                                 id="resultNote">
                                 Submit a recorded or uploaded attempt to score it against the selected word. The
-                                diagnostic breakdown appears here only from a real backend response.
+                                diagnostic breakdown appears here only from a real backend response. These are
+                                relative acoustic sub-scores, not a pronunciation grade.
                             </p>
                         </div>
                     </div>
@@ -378,7 +396,7 @@
                     <div class="flex flex-col gap-space-md">
                         <span
                             class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant font-semibold">
-                            Component Accuracy Breakdown
+                            Component sub-scores
                         </span>
                         <div class="grid grid-cols-1 gap-space-md">
                             <!-- Bar 1: Vowel Accuracy -->
@@ -387,10 +405,10 @@
                                 <div class="flex items-baseline justify-between">
                                     <div class="flex items-center gap-space-sm">
                                         <span class="font-body-md text-body-md font-medium text-on-surface">Vowel
-                                            Accuracy (Svara-Śuddhi)</span>
+                                            sub-score</span>
                                         <span
-                                            class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[formant
-                                            trajectory]</span>
+                                            class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[spectral
+                                            proximity]</span>
                                     </div>
                                     <span class="font-code text-label-md font-semibold text-primary" data-axis-score="vowel">—</span>
                                 </div>
@@ -403,7 +421,7 @@
                                     <span>25%</span>
                                     <span>50%</span>
                                     <span>75%</span>
-                                    <span>100% (Exact Formant Overlap)</span>
+                                    <span>100%</span>
                                 </div>
                             </div>
                             <!-- Bar 2: Consonant Accuracy -->
@@ -412,10 +430,10 @@
                                 <div class="flex items-baseline justify-between">
                                     <div class="flex items-center gap-space-sm">
                                         <span class="font-body-md text-body-md font-medium text-on-surface">Consonant
-                                            Accuracy (Vyañjana-Pāka)</span>
+                                            sub-score</span>
                                         <span
-                                            class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[retroflex
-                                            sibilant]</span>
+                                            class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[spectral
+                                            proximity]</span>
                                     </div>
                                     <span class="font-code text-label-md font-semibold text-primary" data-axis-score="consonant">—</span>
                                 </div>
@@ -428,7 +446,7 @@
                                     <span>25%</span>
                                     <span>50%</span>
                                     <span>75%</span>
-                                    <span>100% (Rigvedic Canonical Contact)</span>
+                                    <span>100%</span>
                                 </div>
                             </div>
                             <!-- Bar 3: Duration Match -->
@@ -437,7 +455,7 @@
                                 <div class="flex items-baseline justify-between">
                                     <div class="flex items-center gap-space-sm">
                                         <span class="font-body-md text-body-md font-medium text-on-surface">Duration
-                                            Match (Kāla-Pramāṇa)</span>
+                                            sub-score</span>
                                         <span
                                             class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[moraic
                                             duration ratio]</span>
@@ -453,7 +471,7 @@
                                     <span>25%</span>
                                     <span>50%</span>
                                     <span>75%</span>
-                                    <span>100% (Strict Moraic Synchronization)</span>
+                                    <span>100%</span>
                                 </div>
                             </div>
                             <!-- Bar 4: Overall Spectral Match -->
@@ -462,7 +480,7 @@
                                 <div class="flex items-baseline justify-between">
                                     <div class="flex items-center gap-space-sm">
                                         <span class="font-body-md text-body-md font-medium text-on-surface">Overall
-                                            Spectral Match (Sāmyatā)</span>
+                                            spectral sub-score</span>
                                         <span
                                             class="font-code text-label-sm text-on-surface-variant hidden sm:inline">[MFCC-DTW
                                             distance]</span>
@@ -478,7 +496,7 @@
                                     <span>25%</span>
                                     <span>50%</span>
                                     <span>75%</span>
-                                    <span>100% (Zero Divergence Envelope)</span>
+                                    <span>100%</span>
                                 </div>
                             </div>
                         </div>
@@ -511,6 +529,185 @@
                         </p>
                     </div>
                 </section>
+
+                <!-- ======================================================== -->
+                <!-- Graphs A–D: Acoustic & Validation Diagnostic Suite -->
+                <!-- ======================================================== -->
+                <section id="demoSpdGraphs" class="w-full bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs border-b border-outline-variant/30 pb-space-sm">
+                        <div class="flex items-center gap-space-sm">
+                            <span class="material-symbols-outlined text-primary text-[22px]">query_stats</span>
+                            <h2 class="font-headline-sm text-headline-sm text-on-surface">Diagnostic Graph Panels</h2>
+                            <span class="px-2 py-0.5 bg-primary/10 text-primary font-code text-label-sm rounded font-medium">SOURCE-CHIPPED</span>
+                        </div>
+                        <span class="font-code text-label-sm text-on-surface-variant">Each panel names where its data comes from</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md pt-space-xs">
+                        <!-- Panel A: Similarity Gauge & Acoustic Chips -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between border border-outline-variant/20 shadow-sm">
+                            <div class="flex items-center justify-between">
+                                <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph A · Similarity Gauge</span>
+                                <span id="gaugeStatusBadge" class="font-code text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary">LIVE · this attempt</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center justify-center my-space-md">
+                                <div class="flex items-baseline gap-1">
+                                    <span id="gaugePct" class="font-code text-[68px] leading-none font-bold text-primary">—</span>
+                                    <span class="font-headline-sm text-headline-sm text-on-surface-variant">%</span>
+                                </div>                                <p id="gaugeVerdict" class="font-body-md text-body-md text-on-surface-variant italic mt-space-xs text-center">
+                                    Awaiting attempt submission
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-sm border-t border-outline-variant/20">
+                                <div class="p-space-xs bg-surface-container rounded flex flex-col items-center">
+                                    <span class="font-code text-[10px] text-on-surface-variant uppercase">MFCC DTW</span>
+                                    <span id="statMfcc" class="font-code text-[15px] font-semibold text-on-surface">—</span>
+                                </div>
+                                <div class="p-space-xs bg-surface-container rounded flex flex-col items-center">
+                                    <span class="font-code text-[10px] text-on-surface-variant uppercase">Duration</span>
+                                    <span id="statDur" class="font-code text-[15px] font-semibold text-on-surface">—</span>
+                                </div>
+                                <div class="p-space-xs bg-surface-container rounded flex flex-col items-center">
+                                    <span class="font-code text-[10px] text-on-surface-variant uppercase">Vowel (F1/F2)</span>
+                                    <span id="statVowel" class="font-code text-[15px] font-semibold text-on-surface">—</span>
+                                </div>
+                                <div class="p-space-xs bg-surface-container rounded flex flex-col items-center">
+                                    <span class="font-code text-[10px] text-on-surface-variant uppercase">Consonant</span>
+                                    <span id="statCons" class="font-code text-[15px] font-semibold text-on-surface">—</span>
+                                </div>
+                            </div>
+                            <div class="text-center pt-space-xs font-code text-[11px] text-on-surface-variant/70">
+                                Sub-scores returned by this project's D2 scorer · no formant trace is measured here
+                            </div>
+                        </div>
+
+                        <!-- Panel B: Segment-by-segment Error Bar (Canvas) -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between border border-outline-variant/20 shadow-sm">
+                            <div class="flex items-center justify-between">
+                                <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph B · Acoustic segment profile</span>
+                                <span class="font-code text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary">LIVE · this attempt</span>
+                            </div>
+
+                            <div class="w-full flex items-center justify-center my-space-sm overflow-hidden relative">
+                                <canvas id="segErrChart" width="460" height="170" class="w-full max-w-[460px] h-[170px] cursor-pointer"></canvas>
+                                <div id="segErrTooltip" class="absolute pointer-events-none hidden px-2.5 py-1.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-code text-[11px] shadow-xl z-20 whitespace-nowrap border border-outline-variant/30"></div>
+                            </div>
+
+                            <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs border-t border-outline-variant/20">
+                                <span>acoustic segments (voiced / unvoiced) · derived from the sub-scores, not measured per segment</span>
+                                <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-error inline-block"></span>&gt; mean</span>
+                            </div>
+                        </div>
+
+                        <!-- Panel C: Monotonic Validation – live Canvas working model -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col gap-space-sm border border-outline-variant/20 shadow-sm">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-space-xs">
+                                    <span class="font-code text-[10px] px-2 py-0.5 rounded bg-secondary/10 text-secondary">IMPORTED · Dhvani-Yantra, synthetic TTS audio</span>
+                                    <span class="font-code text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary font-medium" id="monotonicWordLabel">kṛṣṇa</span>
+                                </div>
+                            </div>
+                            <div class="w-full overflow-hidden relative">
+                                <canvas id="monotonicCanvas" width="460" height="145" class="w-full max-w-[460px] h-[145px] cursor-crosshair"></canvas>
+                                <div id="monotonicTooltip" class="absolute pointer-events-none hidden px-2.5 py-1.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-code text-[11px] shadow-xl z-20 whitespace-nowrap border border-outline-variant/30"></div>
+                            </div>
+                            <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs border-t border-outline-variant/20">
+                                <span id="monotonicSrc" class="font-code text-[10px] text-on-surface-variant/70">loading…</span>
+                                <span class="font-code text-[10px] text-on-surface-variant/60">fitted: 100·exp(−α·ε), α = 3.056, Dhvani-Yantra scorer</span>
+                            </div>
+                        </div>
+
+                        <!-- Panel D: Full Diagnostic Chart Trigger -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between border border-outline-variant/20 shadow-sm">
+                            <div class="flex items-center justify-between">
+                                <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph D · Reference-baseline panels</span>
+                                <span class="font-code text-[10px] px-2 py-0.5 rounded bg-secondary/10 text-secondary">IMPORTED · Dhvani-Yantra, synthetic TTS audio</span>
+                            </div>
+
+                            <div class="my-space-md flex flex-col items-center justify-center gap-space-sm text-center">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-[28px]">multimodal_hand_eye</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-label-lg text-label-lg font-semibold text-on-surface">F1/F2 baseline · DTW path · segment profile</h4>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">F1/F2 baselines and the DTW path come from the Dhvani-Yantra P1 reference-versus-itself run; the student markers are derived from this attempt's vowel sub-score.</p>
+                                </div>
+                                <button id="openDiagBtn" type="button" class="mt-space-xs px-space-md py-2 rounded bg-primary hover:bg-secondary text-on-primary font-body-sm text-body-sm font-medium flex items-center gap-2 transition-colors shadow-sm">
+                                    <span class="material-symbols-outlined text-[18px]">zoom_in</span>
+                                    <span>View Full Diagnostic Chart</span>
+                                </button>
+                            </div>
+
+                            <div class="font-label-sm text-label-sm text-on-surface-variant pt-space-xs border-t border-outline-variant/20">
+                                Click to open the reference-baseline panels. No waveform or spectrogram is drawn on this page.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dialog for Graph D Modal — live canvas spectral/DTW inspector -->
+                <dialog id="diagModal" class="rounded-2xl p-0 bg-surface shadow-2xl border border-outline-variant/30 max-w-4xl w-full backdrop:bg-black/50 backdrop:backdrop-blur-sm">
+                    <div class="p-space-md border-b border-outline-variant/30 flex items-center justify-between bg-surface-container-low">
+                        <div class="flex items-center gap-space-sm">
+                            <span class="material-symbols-outlined text-primary text-[22px]">analytics</span>
+                            <h3 class="font-headline-sm text-headline-sm text-on-surface" id="diagModalTitle">Diagnostic Chart — kṛṣṇa</h3>
+                        </div>
+                        <div class="flex items-center gap-space-sm">
+                            <span id="diagLiveTag" class="font-code text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded hidden">LIVE DATA</span>
+                            <button id="closeDiagBtn" type="button" class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+                                <span class="material-symbols-outlined text-[20px]">close</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-space-lg bg-surface-container-lowest overflow-y-auto max-h-[70vh]">
+                        <!-- 3-panel canvas: Waveform+F1F2, DTW Path, Segment Error -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+                            <div class="flex flex-col gap-space-xs">
+                                <span class="font-code text-[10px] text-on-surface-variant uppercase tracking-wider">Formant Trajectory (F1/F2)</span>
+                                <canvas id="diagFormantCanvas" width="280" height="200" class="w-full rounded border border-outline-variant/20"></canvas>
+                            </div>
+                            <div class="flex flex-col gap-space-xs">
+                                <span class="font-code text-[10px] text-on-surface-variant uppercase tracking-wider">DTW Warp Path</span>
+                                <canvas id="diagDtwCanvas" width="280" height="200" class="w-full rounded border border-outline-variant/20"></canvas>
+                            </div>
+                            <div class="flex flex-col gap-space-xs">
+                                <span class="font-code text-[10px] text-on-surface-variant uppercase tracking-wider">Segment Error Profile</span>
+                                <canvas id="diagSegCanvas" width="280" height="200" class="w-full rounded border border-outline-variant/20"></canvas>
+                            </div>
+                        </div>
+                        <!-- Score summary row -->
+                        <div id="diagScoreRow" class="mt-space-md grid grid-cols-4 gap-space-xs hidden">
+                            <div class="p-space-xs bg-surface-container rounded flex flex-col items-center">
+                                <span class="font-code text-[9px] text-on-surface-variant uppercase">Similarity</span>
+                                <span id="diagSim" class="font-code text-[15px] font-bold text-primary">—</span>
+                            </div>
+                            <div class="p-space-xs bg-surface-container rounded flex flex-col items-center">
+                                <span class="font-code text-[9px] text-on-surface-variant uppercase">F1 ref→stu</span>
+                                <span id="diagF1" class="font-code text-[13px] font-semibold text-on-surface">—</span>
+                            </div>
+                            <div class="p-space-xs bg-surface-container rounded flex flex-col items-center">
+                                <span class="font-code text-[9px] text-on-surface-variant uppercase">F2 ref→stu</span>
+                                <span id="diagF2" class="font-code text-[13px] font-semibold text-on-surface">—</span>
+                            </div>
+                            <div class="p-space-xs bg-surface-container rounded flex flex-col items-center">
+                                <span class="font-code text-[9px] text-on-surface-variant uppercase">Duration Ratio</span>
+                                <span id="diagDur" class="font-code text-[13px] font-semibold text-on-surface">—</span>
+                            </div>
+                        </div>
+                        <!-- Fallback message when no score yet -->
+                        <p id="diagNoScore" class="text-center font-body-sm text-body-sm text-on-surface-variant mt-space-lg">
+                            Submit a pronunciation attempt first to populate the live diagnostic panels.
+                        </p>
+                    </div>
+                    <div class="p-space-md bg-surface-container-low border-t border-outline-variant/30 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                        <span>3-panel live inspector: F1/F2 trajectories, DTW warp path, per-segment MFCC error — driven by POST /api/spd/score</span>
+                        <a id="diagPngLink" href="/demo/static/P1/P1_krishna.png" target="_blank" class="text-primary hover:underline flex items-center gap-1">
+                            <span class="material-symbols-outlined text-[16px]">open_in_new</span> Research PNG
+                        </a>
+                    </div>
+                </dialog>
             </div>
         </div>
         <script>
@@ -566,12 +763,428 @@
                     }).join('');
                 }
 
+                var WORD_MAP = {
+                    'kRSNa': 'krishna',
+                    'yoga': 'yoga',
+                    'zAnti': 'shanti',
+                    'dharma': 'dharma',
+                    'om': 'om'
+                };
+
+                // Synthetic Edge-TTS clips. The "variant spelling" files are
+                // TTS readings of a different romanisation, not a diagnosis of
+                // what the speaker did; no score is claimed in these labels.
+                var SAMPLE_TAKES = {
+                    'kRSNa': [
+                        { label: 'different-voice reading of the word (stud_krishna.wav)', url: '/demo/static/audio/stud_krishna.wav' },
+                        { label: 'variant spelling “krisna” read by TTS', url: '/demo/static/audio/stud_krishna_0_krisna.wav' },
+                        { label: 'variant spelling “kishna” read by TTS', url: '/demo/static/audio/stud_krishna_1_kishna.wav' },
+                        { label: 'P1 perturbation: pitch +2 st (synthetic)', url: '/demo/static/audio/pert_krishna_pitch_2.wav' },
+                        { label: 'P1 perturbation: noise 10 dB (synthetic)', url: '/demo/static/audio/pert_krishna_noise_10.wav' },
+                        { label: 'P1 perturbation: slowed 30% (synthetic)', url: '/demo/static/audio/pert_krishna_stretch_30.wav' }
+                    ],
+                    'dharma': [
+                        { label: 'different-voice reading of the word (stud_dharma.wav)', url: '/demo/static/audio/stud_dharma.wav' },
+                        { label: 'variant spelling “dhram” read by TTS', url: '/demo/static/audio/stud_dharma_0_dhram.wav' },
+                        { label: 'variant spelling “dharm” read by TTS', url: '/demo/static/audio/stud_dharma_1_dharm.wav' },
+                        { label: 'P1 perturbation: noise 10 dB (synthetic)', url: '/demo/static/audio/pert_dharma_noise_10.wav' },
+                        { label: 'P1 perturbation: slowed 30% (synthetic)', url: '/demo/static/audio/pert_dharma_stretch_30.wav' }
+                    ],
+                    'yoga': [
+                        { label: 'different-voice reading of the word (stud_yoga.wav)', url: '/demo/static/audio/stud_yoga.wav' },
+                        { label: 'variant spelling “yog” read by TTS', url: '/demo/static/audio/stud_yoga_0_yog.wav' },
+                        { label: 'variant spelling “yuga” read by TTS', url: '/demo/static/audio/stud_yoga_1_yuga.wav' },
+                        { label: 'P1 perturbation: noise 10 dB (synthetic)', url: '/demo/static/audio/pert_yoga_noise_10.wav' },
+                        { label: 'P1 perturbation: slowed 30% (synthetic)', url: '/demo/static/audio/pert_yoga_stretch_30.wav' }
+                    ],
+                    'zAnti': [
+                        { label: 'different-voice reading of the word (stud_shanti.wav)', url: '/demo/static/audio/stud_shanti.wav' },
+                        { label: 'variant spelling “shant” read by TTS', url: '/demo/static/audio/stud_shanti_0_shant.wav' },
+                        { label: 'P1 perturbation: noise 10 dB (synthetic)', url: '/demo/static/audio/pert_shanti_noise_10.wav' },
+                        { label: 'P1 perturbation: slowed 30% (synthetic)', url: '/demo/static/audio/pert_shanti_stretch_30.wav' }
+                    ],
+                    'om': [
+                        { label: 'different-voice reading of the word (stud_om.wav)', url: '/demo/static/audio/stud_om.wav' },
+                        { label: 'variant spelling “aum” read by TTS', url: '/demo/static/audio/stud_om_0_aum.wav' },
+                        { label: 'P1 perturbation: noise 10 dB (synthetic)', url: '/demo/static/audio/pert_om_noise_10.wav' },
+                        { label: 'P1 perturbation: slowed 30% (synthetic)', url: '/demo/static/audio/pert_om_stretch_30.wav' }
+                    ]
+                };
+
+                function updateSampleTakeOptions(w) {
+                    var sel = $('sampleAttemptSelect');
+                    var btn = $('loadSampleAttemptBtn');
+                    var hint = $('sampleAttemptHint');
+                    if (!sel) return;
+                    sel.innerHTML = '<option value="">— Select a sample take —</option>';
+                    var takes = (w && SAMPLE_TAKES[w.word_id]) || [];
+                    if (!takes.length && w && w.reference_audio_url) {
+                        takes = [{ label: w.word_id + '.wav (reference reading)', url: w.reference_audio_url }];
+                    }
+                    if (takes.length) {
+                        takes.forEach(function (t) {
+                            var opt = document.createElement('option');
+                            opt.value = t.url;
+                            opt.textContent = t.label;
+                            sel.appendChild(opt);
+                        });
+                        sel.disabled = false;
+                        if (btn) btn.disabled = false;
+                        if (hint) hint.textContent = takes.length + ' sample takes available for ' + (w.iast || w.word_id);
+                    } else {
+                        sel.disabled = true;
+                        if (btn) btn.disabled = true;
+                        if (hint) hint.textContent = 'Record or upload an audio attempt for ' + (w ? w.word_id : 'this word');
+                    }
+                }
+
+                var _monotonicData = null; // cached diagnostic model for current word
+
+                function updateWordGraphics(w) {
+                    if (!w) return;
+                    var stem = WORD_MAP[w.word_id] || 'krishna';
+                    var monoLbl = $('monotonicWordLabel');
+                    if (monoLbl) monoLbl.textContent = w.iast || stem;
+                    var diagTitle = $('diagModalTitle');
+                    if (diagTitle) diagTitle.textContent = 'Diagnostic Chart — ' + (w.iast || stem);
+                    var pngLink = $('diagPngLink');
+                    if (pngLink) pngLink.href = '/demo/static/P1/P1_' + stem + '.png';
+                    var monoSrc = $('monotonicSrc');
+                    if (monoSrc) monoSrc.textContent = 'loading…';
+                    _monotonicData = null;
+                    // Fetch live diagnostic model from backend
+                    fetch('/api/spd/diagnostic/' + encodeURIComponent(w.word_id))
+                        .then(function (r) { return r.ok ? r.json() : null; })
+                        .then(function (data) {
+                            if (!data || !data.available) {
+                                if (monoSrc) monoSrc.textContent = 'no model';
+                                drawMonotonicCanvas(null, 0);
+                                return;
+                            }
+                            _monotonicData = data;
+                            if (monoSrc) monoSrc.textContent = data.roman + ' · n=' + (data.curve_points || []).length + ' pts';
+                            drawMonotonicCanvas(data, 0);
+                        })
+                        .catch(function () {
+                            if (monoSrc) monoSrc.textContent = 'offline';
+                            drawMonotonicCanvas(null, 0);
+                        });
+                }
+
+                function drawMonotonicCanvas(data, eps) {
+                    var cvs = $('monotonicCanvas');
+                    if (!cvs) return;
+                    var ctx = cvs.getContext('2d');
+                    var W = cvs.width, H = cvs.height;
+                    ctx.clearRect(0, 0, W, H);
+
+                    var padL = 42, padR = 16, padT = 18, padB = 28;
+                    var cW = W - padL - padR, cH = H - padT - padB;
+
+                    // axes
+                    ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + cH);
+                    ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
+
+                    if (!data || !data.curve_points || !data.curve_points.length) {
+                        ctx.fillStyle = '#8a726c'; ctx.font = '11px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('S(ε) model loading…', W / 2, H / 2);
+                        return;
+                    }
+
+                    var alpha = data.alpha || 3.056;
+                    var d0 = data.d0 || 0.33;
+
+                    // Render calibrated exponential curve S(ε) = 100·exp(-α·ε)
+                    ctx.strokeStyle = '#7e260f'; ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    var steps = 60;
+                    for (var i = 0; i <= steps; i++) {
+                        var e = i / steps;
+                        var s = 100 * Math.exp(-alpha * e);
+                        var px = padL + e * cW;
+                        var py = padT + cH - Math.max(0, Math.min(cH, (s / 100) * cH));
+                        if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+                    }
+                    ctx.stroke();
+
+                    // Overlay actual data points (severity is already 0..1)
+                    var pts = data.curve_points || [];
+                    pts.forEach(function (p) {
+                        var sev = Math.min(1, Math.max(0, p.severity || 0));
+                        var px = padL + sev * cW;
+                        var py = padT + cH - Math.max(0, Math.min(cH, (p.score / 100) * cH));
+                        var isId = (p.kind === 'identical');
+                        ctx.fillStyle = isId ? '#386a20' : '#c8b9b0';
+                        ctx.beginPath(); ctx.arc(px, py, isId ? 5 : 3, 0, 2 * Math.PI); ctx.fill();
+                    });
+
+                    // Axes labels
+                    ctx.fillStyle = '#8a726c'; ctx.font = '10px JetBrains Mono';
+                    ctx.textAlign = 'center';
+                    ctx.fillText('0', padL, padT + cH + 14);
+                    ctx.fillText('0.5', padL + cW * 0.5, padT + cH + 14);
+                    ctx.fillText('1.0', padL + cW, padT + cH + 14);
+                    ctx.textAlign = 'right';
+                    ctx.fillText('100', padL - 4, padT + 4);
+                    ctx.fillText('0', padL - 4, padT + cH);
+
+                    // Save geometry for interactive hover over measured points
+                    cvs._geom = { padL: padL, padR: padR, padT: padT, padB: padB, cW: cW, cH: cH, W: W, H: H, alpha: alpha, data: data };
+                }
+
+                var _lastScoreData = null;
+
+                function drawDiagPanels(scoreData) {
+                    _lastScoreData = scoreData;
+                    var noScore = $('diagNoScore'), scoreRow = $('diagScoreRow');
+                    var liveTag = $('diagLiveTag');
+                    if (!scoreData) {
+                        if (noScore) noScore.classList.remove('hidden');
+                        if (scoreRow) scoreRow.classList.add('hidden');
+                        if (liveTag) liveTag.classList.add('hidden');
+                        _drawEmptyDiagPanel($('diagFormantCanvas'), 'F1/F2 — submit attempt first');
+                        _drawEmptyDiagPanel($('diagDtwCanvas'), 'DTW path — submit attempt first');
+                        _drawEmptyDiagPanel($('diagSegCanvas'), 'Segment errors — submit attempt first');
+                        return;
+                    }
+                    if (noScore) noScore.classList.add('hidden');
+                    if (scoreRow) scoreRow.classList.remove('hidden');
+                    if (liveTag) liveTag.classList.remove('hidden');
+                    if ($('diagSim')) $('diagSim').textContent = (scoreData.similarity_pct != null ? scoreData.similarity_pct.toFixed(1) : '—') + '%';
+                    if ($('diagF1')) $('diagF1').textContent = (scoreData.f1_ref != null ? Math.round(scoreData.f1_ref) : '—') + ' → ' + (scoreData.f1_stu != null ? Math.round(scoreData.f1_stu) : '—') + ' Hz';
+                    if ($('diagF2')) $('diagF2').textContent = (scoreData.f2_ref != null ? Math.round(scoreData.f2_ref) : '—') + ' → ' + (scoreData.f2_stu != null ? Math.round(scoreData.f2_stu) : '—') + ' Hz';
+                    if ($('diagDur')) $('diagDur').textContent = scoreData.duration_ratio != null ? scoreData.duration_ratio.toFixed(3) : '—';
+                    _drawFormantPanel($('diagFormantCanvas'), scoreData);
+                    _drawDtwPanel($('diagDtwCanvas'), scoreData);
+                    _drawDiagSegPanel($('diagSegCanvas'), scoreData);
+                }
+
+                function _drawEmptyDiagPanel(cvs, msg) {
+                    if (!cvs) return;
+                    var ctx = cvs.getContext('2d'); var W = cvs.width, H = cvs.height;
+                    ctx.clearRect(0, 0, W, H);
+                    ctx.fillStyle = '#f7f3ef'; ctx.fillRect(0, 0, W, H);
+                    ctx.fillStyle = '#8a726c'; ctx.font = '11px JetBrains Mono';
+                    ctx.textAlign = 'center'; ctx.fillText(msg, W / 2, H / 2);
+                }
+
+                function _drawFormantPanel(cvs, d) {
+                    if (!cvs) return;
+                    var ctx = cvs.getContext('2d'); var W = cvs.width, H = cvs.height;
+                    ctx.clearRect(0, 0, W, H);
+                    ctx.fillStyle = '#f7f3ef'; ctx.fillRect(0, 0, W, H);
+                    var padL = 32, padR = 12, padT = 18, padB = 28;
+                    var cW = W - padL - padR, cH = H - padT - padB;
+                    // Reference F1, F2 and student as horizontal lines
+                    var f1r = d.f1_ref || 400, f2r = d.f2_ref || 1600;
+                    var f1s = d.f1_stu || f1r, f2s = d.f2_stu || f2r;
+                    var maxF = Math.max(f2r, f2s) * 1.1, minF = 0;
+                    var scaleY = function(f) { return padT + cH - ((f - minF) / (maxF - minF)) * cH; };
+                    // Axes
+                    ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
+                    ctx.beginPath(); ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
+                    // Reference lines
+                    [[f1r, 'F1 ref', '#a13f2a'], [f2r, 'F2 ref', '#7e260f']].forEach(function(item) {
+                        var y = scaleY(item[0]);
+                        ctx.strokeStyle = item[2]; ctx.lineWidth = 1.5; ctx.setLineDash([4, 3]);
+                        ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(padL + cW, y); ctx.stroke();
+                        ctx.setLineDash([]);
+                        ctx.fillStyle = item[2]; ctx.font = 'bold 9px JetBrains Mono'; ctx.textAlign = 'left';
+                        ctx.fillText(item[1] + ' ' + Math.round(item[0]) + 'Hz', padL + 3, y - 3);
+                    });
+                    // Student markers (dots)
+                    [[f1s, '#ba1a1a', 'F1 stu'], [f2s, '#ba1a1a', 'F2 stu']].forEach(function(item) {
+                        var y = scaleY(item[0]);
+                        ctx.fillStyle = item[1];
+                        ctx.beginPath(); ctx.arc(padL + cW * 0.75, y, 5, 0, 2 * Math.PI); ctx.fill();
+                        ctx.fillStyle = item[1]; ctx.font = '9px JetBrains Mono'; ctx.textAlign = 'left';
+                        ctx.fillText(item[2] + ' ' + Math.round(item[0]) + 'Hz', padL + cW * 0.75 + 8, y + 3);
+                    });
+                    // Connecting arrows
+                    [[f1r, f1s], [f2r, f2s]].forEach(function(pair) {
+                        var y0 = scaleY(pair[0]), y1 = scaleY(pair[1]);
+                        ctx.strokeStyle = '#ba1a1a'; ctx.lineWidth = 1; ctx.globalAlpha = 0.5;
+                        ctx.beginPath(); ctx.moveTo(padL + cW * 0.5, y0); ctx.lineTo(padL + cW * 0.75, y1); ctx.stroke();
+                        ctx.globalAlpha = 1;
+                    });
+                    ctx.fillStyle = '#56423d'; ctx.font = '10px JetBrains Mono'; ctx.textAlign = 'center';
+                    ctx.fillText('Formant (Hz)', W / 2, H - 6);
+                }
+
+                function _drawDtwPanel(cvs, d) {
+                    if (!cvs) return;
+                    var ctx = cvs.getContext('2d'); var W = cvs.width, H = cvs.height;
+                    ctx.clearRect(0, 0, W, H);
+                    ctx.fillStyle = '#f7f3ef'; ctx.fillRect(0, 0, W, H);
+                    var padL = 24, padR = 12, padT = 16, padB = 24;
+                    var cW = W - padL - padR, cH = H - padT - padB;
+                    var path = d.dtw_path || [];
+                    if (!path.length) {
+                        ctx.fillStyle = '#8a726c'; ctx.font = '11px JetBrains Mono'; ctx.textAlign = 'center';
+                        ctx.fillText('No DTW path data', W / 2, H / 2); return;
+                    }
+                    var maxI = 0, maxJ = 0;
+                    path.forEach(function(pt) { maxI = Math.max(maxI, pt[0]); maxJ = Math.max(maxJ, pt[1]); });
+                    maxI = Math.max(maxI, 1); maxJ = Math.max(maxJ, 1);
+                    // grid
+                    ctx.strokeStyle = '#ece7e4'; ctx.lineWidth = 0.5;
+                    [0.25, 0.5, 0.75].forEach(function(f) {
+                        ctx.beginPath();
+                        ctx.moveTo(padL + f * cW, padT); ctx.lineTo(padL + f * cW, padT + cH);
+                        ctx.moveTo(padL, padT + f * cH); ctx.lineTo(padL + cW, padT + f * cH);
+                        ctx.stroke();
+                    });
+                    // diagonal reference (optimal alignment)
+                    ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1; ctx.setLineDash([4, 4]);
+                    ctx.beginPath(); ctx.moveTo(padL, padT + cH); ctx.lineTo(padL + cW, padT); ctx.stroke();
+                    ctx.setLineDash([]);
+                    // actual DTW path
+                    ctx.strokeStyle = '#7e260f'; ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    path.forEach(function(pt, i) {
+                        var px = padL + (pt[1] / maxJ) * cW;
+                        var py = padT + cH - (pt[0] / maxI) * cH;
+                        if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+                    });
+                    ctx.stroke();
+                    // Axes
+                    ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
+                    ctx.beginPath(); ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
+                    ctx.fillStyle = '#8a726c'; ctx.font = '10px JetBrains Mono';
+                    ctx.textAlign = 'center'; ctx.fillText('Student frames', padL + cW / 2, H - 6);
+                    ctx.save(); ctx.translate(10, padT + cH / 2); ctx.rotate(-Math.PI / 2);
+                    ctx.fillText('Reference', 0, 0); ctx.restore();
+                }
+
+                function _drawDiagSegPanel(cvs, d) {
+                    if (!cvs) return;
+                    var ctx = cvs.getContext('2d'); var W = cvs.width, H = cvs.height;
+                    ctx.clearRect(0, 0, W, H);
+                    ctx.fillStyle = '#f7f3ef'; ctx.fillRect(0, 0, W, H);
+                    var segs = d.segments || [];
+                    if (!segs.length) { ctx.fillStyle = '#8a726c'; ctx.font = '11px JetBrains Mono'; ctx.textAlign = 'center'; ctx.fillText('No segment data', W/2, H/2); return; }
+                    var padL = 20, padR = 16, padT = 18, padB = 26;
+                    var cW = W - padL - padR, cH = H - padT - padB;
+                    var maxErr = Math.max(0.1, Math.max.apply(null, segs.map(function(s){ return s.err; }))) * 1.2;
+                    var mean = segs.reduce(function(a, s){ return a + s.err; }, 0) / segs.length;
+                    ctx.strokeStyle = '#ddc0b9'; ctx.lineWidth = 1;
+                    ctx.beginPath(); ctx.moveTo(padL, padT + cH); ctx.lineTo(padL + cW, padT + cH); ctx.stroke();
+                    var barW = Math.min(28, Math.floor((cW / segs.length) * 0.6));
+                    var step = cW / segs.length;
+                    segs.forEach(function(s, idx) {
+                        var x = padL + idx * step + (step - barW) / 2;
+                        var bH = Math.max(2, Math.round((s.err / maxErr) * cH));
+                        var y = padT + cH - bH;
+                        ctx.fillStyle = s.err > mean ? '#ba1a1a' : '#7e260f';
+                        ctx.beginPath();
+                        if (ctx.roundRect) ctx.roundRect(x, y, barW, bH, [3,3,0,0]); else ctx.rect(x, y, barW, bH);
+                        ctx.fill();
+                        ctx.fillStyle = '#56423d'; ctx.font = '9px JetBrains Mono'; ctx.textAlign = 'center';
+                        ctx.fillText(s.label || s.type[0].toUpperCase(), x + barW/2, padT + cH + 14);
+                    });
+                    var meanY = padT + cH - Math.round((mean / maxErr) * cH);
+                    ctx.strokeStyle = '#ba1a1a'; ctx.lineWidth = 1; ctx.setLineDash([3,3]);
+                    ctx.beginPath(); ctx.moveTo(padL, meanY); ctx.lineTo(padL + cW, meanY); ctx.stroke();
+                    ctx.setLineDash([]);
+                    ctx.fillStyle = '#ba1a1a'; ctx.font = '9px JetBrains Mono'; ctx.textAlign = 'left';
+                    ctx.fillText('μ=' + mean.toFixed(2), padL + cW + 2, meanY + 3);
+                }
+
+                function drawSegErrChart(d) {
+                    var cvs = $('segErrChart');
+                    if (!cvs) return;
+                    var ctx = cvs.getContext('2d');
+                    var w = cvs.width, h = cvs.height;
+                    ctx.clearRect(0, 0, w, h);
+
+                    if (!d) {
+                        ctx.fillStyle = '#8a726c';
+                        ctx.font = '11px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('Awaiting attempt submission to display segment error profile', w / 2, h / 2);
+                        return;
+                    }
+
+                    var segs = (d.segments && d.segments.length) ? d.segments : [];
+                    if (!segs.length) {
+                        ctx.fillStyle = '#8a726c';
+                        ctx.font = '11px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('No acoustic segment data in this response', w / 2, h / 2);
+                        return;
+                    }
+
+                    var totalErr = segs.reduce(function (acc, s) { return acc + s.err; }, 0);
+                    var mean = totalErr / segs.length;
+
+                    var padL = 36, padR = 64, padT = 24, padB = 30;
+                    var chartW = w - padL - padR;
+                    var chartH = h - padT - padB;
+                    var maxErr = Math.max(0.6, Math.max.apply(null, segs.map(function (s) { return s.err; })) * 1.25);
+
+                    ctx.strokeStyle = '#ddc0b9';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(padL, h - padB);
+                    ctx.lineTo(w - padR, h - padB);
+                    ctx.stroke();
+
+                    var barW = Math.min(36, Math.floor((chartW / segs.length) * 0.65));
+                    var step = chartW / segs.length;
+
+                    segs.forEach(function (s, idx) {
+                        var x = padL + idx * step + (step - barW) / 2;
+                        var barH = Math.min(chartH, Math.max(4, Math.round((s.err / maxErr) * chartH)));
+                        var y = h - padB - barH;
+
+                        ctx.fillStyle = s.err > mean ? '#ba1a1a' : '#7e260f';
+                        ctx.beginPath();
+                        if (ctx.roundRect) {
+                            ctx.roundRect(x, y, barW, barH, [4, 4, 0, 0]);
+                        } else {
+                            ctx.rect(x, y, barW, barH);
+                        }
+                        ctx.fill();
+
+                        ctx.fillStyle = '#56423d';
+                        ctx.font = '500 11px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText(s.label || (s.type ? s.type[0].toUpperCase() : 'S'), x + barW / 2, h - padB + 16);
+
+                        ctx.fillStyle = '#8a726c';
+                        ctx.font = '10px JetBrains Mono';
+                        ctx.fillText(s.err.toFixed(2), x + barW / 2, y - 4);
+                    });
+
+                    var meanY = h - padB - Math.round((mean / maxErr) * chartH);
+                    ctx.strokeStyle = '#ba1a1a';
+                    ctx.setLineDash([4, 4]);
+                    ctx.beginPath();
+                    ctx.moveTo(padL, meanY);
+                    ctx.lineTo(w - padR, meanY);
+                    ctx.stroke();
+                    ctx.setLineDash([]);
+
+                    ctx.fillStyle = '#ba1a1a';
+                    ctx.font = '10px JetBrains Mono';
+                    ctx.textAlign = 'left';
+                    ctx.fillText('mean (' + mean.toFixed(2) + ')', w - padR + 6, meanY + 3);
+
+                    // Save geometry for interactive hover
+                    cvs._geom = { padL: padL, padR: padR, padT: padT, padB: padB, chartW: chartW, chartH: chartH, barW: barW, step: step, maxErr: maxErr, mean: mean, segs: segs };
+                }
+
                 function selectWord(w) {
                     selected = w;
                     $('wordDeva').textContent = w.devanagari;
                     $('wordIast').textContent = w.iast;
                     $('wordAxis').textContent = 'difficulty axis: ' + w.difficulty_axis +
                         (w.pair_id ? ' · pair ' + w.pair_id : '');
+                    updateWordGraphics(w);
+                    updateSampleTakeOptions(w);
                     renderList();
                 }
 
@@ -601,6 +1214,19 @@
                     clearAxisScores();
                     $('resultNote').textContent = 'Record or upload an attempt, then submit it for scoring. The breakdown appears only from a real backend response.';
                     $('resultBadge').innerHTML = '<span class="material-symbols-outlined text-[15px]">hourglass_empty</span><span>Awaiting submission</span>';
+                    
+                    if ($('gaugePct')) {
+                        $('gaugePct').textContent = '—';
+                        $('gaugePct').style.color = '';
+                        $('gaugeVerdict').textContent = 'Awaiting attempt submission';
+                        $('statMfcc').textContent = '—';
+                        $('statDur').textContent = '—';
+                        $('statVowel').textContent = '—';
+                        $('statCons').textContent = '—';
+                    }
+                    drawSegErrChart(null);
+                    drawDiagPanels(null);
+                    drawMonotonicCanvas(_monotonicData, 0);
                 }
 
                 function drawEnvelopeFromWav(wavBlob) {
@@ -693,8 +1319,34 @@
                             if (span && r[1] != null) span.textContent = SD.fmtPct(r[1], 0);
                             if (bar && r[1] != null) bar.style.width = Math.max(0, Math.min(100, r[1])) + '%';
                         });
-                    $('resultNote').textContent = 'Diagnostic only — not a certification of correct pronunciation.';
+                    $('resultNote').textContent =
+                        'Similarity to the reference is ' + SD.fmtPct(d.similarity_pct, 0) +
+                        '. A different voice or speed also lowers this score. Diagnostic only — not a certification of correct pronunciation.';
                     $('resultBadge').innerHTML = '<span class="material-symbols-outlined text-[15px]">check_circle</span><span>Scored</span>';
+
+                    // Update Graph A (Similarity Gauge & Stats)
+                    if ($('gaugePct')) {
+                        $('gaugePct').textContent = SD.fmtPct(d.similarity_pct, 0);
+                        if (d.similarity_pct >= 80) {
+                            $('gaugePct').style.color = '#386a20';
+                        } else if (d.similarity_pct >= 50) {
+                            $('gaugePct').style.color = '#825500';
+                        } else {
+                            $('gaugePct').style.color = '#ba1a1a';
+                        }
+                        $('gaugeVerdict').textContent =
+                            'Similarity to the reference is ' + SD.fmtPct(d.similarity_pct, 0) +
+                            '. A different voice or speed also lowers this score.';
+                        $('statMfcc').textContent = d.mfcc_dtw_score != null ? d.mfcc_dtw_score + '%' : '—';
+                        $('statDur').textContent = d.duration_score != null ? d.duration_score + '%' : '—';
+                        $('statVowel').textContent = d.vowel_score != null ? d.vowel_score + '%' : '—';
+                        $('statCons').textContent = d.consonant_score != null ? d.consonant_score + '%' : '—';
+                    }
+
+                    // Update Graph B (Segment errors)
+                    drawSegErrChart(d);
+                    // Update Graph D live panels (also shown in modal when opened)
+                    drawDiagPanels(d);
                 }
 
                 function showError(err) {
@@ -771,6 +1423,152 @@
                             return x.word_id === b.getAttribute('data-wid');
                         });
                         if (w) selectWord(w);
+                    });
+
+                    // Wire Sample Attempt Loader
+                    var sampleBtn = $('loadSampleAttemptBtn');
+                    var sampleSelect = $('sampleAttemptSelect');
+                    if (sampleBtn && sampleSelect) {
+                        sampleBtn.addEventListener('click', function () {
+                            if (!sampleSelect.value) return;
+                            var url = sampleSelect.value;
+                            var label = sampleSelect.options[sampleSelect.selectedIndex].text;
+                            resetAttempt();
+                            setHint('fetching sample take…');
+                            fetch(url)
+                                .then(function (r) {
+                                    if (!r.ok) throw new Error('HTTP ' + r.status);
+                                    return r.blob();
+                                })
+                                .then(function (b) {
+                                    return prepareAttempt(b, label);
+                                })
+                                .then(function () {
+                                    setHint('sample loaded — click "Submit Attempt" to score');
+                                })
+                                .catch(function (e) {
+                                    setHint('sample load error: ' + e.message);
+                                });
+                        });
+                    }
+
+                    // Wire Graph D Modal dialog
+                    var modal = $('diagModal');
+                    var openBtn = $('openDiagBtn');
+                    var closeBtn = $('closeDiagBtn');
+                    if (openBtn && modal) {
+                        openBtn.addEventListener('click', function () {
+                            if (typeof modal.showModal === 'function') {
+                                modal.showModal();
+                            } else {
+                                modal.setAttribute('open', '');
+                            }
+                            // Re-render diag panels when modal opens (may have new data)
+                            drawDiagPanels(_lastScoreData || null);
+                        });
+                    }
+                    if (closeBtn && modal) {
+                        closeBtn.addEventListener('click', function () {
+                            if (typeof modal.close === 'function') {
+                                modal.close();
+                            } else {
+                                modal.removeAttribute('open');
+                            }
+                        });
+                    }
+                    if (modal) {
+                        modal.addEventListener('click', function (e) {
+                            if (e.target === modal) {
+                                if (typeof modal.close === 'function') modal.close();
+                                else modal.removeAttribute('open');
+                            }
+                        });
+                    }
+                    wireMonotonicHoverAndDrag();
+                    wireSegErrHover();
+                }
+
+                function wireMonotonicHoverAndDrag() {
+                    var cvs = $('monotonicCanvas');
+                    var tip = $('monotonicTooltip');
+                    if (!cvs || !tip) return;
+
+                    function handlePos(e, isClick) {
+                        var g = cvs._geom;
+                        if (!g || !g.data) return;
+                        var rect = cvs.getBoundingClientRect();
+                        var scaleX = cvs.width / rect.width;
+                        var scaleY = cvs.height / rect.height;
+                        var mx = (e.clientX - rect.left) * scaleX;
+                        var my = (e.clientY - rect.top) * scaleY;
+
+                        var nearest = null, minDist = 18;
+                        var pts = g.data.curve_points || [];
+                        pts.forEach(function (p) {
+                            var sev = Math.min(1, Math.max(0, p.severity || 0));
+                            var px = g.padL + sev * g.cW;
+                            var py = g.padT + g.cH - Math.max(0, Math.min(g.cH, (p.score / 100) * g.cH));
+                            var dist = Math.hypot(mx - px, my - py);
+                            if (dist < minDist) {
+                                minDist = dist;
+                                nearest = p;
+                            }
+                        });
+
+                        if (nearest) {
+                            tip.innerHTML = '<div class="font-semibold text-primary-fixed">' + SD.esc(nearest.label) + '</div>' +
+                                '<div>Severity ε: <strong>' + nearest.severity.toFixed(2) + '</strong> · Score: <strong>' + nearest.score.toFixed(1) + '%</strong></div>' +
+                                '<div class="opacity-80 text-[10px]">d_mfcc: ' + (nearest.d_mfcc != null ? nearest.d_mfcc.toFixed(4) : '—') + ' · dur: ' + (nearest.dur_ratio != null ? nearest.dur_ratio.toFixed(2) : '1.0') + '</div>';
+                            tip.classList.remove('hidden');
+                            tip.style.left = Math.min(rect.width - 200, Math.max(10, e.offsetX + 12)) + 'px';
+                            tip.style.top = Math.max(6, e.offsetY - 45) + 'px';
+                        } else {
+                            tip.classList.add('hidden');
+                        }
+                    }
+
+                    cvs.addEventListener('mousemove', function (e) {
+                        handlePos(e, false);
+                    });
+                    cvs.addEventListener('mouseleave', function () {
+                        tip.classList.add('hidden');
+                    });
+                }
+
+                function wireSegErrHover() {
+                    var cvs = $('segErrChart');
+                    var tip = $('segErrTooltip');
+                    if (!cvs || !tip) return;
+
+                    cvs.addEventListener('mousemove', function (e) {
+                        var g = cvs._geom;
+                        if (!g || !g.segs || !g.segs.length) return;
+                        var rect = cvs.getBoundingClientRect();
+                        var scaleX = cvs.width / rect.width;
+                        var scaleY = cvs.height / rect.height;
+                        var mx = (e.clientX - rect.left) * scaleX;
+                        var my = (e.clientY - rect.top) * scaleY;
+
+                        var idx = Math.floor((mx - g.padL) / g.step);
+                        if (idx >= 0 && idx < g.segs.length && my >= g.padT && my <= cvs.height - g.padB + 20) {
+                            var s = g.segs[idx];
+                            var diff = s.err - g.mean;
+                            var isAbove = diff > 0;
+                            tip.innerHTML = '<div class="font-semibold">' + SD.esc(s.label || 'Segment ' + (idx + 1)) +
+                                ' <span class="font-normal opacity-70">(acoustic segment, voiced/unvoiced)</span></div>' +
+                                '<div>derived error: <strong>' + s.err.toFixed(3) + '</strong></div>' +
+                                '<div class="' + (isAbove ? 'text-error' : 'text-primary') + '">' +
+                                (isAbove ? '▲ ' + diff.toFixed(3) + ' above mean' : '▼ ' + Math.abs(diff).toFixed(3) + ' below mean') + '</div>';
+                            tip.classList.remove('hidden');
+                            tip.style.left = Math.min(rect.width - 180, Math.max(10, e.offsetX + 12)) + 'px';
+                            tip.style.top = Math.max(6, e.offsetY - 40) + 'px';
+                        } else {
+                            tip.classList.add('hidden');
+                        }
+                    });
+
+                    cvs.addEventListener('mouseleave', function () {
+                        tip.classList.add('hidden');
                     });
                 }
 

@@ -200,19 +200,35 @@
                             <label
                                 class="cursor-pointer font-label-lg text-label-lg text-primary hover:text-primary-container transition-colors inline-flex items-center gap-1">
                                 <span class="material-symbols-outlined text-[18px]">upload_file</span>
-                                <span>Upload audio file instead (.wav, .flac, .mp3)</span>
+                                <span>Upload (.wav, .mp3)</span>
                                 <input accept=".wav,.flac,.mp3,.webm,.m4a,.ogg" class="hidden" id="audioFileInput"
                                     type="file" />
                             </label>
                             <span class="font-code text-label-sm text-on-surface-variant" id="uploadFileName"></span>
+
+                            <!-- Demo Sample Verse Clip Picker -->
+                            <div class="flex items-center gap-1.5 bg-surface-container px-space-sm py-1 rounded">
+                                <span class="font-code text-[11px] text-on-surface-variant">Sample:</span>
+                                <select id="sampleVerseSelect" class="bg-surface-container-lowest text-on-surface text-label-sm font-code px-2 py-0.5 rounded border border-outline-variant/30 text-[11px]">
+                                    <option value="/demo/static/gita/verse_9_26_Manohar_+0%.wav" selected>BG 9.26 (Manohar - test voice)</option>
+                                    <option value="/demo/static/gita/verse_9_26_Madhur_+0%.wav">BG 9.26 (Madhur - train voice)</option>
+                                    <option value="/demo/static/gita/verse_2_47_Sagar_+0%.wav">BG 2.47 (Sagar - test voice)</option>
+                                    <option value="/demo/static/gita/verse_2_47_Swara_+0%.wav">BG 2.47 (Swara - train voice)</option>
+                                    <option value="/demo/static/gita/verse_1_1_Madhur_+0%.wav">BG 1.1 (Madhur - train voice)</option>
+                                    <option value="/demo/static/gita/verse_10_20_Manohar_+0%.wav">BG 10.20 (Manohar - test voice)</option>
+                                    <option value="/demo/static/gita/verse_18_66_Sagar_+0%.wav">BG 18.66 (Sagar - test voice)</option>
+                                </select>
+                                <button id="loadSampleBtn" type="button" class="px-2 py-0.5 bg-surface-container-high hover:bg-surface-variant text-on-surface text-[11px] font-code rounded transition-colors">
+                                    Load
+                                </button>
+                            </div>
                         </div>
                         <div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
                             <span class="inline-block w-2 h-2 rounded-full bg-secondary-container"></span>
                             <span id="gvrStatusLine">Closed-set recognition — no submission yet</span>
                         </div>
                     </div>
-                </section>
-                <!-- Primary High-Confidence Result View -->
+                </section>                        <!-- Primary Recognition Result View -->
                 <section id="gvrResult" class="w-full bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg relative overflow-hidden hidden">
                     <div class="absolute top-0 left-0 w-1.5 h-full bg-primary"></div>
                     <!-- Result Identification Header -->
@@ -231,12 +247,12 @@
                             </div>
                             <div class="font-label-sm text-label-sm text-on-surface-variant mt-1" id="matchSub"></div>
                         </div>
-                        <!-- Confidence Gauge Pill -->
+                        <!-- Relative-score Pill -->
                         <div
                             class="flex flex-col lg:items-end gap-1.5 bg-surface-container-low p-space-md rounded-lg min-w-[280px]">
                             <div class="flex items-baseline justify-between w-full">
-                                <span class="font-label-lg text-label-lg text-on-surface font-medium">Confidence
-                                    Score</span>
+                                <span class="font-label-lg text-label-lg text-on-surface font-medium">Relative score<span
+                                        class="font-code text-[10px] text-on-surface-variant font-normal"> — not a probability</span></span>
                                 <span class="font-code text-headline-sm text-headline-sm text-primary font-medium"
                                     id="matchConf">—</span>
                             </div>
@@ -254,7 +270,7 @@
                             —
                         </div>
                         <div class="w-16 h-0.5 bg-outline-variant/60 mx-auto my-space-xs"></div>
-                        <!-- English Philological Gloss -->
+                        <!-- IAST transliteration (the field the API calls iast) -->
                         <div id="matchGloss"
                             class="max-w-2xl mx-auto text-center font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
                             —
@@ -264,8 +280,8 @@
                     <div class="flex flex-col gap-space-sm pt-space-xs">
                         <div class="flex items-center justify-between">
                             <span
-                                class="font-label-lg text-label-lg text-on-surface font-medium uppercase tracking-wider text-[11px]">Runner-Up
-                                Acoustic Hypotheses (Ranked Posterior Candidates)</span>
+                                class="font-label-lg text-label-lg text-on-surface font-medium uppercase tracking-wider text-[11px]">Runner-up
+                                candidates (relative scores)</span>
                             <span class="font-code text-label-sm text-on-surface-variant" id="candMeta">—</span>
                         </div>
                         <div class="w-full bg-surface-container-low rounded-lg overflow-hidden flex flex-col"
@@ -311,7 +327,7 @@
                             id="fallbackBody">
                             Submit a recitation to send it to the recognition endpoint. This panel shows the API's
                             explicit response when a clip is not confidently recognized — or when the model is not
-                            available. No match or confidence is ever displayed without a real backend response.
+                            available. No match or relative score is ever displayed without a real backend response.
                         </p>
                     </div>
                     <div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
@@ -326,10 +342,73 @@
                         <span class="font-code text-label-sm text-on-surface-variant" id="fallbackMeta"></span>
                     </div>
                 </section>
+
+                <!-- ======================================================== -->
+                <!-- Graphs E–G: Verse Recognition Diagnostic Suite -->
+                <!-- ======================================================== -->
+                <section id="demoGvrGraphs" class="w-full bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs border-b border-outline-variant/30 pb-space-sm">
+                        <div class="flex items-center gap-space-sm">
+                            <span class="material-symbols-outlined text-primary text-[22px]">bar_chart</span>
+                            <h2 class="font-headline-sm text-headline-sm text-on-surface">Verse Decoding Evidence &amp; Generalisation</h2>
+                            <span class="px-2 py-0.5 bg-primary/10 text-primary font-code text-label-sm rounded font-medium">SPEECH B MODELS</span>
+                        </div>
+                        <span class="font-code text-label-sm text-on-surface-variant">Live DTW distance &amp; imported out-of-speaker evaluation</span>
+                    </div>
+
+                    <!-- Panel E: DTW distance bar chart (Canvas) -->
+                    <div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col gap-space-sm border border-outline-variant/20 shadow-sm">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+                            <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph E · DTW distance to each verse (lower is closer)</span>
+                            <span class="font-code text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary">LIVE · this attempt</span>
+                        </div>
+                        <div class="w-full flex items-center justify-center my-space-xs overflow-hidden">
+                            <canvas id="hmmChart" width="700" height="220" class="w-full max-w-[700px] h-[220px]"></canvas>
+                        </div>
+                        <div class="font-label-sm text-label-sm text-on-surface-variant pt-space-xs border-t border-outline-variant/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1">
+                            <span>Y-axis: mean DTW distance (cosine, per-frame normalised) · shorter bar = closer match · winner in primary red</span>
+                            <span class="font-code text-[11px] text-primary">Minimum distance wins</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+                        <!-- Panel F: Confusion matrix — live interactive Canvas working model -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col gap-space-sm border border-outline-variant/20 shadow-sm">
+                            <div class="flex items-center justify-between">
+                                <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph F · Test Set Confusion Matrix</span>
+                                <span id="confMatTag" class="font-code text-[10px] px-2 py-0.5 rounded bg-secondary/10 text-secondary">IMPORTED · Dhvani-Yantra P2</span>
+                            </div>
+                            <div class="w-full relative overflow-hidden">
+                                <canvas id="confusionCanvas" width="380" height="300" class="w-full max-w-[380px]"></canvas>
+                                <div id="confTooltip" class="absolute hidden pointer-events-none bg-on-surface text-surface-container-lowest font-code text-[10px] px-2 py-1 rounded shadow-lg z-10 whitespace-nowrap"></div>
+                            </div>
+                            <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs border-t border-outline-variant/20">
+                                <span>True verse (rows) vs Predicted (cols). Diagonal = correct. Hover for counts.</span>
+                                <a href="/demo/static/P2/p2_confusion.png" target="_blank" class="text-primary hover:underline flex items-center gap-1 font-code text-[10px]">
+                                    <span class="material-symbols-outlined text-[14px]">open_in_new</span> Research PNG
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Panel G: Accuracy comparison (Canvas) -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between border border-outline-variant/20 shadow-sm">
+                            <div class="flex items-center justify-between">
+                                <span class="font-code text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Graph G · Imported accuracy comparison</span>
+                                <span class="font-code text-[10px] px-2 py-0.5 rounded bg-secondary/10 text-secondary">IMPORTED · Dhvani-Yantra P2</span>
+                            </div>
+                            <div class="w-full flex items-center justify-center my-space-sm overflow-hidden">
+                                <canvas id="accChart" width="380" height="200" class="w-full max-w-[380px] h-[200px]"></canvas>
+                            </div>
+                            <div class="font-label-sm text-label-sm text-on-surface-variant pt-space-xs border-t border-outline-variant/20 leading-relaxed">
+                                Dhvani-Yantra's own P2 result on 60 synthetic clips: HMM 36.7%, DTW baseline 100.0% on its held-out voices. Imported for context; not this project's result.
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- Lab Philological Footer Note -->
                 <div class="py-space-md text-center font-label-sm text-label-sm text-on-surface-variant/80">
-                    Recognition runs in the local FastAPI backend; this page never displays a match or confidence
-                    that the API did not return.
+                    Recognition runs in the local FastAPI backend; this page never displays a match or relative
+                    score that the API did not return.
                 </div>
             </div>
         </div>
@@ -370,6 +449,8 @@
                     $('gvrResult').classList.add('hidden');
                     $('gvrFallback').classList.add('hidden');
                     $('gvrStatusLine').textContent = 'Closed-set recognition — no submission yet';
+                    if (typeof drawHmmChart === 'function') drawHmmChart(null);
+                    if (typeof drawAccChart === 'function') drawAccChart();
                 }
 
                 async function prepare(blob, label) {
@@ -428,22 +509,25 @@
                     $('matchSub').textContent = '';
                     $('matchConf').textContent = SD.fmtPct(d.top_match.confidence, 1);
                     $('matchConfBar').style.width = Math.max(0, Math.min(100, d.top_match.confidence)) + '%';
-                    $('matchConfMeta').innerHTML = '<span>confidence returned by the API</span>';
+                    $('matchConfMeta').innerHTML = '<span>relative score from the API — not a probability</span>';
                     $('matchDevaText').textContent = d.top_match.devanagari || '—';
-                    $('matchGloss').textContent = d.top_match.gloss || '—';
+                    $('matchGloss').textContent = d.top_match.iast || '—';
                     var rows = (d.candidates || []).map(function (c, i) {
                         return '<div class="flex flex-col md:flex-row md:items-center justify-between p-space-md gap-space-sm' + (i % 2 ? ' bg-surface-container/30' : '') + '">' +
                             '<div class="flex items-center gap-space-md">' +
                             '<span class="font-code text-label-sm text-on-surface-variant w-6">' + (i + 2) + '</span>' +
                             '<span class="font-label-lg text-label-lg text-on-surface font-medium">BG ' + SD.esc(c.verse_id) + '</span>' +
                             '</div>' +
-                            '<span class="font-code text-label-sm text-on-surface-variant">' + SD.fmtPct(c.confidence, 1) + ' conf</span>' +
+                            '<span class="font-code text-label-sm text-on-surface-variant">' + SD.fmtPct(c.confidence, 1) + ' rel.</span>' +
                             '</div>';
                     }).join('');
                     $('candList').innerHTML = rows || '<p class="p-space-md font-body-sm text-body-sm text-on-surface-variant">The API returned no runner-up candidates.</p>';
                     $('candMeta').textContent = (d.candidates || []).length + ' runner-up candidates';
                     $('matchTiming').textContent = 'round trip: ' + ms.toFixed(0) + ' ms';
                     $('gvrStatusLine').textContent = 'Recognized';
+
+                    // Update Graph E (DTW distance chart)
+                    drawHmmChart(d);
                 }
 
                 function renderUnavailable(err) {
@@ -498,16 +582,340 @@
                         resetAttempt();
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                     });
+
+                    // Wire sample verse clip loader
+                    var loadBtn = $('loadSampleBtn');
+                    var sel = $('sampleVerseSelect');
+                    if (loadBtn && sel) {
+                        loadBtn.addEventListener('click', function () {
+                            var url = sel.value;
+                            var label = sel.options[sel.selectedIndex].text;
+                            resetAttempt();
+                            hint('fetching sample audio…');
+                            fetch(url)
+                                .then(function (r) {
+                                    if (!r.ok) throw new Error('HTTP ' + r.status);
+                                    return r.blob();
+                                })
+                                .then(function (b) {
+                                    return prepare(b, label);
+                                })
+                                .catch(function (e) {
+                                    hint('sample load error: ' + e.message);
+                                });
+                        });
+                    }
+                }
+
+                var ALL_VERSES = ['1.1', '2.14', '2.47', '2.62', '4.7', '4.8', '9.22', '9.26', '10.20', '18.66'];
+
+                function drawHmmChart(d) {
+                    var cvs = $('hmmChart');
+                    if (!cvs) return;
+                    var ctx = cvs.getContext('2d');
+                    var w = cvs.width, h = cvs.height;
+                    ctx.clearRect(0, 0, w, h);
+
+                    if (!d || !d.top_match) {
+                        ctx.fillStyle = '#8a726c';
+                        ctx.font = '11px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('Awaiting recitation submission to measure DTW distances', w / 2, h / 2);
+                        return;
+                    }
+
+                    var winner = d.top_match.verse_id;
+                    var dists = d.dtw_distances || {};
+                    if (!Object.keys(dists).length) {
+                        ctx.fillStyle = '#8a726c';
+                        ctx.font = '11px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('The API returned no DTW distances for this attempt', w / 2, h / 2);
+                        return;
+                    }
+
+                    var vals = ALL_VERSES.map(function (v) { return dists[v]; }).filter(function (x) { return x != null; });
+                    var maxVal = Math.max.apply(null, vals);
+                    var range = Math.max(0.001, maxVal);
+
+                    var padL = 40, padR = 20, padT = 30, padB = 34;
+                    var chartW = w - padL - padR;
+                    var chartH = h - padT - padB;
+                    var barW = Math.min(42, Math.floor((chartW / ALL_VERSES.length) * 0.65));
+                    var step = chartW / ALL_VERSES.length;
+
+                    // Baseline
+                    ctx.strokeStyle = '#ddc0b9';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(padL, h - padB);
+                    ctx.lineTo(w - padR, h - padB);
+                    ctx.stroke();
+
+                    ALL_VERSES.forEach(function (v, idx) {
+                        var dist = dists[v];
+                        var norm = dist == null ? 0 : (dist / range);
+                        var barH = Math.max(2, Math.round(norm * (chartH - 10)));
+                        var x = padL + idx * step + (step - barW) / 2;
+                        var y = h - padB - barH;
+                        var isWin = (v === winner);
+
+                        ctx.fillStyle = isWin ? '#7e260f' : '#c8b9b0';
+                        ctx.beginPath();
+                        if (ctx.roundRect) {
+                            ctx.roundRect(x, y, barW, barH, [4, 4, 0, 0]);
+                        } else {
+                            ctx.rect(x, y, barW, barH);
+                        }
+                        ctx.fill();
+
+                        // Label
+                        ctx.fillStyle = isWin ? '#7e260f' : '#56423d';
+                        ctx.font = isWin ? 'bold 11px JetBrains Mono' : '11px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText(v, x + barW / 2, h - padB + 16);
+
+                        // Highlight badge for winner
+                        if (isWin) {
+                            ctx.fillStyle = '#7e260f';
+                            ctx.font = 'bold 10px Inter';
+                            ctx.fillText('CLOSEST', x + barW / 2, y - 6);
+                        } else if (dist != null) {
+                            ctx.fillStyle = '#8a726c';
+                            ctx.font = '9px JetBrains Mono';
+                            ctx.fillText(dist.toFixed(2), x + barW / 2, y - 6);
+                        }
+                    });
+                }
+
+                var _gvrDiag = null;
+
+                function drawAccChart() {
+                    var cvs = $('accChart');
+                    if (!cvs) return;
+                    var ctx = cvs.getContext('2d');
+                    var w = cvs.width, h = cvs.height;
+                    ctx.clearRect(0, 0, w, h);
+
+                    var padL = 40, padR = 20, padT = 28, padB = 36;
+                    var chartH = h - padT - padB;
+                    if (!_gvrDiag) {
+                        ctx.fillStyle = '#8a726c';
+                        ctx.font = '11px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('Imported benchmark not loaded', w / 2, h / 2);
+                        return;
+                    }
+                    var bars = [
+                        { label: 'HMM (6 states)', pct: 100 * _gvrDiag.test_acc, color: '#7e260f' },
+                        { label: 'DTW baseline', pct: 100 * _gvrDiag.dtw_acc, color: '#a13f2a' }
+                    ];
+
+                    // Baseline
+                    ctx.strokeStyle = '#ddc0b9';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(padL, h - padB);
+                    ctx.lineTo(w - padR, h - padB);
+                    ctx.stroke();
+
+                    var barW = 84;
+                    var gap = 50;
+                    var startX = padL + ((w - padL - padR) - (2 * barW + gap)) / 2;
+
+                    bars.forEach(function (b, idx) {
+                        var x = startX + idx * (barW + gap);
+                        var barH = Math.round((b.pct / 100) * chartH);
+                        var y = h - padB - barH;
+
+                        ctx.fillStyle = b.color;
+                        ctx.beginPath();
+                        if (ctx.roundRect) {
+                            ctx.roundRect(x, y, barW, barH, [6, 6, 0, 0]);
+                        } else {
+                            ctx.rect(x, y, barW, barH);
+                        }
+                        ctx.fill();
+
+                        // Pct text above bar
+                        ctx.fillStyle = b.color;
+                        ctx.font = 'bold 13px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText(b.pct.toFixed(1) + '%', x + barW / 2, y - 6);
+
+                        // Label below bar
+                        ctx.fillStyle = '#56423d';
+                        ctx.font = '500 11px Inter';
+                        ctx.fillText(b.label, x + barW / 2, h - padB + 18);
+                    });
+                }
+
+                // ── Graph F: Confusion Matrix (live canvas) ──────────────────────────
+                var _confMatrix = null; // 2D array [true][pred] of counts
+                var _confLabels = null; // verse label array
+
+                function drawConfusionMatrix(matrix, labels) {
+                    var cvs = $('confusionCanvas');
+                    if (!cvs) return;
+                    var ctx = cvs.getContext('2d');
+                    if (!matrix) {
+                        ctx.clearRect(0, 0, cvs.width, cvs.height);
+                        ctx.fillStyle = '#8a726c';
+                        ctx.font = '11px JetBrains Mono';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('Imported confusion matrix unavailable', cvs.width / 2, cvs.height / 2);
+                        return;
+                    }
+                    var n = labels ? labels.length : 10;
+                    // Resize canvas to fill container width
+                    var rect = cvs.parentElement.getBoundingClientRect();
+                    var cssW = Math.min(rect.width || 380, 380);
+                    var cellPx = Math.floor((cssW - 48) / n);
+                    var padL = 36, padT = 28;
+                    var totalW = padL + n * cellPx + 4;
+                    var totalH = padT + n * cellPx + 16;
+                    cvs.width = totalW;
+                    cvs.height = totalH;
+                    cvs.style.width = totalW + 'px';
+                    cvs.style.height = totalH + 'px';
+
+                    ctx.clearRect(0, 0, totalW, totalH);
+
+                    // Find max for colour scaling
+                    var maxVal = 0;
+                    if (matrix) {
+                        for (var r = 0; r < n; r++)
+                            for (var c = 0; c < n; c++)
+                                if (matrix[r][c] > maxVal) maxVal = matrix[r][c];
+                    } else {
+                        maxVal = 6; // fallback
+                    }
+
+                    // Colour helper: terracotta gradient
+                    function cellColor(val, isDiag) {
+                        if (!val) return '#f5ede9';
+                        var t = maxVal > 0 ? val / maxVal : 0;
+                        if (isDiag) {
+                            // Diagonal: deep terracotta
+                            var r2 = Math.round(161 - t * 60);
+                            var g2 = Math.round(63 - t * 10);
+                            var b2 = Math.round(42 - t * 10);
+                            return 'rgb(' + r2 + ',' + g2 + ',' + b2 + ')';
+                        } else {
+                            // Off-diagonal: warm rose
+                            var r3 = Math.round(245 - t * 50);
+                            var g3 = Math.round(237 - t * 120);
+                            var b3 = Math.round(233 - t * 100);
+                            return 'rgb(' + r3 + ',' + g3 + ',' + b3 + ')';
+                        }
+                    }
+
+                    // Draw cells
+                    for (var ri = 0; ri < n; ri++) {
+                        for (var ci2 = 0; ci2 < n; ci2++) {
+                            var val2 = matrix ? (matrix[ri][ci2] || 0) : (ri === ci2 ? 6 : 0);
+                            var x2 = padL + ci2 * cellPx;
+                            var y2 = padT + ri * cellPx;
+                            ctx.fillStyle = cellColor(val2, ri === ci2);
+                            ctx.fillRect(x2, y2, cellPx - 1, cellPx - 1);
+                            if (val2 > 0) {
+                                ctx.fillStyle = ri === ci2 && val2 / maxVal > 0.4 ? '#fff' : '#3b2019';
+                                ctx.font = '500 ' + Math.min(11, cellPx - 4) + 'px JetBrains Mono';
+                                ctx.textAlign = 'center';
+                                ctx.textBaseline = 'middle';
+                                ctx.fillText(val2, x2 + cellPx / 2 - 0.5, y2 + cellPx / 2 - 0.5);
+                            }
+                        }
+                    }
+
+                    // Row labels (true verse)
+                    ctx.fillStyle = '#56423d';
+                    ctx.font = '500 10px Inter';
+                    ctx.textAlign = 'right';
+                    ctx.textBaseline = 'middle';
+                    for (var li = 0; li < n; li++) {
+                        var lbl = labels ? labels[li] : ('V' + (li + 1));
+                        ctx.fillText(lbl.length > 4 ? lbl.slice(0, 4) : lbl, padL - 4, padT + li * cellPx + cellPx / 2 - 0.5);
+                    }
+                    // Col labels (pred verse)
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'bottom';
+                    for (var ci3 = 0; ci3 < n; ci3++) {
+                        var clbl = labels ? labels[ci3] : ('V' + (ci3 + 1));
+                        ctx.fillText(clbl.length > 4 ? clbl.slice(0, 4) : clbl, padL + ci3 * cellPx + cellPx / 2 - 0.5, padT - 4);
+                    }
+
+                    // Store geometry for hit-testing
+                    cvs._confGeom = { padL: padL, padT: padT, cellPx: cellPx, n: n };
+                }
+
+                function wireConfusionTooltip() {
+                    var cvs = $('confusionCanvas');
+                    var tip = $('confTooltip');
+                    if (!cvs || !tip) return;
+                    cvs.addEventListener('mousemove', function (e) {
+                        var g = cvs._confGeom;
+                        if (!g) return;
+                        var rect2 = cvs.getBoundingClientRect();
+                        var scaleX = cvs.width / rect2.width;
+                        var scaleY = cvs.height / rect2.height;
+                        var mx = (e.clientX - rect2.left) * scaleX;
+                        var my = (e.clientY - rect2.top) * scaleY;
+                        var ci4 = Math.floor((mx - g.padL) / g.cellPx);
+                        var ri2 = Math.floor((my - g.padT) / g.cellPx);
+                        if (ci4 >= 0 && ci4 < g.n && ri2 >= 0 && ri2 < g.n) {
+                            if (!_confMatrix) return;
+                            var count = _confMatrix[ri2][ci4] || 0;
+                            var tLabel = _confLabels ? _confLabels[ri2] : ('V' + (ri2 + 1));
+                            var pLabel = _confLabels ? _confLabels[ci4] : ('V' + (ci4 + 1));
+                            tip.textContent = 'True: ' + tLabel + '  Pred: ' + pLabel + '  Count: ' + count;
+                            tip.classList.remove('hidden');
+                            tip.style.left = (e.offsetX + 12) + 'px';
+                            tip.style.top = (e.offsetY - 4) + 'px';
+                        } else {
+                            tip.classList.add('hidden');
+                        }
+                    });
+                    cvs.addEventListener('mouseleave', function () {
+                        tip.classList.add('hidden');
+                    });
+                }
+
+                async function loadConfusionMatrix() {
+                    var tag = $('confMatTag');
+                    try {
+                        var res = await fetch('/api/gvr/diagnostic');
+                        if (!res.ok) throw new Error('status ' + res.status);
+                        var diag = await res.json();
+                        if (!diag.confusion || !diag.verses) throw new Error('no matrix');
+                        _confMatrix = diag.confusion;
+                        _confLabels = diag.verses;
+                        _gvrDiag = diag;
+                        if (tag) tag.textContent = 'IMPORTED · Dhvani-Yantra P2, n=' + (diag.n_test || '?');
+                    } catch (_) {
+                        _confMatrix = null;
+                        _confLabels = null;
+                        _gvrDiag = null;
+                        if (tag) tag.textContent = 'IMPORTED · unavailable';
+                    }
+                    drawConfusionMatrix(_confMatrix, _confLabels);
+                    drawAccChart();
                 }
 
                 if (document.readyState === 'loading') {
                     document.addEventListener('DOMContentLoaded', function () {
                         wire();
                         resetAttempt();
+                        drawAccChart();
+                        wireConfusionTooltip();
+                        loadConfusionMatrix();
                     });
                 } else {
                     wire();
                     resetAttempt();
+                    drawAccChart();
+                    wireConfusionTooltip();
+                    loadConfusionMatrix();
                 }
             })();
         </script>
