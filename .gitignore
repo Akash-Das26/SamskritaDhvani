@@ -48,3 +48,5 @@ data/spd/loyola_cahill_sound_files/
 
 # --- Misc ---
 *.log
+
+demo/

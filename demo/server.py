@@ -30,6 +30,7 @@ import io
 import json
 import math
 import os
+import wave
 from pathlib import Path, PureWindowsPath
 
 import numpy as np
@@ -72,6 +73,44 @@ DEMO_STATIC = DEMO_DATA / "static"
 
 BANNER = ("DEMO — references not ear-verified, calibration provisional; "
           "not a result.")
+
+# The last upload of each analysis page, decoded to 16 kHz mono PCM. This is
+# a debugging aid only (``demo/inspect_clip.py`` reads these two files);
+# ``demo/tmp/`` is gitignored and nothing in the server reads them back.
+DEMO_TMP = PROJECT_ROOT / "demo" / "tmp"
+LAST_UPLOADS = {"spd": DEMO_TMP / "last_spd.wav", "gvr": DEMO_TMP / "last_gvr.wav"}
+
+
+def _keep_last_upload(kind: str, y: "np.ndarray") -> None:
+    """Write the decoded upload over ``demo/tmp/last_<kind>.wav``.
+
+    Skipped under pytest, so a synthetic test fixture can never overwrite
+    the owner's last real recording. Set ``DEMO_KEEP_LAST_UPLOAD=0`` to
+    turn it off entirely. Failures are ignored: this is not part of the
+    request's contract.
+    """
+    if os.environ.get("DEMO_KEEP_LAST_UPLOAD", "1") == "0":
+        return
+    if os.environ.get("PYTEST_CURRENT_TEST"):
+        return
+    dst = LAST_UPLOADS.get(kind)
+    if dst is None:
+        return
+    try:
+        # Round-to-nearest at 32768 so re-saving an already saved clip is
+        # (near) idempotent instead of drifting one LSB per round trip.
+        pcm = np.rint(np.clip(np.asarray(y, dtype=np.float64), -1.0, 1.0) * 32768.0)
+        pcm = np.clip(pcm, -32768, 32767).astype("<i2")
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        part = dst.with_name(dst.name + ".part")
+        with wave.open(str(part), "wb") as w:
+            w.setnchannels(1)
+            w.setsampwidth(2)
+            w.setframerate(16000)
+            w.writeframes(pcm.tobytes())
+        part.replace(dst)
+    except (OSError, wave.Error):
+        pass
 
 
 # ------------------------------------------------------------------ wiring
@@ -222,6 +261,7 @@ async def _demo_spd_score(
     known = {w.word_id: w for w in wl.words}
     data = await audio.read()
     path, y, duration = api._require_decodable_audio(data)
+    _keep_last_upload("spd", y)
     try:
         speech_frac = api.vad_speech_fraction(y)
         if speech_frac <= 0.10:
@@ -312,6 +352,7 @@ async def _demo_spd_score(
 async def _demo_gvr_recognize(audio = api.File(...)) -> dict:
     data = await audio.read()
     path, y, duration = api._require_decodable_audio(data)
+    _keep_last_upload("gvr", y)
     try:
         speech_frac = api.vad_speech_fraction(y)
         if speech_frac <= 0.10:

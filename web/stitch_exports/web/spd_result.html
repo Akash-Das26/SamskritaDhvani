@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif:wght@500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#ffdad3", "outline-variant": "#ddc0b9", "surface-container-highest": "#e6e2de", "background": "#fdf8f5", "on-surface": "#1c1b1a", "tertiary": "#5d3f00", "on-secondary-fixed-variant": "#812815", "on-tertiary-container": "#ffcd7d", "on-error": "#ffffff", "secondary": "#a13f2a", "on-secondary-container": "#741f0d", "primary-fixed": "#ffdbd2", "on-tertiary-fixed-variant": "#604100", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f4f0ec", "on-primary-fixed-variant": "#812811", "surface-bright": "#fdf8f5", "secondary-container": "#ff866b", "on-tertiary-fixed": "#281900", "primary-container": "#9e3d24", "on-primary": "#ffffff", "tertiary-fixed": "#ffdead", "primary-fixed-dim": "#ffb4a2", "on-error-container": "#93000a", "surface-container-high": "#ece7e4", "on-primary-container": "#ffc9bc", "secondary-fixed-dim": "#ffb4a4", "surface-tint": "#a13f26", "primary": "#7e260f", "surface-variant": "#e6e2de", "on-surface-variant": "#56423d", "error-container": "#ffdad6", "surface-dim": "#ddd9d6", "error": "#ba1a1a", "tertiary-container": "#7b5503", "inverse-primary": "#ffb4a2", "surface": "#fdf8f5", "on-background": "#1c1b1a", "on-tertiary": "#ffffff", "inverse-surface": "#31302e", "on-primary-fixed": "#3c0800", "surface-container": "#f1ede9", "on-secondary-fixed": "#3e0500", "outline": "#8a726c", "tertiary-fixed-dim": "#f2be68", "on-secondary": "#ffffff", "surface-container-low": "#f7f3ef" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "margin-sm": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "2rem", "gutter-sm": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem" }, "fontFamily": { "body-sm": ["Inter"], "label-sm": ["JetBrains Mono"], "headline-md": ["Noto Serif"], "code": ["JetBrains Mono"], "headline-sm": ["Noto Serif"], "label-md": ["JetBrains Mono"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-lg-mobile": ["Noto Serif"], "display": ["Noto Serif"], "label-lg": ["Inter"], "headline-lg": ["Noto Serif"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "code": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }] } } } };</script>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md text-body-md">
+    <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="w-full bg-surface-container-low px-gutter py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>Computational Linguistics &amp; Acoustic Phonetics
+                    Lab</span><span class="opacity-40">·</span><span>v0.4.2-alpha</span></div>
+            <div class="flex items-center gap-space-sm font-code text-code text-on-surface-variant"><span
+                    class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span><span>Acoustic Model: Active
+                    [Kaldi/PyTorch]</span><span class="opacity-40">·</span><span>Local Audio Engine Ready</span></div>
+        </div>
+        <div class="h-16 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+            <div class="flex items-center gap-space-md"><img alt="SamskritaDhvani Emblem"
+                    class="h-8 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VHRkD0hXzNZT5RSyKGP-59Nz882SZZ0vJcZuoCFnWEHTX-XfjVd47pESeRrP924p7c6chfN0qOJLBOjbDkrAv9-NviCgIiXm9Q53OMu9OiMTbwpkROvxewqHjoAS6KO8euE8v1PY9qISjAIvnWTtFe5zgiVB8yhKSurBDnBtBqaxxkV_vpCSYRVV4-9lBekfkzOELV2VoomYjp4VYgE4lDyAIpDq8-5TVHGxdH5ShC-qlKS5P1X0TC02k" />
+                <div class="flex flex-col"><span
+                        class="font-headline-sm text-headline-sm text-primary tracking-tight">SamskritaDhvani</span><span
+                        class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">संस्कृतध्वनि ·
+                        Phonetic Architecture</span></div>
+            </div>
+            <nav class="hidden md:flex items-center gap-space-xs font-label-lg text-label-lg"
+                data-active-classes="bg-primary-container text-on-primary font-medium rounded"><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="samskritadhvani-sanskrit-speech-research" href="#">Overview</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="pronunciation-diagnostic-samskritadhvani" href="#">Pronunciation Diagnostic</a><a
+                    aria-current="page"
+                    class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-medium rounded"
+                    data-path="spd-result-analysis" href="#">SPD Result Analysis</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="recognize-a-verse-samskritadhvani" href="#">Recognize Verse</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="verse-recognition-analysis" href="#">Verse Recognition Analysis</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="video-analysis-samskritadhvani" href="#">Video Analysis</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="corpus-model-status-samskritadhvani" href="#">Corpus &amp; Model Status</a></nav>
+            <div class="flex items-center gap-space-md">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-16 bg-surface min-h-screen pb-12">
+        <div class="flex flex-col w-full">
+            <!-- Interactive View State Controller Logic -->
+            <script>
+                function switchViewState(mode) {
+                    const liveView = document.getElementById('view-live');
+                    const skeletonView = document.getElementById('view-skeletons');
+                    const emptyView = document.getElementById('view-empty');
+                    const tabs = document.querySelectorAll('.state-switcher-btn');
+
+                    tabs.forEach(btn => {
+                        btn.classList.remove('bg-primary-container', 'text-on-primary');
+                        btn.classList.add('text-on-surface-variant', 'bg-transparent');
+                    });
+
+                    const activeBtn = document.getElementById('btn-state-' + mode);
+                    if (activeBtn) {
+                        activeBtn.classList.add('bg-primary-container', 'text-on-primary');
+                        activeBtn.classList.remove('text-on-surface-variant', 'bg-transparent');
+                    }
+
+                    if (mode === 'live') {
+                        liveView.classList.remove('hidden');
+                        skeletonView.classList.add('hidden');
+                        emptyView.classList.add('hidden');
+                    } else if (mode === 'skeletons') {
+                        liveView.classList.add('hidden');
+                        skeletonView.classList.remove('hidden');
+                        emptyView.classList.add('hidden');
+                    } else if (mode === 'empty') {
+                        liveView.classList.add('hidden');
+                        skeletonView.classList.add('hidden');
+                        emptyView.classList.remove('hidden');
+                    }
+                }
+
+                function toggleDiagnosticsModal(show) {
+                    const modal = document.getElementById('diagnostics-modal');
+                    if (show) {
+                        modal.classList.remove('hidden');
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        modal.classList.add('hidden');
+                        document.body.style.overflow = 'auto';
+                    }
+                }
+
+                function updatePerturbation(val) {
+                    const readout = document.getElementById('perturbation-val');
+                    if (readout) readout.innerText = parseFloat(val).toFixed(1) + 'x';
+                    const decayScore = document.getElementById('perturbation-score-metric');
+                    if (decayScore) {
+                        const computed = (78.4 * Math.exp(-0.45 * parseFloat(val))).toFixed(1);
+                        decayScore.innerText = computed + '%';
+                    }
+                }
+            </script>
+            <!-- Top Breadcrumb / Telemetry Header Panel -->
+            <div class="w-full bg-surface-container-low px-gutter py-space-md">
+                <div
+                    class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+                    <!-- Titles -->
+                    <div class="flex flex-col gap-space-xs">
+                        <div class="flex items-center gap-space-sm flex-wrap">
+                            <span
+                                class="font-headline-sm text-headline-sm text-tertiary">उच्चारण-विश्लेषण-परिणामः</span>
+                            <span class="text-outline-variant">/</span>
+                            <span class="font-code text-code text-on-surface-variant uppercase tracking-wider">Acoustic
+                                Deviation Metrics</span>
+                        </div>
+                        <h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">SPD Result Analysis
+                        </h1>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+                            Acoustic divergence decomposition, phoneme segment error profiling, and perturbation
+                            response models.
+                        </p>
+                    </div>
+                    <!-- State Switcher Controls -->
+                    <div class="flex flex-col items-start lg:items-end gap-space-xs self-stretch lg:self-center">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Runtime Simulation
+                            Switcher</span>
+                        <div class="inline-flex p-1 bg-surface-container rounded-lg">
+                            <button
+                                class="state-switcher-btn px-space-md py-1.5 font-label-md text-label-md rounded bg-primary-container text-on-primary transition-all"
+                                id="btn-state-live" onclick="switchViewState('live')">
+                                Active Analysis
+                            </button>
+                            <button
+                                class="state-switcher-btn px-space-md py-1.5 font-label-md text-label-md rounded text-on-surface-variant hover:text-on-surface transition-all"
+                                id="btn-state-skeletons" onclick="switchViewState('skeletons')">
+                                Loading Skeletons
+                            </button>
+                            <button
+                                class="state-switcher-btn px-space-md py-1.5 font-label-md text-label-md rounded text-on-surface-variant hover:text-on-surface transition-all"
+                                id="btn-state-empty" onclick="switchViewState('empty')">
+                                Empty State
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Session Parameter Micro-bar -->
+            <div class="w-full bg-surface-container px-gutter py-space-xs">
+                <div
+                    class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-x-space-lg gap-y-1 font-code text-code text-on-surface-variant">
+                    <div class="flex items-center gap-space-sm">
+                        <span class="text-primary font-bold">TARGET:</span>
+                        <span class="text-on-surface font-headline-sm text-[15px]">कृष्ण (kṛṣṇa)</span>
+                        <span class="text-outline-variant">·</span>
+                        <span>Rigveda I.1.1</span>
+                        <span class="text-outline-variant">·</span>
+                        <span>Mātrā count: 3 [Gurv-ādi]</span>
+                    </div>
+                    <div class="flex items-center gap-space-md">
+                        <span>Kaldi/Praat Align v2.4</span>
+                        <span class="text-outline-variant">·</span>
+                        <span>Analysis Window: 840ms</span>
+                        <span class="text-outline-variant">·</span>
+                        <span class="inline-flex items-center gap-1 text-primary">
+                            <span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+                            Converg. 99.8%
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- MAIN ANALYTICAL WORKSPACE -->
+            <div class="max-w-7xl mx-auto px-gutter py-space-xl w-full">
+                <!-- 1. LIVE ANALYSIS STATE CONTAINER -->
+                <div class="flex flex-col gap-space-xl" id="view-live">
+                    <!-- Primary Bento Grid -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+                        <!-- CARD A: Overall Similarity Readout (4 Cols) -->
+                        <section
+                            class="lg:col-span-4 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+                            <div class="flex flex-col gap-space-sm">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Global
+                                        Correspondence</span>
+                                    <span
+                                        class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-code text-label-sm">
+                                        LIVE · this attempt
+                                    </span>
+                                </div>
+                                <div class="mt-space-md flex flex-col">
+                                    <div class="flex items-baseline gap-space-sm">
+                                        <span
+                                            class="font-code text-[56px] leading-none font-semibold text-primary">78.4%</span>
+                                        <span class="font-label-md text-label-md text-on-surface-variant">/ 100</span>
+                                    </div>
+                                    <p class="mt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+                                        Similarity to the canonical Vedic reference. A divergent speaker timbre,
+                                        dialectal formant shift, or tempo mismatch lowers this score.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Micro Metric Grid -->
+                            <div
+                                class="mt-space-lg pt-space-md bg-surface-container rounded-lg p-space-md grid grid-cols-2 gap-space-md font-code">
+                                <div class="flex flex-col">
+                                    <span class="text-label-sm text-on-surface-variant">MFCC distance</span>
+                                    <span class="text-headline-sm font-medium text-on-surface">0.182</span>
+                                    <span class="text-[10px] text-tertiary">Mahalanobis metric</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-label-sm text-on-surface-variant">Duration ratio</span>
+                                    <span class="text-headline-sm font-medium text-on-surface">1.04x</span>
+                                    <span class="text-[10px] text-primary">+34ms expansion</span>
+                                </div>
+                                <div class="flex flex-col pt-space-xs">
+                                    <span class="text-label-sm text-on-surface-variant">Vowel resonance</span>
+                                    <span class="text-headline-sm font-medium text-on-surface">84.2%</span>
+                                    <span class="text-[10px] text-on-surface-variant">Svara accuracy</span>
+                                </div>
+                                <div class="flex flex-col pt-space-xs">
+                                    <span class="text-label-sm text-on-surface-variant">Consonant locus</span>
+                                    <span class="text-headline-sm font-medium text-on-surface">71.0%</span>
+                                    <span class="text-[10px] text-on-surface-variant">Sparśa/Ūṣman</span>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- CARD B: Segment Error Bars (8 Cols) -->
+                        <section
+                            class="lg:col-span-8 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-sm">
+                                    <div>
+                                        <span
+                                            class="font-label-sm text-label-sm text-on-surface-variant uppercase">Phonemic
+                                            Alignment</span>
+                                        <h3 class="font-headline-sm text-headline-sm text-on-surface">Phonemic Segment
+                                            Alignment &amp; Error Profile</h3>
+                                    </div>
+                                    <span
+                                        class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-code text-label-sm">
+                                        LIVE · this attempt
+                                    </span>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl mb-space-md">
+                                    Acoustic boundary latency relative to canonical HMM Viterbi forced alignment.
+                                    Segments with divergence &gt; 30ms exhibit retroflex or aspiration anomalies.
+                                </p>
+                            </div>
+                            <!-- Segment Chart Area -->
+                            <div class="relative bg-surface-container rounded-lg p-space-md mt-space-sm">
+                                <!-- Reference Mean Line -->
+                                <div
+                                    class="absolute left-space-md right-space-md top-[58%] z-10 pointer-events-none flex items-center">
+                                    <div class="w-full border-t border-dashed border-outline-variant"></div>
+                                    <span
+                                        class="ml-2 font-code text-[10px] whitespace-nowrap text-on-surface-variant bg-surface-container px-1 py-0.5 rounded">
+                                        Mean error: 18.7ms
+                                    </span>
+                                </div>
+                                <!-- Error Bars Stack -->
+                                <div class="grid grid-cols-7 gap-2 lg:gap-4 items-end h-48 pt-6 pb-2">
+                                    <!-- Seg 1: k -->
+                                    <div
+                                        class="group flex flex-col items-center h-full justify-end relative cursor-pointer">
+                                        <span class="font-code text-label-sm text-on-surface-variant mb-1">12ms</span>
+                                        <div class="w-full max-w-[38px] bg-primary/40 rounded-t transition-all group-hover:bg-primary"
+                                            style="height: 25%;"></div>
+                                        <div class="text-center mt-2">
+                                            <div class="font-code text-[11px] font-medium text-on-surface">seg 1</div>
+                                            <div class="font-headline-sm text-[12px] text-primary">/k/</div>
+                                            <div class="font-label-sm text-[9px] text-on-surface-variant truncate">
+                                                unvoiced</div>
+                                        </div>
+                                    </div>
+                                    <!-- Seg 2: ṛ -->
+                                    <div
+                                        class="group flex flex-col items-center h-full justify-end relative cursor-pointer">
+                                        <span class="font-code text-label-sm text-on-surface-variant mb-1">24ms</span>
+                                        <div class="w-full max-w-[38px] bg-primary/60 rounded-t transition-all group-hover:bg-primary"
+                                            style="height: 50%;"></div>
+                                        <div class="text-center mt-2">
+                                            <div class="font-code text-[11px] font-medium text-on-surface">seg 2</div>
+                                            <div class="font-headline-sm text-[12px] text-primary">/ṛ/</div>
+                                            <div class="font-label-sm text-[9px] text-on-surface-variant truncate">
+                                                voiced</div>
+                                        </div>
+                                    </div>
+                                    <!-- Seg 3: ṣ (Outlier + Tooltip Simulated) -->
+                                    <div
+                                        class="group flex flex-col items-center h-full justify-end relative cursor-pointer">
+                                        <!-- Tooltip Overlay -->
+                                        <div
+                                            class="absolute -top-10 z-30 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface font-code text-[11px] px-2 py-1 rounded shadow-md whitespace-nowrap">
+                                            seg 3 [ṣ]: Retroflex locus divergence Δ 48ms (p &lt; 0.01)
+                                        </div>
+                                        <span
+                                            class="font-code text-label-sm font-semibold text-secondary mb-1">48ms</span>
+                                        <div class="w-full max-w-[38px] bg-secondary rounded-t transition-all group-hover:bg-primary"
+                                            style="height: 100%;"></div>
+                                        <div class="text-center mt-2">
+                                            <div class="font-code text-[11px] font-bold text-secondary">seg 3</div>
+                                            <div class="font-headline-sm text-[12px] text-secondary">/ṣ/</div>
+                                            <div class="font-label-sm text-[9px] text-secondary truncate">unvoiced</div>
+                                        </div>
+                                    </div>
+                                    <!-- Seg 4: ṇ -->
+                                    <div
+                                        class="group flex flex-col items-center h-full justify-end relative cursor-pointer">
+                                        <span class="font-code text-label-sm text-on-surface-variant mb-1">18ms</span>
+                                        <div class="w-full max-w-[38px] bg-primary/50 rounded-t transition-all group-hover:bg-primary"
+                                            style="height: 38%;"></div>
+                                        <div class="text-center mt-2">
+                                            <div class="font-code text-[11px] font-medium text-on-surface">seg 4</div>
+                                            <div class="font-headline-sm text-[12px] text-primary">/ṇ/</div>
+                                            <div class="font-label-sm text-[9px] text-on-surface-variant truncate">
+                                                voiced</div>
+                                        </div>
+                                    </div>
+                                    <!-- Seg 5: a -->
+                                    <div
+                                        class="group flex flex-col items-center h-full justify-end relative cursor-pointer">
+                                        <span class="font-code text-label-sm text-on-surface-variant mb-1">14ms</span>
+                                        <div class="w-full max-w-[38px] bg-primary/35 rounded-t transition-all group-hover:bg-primary"
+                                            style="height: 29%;"></div>
+                                        <div class="text-center mt-2">
+                                            <div class="font-code text-[11px] font-medium text-on-surface">seg 5</div>
+                                            <div class="font-headline-sm text-[12px] text-primary">/a/</div>
+                                            <div class="font-label-sm text-[9px] text-on-surface-variant truncate">
+                                                voiced</div>
+                                        </div>
+                                    </div>
+                                    <!-- Seg 6: transition -->
+                                    <div
+                                        class="group flex flex-col items-center h-full justify-end relative cursor-pointer">
+                                        <span class="font-code text-label-sm text-on-surface-variant mb-1">9ms</span>
+                                        <div class="w-full max-w-[38px] bg-primary/25 rounded-t transition-all group-hover:bg-primary"
+                                            style="height: 19%;"></div>
+                                        <div class="text-center mt-2">
+                                            <div class="font-code text-[11px] font-medium text-on-surface">seg 6</div>
+                                            <div class="font-headline-sm text-[12px] text-on-surface-variant">trans
+                                            </div>
+                                            <div class="font-label-sm text-[9px] text-on-surface-variant truncate">
+                                                transition</div>
+                                        </div>
+                                    </div>
+                                    <!-- Seg 7: coda -->
+                                    <div
+                                        class="group flex flex-col items-center h-full justify-end relative cursor-pointer">
+                                        <span class="font-code text-label-sm text-on-surface-variant mb-1">6ms</span>
+                                        <div class="w-full max-w-[38px] bg-primary/20 rounded-t transition-all group-hover:bg-primary"
+                                            style="height: 13%;"></div>
+                                        <div class="text-center mt-2">
+                                            <div class="font-code text-[11px] font-medium text-on-surface">seg 7</div>
+                                            <div class="font-headline-sm text-[12px] text-on-surface-variant">coda</div>
+                                            <div class="font-label-sm text-[9px] text-on-surface-variant truncate">coda
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Secondary Row: Perturbation Response & Deep Diagnostics Gateway -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+                        <!-- CARD C: Score vs Perturbation (7 Cols) -->
+                        <section
+                            class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-xs">
+                                    <span
+                                        class="font-label-sm text-label-sm text-on-surface-variant uppercase">Synthetic
+                                        Robustness Model</span>
+                                    <span
+                                        class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-code text-label-sm">
+                                        IMPORTED · Dhvani-Yantra, synthetic audio
+                                    </span>
+                                </div>
+                                <div class="flex items-baseline justify-between mt-1">
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface">Acoustic Perturbation
+                                        Sensitivity</h3>
+                                    <div class="font-code text-code text-primary">
+                                        Simulated: <span class="font-bold" id="perturbation-score-metric">39.8%</span>
+                                    </div>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                                    Exponential decay trajectory mapping phone recognizability against spectral jitter
+                                    and temporal compression.
+                                </p>
+                            </div>
+                            <!-- Curve Visualization SVG -->
+                            <div class="bg-surface-container rounded-lg p-space-md my-space-md">
+                                <div
+                                    class="flex items-center justify-between font-code text-[10px] text-on-surface-variant mb-1">
+                                    <span>Score (%)</span>
+                                    <span>fitted curve; imported [N = 1,420 synthetics]</span>
+                                </div>
+                                <svg class="w-full h-36 overflow-visible" viewbox="0 0 460 160">
+                                    <!-- Grid lines -->
+                                    <line class="text-outline-variant/30" stroke="currentColor" stroke-width="1" x1="40"
+                                        x2="440" y1="20" y2="20"></line>
+                                    <line class="text-outline-variant/30" stroke="currentColor" stroke-width="1" x1="40"
+                                        x2="440" y1="60" y2="60"></line>
+                                    <line class="text-outline-variant/30" stroke="currentColor" stroke-width="1" x1="40"
+                                        x2="440" y1="100" y2="100"></line>
+                                    <line class="text-outline-variant/60" stroke="currentColor" stroke-width="1" x1="40"
+                                        x2="440" y1="140" y2="140"></line>
+                                    <!-- Axes Labels -->
+                                    <text class="text-[9px] fill-current text-on-surface-variant font-code"
+                                        text-anchor="end" x="32" y="24">100%</text>
+                                    <text class="text-[9px] fill-current text-on-surface-variant font-code"
+                                        text-anchor="end" x="32" y="80">50%</text>
+                                    <text class="text-[9px] fill-current text-on-surface-variant font-code"
+                                        text-anchor="end" x="32" y="144">0%</text>
+                                    <!-- Decay Line Path: e^(-0.45 * x) mapped -->
+                                    <path class="text-primary"
+                                        d="M 40,24 C 110,32 180,72 260,108 C 340,126 400,134 440,137" fill="none"
+                                        stroke="currentColor" stroke-width="2.5"></path>
+                                    <!-- Measured Sample Points (scatter overlay) -->
+                                    <circle class="fill-primary" cx="40" cy="24" r="3.5"></circle>
+                                    <circle class="fill-primary/80" cx="90" cy="36" r="3"></circle>
+                                    <circle class="fill-primary/80" cx="140" cy="54" r="3"></circle>
+                                    <circle class="fill-primary/80" cx="190" cy="74" r="3"></circle>
+                                    <circle class="fill-primary" cx="240" cy="98" r="3.5"></circle>
+                                    <circle class="fill-primary/80" cx="290" cy="118" r="3"></circle>
+                                    <circle class="fill-primary/80" cx="340" cy="128" r="3"></circle>
+                                    <circle class="fill-primary/80" cx="390" cy="133" r="3"></circle>
+                                    <circle class="fill-primary/80" cx="440" cy="137" r="3"></circle>
+                                    <!-- Dynamic vertical marker at default σ = 1.5x (around x = 240) -->
+                                    <line class="text-secondary" stroke="currentColor" stroke-dasharray="3 3"
+                                        stroke-width="1.5" x1="240" x2="240" y1="20" y2="140"></line>
+                                    <text class="text-[9px] fill-current text-secondary font-code font-semibold" x="245"
+                                        y="32">σ = 1.5x active</text>
+                                </svg>
+                                <!-- Slider Control Component -->
+                                <div
+                                    class="mt-space-sm pt-space-xs border-t border-outline-variant/30 flex flex-col gap-1">
+                                    <div class="flex justify-between items-center font-code text-label-sm">
+                                        <span class="text-on-surface">Perturbation step (σ): <span
+                                                class="font-bold text-primary" id="perturbation-val">1.5x</span></span>
+                                        <span class="text-on-surface-variant">Range [0.0σ - 3.0σ]</span>
+                                    </div>
+                                    <input
+                                        class="w-full accent-primary h-1 bg-surface-container-highest rounded-lg cursor-pointer"
+                                        max="3.0" min="0.0" oninput="updatePerturbation(this.value)" step="0.1"
+                                        type="range" value="1.5" />
+                                    <div
+                                        class="flex justify-between text-[10px] font-code text-on-surface-variant mt-1">
+                                        <span>0.0x (unperturbed)</span>
+                                        <span>1.0x</span>
+                                        <span>2.0x</span>
+                                        <span>3.0x (extreme jitter)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="font-code text-[11px] text-on-surface-variant flex items-center justify-between">
+                                <span>Model: Log-linear degradation fit</span>
+                                <span>R² = 0.984</span>
+                            </div>
+                        </section>
+                        <!-- CARD D: Deep Diagnostics Gateway (5 Cols) -->
+                        <section
+                            class="lg:col-span-5 bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-xs">
+                                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Full
+                                        Spectral Decomp</span>
+                                    <span
+                                        class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-code text-label-sm">
+                                        LIVE · this attempt
+                                    </span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface">Deep Acoustic Diagnostics
+                                </h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                                    Direct inspection of Dynamic Time Warping (DTW) displacement fields, vowel formant
+                                    loci (F1/F2), and three-tier error component decomposition.
+                                </p>
+                                <!-- Diagnostic Snapshot Metric Cards -->
+                                <div class="mt-space-md grid grid-cols-1 gap-space-xs font-code text-body-sm">
+                                    <div
+                                        class="p-space-sm bg-surface-container-low rounded flex items-center justify-between">
+                                        <span class="text-on-surface-variant">Formant Dispersion (F2-F1)</span>
+                                        <span class="font-medium text-on-surface">1,120 Hz <span
+                                                class="text-secondary text-[11px]">(Δ 85 Hz)</span></span>
+                                    </div>
+                                    <div
+                                        class="p-space-sm bg-surface-container-low rounded flex items-center justify-between">
+                                        <span class="text-on-surface-variant">DTW Path Cumulative Cost</span>
+                                        <span class="font-medium text-on-surface">42.61 <span
+                                                class="text-on-surface-variant text-[11px]">(Optimum)</span></span>
+                                    </div>
+                                    <div
+                                        class="p-space-sm bg-surface-container-low rounded flex items-center justify-between">
+                                        <span class="text-on-surface-variant">Spectral Flux Coherence</span>
+                                        <span class="font-medium text-on-surface">0.891 <span
+                                                class="text-tertiary text-[11px]">[Stable]</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="mt-space-lg pt-space-md border-t border-outline-variant/30 flex flex-col gap-space-sm">
+                                <button
+                                    class="w-full py-space-sm px-space-md bg-primary hover:bg-primary-container text-on-primary rounded font-label-lg text-label-lg flex items-center justify-center gap-space-sm transition-colors shadow-sm"
+                                    onclick="toggleDiagnosticsModal(true)">
+                                    <span class="material-symbols-outlined text-[18px]">analytics</span>
+                                    <span>View full diagnostics</span>
+                                </button>
+                                <span class="font-code text-center text-[10px] text-on-surface-variant">
+                                    Opens 3-panel acoustic modal: Formants · Warp Grid · Error Stack
+                                </span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- 2. LOADING SKELETON STATE CONTAINER (Hidden by default) -->
+                <div class="hidden flex flex-col gap-space-xl animate-pulse" id="view-skeletons">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+                        <!-- Skeleton Card A (4 Cols) -->
+                        <div
+                            class="lg:col-span-4 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between h-96">
+                            <div>
+                                <div class="flex justify-between items-center">
+                                    <div class="h-3 w-32 bg-surface-container-highest rounded"></div>
+                                    <div class="h-4 w-24 bg-surface-container-highest rounded"></div>
+                                </div>
+                                <div class="mt-8 h-14 w-40 bg-surface-container-highest rounded"></div>
+                                <div class="mt-4 h-4 w-full bg-surface-container-highest rounded"></div>
+                                <div class="mt-2 h-4 w-3/4 bg-surface-container-highest rounded"></div>
+                            </div>
+                            <div class="bg-surface-container rounded-lg p-space-md grid grid-cols-2 gap-4">
+                                <div class="h-10 bg-surface-container-highest rounded"></div>
+                                <div class="h-10 bg-surface-container-highest rounded"></div>
+                                <div class="h-10 bg-surface-container-highest rounded"></div>
+                                <div class="h-10 bg-surface-container-highest rounded"></div>
+                            </div>
+                        </div>
+                        <!-- Skeleton Card B (8 Cols) -->
+                        <div
+                            class="lg:col-span-8 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between h-96">
+                            <div>
+                                <div class="flex justify-between items-center">
+                                    <div class="h-3 w-40 bg-surface-container-highest rounded"></div>
+                                    <div class="h-4 w-28 bg-surface-container-highest rounded"></div>
+                                </div>
+                                <div class="mt-2 h-6 w-72 bg-surface-container-highest rounded"></div>
+                            </div>
+                            <div
+                                class="bg-surface-container rounded-lg p-space-md h-56 flex items-end justify-between gap-4">
+                                <div class="w-12 bg-surface-container-highest rounded-t h-20"></div>
+                                <div class="w-12 bg-surface-container-highest rounded-t h-32"></div>
+                                <div class="w-12 bg-surface-container-highest rounded-t h-48"></div>
+                                <div class="w-12 bg-surface-container-highest rounded-t h-28"></div>
+                                <div class="w-12 bg-surface-container-highest rounded-t h-24"></div>
+                                <div class="w-12 bg-surface-container-highest rounded-t h-16"></div>
+                                <div class="w-12 bg-surface-container-highest rounded-t h-10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Secondary Skeleton Row -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+                        <div
+                            class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg h-80 flex flex-col justify-between">
+                            <div class="flex justify-between">
+                                <div class="h-4 w-44 bg-surface-container-highest rounded"></div>
+                                <div class="h-4 w-36 bg-surface-container-highest rounded"></div>
+                            </div>
+                            <div class="h-36 bg-surface-container rounded-lg"></div>
+                            <div class="h-8 bg-surface-container-highest rounded"></div>
+                        </div>
+                        <div
+                            class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-lg h-80 flex flex-col justify-between">
+                            <div class="h-4 w-32 bg-surface-container-highest rounded"></div>
+                            <div class="space-y-3">
+                                <div class="h-10 bg-surface-container rounded"></div>
+                                <div class="h-10 bg-surface-container rounded"></div>
+                                <div class="h-10 bg-surface-container rounded"></div>
+                            </div>
+                            <div class="h-10 bg-surface-container-highest rounded"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3. EMPTY STATE CONTAINER (Hidden by default) -->
+                <div class="hidden" id="view-empty">
+                    <div
+                        class="bg-surface-container-low rounded-xl p-space-xl flex flex-col items-center justify-center text-center py-24 shadow-sm">
+                        <div
+                            class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-md">
+                            <span class="material-symbols-outlined text-[32px]">graphic_eq</span>
+                        </div>
+                        <span
+                            class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Telemetry
+                            Inactive</span>
+                        <h2 class="font-headline-md text-headline-md text-on-surface mt-space-xs">No Acoustic Stream
+                            Captured Yet</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-space-sm mb-space-lg">
+                            No acoustic stream captured yet. Record or upload a recitation in Pronunciation Diagnostic
+                            to compute alignment.
+                        </p>
+                        <div class="flex items-center gap-space-md">
+                            <button
+                                class="px-space-md py-space-sm bg-primary text-on-primary font-label-lg text-label-lg rounded hover:bg-primary-container transition-all"
+                                onclick="switchViewState('live')">
+                                Load Sample Rigveda Session
+                            </button>
+                            <a class="px-space-md py-space-sm bg-surface-container text-on-surface font-label-lg text-label-lg rounded hover:bg-surface-container-high transition-all"
+                                href="#">
+                                Launch Mic Calibrator
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL / EXPANDED DIAGNOSTICS OVERLAY VIEW -->
+            <div class="hidden fixed inset-0 z-50 bg-on-surface/60 backdrop-blur-sm flex items-center justify-center p-4 lg:p-8"
+                id="diagnostics-modal">
+                <div
+                    class="bg-surface rounded-xl max-w-6xl w-full max-h-[921px] flex flex-col overflow-hidden shadow-2xl">
+                    <!-- Modal Header -->
+                    <div class="px-gutter py-space-md bg-surface-container-low flex items-center justify-between">
+                        <div class="flex items-center gap-space-md">
+                            <span class="font-headline-sm text-headline-sm text-primary">Phonetic Inspection
+                                Laboratory</span>
+                            <span
+                                class="font-code text-code text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                                Target: कृष्ण [k-ṛ-ṣ-ṇ-a]
+                            </span>
+                        </div>
+                        <button
+                            class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+                            onclick="toggleDiagnosticsModal(false)">
+                            <span class="material-symbols-outlined text-[24px]">close</span>
+                        </button>
+                    </div>
+                    <!-- Modal Body (3 Diagnostic Panels) -->
+                    <div class="p-gutter overflow-y-auto space-y-space-lg bg-surface">
+                        <!-- Panel 1: Formant Trajectory (F1 / F2) -->
+                        <section class="bg-surface-container-low rounded-xl p-space-md">
+                            <div class="flex items-center justify-between mb-space-sm">
+                                <div class="flex items-center gap-space-sm">
+                                    <span class="font-headline-sm text-headline-sm text-on-surface">Panel 1: Formant
+                                        Trajectories (F1 &amp; F2)</span>
+                                    <span class="font-code text-label-sm text-on-surface-variant">[Temporal Hz
+                                        Envelope]</span>
+                                </div>
+                                <div class="flex items-center gap-space-md font-code text-[11px]">
+                                    <span class="flex items-center gap-1.5"><span
+                                            class="w-3 h-0.5 bg-primary inline-block"></span> Attempt F1</span>
+                                    <span class="flex items-center gap-1.5"><span
+                                            class="w-3 h-0.5 bg-primary border-t border-dashed inline-block"></span> Ref
+                                        F1</span>
+                                    <span class="flex items-center gap-1.5"><span
+                                            class="w-3 h-0.5 bg-tertiary inline-block"></span> Attempt F2</span>
+                                    <span class="flex items-center gap-1.5"><span
+                                            class="w-3 h-0.5 bg-tertiary border-t border-dashed inline-block"></span>
+                                        Ref F2</span>
+                                </div>
+                            </div>
+                            <!-- Formant Plot Area -->
+                            <div class="bg-surface-container rounded-lg p-space-md">
+                                <svg class="w-full h-44 overflow-visible" viewbox="0 0 800 180">
+                                    <!-- Y Grid Lines -->
+                                    <line class="text-outline-variant/30" stroke="currentColor" x1="50" x2="780" y1="20"
+                                        y2="20"></line>
+                                    <line class="text-outline-variant/30" stroke="currentColor" x1="50" x2="780" y1="70"
+                                        y2="70"></line>
+                                    <line class="text-outline-variant/30" stroke="currentColor" x1="50" x2="780"
+                                        y1="120" y2="120"></line>
+                                    <line class="text-outline-variant/30" stroke="currentColor" x1="50" x2="780"
+                                        y1="170" y2="170"></line>
+                                    <text class="text-[9px] fill-current text-on-surface-variant font-code"
+                                        text-anchor="end" x="40" y="24">2400 Hz</text>
+                                    <text class="text-[9px] fill-current text-on-surface-variant font-code"
+                                        text-anchor="end" x="40" y="74">1800 Hz</text>
+                                    <text class="text-[9px] fill-current text-on-surface-variant font-code"
+                                        text-anchor="end" x="40" y="124">800 Hz</text>
+                                    <text class="text-[9px] fill-current text-on-surface-variant font-code"
+                                        text-anchor="end" x="40" y="174">200 Hz</text>
+                                    <!-- Phoneme Time Guides -->
+                                    <line class="text-outline-variant/40" stroke="currentColor" stroke-dasharray="2 2"
+                                        x1="160" x2="160" y1="15" y2="170"></line>
+                                    <line class="text-outline-variant/40" stroke="currentColor" stroke-dasharray="2 2"
+                                        x1="320" x2="320" y1="15" y2="170"></line>
+                                    <line class="text-outline-variant/40" stroke="currentColor" stroke-dasharray="2 2"
+                                        x1="520" x2="520" y1="15" y2="170"></line>
+                                    <line class="text-outline-variant/40" stroke="currentColor" stroke-dasharray="2 2"
+                                        x1="680" x2="680" y1="15" y2="170"></line>
+                                    <text class="text-[10px] fill-current text-on-surface-variant font-headline-sm"
+                                        x="105" y="15">/k/</text>
+                                    <text class="text-[10px] fill-current text-primary font-headline-sm" x="235"
+                                        y="15">/ṛ/</text>
+                                    <text class="text-[10px] fill-current text-secondary font-headline-sm" x="415"
+                                        y="15">/ṣ/</text>
+                                    <text class="text-[10px] fill-current text-primary font-headline-sm" x="595"
+                                        y="15">/ṇ/</text>
+                                    <text class="text-[10px] fill-current text-on-surface-variant font-headline-sm"
+                                        x="725" y="15">/a/</text>
+                                    <!-- Reference F2 (dashed amber) -->
+                                    <path class="text-tertiary/70" d="M 50,45 Q 160,50 320,68 T 520,55 T 780,48"
+                                        fill="none" stroke="currentColor" stroke-dasharray="4 3" stroke-width="2">
+                                    </path>
+                                    <!-- Attempt F2 (solid amber) -->
+                                    <path class="text-tertiary" d="M 50,46 Q 160,52 320,80 T 520,62 T 780,50"
+                                        fill="none" stroke="currentColor" stroke-width="2.5"></path>
+                                    <!-- Reference F1 (dashed primary) -->
+                                    <path class="text-primary/70" d="M 50,150 Q 160,135 320,120 T 520,130 T 780,140"
+                                        fill="none" stroke="currentColor" stroke-dasharray="4 3" stroke-width="2">
+                                    </path>
+                                    <!-- Attempt F1 (solid primary) -->
+                                    <path class="text-primary" d="M 50,148 Q 160,138 320,112 T 520,135 T 780,142"
+                                        fill="none" stroke="currentColor" stroke-width="2.5"></path>
+                                </svg>
+                            </div>
+                        </section>
+                        <!-- Panel 2 & Panel 3: Two Column Layout -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+                            <!-- Panel 2: DTW Warp Path Alignment Grid -->
+                            <section
+                                class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center justify-between mb-space-sm">
+                                        <span class="font-headline-sm text-headline-sm text-on-surface">Panel 2: DTW
+                                            Warp Path Matrix</span>
+                                        <span class="font-code text-label-sm text-on-surface-variant">y = x unity
+                                            baseline</span>
+                                    </div>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+                                        Temporal non-linear warping contour. Displacements to the left reflect
+                                        elongation during the sibilant release phase.
+                                    </p>
+                                </div>
+                                <div
+                                    class="bg-surface-container rounded-lg p-space-md flex items-center justify-center">
+                                    <svg class="w-full max-w-[280px] h-52 overflow-visible" viewbox="0 0 280 240">
+                                        <!-- Matrix box -->
+                                        <rect class="text-outline-variant" fill="transparent" height="180"
+                                            stroke="currentColor" stroke-width="1" width="220" x="30" y="20"></rect>
+                                        <!-- Unity line (y = x) -->
+                                        <line class="text-outline-variant" stroke="currentColor" stroke-dasharray="3 3"
+                                            stroke-width="1.5" x1="30" x2="250" y1="200" y2="20"></line>
+                                        <!-- DTW Warped Path Curve -->
+                                        <path class="text-primary"
+                                            d="M 30,200 L 60,178 L 90,165 L 125,120 L 150,105 L 180,70 L 215,45 L 250,20"
+                                            fill="none" stroke="currentColor" stroke-width="3"></path>
+                                        <!-- Path anchor points -->
+                                        <circle class="fill-secondary" cx="125" cy="120" r="4"></circle>
+                                        <text class="text-[9px] fill-current text-secondary font-code font-bold" x="135"
+                                            y="123">ṣ drift (+48ms)</text>
+                                        <!-- Axis Labels -->
+                                        <text class="text-[10px] fill-current text-on-surface-variant font-code"
+                                            text-anchor="middle" x="140" y="222">Attempt Timeline (ms)</text>
+                                        <text class="text-[10px] fill-current text-on-surface-variant font-code"
+                                            text-anchor="middle" transform="rotate(-90 15,110)" x="15" y="110">Canonical
+                                            Timeline (ms)</text>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="mt-space-sm font-code text-label-sm text-on-surface-variant flex justify-between">
+                                    <span>Warp divergence: λ = 0.14</span>
+                                    <span>Sakoe-Chiba band: r = 12%</span>
+                                </div>
+                            </section>
+                            <!-- Panel 3: Segment Error Profile Breakdown -->
+                            <section
+                                class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center justify-between mb-space-sm">
+                                        <span class="font-headline-sm text-headline-sm text-on-surface">Panel 3: Segment
+                                            Error Breakdown</span>
+                                        <span class="font-code text-label-sm text-on-surface-variant">Component
+                                            Decomposition</span>
+                                    </div>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+                                        Stacked acoustic cost per phoneme partitioned across duration variance, formant
+                                        dispersion drift, and spectral flux.
+                                    </p>
+                                </div>
+                                <!-- Stacked Bars Breakdown -->
+                                <div
+                                    class="bg-surface-container rounded-lg p-space-md space-y-3 font-code text-label-sm">
+                                    <!-- /k/ -->
+                                    <div>
+                                        <div class="flex justify-between text-[11px] mb-1">
+                                            <span>/k/ [velar stop]</span>
+                                            <span class="text-on-surface-variant">12ms total</span>
+                                        </div>
+                                        <div
+                                            class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+                                            <div class="bg-primary" style="width: 40%;"></div>
+                                            <div class="bg-primary-container" style="width: 35%;"></div>
+                                            <div class="bg-secondary-container" style="width: 25%;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /ṛ/ -->
+                                    <div>
+                                        <div class="flex justify-between text-[11px] mb-1">
+                                            <span>/ṛ/ [vocalic retroflex]</span>
+                                            <span class="text-on-surface-variant">24ms total</span>
+                                        </div>
+                                        <div
+                                            class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+                                            <div class="bg-primary" style="width: 30%;"></div>
+                                            <div class="bg-primary-container" style="width: 50%;"></div>
+                                            <div class="bg-secondary-container" style="width: 20%;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /ṣ/ -->
+                                    <div>
+                                        <div class="flex justify-between text-[11px] mb-1">
+                                            <span class="text-secondary font-bold">/ṣ/ [retroflex sibilant -
+                                                outlier]</span>
+                                            <span class="text-secondary font-bold">48ms total</span>
+                                        </div>
+                                        <div
+                                            class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+                                            <div class="bg-secondary" style="width: 60%;"></div>
+                                            <div class="bg-primary-container" style="width: 25%;"></div>
+                                            <div class="bg-secondary-container" style="width: 15%;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /ṇ/ -->
+                                    <div>
+                                        <div class="flex justify-between text-[11px] mb-1">
+                                            <span>/ṇ/ [retroflex nasal]</span>
+                                            <span class="text-on-surface-variant">18ms total</span>
+                                        </div>
+                                        <div
+                                            class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+                                            <div class="bg-primary" style="width: 35%;"></div>
+                                            <div class="bg-primary-container" style="width: 45%;"></div>
+                                            <div class="bg-secondary-container" style="width: 20%;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /a/ -->
+                                    <div>
+                                        <div class="flex justify-between text-[11px] mb-1">
+                                            <span>/a/ [short central vowel]</span>
+                                            <span class="text-on-surface-variant">14ms total</span>
+                                        </div>
+                                        <div
+                                            class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+                                            <div class="bg-primary" style="width: 20%;"></div>
+                                            <div class="bg-primary-container" style="width: 60%;"></div>
+                                            <div class="bg-secondary-container" style="width: 20%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Legend for Stacked Bar -->
+                                <div
+                                    class="mt-space-sm pt-space-xs border-t border-outline-variant/30 flex items-center justify-between font-code text-[10px] text-on-surface-variant">
+                                    <span class="flex items-center gap-1"><span
+                                            class="w-2.5 h-2.5 rounded-sm bg-primary inline-block"></span> Duration
+                                        delta</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="w-2.5 h-2.5 rounded-sm bg-primary-container inline-block"></span>
+                                        Formant drift</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="w-2.5 h-2.5 rounded-sm bg-secondary-container inline-block"></span>
+                                        Spectral flux</span>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div
+                        class="px-gutter py-space-sm bg-surface-container-low flex items-center justify-between font-code text-code text-on-surface-variant">
+                        <span>Praat Alignment Log: Praat-6.3.08-align-output.TextGrid</span>
+                        <button
+                            class="px-space-md py-1 bg-surface-container hover:bg-surface-container-high text-on-surface rounded transition-colors"
+                            onclick="toggleDiagnosticsModal(false)">
+                            Dismiss Diagnostic Inspector
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="w-full bg-surface-container-low py-space-lg mb-8">
+        <div
+            class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>© 2025 SamskritaDhvani Research Collective</span><span
+                    class="opacity-40">·</span><span>Open Philological License</span></div>
+            <div class="flex items-center gap-space-lg font-code text-code"><span>Svara-Vyanjana Real-time Alignment
+                    Engine</span><span>Kaldi/PyTorch Backend</span></div>
+        </div>
+    </footer>
+    <aside aria-label="Research Notice"
+        class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-highest/95 border-t border-outline-variant/30 backdrop-blur-sm py-space-xs px-gutter text-center font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-space-sm">
+        <span class="material-symbols-outlined text-primary text-[14px]">info</span><span>DEMO — synthetic audio and
+            imported research figures; not results.</span></aside>
+</body>
+
+</html>

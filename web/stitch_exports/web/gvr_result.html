@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif:wght@500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#ffdad3", "outline-variant": "#ddc0b9", "surface-container-highest": "#e6e2de", "background": "#fdf8f5", "on-surface": "#1c1b1a", "tertiary": "#5d3f00", "on-secondary-fixed-variant": "#812815", "on-tertiary-container": "#ffcd7d", "on-error": "#ffffff", "secondary": "#a13f2a", "on-secondary-container": "#741f0d", "primary-fixed": "#ffdbd2", "on-tertiary-fixed-variant": "#604100", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f4f0ec", "on-primary-fixed-variant": "#812811", "surface-bright": "#fdf8f5", "secondary-container": "#ff866b", "on-tertiary-fixed": "#281900", "primary-container": "#9e3d24", "on-primary": "#ffffff", "tertiary-fixed": "#ffdead", "primary-fixed-dim": "#ffb4a2", "on-error-container": "#93000a", "surface-container-high": "#ece7e4", "on-primary-container": "#ffc9bc", "secondary-fixed-dim": "#ffb4a4", "surface-tint": "#a13f26", "primary": "#7e260f", "surface-variant": "#e6e2de", "on-surface-variant": "#56423d", "error-container": "#ffdad6", "surface-dim": "#ddd9d6", "error": "#ba1a1a", "tertiary-container": "#7b5503", "inverse-primary": "#ffb4a2", "surface": "#fdf8f5", "on-background": "#1c1b1a", "on-tertiary": "#ffffff", "inverse-surface": "#31302e", "on-primary-fixed": "#3c0800", "surface-container": "#f1ede9", "on-secondary-fixed": "#3e0500", "outline": "#8a726c", "tertiary-fixed-dim": "#f2be68", "on-secondary": "#ffffff", "surface-container-low": "#f7f3ef" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "margin-sm": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "2rem", "gutter-sm": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem" }, "fontFamily": { "body-sm": ["Inter"], "label-sm": ["JetBrains Mono"], "headline-md": ["Noto Serif"], "code": ["JetBrains Mono"], "headline-sm": ["Noto Serif"], "label-md": ["JetBrains Mono"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-lg-mobile": ["Noto Serif"], "display": ["Noto Serif"], "label-lg": ["Inter"], "headline-lg": ["Noto Serif"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "code": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }] } } } };</script>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md text-body-md">
+    <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="w-full bg-surface-container-low px-gutter py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>Computational Linguistics &amp; Acoustic Phonetics
+                    Lab</span><span class="opacity-40">·</span><span>v0.4.2-alpha</span></div>
+            <div class="flex items-center gap-space-sm font-code text-code text-on-surface-variant"><span
+                    class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span><span>Acoustic Model: Active
+                    [Kaldi/PyTorch]</span><span class="opacity-40">·</span><span>Local Audio Engine Ready</span></div>
+        </div>
+        <div class="h-16 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+            <div class="flex items-center gap-space-md"><img alt="SamskritaDhvani Emblem"
+                    class="h-8 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VHRkD0hXzNZT5RSyKGP-59Nz882SZZ0vJcZuoCFnWEHTX-XfjVd47pESeRrP924p7c6chfN0qOJLBOjbDkrAv9-NviCgIiXm9Q53OMu9OiMTbwpkROvxewqHjoAS6KO8euE8v1PY9qISjAIvnWTtFe5zgiVB8yhKSurBDnBtBqaxxkV_vpCSYRVV4-9lBekfkzOELV2VoomYjp4VYgE4lDyAIpDq8-5TVHGxdH5ShC-qlKS5P1X0TC02k" />
+                <div class="flex flex-col"><span
+                        class="font-headline-sm text-headline-sm text-primary tracking-tight">SamskritaDhvani</span><span
+                        class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">संस्कृतध्वनि ·
+                        Phonetic Architecture</span></div>
+            </div>
+            <nav class="hidden md:flex items-center gap-space-xs font-label-lg text-label-lg"
+                data-active-classes="bg-primary-container text-on-primary font-medium rounded"><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="samskritadhvani-sanskrit-speech-research" href="#">Overview</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="pronunciation-diagnostic-samskritadhvani" href="#">Pronunciation Diagnostic</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="spd-result-analysis" href="#">SPD Result Analysis</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="recognize-a-verse-samskritadhvani" href="#">Recognize Verse</a><a aria-current="page"
+                    class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-medium rounded"
+                    data-path="verse-recognition-analysis" href="#">Verse Recognition Analysis</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="video-analysis-samskritadhvani" href="#">Video Analysis</a><a
+                    class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="corpus-model-status-samskritadhvani" href="#">Corpus &amp; Model Status</a></nav>
+            <div class="flex items-center gap-space-md">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-16 bg-surface min-h-screen pb-12">
+        <div class="flex flex-col w-full">
+            <!-- Top Academic Context Header & Sub-Bar -->
+            <section class="w-full bg-surface-container-low px-gutter py-space-lg shadow-sm">
+                <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+                    <div class="flex flex-col gap-space-xs">
+                        <div class="flex items-center gap-space-sm font-label-sm text-label-sm text-tertiary">
+                            <span class="px-space-xs py-0.5 bg-tertiary/10 rounded font-code">EXP-ID:
+                                SD-2025-VRA-088</span>
+                            <span class="text-outline">/</span>
+                            <span class="font-headline-sm font-medium tracking-wide">श्लोकाभिज्ञान-विश्लेषणम्</span>
+                        </div>
+                        <h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Verse Recognition
+                            Analysis</h1>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                            Acoustic distance topologies, synthetic confusion matrices, and benchmark baseline
+                            comparisons across metric verse vectors.
+                        </p>
+                    </div>
+                    <!-- State Switcher Control -->
+                    <div class="flex items-center bg-surface-container p-1 rounded-lg shadow-inner gap-1">
+                        <button
+                            class="px-space-md py-1.5 rounded font-label-md text-label-md transition-colors bg-primary text-on-primary"
+                            id="btn-state-active" onclick="switchState('active')">
+                            Active Analysis
+                        </button>
+                        <button
+                            class="px-space-md py-1.5 rounded font-label-md text-label-md transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high"
+                            id="btn-state-unavailable" onclick="switchState('unavailable')">
+                            Model Unavailable
+                        </button>
+                        <button
+                            class="px-space-md py-1.5 rounded font-label-md text-label-md transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high"
+                            id="btn-state-loading" onclick="switchState('loading')">
+                            Loading State
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Main Multi-State Render Stage -->
+            <div class="max-w-7xl mx-auto w-full px-gutter py-space-xl flex flex-col gap-space-xl">
+                <!-- STATE 1: ACTIVE ANALYSIS (Default) -->
+                <div class="flex flex-col gap-space-xl transition-opacity duration-200" id="view-active">
+                    <!-- Top Hero Recognition Summary Bento -->
+                    <section class="bg-surface-container-low rounded-xl p-space-xl shadow-sm relative overflow-hidden">
+                        <div
+                            class="absolute -right-16 -top-16 w-96 h-96 rounded-full bg-gradient-to-br from-primary/5 via-secondary/5 to-transparent pointer-events-none blur-2xl">
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start relative z-10">
+                            <!-- Left Main Text Area -->
+                            <div class="lg:col-span-8 flex flex-col gap-space-md">
+                                <div
+                                    class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+                                    <span
+                                        class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-code text-code">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                                        CLASSIFICATION WINNER
+                                    </span>
+                                    <span>•</span>
+                                    <span class="font-code">Confidence: 94.2%</span>
+                                    <span>•</span>
+                                    <span class="font-code">Δ_min: 0.142</span>
+                                </div>
+                                <div>
+                                    <div class="flex items-baseline gap-space-md flex-wrap">
+                                        <h2 class="font-headline-lg text-headline-lg text-primary">Bhagavad Gita 9.26
+                                        </h2>
+                                        <span class="font-headline-md text-headline-md text-tertiary">श्रीमद्भगवद्गीता
+                                            ९.२६</span>
+                                    </div>
+                                    <p
+                                        class="mt-space-md font-display text-[26px] leading-[44px] text-on-surface font-normal">
+                                        पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति ।<br />
+                                        तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥
+                                    </p>
+                                    <p
+                                        class="mt-space-sm font-body-sm text-body-sm italic text-on-surface-variant font-serif">
+                                        patraṁ puṣpaṁ phalaṁ toyaṁ yo me bhaktyā prayacchati | tadahaṁ
+                                        bhaktyupahṛtamaśnāmi prayatātmanaḥ ||
+                                    </p>
+                                </div>
+                                <!-- Metrical Structure Footprint -->
+                                <div
+                                    class="mt-space-sm pt-space-sm bg-surface-container/60 p-space-md rounded-lg flex flex-wrap items-center justify-between gap-space-md">
+                                    <div class="flex items-center gap-space-md">
+                                        <div class="flex flex-col">
+                                            <span class="font-label-sm text-label-sm text-on-surface-variant">Chandas
+                                                (Meter)</span>
+                                            <span class="font-headline-sm text-headline-sm text-on-surface">Anuṣṭubh
+                                                (अनुष्टुभ्)</span>
+                                        </div>
+                                        <div class="h-8 w-px bg-outline-variant/30"></div>
+                                        <div class="flex flex-col">
+                                            <span class="font-label-sm text-label-sm text-on-surface-variant">Pada
+                                                Alignment</span>
+                                            <span class="font-code text-code text-primary font-medium">8 | 8 || 8 | 8
+                                                syllables</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-space-sm font-code text-code text-on-surface-variant bg-surface-container-highest px-space-sm py-1 rounded">
+                                        <span
+                                            class="material-symbols-outlined text-[16px] text-secondary">graphic_eq</span>
+                                        <span>F0 mean: 142.8 Hz</span>
+                                        <span>•</span>
+                                        <span>Duration: 8.64s</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right Top-3 Podium Card -->
+                            <div
+                                class="lg:col-span-4 bg-surface-container rounded-lg p-space-lg shadow-sm flex flex-col gap-space-md">
+                                <div class="flex items-center justify-between pb-space-xs">
+                                    <span
+                                        class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-code">Posterior
+                                        Candidates</span>
+                                    <span
+                                        class="font-code text-code px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">Top-3</span>
+                                </div>
+                                <!-- Candidate 1 -->
+                                <div
+                                    class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-1">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-space-xs">
+                                            <span
+                                                class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-code text-[11px] font-bold">1</span>
+                                            <span class="font-headline-sm text-headline-sm text-primary">BG 09.26</span>
+                                        </div>
+                                        <span class="font-code text-label-md text-primary font-bold">94.2%</span>
+                                    </div>
+                                    <div
+                                        class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden mt-1">
+                                        <div class="bg-primary h-full rounded-full" style="width: 94.2%;"></div>
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center text-on-surface-variant font-code text-[11px] mt-0.5">
+                                        <span>Rank 1 · Winner</span>
+                                        <span>Dist: 0.142</span>
+                                    </div>
+                                </div>
+                                <!-- Candidate 2 -->
+                                <div class="bg-surface-container-lowest/80 p-space-md rounded flex flex-col gap-1">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-space-xs">
+                                            <span
+                                                class="w-5 h-5 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-code text-[11px] font-bold">2</span>
+                                            <span class="font-headline-sm text-headline-sm text-on-surface">BG
+                                                09.27</span>
+                                        </div>
+                                        <span class="font-code text-label-md text-tertiary font-medium">3.4%</span>
+                                    </div>
+                                    <div
+                                        class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden mt-1">
+                                        <div class="bg-tertiary h-full rounded-full" style="width: 14%;"></div>
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center text-on-surface-variant font-code text-[11px] mt-0.5">
+                                        <span>Runner-up · Neighbor</span>
+                                        <span>Dist: 0.589</span>
+                                    </div>
+                                </div>
+                                <!-- Candidate 3 -->
+                                <div class="bg-surface-container-lowest/60 p-space-md rounded flex flex-col gap-1">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-space-xs">
+                                            <span
+                                                class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-code text-[11px]">3</span>
+                                            <span class="font-headline-sm text-headline-sm text-on-surface">BG
+                                                12.02</span>
+                                        </div>
+                                        <span class="font-code text-label-md text-on-surface-variant">1.6%</span>
+                                    </div>
+                                    <div
+                                        class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden mt-1">
+                                        <div class="bg-outline h-full rounded-full" style="width: 7%;"></div>
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center text-on-surface-variant font-code text-[11px] mt-0.5">
+                                        <span>3rd Candidate</span>
+                                        <span>Dist: 0.812</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="pt-2 text-on-surface-variant font-label-sm text-[11px] text-center flex items-center justify-center gap-1">
+                                    <span class="material-symbols-outlined text-[14px]">tune</span>
+                                    <span>Acoustic features: 39-dim MFCC + Δ + ΔΔ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Grid of Three Research Analysis Cards -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+                        <!-- CARD (F): Ranked Distance Bars -->
+                        <div
+                            class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+                            <div class="flex flex-col gap-space-md">
+                                <!-- Header with Source Chip -->
+                                <div class="flex items-start justify-between gap-2">
+                                    <div>
+                                        <span
+                                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-code">Topological
+                                            Proximity</span>
+                                        <h3 class="font-headline-sm text-headline-sm text-on-surface">Acoustic Distance
+                                            Ranking</h3>
+                                    </div>
+                                    <span
+                                        class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-code text-[11px] font-medium whitespace-nowrap">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                        LIVE · this attempt
+                                    </span>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Dynamic Time Warping (DTW)
+                                    distance across mel-frequency trajectories.</p>
+                                <!-- 10 Ranked Bars -->
+                                <div class="flex flex-col gap-2 mt-2">
+                                    <!-- Item 1: Winner -->
+                                    <div
+                                        class="flex items-center gap-space-sm bg-surface-container-lowest p-1.5 px-2 rounded shadow-sm">
+                                        <span class="w-4 font-code text-label-sm text-primary font-bold">01</span>
+                                        <div class="flex items-center gap-1 w-20">
+                                            <span
+                                                class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+                                            <span class="font-code text-label-sm text-primary font-bold">BG 09.26</span>
+                                        </div>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-primary h-full rounded-full" style="width: 14%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-primary font-semibold w-12 text-right">0.142</span>
+                                    </div>
+                                    <!-- Item 2: Runner-up -->
+                                    <div
+                                        class="flex items-center gap-space-sm p-1.5 px-2 rounded hover:bg-surface-container/60 transition-colors">
+                                        <span class="w-4 font-code text-label-sm text-on-surface-variant">02</span>
+                                        <div class="flex items-center gap-1 w-20">
+                                            <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                                            <span class="font-code text-label-sm text-tertiary font-semibold">BG
+                                                09.27</span>
+                                        </div>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-tertiary h-full rounded-full" style="width: 48%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-tertiary font-medium w-12 text-right">0.589</span>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div
+                                        class="flex items-center gap-space-sm p-1.5 px-2 rounded hover:bg-surface-container/60 transition-colors">
+                                        <span class="w-4 font-code text-label-sm text-on-surface-variant">03</span>
+                                        <span class="w-20 font-code text-label-sm text-on-surface">BG 12.02</span>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-outline h-full rounded-full" style="width: 65%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-on-surface-variant w-12 text-right">0.812</span>
+                                    </div>
+                                    <!-- Item 4 -->
+                                    <div
+                                        class="flex items-center gap-space-sm p-1.5 px-2 rounded hover:bg-surface-container/60 transition-colors">
+                                        <span class="w-4 font-code text-label-sm text-on-surface-variant">04</span>
+                                        <span class="w-20 font-code text-label-sm text-on-surface">BG 18.65</span>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-outline h-full rounded-full" style="width: 72%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-on-surface-variant w-12 text-right">0.894</span>
+                                    </div>
+                                    <!-- Item 5 -->
+                                    <div
+                                        class="flex items-center gap-space-sm p-1.5 px-2 rounded hover:bg-surface-container/60 transition-colors">
+                                        <span class="w-4 font-code text-label-sm text-on-surface-variant">05</span>
+                                        <span class="w-20 font-code text-label-sm text-on-surface">BG 02.47</span>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-outline h-full rounded-full" style="width: 76%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-on-surface-variant w-12 text-right">0.941</span>
+                                    </div>
+                                    <!-- Item 6 -->
+                                    <div
+                                        class="flex items-center gap-space-sm p-1.5 px-2 rounded hover:bg-surface-container/60 transition-colors">
+                                        <span class="w-4 font-code text-label-sm text-on-surface-variant">06</span>
+                                        <span class="w-20 font-code text-label-sm text-on-surface">BG 06.34</span>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-outline h-full rounded-full" style="width: 81%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-on-surface-variant w-12 text-right">1.025</span>
+                                    </div>
+                                    <!-- Item 7 -->
+                                    <div
+                                        class="flex items-center gap-space-sm p-1.5 px-2 rounded hover:bg-surface-container/60 transition-colors">
+                                        <span class="w-4 font-code text-label-sm text-on-surface-variant">07</span>
+                                        <span class="w-20 font-code text-label-sm text-on-surface">BG 11.18</span>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-outline h-full rounded-full" style="width: 86%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-on-surface-variant w-12 text-right">1.108</span>
+                                    </div>
+                                    <!-- Item 8 -->
+                                    <div
+                                        class="flex items-center gap-space-sm p-1.5 px-2 rounded hover:bg-surface-container/60 transition-colors">
+                                        <span class="w-4 font-code text-label-sm text-on-surface-variant">08</span>
+                                        <span class="w-20 font-code text-label-sm text-on-surface">BG 04.07</span>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-outline h-full rounded-full" style="width: 89%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-on-surface-variant w-12 text-right">1.156</span>
+                                    </div>
+                                    <!-- Item 9 -->
+                                    <div
+                                        class="flex items-center gap-space-sm p-1.5 px-2 rounded hover:bg-surface-container/60 transition-colors">
+                                        <span class="w-4 font-code text-label-sm text-on-surface-variant">09</span>
+                                        <span class="w-20 font-code text-label-sm text-on-surface">BG 15.01</span>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-outline h-full rounded-full" style="width: 93%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-on-surface-variant w-12 text-right">1.220</span>
+                                    </div>
+                                    <!-- Item 10 -->
+                                    <div
+                                        class="flex items-center gap-space-sm p-1.5 px-2 rounded hover:bg-surface-container/60 transition-colors">
+                                        <span class="w-4 font-code text-label-sm text-on-surface-variant">10</span>
+                                        <span class="w-20 font-code text-label-sm text-on-surface">BG 07.01</span>
+                                        <div class="flex-1 bg-surface-container-high h-3 rounded-full overflow-hidden">
+                                            <div class="bg-outline h-full rounded-full" style="width: 97%;"></div>
+                                        </div>
+                                        <span
+                                            class="font-code text-code text-on-surface-variant w-12 text-right">1.284</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-space-md mt-space-md bg-surface-container/40 p-space-sm rounded text-center">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant italic">
+                                    lower distance means closer; relative score, not a probability
+                                </span>
+                            </div>
+                        </div>
+                        <!-- CARD (G): Ten-by-Ten Confusion Matrix Heatmap -->
+                        <div
+                            class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+                            <div class="flex flex-col gap-space-md">
+                                <!-- Header with Source Chip -->
+                                <div class="flex items-start justify-between gap-2">
+                                    <div>
+                                        <span
+                                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-code">Confusion
+                                            Matrix</span>
+                                        <h3 class="font-headline-sm text-headline-sm text-on-surface">Phonetic Confusion
+                                            Matrix (10 × 10 Sub-Corpus)</h3>
+                                    </div>
+                                    <span
+                                        class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-code text-[11px] font-medium whitespace-nowrap">
+                                        IMPORTED · Dhvani-Yantra, synthetic audio
+                                    </span>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                    Cross-entropy misclassification surface across ten canonical verses under synthetic
+                                    vocal variation.
+                                </p>
+                                <!-- 10x10 Table Matrix Container -->
+                                <div
+                                    class="overflow-x-auto relative mt-2 bg-surface-container-lowest p-space-md rounded-lg shadow-inner">
+                                    <!-- Interactive Hover Tooltip Simulation -->
+                                    <div
+                                        class="mb-space-sm p-space-xs px-space-sm bg-surface-container rounded flex items-center justify-between font-code text-[11px]">
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                                            <span class="text-on-surface font-semibold">[BG 9.27, BG 9.26]:</span>
+                                            <span class="text-primary font-medium">Pairwise misclassification: 4.8%
+                                                (Shared anuṣṭubh cadence)</span>
+                                        </div>
+                                        <span class="text-on-surface-variant">hover inspected</span>
+                                    </div>
+                                    <!-- Matrix Grid Table -->
+                                    <div class="min-w-[480px]">
+                                        <!-- Matrix Column Labels -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 text-center font-code text-[10px] text-on-surface-variant mb-1 font-medium">
+                                            <div class="text-left font-bold text-outline">P \ T</div>
+                                            <div>9.26</div>
+                                            <div>9.27</div>
+                                            <div>12.2</div>
+                                            <div>18.65</div>
+                                            <div>2.47</div>
+                                            <div>6.34</div>
+                                            <div>11.18</div>
+                                            <div>4.7</div>
+                                            <div>15.1</div>
+                                            <div>7.1</div>
+                                        </div>
+                                        <!-- Matrix Rows (10 rows) -->
+                                        <!-- Row 1: BG 9.26 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center mb-1">
+                                            <div class="text-left text-on-surface-variant font-bold">9.26</div>
+                                            <!-- Diag 1 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">92.4
+                                            </div>
+                                            <div
+                                                class="bg-secondary-container/40 text-on-secondary-container p-1 rounded font-medium">
+                                                4.8</div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.8
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.2
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.1
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.6
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.2
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.2
+                                            </div>
+                                        </div>
+                                        <!-- Row 2: BG 9.27 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center mb-1">
+                                            <div class="text-left text-on-surface-variant font-bold">9.27</div>
+                                            <div
+                                                class="bg-secondary-container/50 text-on-secondary-container p-1 rounded font-semibold">
+                                                5.2</div>
+                                            <!-- Diag 2 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">90.1
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.2
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.9
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.5
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.7
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                        </div>
+                                        <!-- Row 3: BG 12.2 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center mb-1">
+                                            <div class="text-left text-on-surface-variant font-bold">12.2</div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.1
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.4
+                                            </div>
+                                            <!-- Diag 3 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">93.8
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.2
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.5
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.2
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.8
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                        </div>
+                                        <!-- Row 4: BG 18.65 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center mb-1">
+                                            <div class="text-left text-on-surface-variant font-bold">18.65</div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.6
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.8
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.5
+                                            </div>
+                                            <!-- Diag 4 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">91.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">2.1
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.1
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.9
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.6
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.6
+                                            </div>
+                                        </div>
+                                        <!-- Row 5: BG 2.47 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center mb-1">
+                                            <div class="text-left text-on-surface-variant font-bold">2.47</div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.5
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.7
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.8
+                                            </div>
+                                            <!-- Diag 5 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">94.6
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.8
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.2
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                        </div>
+                                        <!-- Row 6: BG 6.34 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center mb-1">
+                                            <div class="text-left text-on-surface-variant font-bold">6.34</div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.5
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.1
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.9
+                                            </div>
+                                            <!-- Diag 6 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">92.9
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.9
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.7
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.8
+                                            </div>
+                                        </div>
+                                        <!-- Row 7: BG 11.18 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center mb-1">
+                                            <div class="text-left text-on-surface-variant font-bold">11.18</div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.2
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.8
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.5
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.6
+                                            </div>
+                                            <!-- Diag 7 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">93.5
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.1
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.9
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.8
+                                            </div>
+                                        </div>
+                                        <!-- Row 8: BG 4.7 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center mb-1">
+                                            <div class="text-left text-on-surface-variant font-bold">4.7</div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.5
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.7
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.9
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.5
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.8
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.2
+                                            </div>
+                                            <!-- Diag 8 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">91.8
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.7
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.5
+                                            </div>
+                                        </div>
+                                        <!-- Row 9: BG 15.1 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center mb-1">
+                                            <div class="text-left text-on-surface-variant font-bold">15.1</div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.7
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.3
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.6
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.8
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.9
+                                            </div>
+                                            <!-- Diag 9 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">93.2
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.5
+                                            </div>
+                                        </div>
+                                        <!-- Row 10: BG 7.1 -->
+                                        <div
+                                            class="grid grid-cols-11 gap-1 items-center font-code text-[10px] text-center">
+                                            <div class="text-left text-on-surface-variant font-bold">7.1</div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.2
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.6
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.9
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">0.9
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.4
+                                            </div>
+                                            <div class="bg-surface-container p-1 rounded text-on-surface-variant">1.6
+                                            </div>
+                                            <!-- Diag 10 -->
+                                            <div class="bg-primary text-on-primary font-bold p-1 rounded shadow-sm">93.2
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Matrix Footer Caption -->
+                            <div class="pt-space-md mt-space-md bg-surface-container/40 p-space-sm rounded text-center">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant font-code">
+                                    synthetic held-out voices, n = 60
+                                </span>
+                            </div>
+                        </div>
+                        <!-- CARD (H): Benchmark Comparisons -->
+                        <div class="lg:col-span-12 bg-surface-container rounded-xl p-space-lg shadow-sm">
+                            <div
+                                class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md">
+                                <div>
+                                    <span
+                                        class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-code">Comparative
+                                        Baselines</span>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface">Acoustic Architecture
+                                        Benchmark Comparison</h3>
+                                </div>
+                                <span
+                                    class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-code text-[11px] font-medium self-start md:self-auto">
+                                    IMPORTED · Dhvani-Yantra, synthetic audio
+                                </span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg mt-space-sm">
+                                <!-- Benchmark 1: Template Matching -->
+                                <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-space-xs">
+                                            <span
+                                                class="material-symbols-outlined text-[18px] text-tertiary">difference</span>
+                                            <span
+                                                class="font-headline-sm text-[16px] text-on-surface font-medium">Template
+                                                matching</span>
+                                        </div>
+                                        <div class="flex items-center gap-space-sm font-code text-code">
+                                            <span class="text-on-surface-variant">n = 600</span>
+                                            <span class="font-bold text-on-surface">64.2%</span>
+                                        </div>
+                                    </div>
+                                    <!-- Bar -->
+                                    <div class="w-full bg-surface-container-highest h-3 rounded-full overflow-hidden">
+                                        <div class="bg-tertiary h-full rounded-full" style="width: 64.2%;"></div>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between text-on-surface-variant font-code text-[11px] pt-1">
+                                        <span>Dynamic time warping across centroid mel-spectrograms</span>
+                                        <span>Latency: 48ms / verse</span>
+                                    </div>
+                                </div>
+                                <!-- Benchmark 2: HMM -->
+                                <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-space-xs">
+                                            <span
+                                                class="material-symbols-outlined text-[18px] text-primary">account_tree</span>
+                                            <span
+                                                class="font-headline-sm text-[16px] text-on-surface font-medium">HMM</span>
+                                        </div>
+                                        <div class="flex items-center gap-space-sm font-code text-code">
+                                            <span class="text-on-surface-variant">n = 600</span>
+                                            <span class="font-bold text-primary">88.7%</span>
+                                        </div>
+                                    </div>
+                                    <!-- Bar -->
+                                    <div class="w-full bg-surface-container-highest h-3 rounded-full overflow-hidden">
+                                        <div class="bg-primary h-full rounded-full" style="width: 88.7%;"></div>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between text-on-surface-variant font-code text-[11px] pt-1">
+                                        <span>Triphone HMM with GMM observation probabilities</span>
+                                        <span>Latency: 112ms / verse</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="mt-space-md pt-space-xs flex items-center justify-between flex-wrap gap-2 text-on-surface-variant font-label-sm text-[11px]">
+                                <span class="italic font-code">synthetic benchmark; not this project's result</span>
+                                <span class="font-code">Evaluated against 16 kHz synthetic recitations (Sama &amp;
+                                    Rigveda prosody models)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- STATE 2: MODEL UNAVAILABLE STATE (Hidden by default, toggleable) -->
+                <div class="hidden flex-col gap-space-lg transition-opacity duration-200" id="view-unavailable">
+                    <div
+                        class="bg-surface-container-low rounded-xl p-space-xl shadow-sm flex flex-col items-center justify-center text-center py-20 gap-space-md max-w-3xl mx-auto w-full">
+                        <div
+                            class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+                            <span class="material-symbols-outlined text-[28px]">cloud_off</span>
+                        </div>
+                        <div class="flex flex-col gap-1 max-w-lg">
+                            <span class="font-code text-label-sm text-tertiary uppercase tracking-wider">Acoustic
+                                Pipeline Interrupted</span>
+                            <h2 class="font-headline-md text-headline-md text-on-surface">Acoustic Model Offline or
+                                Unreachable</h2>
+                            <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                                Acoustic model offline or unreachable. Kaldi-WASM worker failed to allocate tensor
+                                buffer. Inference suspended.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-surface-container p-space-md rounded font-code text-code text-on-surface-variant text-left w-full max-w-md mt-2 flex flex-col gap-1">
+                            <div class="flex justify-between">
+                                <span class="text-outline">Error Code:</span>
+                                <span class="text-secondary font-medium">ERR_WASM_MEM_EXHAUSTED</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-outline">Worker State:</span>
+                                <span>Uninstantiated (Thread #3)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-outline">Acoustic Model:</span>
+                                <span>Kaldi-Sanskrit-v0.4.2</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-space-md mt-space-sm">
+                            <button
+                                class="px-space-md py-space-xs bg-primary text-on-primary rounded font-label-md text-label-md hover:bg-secondary transition-colors"
+                                onclick="switchState('active')">
+                                Retry Initialization
+                            </button>
+                            <button
+                                class="px-space-md py-space-xs bg-surface-container text-on-surface rounded font-label-md text-label-md hover:bg-surface-container-high transition-colors"
+                                onclick="switchState('active')">
+                                Run Diagnostics
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- STATE 3: LOADING STATE (Pulse skeletons) -->
+                <div class="hidden flex-col gap-space-xl transition-opacity duration-200" id="view-loading">
+                    <!-- Top Loading Card -->
+                    <div
+                        class="bg-surface-container-low rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md animate-pulse">
+                        <div class="flex justify-between items-center">
+                            <div class="h-4 bg-surface-container-highest rounded w-48"></div>
+                            <div class="h-4 bg-surface-container-highest rounded w-24"></div>
+                        </div>
+                        <div class="h-8 bg-surface-container-highest rounded w-72 mt-2"></div>
+                        <div class="h-16 bg-surface-container-highest rounded w-full mt-2"></div>
+                        <div class="h-4 bg-surface-container-highest rounded w-3/4"></div>
+                        <div class="grid grid-cols-3 gap-space-md mt-4">
+                            <div class="h-24 bg-surface-container rounded"></div>
+                            <div class="h-24 bg-surface-container rounded"></div>
+                            <div class="h-24 bg-surface-container rounded"></div>
+                        </div>
+                    </div>
+                    <!-- Grid Loading Cards -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+                        <div
+                            class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-3 animate-pulse">
+                            <div class="h-4 bg-surface-container-highest rounded w-32"></div>
+                            <div class="h-6 bg-surface-container-highest rounded w-60"></div>
+                            <div class="flex flex-col gap-2 mt-4">
+                                <div class="h-6 bg-surface-container rounded w-full"></div>
+                                <div class="h-6 bg-surface-container rounded w-full"></div>
+                                <div class="h-6 bg-surface-container rounded w-full"></div>
+                                <div class="h-6 bg-surface-container rounded w-full"></div>
+                                <div class="h-6 bg-surface-container rounded w-full"></div>
+                                <div class="h-6 bg-surface-container rounded w-full"></div>
+                            </div>
+                        </div>
+                        <div
+                            class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-3 animate-pulse">
+                            <div class="h-4 bg-surface-container-highest rounded w-32"></div>
+                            <div class="h-6 bg-surface-container-highest rounded w-72"></div>
+                            <div class="h-64 bg-surface-container rounded w-full mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Persistent Research Disclaimer Banner (positioned right before global footer) -->
+            <div class="w-full bg-surface-container py-space-sm px-gutter shadow-inner">
+                <div class="max-w-7xl mx-auto flex items-center justify-center gap-space-sm text-center">
+                    <span class="material-symbols-outlined text-[16px] text-tertiary">science</span>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-code">
+                        DEMO — synthetic audio and imported research figures; not results.
+                    </span>
+                </div>
+            </div>
+            <!-- Micro-interaction state controller -->
+            <script>
+                function switchState(state) {
+                    const activeView = document.getElementById('view-active');
+                    const unavailView = document.getElementById('view-unavailable');
+                    const loadView = document.getElementById('view-loading');
+
+                    const btnActive = document.getElementById('btn-state-active');
+                    const btnUnavail = document.getElementById('btn-state-unavailable');
+                    const btnLoad = document.getElementById('btn-state-loading');
+
+                    // Hide all views
+                    activeView.classList.add('hidden');
+                    activeView.classList.remove('flex');
+                    unavailView.classList.add('hidden');
+                    unavailView.classList.remove('flex');
+                    loadView.classList.add('hidden');
+                    loadView.classList.remove('flex');
+
+                    // Reset button styles
+                    [btnActive, btnUnavail, btnLoad].forEach(b => {
+                        b.className = "px-space-md py-1.5 rounded font-label-md text-label-md transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high";
+                    });
+
+                    if (state === 'active') {
+                        activeView.classList.remove('hidden');
+                        activeView.classList.add('flex');
+                        btnActive.className = "px-space-md py-1.5 rounded font-label-md text-label-md transition-colors bg-primary text-on-primary";
+                    } else if (state === 'unavailable') {
+                        unavailView.classList.remove('hidden');
+                        unavailView.classList.add('flex');
+                        btnUnavail.className = "px-space-md py-1.5 rounded font-label-md text-label-md transition-colors bg-primary text-on-primary";
+                    } else if (state === 'loading') {
+                        loadView.classList.remove('hidden');
+                        loadView.classList.add('flex');
+                        btnLoad.className = "px-space-md py-1.5 rounded font-label-md text-label-md transition-colors bg-primary text-on-primary";
+                    }
+                }
+            </script>
+        </div>
+    </main>
+    <footer class="w-full bg-surface-container-low py-space-lg mb-8">
+        <div
+            class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>© 2025 SamskritaDhvani Research Collective</span><span
+                    class="opacity-40">·</span><span>Open Philological License</span></div>
+            <div class="flex items-center gap-space-lg font-code text-code"><span>Svara-Vyanjana Real-time Alignment
+                    Engine</span><span>Kaldi/PyTorch Backend</span></div>
+        </div>
+    </footer>
+    <aside aria-label="Research Notice"
+        class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-highest/95 border-t border-outline-variant/30 backdrop-blur-sm py-space-xs px-gutter text-center font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-space-sm">
+        <span class="material-symbols-outlined text-primary text-[14px]">info</span><span>DEMO — synthetic audio and
+            imported research figures; not results.</span></aside>
+</body>
+
+</html>

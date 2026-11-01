@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif:wght@500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#56423d", "on-background": "#1c1b1a", "on-surface": "#1c1b1a", "surface-container-highest": "#e6e2de", "on-tertiary": "#ffffff", "tertiary-container": "#7b5503", "secondary-container": "#ff866b", "surface-container-low": "#f7f3ef", "on-tertiary-fixed": "#281900", "secondary": "#a13f2a", "inverse-surface": "#31302e", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#812815", "on-primary-fixed": "#3c0800", "surface-bright": "#fdf8f5", "surface-variant": "#e6e2de", "primary": "#7e260f", "background": "#fdf8f5", "inverse-primary": "#ffb4a2", "tertiary": "#5d3f00", "on-tertiary-container": "#ffcd7d", "surface": "#fdf8f5", "surface-dim": "#ddd9d6", "secondary-fixed-dim": "#ffb4a4", "surface-tint": "#a13f26", "outline-variant": "#ddc0b9", "on-error-container": "#93000a", "on-primary": "#ffffff", "primary-fixed": "#ffdbd2", "on-primary-container": "#ffc9bc", "error": "#ba1a1a", "on-primary-fixed-variant": "#812811", "outline": "#8a726c", "inverse-on-surface": "#f4f0ec", "on-secondary-fixed": "#3e0500", "tertiary-fixed": "#ffdead", "primary-container": "#9e3d24", "on-tertiary-fixed-variant": "#604100", "tertiary-fixed-dim": "#f2be68", "surface-container-lowest": "#ffffff", "surface-container-high": "#ece7e4", "on-secondary-container": "#741f0d", "primary-fixed-dim": "#ffb4a2", "on-error": "#ffffff", "surface-container": "#f1ede9", "error-container": "#ffdad6", "secondary-fixed": "#ffdad3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "2rem", "space-md": "1rem", "margin-sm": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "gutter-sm": "1rem", "gutter": "1.5rem" }, "fontFamily": { "label-sm": ["JetBrains Mono"], "label-lg": ["Inter"], "headline-sm": ["Noto Serif"], "headline-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"], "label-md": ["JetBrains Mono"], "body-lg": ["Inter"], "code": ["JetBrains Mono"], "display": ["Noto Serif"], "headline-md": ["Noto Serif"], "body-sm": ["Inter"], "body-md": ["Inter"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "code": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }] } } } };</script>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md text-body-md">
+    <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="w-full bg-surface-container-low px-gutter py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>Computational Linguistics &amp; Acoustic Phonetics
+                    Lab</span><span class="opacity-40">·</span><span>v0.4.2-alpha</span></div>
+            <div class="flex items-center gap-space-sm font-code text-code text-on-surface-variant"><span
+                    class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span><span>Acoustic Model: Active
+                    [Kaldi/PyTorch]</span><span class="opacity-40">·</span><span>Local Audio Engine Ready</span></div>
+        </div>
+        <div class="h-16 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+            <div class="flex items-center gap-space-md"><img alt="SamskritaDhvani Emblem"
+                    class="h-8 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VHRkD0hXzNZT5RSyKGP-59Nz882SZZ0vJcZuoCFnWEHTX-XfjVd47pESeRrP924p7c6chfN0qOJLBOjbDkrAv9-NviCgIiXm9Q53OMu9OiMTbwpkROvxewqHjoAS6KO8euE8v1PY9qISjAIvnWTtFe5zgiVB8yhKSurBDnBtBqaxxkV_vpCSYRVV4-9lBekfkzOELV2VoomYjp4VYgE4lDyAIpDq8-5TVHGxdH5ShC-qlKS5P1X0TC02k" />
+                <div class="flex flex-col"><span
+                        class="font-headline-sm text-headline-sm text-primary tracking-tight">SamskritaDhvani</span><span
+                        class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">संस्कृतध्वनि ·
+                        Phonetic Architecture</span></div>
+            </div>
+            <nav class="hidden md:flex items-center gap-space-sm font-label-lg text-label-lg"
+                data-active-classes="bg-primary-container text-on-primary font-medium rounded"><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="corpus-reader" href="#">Corpus Reader</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="spectrogram-workbench" href="#">Spectrogram Workbench</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="prosodic-matrix" href="#">Prosodic Matrix</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="acoustic-models" href="#">Acoustic Models</a><a
+                    class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded"
+                    data-path="research-documentation" href="#">Documentation</a></nav>
+            <div class="flex items-center gap-space-md">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-22 bg-surface min-h-screen">
+        <div class="flex flex-col w-full">
+            <!-- Interactive State Engine -->
+            <script>
+                function toggleStateView(viewId) {
+                    const activeEl = document.getElementById('state-active-pipeline');
+                    const emptyEl = document.getElementById('state-empty-pipeline');
+                    const errorEl = document.getElementById('state-error-pipeline');
+
+                    const tabActive = document.getElementById('btn-tab-active');
+                    const tabEmpty = document.getElementById('btn-tab-empty');
+                    const tabError = document.getElementById('btn-tab-error');
+
+                    [activeEl, emptyEl, errorEl].forEach(el => el.classList.add('hidden'));
+                    [tabActive, tabEmpty, tabError].forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-on-primary');
+                        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+                    });
+
+                    if (viewId === 'active') {
+                        activeEl.classList.remove('hidden');
+                        tabActive.classList.add('bg-primary', 'text-on-primary');
+                        tabActive.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                    } else if (viewId === 'empty') {
+                        emptyEl.classList.remove('hidden');
+                        tabEmpty.classList.add('bg-primary', 'text-on-primary');
+                        tabEmpty.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                    } else if (viewId === 'error') {
+                        errorEl.classList.remove('hidden');
+                        tabError.classList.add('bg-primary', 'text-on-primary');
+                        tabError.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                    }
+                }
+            </script>
+            <!-- Top Academic Breadcrumb, Taxonomy & Title Header -->
+            <section class="w-full bg-surface-container-low px-gutter py-space-lg">
+                <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+                    <div>
+                        <div
+                            class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant mb-space-xs tracking-wider">
+                            <span class="uppercase">Experimental Extensions</span>
+                            <span class="opacity-40">/</span>
+                            <span class="text-primary font-medium">दृश्य-विश्लेषण-प्रणाली</span>
+                            <span class="opacity-40">/</span>
+                            <span class="font-code text-code text-on-surface-variant">MOD-VID-702</span>
+                        </div>
+                        <div class="flex items-baseline gap-space-md flex-wrap">
+                            <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                                Video Analysis
+                            </h1>
+                            <span class="font-headline-sm text-headline-sm text-primary font-medium opacity-85">
+                                दृश्य-विश्लेषणम्
+                            </span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-3xl">
+                            Upload a long video and get key frames, scene boundaries, a motion map, tracked movement,
+                            and a short summary.
+                        </p>
+                    </div>
+                    <!-- Telemetry Badge Ribbon & State Simulation Switches -->
+                    <div class="flex flex-col items-start md:items-end gap-space-sm">
+                        <!-- Diagnostic State Switcher for Reviewing -->
+                        <div class="flex items-center gap-space-xs bg-surface-container-high p-space-xs rounded">
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant px-space-xs">Inspect:</span>
+                            <button
+                                class="px-space-sm py-0.5 rounded font-label-sm text-label-sm bg-primary text-on-primary transition-colors"
+                                id="btn-tab-active" onclick="toggleStateView('active')">
+                                Analysis (42%)
+                            </button>
+                            <button
+                                class="px-space-sm py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"
+                                id="btn-tab-empty" onclick="toggleStateView('empty')">
+                                Empty State
+                            </button>
+                            <button
+                                class="px-space-sm py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"
+                                id="btn-tab-error" onclick="toggleStateView('error')">
+                                Fault Diagnostic
+                            </button>
+                        </div>
+                        <div
+                            class="bg-surface-container px-space-md py-space-xs rounded flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant shadow-sm">
+                            <div class="flex items-center gap-space-xs">
+                                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                                <span class="font-code text-code text-on-surface font-medium">PIPELINE:
+                                    SD-VideoNet-v0.2-exp</span>
+                            </div>
+                            <span class="opacity-30">|</span>
+                            <span class="font-code text-code">GPU: Local WebGPU / WASM</span>
+                            <span class="opacity-30">|</span>
+                            <span class="font-code text-code">MAX WINDOW: 30m 00s</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Ingestion Zone & Progress Bar (Always Accessible for Continuity) -->
+            <section class="max-w-7xl mx-auto w-full px-gutter pt-space-lg">
+                <div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm">
+                    <div class="flex flex-col lg:flex-row items-stretch gap-space-lg">
+                        <!-- Dropzone Container -->
+                        <div
+                            class="flex-1 bg-surface rounded-lg p-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md">
+                            <div class="flex items-center gap-space-md">
+                                <div
+                                    class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined text-[28px]">video_library</span>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-space-sm">
+                                        <span
+                                            class="font-headline-sm text-headline-sm text-on-surface font-semibold">Drop
+                                            Archival Video</span>
+                                        <span
+                                            class="bg-surface-container px-space-xs py-0.5 font-label-sm text-label-sm rounded text-on-surface-variant">Multi-Codec</span>
+                                    </div>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                                        Up to 30 minutes (.mp4, .webm, .mkv, .mov — max 2.5 GB) or drag and drop
+                                        recording here
+                                    </p>
+                                </div>
+                            </div>
+                            <button
+                                class="px-space-lg py-space-sm bg-primary text-on-primary hover:bg-on-secondary-container transition-colors rounded font-label-lg text-label-lg shrink-0 flex items-center gap-space-sm">
+                                <span class="material-symbols-outlined text-[18px]">upload</span>
+                                <span>Upload Video</span>
+                            </button>
+                        </div>
+                        <!-- Telemetry Pipeline Card -->
+                        <div class="lg:w-96 bg-surface-container rounded-lg p-space-md flex flex-col justify-between">
+                            <div
+                                class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                                <span>ACTIVE INGESTION STREAM</span>
+                                <span
+                                    class="font-code text-code text-primary font-medium">RIG_VEDA_01_RECITATION.MP4</span>
+                            </div>
+                            <div class="my-space-sm">
+                                <div class="flex items-center justify-between font-code text-code mb-1">
+                                    <span class="text-on-surface font-medium">Detecting scenes… 42%</span>
+                                    <span class="text-on-surface-variant">00:04:18 / 00:10:00 [42.0%]</span>
+                                </div>
+                                <!-- Progress Bar Strip -->
+                                <div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+                                    <div class="h-full bg-primary rounded-full transition-all duration-300"
+                                        style="width: 42%;"></div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                                <span class="font-code text-code text-[10px]">7,740 / 18,450 frames @ 30fps</span>
+                                <span class="font-code text-code text-[10px]">Cache: 84 MB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================================================== -->
+            <!-- STATE 1: ACTIVE PIPELINE (Default Full Analysis with 5 Stages) -->
+            <!-- ============================================================== -->
+            <div class="flex flex-col w-full" id="state-active-pipeline">
+                <!-- Five Analytical Sections (Numbered 01 to 05) -->
+                <main class="max-w-7xl mx-auto w-full px-gutter py-space-lg flex flex-col gap-space-xl">
+                    <!-- 01 · IMPORTANT FRAMES -->
+                    <section class="flex flex-col gap-space-sm">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-space-sm">
+                                <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">01 ·
+                                    IMPORTANT FRAMES</span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                                <span class="font-body-sm text-body-sm text-on-surface-variant">Salient Visual Keyframes
+                                    Extracted via Optical Saliency Vectors</span>
+                            </div>
+                            <span class="font-code text-code text-on-surface-variant">6 OF 14 SHOTS IDENTIFIED</span>
+                        </div>
+                        <!-- Horizontal Scrollable Thumbnail Strip -->
+                        <div class="w-full overflow-x-auto pb-space-sm">
+                            <div class="flex items-stretch gap-space-md min-w-[1140px]">
+                                <!-- Frame 1 -->
+                                <div
+                                    class="flex-1 bg-surface-container rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow">
+                                    <div
+                                        class="relative aspect-video w-full bg-surface-container-highest overflow-hidden">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Close up of a traditional Vedic scholar in saffron vestments with hands folded in reverent invocation gesture against a clean monastic monastery background with warm archival golden light."
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUoptmRhZcK52zzAiPVJF6j19Jv2AqErznVjiykNlBFK3Q3UFfZhsbllBMweTEI7uRZmWpo88M4EnPeTjSPkck2zlE0mxKLo2hnS7yAlT1TfLn8Y2-C1HUyRxKSTil-hy0llfQl1Sl0YUtAk7jOwVpcYV7fuqRv202SJJb79vGw7BSlx_uuEq0KPqluuhU1X0sMJb_7_EcazEKTE8NMVAH6lG49XWsSLpgKG8fREE" />
+                                        <div
+                                            class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm font-code text-label-sm text-primary font-medium">
+                                            02:14.200
+                                        </div>
+                                        <div
+                                            class="absolute bottom-2 right-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-code text-[10px]">
+                                            #KF-01
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="p-space-sm flex flex-col justify-between flex-1 bg-surface-container-low">
+                                        <div>
+                                            <h4 class="font-headline-sm text-label-lg text-on-surface font-semibold">
+                                                Intro / Invocation</h4>
+                                            <p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Initial
+                                                namaskāra posture &amp; prāṇāyāma breath alignment</p>
+                                        </div>
+                                        <div
+                                            class="mt-space-sm pt-space-xs flex items-center justify-between font-code text-label-sm text-on-surface-variant">
+                                            <span>Saliency Index:</span>
+                                            <span class="text-primary font-semibold">0.962 S_opt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Frame 2 -->
+                                <div
+                                    class="flex-1 bg-surface-container rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow">
+                                    <div
+                                        class="relative aspect-video w-full bg-surface-container-highest overflow-hidden">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Scholarly presenter seated at an antique wooden reading desk gesturing with right hand in classic cin-mudra teaching posture while explaining Sanskrit phonetics."
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMnLqO2eJWp2qYyxC6x9b8ZQwTglGYojeIAhMwoy9ynKs5uH43z3Pn5XQ7z9v4dV2c6vi_0O3l91pLm2EOx-jkC5RA-DJgaTmOgas-7f3_zZT1BKK5i-AoLfnm39kqaGa-OBpwSkm78XOpVTVYGwc3xCeQd-8tghAYRATFq1TmXRtRhhFY0zG6Zn8_DTWnkiRIRVBLgvB_LQQkYOPrxLrhAs1dySE8EJX-FnYvq5g" />
+                                        <div
+                                            class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm font-code text-label-sm text-primary font-medium">
+                                            07:45.050
+                                        </div>
+                                        <div
+                                            class="absolute bottom-2 right-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-code text-[10px]">
+                                            #KF-02
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="p-space-sm flex flex-col justify-between flex-1 bg-surface-container-low">
+                                        <div>
+                                            <h4 class="font-headline-sm text-label-lg text-on-surface font-semibold">
+                                                Gesture Shift</h4>
+                                            <p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">
+                                                Transition to udātta pitch accentuation hand movement</p>
+                                        </div>
+                                        <div
+                                            class="mt-space-sm pt-space-xs flex items-center justify-between font-code text-label-sm text-on-surface-variant">
+                                            <span>Saliency Index:</span>
+                                            <span class="text-primary font-semibold">0.914 S_opt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Frame 3 -->
+                                <div
+                                    class="flex-1 bg-surface-container rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow">
+                                    <div
+                                        class="relative aspect-video w-full bg-surface-container-highest overflow-hidden">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="High detail macro view of an authentic birch bark or palm-leaf manuscript with ornate Devanagari verse ink characters lying on a carved teak lectern."
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_5iDvk1WsAq0pFlMBmQcomDW3Bb1VhlmyY8ggqK6hCkGIgmuYM-JOw6oe6ZmsQCFKarV3cF7A73UymQHmIiEDrXydCA_vB7_tkSuEAgI5XdUR80a4UEphldxLtvP4I6jqMv20yOJhcQh-NZO66e3V4rxpNy04L24JM5cITbtwCPHR2qF6QTAqgO-jas9dYShYJ5yDgFYfFvfMOxYjMVAZR-qkvZ0WbnCA8zP79NE" />
+                                        <div
+                                            class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm font-code text-label-sm text-primary font-medium">
+                                            13:02.800
+                                        </div>
+                                        <div
+                                            class="absolute bottom-2 right-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-code text-[10px]">
+                                            #KF-03
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="p-space-sm flex flex-col justify-between flex-1 bg-surface-container-low">
+                                        <div>
+                                            <h4 class="font-headline-sm text-label-lg text-on-surface font-semibold">
+                                                Palm-Leaf Reference</h4>
+                                            <p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Visual
+                                                grounding to Rigveda Mandala I Sūkta I inscription</p>
+                                        </div>
+                                        <div
+                                            class="mt-space-sm pt-space-xs flex items-center justify-between font-code text-label-sm text-on-surface-variant">
+                                            <span>Saliency Index:</span>
+                                            <span class="text-primary font-semibold">0.981 S_opt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Frame 4 -->
+                                <div
+                                    class="flex-1 bg-surface-container rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow">
+                                    <div
+                                        class="relative aspect-video w-full bg-surface-container-highest overflow-hidden">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Scientific linguistic macro profile view of mouth, lips and jaw articulation pronouncing retroflex stops in Sanskrit with subtle phonetic lighting."
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCofYDoD0M-ZMIIftgo5PuUvgFfQVGZ5wkhrOUTX7uVD1laTjeAAVAn0djj9i1OJo4-biqPd1bDbVdwVgviLmUCXEqz6OjB2iCyju5b8uSmT65VhIXfsslo4hB2uD8D6nq6nSMWM7E0banccJYOUlE3ZVSvgbRjAvm7ZimCIgjNJOCKD6e-wS48oMiXhfegKV-3wJXKpR-kGjeZeXq2BkhxZ2BwvruyDAi7nMZRPR8" />
+                                        <div
+                                            class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm font-code text-label-sm text-primary font-medium">
+                                            18:22.400
+                                        </div>
+                                        <div
+                                            class="absolute bottom-2 right-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-code text-[10px]">
+                                            #KF-04
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="p-space-sm flex flex-col justify-between flex-1 bg-surface-container-low">
+                                        <div>
+                                            <h4 class="font-headline-sm text-label-lg text-on-surface font-semibold">
+                                                Articulatory Focus</h4>
+                                            <p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Mūrdhanya
+                                                (retroflex) coronal contact &amp; velic aperture</p>
+                                        </div>
+                                        <div
+                                            class="mt-space-sm pt-space-xs flex items-center justify-between font-code text-label-sm text-on-surface-variant">
+                                            <span>Saliency Index:</span>
+                                            <span class="text-primary font-semibold">0.945 S_opt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Frame 5 -->
+                                <div
+                                    class="flex-1 bg-surface-container rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow">
+                                    <div
+                                        class="relative aspect-video w-full bg-surface-container-highest overflow-hidden">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Medium angle of Vedic seminar room with scholars and students in calm attentive postures nodding in cadence with Sanskrit meter recitation."
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqMNNYkRb9Fd6GxHvQayQvuqazFWpxhskbxH8b23KMcG6LQ4qNcQr3JAmpumEhrrueD4m6fsOuLf_B2ohRZPyhd1Uju7FbyhN1tov8oUAqeLKQJij29IqJvsrZE-pcC3UZprRQaRFPa1koTvfCOBrWibTcNc7XxPnNe6rljdiS08q_jncXP2OnC6eaCSTIzMxEIYmVOrxysOJkd_XGgYY_02kgqKaidbS4W_-nQgw" />
+                                        <div
+                                            class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm font-code text-label-sm text-primary font-medium">
+                                            23:50.150
+                                        </div>
+                                        <div
+                                            class="absolute bottom-2 right-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-code text-[10px]">
+                                            #KF-05
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="p-space-sm flex flex-col justify-between flex-1 bg-surface-container-low">
+                                        <div>
+                                            <h4 class="font-headline-sm text-label-lg text-on-surface font-semibold">
+                                                Recitation Response</h4>
+                                            <p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Auditor
+                                                synchronization during choral śloka meter</p>
+                                        </div>
+                                        <div
+                                            class="mt-space-sm pt-space-xs flex items-center justify-between font-code text-label-sm text-on-surface-variant">
+                                            <span>Saliency Index:</span>
+                                            <span class="text-primary font-semibold">0.892 S_opt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Frame 6 -->
+                                <div
+                                    class="flex-1 bg-surface-container rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow">
+                                    <div
+                                        class="relative aspect-video w-full bg-surface-container-highest overflow-hidden">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Final peaceful frame of Vedic teacher bowing head gently at conclusion of verse discourse in serene library hall with glowing manuscript shelves."
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Zvjb5C2I52mT1EgKDVjWjdhWx3lfk6rnw6AmPPB72q3BXB3GRsBrsgIiN2GaWTqo_IYAAgaYV5exV5qglMym4LfKF7mmn019T-o0tR8O8_QHVsEMJcMV_4SiXAnEDhXKcVsPmN_01KPF_aquN3FjnxmiWsP6I5nIRKUZE1Ig1rEyEJGPFL57wxyCNr3sDB3dsrWztKfm90FEUFQwanrXoeBnh8xZYyw8tVfFYf4" />
+                                        <div
+                                            class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm font-code text-label-sm text-primary font-medium">
+                                            28:10.900
+                                        </div>
+                                        <div
+                                            class="absolute bottom-2 right-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-code text-[10px]">
+                                            #KF-06
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="p-space-sm flex flex-col justify-between flex-1 bg-surface-container-low">
+                                        <div>
+                                            <h4 class="font-headline-sm text-label-lg text-on-surface font-semibold">
+                                                Concluding Śloka</h4>
+                                            <p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Śānti
+                                                pāṭha completion; stillness threshold achieved</p>
+                                        </div>
+                                        <div
+                                            class="mt-space-sm pt-space-xs flex items-center justify-between font-code text-label-sm text-on-surface-variant">
+                                            <span>Saliency Index:</span>
+                                            <span class="text-primary font-semibold">0.938 S_opt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 02 · SCENE BOUNDARIES -->
+                    <section class="flex flex-col gap-space-sm">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-space-sm">
+                                <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">02 ·
+                                    SCENE BOUNDARIES</span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                                <span class="font-body-sm text-body-sm text-on-surface-variant">Temporal Segmentation
+                                    Across Window (00:00 – 30:00)</span>
+                            </div>
+                            <span class="font-code text-code text-on-surface-variant">5 PARTITIONS DETECTED</span>
+                        </div>
+                        <div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-md">
+                            <!-- Segment Badges Track -->
+                            <div class="grid grid-cols-5 gap-space-xs">
+                                <div class="bg-surface-container-high p-space-xs rounded flex flex-col">
+                                    <div class="flex items-center justify-between font-label-sm text-label-sm">
+                                        <span class="font-semibold text-primary">SCENE 01</span>
+                                        <span class="font-code text-code text-[10px] text-on-surface-variant">Hard
+                                            Cut</span>
+                                    </div>
+                                    <span
+                                        class="font-code text-code text-on-surface font-medium text-[11px] mt-0.5">00:00
+                                        – 05:22</span>
+                                    <span class="font-code text-code text-[10px] text-on-surface-variant">Conf:
+                                        0.98</span>
+                                </div>
+                                <div class="bg-surface-container-highest p-space-xs rounded flex flex-col">
+                                    <div class="flex items-center justify-between font-label-sm text-label-sm">
+                                        <span class="font-semibold text-primary">SCENE 02</span>
+                                        <span
+                                            class="font-code text-code text-[10px] text-on-surface-variant">Cross-fade</span>
+                                    </div>
+                                    <span
+                                        class="font-code text-code text-on-surface font-medium text-[11px] mt-0.5">05:22
+                                        – 11:40</span>
+                                    <span class="font-code text-code text-[10px] text-on-surface-variant">Conf:
+                                        0.94</span>
+                                </div>
+                                <div class="bg-surface-container-high p-space-xs rounded flex flex-col">
+                                    <div class="flex items-center justify-between font-label-sm text-label-sm">
+                                        <span class="font-semibold text-primary">SCENE 03</span>
+                                        <span class="font-code text-code text-[10px] text-on-surface-variant">Hard
+                                            Cut</span>
+                                    </div>
+                                    <span
+                                        class="font-code text-code text-on-surface font-medium text-[11px] mt-0.5">11:40
+                                        – 18:15</span>
+                                    <span class="font-code text-code text-[10px] text-on-surface-variant">Conf:
+                                        0.97</span>
+                                </div>
+                                <div class="bg-surface-container-highest p-space-xs rounded flex flex-col">
+                                    <div class="flex items-center justify-between font-label-sm text-label-sm">
+                                        <span class="font-semibold text-primary">SCENE 04</span>
+                                        <span
+                                            class="font-code text-code text-[10px] text-on-surface-variant">Dissolve</span>
+                                    </div>
+                                    <span
+                                        class="font-code text-code text-on-surface font-medium text-[11px] mt-0.5">18:15
+                                        – 24:30</span>
+                                    <span class="font-code text-code text-[10px] text-on-surface-variant">Conf:
+                                        0.95</span>
+                                </div>
+                                <div class="bg-surface-container-high p-space-xs rounded flex flex-col">
+                                    <div class="flex items-center justify-between font-label-sm text-label-sm">
+                                        <span class="font-semibold text-primary">SCENE 05</span>
+                                        <span class="font-code text-code text-[10px] text-on-surface-variant">Hard
+                                            Cut</span>
+                                    </div>
+                                    <span
+                                        class="font-code text-code text-on-surface font-medium text-[11px] mt-0.5">24:30
+                                        – 30:00</span>
+                                    <span class="font-code text-code text-[10px] text-on-surface-variant">Conf:
+                                        0.99</span>
+                                </div>
+                            </div>
+                            <!-- Chronometric Segment Bar -->
+                            <div class="relative w-full h-8 bg-surface-container-highest rounded flex overflow-hidden">
+                                <!-- Scene 1: 0 to 5:22 (~17.8%) -->
+                                <div class="h-full bg-primary/25 relative group hover:bg-primary/35 transition-colors"
+                                    style="width: 17.9%;">
+                                    <div class="absolute right-0 top-0 bottom-0 w-0.5 bg-primary"></div>
+                                </div>
+                                <!-- Scene 2: 5:22 to 11:40 (~21%) -->
+                                <div class="h-full bg-secondary-container/30 relative group hover:bg-secondary-container/40 transition-colors"
+                                    style="width: 21.0%;">
+                                    <div class="absolute right-0 top-0 bottom-0 w-0.5 bg-primary"></div>
+                                </div>
+                                <!-- Scene 3: 11:40 to 18:15 (~21.9%) -->
+                                <div class="h-full bg-primary/25 relative group hover:bg-primary/35 transition-colors"
+                                    style="width: 21.9%;">
+                                    <div class="absolute right-0 top-0 bottom-0 w-0.5 bg-primary"></div>
+                                </div>
+                                <!-- Scene 4: 18:15 to 24:30 (~20.8%) -->
+                                <div class="h-full bg-secondary-container/30 relative group hover:bg-secondary-container/40 transition-colors"
+                                    style="width: 20.8%;">
+                                    <div class="absolute right-0 top-0 bottom-0 w-0.5 bg-primary"></div>
+                                </div>
+                                <!-- Scene 5: 24:30 to 30:00 (~18.4%) -->
+                                <div class="h-full bg-primary/25 relative group hover:bg-primary/35 transition-colors"
+                                    style="width: 18.4%;"></div>
+                                <!-- Current Playhead Tick (at 04:18 = ~14.3%) -->
+                                <div class="absolute top-0 bottom-0 w-0.5 bg-primary z-20 flex flex-col items-center"
+                                    style="left: 14.3%;">
+                                    <div class="w-2.5 h-2.5 bg-primary -mt-1 rotate-45"></div>
+                                </div>
+                            </div>
+                            <!-- Micro Ticks Axis -->
+                            <div
+                                class="flex items-center justify-between font-code text-code text-[11px] text-on-surface-variant px-1">
+                                <span>00:00</span>
+                                <span>05:00</span>
+                                <span>10:00</span>
+                                <span>15:00</span>
+                                <span>20:00</span>
+                                <span>25:00</span>
+                                <span>30:00</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 03 · MOTION MAP -->
+                    <section class="flex flex-col gap-space-sm">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-space-sm">
+                                <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">03 ·
+                                    MOTION MAP</span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                                <span class="font-body-sm text-body-sm text-on-surface-variant">Spatial Energy
+                                    Distribution &amp; Kinetic Velocity Dynamics</span>
+                            </div>
+                            <span class="font-code text-code text-on-surface-variant">FARNEBACK DENSE OPTICAL
+                                FLOW</span>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+                            <!-- Spatial Heatmap Panel (5 Cols) -->
+                            <div
+                                class="lg:col-span-5 bg-surface-container rounded-lg p-space-md flex flex-col justify-between">
+                                <div
+                                    class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                                    <span>2D SPATIAL DENSITY (ACCUMULATED)</span>
+                                    <span class="font-code text-code text-[11px]">Grid: 64 × 36</span>
+                                </div>
+                                <!-- Simulated Optical Motion Heatmap Graphic -->
+                                <div
+                                    class="relative aspect-video w-full rounded bg-surface-container-highest overflow-hidden flex items-center justify-center">
+                                    <svg class="w-full h-full" viewbox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Grid Lines -->
+                                        <defs>
+                                            <pattern height="20" id="heatgrid" patternunits="userSpaceOnUse" width="20">
+                                                <path class="text-on-surface-variant/20" d="M 20 0 L 0 0 0 20"
+                                                    fill="none" stroke="currentColor" stroke-width="0.5"></path>
+                                            </pattern>
+                                            <radialgradient cx="62%" cy="65%" id="speakerHandHeat" r="28%">
+                                                <stop offset="0%" stop-color="#9e3d24" stop-opacity="0.85"></stop>
+                                                <stop offset="50%" stop-color="#ff866b" stop-opacity="0.5"></stop>
+                                                <stop offset="100%" stop-color="#ff866b" stop-opacity="0"></stop>
+                                            </radialgradient>
+                                            <radialgradient cx="48%" cy="40%" id="speakerOralHeat" r="22%">
+                                                <stop offset="0%" stop-color="#7e260f" stop-opacity="0.9"></stop>
+                                                <stop offset="60%" stop-color="#9e3d24" stop-opacity="0.45"></stop>
+                                                <stop offset="100%" stop-color="#ff866b" stop-opacity="0"></stop>
+                                            </radialgradient>
+                                            <radialgradient cx="82%" cy="58%" id="auditorHeat" r="15%">
+                                                <stop offset="0%" stop-color="#ff866b" stop-opacity="0.4"></stop>
+                                                <stop offset="100%" stop-color="#ff866b" stop-opacity="0"></stop>
+                                            </radialgradient>
+                                        </defs>
+                                        <rect fill="url(#heatgrid)" height="225" width="400"></rect>
+                                        <!-- Schematic Silhouette -->
+                                        <path class="text-on-surface-variant/10"
+                                            d="M 160 180 C 160 120 180 80 200 80 C 220 80 240 120 240 180 Z"
+                                            fill="currentColor"></path>
+                                        <!-- Thermal Overlays -->
+                                        <circle cx="248" cy="146" fill="url(#speakerHandHeat)" r="64"></circle>
+                                        <circle cx="192" cy="90" fill="url(#speakerOralHeat)" r="48"></circle>
+                                        <circle cx="328" cy="130" fill="url(#auditorHeat)" r="32"></circle>
+                                        <!-- Heatmap Crosshairs -->
+                                        <circle cx="192" cy="90" fill="#ffffff" r="4" stroke="#7e260f" stroke-width="2">
+                                        </circle>
+                                        <text fill="#1c1b1a" font-family="JetBrains Mono" font-size="9"
+                                            font-weight="500" x="204" y="94">Mouth Max (Δ 14.8px/s)</text>
+                                        <circle cx="248" cy="146" fill="#ffffff" r="4" stroke="#7e260f"
+                                            stroke-width="2"></circle>
+                                        <text fill="#1c1b1a" font-family="JetBrains Mono" font-size="9"
+                                            font-weight="500" x="260" y="150">Right Hand Mudrā (Δ 28.2px/s)</text>
+                                    </svg>
+                                </div>
+                                <!-- Heat Intensity Legend -->
+                                <div
+                                    class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mt-space-sm pt-space-xs">
+                                    <span class="font-code text-code text-[11px]">0.0 px/s (Static)</span>
+                                    <div
+                                        class="w-36 h-2 rounded bg-gradient-to-r from-surface-container-highest via-secondary-container to-primary">
+                                    </div>
+                                    <span class="font-code text-code text-[11px]">32.0 px/s (Peak)</span>
+                                </div>
+                            </div>
+                            <!-- Time-Series Velocity Chart (7 Cols) -->
+                            <div
+                                class="lg:col-span-7 bg-surface-container rounded-lg p-space-md flex flex-col justify-between">
+                                <div
+                                    class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                                    <span>MOTION INTENSITY OVER TIME (00:00 – 30:00)</span>
+                                    <span class="font-code text-code text-[11px] text-primary">Peak at 14:20 (31.4
+                                        px/s)</span>
+                                </div>
+                                <!-- SVG Vector Velocity Curve -->
+                                <div
+                                    class="w-full h-44 bg-surface-container-low rounded p-space-xs flex flex-col justify-end">
+                                    <svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 600 130"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Grid Lines -->
+                                        <line class="text-on-surface-variant/20" stroke="currentColor"
+                                            stroke-dasharray="2 4" stroke-width="1" x1="0" x2="600" y1="26" y2="26">
+                                        </line>
+                                        <line class="text-on-surface-variant/20" stroke="currentColor"
+                                            stroke-dasharray="2 4" stroke-width="1" x1="0" x2="600" y1="65" y2="65">
+                                        </line>
+                                        <line class="text-on-surface-variant/20" stroke="currentColor"
+                                            stroke-dasharray="2 4" stroke-width="1" x1="0" x2="600" y1="104" y2="104">
+                                        </line>
+                                        <!-- Pause Threshold Line -->
+                                        <line opacity="0.4" stroke="#a13f2a" stroke-dasharray="4 2" stroke-width="1"
+                                            x1="0" x2="600" y1="112" y2="112"></line>
+                                        <text fill="#a13f2a" font-family="JetBrains Mono" font-size="8" x="6"
+                                            y="110">Pause Threshold (&lt; 2.5 px/s)</text>
+                                        <!-- Gradient Fill Under Velocity Curve -->
+                                        <defs>
+                                            <lineargradient id="velocityFill" x1="0" x2="0" y1="0" y2="1">
+                                                <stop offset="0%" stop-color="#9e3d24" stop-opacity="0.35"></stop>
+                                                <stop offset="100%" stop-color="#9e3d24" stop-opacity="0.0"></stop>
+                                            </lineargradient>
+                                        </defs>
+                                        <path d="M 0 115 
+                         C 30 112, 45 60, 60 75
+                         C 80 95, 100 115, 120 112
+                         C 140 100, 160 40, 180 48
+                         C 200 56, 210 105, 230 110
+                         C 250 114, 270 20, 286 15
+                         C 305 10, 320 80, 340 85
+                         C 360 90, 380 35, 400 40
+                         C 420 45, 440 112, 460 114
+                         C 480 116, 500 55, 520 62
+                         C 540 70, 560 115, 580 118
+                         L 600 118 L 600 130 L 0 130 Z" fill="url(#velocityFill)"></path>
+                                        <!-- Stroke Line -->
+                                        <path d="M 0 115 
+                         C 30 112, 45 60, 60 75
+                         C 80 95, 100 115, 120 112
+                         C 140 100, 160 40, 180 48
+                         C 200 56, 210 105, 230 110
+                         C 250 114, 270 20, 286 15
+                         C 305 10, 320 80, 340 85
+                         C 360 90, 380 35, 400 40
+                         C 420 45, 440 112, 460 114
+                         C 480 116, 500 55, 520 62
+                         C 540 70, 560 115, 580 118
+                         L 600 118" fill="none" stroke="#7e260f" stroke-width="2"></path>
+                                        <!-- Peak marker -->
+                                        <circle cx="286" cy="15" fill="#ffffff" r="4" stroke="#7e260f" stroke-width="2">
+                                        </circle>
+                                    </svg>
+                                </div>
+                                <!-- Axis Annotations -->
+                                <div
+                                    class="flex items-center justify-between font-code text-code text-[11px] text-on-surface-variant mt-space-sm pt-space-xs">
+                                    <span>00:00 (Invocation)</span>
+                                    <span>07:30 (Mātrā Shift)</span>
+                                    <span class="text-primary font-medium">14:20 (Max Gesticulation)</span>
+                                    <span>22:00 (Choral Response)</span>
+                                    <span>30:00 (Stillness)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 04 · TRACKED OBJECTS -->
+                    <section class="flex flex-col gap-space-sm">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-space-sm">
+                                <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">04 ·
+                                    TRACKED OBJECTS</span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                                <span class="font-body-sm text-body-sm text-on-surface-variant">Persistent Spatial
+                                    Bounding Boxes &amp; Kinematic Trajectories</span>
+                            </div>
+                            <span class="font-code text-code text-on-surface-variant">YOLOv9-PHONO EXTENSION</span>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+                            <!-- 16:9 Frame Preview with Bounding Boxes & Motion Trails (6 Cols) -->
+                            <div
+                                class="lg:col-span-6 bg-surface-container rounded-lg p-space-md flex flex-col justify-between">
+                                <div
+                                    class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                                    <span>FRAME CAPTURE @ 14:22.040</span>
+                                    <span class="font-code text-code text-primary font-medium">3 DETECTIONS
+                                        ACTIVE</span>
+                                </div>
+                                <div
+                                    class="relative aspect-video w-full rounded bg-surface-container-highest overflow-hidden">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="Clear wide shot of a Sanskrit scholar seated beside an illuminated ancient palm leaf manuscript with an auditor listening respectfully in background."
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhPzHnXwPeZAivcH_0pi9UeiG2MQx9dBSclZmdsM3Q0uYfe1Vl6uPHAFTkNp33lzL25Fbs8qylJRX4SilvwEillq0mMINggu1ihspSvzQVXcT52ufnF-VMhxjm4qHkfLoiBqjGlRQqLCC_cfRC5PSXXEHp2j-WZgWA_axm753Mp6-HkfWAscUOon5s6JIy3MusormFb3CKfsMtHPYNmL-CXSlVfIi0e5cJLLjo-8c" />
+                                    <!-- Simulated Bounding Box 1: Speaker -->
+                                    <div class="absolute top-[16%] left-[24%] w-[42%] h-[74%] pointer-events-none">
+                                        <div class="w-full h-full bg-primary/10 rounded-sm relative">
+                                            <div
+                                                class="absolute -top-5 left-0 px-space-xs py-0.5 bg-primary text-on-primary font-code text-[10px] rounded">
+                                                ID #01: Speaker [Conf 0.98]
+                                            </div>
+                                            <!-- Dotted vector trail -->
+                                            <svg class="absolute -top-6 -left-6 w-24 h-24 overflow-visible"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M 0 40 Q 30 15 50 35" fill="none" stroke="#7e260f"
+                                                    stroke-dasharray="3 3" stroke-width="1.5"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- Simulated Bounding Box 2: Palm Leaf Manuscript -->
+                                    <div class="absolute bottom-[8%] left-[8%] w-[28%] h-[24%] pointer-events-none">
+                                        <div class="w-full h-full bg-secondary-container/20 rounded-sm relative">
+                                            <div
+                                                class="absolute -top-5 left-0 px-space-xs py-0.5 bg-secondary text-on-secondary font-code text-[10px] rounded">
+                                                ID #02: Palm Leaf Manuscript [Conf 0.94]
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Simulated Bounding Box 3: Auditor -->
+                                    <div class="absolute top-[28%] right-[6%] w-[22%] h-[60%] pointer-events-none">
+                                        <div class="w-full h-full bg-surface-variant/20 rounded-sm relative">
+                                            <div
+                                                class="absolute -top-5 left-0 px-space-xs py-0.5 bg-surface-dim text-on-surface font-code text-[10px] rounded">
+                                                ID #03: Auditor [Conf 0.89]
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-code text-code text-[11px] text-on-surface-variant mt-space-sm">
+                                    Coordinates normalized in tensor viewport [W: 1920, H: 1080]. IoU Stability
+                                    threshold: &gt; 0.85
+                                </div>
+                            </div>
+                            <!-- Academic Telemetry Legend Table (6 Cols) -->
+                            <div
+                                class="lg:col-span-6 bg-surface-container rounded-lg p-space-md flex flex-col justify-between">
+                                <div>
+                                    <div
+                                        class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                                        <span>OBJECT TRACKING KINEMATICS</span>
+                                        <span class="font-code text-code">COCO-ARCHIVAL WEIGHTS</span>
+                                    </div>
+                                    <div class="w-full overflow-x-auto">
+                                        <table class="w-full text-left font-code text-code text-[12px]">
+                                            <thead>
+                                                <tr
+                                                    class="bg-surface-container-high text-on-surface-variant font-label-sm">
+                                                    <th class="py-space-xs px-space-sm font-medium">Track ID</th>
+                                                    <th class="py-space-xs px-space-sm font-medium">Class</th>
+                                                    <th class="py-space-xs px-space-sm font-medium">Entry</th>
+                                                    <th class="py-space-xs px-space-sm font-medium">Duration</th>
+                                                    <th class="py-space-xs px-space-sm font-medium">Avg Vel</th>
+                                                    <th class="py-space-xs px-space-sm font-medium">Stability</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y-0">
+                                                <tr class="hover:bg-surface-container-high transition-colors">
+                                                    <td class="py-space-sm px-space-sm font-semibold text-primary">
+                                                        TRK-01</td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface">Speaker</td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface-variant">00:00.12
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface-variant">29m 58s
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface">14.2 px/s</td>
+                                                    <td class="py-space-sm px-space-sm text-primary font-medium">99.2%
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    class="bg-surface-container-low hover:bg-surface-container-high transition-colors">
+                                                    <td class="py-space-sm px-space-sm font-semibold text-secondary">
+                                                        TRK-02</td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface">Palm Leaf MS
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface-variant">00:00.00
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface-variant">30m 00s
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface">0.3 px/s</td>
+                                                    <td class="py-space-sm px-space-sm text-primary font-medium">99.8%
+                                                    </td>
+                                                </tr>
+                                                <tr class="hover:bg-surface-container-high transition-colors">
+                                                    <td
+                                                        class="py-space-sm px-space-sm font-semibold text-on-surface-variant">
+                                                        TRK-03</td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface">Auditor
+                                                        (Primary)</td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface-variant">04:12.40
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface-variant">22m 14s
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface">4.8 px/s</td>
+                                                    <td class="py-space-sm px-space-sm text-primary font-medium">93.4%
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    class="bg-surface-container-low hover:bg-surface-container-high transition-colors">
+                                                    <td
+                                                        class="py-space-sm px-space-sm font-semibold text-on-surface-variant">
+                                                        TRK-04</td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface">Lectern / Āsana
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface-variant">00:00.00
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface-variant">30m 00s
+                                                    </td>
+                                                    <td class="py-space-sm px-space-sm text-on-surface">0.0 px/s</td>
+                                                    <td class="py-space-sm px-space-sm text-primary font-medium">100.0%
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-surface-container-low p-space-sm rounded mt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                                    <span>Trajectory filtering: Kalman Filter (Covariance Q=0.018)</span>
+                                    <span class="text-primary font-code text-code">Zero Occlusion Loss</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 05 · SHORT SUMMARY -->
+                    <section class="flex flex-col gap-space-sm">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-space-sm">
+                                <span class="font-label-md text-label-md text-primary font-semibold tracking-wider">05 ·
+                                    SHORT SUMMARY</span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant opacity-40"></span>
+                                <span class="font-body-sm text-body-sm text-on-surface-variant">Multimodal Synthesis
+                                    &amp; Video Reference Player</span>
+                            </div>
+                            <span class="font-code text-code text-on-surface-variant">AUTOMATED PHILOLOGICAL
+                                DIGEST</span>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+                            <!-- Academic Video Player Card (6 Cols) -->
+                            <div
+                                class="lg:col-span-6 bg-surface-container rounded-lg p-space-md flex flex-col justify-between">
+                                <div
+                                    class="relative aspect-video w-full rounded bg-surface-container-highest overflow-hidden group">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="Still frame from an academic recitation video showing a Sanskrit professor lecturing on Vedic meters with audio level indicators overlaid."
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOjQK4j1Q0PMRewyJ9Se784EBM8TFCsQl_V2o8QRHmnN_bH9AOJkQ9SPdZ2KZexcAj2gK927eC4O-s7nd7alk4Ph2DGw_7wCwIcE6aYQNqtzxMSouZf3y_gRjPeQ5ZtJI3MmyBvoq4Sl1CvVvW7CGrwgUqrkoeVt4zGU7pObIqyjCcLHvvf1gKXS7KBtCsI8KJmhmIGlgQMyowYeMupDpgy1R5vN0JL-mbL_ld4ls" />
+                                    <!-- Subtle overlay scrub bar & controls -->
+                                    <div
+                                        class="absolute inset-0 bg-inverse-surface/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                        <button
+                                            class="w-14 h-14 rounded-full bg-primary/90 text-on-primary flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+                                            <span class="material-symbols-outlined text-[32px]">pause</span>
+                                        </button>
+                                    </div>
+                                    <!-- Top Left Timestamp Badge -->
+                                    <div
+                                        class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm font-code text-code text-on-surface font-medium">
+                                        CH-01: Rigveda 1.1.1
+                                    </div>
+                                </div>
+                                <!-- Player Chrome -->
+                                <div class="mt-space-sm flex flex-col gap-space-xs">
+                                    <div
+                                        class="relative w-full h-1.5 bg-surface-container-highest rounded cursor-pointer">
+                                        <div class="h-full bg-primary rounded" style="width: 14.3%;"></div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-space-sm">
+                                            <button class="text-on-surface hover:text-primary transition-colors">
+                                                <span class="material-symbols-outlined text-[20px]">pause</span>
+                                            </button>
+                                            <button
+                                                class="text-on-surface-variant hover:text-on-surface transition-colors">
+                                                <span class="material-symbols-outlined text-[20px]">volume_up</span>
+                                            </button>
+                                            <span
+                                                class="font-code text-code text-on-surface font-medium text-[12px]">04:18
+                                                / 30:00</span>
+                                        </div>
+                                        <div class="flex items-center gap-space-sm">
+                                            <span class="font-code text-code text-[11px] text-on-surface-variant">1080p
+                                                @ 30.00fps</span>
+                                            <button
+                                                class="text-on-surface-variant hover:text-on-surface transition-colors">
+                                                <span class="material-symbols-outlined text-[20px]">fullscreen</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Structured Philological Summary (6 Cols) -->
+                            <div
+                                class="lg:col-span-6 bg-surface-container rounded-lg p-space-md flex flex-col justify-between">
+                                <div class="flex flex-col gap-space-md">
+                                    <div class="flex items-center justify-between">
+                                        <span
+                                            class="font-headline-sm text-headline-sm text-on-surface font-semibold">Structured
+                                            Synthesis</span>
+                                        <span
+                                            class="px-space-xs py-0.5 rounded bg-surface-container-high font-code text-code text-[11px] text-primary">NLP-SEMANTIC-V3</span>
+                                    </div>
+                                    <!-- Two-Line Structured Text Summary -->
+                                    <div class="bg-surface-container-low p-space-md rounded">
+                                        <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                                            <strong class="font-semibold text-primary">Academic recitation
+                                                capture</strong> featuring primary speaker demonstrating Vedic
+                                            accentuation and svara gestures across 5 structured segments.
+                                        </p>
+                                        <p
+                                            class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+                                            Continuous speaker visibility with stable posture and localized articulatory
+                                            motion concentrated around oral cavity and right hand mudrās.
+                                        </p>
+                                    </div>
+                                    <!-- Bulleted Metrics -->
+                                    <div class="grid grid-cols-3 gap-space-sm">
+                                        <div class="bg-surface-container-high p-space-sm rounded flex flex-col">
+                                            <span
+                                                class="font-label-sm text-label-sm text-on-surface-variant uppercase">Scene
+                                                Partitions</span>
+                                            <span
+                                                class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5">5
+                                                Scenes</span>
+                                            <span class="font-code text-code text-[10px] text-on-surface-variant">Mean
+                                                len: 6m 00s</span>
+                                        </div>
+                                        <div class="bg-surface-container-high p-space-sm rounded flex flex-col">
+                                            <span
+                                                class="font-label-sm text-label-sm text-on-surface-variant uppercase">Subjects</span>
+                                            <span
+                                                class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5">3
+                                                Persistent</span>
+                                            <span
+                                                class="font-code text-code text-[10px] text-on-surface-variant">Speaker
+                                                / MS / Auditor</span>
+                                        </div>
+                                        <div class="bg-surface-container-high p-space-sm rounded flex flex-col">
+                                            <span
+                                                class="font-label-sm text-label-sm text-on-surface-variant uppercase">Peak
+                                                Kinetic Activity</span>
+                                            <span
+                                                class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5 font-code">14:20</span>
+                                            <span class="font-code text-code text-[10px] text-on-surface-variant">31.4
+                                                px/s max velocity</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Lab Action Buttons -->
+                                <div class="flex items-center justify-end gap-space-sm mt-space-md pt-space-sm">
+                                    <button
+                                        class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-lg text-label-lg flex items-center gap-space-xs">
+                                        <span class="material-symbols-outlined text-[16px]">download</span>
+                                        <span>Export JSON Metadata</span>
+                                    </button>
+                                    <button
+                                        class="px-space-md py-space-xs rounded bg-primary text-on-primary hover:bg-on-secondary-container transition-colors font-label-lg text-label-lg flex items-center gap-space-xs">
+                                        <span class="material-symbols-outlined text-[16px]">sync_alt</span>
+                                        <span>Correlate with Prosodic Matrix</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <!-- ============================================================== -->
+            <!-- STATE 2: EMPTY STATE (Awaiting Video Ingestion Showcase)        -->
+            <!-- ============================================================== -->
+            <div class="hidden flex-col w-full max-w-7xl mx-auto px-gutter py-space-xl" id="state-empty-pipeline">
+                <div
+                    class="bg-surface-container-low rounded-xl p-space-xl flex flex-col items-center justify-center text-center py-20 shadow-sm">
+                    <div
+                        class="w-20 h-20 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant mb-space-md">
+                        <span class="material-symbols-outlined text-[40px] text-primary">cloud_upload</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+                        Awaiting Video Ingestion
+                    </h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-space-xs mb-space-lg">
+                        Drop an archival video file above or choose a local recording to compute spatial-temporal
+                        indices, scene segmentation, and phonetic mudrā tracking vectors.
+                    </p>
+                    <div
+                        class="flex items-center gap-space-md font-code text-code text-on-surface-variant bg-surface px-space-md py-space-sm rounded">
+                        <span>MAXIMUM DURATION: 30:00</span>
+                        <span class="opacity-30">·</span>
+                        <span>RESOLUTION: UP TO 4K UHD</span>
+                        <span class="opacity-30">·</span>
+                        <span>HW ACCEL: WEBGPU ENABLED</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- STATE 3: ERROR STATE (Scholarly Non-Alarming Diagnostic)        -->
+            <!-- ============================================================== -->
+            <div class="hidden flex-col w-full max-w-7xl mx-auto px-gutter py-space-xl" id="state-error-pipeline">
+                <div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm">
+                    <div class="flex items-start gap-space-md">
+                        <div
+                            class="w-12 h-12 rounded bg-tertiary-fixed-dim/40 text-tertiary flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[28px]">warning</span>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                                    Processing failed — see the message below
+                                </h3>
+                                <span class="font-code text-code text-tertiary font-medium">ERR_PTS_DESYNC_14210</span>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                                Decoder encountered a non-monotonous PTS timestamp jump at frame 14,210. Audio-visual
+                                sync desynchronized by &gt;120ms. Ensure container complies with fixed-framerate
+                                MP4/H.264 standard.
+                            </p>
+                            <div
+                                class="mt-space-md bg-surface p-space-md rounded font-code text-code text-[12px] text-on-surface-variant flex flex-col gap-1">
+                                <div class="text-tertiary font-medium">// STACK DIAGNOSTIC TRACE</div>
+                                <div>[00:07:53.666] VideoStreamReader: PTS continuity broke at packet #426,301</div>
+                                <div>[00:07:53.668] Expected PTS: 14210000 µs | Found: 14088200 µs (drift -121.8 ms)
+                                </div>
+                                <div>[00:07:53.670] FFmpeg/WASM fallback: Variable framerate (VFR) jitter exceeds
+                                    tolerance of 33.3ms</div>
+                            </div>
+                            <div class="mt-space-md flex items-center gap-space-md">
+                                <button
+                                    class="px-space-md py-space-sm bg-primary text-on-primary rounded font-label-lg text-label-lg hover:bg-on-secondary-container transition-colors">
+                                    Re-encode with Fixed CFR (30fps)
+                                </button>
+                                <button
+                                    class="px-space-md py-space-sm bg-surface-container text-on-surface rounded font-label-lg text-label-lg hover:bg-surface-container-high transition-colors"
+                                    onclick="toggleStateView('active')">
+                                    Dismiss &amp; Return to Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- PERSISTENT DEMO DISCLAIMER BANNER (Fixed Bottom / Anchored)     -->
+            <!-- ============================================================== -->
+            <aside class="w-full bg-surface-container-high px-gutter py-space-sm mt-space-xl">
+                <div
+                    class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+                    <div class="flex items-center gap-space-sm">
+                        <span
+                            class="px-space-xs py-0.5 rounded bg-surface-container font-code text-code text-primary font-bold">
+                            DEMO
+                        </span>
+                        <span class="font-medium text-on-surface">
+                            Video analysis is an add-on outside the project's requirements; outputs are not results.
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-space-sm font-code text-code text-[11px]">
+                        <span>PHONETIC COMPUTER VISION EXPERIMENT</span>
+                        <span class="opacity-30">·</span>
+                        <span>LAB USE ONLY</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="w-full bg-surface-container-low py-space-lg">
+        <div
+            class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex items-center gap-space-sm"><span>© 2025 SamskritaDhvani Research Collective</span><span
+                    class="opacity-40">·</span><span>Open Philological License</span></div>
+            <div class="flex items-center gap-space-lg font-code text-code"><span>Svara-Vyanjana Real-time Alignment
+                    Engine</span><span>Kaldi/PyTorch Backend</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>
